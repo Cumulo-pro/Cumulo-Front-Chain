@@ -117,26 +117,6 @@ In addition to displaying the data we can create different ways to interact with
     </tr>
 </table>
 
-<script>
-rpc_ask_data("get_hash","1652923");
-rpc_data("get_token");
-rpc_data("get_base_token");
-rpc_data("get_max_validators");
-rpc_data("get_unbonding_time");
-rpc_ask_data ("get_val_sign","345");
-rpc_ask_data ("get_moniker_pubkey","WyoR+T2WxbuJvI/4B+27iVvc+mu3y6pXF+OFzglQw68=");
-rpc_ask_data ("get_val_sign_moniker","345");
-rpc_data  ("get_rpc_status",$chain);
-setInterval(function(){
-        rpc_data("get_block_rpc");
-		rpc_data ("get_block_sign_moniker");
-		rpc_data ("get_block_sign_pubkey");
-		rpc_data  ("get_latest_block_time");
-		rpc_data  ("get_rpc_status");	
-		
-     },5000); // delay 5 seg
-</script>
-
 
 <h3>Metrics from RPC - get-rpc.php</h3>
 <h4>Functions accepting requests</h4>
@@ -192,13 +172,6 @@ setInterval(function(){
     </tr>
 </table>
 
-
-<script>
-	another_rpc_data("get_test_rpc","https://empower-testnet-rpc.polkachu.com:443/");
-	another_rpc_data("get_moniker_rpc","https://empower-testnet-rpc.polkachu.com:443/");
-	another_rpc_data("get_chain_rpc","https://empower-testnet-rpc.polkachu.com:443/");
-	another_rpc_data("get_tx_index_rpc","https://empower-testnet-rpc.polkachu.com:443/");
-</script>
 
 <h4>Functions from - rpc_scam.php</h4>
 <table>
