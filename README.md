@@ -116,3 +116,96 @@ In addition to displaying the data we can create different ways to interact with
     <td><strong>Connected Peers: </strong><span id="num_peers"></span></td><td>p2p_peers	: Number of peers node's connected to</td></td><td><code>showdata("num_peers");</code></td><td><pre>id="num_peers"</pre></td>
     </tr>
 </table>
+
+<script>
+rpc_ask_data("get_hash","1652923");
+rpc_data("get_token");
+rpc_data("get_base_token");
+rpc_data("get_max_validators");
+rpc_data("get_unbonding_time");
+rpc_ask_data ("get_val_sign","345");
+rpc_ask_data ("get_moniker_pubkey","WyoR+T2WxbuJvI/4B+27iVvc+mu3y6pXF+OFzglQw68=");
+rpc_ask_data ("get_val_sign_moniker","345");
+rpc_data  ("get_rpc_status",$chain);
+setInterval(function(){
+        rpc_data("get_block_rpc");
+		rpc_data ("get_block_sign_moniker");
+		rpc_data ("get_block_sign_pubkey");
+		rpc_data  ("get_latest_block_time");
+		rpc_data  ("get_rpc_status");	
+		
+     },5000); // delay 5 seg
+</script>
+
+
+<h3>Metrics from RPC - get-rpc.php</h3>
+<h4>Functions accepting requests</h4>
+<table>
+	<tr>
+   	  <th>Data</th><th width="200">Description</th><th>Funtion</th><th>Id</th><th>Parameters</th>
+    </tr>
+ 	<tr>
+   	  <td><strong>Get hash block:<br> </strong><span id="get_hash" class="litt"></span></td><td width="200">Returns the hash of the requested block number </td></td><td><code>rpc_data("get_hash","1652923");</code></td><td><pre>id="get_hash"</pre></td><td>num block</td>
+    </tr>
+    <!--tr>
+   	  <td><strong>Get validator proposer pubkey:<br> </strong><span id="get_val_sign" class="litt"></span></td><td width="200">Returns the pubkey of the validator signing the requested block number</td></td><td><code>rpc_data("get_val_sign","433","empowerchain-1");</code></td><td><pre>id="get_val_sign"</pre></td><td>num block</td>
+    </tr>
+    <tr>
+   	  <td><strong>Get moniker from pubkey:<br> </strong><span id="get_moniker_pubkey"></span></td><td width="200">Returns the validator's moniker according to the requested pubkey</td></td><td><code>rpc_data("get_moniker_pubkey",<br><span class="litt">"WyoR+T2WxbuJvI/4B+27iVvc+mu3y6pXF+OFzglQw68="</span>,"empowerchain-1");</code></td><td><pre>id="get_moniker_pubkey"</pre></td><td>pubkey</td>
+    </tr>
+    <tr>
+   	  <td><strong>Get validator data<br> </strong></span></td><td width="200">Returns an html structure with the main validator data according to the requested pubkey</td></td><td><code>rpc_data("get_validator_data",<br><span class="litt">"WyoR+T2WxbuJvI/4B+27iVvc+mu3y6pXF+OFzglQw68="</span>,"empowerchain-1");</code></td><td><pre>id="get_validator_data"</pre></td><td>pubkey</td>
+    </tr>
+    <tr>
+   	  <td><strong>Get validator proposer moniker: <br></strong><span id="get_val_sign_moniker"></span></td><td width="200">Returns the moniker of the validator signing the requested block number</td></td><td><code>rpc_data("get_val_sign_moniker","345","empowerchain-1");</code></td><td><pre>id="get_val_sign_moniker"</pre></td><td>num block</td>
+    </tr-->
+</table>
+
+<h4>Functions without requests</h4>
+<table>
+	<tr>
+    	<th>Data</th><th>Description</th><th>Funtion</th><th>Id</th>
+    </tr>
+ 	<!--tr>
+    	<td><strong>Get token chain: </strong><span id="get_token"></span></td><td>Returns the token of the chain</td></td><td><code>rpc_data("get_token","empowerchain-1");</code></td><td><pre>id="get_token"</pre></td>
+    </tr>
+    <tr>
+    	<td><strong>Get base token chain: </strong><span id="get_base_token"></span></td><td>Returns the base token of the chain</td></td><td><code>rpc_data("get_token","empowerchain-1");</code></td><td><pre>id="get_base_token"</pre></td>
+    </tr-->
+    <tr>
+    	<td><strong>Get max validators: </strong><span id="get_max_validators"></span></td><td>Returns the number of validators allowed in the active set</td></td><td><code>rpc_data("get_max_validators");</code></td><td><pre>id="get_max_validators"</pre></td>
+    </tr>
+    <tr>
+    	<td><strong>Get unbonding time: </strong><span id="get_unbonding_time"></span></td><td>Returns the unbonding time</td></td><td><code>rpc_data("get_unbonding_time");</code></td><td><pre>id="get_unbonding_time"</pre></td>
+    </tr>
+    <tr>
+    	<td><strong>Get last block: </strong><span id="get_block_rpc"></span></td><td>Returns the last block of the chain</td></td><td><code>rpc_data("get_block_rpc");</code></td><td><pre>id="get_block_rpc"</pre></td>
+    </tr>
+    <!--tr>
+    	<td><strong>Get proposer block: </strong><span id="get_block_sign_moniker"></span></td><td>Returns the proporser moniker of the last block of the chain</td></td><td><code>rpc_data("get_block_sign_moniker","empowerchain-1");</code></td><td><pre>id="get_block_sign_moniker"</pre></td>
+    </tr>
+    <tr>
+    	<td><strong>Get pubkey proposer block: </strong><span id="get_block_sign_pubkey" class="litt"></span></td><td>Returns the proporser pubkey of the last block of the chain</td></td><td><code>rpc_data("get_block_sign_pubkey","empowerchain-1");</code></td><td><pre>id="get_block_sign_pubkey"</pre></td>
+    </tr-->
+    <tr>
+    	<td><strong>Get RPC status: </strong><span id="get_rpc_status"></span></span></td><td>Tests if the RPC node we are connected to is synchronised and returns a green colour, or red if it is not.</td></td><td><code>rpc_data("get_rpc_status");</code></td><td><pre>id="get_rpc_status"</pre></td>
+    </tr>
+</table>
+
+
+<script>
+	another_rpc_data("get_test_rpc","https://empower-testnet-rpc.polkachu.com:443/");
+	another_rpc_data("get_moniker_rpc","https://empower-testnet-rpc.polkachu.com:443/");
+	another_rpc_data("get_chain_rpc","https://empower-testnet-rpc.polkachu.com:443/");
+	another_rpc_data("get_tx_index_rpc","https://empower-testnet-rpc.polkachu.com:443/");
+</script>
+
+<h4>Functions from - rpc_scam.php</h4>
+<table>
+	<tr>
+    	<th>Data</th><th>Description</th><th>Funtion</th><th>Id</th>
+    </tr>
+    
+<td><strong>Get RPC SCAM: </strong><span id="get_block_rpc"></span></td><td>Return list of tested public RPCs</td></td><td><code>rpc_scam ();</code></td><td><pre>id="rpc_scam"</pre></td>
+</table>
+
