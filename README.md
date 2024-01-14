@@ -27,8 +27,7 @@
   showdata(&quot;block&quot;);<br>
 &lt;/script&gt;</code></p>
 <p>3) In case you enter a metric that is frequently updated you can add the following line:</p>
-<code><pre> 
-&lt;script&gt;
+<code><pre>&lt;script&gt;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setInterval(function(){
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;showdata(&quot;block&quot;);
  },5000); // delay 5 seg
