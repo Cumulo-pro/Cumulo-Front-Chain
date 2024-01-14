@@ -80,3 +80,39 @@ In addition to displaying the data we can create different ways to interact with
 <p>For a more complete demonstration please visit our example <a href="https://empower.frontchain.cumulo.pro/">Dashboard</a>.
 </p>
 
+<h2 id="metrics">Métrics Dymension Froopyland </h2>
+<h3>Metrics from Prometheus - get_prometheus.php</h3>
+
+
+<table>
+	<tr>
+    	<th>Data</th><th>Description</th><th>Funtion</th><th>Id</th>
+    </tr>
+	<tr>
+    	<td><strong>Nº block: </strong><span id="block"></span></td><td>consensus_height: Height of the chain</td></td><td><code>showdata("block");</code></td><td><pre>id="block"</pre></td>
+    </tr>
+	<tr>
+    	<td><strong>Nº validators: </strong><span id="num_val"></span></td><td>consensus_validators: Number of validators</td></td><td><code>showdata("num_val");</code><br /><code>showdata("num_val");</code></td><td><pre>id="num_val"</pre></td>
+    </tr>
+    <tr>
+    <td><strong>Validator Voting Power: </strong><span id="val_power"></span></td><td>consensus_validators_power: Total voting power of all validators</td></td><td><code>showdata("val_power");</code></td><td><pre>id="val_power"</pre></td>
+    </tr>
+    <tr>
+    <td><strong>Validator Missing Voting Power: </strong><span id="missing_power"></span></td><td>consensus_missing_validators_power	: Total voting power of the missing validators</td></td><td><code>showdata("missing_power");</code></td><td><pre>id="missing_power"</pre></td>
+    </tr>
+     <tr>
+    <td><strong>Online Validators: </strong><span id="online_validators"></span></td><td>consensus_validators-consensus_missing_validators	: Number of validators - Total voting power of the missing validators</td></td><td><code>showdata("online_validators");</code></td><td><pre>id="online_validators"</pre></td>
+    </tr>
+    <tr>
+    <td><strong>Block time: </strong><span id="block_time"></span> seg</td><td>consensus_block_interval_seconds	: Time between this and last block</td></td><td><code>showdata("block_time");</code></td><td><pre>id="block_time"</pre></td>
+    </tr>
+    <tr>
+    <td><strong>Nº txs: </strong><span id="num_tx"></span></td><td>consensus_total_txs	: Total number of transactions committed</td></td><td><code>showdata("num_tx");</code></td><td><pre>id="num_tx"</pre></td>
+    </tr>
+    <tr>
+    <td><strong>Block size: </strong><span id="block_size_b"></span> Kb</td><td>consensus_block_size_bytes	: Block size in bytes</td></td><td><code>showdata("block_size_b");</code></td><td><pre>id="block_size_b"</pre></td>
+    </tr>
+    <tr>
+    <td><strong>Connected Peers: </strong><span id="num_peers"></span></td><td>p2p_peers	: Number of peers node's connected to</td></td><td><code>showdata("num_peers");</code></td><td><pre>id="num_peers"</pre></td>
+    </tr>
+</table>
