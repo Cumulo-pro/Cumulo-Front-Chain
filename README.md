@@ -47,20 +47,20 @@
     </colgroup>
     <tbody>
       <tr>
-        <td><p dir="ltr"><strong><a href="https://github.com/Cumulo-pro/Roller-Front-Chain/blob/fac9da0bfd8488c3ac2184400d02f8df65b1b4b3/imp_data.js">imp_data.js </a></strong></p></td>
+        <td><p dir="ltr"><strong><a href="https://github.com/Cumulo-pro/Roller-Front-Chain/blob/main/imp_data.js">imp_data.js </a></strong></p></td>
         <td><p dir="ltr">Holds the methods needed to create an XMLHttpRequest connection and extract the data from Prometheus or the RPC node.</p>
           <strong><br />
           </strong></td>
       </tr>
       <tr>
-        <td><p><strong><a href="https://github.com/Cumulo-pro/Empower-chain/blob/main/empower-front-chain/get_prometheus.php">get_prometheus.php</a></strong></p></td>
+        <td><p><strong><a href="https://github.com/Cumulo-pro/Roller-Front-Chain/blob/main/get_prometheus.php">get_prometheus.php</a></strong></p></td>
         <td><p>Contains the routines needed to open the Prometheus path (in froopyland) and trace the code needed to display and print the metrics. Being able to display tendermint metrics:
 </p>
           <p><a href="https://docs.tendermint.com/v0.34/tendermint-core/metrics.html">https://docs.tendermint.com/v0.34/tendermint-core/metrics.html</a></p>
           </td>
       </tr>
       <tr>
-        <td><p><strong><a href="https://github.com/Cumulo-pro/Empower-chain/blob/main/empower-front-chain/get_rpc.php">get_rpc.php</a></strong></p>
+        <td><p><strong><a href="https://github.com/Cumulo-pro/Roller-Front-Chain/blob/main/get_rpc.php">get_rpc.php</a></strong></p>
           <strong><br />
           </strong></td>
         <td><p>Contains the routines needed to access the RPC node (froopyland) and execute the RPC protocols:</p>
