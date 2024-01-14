@@ -47,7 +47,7 @@
     </colgroup>
     <tbody>
       <tr>
-        <td><p dir="ltr"><strong><a href="https://github.com/Cumulo-pro/Empower-chain/blob/main/empower-front-chain/imp_data.js">imp_data.js </a></strong></p></td>
+        <td><p dir="ltr"><strong><a href="https://github.com/Cumulo-pro/Roller-Front-Chain/blob/main/Roller-Front-Chain/imp_data.js">imp_data.js </a></strong></p></td>
         <td><p dir="ltr">Holds the methods needed to create an XMLHttpRequest connection and extract the data from Prometheus or the RPC node.</p>
           <strong><br />
           </strong></td>
