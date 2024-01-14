@@ -1,4 +1,4 @@
-// IMPORT DATA CELESTIA
+// IMPORT DATA DYMENSION
 function ajaxobj() {
 	try {
 		_ajaxobj = new ActiveXObject("Msxml2.XMLHTTP");
