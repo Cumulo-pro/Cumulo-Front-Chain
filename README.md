@@ -22,11 +22,11 @@
 <code>&lt;script type=&quot;text/javascript&quot; src=&quot;imp_data.js&quot;&gt;&lt;/script&gt;</code>
 <br>
 <p>2) Add the function code that corresponds to the metric to display, inside the &lt;head&gt; header:</p>
-<p><code><pre>
+<p><code>
   &lt;script&gt;<br>
   //Function call (metric name)<br>
   showdata(&quot;block&quot;);<br>
-&lt;/script&gt;</pre></code></p>
+&lt;/script&gt;</code></p>
 <p>3) In case you enter a metric that is frequently updated you can add the following line:</p>
 <code><pre> 
 &lt;script&gt;
