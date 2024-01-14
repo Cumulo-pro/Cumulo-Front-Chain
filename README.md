@@ -27,12 +27,12 @@
   showdata(&quot;block&quot;);<br>
 &lt;/script&gt;</code></p>
 <p>3) In case you enter a metric that is frequently updated you can add the following line:</p>
-<code><pre>&lt;script&gt;
+<code>&lt;script&gt;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setInterval(function(){
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;showdata(&quot;block&quot;);
  },5000); // delay 5 seg
 &lt;/script&gt;
-</pre></code>
+</code>
 <p>NOTE: You can see all available metrics <a href="#metrics">here</a>.</p>
 <p>4) Add the id attribute with the name of the function to the tag you want to use to display the metric value:</p>
 <code>&lt;p&gt;Froopyland Height: &lt;span id=&quot;block&quot;&gt;&lt;/span&gt;&lt;/p&gt;</strong></code>
