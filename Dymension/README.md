@@ -29,7 +29,7 @@
     </colgroup>
     <tbody>
       <tr>
-        <td><p dir="ltr"><strong><a href="https://github.com/Cumulo-pro/Cumulo-Front-Chain/blob/6e7d8270baefec5849653a8f977258a78c10d791/Dymension/imp_data.js">imp_data.js </a></strong></p></td>
+        <td><p dir="ltr"><strong><a href="https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/main/Dymension/imp_data.js">imp_data.js </a></strong></p></td>
         <td><p dir="ltr">Holds the methods needed to create an XMLHttpRequest connection and extract the data from Prometheus or the RPC node.</p>
           <strong><br />
           </strong></td>
