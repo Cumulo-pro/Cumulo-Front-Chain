@@ -59,7 +59,7 @@
 <h2 id="what">What else can we do?</h2>
 <p>
 In addition to displaying the data we can create different ways to interact with the blockchain metrics, such as sending forms with data requests, adapting the blockchain metrics to <a href="https://empower.frontchain.cumulo.pro/trashrace.php">fun ways of displaying the information</a>, such as animations, element positions, etc... </p>
-<p>For a more complete demonstration please visit our example <a href="https://empower.frontchain.cumulo.pro/">Dashboard</a>.
+<p>For a more complete demonstration please visit our example <a href="https://roller.frontchain.cumulo.pro/">Dashboard</a>.
 <img width="950" alt="image" src="https://github.com/Cumulo-pro/Roller-Front-Chain/assets/2853158/a9df4e87-4ae1-4fcb-a76d-9a9b1642c367">
 
 </p>
