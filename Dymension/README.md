@@ -18,7 +18,7 @@
 <p>NOTE: You can see all available metrics <a href="#metrics">here</a>.</p>
 <p>4) Add the id attribute with the name of the function to the tag you want to use to display the metric value:</p>
 <code>&lt;p&gt;Froopyland Height: &lt;span id=&quot;block&quot;&gt;&lt;/span&gt;&lt;/p&gt;</strong></code>
-<p>You can see the full example <a href="basic_example_frontchain.html">here</a>.</p>
+<p>You can see the full example <a href="https://github.com/Cumulo-pro/Cumulo-Front-Chain/blob/6e7d8270baefec5849653a8f977258a78c10d791/Dymension/basic_">here</a>.</p>
 
 <h2 id="package">Package</h2>
 <div dir="ltr" align="left">
@@ -29,7 +29,7 @@
     </colgroup>
     <tbody>
       <tr>
-        <td><p dir="ltr"><strong><a href="https://github.com/Cumulo-pro/Roller-Front-Chain/blob/main/imp_data.js">imp_data.js </a></strong></p></td>
+        <td><p dir="ltr"><strong><a href="https://github.com/Cumulo-pro/Cumulo-Front-Chain/blob/6e7d8270baefec5849653a8f977258a78c10d791/Dymension/imp_data.js">imp_data.js </a></strong></p></td>
         <td><p dir="ltr">Holds the methods needed to create an XMLHttpRequest connection and extract the data from Prometheus or the RPC node.</p>
           <strong><br />
           </strong></td>
