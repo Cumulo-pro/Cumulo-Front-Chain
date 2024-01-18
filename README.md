@@ -6,17 +6,18 @@
 <p>In addition, additional infrastructure is usually necessary to access such data, such as dedicated servers, RPC nodes, installation of services like Prometheus, Grafana, etc.</p>
 
 
-<p>Roller Front-Chain extracts data from some sources:</p>
+<p>Cumulo Front-Chain extracts data from some sources:</p>
 <ul>
 <li>Prometheus</li>
 <li> RPC Node</li>
 <li>CLI node with scripts</li>
 </ul>
 
-<h3>What does Roller Front Chain solve? </h3>
-<p>With this small framework we aim to solve the development time and infrastructure for publishing blockchain data on the web. Making it easy for designers to create content with a few lines of html code.</p>
+<h3>What does Cumulo Front Chain solve? </h3>
+<p>With this framework we aim to solve the development time and infrastructure for publishing blockchain data on the web. Making it easy for designers to create content with a few lines of html code.</p>
 <h3>A quick example of what we can do</h3>
 <p>Imagine you are a front-end designer and you want to integrate the data from a blockchain into a fun and attractive Dashboard for the public. You don't have to worry about anything but the design. Enter the necessary functions to display the data in the header of the page and the id to the html elements with which you want to associate the metric values. That's it! Are you ready to go?</p>
+
 <h2 id="start">Getting Started</h2>
 <p>1) Add the following code inside the header &lt;head&gt;:</p>
 <code>&lt;script type=&quot;text/javascript&quot; src=&quot;imp_data.js&quot;&gt;&lt;/script&gt;</code>
