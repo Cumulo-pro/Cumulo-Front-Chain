@@ -1,5 +1,5 @@
 # Roller-Front-Chain
-<h2>The web interface for Dymension's blockchain</h2>
+<h2>The web interface for Cosmos's blockchain</h2>
 
 <h2 id="introduction">Introduction</h2>
 <p>Publishing blockchain data as web content, whether to build a dashboard, a block explorer, or simply display certain data on the web, is often tedious, especially for front-end developers with no knowledge of technologies such as blockchain.</p>
