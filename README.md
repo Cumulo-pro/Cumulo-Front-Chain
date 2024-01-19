@@ -34,7 +34,6 @@
  },5000); // delay 5 seg
 &lt;/script&gt;
 </code>
-<p>NOTE: You can see all available metrics <a href="#metrics">here</a>.</p>
 <p>4) Add the id attribute with the name of the function to the tag you want to use to display the metric value:</p>
 <code>&lt;p&gt;Froopyland Height: &lt;span id=&quot;block&quot;&gt;&lt;/span&gt;&lt;/p&gt;</strong></code>
 <p>You can see the full example <a href="https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/main/Dymension/basic_example_frontchain.html">here</a>.</p>
@@ -64,7 +63,7 @@
         <td><p><strong>get_rpc.php</strong></p>
           <strong><br />
           </strong></td>
-        <td><p>Contains the routines needed to access the RPC node (froopyland) and execute the RPC protocols:</p>
+        <td><p>Contains the routines needed to access the RPC node and execute the RPC protocols:</p>
           <p><strong><a href="https://docs.tendermint.com/v0.34/rpc/">https://docs.tendermint.com/v0.34/rpc/</a></strong></p>
           <p>Printing the results on screen.</p></td>
       </tr>
