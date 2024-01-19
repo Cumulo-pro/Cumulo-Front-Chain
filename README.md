@@ -18,7 +18,8 @@
 <h3>A quick example of what we can do</h3>
 <p>Imagine you are a front-end designer and you want to integrate the data from a blockchain into a fun and attractive Dashboard for the public. You don't have to worry about anything but the design. Enter the necessary functions to display the data in the header of the page and the id to the html elements with which you want to associate the metric values. That's it! Are you ready to go?</p>
 
-<p>Dashboards
-<img width="250" alt="image" src="https://github.com/Cumulo-pro/Roller-Front-Chain/assets/2853158/a9df4e87-4ae1-4fcb-a76d-9a9b1642c367">
-
+<h3>Roller Front-Chain</h3>h3>
+<h4>The web interface for Dymension's blockchain</h4>
+<p>
+<a href="Dymension/README.md"><img width="250" alt="image" src="https://github.com/Cumulo-pro/Roller-Front-Chain/assets/2853158/a9df4e87-4ae1-4fcb-a76d-9a9b1642c367"></a>
 </p>
