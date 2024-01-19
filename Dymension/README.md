@@ -44,7 +44,7 @@
           </td>
       </tr>
       <tr>
-        <td><p><strong><a href="https://github.com/Cumulo-pro/Roller-Front-Chain/blob/main/get_rpc.php">get_rpc.php</a></strong></p>
+        <td><p><strong><a href="https://github.com/Cumulo-pro/Cumulo-Front-Chain/blob/main/Dymension/libs/get_rpc.php">get_rpc.php</a></strong></p>
           <strong><br />
           </strong></td>
         <td><p>Contains the routines needed to access the RPC node (froopyland) and execute the RPC protocols:</p>
