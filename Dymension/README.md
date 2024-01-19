@@ -1,4 +1,6 @@
 <h1>Roller Front-Chain</h1>
+<h3>The web interface for Dymension's blockchain</h3>
+
 <h2 id="start">Getting Started</h2>
 <p>1) Add the following code inside the header &lt;head&gt;:</p>
 <code>&lt;script type=&quot;text/javascript&quot; src=&quot;imp_data.js&quot;&gt;&lt;/script&gt;</code>
