@@ -35,8 +35,8 @@
 &lt;/script&gt;
 </code>
 <p>4) Add the id attribute with the name of the function to the tag you want to use to display the metric value:</p>
-<code>&lt;p&gt;Froopyland Height: &lt;span id=&quot;block&quot;&gt;&lt;/span&gt;&lt;/p&gt;</strong></code>
-<p>You can see the full example <a href="https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/main/Dymension/basic_example_frontchain.html">here</a>.</p>
+<code>&lt;p&gt;Height: &lt;span id=&quot;block&quot;&gt;&lt;/span&gt;&lt;/p&gt;</strong></code>
+<p>You can see the full example <a href="https://roller.frontchain.cumulo.pro/basic_example_frontchain.html">here</a>.</p>
 
 <h2 id="package">Package</h2>
 <div dir="ltr" align="left">
