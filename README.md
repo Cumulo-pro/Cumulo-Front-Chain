@@ -1,4 +1,4 @@
-# Roller-Front-Chain
+# Cumulo-Front-Chain
 <h2>The web interface for Cosmos's blockchain</h2>
 
 <h2 id="introduction">Introduction</h2>
