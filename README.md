@@ -65,7 +65,13 @@
           </strong></td>
         <td><p>Contains the routines needed to access the RPC node and execute the RPC protocols:</p>
           <p><strong><a href="https://docs.tendermint.com/v0.34/rpc/">https://docs.tendermint.com/v0.34/rpc/</a></strong></p>
-          <p>Printing the results on screen.</p></td>
+      </tr>
+	    <tr>
+        <td><p><strong>rpc_scam.php</strong></p>
+          <strong><br />
+          </strong></td>
+        <td><p>Contains the necessary routines to display the test result table of the chain RPCs via our CLI script.</p>
+          </td>
       </tr>
     </tbody>
   </table>
