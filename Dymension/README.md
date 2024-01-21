@@ -159,13 +159,21 @@ In addition to displaying the data we can create different ways to interact with
 </table>
 
 
-<h4>Functions from - rpc_scam.php</h4>
+<h4>Functions from get_node.php</h4>
 <table>
 	<tr>
     	<th>Data</th><th>Description</th><th>Funtion</th><th>Id</th>
     </tr>
-    
-<td><strong>Get RPC SCAM: </strong><span id="get_block_rpc"></span></td><td>Return list of tested public RPCs</td></td><td><code>rpc_scam ();</code></td><td><pre>id="rpc_scam"</pre></td>
+    <tr>
+	<td><strong>Get RPC SCAM: </strong><span id="get_block_rpc"></span></td><td>Return list of tested public RPCs</td></td><td><code>get_node("rpc_scan");</code></td><td><pre>id="rpc_scam"</pre></td>
+    </tr>
+    <tr>
+    <td><strong>Get VALIDATOR SET: </strong><span id="get_block_rpc"></span></td><td>Return list of Active Validators from Chain</td></td><td><code>get_node("val_set");</code></td><td><pre>id="val_set"</pre></td>
+    </tr>
+    <tr>
+    <td><strong>Get MISSING BLOCKS: </strong><span id="get_block_rpc"></span></td><td>Return list of Missing Blocks for Validator</td></td><td><code>get_node("miss_block");</code></td><td><pre>id="miss_block"</pre></td>
+    </tr>
 </table>
+
 
 
