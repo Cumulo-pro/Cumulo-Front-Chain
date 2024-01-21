@@ -51,6 +51,14 @@
           <p><strong><a href="https://docs.tendermint.com/v0.34/rpc/">https://docs.tendermint.com/v0.34/rpc/</a></strong></p>
           <p>Printing the results on screen.</p></td>
       </tr>
+	    <tr>
+        <td><p><strong>get_node.php</strong></p>
+          <strong><br />
+        </strong></td>
+        <td><p>Contains the routines needed to access the CLI Scripts to take different data tables from the chain (Validator Set, RPC Scam and Missing Blocks)
+        </p>
+        <p>Printing the results on screen.</p></td>
+      </tr>
     </tbody>
   </table>
 </div>
