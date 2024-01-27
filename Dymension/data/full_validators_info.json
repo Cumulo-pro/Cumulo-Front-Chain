@@ -1,0 +1,115 @@
+[
+{
+        "validator": "Kjnodes",
+        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#c7f3",
+        "twitter": "kjnodes",
+        "grpc": "dymension-testnet.grpc.kjnodes.com:443",
+        "rpc": "https://dymension-testnet.rpc.kjnodes.com/",
+        "webservices": "https://services.kjnodes.com/testnet/dymension",
+        "services": "Daily snapshots | State-sync | Public endpoints | peering services | Telegram bot"
+    },
+    {
+        "validator": "AviaOne",
+        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#2730",
+        "twitter": "avia_one",
+        "grpc": "",
+        "rpc": "https://rpc.froopyland-100-1.dymension.aviaone.com/",
+        "webservices": "",
+        "services": ""
+    },
+    {
+        "validator": "NODEIST",
+        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#31d6",
+        "twitter": "Nodeistt",
+        "grpc": "grpc-testnet-dymension.nodeist.net:443",
+        "rpc": "https://rpc-testnet-dymension.nodeist.net/",
+        "webservices": "https://nodeist.net/Dymension/",
+        "services": "Daily snapshots | State-sync | Public Endpoints | peering services",
+        "explorer": "https://test.explorer.ist/dymension"
+    },
+    {
+        "validator": "STAVR",
+        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#f437",
+        "twitter": "",
+        "grpc": "",
+        "webservices": "https://github.com/obajay/nodes-Guides/tree/main/Projects/Dymension",
+        "services": "Guide/Manual | Explorer | snapshot",
+        "explorer": "https://explorer.stavr.tech/dymension-testnet/staking"
+    },
+    {
+        "validator": "Polkachu",
+        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#b3ce",
+        "twitter": "polka_chu",
+        "grpc": "dymension-testnet-grpc.polkachu.com:20590",
+        "rpc": "https://dymension-testnet-rpc.polkachu.com/",
+        "webservices": "https://polkachu.com/testnets/dymension",
+        "services": "State-Sync | Snapshot | Seed | Addrbook | Node Guide | Public Endpoints"
+    },
+    {
+        "validator": "Nodestake",
+        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#380f",
+        "twitter": "NodeStake_top",
+        "grpc": "grpc-t.dymension.nodestake.top:443",
+        "rpc": "https://rpc-t.dymension.nodestake.top/",
+        "webservices": "https://nodestake.org/dymension",
+        "services": "Explorer | Guide | Public Endpoints | Seed | Addrbook | State-Sync | Snapshot"
+    },
+    {
+        "validator": "NODERS TEAM",
+        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#dbfe",
+        "twitter": "NODERS_TEAM",
+        "grpc": "dymension.grpc.nodersteam.com:18090",
+        "rpc": "http://dymension.rpc.nodersteam.com:18657/",
+        "webservices": "https://nodeservice.nodersteam.com/noders-team/testnets/dymension",
+        "services": "Guide & Useful commands| Snapshots | Addrbook | State Sync | Public Endpoints"
+    },
+{
+        "validator": "lesnik | UTSA",
+        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#95d4",
+        "twitter": "lesnik13utsa",
+        "grpc": "",
+        "rpc": "https://t-dymension.rpc.utsa.tech/",
+        "webservices": "https://utsa.gitbook.io/services/testnet/dymension",
+        "services": "Guide & Useful commands| Public Endpoints | Addrbook",
+        "explorer": "https://exp.utsa.tech/dymension-test"
+    },
+    {
+        "validator": "Pro-nodes",
+        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#8678",
+        "twitter": "NSvv28",
+        "grpc": "dymension.testnet.grpc.node75.org:9740",
+        "rpc": "http://dymension.testnet.rpc.node75.org:23787/",
+        "webservices": "",
+        "services": "Public Endpoints | Seed",
+        "explorer": ""
+    },
+    {
+        "validator": "STAKEME",
+        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#cb64",
+        "twitter": "stakeme_pro",
+        "grpc": "",
+        "webservices": "",
+        "services": "",
+        "explorer": "https://dymension.exploreme.pro/"
+    },
+    {
+        "validator": "STAKE & RELAX",
+        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#a28b",
+        "twitter": "StakeandRelax",
+        "grpc": "dymension-testnet-rpc.stakeandrelax.net:20590",
+        "rpc": "https://dymension-testnet-rpc.stakeandrelax.net/",
+        "webservices": "",
+        "services": "Snapshot | Public Endpoints",
+        "explorer": ""
+    },
+    {
+        "validator": "Cumulo",
+        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#65c6",
+        "twitter": "Cumulo_pro",
+        "grpc": "dym.grpc.cumulo.com.es:443",
+        "rpc": "https://dym.rpc.cumulo.com.es/",
+        "webservices": "https://cumulo.pro/dymension/validator.php",
+        "services": "Public Endpoints | Rollapp Guides",
+        "explorer": "https://roller.frontchain.cumulo.pro/"
+    }
+]
