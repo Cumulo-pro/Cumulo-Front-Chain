@@ -1,7 +1,7 @@
 [
 {
         "validator": "Kjnodes",
-        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#c7f3",
+        "cumresources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#c7f3",
         "twitter": "Kjnodes",
         "grpc": "dymension-testnet.grpc.kjnodes.com:443",
         "rpc": "https://dymension-testnet.rpc.kjnodes.com/",
@@ -10,7 +10,7 @@
     },
     {
         "validator": "AviaOne",
-        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#2730",
+        "cumresources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#2730",
         "twitter": "avia_one",
         "grpc": "",
         "rpc": "https://rpc.froopyland-100-1.dymension.aviaone.com/",
@@ -19,7 +19,7 @@
     },
     {
         "validator": "NODEIST",
-        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#31d6",
+        "cumresources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#31d6",
         "twitter": "Nodeistt",
         "grpc": "grpc-testnet-dymension.nodeist.net:443",
         "rpc": "https://rpc-testnet-dymension.nodeist.net/",
@@ -29,7 +29,7 @@
     },
     {
         "validator": "STAVR",
-        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#f437",
+        "cumresources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#f437",
         "twitter": "",
         "grpc": "",
         "webservices": "https://github.com/obajay/nodes-Guides/tree/main/Projects/Dymension",
@@ -38,7 +38,7 @@
     },
     {
         "validator": "Polkachu",
-        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#b3ce",
+        "cumresources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#b3ce",
         "twitter": "polka_chu",
         "grpc": "dymension-testnet-grpc.polkachu.com:20590",
         "rpc": "https://dymension-testnet-rpc.polkachu.com/",
@@ -56,7 +56,7 @@
     },
     {
         "validator": "NODERS TEAM",
-        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#dbfe",
+        "cumresources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#dbfe",
         "twitter": "NODERS_TEAM",
         "grpc": "dymension.grpc.nodersteam.com:18090",
         "rpc": "http://dymension.rpc.nodersteam.com:18657/",
@@ -65,7 +65,7 @@
     },
 {
         "validator": "lesnik | UTSA",
-        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#95d4",
+        "cumresources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#95d4",
         "twitter": "lesnik13utsa",
         "grpc": "",
         "rpc": "https://t-dymension.rpc.utsa.tech/",
@@ -75,7 +75,7 @@
     },
     {
         "validator": "Pro-nodes",
-        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#8678",
+        "cumresources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#8678",
         "twitter": "NSvv28",
         "grpc": "dymension.testnet.grpc.node75.org:9740",
         "rpc": "http://dymension.testnet.rpc.node75.org:23787/",
@@ -85,7 +85,7 @@
     },
     {
         "validator": "STAKEME",
-        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#cb64",
+        "cumresources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#cb64",
         "twitter": "stakeme_pro",
         "grpc": "",
         "webservices": "",
@@ -94,7 +94,7 @@
     },
     {
         "validator": "STAKE & RELAX",
-        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#a28b",
+        "cumresources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#a28b",
         "twitter": "StakeandRelax",
         "grpc": "dymension-testnet-rpc.stakeandrelax.net:20590",
         "rpc": "https://dymension-testnet-rpc.stakeandrelax.net/",
@@ -104,7 +104,7 @@
     },
     {
         "validator": "Cumulo",
-        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#65c6",
+        "cumresources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#65c6",
         "twitter": "Cumulo_pro",
         "grpc": "dym.grpc.cumulo.com.es:443",
         "rpc": "https://dym.rpc.cumulo.com.es/",
