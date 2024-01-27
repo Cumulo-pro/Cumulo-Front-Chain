@@ -2,7 +2,7 @@
 {
         "validator": "Kjnodes",
         "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#c7f3",
-        "twitter": "kjnodes",
+        "twitter": "pruebaMon",
         "grpc": "dymension-testnet.grpc.kjnodes.com:443",
         "rpc": "https://dymension-testnet.rpc.kjnodes.com/",
         "webservices": "https://services.kjnodes.com/testnet/dymension",
