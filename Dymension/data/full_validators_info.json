@@ -37,7 +37,7 @@
         "explorer": "https://explorer.stavr.tech/dymension-testnet/staking"
     },
     {
-        "validator": "Polkachu",
+        "validator": "polkachu.com",
         "cumresources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#b3ce",
         "twitter": "polka_chu",
         "grpc": "dymension-testnet-grpc.polkachu.com:20590",
