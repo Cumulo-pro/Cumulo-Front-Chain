@@ -70,7 +70,7 @@
         "grpc": "",
         "rpc": "https://t-dymension.rpc.utsa.tech/",
         "webservices": "https://utsa.gitbook.io/services/testnet/dymension",
-        "services": "Guide & Useful commands| Public Endpoints | Addrbook",
+        "services": "Guide & Useful commands| Public Endpoints | Addrbook | Explorer",
         "explorer": "https://exp.utsa.tech/dymension-test"
     },
     {
@@ -111,5 +111,15 @@
         "webservices": "https://cumulo.pro/dymension/validator.php",
         "services": "Public Endpoints | Rollapp Guides",
         "explorer": "https://roller.frontchain.cumulo.pro/"
+    },
+     {
+        "validator": "Nodes.Guru",
+        "cumresources": "",
+        "twitter": "NodesGuru",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "https://nodes.guru/dymension",
+        "services": "Explorer",
+        "explorer": "https://dymension.explorers.guru/"
     }
 ]
