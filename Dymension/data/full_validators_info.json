@@ -47,7 +47,7 @@
     },
     {
         "validator": "NodeStake",
-        "cum-resources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#380f",
+        "cumresources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#380f",
         "twitter": "NodeStake_top",
         "grpc": "grpc-t.dymension.nodestake.top:443",
         "rpc": "https://rpc-t.dymension.nodestake.top/",
