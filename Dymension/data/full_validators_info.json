@@ -18,7 +18,7 @@
         "services": ""
     },
     {
-        "validator": "NODEIST",
+        "validator": "Nodeist",
         "cumresources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#31d6",
         "twitter": "Nodeistt",
         "grpc": "grpc-testnet-dymension.nodeist.net:443",
