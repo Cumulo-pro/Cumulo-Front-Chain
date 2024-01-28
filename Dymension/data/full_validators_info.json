@@ -122,4 +122,14 @@
         "services": "Explorer",
         "explorer": "https://dymension.explorers.guru/"
     }
+     {
+        "validator": "Qubelabs",
+        "cumresources": "",
+        "twitter": "qubelabs",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "",
+        "services": "",
+        "explorer": ""
+    }
 ]
