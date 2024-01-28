@@ -121,7 +121,7 @@
         "webservices": "https://nodes.guru/dymension",
         "services": "Explorer",
         "explorer": "https://dymension.explorers.guru/"
-    }
+    },
      {
         "validator": "Qubelabs",
         "cumresources": "",
@@ -131,7 +131,7 @@
         "webservices": "",
         "services": "",
         "explorer": ""
-    }
+    },
     {
         "validator": "MZONDER",
         "cumresources": "",
