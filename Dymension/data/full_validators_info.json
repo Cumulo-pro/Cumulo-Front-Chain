@@ -141,5 +141,15 @@
         "webservices": "",
         "services": "Technical support to the community",
         "explorer": ""
+    },
+    {
+        "validator": "P-OPS Team",
+        "cumresources": "",
+        "twitter": "POpsTeam1",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "",
+        "services": "",
+        "explorer": ""
     }
 ]
