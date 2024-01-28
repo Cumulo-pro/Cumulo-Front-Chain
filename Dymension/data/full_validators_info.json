@@ -132,4 +132,14 @@
         "services": "",
         "explorer": ""
     }
+    {
+        "validator": "MZONDER",
+        "cumresources": "",
+        "twitter": "mzonder",
+        "grpc": "",
+        "rpc": "https://rpc-dymension-testnet.mzonder.com/",
+        "webservices": "",
+        "services": "Technical support to the community",
+        "explorer": ""
+    }
 ]
