@@ -1,6 +1,6 @@
 [
 {
-        "validator": "kjnodes.com ",
+        "validator": "kjnodes.com",
         "cumresources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#c7f3",
         "twitter": "Kjnodes",
         "grpc": "dymension-testnet.grpc.kjnodes.com:443",
