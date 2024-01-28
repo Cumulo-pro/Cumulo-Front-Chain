@@ -151,5 +151,15 @@
         "webservices": "",
         "services": "",
         "explorer": ""
+    },
+     {
+        "validator": "NODEJUMPER",
+        "cumresources": "",
+        "twitter": "nodejumper",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "https://app.nodejumper.io/dymension-testnet",
+        "services": "Guide & Useful commands| Snapshots | Addrbook | State Sync | Public Endpoints",
+        "explorer": ""
     }
 ]
