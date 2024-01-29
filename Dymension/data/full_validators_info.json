@@ -109,7 +109,7 @@
         "grpc": "dym.grpc.cumulo.com.es:443",
         "rpc": "https://dym.rpc.cumulo.com.es/",
         "webservices": "https://cumulo.pro/dymension/validator.php",
-        "services": "Public Endpoints | Rollapp Guides",
+        "services": "Moderator & Technical support to the community | Public Endpoints | Rollapp Guides",
         "explorer": "https://roller.frontchain.cumulo.pro/"
     },
      {
@@ -139,7 +139,7 @@
         "grpc": "",
         "rpc": "https://rpc-dymension-testnet.mzonder.com/",
         "webservices": "",
-        "services": "Technical support to the community",
+        "services": "Moderator & Technical support to the community",
         "explorer": ""
     },
     {
@@ -160,6 +160,16 @@
         "rpc": "",
         "webservices": "https://app.nodejumper.io/dymension-testnet",
         "services": "Guide & Useful commands| Snapshots | Addrbook | State Sync | Public Endpoints",
+        "explorer": ""
+    },
+    {
+        "validator": "Samanvay",
+        "cumresources": "",
+        "twitter": "Karan_patell1",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "",
+        "services": "Moderator & Technical support to the community",
         "explorer": ""
     }
 ]
