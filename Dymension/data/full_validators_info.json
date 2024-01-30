@@ -171,5 +171,15 @@
         "webservices": "",
         "services": "Moderator & Technical support to the community",
         "explorer": ""
+    },
+    {
+        "validator": "Lucky Research",
+        "cumresources": "",
+        "twitter": "leelucky_crypto",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "",
+        "services": "Moderator community",
+        "explorer": ""
     }
 ]
