@@ -12,10 +12,10 @@
         "validator": "AVIAONE.com ",
         "cumresources": "https://medium.com/cumulo-pro/dymension-validator-community-resources-froopyland-testnet-afb9aaa45721#2730",
         "twitter": "avia_one",
-        "grpc": "",
+        "grpc": "grpc.froopyland-100-1.dymension.aviaone.com:9098/",
         "rpc": "https://rpc.froopyland-100-1.dymension.aviaone.com/",
-        "webservices": "",
-        "services": ""
+        "webservices": "https://aviaone.com/blockchains-service/dymension-froopyland_100-1.html",
+        "services": "Snapshot | State-sync | Public endpoints | peering services  | Node Guide | Moderator & Technical support"
     },
     {
         "validator": "Nodeist",
@@ -33,7 +33,7 @@
         "twitter": "",
         "grpc": "",
         "webservices": "https://github.com/obajay/nodes-Guides/tree/main/Projects/Dymension",
-        "services": "Guide/Manual | Explorer | snapshot",
+        "services": "Guide/Manual | Explorer | Snapshot",
         "explorer": "https://explorer.stavr.tech/dymension-testnet/staking"
     },
     {
