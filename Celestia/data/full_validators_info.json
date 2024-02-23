@@ -1,0 +1,147 @@
+[
+{
+        "validator": "kjnodes.com",
+        "cumresources": "",
+        "twitter": "Kjnodes",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "",
+        "services": "Daily snapshots | State-sync | Public endpoints | peering services | Telegram bot"
+    },
+    {
+        "validator": "Nodeist",
+        "cumresources": "",
+        "twitter": "Nodeistt",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "",
+        "services": "Daily snapshots | State-sync | Public Endpoints | peering services",
+        "explorer": ""
+    },
+    {
+        "validator": "STAVR",
+        "cumresources": "",
+        "twitter": "",
+        "grpc": "",
+        "webservices": "",
+        "services": "",
+        "explorer": ""
+    },
+    {
+        "validator": "polkachu.com",
+        "cumresources": "",
+        "twitter": "polka_chu",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "",
+        "services": "State-Sync | Snapshot | Seed | Addrbook | Node Guide | Public Endpoints"
+    },
+    {
+        "validator": "NodeStake",
+        "cumresources": "",
+        "twitter": "NodeStake_top",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "",
+        "services": "Explorer | Guide | Public Endpoints | Seed | Addrbook | State-Sync | Snapshot"
+    },
+    {
+        "validator": "NODERS TEAM",
+        "cumresources": "",
+        "twitter": "NODERS_TEAM",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "",
+        "services": "Guide & Useful commands| Snapshots | Addrbook | State Sync | Public Endpoints"
+    },
+{
+        "validator": "𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀",
+        "cumresources": "",
+        "twitter": "lesnik13utsa",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "",
+        "services": "Guide & Useful commands| Public Endpoints | Addrbook | Explorer",
+        "explorer": ""
+    },
+    {
+        "validator": "Pro-nodes",
+        "cumresources": "",
+        "twitter": "NSvv28",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "",
+        "services": "Public Endpoints | Seed",
+        "explorer": ""
+    },
+    {
+        "validator": "STAKEME",
+        "cumresources": "",
+        "twitter": "stakeme_pro",
+        "grpc": "",
+        "webservices": "",
+        "services": "Explorer",
+        "explorer": ""
+    },
+   {
+        "validator": "Cumulo",
+        "cumresources": "",
+        "twitter": "Cumulo_pro",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "",
+        "services": "Moderator & Technical support to the community | Public Endpoints | Rollapp Guides",
+        "explorer": ""
+    },
+     {
+        "validator": "Nodes.Guru",
+        "cumresources": "",
+        "twitter": "NodesGuru",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "",
+        "services": "Explorer",
+        "explorer": ""
+    },
+     {
+        "validator": "Qubelabs",
+        "cumresources": "",
+        "twitter": "qubelabs",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "",
+        "services": "",
+        "explorer": ""
+    },
+    {
+        "validator": "MZONDER",
+        "cumresources": "",
+        "twitter": "mzonder",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "",
+        "services": "Moderator & Technical support to the community",
+        "explorer": ""
+    },
+    {
+        "validator": "P-OPS Team",
+        "cumresources": "",
+        "twitter": "POpsTeam1",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "",
+        "services": "Moderator & Technical support to the community",
+        "explorer": ""
+    },
+     {
+        "validator": "NODEJUMPER",
+        "cumresources": "",
+        "twitter": "nodejumper",
+        "grpc": "",
+        "rpc": "",
+        "webservices": "",
+        "services": "Guide & Useful commands| Snapshots | Addrbook | State Sync | Public Endpoints",
+        "explorer": ""
+    },
+   
+]
