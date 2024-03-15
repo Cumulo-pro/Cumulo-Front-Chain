@@ -1,0 +1,34 @@
+full_rollapps_info = [
+{
+        "rollapp": "NIM Network",
+        "type_rollapp": "Gaming",
+        "twitter": "nim_network",
+        "public": "no",
+        "content": "https://medium.com/@NIM_Network/nim-network-the-ai-gaming-chain-e9abd55b8359",
+        "logo": "nim.png"
+   },
+{
+        "rollapp": "Aigisos",
+        "type_rollapp": "AI + Security",
+        "twitter": "aigsios",
+        "public": "no",
+        "content": "https://forum.dymension.xyz/t/rollapp-submission-introducing-aigisos-rollapp-a-security-oriented-blockchain-with-a-novel-consensus-algorithm-on-dymension/1568",
+        "logo": "aigisos.png"
+   },
+{
+        "rollapp": "dogmond",
+        "type_rollapp": "meme",
+        "twitter": "aigsios",
+        "public": "no",
+        "content": "https://forum.dymension.xyz/t/rollapp-submission-introducing-dogmond-the-first-memecoin-rollup-on-dymension/2012",
+        "logo": "dogmond.png"
+   },
+{
+        "rollapp": "Rivalz DePIN",
+        "type_rollapp": "AI-driven Personal Data Provenance",
+        "twitter": "aigsios",
+        "public": "no",
+        "content": "",
+        "logo": "rivalz.png"
+   }
+]
