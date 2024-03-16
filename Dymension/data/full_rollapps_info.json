@@ -5,7 +5,9 @@
         "twitter": "nim_network",
         "public": "no",
         "content": "https://medium.com/@NIM_Network/nim-network-the-ai-gaming-chain-e9abd55b8359",
-        "logo": "nim.jpg"
+        "logo": "nim.jpg",
+        "airdrop": "y",
+        "airdrop_info": "n"
    },
 {
         "rollapp": "Aigisos",
@@ -13,7 +15,9 @@
         "twitter": "aigsios",
         "public": "no",
         "content": "https://forum.dymension.xyz/t/rollapp-submission-introducing-aigisos-rollapp-a-security-oriented-blockchain-with-a-novel-consensus-algorithm-on-dymension/1568",
-        "logo": "aigisos.jpg"
+        "logo": "aigisos.jpg",
+        "airdrop": "y",
+        "airdrop_info": "n"
    },
 {
         "rollapp": "dogmond",
@@ -21,7 +25,9 @@
         "twitter": "aigsios",
         "public": "no",
         "content": "https://forum.dymension.xyz/t/rollapp-submission-introducing-dogmond-the-first-memecoin-rollup-on-dymension/2012",
-        "logo": "dogmond.jpg"
+        "logo": "dogmond.jpg",
+        "airdrop": "y",
+        "airdrop_info": "n"
    },
 {
         "rollapp": "Rivalz DePIN",
@@ -29,6 +35,8 @@
         "twitter": "aigsios",
         "public": "no",
         "content": "https://galxe.com/C2Wv8y372ySiBacsLiZnLu/campaign/GCJshtT6a9?referral_code=GRFr2JJi7em3Qja9ZtvCcCVjIlCl3ygC3l-aCoypNgjTQ5r",
-        "logo": "rivalz.jpg"
+        "logo": "rivalz.jpg",
+        "airdrop": "y",
+        "airdrop_info": "n"
    }
 ]
