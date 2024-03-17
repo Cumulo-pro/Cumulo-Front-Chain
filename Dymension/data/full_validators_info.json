@@ -7,7 +7,8 @@
         "rpc": "https://dymension.rpc.kjnodes.com/",
         "webservices": "https://services.kjnodes.com/mainnet/dymension/",
 	"bot": "https://services.kjnodes.com/bots/telegram-proposal/",
-        "services": "Daily snapshots | State-sync | Public endpoints | peering services | Telegram bot"
+        "services": "Daily snapshots | State-sync | Public endpoints | peering services | Telegram bot",
+	"explorer": "https://explorer.kjnodes.com/dymension"
     },
     {
         "validator": "AVIAONE.com ",
@@ -36,7 +37,7 @@
         "rpc": " https://rpc.dym.secardnode.com/",
         "webservices": "",
         "services": "",
-        "explorer": ""
+        "explorer": "https://explorer.secardnode.com/"
     },
    {
         "validator": "STAVR",
@@ -47,7 +48,7 @@
         "webservices": "https://github.com/obajay/nodes-Guides/tree/main/Projects/Dymension",
         "services": "Guide/Manual | Explorer | Snapshot",
 	"rpcscanner": "https://github.com/obajay/StateSync-snapshots/tree/main/Projects/Dymension",
-        "explorer": "https://explorer.stavr.tech/dymension-testnet/staking"
+        "explorer": "https://explorer.stavr.tech/Dymension-Mainnet"
     },
     {
         "validator": "polkachu.com",
@@ -65,7 +66,8 @@
         "grpc": "grpc.dymension.nodestake.org:443",
         "rpc": "https://rpc.dymension.nodestake.org/",
         "webservices": "https://nodestake.org/dymension",
-        "services": "Explorer | Guide | Public Endpoints | Seed | Addrbook | State-Sync | Snapshot"
+        "services": "Explorer | Guide | Public Endpoints | Seed | Addrbook | State-Sync | Snapshot",
+        "explorer": "https://explorer.nodestake.org/dymension"
     },
     {
         "validator": "NODERS TEAM",
@@ -248,7 +250,7 @@
         "evmrpc": "https://dymension-jsonrpc.kalia.network/",
         "webservices": "",
         "services": "Public Endpoints",
-        "explorer": ""
+        "explorer": "https://explorer.kalia.network/"
     },
 {
         "validator": "AutoStake",
