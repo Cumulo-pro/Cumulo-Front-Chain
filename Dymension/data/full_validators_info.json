@@ -304,7 +304,7 @@
         "rpc": "https://dymension-rpc.lefey.tech",
         "evmrpc": "https://dymension-jsonrpc.lefey.tech",
         "webservices": "https://services.lefey.tech/mainnet/dymension",
-        "services": "Installation guide | RPC | Public Endpoints | StateSync",
+        "services": "Installation guide | Public Endpoints | StateSync",
         "explorer": ""
     },
 {
@@ -315,7 +315,7 @@
         "rpc": "",
         "evmrpc": "",
         "webservices": "Troubleshooting page for rollapp | RPC endpoints | Monitoring systems | Dashboards | Explorers | Useful tools",
-        "services": "https://wiki.f5nodes.com/dymension/?source=post_page-----38f20c9f0091--------------------------------",
+        "services": "https://wiki.f5nodes.com/dymension",
         "explorer": ""
     },
 {
@@ -337,7 +337,7 @@
         "rpc": "https://rpc-dymension.stingray.plus/",
         "evmrpc": "",
         "webservices": "https://github.com/MikhailRadusha/Dymension-services",
-        "services": "",
+        "services": "Public Endpoints",
         "explorer": ""
     },
 {
@@ -345,10 +345,21 @@
         "cumresources": "https://medium.com/cumulo-pro/dymension-mainnet-validator-community-resources-38f20c9f0091#8bdf",
         "twitter": "",
         "grpc": "212.23.222.109:9070",
-        "rpc": "http://212.23.222.109:26757 ",
+        "rpc": "http://212.23.222.109:26757",
         "evmrpc": "",
         "webservices": "",
-        "services": "",
+        "services": "Public Endpoints",
         "explorer": ""
+    },
+	{
+        "validator": "Allnodes",
+        "cumresources": "https://medium.com/cumulo-pro/dymension-mainnet-validator-community-resources-38f20c9f0091#d9c7",
+        "twitter": "",
+        "grpc": "212.23.222.109:9070",
+        "rpc": "https://dymension-rpc.publicnode.com:443",
+        "evmrpc": "https://dymension-evm-rpc.publicnode.com",
+        "webservices": "https://dymension.publicnode.com/",
+        "services": "Public Endpoints | Dashboard",
+        "explorer": "https://validator.info/dymension"
     }
 ]
