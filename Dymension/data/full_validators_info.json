@@ -363,7 +363,7 @@
         "explorer": "https://validator.info/dymension"
     },
 	{
-        "validator": "POSTHUMAN",
+        "validator": "POSTHUMAN | StakeDrop",
         "cumresources": "https://medium.com/cumulo-pro/dymension-mainnet-validator-community-resources-38f20c9f0091#9279",
         "twitter": "POSTHUMAN_DVS",
         "grpc": "grpc.dymension.posthuman.digital",
