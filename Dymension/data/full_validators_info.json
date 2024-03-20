@@ -361,5 +361,16 @@
         "webservices": "https://dymension.publicnode.com/",
         "services": "Public Endpoints | Dashboard",
         "explorer": "https://validator.info/dymension"
+    },
+	{
+        "validator": "POSTHUMAN",
+        "cumresources": "https://medium.com/cumulo-pro/dymension-mainnet-validator-community-resources-38f20c9f0091#9279",
+        "twitter": "POSTHUMAN_DVS",
+        "grpc": "grpc.dymension.posthuman.digital",
+        "rpc": "https://rpc.dymension.posthuman.digital",
+        "evmrpc": "https://evm-rpc.dymension.posthuman.digital",
+        "webservices": "https://nodes.posthuman.digital/chains/dymension",
+        "services": "Installation guide | Public Endpoints | StateSync",
+        "explorer": "https://explorer.posthuman.digital/dymension"
     }
 ]
