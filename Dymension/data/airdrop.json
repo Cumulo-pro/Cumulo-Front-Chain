@@ -1,0 +1,65 @@
+[
+{
+        "airdrop": "NIM Network",
+        "type": "rollapp",
+        "twitter": "nim_network",
+        "claim": "https://claim.nim.network/",
+        "requirement": "Dym stake",
+        "claim_open": "yes",
+        "token": "NIM"
+  },
+{
+        "airdrop": "dogmond",
+        "type": "rollapp",
+        "twitter": "dogmondcoin",
+        "claim": "no",
+        "requirement": "Dym stake",
+        "claim_open": "no",
+        "token": "DGM"
+  },
+{
+        "airdrop": "Aigisos",
+        "type": "rollapp",
+        "twitter": "aigisos",
+        "claim": "no",
+        "requirement": "Dym stake",
+        "claim_open": "no",
+        "token": "AIG"
+  },
+{
+        "airdrop": "Rivalz",
+        "type": "rollapp",
+        "twitter": "aigisos",
+        "claim": "no",
+        "requirement": "Dym stake",
+        "claim_open": "no",
+        "token": "RIZ"
+  },
+{
+        "airdrop": "Rivalz",
+        "type": "Cosmos Exchange ",
+        "twitter": "SputnikNetwork",
+        "claim": "no",
+        "requirement": "Dym stake",
+        "claim_open": "no",
+        "token": "SIGNAL"
+  },
+{
+        "airdrop": "Nebula Finance",
+        "type": "Modular Liquid Staking",
+        "twitter": "NebulaFi_",
+        "claim": "no",
+        "requirement": "Dym stake",
+        "claim_open": "no",
+        "token": "NBL"
+  },
+{
+        "airdrop": "Crow Network",
+        "type": "rollapp",
+        "twitter": "crownetworkxyz",
+        "claim": "no",
+        "requirement": "Dym stake",
+        "claim_open": "no",
+        "token": ""
+  }
+]
