@@ -3,6 +3,7 @@
         "airdrop": "NIM Network",
         "type": "rollapp",
         "twitter": "nim_network",
+        "logo": "nim.jpg",
         "claim": "https://claim.nim.network/",
         "requirement": "Dym stake",
         "claim_open": "yes",
@@ -13,6 +14,7 @@
         "type": "rollapp",
         "twitter": "dogmondcoin",
         "claim": "no",
+        "logo": "dogmond.jpg",
         "requirement": "Dym stake",
         "claim_open": "no",
         "token": "DGM"
@@ -22,6 +24,7 @@
         "type": "rollapp",
         "twitter": "aigisos",
         "claim": "no",
+        "logo": "aigisos.jpg",
         "requirement": "Dym stake",
         "claim_open": "no",
         "token": "AIG"
@@ -31,6 +34,7 @@
         "type": "rollapp",
         "twitter": "aigisos",
         "claim": "no",
+        "logo": "rivalz.jpg",
         "requirement": "Dym stake",
         "claim_open": "no",
         "token": "RIZ"
