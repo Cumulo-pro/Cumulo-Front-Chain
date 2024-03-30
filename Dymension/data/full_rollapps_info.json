@@ -5,16 +5,17 @@
         "twitter": "nim_network",
         "public": "no",
         "content": "https://medium.com/@NIM_Network/nim-network-the-ai-gaming-chain-e9abd55b8359",
+        "Submission": "https://forum.dymension.xyz/t/rollapp-submission-introducing-nim-network-the-first-rollapp-on-dymension/1236",
         "logo": "nim.jpg",
         "airdrop": "y",
-        "airdrop_info": "n"
+        "airdrop_info": "https://claim.nim.network/"
    },
 {
         "rollapp": "Aigisos",
         "type_rollapp": "AI + Security",
         "twitter": "aigsios",
         "public": "no",
-        "forum": "https://forum.dymension.xyz/t/rollapp-submission-introducing-aigisos-rollapp-a-security-oriented-blockchain-with-a-novel-consensus-algorithm-on-dymension/1568",
+        "Submission": "https://forum.dymension.xyz/t/rollapp-submission-introducing-aigisos-rollapp-a-security-oriented-blockchain-with-a-novel-consensus-algorithm-on-dymension/1568",
         "logo": "aigisos.jpg",
         "airdrop": "y",
         "airdrop_info": "n"
@@ -24,7 +25,7 @@
         "type_rollapp": "meme",
         "twitter": "dogmondcoin",
         "public": "no",
-        "forum": "https://forum.dymension.xyz/t/rollapp-submission-introducing-dogmond-the-first-memecoin-rollup-on-dymension/2012",
+        "Submission": "https://forum.dymension.xyz/t/rollapp-submission-introducing-dogmond-the-first-memecoin-rollup-on-dymension/2012",
         "logo": "dogmond.jpg",
         "airdrop": "y",
         "airdrop_info": "n"
@@ -36,6 +37,7 @@
         "public": "no",
         "taskword": "get the Galxe OAT and points",
         "task": "https://galxe.com/C2Wv8y372ySiBacsLiZnLu/campaign/GCJshtT6a9?referral_code=GRFr2JJi7em3Qja9ZtvCcCVjIlCl3ygC3l-aCoypNgjTQ5r",
+        "Submission": "https://forum.dymension.xyz/t/introducing-rivalz-network-the-first-ai-depin-rollapp-on-dymension/2737",
         "logo": "rivalz.jpg",
         "airdrop": "y",
         "airdrop_info": "n"
