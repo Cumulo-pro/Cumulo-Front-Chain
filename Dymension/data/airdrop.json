@@ -64,6 +64,7 @@
         "type": "rollapp",
         "twitter": "crownetworkxyz",
         "claim": "no",
+        "logo" : "crow.jpg",
         "requirement": "Dym stake",
         "claim_open": "no",
         "token": ""
