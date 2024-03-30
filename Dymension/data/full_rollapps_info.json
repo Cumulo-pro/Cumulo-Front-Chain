@@ -8,7 +8,7 @@
         "Submission": "https://forum.dymension.xyz/t/rollapp-submission-introducing-nim-network-the-first-rollapp-on-dymension/1236",
         "logo": "nim.jpg",
         "airdrop": "y",
-        "airdrop_info": "https://claim.nim.network/"
+        "airdrop_claim": "https://claim.nim.network/"
    },
 {
         "rollapp": "Aigisos",
@@ -18,7 +18,7 @@
         "Submission": "https://forum.dymension.xyz/t/rollapp-submission-introducing-aigisos-rollapp-a-security-oriented-blockchain-with-a-novel-consensus-algorithm-on-dymension/1568",
         "logo": "aigisos.jpg",
         "airdrop": "y",
-        "airdrop_info": "n"
+        "airdrop_claim": "n"
    },
 {
         "rollapp": "dogmond",
@@ -28,7 +28,7 @@
         "Submission": "https://forum.dymension.xyz/t/rollapp-submission-introducing-dogmond-the-first-memecoin-rollup-on-dymension/2012",
         "logo": "dogmond.jpg",
         "airdrop": "y",
-        "airdrop_info": "n"
+        "airdrop_claim": "n"
    },
 {
         "rollapp": "Rivalz DePIN",
@@ -40,6 +40,6 @@
         "Submission": "https://forum.dymension.xyz/t/introducing-rivalz-network-the-first-ai-depin-rollapp-on-dymension/2737",
         "logo": "rivalz.jpg",
         "airdrop": "y",
-        "airdrop_info": "n"
+        "airdrop_claim": "n"
    }
 ]
