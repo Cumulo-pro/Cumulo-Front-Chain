@@ -54,6 +54,7 @@
         "type": "Modular Liquid Staking",
         "twitter": "NebulaFi_",
         "claim": "no",
+        "logo" : "nebula.jpg";
         "requirement": "Dym stake",
         "claim_open": "no",
         "token": "NBL"
