@@ -1,7 +1,7 @@
 [
 {
         "airdrop": "NIM Network",
-        "type": "rollapp",
+        "type": "DYM rollapp",
         "twitter": "nim_network",
         "logo": "nim.jpg",
         "claim": "https://claim.nim.network/",
@@ -11,7 +11,7 @@
   },
 {
         "airdrop": "dogmond",
-        "type": "rollapp",
+        "type": "DYM rollapp",
         "twitter": "dogmondcoin",
         "claim": "no",
         "logo": "dogmond.jpg",
@@ -21,7 +21,7 @@
   },
 {
         "airdrop": "Aigisos",
-        "type": "rollapp",
+        "type": "DYM rollapp",
         "twitter": "aigisos",
         "claim": "no",
         "logo": "aigisos.jpg",
@@ -31,7 +31,7 @@
   },
 {
         "airdrop": "Rivalz",
-        "type": "rollapp",
+        "type": "DYM rollapp",
         "twitter": "aigisos",
         "claim": "no",
         "logo": "rivalz.jpg",
@@ -61,7 +61,7 @@
   },
 {
         "airdrop": "Crow Network",
-        "type": "rollapp",
+        "type": "DYM rollapp",
         "twitter": "crownetworkxyz",
         "claim": "no",
         "logo" : "crow.jpg",
