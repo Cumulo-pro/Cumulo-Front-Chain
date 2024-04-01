@@ -4,9 +4,9 @@ extract RPC cumulo query
 
 <?php
 //error_reporting(0);
-$rpc ="http://74.208.16.201:26647/"; //default value
+$rpc ="http://82.223.0.229:26637/"; //default value
 header('Content-Type: text/html; charset=utf-8');
-$net="froopyland_100-1";
+$net="dymension_1100-1";
 
 
 //extract from RPC
@@ -29,30 +29,8 @@ $allData=$json->result;
 		echo "chain-id: ".$net;
 		echo "block hash ".$param.": ".$hash;
 break;
-case $pide=="get_token":
-$data_json = file_get_contents('http://74.208.16.201:26647/genesis?');
-$json = json_decode($data_json);
-$allData=$json->result;
-	$genesis=$allData->genesis;
-		$app_state=$genesis->app_state;
-			$bank=$app_state->bank;
-				$denom_metadata=$bank->denom_metadata;		
-				$symbol=$denom_metadata{0}->symbol;
-				echo $symbol;
-break;
-case $pide=="get_base_token":
-$data_json = file_get_contents('http://74.208.16.201:26647/genesis?');
-$json = json_decode($data_json);
-$allData=$json->result;
-	$genesis=$allData->genesis;
-		$app_state=$genesis->app_state;
-			$bank=$app_state->bank;
-				$denom_metadata=$bank->denom_metadata;		
-				$base=$denom_metadata{0}->base;
-				echo $base;
-break;
 case $pide=="get_max_validators":
-$data_json = file_get_contents('http://74.208.16.201:26647/genesis?');
+$data_json = file_get_contents('http://82.223.0.229:26637/genesis?');
 $json = json_decode($data_json);
 $allData=$json->result;
 	$genesis=$allData->genesis;
@@ -63,7 +41,7 @@ $allData=$json->result;
 				echo $max_validators;
 break;
 case $pide=="get_unbonding_time":
-$data_json = file_get_contents('http://74.208.16.201:26647/genesis?');
+$data_json = file_get_contents('http://82.223.0.229:26637/genesis?');
 $json = json_decode($data_json);
 $allData=$json->result;
 	$genesis=$allData->genesis;
