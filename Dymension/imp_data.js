@@ -59,20 +59,6 @@ var request = new XMLHttpRequest();
          }
          request.send();		
 }
-function rpc_scam () {
-var request = new XMLHttpRequest();
-         request.open("GET", "libs/rpc_scam.php");
-		  async: false; // La petición es síncrona
-		 cache: false; // No queremos usar la caché del navegador
-         request.onreadystatechange = function()
-         {
-             if (request.readyState == 4 && request.status == 200)
-             {
-                 document.getElementById("rpc_scam").innerHTML = request.responseText;
-		     }
-         }
-         request.send();		
-}
 function validator_set () {
 var request = new XMLHttpRequest();
          request.open("GET", "libs/validators_set.php");
@@ -87,6 +73,33 @@ var request = new XMLHttpRequest();
          }
          request.send();		
 }
-
+function get_node (data) {
+var request = new XMLHttpRequest();
+         request.open("GET", "libs/get_node.php?dato="+data);
+		  async: false; // La petición es síncrona
+		 cache: false; // No queremos usar la caché del navegador
+         request.onreadystatechange = function()
+         {
+             if (request.readyState == 4 && request.status == 200)
+             {
+                 document.getElementById(data).innerHTML = request.responseText;
+		     }
+         }
+         request.send();		
+}
+function get_api (data) {
+var request = new XMLHttpRequest();
+         request.open("GET", "libs/get_api.php?dato="+data);
+		  async: false; // La petición es síncrona
+		 cache: false; // No queremos usar la caché del navegador
+         request.onreadystatechange = function()
+         {
+             if (request.readyState == 4 && request.status == 200)
+             {
+                 document.getElementById(data).innerHTML = request.responseText;
+		     }
+         }
+         request.send();		
+}
 
 
