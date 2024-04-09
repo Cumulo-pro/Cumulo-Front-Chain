@@ -44,5 +44,16 @@
         "content": "https://rivalz.ai",
         "airdrop": "y",
         "airdrop_claim": "n"
+   },
+        {
+        "rollapp": "GATA",
+        "type_rollapp": "NFT Marketplace",
+        "twitter": "GataDaoZone",
+        "public": "no",
+        "Submission": "https://forum.dymension.xyz/t/rollapp-submission-introducing-gata-hub-rollapp-a-yield-hub-on-dymension/3088",
+        "logo": "gata.jpg",
+        "content": "https://docs.gatahub.zone/welcome-to-gitbook",
+        "airdrop": "y",
+        "airdrop_claim": "n"
    }
 ]
