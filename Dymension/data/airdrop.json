@@ -7,7 +7,8 @@
         "claim": "https://claim.nim.network/",
         "requirement": "Dym stake",
         "claim_open": "yes",
-        "token": "NIM"
+        "token": "NIM",
+        "mount": "5% of Total supply is allocated to $DYM Stakers"
   },
 {
         "airdrop": "dogmond",
