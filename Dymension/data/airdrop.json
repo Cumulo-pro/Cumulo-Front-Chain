@@ -18,7 +18,8 @@
         "logo": "dogmond.jpg",
         "requirement": "Dym stake",
         "claim_open": "no",
-        "token": "DGM"
+        "token": "DGM",
+        "mount": "40% of DGM to DYM stakers"
   },
 {
         "airdrop": "Aigisos",
