@@ -28,7 +28,8 @@
         "logo": "aigisos.jpg",
         "requirement": "Dym stake",
         "claim_open": "no",
-        "token": "AIG"
+        "token": "AIG",
+        "mount": "12% of AIG supply to be airdropped to DYM stakers via Genesis RollDrop"
   },
 {
         "airdrop": "Rivalz",
@@ -39,7 +40,7 @@
         "requirement": "Dym stake",
         "claim_open": "no",
         "token": "RIZ",
-        "mount": "DYM Stakers can expect a Rolldrop for RIZ."
+        "mount": "DYM Stakers can expect a Rolldrop for RIZ"
   },
 {
         "airdrop": "Sputnik Network",
