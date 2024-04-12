@@ -4,10 +4,12 @@
         "type_rollapp": "Gaming",
         "twitter": "nim_network",
         "public": "no",
+        "about": "Rollapp gaming experience combining cutting-edge tech with gaming fundamentals. Utilizes Dymension and Celestia DA tech, based on EVM",
         "content": "https://medium.com/@NIM_Network/nim-network-the-ai-gaming-chain-e9abd55b8359",
         "Submission": "https://forum.dymension.xyz/t/rollapp-submission-introducing-nim-network-the-first-rollapp-on-dymension/1236",
         "logo": "nim.jpg",
         "airdrop": "f",
+        "web": "https://medium.com/@NIM_Network",
         "airdrop_claim": "https://claim.nim.network/"
    },
 {
