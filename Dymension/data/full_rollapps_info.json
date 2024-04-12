@@ -22,7 +22,8 @@
         "logo": "aigisos.jpg",
         "content": "https://drive.google.com/file/d/1ZUYITOtyMoeFYbFcPkwO2o7jrSFJ5Z-x/view",
         "airdrop": "y",
-        "airdrop_claim": "n"
+        "airdrop_claim": "n",
+        "web": "https://aigisos.com/"
    },
 {
         "rollapp": "dogmond",
