@@ -48,7 +48,8 @@
         "logo": "rivalz.jpg",
         "content": "https://rivalz.ai",
         "airdrop": "y",
-        "airdrop_claim": "n"
+        "airdrop_claim": "n",
+        "web": "https://rivalz.ai"
    },
         {
         "rollapp": "GATA",
@@ -60,6 +61,6 @@
         "content": "https://docs.gatahub.zone/welcome-to-gitbook",
         "airdrop": "y",
         "airdrop_claim": "n",
-        "web": "https://rivalz.ai"
+        "web": "https://gatahub.zone"
    }
 ]
