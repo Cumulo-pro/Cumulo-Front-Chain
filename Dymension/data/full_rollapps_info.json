@@ -17,6 +17,7 @@
         "type_rollapp": "AI + Security",
         "twitter": "aigisos",
         "public": "no",
+        "about": "Security-focused blockchain aiming to advance security within the blockchain domain. Designed to be a Dymension RollApp, enhancing honest node verification and featuring a robust ecosystem with 3 to 5 native DApps. ",
         "Submission": "https://forum.dymension.xyz/t/rollapp-submission-introducing-aigisos-rollapp-a-security-oriented-blockchain-with-a-novel-consensus-algorithm-on-dymension/1568",
         "logo": "aigisos.jpg",
         "content": "https://drive.google.com/file/d/1ZUYITOtyMoeFYbFcPkwO2o7jrSFJ5Z-x/view",
@@ -57,6 +58,7 @@
         "logo": "gata.jpg",
         "content": "https://docs.gatahub.zone/welcome-to-gitbook",
         "airdrop": "y",
-        "airdrop_claim": "n"
+        "airdrop_claim": "n",
+        "web": "https://rivalz.ai"
    }
 ]
