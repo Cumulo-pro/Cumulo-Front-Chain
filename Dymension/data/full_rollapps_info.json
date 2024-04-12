@@ -63,5 +63,18 @@
         "airdrop": "y",
         "airdrop_claim": "n",
         "web": "https://gatahub.zone"
+   },
+         {
+        "rollapp": "Nebula Finance",
+        "type_rollapp": "Modular Liquid Staking RollApp",
+        "twitter": "NebulaFi_",
+        "public": "no",
+        "about": "",        
+        "Submission": "",
+        "logo": "nebular.jpg",
+        "content": "",
+        "airdrop": "",
+        "airdrop_claim": "",
+        "web": ""
    }
 ]
