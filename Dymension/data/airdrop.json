@@ -8,7 +8,7 @@
         "requirement": "Dym stake",
         "claim_open": "yes",
         "token": "NIM",
-        "mount": "5% of Total supply is allocated to $DYM Stakers"
+        "mount": "5% of Total supply is allocated to DYM Stakers"
   },
 {
         "airdrop": "dogmond",
@@ -38,7 +38,8 @@
         "logo": "rivalz.jpg",
         "requirement": "Dym stake",
         "claim_open": "no",
-        "token": "RIZ"
+        "token": "RIZ",
+        "mount": "DYM Stakers can expect a Rolldrop for RIZ."
   },
 {
         "airdrop": "Sputnik Network",
