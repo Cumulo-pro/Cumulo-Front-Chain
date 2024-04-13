@@ -34,7 +34,8 @@
         "logo": "dogmond.jpg",
         "content": "no",
         "airdrop": "y",
-        "airdrop_claim": "n"
+        "airdrop_claim": "n",
+        "web": ""
    },
 {
         "rollapp": "Rivalz DePIN",
