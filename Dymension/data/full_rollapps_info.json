@@ -39,7 +39,7 @@
    },
 {
         "rollapp": "Rivalz DePIN",
-        "type_rollapp": "AI-driven Personal Data Provenance",
+        "type_rollapp": "Personal Data Provenance",
         "twitter": "Rivalz_AI",
         "public": "no",
         "about": "AI-driven DePIN RollApp designed to establish a future-proof AI Provenance Data Layer, fostering a modular ecosystem of AI applications",
@@ -67,7 +67,7 @@
    },
          {
         "rollapp": "Nebula Finance",
-        "type_rollapp": "Modular Liquid Staking RollApp",
+        "type_rollapp": "Modular Liquid Staking",
         "twitter": "NebulaFi_",
         "public": "no",
         "about": "",        
