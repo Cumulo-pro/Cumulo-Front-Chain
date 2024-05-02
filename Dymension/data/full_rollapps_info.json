@@ -3,7 +3,7 @@
         "rollapp": "NIM Network",
         "type_rollapp": "Gaming",
         "twitter": "nim_network",
-        "public": "no",
+        "public": "yes",
         "about": "Rollapp gaming experience combining cutting-edge tech with gaming fundamentals. Utilizes Dymension and Celestia DA tech, based on EVM",
         "content": "https://medium.com/@NIM_Network/nim-network-the-ai-gaming-chain-e9abd55b8359",
         "Submission": "https://forum.dymension.xyz/t/rollapp-submission-introducing-nim-network-the-first-rollapp-on-dymension/1236",
@@ -77,5 +77,18 @@
         "airdrop": "?",
         "airdrop_claim": "",
         "web": ""
+   },
+         {
+        "rollapp": "Mande Network",
+        "type_rollapp": "Proof of Credibility (PoC)",
+        "twitter": "MandeNetwork",
+        "public": "no",
+        "about": "Mande Network launches strategic initiatives to strengthen the credibility of DApps and foster innovations in areas such as social media, governance, dating, AI, and finance.",        
+        "Submission": "https://forum.dymension.xyz/t/introducing-mande-network-the-onchain-credibility-hub-for-web3/3404",
+        "logo": "mande.png",
+        "content": "https://app.mande.network/",
+        "airdrop": "y",
+        "airdrop_claim": "n",
+        "web": "https://www.mande.network/"
    }
 ]
