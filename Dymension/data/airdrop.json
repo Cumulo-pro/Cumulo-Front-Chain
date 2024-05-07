@@ -10,6 +10,16 @@
         "token": "NIM",
         "mount": "5% of Total supply is allocated to DYM Stakers"
   },
+         {
+        "airdrop": "Mande Network",
+        "type": "Proof of Credibility (PoC)",
+        "twitter": "MandeNetwork",
+        "claim": "no",
+        "logo" : "mande.png",
+        "requirement": "Dym stake",
+        "claim_open": "no",
+        "token": "mand"
+  },
 {
         "airdrop": "dogmond",
         "type": "DYM rollapp",
