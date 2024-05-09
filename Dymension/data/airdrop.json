@@ -6,7 +6,7 @@
         "logo": "nim.jpg",
         "claim": "finish",
         "requirement": "Dym stake",
-        "claim_open": "no",
+        "claim_open": "f",
         "token": "NIM",
         "mount": "5% of Total supply is allocated to DYM Stakers"
   },
