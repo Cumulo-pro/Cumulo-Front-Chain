@@ -10,7 +10,7 @@
         "logo": "nim.jpg",
         "airdrop": "f",
         "web": "https://medium.com/@NIM_Network",
-        "airdrop_claim": "https://claim.nim.network/"
+        "airdrop_claim": "finish"
    },
 {
         "rollapp": "Aigisos",
@@ -88,7 +88,7 @@
         "logo": "mande.png",
         "content": "https://app.mande.network/",
         "airdrop": "y",
-        "airdrop_claim": "n",
+        "airdrop_claim": "https://rolldrop.mande.network/",
         "web": "https://www.mande.network/"
    }
 ]
