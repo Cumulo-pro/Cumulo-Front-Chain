@@ -4,9 +4,9 @@
         "type": "DYM rollapp",
         "twitter": "nim_network",
         "logo": "nim.jpg",
-        "claim": "https://claim.nim.network/",
+        "claim": "finish",
         "requirement": "Dym stake",
-        "claim_open": "yes",
+        "claim_open": "no",
         "token": "NIM",
         "mount": "5% of Total supply is allocated to DYM Stakers"
   },
@@ -14,10 +14,10 @@
         "airdrop": "Mande Network",
         "type": "Proof of Credibility (PoC)",
         "twitter": "MandeNetwork",
-        "claim": "no",
+        "claim": "https://rolldrop.mande.network/",
         "logo" : "mande.png",
         "requirement": "Dym stake",
-        "claim_open": "no",
+        "claim_open": "yes",
         "token": "mand"
   },
 {
