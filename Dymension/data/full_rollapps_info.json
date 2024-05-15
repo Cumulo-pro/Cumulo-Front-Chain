@@ -90,5 +90,18 @@
         "airdrop": "y",
         "airdrop_claim": "https://rolldrop.mande.network/",
         "web": "https://www.mande.network/"
+   },
+         {
+        "rollapp": "Crynux",
+        "type_rollapp": "AI",
+        "twitter": "crynuxai",
+        "public": "no",
+        "about": "The key to the real DeAI is a robust consensus protocol that enables the permissionless joining and using of the decentralized network by millions",        
+        "Submission": "",
+        "logo": "crynux.jpg",
+        "content": "https://t.co/RXYW447vIm",
+        "airdrop": "?",
+        "airdrop_claim": "",
+        "web": "https://crynux.ai/"
    }
 ]
