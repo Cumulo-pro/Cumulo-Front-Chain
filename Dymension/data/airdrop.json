@@ -77,10 +77,10 @@
         "airdrop": "Crow Network",
         "type": "DYM rollapp",
         "twitter": "crownetworkxyz",
-        "claim": "no",
+        "claim": "https://x.com/crownetworkxyz/status/1794043062966157477",
         "logo" : "crow.jpg",
         "requirement": "Dym stake",
-        "claim_open": "no",
+        "claim_open": "yes",
         "token": ""
   }
 ]
