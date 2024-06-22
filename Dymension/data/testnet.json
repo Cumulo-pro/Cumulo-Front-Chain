@@ -2,7 +2,7 @@
   {
     "rollapp": "Crynux",
     "logo": "crynux.jpg",
-    "web": "https://crynux.ai/"
+    "web": "https://crynux.ai/",
     "testneturl": "https://docs.crynux.ai/node-hosting/start-a-node/start-a-node-mac",
     "finish": "n",
     "incentivized": "y",
@@ -11,7 +11,7 @@
   {
     "rollapp": "Rivalz",
     "logo": "rivalz.jpg",
-    "web": "https://rivalz.ai"
+    "web": "https://rivalz.ai",
     "testneturl": "https://docs.rivalz.ai/testnet/testnet-guide",
     "finish": "n",
     "incentivized": "y",
