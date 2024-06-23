@@ -6,7 +6,8 @@
     "testneturl": "https://docs.crynux.ai/node-hosting/start-a-node/start-a-node-mac",
     "finish": "n",
     "incentivized": "y",
-    "twitter": "https://x.com/crynuxai/status/1802672338124644375"
+    "twitter": "https://x.com/crynuxai/status/1802672338124644375",
+    "resume": "The Crynux Testnet is a blockchain network designed for developers to deploy and test nodes on macOS, ensuring compatibility and performance before mainnet launch."
   },
   {
     "rollapp": "Rivalz",
@@ -15,6 +16,7 @@
     "testneturl": "https://docs.rivalz.ai/testnet/testnet-guide",
     "finish": "n",
     "incentivized": "y",
-    "twitter": "https://x.com/Rivalz_AI/status/1793973007138136116"
+    "twitter": "https://x.com/Rivalz_AI/status/1793973007138136116",
+    "resume": "The Rivalz Testnet guide provides instructions for setting up and participating in the Rivalz blockchain test network, aimed at developers and validators to test network features and performance."
   }
 ]
