@@ -72,15 +72,5 @@
         "requirement": "Dym stake",
         "claim_open": "no",
         "token": "NBL"
-  },
-{
-        "airdrop": "Crow Network",
-        "type": "DYM rollapp",
-        "twitter": "crownetworkxyz",
-        "claim": "https://x.com/crownetworkxyz/status/1794043062966157477",
-        "logo" : "crow.jpg",
-        "requirement": "Dym stake",
-        "claim_open": "yes",
-        "token": ""
   }
 ]
