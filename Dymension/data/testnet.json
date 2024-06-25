@@ -1,5 +1,15 @@
 [
   {
+    "rollapp": "Aigisos",
+    "logo": "aigisos.jpg",
+    "web": "https://aigisos.com/",
+    "testneturl": "https://aigisos.medium.com/aigisos-incentivized-testnet-9acfc3bb427c",
+    "finish": "n",
+    "incentivized": "y",
+    "twitter": "https://x.com/aigisos/status/1805591856052420675",
+    "resume": "The AigisOS incentivized testnet invites participants to earn rewards in AIG and ADX tokens as they contribute to the network's mainnet launch."
+  },
+  {
     "rollapp": "Crynux",
     "logo": "crynux.jpg",
     "web": "https://crynux.ai/",
