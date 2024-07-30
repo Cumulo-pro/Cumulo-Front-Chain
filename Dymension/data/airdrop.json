@@ -1,4 +1,15 @@
 [
+        {
+        "airdrop": "Crynux",
+        "type": "DYM rollapp",
+        "twitter": "crynuxai",
+        "logo": "crynux.jpg",
+        "claim": "no",
+        "requirement": "Dym stake",
+        "claim_open": "no",
+        "token": "CNX",
+        "mount": ""
+  },
 {
         "airdrop": "NIM Network",
         "type": "DYM rollapp",
