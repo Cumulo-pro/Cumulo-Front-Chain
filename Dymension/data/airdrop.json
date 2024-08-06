@@ -10,17 +10,6 @@
         "token": "AIG",
         "mount": "12% of AIG supply to be airdropped to DYM stakers via Genesis RollDrop"
   },
-        {
-        "airdrop": "Crynux",
-        "type": "DYM rollapp",
-        "twitter": "crynuxai",
-        "logo": "crynux.jpg",
-        "claim": "no",
-        "requirement": "Dym stake",
-        "claim_open": "no",
-        "token": "CNX",
-        "mount": ""
-  },
 {
         "airdrop": "NIM Network",
         "type": "DYM rollapp",
@@ -83,5 +72,16 @@
         "requirement": "Dym stake",
         "claim_open": "no",
         "token": "NBL"
+  },
+        {
+        "airdrop": "Crynux",
+        "type": "DYM rollapp",
+        "twitter": "crynuxai",
+        "logo": "crynux.jpg",
+        "claim": "no",
+        "requirement": "Dym stake",
+        "claim_open": "no",
+        "token": "CNX",
+        "mount": ""
   }
 ]
