@@ -1,5 +1,16 @@
 [
         {
+        "airdrop": "Aigisos",
+        "type": "DYM rollapp",
+        "twitter": "aigisos",
+        "claim": "https://aigisos.medium.com/aigisos-genesis-rolldrop-8de869192404",
+        "logo": "aigisos.jpg",
+        "requirement": "Dym stake",
+        "claim_open": "yes",
+        "token": "AIG",
+        "mount": "12% of AIG supply to be airdropped to DYM stakers via Genesis RollDrop"
+  },
+        {
         "airdrop": "Crynux",
         "type": "DYM rollapp",
         "twitter": "crynuxai",
@@ -41,17 +52,6 @@
         "claim_open": "no",
         "token": "DGM",
         "mount": "40% of DGM to DYM stakers"
-  },
-{
-        "airdrop": "Aigisos",
-        "type": "DYM rollapp",
-        "twitter": "aigisos",
-        "claim": "no",
-        "logo": "aigisos.jpg",
-        "requirement": "Dym stake",
-        "claim_open": "no",
-        "token": "AIG",
-        "mount": "12% of AIG supply to be airdropped to DYM stakers via Genesis RollDrop"
   },
 {
         "airdrop": "Rivalz",
