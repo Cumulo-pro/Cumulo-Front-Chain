@@ -1,7 +1,7 @@
 [
         {
         "validator": "StakingCabin",
-        "celestiaources": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakingcabin",
+        "celestiaresources": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakingcabin",
         "x": "StakingCabin",
         "validatorlogo": "StakingCabin.jpg",
         "grpc": "celestia-mainnet.stakingcabin.com:443",
@@ -15,7 +15,7 @@
     },
 {
         "validator": "kjnodes.com",
-        "cumresources": "",
+        "celestiaresources": "",
         "x": "Kjnodes",
         "validatorlogo": "kjnodes.jpg",
         "grpc": "",
@@ -25,7 +25,7 @@
     },
     {
         "validator": "Nodeist",
-        "cumresources": "",
+        "celestiaresources": "",
         "x": "Nodeistt",
         "grpc": "",
         "rpc": "",
@@ -35,7 +35,7 @@
     },
     {
         "validator": "STAVR",
-        "cumresources": "",
+        "celestiaresources": "",
         "x": "",
         "grpc": "",
         "webservices": "",
@@ -62,7 +62,7 @@
     },
     {
         "validator": "NODERS TEAM",
-        "cumresources": "",
+        "celestiaresources": "",
         "x": "NODERS_TEAM",
         "grpc": "",
         "rpc": "",
@@ -71,7 +71,7 @@
     },
 {
         "validator": "𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀",
-        "cumresources": "",
+        "celestiaresources": "",
         "x": "lesnik13utsa",
         "grpc": "",
         "rpc": "",
@@ -81,7 +81,7 @@
     },
     {
         "validator": "Pro-nodes",
-        "cumresources": "",
+        "celestiaresources": "",
         "x": "NSvv28",
         "grpc": "",
         "rpc": "",
@@ -91,7 +91,7 @@
     },
     {
         "validator": "STAKEME",
-        "cumresources": "",
+        "celestiaresources": "",
         "x": "stakeme_pro",
         "grpc": "",
         "webservices": "",
@@ -100,7 +100,7 @@
     },
    {
         "validator": "Cumulo",
-        "cumresources": "",
+        "celestiaresources": "",
         "x": "Cumulo_pro",
         "grpc": "",
         "rpc": "",
@@ -110,7 +110,7 @@
     },
      {
         "validator": "Nodes.Guru",
-        "celestiaources": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#nodesguru",
+        "celestiaresources": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#nodesguru",
         "x": "NodesGuru",
         "validatorlogo": "nodesguru.png",
         "grpc": "grpc-1.celestia.nodes.guru:10790",
@@ -124,7 +124,7 @@
     },
      {
         "validator": "Qubelabs",
-        "cumresources": "",
+        "celestiaresources": "",
         "x": "qubelabs",
         "grpc": "",
         "rpc": "",
@@ -134,7 +134,7 @@
     },
     {
         "validator": "MZONDER",
-        "cumresources": "",
+        "celestiaresources": "",
         "x": "mzonder",
         "grpc": "",
         "rpc": "",
@@ -144,7 +144,7 @@
     },
     {
         "validator": "P-OPS Team",
-        "cumresources": "",
+        "celestiaresources": "",
         "x": "POpsTeam1",
         "grpc": "",
         "rpc": "",
@@ -154,7 +154,7 @@
     },
      {
         "validator": "BlackBlocks",
-        "celestiaources": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-blackblocks",
+        "celestiaresources": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-blackblocks",
         "x": "BlackBlocks_io",
         "validatorlogo": "blackblocks.jpg",
         "grpc": "",
