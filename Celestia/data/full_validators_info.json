@@ -10,7 +10,7 @@
         "peers" : "c5a23c66db975038c4eb131f65717059f597fe59@celestia-mainnet.stakingcabin.com:21656",
         "webservices": "https://www.stakingcabin.com/service/celestia",
         "tools" : "Validator sign block and consensus state check",
-        "tools_url" "https://github.com/stakingcabin/celestia-task",
+        "tools_url" : "https://github.com/stakingcabin/celestia-task",
         "services": ""
     },
 {
