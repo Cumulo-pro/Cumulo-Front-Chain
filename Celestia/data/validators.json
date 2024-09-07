@@ -18,7 +18,26 @@
         "Validator sign block and consensus state check": "https://github.com/stakingcabin/celestia-task"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#node-operator-contributions"
+},
+  {
+    "name": "Nodes.Guru",
+    "webservices": "",
+    "x": "NodesGuru",
+    "validatorlogo": "nodesguru.jpg",
+    "explorer": "https://celestia.explorers.guru/",
+    "peers": "",
+    "seeds": "",
+    "api": "https://api-1.celestia.nodes.guru",
+    "rpc": "https://rpc-1.celestia.nodes.guru",
+    "json-rpc": "",
+    "grpc": "grpc-1.celestia.nodes.guru:10790",
+    "snapshot": "",
+    "addrbook": "",
+    "tools": "NodesChecker Bot",
+    "tools_url": {
+        "NodesChecker Bot": "https://t.me/NodesGuru_bot"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#nodesguru"
 }
-
   
 ]
