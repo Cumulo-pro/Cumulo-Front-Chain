@@ -20,10 +20,10 @@
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#node-operator-contributions"
 },
   {
-    "name": "Nodes.Guru",
+    "name": "NodesGuru",
     "webservices": "",
     "x": "NodesGuru",
-    "validatorlogo": "nodesguru.jpg",
+    "validatorlogo": "nodesguru.PNG",
     "explorer": "https://celestia.explorers.guru/",
     "peers": "",
     "seeds": "",
