@@ -2,7 +2,7 @@
         {
         "validator": "StakingCabin",
         "celestiaources": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakingcabin",
-        "twitter": "StakingCabin",
+        "x": "StakingCabin",
         "validatorlogo": "StakingCabin.jpg",
         "grpc": "celestia-mainnet.stakingcabin.com:443",
         "rpc": "https://celestia-mainnet.stakingcabin.com",
@@ -16,7 +16,7 @@
 {
         "validator": "kjnodes.com",
         "cumresources": "",
-        "twitter": "Kjnodes",
+        "x": "Kjnodes",
         "validatorlogo": "kjnodes.jpg",
         "grpc": "",
         "rpc": "",
@@ -26,7 +26,7 @@
     {
         "validator": "Nodeist",
         "cumresources": "",
-        "twitter": "Nodeistt",
+        "x": "Nodeistt",
         "grpc": "",
         "rpc": "",
         "webservices": "",
@@ -36,7 +36,7 @@
     {
         "validator": "STAVR",
         "cumresources": "",
-        "twitter": "",
+        "x": "",
         "grpc": "",
         "webservices": "",
         "services": "",
@@ -45,7 +45,7 @@
     {
         "validator": "polkachu.com",
         "cumresources": "",
-        "twitter": "polka_chu",
+        "x": "polka_chu",
         "grpc": "",
         "rpc": "",
         "webservices": "",
@@ -54,7 +54,7 @@
     {
         "validator": "NodeStake",
         "cumresources": "",
-        "twitter": "NodeStake_top",
+        "x": "NodeStake_top",
         "grpc": "",
         "rpc": "",
         "webservices": "",
@@ -63,7 +63,7 @@
     {
         "validator": "NODERS TEAM",
         "cumresources": "",
-        "twitter": "NODERS_TEAM",
+        "x": "NODERS_TEAM",
         "grpc": "",
         "rpc": "",
         "webservices": "",
@@ -72,7 +72,7 @@
 {
         "validator": "𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀",
         "cumresources": "",
-        "twitter": "lesnik13utsa",
+        "x": "lesnik13utsa",
         "grpc": "",
         "rpc": "",
         "webservices": "",
@@ -82,7 +82,7 @@
     {
         "validator": "Pro-nodes",
         "cumresources": "",
-        "twitter": "NSvv28",
+        "x": "NSvv28",
         "grpc": "",
         "rpc": "",
         "webservices": "",
@@ -92,7 +92,7 @@
     {
         "validator": "STAKEME",
         "cumresources": "",
-        "twitter": "stakeme_pro",
+        "x": "stakeme_pro",
         "grpc": "",
         "webservices": "",
         "services": "Explorer",
@@ -101,7 +101,7 @@
    {
         "validator": "Cumulo",
         "cumresources": "",
-        "twitter": "Cumulo_pro",
+        "x": "Cumulo_pro",
         "grpc": "",
         "rpc": "",
         "webservices": "",
@@ -111,7 +111,7 @@
      {
         "validator": "Nodes.Guru",
         "cumresources": "",
-        "twitter": "NodesGuru",
+        "x": "NodesGuru",
         "grpc": "",
         "rpc": "",
         "webservices": "",
@@ -121,7 +121,7 @@
      {
         "validator": "Qubelabs",
         "cumresources": "",
-        "twitter": "qubelabs",
+        "x": "qubelabs",
         "grpc": "",
         "rpc": "",
         "webservices": "",
@@ -131,7 +131,7 @@
     {
         "validator": "MZONDER",
         "cumresources": "",
-        "twitter": "mzonder",
+        "x": "mzonder",
         "grpc": "",
         "rpc": "",
         "webservices": "",
@@ -141,7 +141,7 @@
     {
         "validator": "P-OPS Team",
         "cumresources": "",
-        "twitter": "POpsTeam1",
+        "x": "POpsTeam1",
         "grpc": "",
         "rpc": "",
         "webservices": "",
@@ -151,7 +151,7 @@
      {
         "validator": "NODEJUMPER",
         "cumresources": "",
-        "twitter": "nodejumper",
+        "x": "nodejumper",
         "grpc": "",
         "rpc": "",
         "webservices": "",
