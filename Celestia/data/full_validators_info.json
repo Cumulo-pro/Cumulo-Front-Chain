@@ -110,13 +110,17 @@
     },
      {
         "validator": "Nodes.Guru",
-        "cumresources": "",
+        "celestiaources": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#nodesguru",
         "x": "NodesGuru",
-        "grpc": "",
-        "rpc": "",
+        "validatorlogo": "nodesguru.png",
+        "grpc": "grpc-1.celestia.nodes.guru:10790",
+        "api": "https://api-1.celestia.nodes.guru",
+        "rpc": "https://rpc-1.celestia.nodes.guru",
         "webservices": "",
         "services": "Explorer",
-        "explorer": ""
+        "explorer": "https://celestia.explorers.guru/",
+        "tools" : "NodesChecker Bot",
+        "tools_url" : "https://t.me/NodesGuru_bot",
     },
      {
         "validator": "Qubelabs",
@@ -149,14 +153,17 @@
         "explorer": ""
     },
      {
-        "validator": "NODEJUMPER",
-        "cumresources": "",
-        "x": "nodejumper",
+        "validator": "BlackBlocks",
+        "celestiaources": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-blackblocks",
+        "x": "BlackBlocks_io",
+        "validatorlogo": "blackblocks.jpg",
         "grpc": "",
-        "rpc": "",
-        "webservices": "",
-        "services": "Guide & Useful commands| Snapshots | Addrbook | State Sync | Public Endpoints",
-        "explorer": ""
+        "rpc": "https://rpc.celestia-mainnet.blackblocks.io",
+        "webservices": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia",
+        "services": "explorer",
+        "explorer": "https://explorer.celestia-mainnet.blackblocks.io/",
+        "snapshot": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#full-node-archival-snapshot",
+        "bridgesnapshot": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#bridge-node-archival-snapshot" 
     }
    
 ]
