@@ -77,7 +77,9 @@
     "addrbook": "",
     "tools": "Snapshot, State-sync, Installation Guide",
     "tools_url": {
-        "Snapshot, State-sync, Installation Guide": "https://services.lavenderfive.com/mainnet/celestia"
+        "Snapshot": "https://services.lavenderfive.com/mainnet/celestia/snapshot", 
+        "State-sync" :"https://services.lavenderfive.com/mainnet/celestia/statesync", 
+        "Installation Guide": "https://services.lavenderfive.com/mainnet/celestia/installation"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-lavenderfive-nodes"
 },
