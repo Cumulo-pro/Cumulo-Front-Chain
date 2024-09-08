@@ -59,6 +59,28 @@
         "Full Node Archival": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#full-node-archival-snapshot"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-blackblocks"
+},
+{
+    "name": "BlackNodes",
+    "webservices": "",
+    "x": "blacknodes",
+    "validatorlogo": "blacknodes.jpg",
+    "explorer": "https://explorer.blacknodes.net/celestia",
+    "peers": "",
+    "seeds": "",
+    "api": "",
+    "rpc": "https://celestia-testnet-rpc.blacknodes.net",
+    "json-rpc": "",
+    "grpc": "celestia-testnet-grpc.blacknodes.net:17090",
+    "snapshot": "https://files.blacknodes.net/celestia/celestia_mocha-4.tar.lz4",
+    "addrbook": "",
+    "tools": "Node Tutorial, Node Monitoring, Blob CelestiaPFB_UI",
+    "tools_url": {
+        "Node Tutorial Guide": "https://github.com/blacknodes/Node-Services/tree/main/Projects/celestia",
+        "Node Monitoring Guide": "https://github.com/blacknodes/Node-Services/tree/main/Projects/celestia/Celestia-Node-Monitoring",
+        "Blob CelestiaPFB_UI": "https://github.com/blacknodes/CelestiaPFB_UI"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#blacknodes-contribution-httpsblacknodesnet"
 }
 
   
