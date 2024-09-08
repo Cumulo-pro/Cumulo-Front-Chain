@@ -180,8 +180,10 @@
     "addrbook": "",
     "tools": "Self-written explorer, RPC scanner & peers",
     "tools_url": {
-        "Self-written explorer": "https://celestia-rpc.stakeme.pro",
-        "RPC scanner & peers": "https://celestia-rest.stakeme.pro"
+        "Self-written explorer": "https://testnet.celestia.exploreme.pro/",
+        "RPC scanner & peers": "https://testnet.celestia.exploreme.pro/network",
+        "Self-written faucet": "https://celestia-testnet.faucetme.pro/",
+        "Uptime validators": "https://testnet.celestia.exploreme.pro/utilities?tab=uptime"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakeme"
 }
