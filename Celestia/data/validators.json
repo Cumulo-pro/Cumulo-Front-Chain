@@ -143,6 +143,26 @@
         "Decentralization Analytics": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#itrocket"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#itrocket"
+},
+{
+    "name": "Validatrium",
+    "webservices": "",
+    "x": "validatrium",
+    "validatorlogo": "validatrium.jpg",
+    "explorer": "",
+    "peers": "706c8fbaaf38d3a1bf3186ca4c4d55fc07891ea4@49.12.172.53:10256",
+    "seeds": "",
+    "api": "https://api-celestia-archive.mainnet.validatrium.club",
+    "rpc": "https://rpc-celestia-archive.mainnet.validatrium.club",
+    "json-rpc": "",
+    "grpc": "",
+    "snapshot": "https://docs.validatrium.club/Celestia/archive-node-snapshot",
+    "addrbook": "",
+    "tools": "Bridge archive snapshot",
+    "tools_url": {
+        "Bridge archive snapshot": "https://docs.validatrium.club/Celestia/bridge-archive-snapshot"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#validatrium"
 }
 
 ]
