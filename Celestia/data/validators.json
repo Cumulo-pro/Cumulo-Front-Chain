@@ -163,6 +163,28 @@
         "Bridge archive snapshot": "https://docs.validatrium.club/Celestia/bridge-archive-snapshot"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#validatrium"
+},
+  {
+    "name": "STAKEME",
+    "webservices": "",
+    "x": "stakeme_pro",
+    "validatorlogo": "stakeme.jpg",
+    "explorer": "",
+    "peers": "f9f6aa4a23f8ff2bc3137fa603bfa4014b8d05cb@celestia-mainnet-peer.stakeme.pro:40656",
+    "seeds": "f9f6aa4a23f8ff2bc3137fa603bfa4014b8d05cb@celestia-mainnet-seed.stakeme.pro:40656",
+    "api": "https://celestia-rest.stakeme.pro",
+    "rpc": "https://celestia-rpc.stakeme.pro",
+    "json-rpc": "",
+    "grpc": "da-bridge-celestia.stakeme.pro:9090",
+    "snapshot": "",
+    "addrbook": "",
+    "tools": "Self-written explorer, RPC scanner & peers",
+    "tools_url": {
+        "Self-written explorer": "https://celestia-rpc.stakeme.pro",
+        "RPC scanner & peers": "https://celestia-rest.stakeme.pro"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakeme"
 }
+
 
 ]
