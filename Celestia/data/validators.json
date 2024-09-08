@@ -42,7 +42,7 @@
   {
     "name": "BlackNodes",
     "webservices": "",
-    "x": "blacknodes",
+    "x": "BlackNodesHQ",
     "validatorlogo": "blacknodes.jpg",
     "explorer": "https://explorer.blacknodes.net/celestia",
     "peers": "",
