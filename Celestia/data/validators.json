@@ -121,6 +121,26 @@
         "Full Node Archival": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#full-node-archival-snapshot"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-blackblocks"
+},
+{
+    "name": "ITRocket",
+    "webservices": "https://itrocket.net/services/mainnet/celestia/",
+    "x": "itrocket_team",
+    "validatorlogo": "itrocket.jpg",
+    "explorer": "",
+    "peers": "d535cbf8d0efd9100649aa3f53cb5cbab33ef2d6@celestia-mainnet-peer.itrocket.net:40656",
+    "seeds": "12ad7c73c7e1f2460941326937a039139aa78884@celestia-mainnet-seed.itrocket.net:40656",
+    "api": "https://celestia-mainnet-api.itrocket.net",
+    "rpc": "https://celestia-mainnet-rpc.itrocket.net",
+    "json-rpc": "",
+    "grpc": "celestia-mainnet-grpc.itrocket.net:443",
+    "snapshot": "https://itrocket.net/services/mainnet/celestia/",
+    "addrbook": "",
+    "tools": "Decentralization Analytics",
+    "tools_url": {
+        "Decentralization Analytics": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#itrocket"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#itrocket"
 }
 
 ]
