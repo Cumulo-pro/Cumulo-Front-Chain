@@ -83,8 +83,8 @@
 },
 {
     "name": "DTEAM",
-    "webservices": "",
-    "x": "dteam",
+    "webservices": "https://dteam.tech/services/testnet/overview/celestia",
+    "x": "dteamtech",
     "validatorlogo": "dteam.jpg",
     "explorer": "",
     "peers": "076c9cc9de3039819a98522aeea39e8c72b49682@peer.celestia.mainnet.dteam.tech:28656",
