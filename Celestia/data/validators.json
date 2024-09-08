@@ -193,8 +193,8 @@
 {
     "name": "AutoStake",
     "webservices": "https://autostake.com/networks/celestia/#services",
-    "x": "autostake_com",
-    "validatorlogo": "autostake.jpg",
+    "x": "AutoStake_",
+    "validatorlogo": "autostake.png",
     "explorer": "",
     "peers": "",
     "seeds": "",
