@@ -129,7 +129,7 @@
     "webservices": "https://itrocket.net/services/mainnet/celestia/",
     "x": "itrocket_team",
     "validatorlogo": "itrocket.jpg",
-    "explorer": "",
+    "explorer": "https://mainnet.itrocket.net/celestia/staking",
     "peers": "d535cbf8d0efd9100649aa3f53cb5cbab33ef2d6@celestia-mainnet-peer.itrocket.net:40656",
     "seeds": "12ad7c73c7e1f2460941326937a039139aa78884@celestia-mainnet-seed.itrocket.net:40656",
     "api": "https://celestia-mainnet-api.itrocket.net",
@@ -138,9 +138,12 @@
     "grpc": "celestia-mainnet-grpc.itrocket.net:443",
     "snapshot": "https://itrocket.net/services/mainnet/celestia/",
     "addrbook": "",
-    "tools": "Decentralization Analytics",
+    "tools": "Decentralization Analytics, Governance Bot, Peer scanner, RPC Scanner ",
     "tools_url": {
-        "Decentralization Analytics": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#itrocket"
+        "Decentralization Analytics": "https://itrocket.net/services/mainnet/celestia/decentralization/".
+        "Governance Bot": "https://t.me/itrocket_mainnet_proposal_bot",
+        "Peer scanner": "https://itrocket.net/services/mainnet/celestia/#peer",
+        "RPC Scanner": "https://itrocket.net/services/mainnet/celestia/public-rpc/"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#itrocket"
 },
@@ -178,7 +181,7 @@
     "grpc": "da-bridge-celestia.stakeme.pro:9090",
     "snapshot": "",
     "addrbook": "",
-    "tools": "Self-written explorer, RPC scanner & peers",
+    "tools": "Self-written explorer, RPC scanner & peers, Self-written faucet, Uptime validators",
     "tools_url": {
         "Self-written explorer": "https://testnet.celestia.exploreme.pro/",
         "RPC scanner & peers": "https://testnet.celestia.exploreme.pro/network",
@@ -186,6 +189,26 @@
         "Uptime validators": "https://testnet.celestia.exploreme.pro/utilities?tab=uptime"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakeme"
+},
+{
+    "name": "AutoStake",
+    "webservices": "https://autostake.com/networks/celestia/#services",
+    "x": "autostake_com",
+    "validatorlogo": "autostake.jpg",
+    "explorer": "",
+    "peers": "",
+    "seeds": "",
+    "api": "https://celestia-mainnet-lcd.autostake.com:443",
+    "rpc": "https://celestia-mainnet-rpc.autostake.com:443",
+    "json-rpc": "",
+    "grpc": "https://celestia-mainnet-grpc.autostake.com:443",
+    "snapshot": "",
+    "addrbook": "",
+    "tools": "Services (Snapshot, Addrbook, State-sync)",
+    "tools_url": {
+        "Services": "https://autostake.com/networks/celestia/#services"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#autostake"
 }
 
 
