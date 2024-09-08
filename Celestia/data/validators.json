@@ -100,6 +100,27 @@
         "Bridge node checker": "https://celestia-bridge-checker.dteam.tech/"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#dteam"
+},
+  {
+    "name": "BlackBlocks",
+    "webservices": "",
+    "x": "BlackBlocks_io",
+    "validatorlogo": "blackblocks.jpg",
+    "explorer": "https://explorer.celestia-mainnet.blackblocks.io/",
+    "peers": "",
+    "seeds": "",
+    "api": "",
+    "rpc": "https://rpc.celestia-mainnet.blackblocks.io",
+    "json-rpc": "",
+    "grpc": "",
+    "snapshot": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#full-node-archival-snapshot",
+    "addrbook": "",
+    "tools": "Bridge Archival, Full Node Archival",
+    "tools_url": {
+        "Bridge Archival": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#bridge-node-archival-snapshot",
+        "Full Node Archival": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#full-node-archival-snapshot"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-blackblocks"
 }
-  
+
 ]
