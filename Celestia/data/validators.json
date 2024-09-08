@@ -139,12 +139,12 @@
   "snapshot": "https://itrocket.net/services/mainnet/celestia/",
   "addrbook": "",
   "tools": "Decentralization Analytics, Governance Bot, Peer scanner, RPC Scanner",
-  "tools_url": {
-    "Decentralization Analytics": "https://itrocket.net/services/mainnet/celestia/decentralization/",
-    "Governance Bot": "https://t.me/itrocket_mainnet_proposal_bot",
-    "Peer scanner": "https://itrocket.net/services/mainnet/celestia/#peer",
-    "RPC Scanner": "https://itrocket.net/services/mainnet/celestia/public-rpc/"
-  },
+ "tools_url": {
+  "Decentralization Analytics": "https://itrocket.net/services/mainnet/celestia/decentralization/",
+  "Governance Bot": "https://t.me/itrocket_mainnet_proposal_bot",
+  "Peer scanner": "https://itrocket.net/services/mainnet/celestia/#peer",
+  "RPC Scanner": "https://itrocket.net/services/mainnet/celestia/public-rpc/"
+},
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#itrocket"
 },
 {
