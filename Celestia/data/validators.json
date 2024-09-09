@@ -402,6 +402,27 @@
     "Installation Guide": "https://services.contributiondao.com/mainnet/celestia/installation"
   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributiondao"
+},
+{
+  "name": "Cosmostation",
+  "webservices": "",
+  "x": "CosmostationVD",
+  "validatorlogo": "cosmostation.jpg",
+  "explorer": "https://www.mintscan.io",
+  "peers": "d364357f55e37a038d9dbd143448ea792bb8edcf@15.235.115.156:16400",
+  "seeds": "",
+  "api": "",
+  "rpc": "",
+  "grpc": "",
+  "snapshot": "https://services.cosmostation.io/snapshot",
+  "addrbook": "",
+  "tools": "Mintscan Explorer, Mobile Wallet, Web Extension",
+  "tools_url": {
+    "Mintscan Explorer": "https://www.mintscan.io",
+    "Mobile Wallet": "https://wallet.cosmostation.io",
+    "Web Extension": "https://chrome.google.com/webstore/detail/cosmostation-wallet"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cosmostation"
 }
 
 
