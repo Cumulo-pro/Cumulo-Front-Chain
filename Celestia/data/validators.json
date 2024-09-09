@@ -9,7 +9,6 @@
     "seeds": "",
     "api": "https://celestia-mainnet.stakingcabin.com",
     "rpc": "https://celestia-mainnet.stakingcabin.com",
-    "json-rpc": "",
     "grpc": "celestia-mainnet.stakingcabin.com:443",
     "snapshot": "",
     "addrbook": "",
@@ -29,7 +28,6 @@
     "seeds": "",
     "api": "https://api-1.celestia.nodes.guru",
     "rpc": "https://rpc-1.celestia.nodes.guru",
-    "json-rpc": "",
     "grpc": "grpc-1.celestia.nodes.guru:10790",
     "snapshot": "",
     "addrbook": "",
@@ -49,15 +47,12 @@
     "seeds": "",
     "api": "",
     "rpc": "https://celestia-testnet-rpc.blacknodes.net",
-    "json-rpc": "",
     "grpc": "celestia-testnet-grpc.blacknodes.net:17090",
     "snapshot": "https://files.blacknodes.net/celestia/celestia_mocha-4.tar.lz4",
     "addrbook": "",
-    "tools": "Node Tutorial, Node Monitoring, Blob CelestiaPFB_UI",
+    "tools": "Celestia Faucet",
     "tools_url": {
-        "Node Tutorial Guide": "https://github.com/blacknodes/Node-Services/tree/main/Projects/celestia",
-        "Node Monitoring Guide": "https://github.com/blacknodes/Node-Services/tree/main/Projects/celestia/Celestia-Node-Monitoring",
-        "Blob CelestiaPFB_UI": "https://github.com/blacknodes/CelestiaPFB_UI"
+       "Celestia Faucet By BlackNodes": "https://celestia-faucet.blacknodes.net"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#blacknodes-contribution-httpsblacknodesnet"
 },
@@ -71,7 +66,6 @@
     "seeds": "",
     "api": "https://celestia-api.lavenderfive.com:443",
     "rpc": "https://celestia-rpc.lavenderfive.com:443",
-    "json-rpc": "",
     "grpc": "celestia-grpc.lavenderfive.com:443",
     "snapshot": "",
     "addrbook": "",
@@ -93,7 +87,7 @@
     "seeds": "9b1d22c3a78487d1a664a4b6a331fce527d14fb4@seed.celestia.mainnet.dteam.tech:27656",
     "api": "https://api.archive.celestia.mainnet.dteam.tech",
     "rpc": "https://rpc.archive.celestia.mainnet.dteam.tech",
-    "json-rpc": "",
+    "archive": "y",
     "grpc": "grpc.archive.celestia.mainnet.dteam.tech:28090",
     "snapshot": "",
     "addrbook": "",
@@ -104,8 +98,31 @@
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#dteam"
 },
   {
+  "name": "cryptomolot",
+  "webservices": "",
+  "x": "cryptomolot",
+  "validatorlogo": "cryptomolot.jpg",
+  "explorer": "",
+  "peers": "",
+  "seeds": "",
+  "api": "",
+  "rpc": "https://celestia-mocha-rpc.cryptomolot.com/",
+  "grpc": "",
+  "snapshot": "",
+  "addrbook": "",
+  "tools": "Community guidelines, Galxe campaign",
+  "tools_url": {
+    "Galxe campaign": "https://app.galxe.com/quest/kBZDkhZ8FD7AaBqaEX4Uk9/GCT9wtdmFw"
+  },
+  "guides":{
+    "Content contributions for Celestia by cryptomolot": "https://telegra.ph/Content-contributions-for-Celestia-by-cryptomolot-07-02",
+    "Community guidelines": "https://cryptomolot.gitbook.io/cryptomolot-docs/testnets/celestia"
+  }
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cryptomolot"
+},
+  {
     "name": "BlackBlocks",
-    "webservices": "",
+    "webservices": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia",
     "x": "BlackBlocks_io",
     "validatorlogo": "blackblocks.jpg",
     "explorer": "https://explorer.celestia-mainnet.blackblocks.io/",
@@ -113,7 +130,6 @@
     "seeds": "",
     "api": "",
     "rpc": "https://rpc.celestia-mainnet.blackblocks.io",
-    "json-rpc": "",
     "grpc": "",
     "snapshot": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#full-node-archival-snapshot",
     "addrbook": "",
@@ -134,8 +150,8 @@
   "seeds": "12ad7c73c7e1f2460941326937a039139aa78884@celestia-mainnet-seed.itrocket.net:40656",
   "api": "https://celestia-mainnet-api.itrocket.net",
   "rpc": "https://celestia-mainnet-rpc.itrocket.net",
-  "json-rpc": "",
   "grpc": "celestia-mainnet-grpc.itrocket.net:443",
+  "archive": "y",
   "snapshot": "https://itrocket.net/services/mainnet/celestia/",
   "addrbook": "",
   "tools": "Decentralization Analytics, Governance Bot, Peer scanner, RPC Scanner",
@@ -157,7 +173,7 @@
     "seeds": "",
     "api": "https://api-celestia-archive.mainnet.validatrium.club",
     "rpc": "https://rpc-celestia-archive.mainnet.validatrium.club",
-    "json-rpc": "",
+    "archive": "y",
     "grpc": "",
     "snapshot": "https://docs.validatrium.club/Celestia/archive-node-snapshot",
     "addrbook": "",
@@ -177,16 +193,16 @@
     "seeds": "f9f6aa4a23f8ff2bc3137fa603bfa4014b8d05cb@celestia-mainnet-seed.stakeme.pro:40656",
     "api": "https://celestia-rest.stakeme.pro",
     "rpc": "https://celestia-rpc.stakeme.pro",
-    "json-rpc": "",
+    "archive": "y",
     "grpc": "da-bridge-celestia.stakeme.pro:9090",
     "snapshot": "",
     "addrbook": "",
     "tools": "Self-written explorer, RPC scanner & peers, Self-written faucet, Uptime validators",
     "tools_url": {
-        "Self-written explorer": "https://testnet.celestia.exploreme.pro/",
-        "RPC scanner & peers": "https://testnet.celestia.exploreme.pro/network",
-        "Self-written faucet": "https://celestia-testnet.faucetme.pro/",
-        "Uptime validators": "https://testnet.celestia.exploreme.pro/utilities?tab=uptime"
+        "Self-written explorer": "https://celestia.exploreme.pro/",
+        "RPC scanner & peers": "https://celestia.exploreme.pro/network",
+        "Consensus": "https://celestia.exploreme.pro/utilities?tab=consensus",
+        "Uptime validators": "https://celestia.exploreme.pro/utilities?tab=uptime"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakeme"
 },
@@ -200,7 +216,6 @@
     "seeds": "",
     "api": "https://celestia-mainnet-lcd.autostake.com:443",
     "rpc": "https://celestia-mainnet-rpc.autostake.com:443",
-    "json-rpc": "",
     "grpc": "https://celestia-mainnet-grpc.autostake.com:443",
     "snapshot": "",
     "addrbook": "",
