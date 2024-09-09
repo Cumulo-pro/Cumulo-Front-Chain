@@ -224,6 +224,27 @@
         "Services": "https://autostake.com/networks/celestia/#services"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#autostake"
+},
+{
+  "name": "Smart Stake",
+  "webservices": "",
+  "x": "smart_stake",
+  "validatorlogo": "smartstake.jpg",
+  "explorer": "",
+  "peers": "",
+  "seeds": "",
+  "api": "",
+  "rpc": "",
+  "grpc": "",
+  "snapshot": "",
+  "addrbook": "",
+  "tools": "Smart Stake Analytics, Decentralization Analytics, Relayer Analytics",
+  "tools_url": {
+    "Smart Stake Analytics": "https://smartstake.io/analytics/celestia",
+    "Decentralization Analytics": "https://smartstake.io/decentralization/celestia",
+    "Relayer Analytics": "https://smartstake.io/relayers/celestia"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#smart-stake"
 }
 
 
