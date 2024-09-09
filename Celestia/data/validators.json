@@ -360,6 +360,25 @@
     "Vietnamese Blockchain Knowledge": "https://luckyresearch.notion.site/Gi-i-thi-u-v-Celestia-v-Modular-Blockchain-c9bd267748e8471ea7da8ec85e75fa29?pvs=74"
   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-luckyresearchorg"
+},
+{
+  "name": "Suntzu",
+  "webservices": "https://services.suntzu.dev/mainnet/celestia/installation",
+  "x": "suntzu_indexer",
+  "validatorlogo": "suntzu.jpg",
+  "explorer": "https://explorer.suntzu.dev/celestia-mainnet",
+  "peers": "a479fb1fe8ecf372c72b954f1eea59099dc86f6a@95.217.204.154:11156",
+  "seeds": "",
+  "api": "https://celestia-mainnet-api.suntzu.dev",
+  "rpc": "https://celestia-mainnet-rpc.suntzu.dev",
+  "grpc": "celestia-mainnet-grpc.suntzu.dev:11190",
+  "snapshot": "",
+  "addrbook": "",
+  "tools": "Monitor bridge/validator/system",
+  "tools_url": {
+    "Monitor bridge/validator/system": "https://github.com/suntzu93/system_monitor"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#suntzu"
 }
 
 
