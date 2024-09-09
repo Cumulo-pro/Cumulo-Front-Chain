@@ -297,7 +297,7 @@
   "name": "Openbitlab",
   "webservices": "https://openbitlab.com/network/58/Celestia/docs",
   "x": "Openbitlab_node",
-  "validatorlogo": "openbitlab.jpg",
+  "validatorlogo": "openbitlab.png",
   "explorer": "",
   "peers": "",
   "seeds": "",
