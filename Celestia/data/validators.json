@@ -379,6 +379,29 @@
     "Monitor bridge/validator/system": "https://github.com/suntzu93/system_monitor"
   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#suntzu"
+},
+{
+  "name": "ContributionDAO",
+  "webservices": "https://services.contributiondao.com/mainnet/celestia",
+  "x": "contributedao",
+  "validatorlogo": "contributiondao.jpg",
+  "explorer": "",
+  "peers": "https://services.contributiondao.com/mainnet/celestia/peers",
+  "seeds": "https://services.contributiondao.com/mainnet/celestia/peers",
+  "api": "https://celestia-api.contributiondao.com",
+  "rpc": "https://celestia-rpc.contributiondao.com",
+  "rpc_archive": "https://celestia-archive-mainnet-rpc.contributiondao.com",
+  "grpc": "https://celestia-archive-mainnet-grpc.contributiondao.com",
+  "snapshot": "https://services.contributiondao.com/mainnet/celestia/snapshots",
+  "addrbook": "",
+  "tools": "Celestia node installation, Pruning snapshots, Bridge node snapshot",
+  "tools_url": {
+    "Bridge node snapshot": "https://services.contributiondao.com/mainnet/celestia/bridge-snapshots"
+  },
+  "content_url": {
+    "Installation Guide": "https://services.contributiondao.com/mainnet/celestia/installation"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributiondao"
 }
 
 
