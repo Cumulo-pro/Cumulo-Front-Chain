@@ -339,6 +339,28 @@
     "Celestia and Blockchain Modularity": "https://medium.com/chainode-tech/celestia-and-blockchain-modularity-5c055cdcd124"
   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#chainode-tech"
+},
+  {
+  "name": "LuckyResearch.org",
+  "webservices": "https://luckyresearch.org",
+  "x": "LuckyResearchVN",
+  "validatorlogo": "luckyresearch.jpg",
+  "explorer": "https://explorer.luckyresearch.org/Celestia-Mainet",
+  "peers": "",
+  "seeds": "",
+  "api": "https://api-celestia-mainnet.luckyresearch.org",
+  "rpc": "https://rpc-celestia-mainnet.luckyresearch.org",
+  "grpc": "",
+  "snapshot": "",
+  "addrbook": "",
+  "content_url": {
+    "Galxe campaign": "https://app.galxe.com/quest/kBZDkhZ8FD7AaBqaEX4Uk9/GCT9wtdmFw",
+    "Services guide": "https://services.luckyresearch.org/lucky-research-services/mainet/celestia",
+    "Community contributions": "https://discord.com/channels/638338779505229824/804389559831232578/1168927959218913293",
+    "Vietnamese Blockchain Knowledge": "https://luckyresearch.notion.site/Gi-i-thi-u-v-Celestia-v-Modular-Blockchain-c9bd267748e8471ea7da8ec85e75fa29?pvs=74"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-luckyresearchorg"
 }
+
 
 ]
