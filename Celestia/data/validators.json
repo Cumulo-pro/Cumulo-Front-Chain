@@ -221,7 +221,7 @@
     "addrbook": "",
     "tools": "Services (Snapshot, Addrbook, State-sync)",
     "tools_url": {
-        "Services": "https://autostake.com/networks/celestia/#services"
+        "Snapshot, addrbook, State-sync, Seed, Peer": "https://autostake.com/networks/celestia/#services"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#autostake"
 },
