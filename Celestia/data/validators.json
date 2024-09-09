@@ -266,11 +266,10 @@
     "Guide": "https://services.cryptech.com.ua/mainnet/celestia/installation/README/",
     "Node Monitoring": "https://github.com/dvjromashkin/cosmos-monitoring"
   },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cryptech"
-},
-  "content":{
-    "Russian Medium": "https://cryptech-nodes.medium.com/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D1%81%D0%B5%D1%82%D0%B8-celestia-3b5a0865c7f1",
-  }
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cryptech",
+  "content": {
+    "Russian Medium": "https://cryptech-nodes.medium.com/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D1%81%D0%B5%D1%82%D0%B8-celestia-3b5a0865c7f1"
+ }
   },
 {
   "name": "Stakeflow",
@@ -287,7 +286,6 @@
   "grpc": "grpc-celestia-01.stakeflow.io:15002",
   "snapshot": "",
   "addrbook": "",
-},
   "content":{
     "How Celestia Solves the Data Availability Problem": "https://blog.stakeflow.io/how-celestia-solves-the-data-availability-problem-ad844202751b",
     "Celestia Staking Guide": "https://blog.stakeflow.io/celestia-tia-staking-guide-b6e8a1e9c5fe",
