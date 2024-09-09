@@ -292,6 +292,26 @@
     "How to choose your Celestia validator": "https://blog.stakeflow.io/how-to-choose-your-tia-celestia-validator-f03b47b37fb5",
     "Basics of Celestia with Stakeflow explorer": "https://blog.stakeflow.io/basics-of-celestia-with-stakeflow-explorer-8942dbc688f2"
   }
+},
+{
+  "name": "Openbitlab",
+  "webservices": "https://openbitlab.com/network/58/Celestia/docs",
+  "x": "Openbitlab_node",
+  "validatorlogo": "openbitlab.jpg",
+  "explorer": "",
+  "peers": "",
+  "seeds": "",
+  "api": "https://celestia-api.openbitlab.com",
+  "rpc": "https://celestia-rpc.openbitlab.com",
+  "grpc": "celestia-grpc.openbitlab.com:443",
+  "snapshot": "https://openbitlab.com/network/58/Celestia/snapshot",
+  "addrbook": "",
+  "tools": "Srvcheck monitoring tool, Validator Monitor bot",
+  "tools_url": {
+    "Srvcheck monitoring tool": "https://github.com/openbitlab/celestia-srvcheck",
+    "Validator Monitor bot": "https://t.me/celestia_validator_monitor_bot"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-openbitlab"
 }
 
 ]
