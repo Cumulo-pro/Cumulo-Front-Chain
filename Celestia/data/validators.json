@@ -114,7 +114,7 @@
   "tools_url": {
     "Galxe campaign": "https://app.galxe.com/quest/kBZDkhZ8FD7AaBqaEX4Uk9/GCT9wtdmFw"
   },
-  "guides":{
+  "content":{
     "Content contributions for Celestia by cryptomolot": "https://telegra.ph/Content-contributions-for-Celestia-by-cryptomolot-07-02",
     "Community guidelines": "https://cryptomolot.gitbook.io/cryptomolot-docs/testnets/celestia"
   },
@@ -267,7 +267,33 @@
     "Node Monitoring": "https://github.com/dvjromashkin/cosmos-monitoring"
   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cryptech"
+},
+  "content":{
+    "Russian Medium": "https://cryptech-nodes.medium.com/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D1%81%D0%B5%D1%82%D0%B8-celestia-3b5a0865c7f1",
+  }
+  },
+{
+  "name": "Stakeflow",
+  "webservices": "",
+  "x": "stakeflow_io",
+  "validatorlogo": "stakeflow.jpg",
+  "explorer": "https://stakeflow.io/celestia",
+  "peers": "24a607a217cf12be29bae5b2e8151391bde2d8c8@peer-celestia-01.stakeflow.io:15007",
+  "seeds": "24a607a217cf12be29bae5b2e8151391bde2d8c8@seed-celestia-01.stakeflow.io:15007",
+  "api": "https://api-celestia-01.stakeflow.io",
+  "rpc": "https://rpc-celestia-01.stakeflow.io",
+  "rpc_archive": "https://rpc-celestia-archive-01.stakeflow.io",
+  "archive": "y",
+  "grpc": "grpc-celestia-01.stakeflow.io:15002",
+  "snapshot": "",
+  "addrbook": "",
+},
+  "content":{
+    "How Celestia Solves the Data Availability Problem": "https://blog.stakeflow.io/how-celestia-solves-the-data-availability-problem-ad844202751b",
+    "Celestia Staking Guide": "https://blog.stakeflow.io/celestia-tia-staking-guide-b6e8a1e9c5fe",
+    "How to choose your Celestia validator": "https://blog.stakeflow.io/how-to-choose-your-tia-celestia-validator-f03b47b37fb5",
+    "Basics of Celestia with Stakeflow explorer": "https://blog.stakeflow.io/basics-of-celestia-with-stakeflow-explorer-8942dbc688f2"
+  }
 }
-
 
 ]
