@@ -228,7 +228,7 @@
 {
   "name": "Smart Stake",
   "webservices": "",
-  "x": "smart_stake",
+  "x": "SmartStake",
   "validatorlogo": "smartstake.jpg",
   "explorer": "",
   "peers": "",
@@ -245,6 +245,28 @@
     "Relayer Analytics": "https://smartstake.io/relayers/celestia"
   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#smart-stake"
+},
+{
+  "name": "CrypTech",
+  "webservices": "",
+  "x": "CrypTech",
+  "validatorlogo": "cryptech.jpg",
+  "explorer": "https://ping.pub/celestia",
+  "peers": "",
+  "seeds": "",
+  "api": "https://api-celestia.cryptech.com.ua",
+  "rpc": "https://rpc-celestia.cryptech.com.ua",
+  "json-rpc": "",
+  "grpc": "https://grpc-celestia.cryptech.com.ua",
+  "snapshot": "https://services.cryptech.com.ua/mainnet/celestia/snapshot/README/",
+  "addrbook": "",
+  "tools": "Proposal_Bot, Guide, Node Monitoring",
+  "tools_url": {
+    "Proposal_Bot": "https://t.me/Cryptech_ProposalBot",
+    "Guide": "https://services.cryptech.com.ua/mainnet/celestia/installation/README/",
+    "Node Monitoring": "https://github.com/dvjromashkin/cosmos-monitoring"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cryptech"
 }
 
 
