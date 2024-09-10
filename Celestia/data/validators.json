@@ -551,6 +551,30 @@
     "WEB3connect event website": "https://web3connect.fr/2024"
   },
   "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#enigma"
+},
+{
+  "name": "Nodes Hub",
+  "webservices": "https://services.nodeshub.online/mainnet-networks/celestia/",
+  "x": "NodesHub",
+  "validatorlogo": "nodeshub.jpg",
+  "explorer": "https://explorer.nodeshub.online/celestia",
+  "archive": "y",
+  "peers": "81ca14a1bc274ece31b17115e938fe99135b5873@103.6.91.38:26657",
+  "seeds": "6f6a3a908634b79b6fe7c4988efec2553f188234@celestia.seed.nodeshub.online:11656",
+  "api": "https://celestia.archive.api.nodeshub.online",
+  "rpc": "https://celestia.archive.rpc.nodeshub.online",
+  "grpc": "https://celestia.archive.grpc.nodeshub.online",
+   "snapshot": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/snapshot/archive",
+   "prunedsnapshot": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/snapshot/pruned",
+ "addrbook": "",
+  "tools": "Installation guide, State-Sync, Upgrade History",
+  "tools_url": {
+   "State-Sync": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/state-sync"
+  },
+   "content_url": {
+     "Installation guide": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/installation"    
+  },
+  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#nodes-hub-contribution-httpsnodeshubonline"
 }
 
 
