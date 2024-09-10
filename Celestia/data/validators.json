@@ -423,6 +423,25 @@
     "Web Extension": "https://chrome.google.com/webstore/detail/cosmostation-wallet"
   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cosmostation"
+},
+{
+  "name": "Provalidator",
+  "webservices": "https://provalidator.com",
+  "x": "Provalidator",
+  "validatorlogo": "provalidator.jpg",
+  "explorer": "",
+  "peers": "",
+  "seeds": "",
+  "api": "",
+  "rpc": "",
+  "grpc": "",
+  "snapshot": "",
+  "addrbook": "",
+  "tools": "Governance Alert Bots",
+  "tools_url": {
+    "Governance Alert Bots": "https://github.com/Zenon-provalidator/celelstia_proposal_bot",
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-provalidator"
 }
 
 
