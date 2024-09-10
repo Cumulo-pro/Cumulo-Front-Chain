@@ -434,6 +434,27 @@
     "Governance Alert Bots": "https://github.com/Zenon-provalidator/celelstia_proposal_bot"
   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-provalidator"
+},
+{
+  "name": "Moonlet",
+  "webservices": "https://dashboard.moonlet.app/dashboard/?blockchain=TIA",
+  "x": "Moonlet",
+  "validatorlogo": "moonlet.jpg",
+  "explorer": "",
+  "peers": "cd37f245a236b7f695d06d99064c7d00af1ffb01@65.108.68.213:26657",
+  "seeds": "",
+  "api": "https://celestia-api.pub.moonlet.cloud/celestia-public",
+  "rpc": "https://celestia-rpc.pub.moonlet.cloud/celestia-public",
+  "grpc": "celestia-grpc.pub.moonlet.cloud:9099/celestia-public",
+  "snapshot": "https://dashboard.moonlet.app/dashboard/snapshots/?blockchain=TIA",
+  "addrbook": "https://snapshots.moonlet.cloud/mainnet/dymension/addrbook.json",
+  "genesis": "https://snapshots.moonlet.cloud/mainnet/dymension/genesis.json",
+  "tools": "",
+  "tools_url": {},
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-moonlet",
+  "tools_url": {
+    "Dashboard": "https://dashboard.moonlet.app/dashboard/?blockchain=TIA"
+  }
 }
 
 
