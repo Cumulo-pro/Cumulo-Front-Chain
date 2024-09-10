@@ -613,7 +613,7 @@
   "validatorlogo": "cumulo.jpg",
   "rpc": "https://celestia.cumulo.org.es:443",
   "api": "https://celestia.api.cumulo.org.es:443",
-  "grpc": "celestia.grpc.cumulo.org.es:443".
+  "grpc": "celestia.grpc.cumulo.org.es:443",
    "tools": "Dashboard for Consensus Nodes, Celestia Bridge Node Dashboard, Celestia Front Chain, Modular Expansion",
   "tools_url": {
     "Dashboard for Consensus Nodes with all available metrics for Celestia": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/grafana_consensus%20/README.md",
