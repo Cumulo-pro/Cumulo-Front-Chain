@@ -438,7 +438,7 @@
 {
   "name": "Moonlet",
   "webservices": "https://dashboard.moonlet.app/dashboard/?blockchain=TIA",
-  "x": "Moonlet",
+  "x": "moonlet_hq",
   "validatorlogo": "moonlet.jpg",
   "explorer": "",
   "peers": "cd37f245a236b7f695d06d99064c7d00af1ffb01@65.108.68.213:26657",
