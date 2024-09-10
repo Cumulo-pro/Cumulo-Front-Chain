@@ -426,17 +426,9 @@
 },
 {
   "name": "Provalidator",
-  "webservices": "https://provalidator.com",
+  "webservices": "https://nodeservice.provalidator.com/docs/Network/Celestia",
   "x": "Provalidator",
   "validatorlogo": "provalidator.jpg",
-  "explorer": "",
-  "peers": "",
-  "seeds": "",
-  "api": "",
-  "rpc": "",
-  "grpc": "",
-  "snapshot": "",
-  "addrbook": "",
   "tools": "Governance Alert Bots",
   "tools_url": {
     "Governance Alert Bots": "https://github.com/Zenon-provalidator/celelstia_proposal_bot"
