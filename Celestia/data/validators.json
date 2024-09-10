@@ -580,7 +580,7 @@
   "name": "Pro-Nodes75",
   "webservices": "",
   "x": "theNode75",
-  "validatorlogo": "pronodes75.jpg",
+  "validatorlogo": "pronodes75.png",
   "explorer": "",
   "peers": "ce99d7da2530f75d05880d13d9eda384d5a1afe4@peer.celestia.node75.org:23356",
   "seeds": "86bd5cb6e762f673f1706e5889e039d5406b4b90@seed.celestia.node75.org:20356",
