@@ -489,10 +489,8 @@
   "api": "https://celestia-api.f5nodes.com",
   "rpc": "https://celestia-rpc.f5nodes.com",
   "grpc": "celestia-grpc.f5nodes.com:9390",
-  "snapshot": {
-    "archive": "https://celestia-snapshots-archive.f5nodes.com",
-    "pruned": "https://celestia-snapshots.f5nodes.com"
-  },
+  "snapshot": "https://celestia-snapshots-archive.f5nodes.com",
+   "prunedsnapshot": "https://celestia-snapshots.f5nodes.com",
   "addrbook": "",
   "tools": "Monitoring tool, Celestia Wiki, DA Nodes Management Script",
   "tools_url": {
