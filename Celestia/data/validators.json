@@ -394,7 +394,7 @@
   "grpc": "https://celestia-archive-mainnet-grpc.contributiondao.com",
   "snapshot": "https://services.contributiondao.com/mainnet/celestia/snapshots",
   "addrbook": "",
-  "tools": "Celestia node installation, Pruning snapshots, Bridge node snapshot",
+  "tools": "Bridge node snapshot",
   "tools_url": {
     "Bridge node snapshot": "https://services.contributiondao.com/mainnet/celestia/bridge-snapshots"
   },
@@ -449,8 +449,7 @@
   "snapshot": "https://dashboard.moonlet.app/dashboard/snapshots/?blockchain=TIA",
   "addrbook": "https://snapshots.moonlet.cloud/mainnet/dymension/addrbook.json",
   "genesis": "https://snapshots.moonlet.cloud/mainnet/dymension/genesis.json",
-  "tools": "",
-  "tools_url": {},
+  "tools": "Dashboard",
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-moonlet",
   "tools_url": {
     "Dashboard": "https://dashboard.moonlet.app/dashboard/?blockchain=TIA"
@@ -461,14 +460,6 @@
   "webservices": "",
   "x": "Conquerorr_1",
   "validatorlogo": "conqueror.jpg",
-  "explorer": "",
-  "peers": "",
-  "seeds": "",
-  "api": "",
-  "rpc": "",
-  "grpc": "",
-  "snapshot": "",
-  "addrbook": "",
   "tools": "Mainnet Beta DA nodes setup script, Mocha-4 nodes setup script",
   "tools_url": {
     "Mainnet Beta DA nodes setup script": "https://github.com/DasRasyo/Celestia-Mainnet-DA-Nodes/tree/main",
