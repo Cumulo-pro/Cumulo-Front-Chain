@@ -593,6 +593,18 @@
     "Celestia IBC information matrix": "https://services.node75.org/ibc-matrix/celestia"
   },
  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#pro-nodes75"
+},
+{
+  "name": "Maple Nodes",
+  "webservices": "https://docs.maplenodes.com/#celestia",
+  "x": "MapleNodes",
+  "validatorlogo": "maplenodes.jpg",
+  "tools": "Celestia Network Analytics Dashboard, Custom API Endpoints for Celestia",
+  "tools_url": {
+    "Celestia Network Analytics Dashboard": "https://celestia.maplenodes.com/analytics/",
+    "Custom API Endpoints for Celestia": "https://docs.maplenodes.com/#celestia"
+  },
+  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#contributions-by-maple-nodes"
 }
 
 
