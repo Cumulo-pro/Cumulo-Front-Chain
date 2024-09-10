@@ -513,6 +513,20 @@
     "Celestia Mocha Testnet Turkish Script Guide": "https://github.com/okannako/celestiamochascript"
   },
   "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#nakoturk"
+},
+{
+  "name": "Brightlystake",
+  "webservices": "",
+  "x": "brightlystake",
+  "validatorlogo": "brightlystake.jpg",
+  "rpc": "https://celestia-rpc.brightlystake.com",
+  "grpc": "celestia-rpc.brightlystake.com:9090",
+  "tools": "Public tools for Celestia status check",
+  "tools_url": {
+    "Celestia RPC status checker": "https://celestia-tools.brightlystake.com/rpc-status",
+    "Celestia gRPC status checker": "https://celestia-tools.brightlystake.com/grpc-status"
+  },
+  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#list-of-contributions-from-brightlystakebrightlystakecom"
 }
 
 
