@@ -475,6 +475,17 @@
     "Mocha-4 nodes setup script": "https://github.com/DasRasyo/Celestia-mocha-4"
   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#conqueror",
+},
+{
+  "name": "Wavefive",
+  "webservices": "",
+  "x": "jimwavefive",
+  "validatorlogo": "wavefive.jpg",
+  "archive": "y",
+  "api": "https://celestia-api.0xcryptovestor.com",
+  "rpc": "https://celestia-rpc.0xcryptovestor.com",
+  "grpc": "https://celestia-grpc.0xcryptovestor.com",
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#wavefive"
 }
 
 
