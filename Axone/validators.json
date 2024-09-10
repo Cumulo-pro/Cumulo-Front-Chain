@@ -12,5 +12,12 @@
     "grpc": "grpc-t.axone.nodestake.org:443",
     "snapshot": "https://nodestake.org/axone",
     "addrbook": "https://ss-t.axone.nodestake.org/addrbook.json",
-  }
+  },
+  {
+    "name": "NodesGuru",
+    "webservices": "",
+    "x": "NodesGuru",
+    "validatorlogo": "nodesguru.png",
+    "explorer": "https://testnet.axone.explorers.guru/",
+}
 ]
