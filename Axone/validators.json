@@ -1,1 +1,16 @@
-
+[
+  {
+    "name": "NodeStake",
+    "webservices": "https://nodestake.org/axone",
+    "x": "NodeStake_top",
+    "validatorlogo": "nodeStake.jpg",
+    "explorer": "https://explorer.nodestake.org/axone-testnet",
+    "peers": "adb5e004b95e6db7041e68af878cf8b8bada0ec3@141.94.143.203:55156,9614c853f70a0010215587a31677b99144e96507@152.228.211.19:26656,67bd9e88011970b3ff5652b75065c8956d0693ea@37.27.184.10:26656",
+    "seeds": "42cfb8c2aca9796bdfc16545b9a1cac95fcf0dfc@rpc-t.axone.nodestake.org:666",
+    "api": "https://api-t.axone.nodestake.org",
+    "rpc": "https://rpc-t.axone.nodestake.org",
+    "grpc": "grpc-t.axone.nodestake.org:443",
+    "snapshot": "https://nodestake.org/axone",
+    "addrbook": "https://ss-t.axone.nodestake.org/addrbook.json",
+  }
+]
