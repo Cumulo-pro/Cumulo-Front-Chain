@@ -455,6 +455,26 @@
   "tools_url": {
     "Dashboard": "https://dashboard.moonlet.app/dashboard/?blockchain=TIA"
   }
+},
+{
+  "name": "Conqueror",
+  "webservices": "",
+  "x": "Conquerorr_1",
+  "validatorlogo": "conqueror.jpg",
+  "explorer": "",
+  "peers": "",
+  "seeds": "",
+  "api": "",
+  "rpc": "",
+  "grpc": "",
+  "snapshot": "",
+  "addrbook": "",
+  "tools": "Mainnet Beta DA nodes setup script, Mocha-4 nodes setup script",
+  "tools_url": {
+    "Mainnet Beta DA nodes setup script": "https://github.com/DasRasyo/Celestia-Mainnet-DA-Nodes/tree/main",
+    "Mocha-4 nodes setup script": "https://github.com/DasRasyo/Celestia-mocha-4"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#conqueror",
 }
 
 
