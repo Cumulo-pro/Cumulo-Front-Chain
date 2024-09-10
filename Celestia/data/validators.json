@@ -407,7 +407,7 @@
   "name": "Cosmostation",
   "webservices": "",
   "x": "CosmostationVD",
-  "validatorlogo": "cosmostation.jpg",
+  "validatorlogo": "cosmostation.png",
   "explorer": "https://www.mintscan.io",
   "peers": "d364357f55e37a038d9dbd143448ea792bb8edcf@15.235.115.156:16400",
   "seeds": "",
