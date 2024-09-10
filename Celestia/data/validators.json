@@ -532,7 +532,7 @@
   "name": "Enigma",
   "webservices": "",
   "x": "EnigmaValidator",
-  "validatorlogo": "enigma.jpg",
+  "validatorlogo": "enigma.png",
   "snapshot": "https://doc.enigma-validator.com/docs/mainnets/Celestia/snapshot",
   "addrbook": "https://doc.enigma-validator.com/docs/mainnets/Celestia/addrbooks",
   "archive": "y",
