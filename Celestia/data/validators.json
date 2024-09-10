@@ -499,6 +499,20 @@
     "DA Nodes Management Script": "https://github.com/f5nodes/celestia-da-nodes"
   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#f5-nodes"
+},
+{
+  "name": "NakoTurk",
+  "webservices": "",
+  "x": "NakoTurk",
+  "validatorlogo": "nakoturk.jpg",
+  "tools": "Turkish Validator, Bridge, Full Storage, Light Node Guides",
+  "content_url": {
+    "Celestia Mainnet Turkish Step by Step Guide": "https://github.com/okannako/celestiamainnet",
+    "Celestia Mainnet Turkish Script Guide": "https://github.com/okannako/celestiamainnetscript",
+    "Celestia Mocha Testnet Turkish Step by Step Guide": "https://github.com/okannako/celestiamocha",
+    "Celestia Mocha Testnet Turkish Script Guide": "https://github.com/okannako/celestiamochascript"
+  },
+  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#nakoturk"
 }
 
 
