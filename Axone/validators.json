@@ -51,6 +51,21 @@
     "tools": "KJNodes Testnet Proposal Bot",
     "tools_url": {
         "KJNodes Testnet Proposal Bot": "https://services.kjnodes.com/testnet/axone/"
-    },
-  }
+    }
+  },
+   {
+    "name": "Synergy Nodes",
+    "webservices": "https://www.synergynodes.com/service/axonetest",
+    "x": "SynergyNodes",
+    "validatorlogo": "synergynodes.jpg",
+    "explorer": "https://testnets.cosmosrun.info/axone",
+    "peers": "67faf9297f4dadf10f46ebe2a45bbe55118622c6@65.108.233.28:36656,a77f5b85fb8969be5540acf3a8643d6a2f07c776@84.201.135.7:26656,ab93659fbefaa8e5ede54b1abeaa747682aba59e@74.208.16.201:26646,5e7747650adbed323baff71523b4cdeaf6d8a57c@77.68.82.101:26655,4569842347acc9204971c243315f1839e89b1cc7@65.108.111.226:31656,1d4256993f1c08571c3bf4e9362246b736b12125@65.108.199.79:26103,f0013db80ba2287a312bafe36ed7d77a5508fe18@185.144.99.18:46656,c9d8b4ea3d4b5b95cb122f9778edbb6b399f9deb@94.130.138.48:45656,0d01145c3f2414c7486a9b379564e57ba3d5f6c6@3.84.183.238:26656,36e40b1c3fe2aac53884509cc0f3485032d8e8cf@65.108.192.123:19656,bed4fb66aa7badfc224dd6ccc4a3cc0ab214cd7d@74.220.23.137:26656,67bd9e88011970b3ff5652b75065c8956d0693ea@37.27.184.10:26656,d8b4abd10feb608db9ed6dd3926dfa85eed3c498@43.131.53.203:26656,72ddc04c09160a58289f9a7c5b29aac358635178@142.132.202.50:38656,00e9c1d414013c76c8a85b25fa8ef9597a0a0376@162.55.234.70:55156,f30b33834ddcb95051ab4d0fed9ae85c09b44a44@95.217.85.81:35456,7bcb9d1682d261f6336035ed436ba868bdace0ef@144.217.68.182:21956,9614c853f70a0010215587a31677b99144e96507@152.228.211.19:26656,910e678dbd20955652b8a2942fd173e54d9e95c1@65.21.233.188:17656,582dbc3df1128a55a3ced347a6ad7e57d42e3d8c@136.243.13.36:17656,839bc9d8aea9a187b59df6f8e42a16f8e6d875a1@65.21.47.120:34656,d89568d0fda69b1951a433f5f5ff887213a41305@5.9.73.170:17656,76755de9c645116fcad1112d4cb3d79fed4c361c@65.109.24.37:32656,e5abfa9c78479a1ea35f54d7bfb1a25921b6f387@65.109.84.33:20056,4662e56afcec47fc7eacca4de4a8ca382d4b97b7@65.109.92.163:2020,c27e8cb52aa588431e39f5c8b32c30850a228b8b@5.9.116.21:20056,adb5e004b95e6db7041e68af878cf8b8bada0ec3@141.94.143.203:55156",
+    "seeds": "72699e20c6a167e50d5234c3703644c6be5414d3@axone-testnet-seed.synergynodes.com:26656",
+    "api": "https://axone-testnet-api.synergynodes.com/",
+    "rpc": "https://axone-testnet-rpc.synergynodes.com/",
+    "grpc": "https://axone-testnet-grpc.synergynodes.com/",
+    "snapshot": "https://www.synergynodes.com/service/axonetest",
+    "addrbook": "https://support.synergynodes.com/addrbook/axone_testnet/addrbook.json",
+    "state-sync": "https://www.synergynodes.com/service/axonetest"
+  },
 ]
