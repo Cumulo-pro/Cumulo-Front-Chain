@@ -33,5 +33,24 @@
     "grpc": "axone-testnet-grpc.polkachu.com:17690",
     "snapshot": "https://polkachu.com/testnets/axone/snapshots",
     "addrbook": "https://polkachu.com/testnets/axone/addrbooks",
+  },
+   {
+    "name": "Kjnodes",
+    "webservices": "https://services.kjnodes.com/testnet/axone/",
+    "x": "kjnodes",
+    "validatorlogo": "kjnodes.jpg",
+    "explorer": "https://explorer.kjnodes.com/axone-testnet",
+    "seeds": "3f472746f46493309650e5a033076689996c8881@axone-testnet.rpc.kjnodes.com:13659",
+     "peers": "36e40b1c3fe2aac53884509cc0f3485032d8e8cf@65.108.192.123:19656,f30b33834ddcb95051ab4d0fed9ae85c09b44a44@95.217.85.81:35456,c9d8b4ea3d4b5b95cb122f9778edbb6b399f9deb@94.130.138.48:45656,582dbc3df1128a55a3ced347a6ad7e57d42e3d8c@136.243.13.36:17656,9614c853f70a0010215587a31677b99144e96507@152.228.211.19:26656,5e7747650adbed323baff71523b4cdeaf6d8a57c@77.68.82.101:26655,d5519e378247dfb61dfe90652d1fe3e2b3005a5b@213.239.207.162:13656,1d4256993f1c08571c3bf4e9362246b736b12125@65.108.199.79:26103,adb5e004b95e6db7041e68af878cf8b8bada0ec3@141.94.143.203:55156,00e9c1d414013c76c8a85b25fa8ef9597a0a0376@162.55.234.70:55156"
+    "api": "https://axone-testnet.api.kjnodes.com",
+    "rpc": "https://axone-testnet.rpc.kjnodes.com",
+    "grpc": "ssl/tls: axone-testnet.grpc.kjnodes.com:443",
+    "snapshot": "",
+     "state-sync": "https://services.kjnodes.com/testnet/axone/state-sync/",
+    "addrbook": "https://snapshots.kjnodes.com/axone-testnet/addrbook.json",
+    "tools": "KJNodes Testnet Proposal Bot",
+    "tools_url": {
+        "KJNodes Testnet Proposal Bot": "https://services.kjnodes.com/testnet/axone/"
+    },
   }
 ]
