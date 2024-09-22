@@ -564,8 +564,8 @@
   "api": "https://celestia.archive.api.nodeshub.online",
   "rpc": "https://celestia.archive.rpc.nodeshub.online",
   "grpc": "https://celestia.archive.grpc.nodeshub.online",
-   "snapshot": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/snapshot/archive",
-   "prunedsnapshot": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/snapshot/pruned",
+  "snapshot": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/snapshot/archive",
+  "prunedsnapshot": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/snapshot/pruned",
  "addrbook": "",
   "tools": "Installation guide, State-Sync, Upgrade History",
   "tools_url": {
@@ -628,5 +628,30 @@
     "Compilation of technical guides and resources": "https://cumulo.pro/celestia/content.php"
   },
   "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#contributions-by-cumulo"
+},
+  {
+  "name": "StakeTown",
+  "webservices": "https://services.stake-town.com/home/mainnet/celestia",
+  "x": "",
+  "validatorlogo": "staketown.jpg",
+  "explorer": "",
+  "peers": "",
+  "seeds": "",
+  "api": "https://celestia-api.stake-town.com:443",
+  "rpc": "https://celestia-rpc.stake-town.com:443",
+  "grpc": "celestia-grpc.stake-town.com:443",
+  "snapshot": "https://services.stake-town.com/home/mainnet/celestia/sync",
+  "State-Sync": "https://services.stake-town.com/home/mainnet/celestia/sync",
+  "tools": "Monitoring stack for DA nodes, Bot for tracking health of important IBC paths, StakeTown relayer",
+  "tools_url": {
+    "Monitoring stack for DA nodes": "https://github.com/staketown/celestia-da-monitoring",
+    "Bot for tracking health of important IBC paths": "https://discord.com/channels/638338779505229824/1176595874823028817"
+  },
+  "content_url": {
+    "Installation Guide": "https://services.stake-town.com/home/mainnet/celestia/installation"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#staketown"
 }
+
+  
 ]
