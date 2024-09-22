@@ -681,6 +681,17 @@
     "Public Good Contributions": "https://decentrio.notion.site/Celestia-public-good-3cc3aa45c8cb4738b77d6c8946a1dcfd?pvs=4"
   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-decentrio"
+},
+{
+  "name": "kocality",
+  "webservices": "",
+  "x": "kkocality",
+  "validatorlogo": "kocality.jpg",
+  "tools": "Celestia Light Node Script",
+  "tools_url": {
+    "Celestia Light Node Script": "https://github.com/kocality/celestia-light-node-script"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-kocality"
 }
 
 
