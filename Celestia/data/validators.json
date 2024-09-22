@@ -634,10 +634,7 @@
   "webservices": "https://services.stake-town.com/home/mainnet/celestia",
   "x": "",
   "validatorlogo": "staketown.jpg",
-  "explorer": "",
-  "peers": "",
-  "seeds": "",
-  "api": "https://celestia-api.stake-town.com:443",
+   "api": "https://celestia-api.stake-town.com:443",
   "rpc": "https://celestia-rpc.stake-town.com:443",
   "grpc": "celestia-grpc.stake-town.com:443",
   "snapshot": "https://services.stake-town.com/home/mainnet/celestia/sync",
@@ -665,6 +662,25 @@
     "Tutorials in our blog for TIA staking": "https://stakingfacilities.com/blog/celestia-x-keplr-wallet-staking-guide"
   },
    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-staking-facilities"
+},
+{
+  "name": "Decentrio",
+  "webservices": "https://decentrio.ventures/services/celestia",
+  "x": "decentriolabs",
+  "validatorlogo": "decentrio.jpg",
+  "snapshot": "https://decentrio.ventures/services/celestia",
+  "api": "https://celestia.api.decentrio.ventures:443",
+  "rpc": "https://celestia.rpc.decentrio.ventures:443",
+  "grpc": "celestia-grpc.lavenderfive.com:443",
+  "tools": "Services (Snapshot, Installation Guide)",
+  "tools_url": {
+    "Services (Snapshot, Installation Guide)": "https://decentrio.ventures/services/celestia"
+  },
+  "content_url": {
+    "Code Contributions - Working with Rollkit": "https://x.com/RollkitDev/status/1798007102612656476",
+    "Public Good Contributions": "https://decentrio.notion.site/Celestia-public-good-3cc3aa45c8cb4738b77d6c8946a1dcfd?pvs=4"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-decentrio"
 }
 
 
