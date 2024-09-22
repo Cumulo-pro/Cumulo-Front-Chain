@@ -11,15 +11,37 @@
         "webservices": "",
         "x": "NodesGuru",
         "validatorlogo": "nodesguru.png",
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#nodesguru"
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#nodesguru",
+        "rpc": "https://rpc-1.testnet.celestia.nodes.guru",
+        "api": "https://api-1.testnet.celestia.nodes.guru",
+        "grpc": "grpc-1.testnet.celestia.nodes.guru:10790",
+        "explorer": "https://testnet.celestia.explorers.guru/",
+        "tools": "NodesChecker Bot",
+        "tools_url": {
+        "NodesChecker Bot": "https://t.me/NodesGuru_bot"
+        }
     },
-    {
-        "name": "BlackNodes",
-        "webservices": "",
-        "x": "BlackNodesHQ",
-        "validatorlogo": "blacknodes.jpg",
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#blacknodes-contribution-httpsblacknodesnet"
+   {
+    "name": "BlackNodes",
+    "webservices": "https://services.blacknodes.net/Celestia/",
+    "x": "BlackNodesHQ",
+    "validatorlogo": "blacknodes.jpg",
+    "explorer": "https://explorer.blacknodes.net/Celestia-Testnet",
+    "peers": "af73ecc4d2084643fe77657d260a07240872d91f@celestia-testnet.blacknodes.net:26656",
+    "api": "https://celestia-testnet-api.blacknodes.net",
+    "rpc": "https://celestia-testnet-rpc.blacknodes.net",
+    "grpc": "celestia-testnet-grpc.blacknodes.net:17090",
+    "snapshot": "https://files.blacknodes.net/celestia/celestia_mocha-4.tar.lz4",
+    "addrbook": "",
+    "tools": "Services(Snapshot,State-Sync,Endpoints,LivePeers,Node-Monitoring), Node Tutorial Guide, Node-Monitoring Guide",
+    "tools_url": {
+        "Services(Snapshot,State-Sync,Endpoints,LivePeers,Node-Monitoring)": "https://services.blacknodes.net/Celestia",
+        "Node Tutorial Guide": "https://github.com/blacknodes/Node-Services/tree/main/Projects/celestia",
+        "Node-Monitoring Guide": "https://github.com/blacknodes/Node-Services/tree/main/Projects/celestia/Celestia-Node-Monitoring"
     },
+    "archival_node_rpc": "consensus-full-mocha.blacknodes.net",
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#blacknodes-contribution-httpsblacknodesnet"
+},
     {
         "name": "Lavender.Five Nodes",
         "webservices": "https://services.lavenderfive.com/mainnet/celestia",
