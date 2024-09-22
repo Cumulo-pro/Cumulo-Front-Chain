@@ -651,7 +651,22 @@
     "Installation Guide": "https://services.stake-town.com/home/mainnet/celestia/installation"
   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#staketown"
+},
+  {
+  "name": "Staking Facilities",
+  "webservices": "https://stakingfacilities.com/networks/celestia-network",
+  "x": "stakingfac",
+  "validatorlogo": "stakingfacilities.jpg",
+  "tools": "Tiascan - Blockspace Race Dashboard",
+  "tools_url": {
+    "Tiascan - Blockspace Race Dashboard": "https://tiascan.com/"
+  },
+  "content_url": {
+    "Tutorials in our blog for TIA staking": "https://stakingfacilities.com/blog/celestia-x-keplr-wallet-staking-guide"
+  },
+   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-staking-facilities"
 }
+
 
   
 ]
