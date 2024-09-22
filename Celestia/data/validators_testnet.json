@@ -1,0 +1,163 @@
+[
+{
+        "name": "StakingCabin",
+        "webservices": "https://stakingcabin.com",
+        "x": "StakingCabin",
+        "validatorlogo": "stakingcabin.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#node-operator-contributions"
+    },
+    {
+        "name": "NodesGuru",
+        "webservices": "",
+        "x": "NodesGuru",
+        "validatorlogo": "nodesguru.png",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#nodesguru"
+    },
+    {
+        "name": "BlackNodes",
+        "webservices": "",
+        "x": "BlackNodesHQ",
+        "validatorlogo": "blacknodes.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#blacknodes-contribution-httpsblacknodesnet"
+    },
+    {
+        "name": "Lavender.Five Nodes",
+        "webservices": "https://services.lavenderfive.com/mainnet/celestia",
+        "x": "lavender_five",
+        "validatorlogo": "lavenderfive.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-lavenderfive-nodes"
+    },
+    {
+        "name": "DTEAM",
+        "webservices": "https://dteam.tech/services/testnet/overview/celestia",
+        "x": "dteamtech",
+        "validatorlogo": "dteam.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#dteam"
+    },
+    {
+        "name": "cryptomolot",
+        "webservices": "",
+        "x": "cryptomolot",
+        "validatorlogo": "cryptomolot.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cryptomolot"
+    },
+    {
+        "name": "BlackBlocks",
+        "webservices": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia",
+        "x": "BlackBlocks_io",
+        "validatorlogo": "blackblocks.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-blackblocks"
+    },
+    {
+        "name": "ITRocket",
+        "webservices": "https://itrocket.net/services/mainnet/celestia/",
+        "x": "itrocket_team",
+        "validatorlogo": "itrocket.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#itrocket"
+    },
+    {
+        "name": "Validatrium",
+        "webservices": "",
+        "x": "validatrium",
+        "validatorlogo": "validatrium.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#validatrium"
+    },
+    {
+        "name": "STAKEME",
+        "webservices": "",
+        "x": "stakeme_pro",
+        "validatorlogo": "stakeme.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakeme"
+    },
+    {
+        "name": "AutoStake",
+        "webservices": "https://autostake.com/networks/celestia/#services",
+        "x": "AutoStake_",
+        "validatorlogo": "autostake.png",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#autostake"
+    },
+    {
+        "name": "Smart Stake",
+        "webservices": "",
+        "x": "SmartStake",
+        "validatorlogo": "smartstake.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#smart-stake"
+    },
+    {
+        "name": "CrypTech",
+        "webservices": "",
+        "x": "CrypTech",
+        "validatorlogo": "cryptech.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cryptech"
+    },
+    {
+        "name": "Stakeflow",
+        "webservices": "",
+        "x": "stakeflow",
+        "validatorlogo": "stakeflow.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakeflow"
+    },
+    {
+        "name": "Openbitlab",
+        "webservices": "https://openbitlab.com/network/58/Celestia/docs",
+        "x": "Openbitlab_node",
+        "validatorlogo": "openbitlab.png",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-openbitlab"
+    },
+    {
+        "name": "ChainodeTech",
+        "webservices": "",
+        "x": "ChainodeTech",
+        "validatorlogo": "chainode_tech.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#chainode-tech"
+    },
+    {
+        "name": "LuckyResearch.org",
+        "webservices": "https://luckyresearch.org",
+        "x": "LuckyResearchVN",
+        "validatorlogo": "luckyresearch.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-luckyresearchorg"
+    },
+    {
+        "name": "Suntzu",
+        "webservices": "https://services.suntzu.dev/mainnet/celestia/installation",
+        "x": "suntzu_indexer",
+        "validatorlogo": "suntzu.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#suntzu"
+    },
+    {
+        "name": "ContributionDAO",
+        "webservices": "https://services.contributiondao.com/mainnet/celestia",
+        "x": "contributedao",
+        "validatorlogo": "contributiondao.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributiondao"
+    },
+    {
+        "name": "Cosmostation",
+        "webservices": "",
+        "x": "CosmostationVD",
+        "validatorlogo": "cosmostation.png",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cosmostation"
+    },
+    {
+        "name": "Provalidator",
+        "webservices": "https://nodeservice.provalidator.com/docs/Network/Celestia",
+        "x": "Provalidator",
+        "validatorlogo": "provalidator.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-provalidator"
+    },
+    {
+        "name": "Moonlet",
+        "webservices": "https://dashboard.moonlet.app/dashboard/?blockchain=TIA",
+        "x": "moonlet_hq",
+        "validatorlogo": "moonlet.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-moonlet"
+    },
+    {
+        "name": "Conqueror",
+        "webservices": "",
+        "x": "Conquerorr_1",
+        "validatorlogo": "conqueror.jpg",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#conqueror"
+    }
+]
