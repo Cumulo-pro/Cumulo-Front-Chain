@@ -279,10 +279,7 @@
   "webservices": "https://openbitlab.com/network/58/Celestia/docs",
   "x": "Openbitlab_node",
   "validatorlogo": "openbitlab.png",
-  "explorer": "",
-  "peers": "",
-  "seeds": "",
-  "api": "https://celestia-api.openbitlab.com",
+   "api": "https://celestia-api.openbitlab.com",
   "rpc": "https://celestia-rpc.openbitlab.com",
   "grpc": "celestia-grpc.openbitlab.com:443",
   "snapshot": "https://openbitlab.com/network/58/Celestia/snapshot",
@@ -327,14 +324,10 @@
   "x": "LuckyResearchVN",
   "validatorlogo": "luckyresearch.jpg",
   "explorer": "https://explorer.luckyresearch.org/Celestia-Mainet",
-  "peers": "",
-  "seeds": "",
   "api": "https://api-celestia-mainnet.luckyresearch.org",
   "rpc": "https://rpc-celestia-mainnet.luckyresearch.org",
   "grpc": "",
-  "snapshot": "",
-  "addrbook": "",
-  "content_url": {
+   "content_url": {
     "Galxe campaign": "https://app.galxe.com/quest/kBZDkhZ8FD7AaBqaEX4Uk9/GCT9wtdmFw",
     "Services guide": "https://services.luckyresearch.org/lucky-research-services/mainet/celestia",
     "Community contributions": "https://discord.com/channels/638338779505229824/804389559831232578/1168927959218913293",
@@ -391,10 +384,6 @@
   "validatorlogo": "cosmostation.png",
   "explorer": "https://www.mintscan.io",
   "peers": "d364357f55e37a038d9dbd143448ea792bb8edcf@15.235.115.156:16400",
-  "seeds": "",
-  "api": "",
-  "rpc": "",
-  "grpc": "",
   "snapshot": "https://services.cosmostation.io/snapshot",
   "addrbook": "",
   "tools": "Mintscan Explorer, Mobile Wallet, Web Extension",
@@ -444,8 +433,7 @@
   "tools": "Mainnet Beta DA nodes setup script, Mocha-4 nodes setup script",
   "tools_url": {
     "Mainnet Beta DA nodes setup script": "https://github.com/DasRasyo/Celestia-Mainnet-DA-Nodes/tree/main",
-    "Mocha-4 nodes setup script": "https://github.com/DasRasyo/Celestia-mocha-4"
-  },
+   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#conqueror"
 },
 {
