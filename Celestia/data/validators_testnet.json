@@ -417,7 +417,23 @@
   "genesis": "https://storage.crouton.digital/testnet/celestia/files/genesis.json",
   "addrbook": "https://storage.crouton.digital/testnet/celestia/files/addrbook.json",
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-crouton-digital"
+},
+{
+  "name": "StakeTown",
+  "webservices": "https://services.stake-town.com/home/testnet/celestia",
+  "x": "",
+  "validatorlogo": "staketown.jpg",
+  "api": "https://celestia-testnet-api.stake-town.com:443",
+  "rpc": "https://celestia-testnet-rpc.stake-town.com:443",
+  "grpc": "celestia-testnet-grpc.stake-town.com:443",
+  "snapshot": "https://services.stake-town.com/home/testnet/celestia/sync",
+  "State-Sync": "https://services.stake-town.com/home/testnet/celestia/sync",
+  "content_url": {
+    "Installation Guide": "https://services.stake-town.com/home/testnet/celestia/installation"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#staketown"
 }
+
 
 
 ]
