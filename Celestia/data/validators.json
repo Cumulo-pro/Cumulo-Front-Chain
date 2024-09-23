@@ -672,7 +672,31 @@
       "Celestia App Mainnet": "https://encapsulate.xyz/snapshots/celestia-app-mainnet"
     },
     "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#list-of-contributions-from-encapsulate-kingsuper"
-  }
+  },
+{
+  "name": "Crouton Digital",
+  "x": "CroutonDigital",
+  "validatorlogo": "crouton.jpg",
+  "webservices": "https://crouton.digital/services/mainnets/celestia",
+  "rpc": "https://celestia-mainnet-rpc.crouton.digital",
+  "api": "https://celestia-mainnet-api.crouton.digital",
+  "grpc": "celestia-mainnet-api.crouton.digital:11690",
+  "peer": "d6d8536233c8529f8a436a31065ecb365a96f71e@148.251.53.24:11656",
+  "tools": "Terraform for Celestia, Tested Code of Celestia",
+  "tools_url": {
+    "Terraform for Celestia (SSH Module)": "https://registry.terraform.io/modules/Crouton-Digital/celestia/ssh/latest/examples/celestia-node",
+    "Terraform for Celestia (GitHub)": "https://github.com/Crouton-Digital/terraform-ssh-celestia",
+    "Tested Code of Celestia": "https://drive.google.com/drive/u/0/folders/1881mgxtVEY9QqU2xywFw9s0ZScBzCLik"
+  },
+  "content_url": {
+    "Guide": "https://crouton.digital/services/mainnets/celestia"
+  },
+  "snapshot": "https://storage.crouton.digital/mainnet/celestia/snapshots/celestia_latest.tar.lz4",
+  "genesis": "https://storage.crouton.digital/mainnet/celestia/files/genesis.json",
+  "addrbook": "https://storage.crouton.digital/mainnet/celestia/files/addrbook.json",
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-crouton-digital"
+}
 
   
 ]
