@@ -136,7 +136,7 @@
             "Light Node installation (with Cheat sheet & upgrade guides)": "https://itrocket.net/guides/light-node-installation",
             "Deploy your own Celestia sovereign rollup": "https://itrocket.net/guides/deploy-celestia-sovereign-rollup",
             "DA Nodes Monitoring (Bridge, Full, Light Node monitoring script)": "https://itrocket.net/guides/da-nodes-monitoring"
-        }.
+        },
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#itrocket"
     },
     {
