@@ -253,11 +253,24 @@
         "webservices": "https://services.contributiondao.com/mainnet/celestia",
         "x": "contributedao",
         "validatorlogo": "contributiondao.jpg",
+             "peers": "https://services.contributiondao.com/testnet/celestia/peers",
+          "seeds": "https://services.contributiondao.com/testnet/celestia/peers",
+          "api": "https://celestia-testnet-api.contributiondao.com",
+          "rpc": "https://celestia-testnet-rpc.contributiondao.com",
+          "snapshot": "https://services.contributiondao.com/testnet/celestia/snapshots",
+          "tools": "Pruning node snapshot (Every 6 hours)",
+          "tools_url": {
+            "Pruning node snapshot": "https://services.contributiondao.com/testnet/celestia/snapshots"
+          },
+          "content_url": {
+            "Celestia node Installation Guide": "https://services.contributiondao.com/testnet/celestia/installation"
+          },
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributiondao"
     },
     {
         "name": "Cosmostation",
         "webservices": "",
+        "explorer": "https://www.mintscan.io/celestia-testnet/",
         "x": "CosmostationVD",
         "validatorlogo": "cosmostation.png",
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cosmostation"
@@ -267,20 +280,127 @@
         "webservices": "https://nodeservice.provalidator.com/docs/Network/Celestia",
         "x": "Provalidator",
         "validatorlogo": "provalidator.jpg",
+            "tools_url": {
+            "Public Goods (RPC, API, Snapshots, and more)": "https://nodeservice.provalidator.com/docs/Network/Celestia"
+          },
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-provalidator"
     },
     {
-        "name": "Moonlet",
-        "webservices": "https://dashboard.moonlet.app/dashboard/?blockchain=TIA",
-        "x": "moonlet_hq",
-        "validatorlogo": "moonlet.jpg",
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-moonlet"
-    },
-    {
         "name": "Conqueror",
-        "webservices": "",
         "x": "Conquerorr_1",
         "validatorlogo": "conqueror.jpg",
+        "tools_url": {
+             "Mocha-4 nodes setup script": "https://github.com/DasRasyo/Celestia-mocha-4"
+          },
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#conqueror"
-    }
+    },
+        {
+          "name": "Wavefive",
+          "webservices": "",
+          "x": "jimwavefive",
+          "validatorlogo": "wavefive.jpg",
+           "rpc": "https://celestia-testnet-rpc.0xcryptovestor.com/",
+           "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#wavefive"
+        },
+    {
+  "name": "ERN VENTURES",
+   "x": "ernventures",
+  "validatorlogo": "ernventures.jpg",
+  "tools": "Testnet tools: Decentralization map #beta, Peer scanner, RPC Scanner, Snapshots",
+  "tools_url": {
+    "Consensus Node Snapshot (archive)": "https://celestia.rpc.testnets.services-ernventures.com/archive-snapshot",
+    "Consensus Node Snapshot (pruned)": "https://celestia.rpc.testnets.services-ernventures.com/pruned-snapshot",
+    "Bridge Node Snapshot (archive)": "https://celestia.rpc.testnets.services-ernventures.com/bridge-snapshot"
+  },
+  "rpc": "https://celestia.rpc.testnets.services-ernventures.com",
+  "api": "https://celestia.api.testnets.services-ernventures.com",
+  "peers": "46e5a89a4a9bfad45864316ca596e5392890b06f@85.10.196.25:26656",
+  "content_url": {
+    "Consensus Node installation (pruned)": "https://celestia.testnets.services-ernventures.com/guides/consensus-pruned-installation",
+    "Consensus Node installation (archive)": "https://celestia.testnets.services-ernventures.com/guides/consensus-archive-installation",
+    "Bridge Node installation": "https://celestia.testnets.services-ernventures.com/guides/bridge-node-installation",
+    "Monitoring a Celestia consensus node (with Grafana)": "https://celestia.testnets.services-ernventures.com/guides/monitoring-with-grafana",
+    "Celestia Validator monitoring guide (with tenderduty)": "https://celestia.testnets.services-ernventures.com/guides/validator-monitoring-tenderduty",
+    "Celestia bridge alert": "https://celestia.testnets.services-ernventures.com/guides/bridge-alert",
+    "Useful command": "https://celestia.testnets.services-ernventures.com/guides/useful-commands"
+  }
+},
+ {
+  "name": "F5 Nodes",
+  "webservices": "",
+  "x": "f5nodes",
+  "validatorlogo": "f5nodes.jpg",
+  "archive": "y",
+ "api": "https://celestia-testnet-api.f5nodes.com",
+  "rpc": "https://celestia-testnet-rpc.f5nodes.com",
+  "grpc": "celestia-testnet-grpc.f5nodes.com",
+   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#f5-nodes"
+},
+        {
+  "name": "NakoTurk",
+  "webservices": "",
+  "x": "NakoTurk",
+  "validatorlogo": "nakoturk.jpg",
+  "tools": "Celestia Mocha Testnet Turkish Validator, Bridge, Full Storage ve Light Node Guides",
+  "content_url": {
+    "Celestia Mocha Testnet Turkish Step by Step Guide": "https://github.com/okannako/celestiamocha",
+    "Celestia Mocha Testnet Turkish Script Guide": "https://github.com/okannako/celestiamochascript"
+  },
+  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#nakoturk"
+},
+{
+  "name": "Brightlystake",
+  "webservices": "",
+  "x": "brightlystake",
+  "validatorlogo": "brightlystake.jpg",
+  "rpc": "http://celestia-testnet.brightlystake.com",
+  "grpc": "celestia-testnet.brightlystake.com:9090",
+  "tools": "Public tools for Celestia status check",
+  "tools_url": {
+    "Celestia RPC status checker": "https://celestia-tools.brightlystake.com/rpc-status",
+    "Celestia gRPC status checker": "https://celestia-tools.brightlystake.com/grpc-status"
+  },
+  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#list-of-contributions-from-brightlystakebrightlystakecom"
+},
+{
+  "name": "Nodes Hub",
+  "webservices": "https://services.nodeshub.online/testnet-networks/celestia/",
+  "x": "NodesHub",
+  "validatorlogo": "nodeshub.jpg",
+  "explorer": "https://testnet.explorer.nodeshub.online/celestia",
+  "archive": "y",
+  "peers": "2fae9d7fffbd64f72b2b15645c3c7eb95e9ce961@136.175.9.193:26657",
+  "seeds": "6f6a3a908634b79b6fe7c4988efec2553f188234@celestia.test.seed.nodeshub.online:11656",
+  "api": "https://celestia.test.archive.api.nodeshub.online",
+  "rpc": "https://celestia.test.archive.rpc.nodeshub.online",
+  "grpc": "https://celestia.test.archive.grpc.nodeshub.online",
+  "snapshot": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/snapshot/archive",
+  "prunedsnapshot": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/snapshot/pruned",
+  "bridge_node": "12D3KooWHWmuydGajpZnJNPVjSS8efJ8UHBBQwPxS1WjhrVu37Mn",
+  "validator": "celestiavaloper1zf7t8ahyt75vt0pctula20vs76ml6yprf5dm0c",
+  "tools": "Installation guide, State-Sync, Upgrade History",
+  "tools_url": {
+    "State-Sync": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/state-sync",
+    "Upgrade History": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/upgrade"
+  },
+  "content_url": {
+    "Installation guide": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/installation"
+  },
+  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#nodes-hub-contribution-httpsnodeshubonline"
+},
+        {
+  "name": "Encapsulate (fka KingSuper)",
+  "x": "encapsulate_xyz",
+  "validatorlogo": "encapsulate.jpg",
+  "content_url": {
+    "Celestia Bridge Testnet": "https://encapsulate.xyz/snapshots/celestia-bridge-testnet"
+  },
+  "tools": "Submit Pay for Blob,Light Node Health Checker",
+  "tools_url": {
+    "Submit Pay for Blob": "https://celestia-pfb.kingsuper.services",
+    "Light Node Health Checker": "https://celestia-node-checker.kingsuper.services"
+  },
+  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#list-of-contributions-from-encapsulate-kingsuper"
+}
+
 ]
