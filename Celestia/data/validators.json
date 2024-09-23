@@ -431,7 +431,7 @@
   "validatorlogo": "conqueror.jpg",
   "tools": "Mainnet Beta DA nodes setup script, Mocha-4 nodes setup script",
   "tools_url": {
-    "Mainnet Beta DA nodes setup script": "https://github.com/DasRasyo/Celestia-Mainnet-DA-Nodes/tree/main",
+    "Mainnet Beta DA nodes setup script": "https://github.com/DasRasyo/Celestia-Mainnet-DA-Nodes/tree/main"
    },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#conqueror"
 },
