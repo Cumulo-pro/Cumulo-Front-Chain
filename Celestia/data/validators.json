@@ -661,6 +661,18 @@
     "Celestia Light Node Script": "https://github.com/kocality/celestia-light-node-script"
   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-kocality"
+},
+{
+  "name": "Encapsulate (fka KingSuper)",
+   "x": " encapsulate_xyz",
+  "validatorlogo": "encapsulate.jpg",
+  "rpc": "https://celestia-mainnet-rpc.kingsuper.services",
+   "grpc": "https://celestia-mainnet-grpc.kingsuper.services"
+  "content_url": {
+    "Celestia Bridge Mainnet": "https://encapsulate.xyz/snapshots/celestia-bridge-mainnet",
+    "Celestia App Mainnet": "https://encapsulate.xyz/snapshots/celestia-app-mainnet"
+  },
+  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#list-of-contributions-from-encapsulate-kingsuper"
 }
 
 
