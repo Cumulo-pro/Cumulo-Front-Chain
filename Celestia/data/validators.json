@@ -694,7 +694,6 @@
   "snapshot": "https://storage.crouton.digital/mainnet/celestia/snapshots/celestia_latest.tar.lz4",
   "genesis": "https://storage.crouton.digital/mainnet/celestia/files/genesis.json",
   "addrbook": "https://storage.crouton.digital/mainnet/celestia/files/addrbook.json",
-  },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-crouton-digital"
 }
 
