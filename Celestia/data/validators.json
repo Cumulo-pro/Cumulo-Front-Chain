@@ -632,49 +632,48 @@
   },
    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-staking-facilities"
 },
-{
-  "name": "Decentrio",
-  "webservices": "https://decentrio.ventures/services/celestia",
-  "x": "decentriolabs",
-  "validatorlogo": "decentrio.jpg",
-  "snapshot": "https://decentrio.ventures/services/celestia",
-  "api": "https://celestia.api.decentrio.ventures:443",
-  "rpc": "https://celestia.rpc.decentrio.ventures:443",
-  "grpc": "celestia-grpc.lavenderfive.com:443",
-  "tools": "Services (Snapshot, Installation Guide)",
-  "tools_url": {
-    "Services (Snapshot, Installation Guide)": "https://decentrio.ventures/services/celestia"
+ {
+    "name": "Decentrio",
+    "webservices": "https://decentrio.ventures/services/celestia",
+    "x": "decentriolabs",
+    "validatorlogo": "decentrio.jpg",
+    "snapshot": "https://decentrio.ventures/services/celestia",
+    "api": "https://celestia.api.decentrio.ventures:443",
+    "rpc": "https://celestia.rpc.decentrio.ventures:443",
+    "grpc": "https://celestia-grpc.decentrio.ventures:443", 
+    "tools": "Services (Snapshot, Installation Guide)",
+    "tools_url": {
+      "Services (Snapshot, Installation Guide)": "https://decentrio.ventures/services/celestia"
+    },
+    "content_url": {
+      "Code Contributions - Working with Rollkit": "https://x.com/RollkitDev/status/1798007102612656476",
+      "Public Good Contributions": "https://decentrio.notion.site/Celestia-public-good-3cc3aa45c8cb4738b77d6c8946a1dcfd?pvs=4"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-decentrio"
   },
-  "content_url": {
-    "Code Contributions - Working with Rollkit": "https://x.com/RollkitDev/status/1798007102612656476",
-    "Public Good Contributions": "https://decentrio.notion.site/Celestia-public-good-3cc3aa45c8cb4738b77d6c8946a1dcfd?pvs=4"
+  {
+    "name": "kocality",
+    "webservices": "",
+    "x": "kkocality",
+    "validatorlogo": "kocality.jpg",
+    "tools": "Celestia Light Node Script",
+    "tools_url": {
+      "Celestia Light Node Script": "https://github.com/kocality/celestia-light-node-script"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-kocality"
   },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-decentrio"
-},
-{
-  "name": "kocality",
-  "webservices": "",
-  "x": "kkocality",
-  "validatorlogo": "kocality.jpg",
-  "tools": "Celestia Light Node Script",
-  "tools_url": {
-    "Celestia Light Node Script": "https://github.com/kocality/celestia-light-node-script"
-  },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-kocality"
-},
-{
-  "name": "Encapsulate (fka KingSuper)",
-   "x": " encapsulate_xyz",
-  "validatorlogo": "encapsulate.jpg",
-  "rpc": "https://celestia-mainnet-rpc.kingsuper.services",
-   "grpc": "https://celestia-mainnet-grpc.kingsuper.services"
-  "content_url": {
-    "Celestia Bridge Mainnet": "https://encapsulate.xyz/snapshots/celestia-bridge-mainnet",
-    "Celestia App Mainnet": "https://encapsulate.xyz/snapshots/celestia-app-mainnet"
-  },
-  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#list-of-contributions-from-encapsulate-kingsuper"
-}
-
+  {
+    "name": "Encapsulate (fka KingSuper)",
+    "x": "encapsulate_xyz",
+    "validatorlogo": "encapsulate.jpg",
+    "rpc": "https://celestia-mainnet-rpc.kingsuper.services",
+    "grpc": "https://celestia-mainnet-grpc.kingsuper.services",
+    "content_url": {
+      "Celestia Bridge Mainnet": "https://encapsulate.xyz/snapshots/celestia-bridge-mainnet",
+      "Celestia App Mainnet": "https://encapsulate.xyz/snapshots/celestia-app-mainnet"
+    },
+    "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#list-of-contributions-from-encapsulate-kingsuper"
+  }
 
   
 ]
