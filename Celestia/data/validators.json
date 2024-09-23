@@ -685,8 +685,7 @@
   "tools": "Terraform for Celestia, Tested Code of Celestia",
   "tools_url": {
     "Terraform for Celestia (SSH Module)": "https://registry.terraform.io/modules/Crouton-Digital/celestia/ssh/latest/examples/celestia-node",
-    "Terraform for Celestia (GitHub)": "https://github.com/Crouton-Digital/terraform-ssh-celestia",
-    "Tested Code of Celestia": "https://drive.google.com/drive/u/0/folders/1881mgxtVEY9QqU2xywFw9s0ZScBzCLik"
+   "Tested Code of Celestia": "https://drive.google.com/drive/u/0/folders/1881mgxtVEY9QqU2xywFw9s0ZScBzCLik"
   },
   "content_url": {
     "Guide": "https://crouton.digital/services/mainnets/celestia"
