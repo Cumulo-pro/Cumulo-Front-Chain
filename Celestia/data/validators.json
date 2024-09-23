@@ -46,7 +46,6 @@
     "rpc": "https://celestia-testnet-rpc.blacknodes.net",
     "grpc": "celestia-testnet-grpc.blacknodes.net:17090",
     "snapshot": "https://files.blacknodes.net/celestia/celestia_mocha-4.tar.lz4",
-    "addrbook": "",
     "tools": "Celestia Faucet",
     "tools_url": {
        "Celestia Faucet By BlackNodes": "https://celestia-faucet.blacknodes.net"
