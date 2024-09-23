@@ -31,6 +31,8 @@
     "api": "https://celestia-testnet-api.blacknodes.net",
     "rpc": "https://celestia-testnet-rpc.blacknodes.net",
     "grpc": "celestia-testnet-grpc.blacknodes.net:17090",
+    "rpc_archive": "consensus-full-mocha.blacknodes.net",
+    "archive": "y",
     "snapshot": "https://files.blacknodes.net/celestia/celestia_mocha-4.tar.lz4",
     "addrbook": "",
     "tools": "Services(Snapshot,State-Sync,Endpoints,LivePeers,Node-Monitoring), Node Tutorial Guide, Node-Monitoring Guide",
@@ -39,14 +41,22 @@
         "Node Tutorial Guide": "https://github.com/blacknodes/Node-Services/tree/main/Projects/celestia",
         "Node-Monitoring Guide": "https://github.com/blacknodes/Node-Services/tree/main/Projects/celestia/Celestia-Node-Monitoring"
     },
-    "archival_node_rpc": "consensus-full-mocha.blacknodes.net",
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#blacknodes-contribution-httpsblacknodesnet"
 },
     {
         "name": "Lavender.Five Nodes",
-        "webservices": "https://services.lavenderfive.com/mainnet/celestia",
+        "webservices": "https://services.lavenderfive.com/testnet/celestia",
         "x": "lavender_five",
         "validatorlogo": "lavenderfive.jpg",
+        "rpc": "https://testnet-celestia-rpc.lavenderfive.com:443",
+        "grpc": "testnet-celestia-grpc.lavenderfive.com:443",
+        "api": "https://testnet-celestia-api.lavenderfive.com:443",
+             "tools": "Snapshot, State-sync, Installation Guide",
+             "tools_url": {
+        "Snapshot": "https://services.lavenderfive.com/testnet/celestia/snapshot",
+        "State-sync": "https://services.lavenderfive.com/testnet/celestia/statesync",
+        "Installation Guide": "https://services.lavenderfive.com/testnet/celestia/installation"
+    },
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-lavenderfive-nodes"
     },
     {
@@ -54,62 +64,133 @@
         "webservices": "https://dteam.tech/services/testnet/overview/celestia",
         "x": "dteamtech",
         "validatorlogo": "dteam.jpg",
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#dteam"
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#dteam",
+             "tools": "Installation guides, snapshot, state sync and etc.",
+    "explorer": "Testnet explorer",
+    "tools_url": {
+        "Bridge node checker / website": "https://celestia-bridge-checker.dteam.tech/",
+        "Bridge node checker / Discord": "https://discord.com/invite/BCeXe63Mm8",
+        "Community faucet (10TIA / 24h)": "https://discord.com/invite/BCeXe63Mm8"
+    },
+    "rpc": "https://rpc.archive.celestia.testnet.dteam.tech",
+    "api": "https://api.archive.celestia.testnet.dteam.tech",
+    "grpc": "grpc.archive.celestia.testnet.dteam.tech:27090",
+    "seeds": "70e8a8941f32dc5f696e46ee836c27620e773065@seed.celestia.testnet.dteam.tech:26656",
+    "peers": "76ed983017167d96c62b166725250940deb783563@peer.celestia.testnet.dteam.tech:27656"
     },
     {
         "name": "cryptomolot",
         "webservices": "",
         "x": "cryptomolot",
         "validatorlogo": "cryptomolot.jpg",
+            "rpc": "https://celestia-mocha-rpc.cryptomolot.com/",
+          "tools": "Community guidelines, Galxe campaign",
+          "tools_url": {
+            "Galxe campaign": "https://app.galxe.com/quest/kBZDkhZ8FD7AaBqaEX4Uk9/GCT9wtdmFw"
+          },
+          "content":{
+            "Content contributions for Celestia by cryptomolot": "https://telegra.ph/Content-contributions-for-Celestia-by-cryptomolot-07-02",
+            "Community guidelines": "https://cryptomolot.gitbook.io/cryptomolot-docs/testnets/celestia"
+          },
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cryptomolot"
     },
     {
         "name": "BlackBlocks",
-        "webservices": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia",
+        "webservices": "https://wiki.blackblocks.io/en/public/services/testnet/celestia",
         "x": "BlackBlocks_io",
         "validatorlogo": "blackblocks.jpg",
+        "rpc": "https://rpc.celestia-mocha-4.blackblocks.io/",
+        "archive": "y",
+            "api": "https://bridge.celestia-mocha-4.blackblocks.io/",
+            "snapshot": "https://wiki.blackblocks.io/en/public/services/testnet/celestia#full-node-archival-snapshot",
+            "tools": "Bridge Archival, Full Node Archival",
+            "tools_url": {
+        "Bridge Archival": "https://wiki.blackblocks.io/en/public/services/testnet/celestia#bridge-node-archival-snapshot",
+        "Full Node Archival": "https://wiki.blackblocks.io/en/public/services/testnet/celestia#full-node-archival-snapshot"
+    },
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-blackblocks"
     },
     {
         "name": "ITRocket",
-        "webservices": "https://itrocket.net/services/mainnet/celestia/",
+        "webservices": "https://itrocket.net/services/testnet/celestia/",
         "x": "itrocket_team",
         "validatorlogo": "itrocket.jpg",
+        "explorer": "https://testnet.itrocket.net/celestia/staking",
+          "peers": "daf2cecee2bd7f1b3bf94839f993f807c6b15fbf@celestia-testnet-peer.itrocket.net:11656",
+          "seeds": "5d0bf034d6e6a8b5ee31a2f42f753f1107b3a00e@celestia-testnet-seed.itrocket.net:11656",
+          "api": "https://celestia-testnet-api.itrocket.net",
+          "rpc": "https://celestia-testnet-rpc.itrocket.net",
+          "grpc": "celestia-testnet-grpc.itrocket.net:443",
+          "archive": "y",
+            "tools": "Decentralization Analytics #validators, RPC, and all nodes; Governance Bot #with status & UPD timer notifications; Peer scanner #with real time peer uptime verification; RPC Scanner #with Raw scan results",
+          "tools_url": {
+            "Decentralization Analytics": "https://itrocket.net/services/testnet/celestia/decentralization/",
+            "Governance Bot": "https://t.me/itrocket_testnet_proposal_bot",
+            "Peer scanner": "https://itrocket.net/services/testnet/celestia/#peer",
+            "RPC Scanner": "https://itrocket.net/services/testnet/celestia/public-rpc/"
+          },
+            "content_url": {
+            "Consensus Node installation (with Cheat sheet & upgrade guides)": "https://itrocket.net/guides/consensus-node-installation",
+            "Bridge Node installation (with Cheat sheet & upgrade guides)": "https://itrocket.net/guides/bridge-node-installation",
+            "Full Storage Node installation (with Cheat sheet & upgrade guides)": "https://itrocket.net/guides/full-storage-node-installation",
+            "Light Node installation (with Cheat sheet & upgrade guides)": "https://itrocket.net/guides/light-node-installation",
+            "Deploy your own Celestia sovereign rollup": "https://itrocket.net/guides/deploy-celestia-sovereign-rollup",
+            "DA Nodes Monitoring (Bridge, Full, Light Node monitoring script)": "https://itrocket.net/guides/da-nodes-monitoring"
+        }.
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#itrocket"
-    },
-    {
-        "name": "Validatrium",
-        "webservices": "",
-        "x": "validatrium",
-        "validatorlogo": "validatrium.jpg",
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#validatrium"
     },
     {
         "name": "STAKEME",
         "webservices": "",
         "x": "stakeme_pro",
         "validatorlogo": "stakeme.jpg",
+             "peers": "83cda75ef0cb3826858eaafe60f0f14a2018d53f@celestia-testnet-peer.stakeme.pro:11656",
+    "seeds": "83cda75ef0cb3826858eaafe60f0f14a2018d53f@celestia-testnet-seed.stakeme.pro:11656",
+    "api": "https://celestia-testnet-rest.stakeme.pro",
+    "rpc": "https://celestia-testnet-rpc.stakeme.pro",
+    "archive": "y",
+    "grpc": "da-bridge-mocha-4.stakeme.pro:9090",
+    "tools": "Self-written explorer #staking/voting directly through the explorer using Keplr is supported, Consensus, Uptime validators, RPC scanner & peers, Self-written faucet",
+    "tools_url": {
+        "Self-written explorer": "https://testnet.celestia.exploreme.pro/",
+        "Consensus": "https://testnet.celestia.exploreme.pro/utilities?tab=consensus",
+        "Uptime validators": "https://testnet.celestia.exploreme.pro/utilities?tab=uptime",
+        "RPC scanner & peers": "https://testnet.celestia.exploreme.pro/network",
+        "Self-written faucet": "https://celestia-testnet.faucetme.pro/"
+    },
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakeme"
     },
     {
         "name": "AutoStake",
-        "webservices": "https://autostake.com/networks/celestia/#services",
+        "webservices": "https://autostake.com/networks/testnets/celestia/",
         "x": "AutoStake_",
         "validatorlogo": "autostake.png",
+            "api": "https://celestia-testnet-lcd.autostake.com:443",
+            "rpc": "https://celestia-testnet-rpc.autostake.com:443",
+            "grpc": "celestia-testnet-grpc.autostake.com:443",
+            "tools": "Services (Snapshot, addrbook, Seed, Peer)",
+            "tools_url": {
+        "Snapshot, addrbook, Seed, Peer": "https://autostake.com/networks/testnets/celestia/#services"
+    }
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#autostake"
-    },
-    {
-        "name": "Smart Stake",
-        "webservices": "",
-        "x": "SmartStake",
-        "validatorlogo": "smartstake.jpg",
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#smart-stake"
     },
     {
         "name": "CrypTech",
         "webservices": "",
         "x": "CrypTech",
         "validatorlogo": "cryptech.jpg",
+            "api": "https://api-celestia-testnet.cryptech.com.ua",
+          "rpc": "https://rpc-celestia-testnet.cryptech.com.ua",
+          "grpc": "https://grpc-celestia-testnet.cryptech.com.ua",
+          "snapshot": "https://services.cryptech.com.ua/testnet/celestia/snapshot/README/",
+          "tools": "Explorer.Fork.Ping.Pub - with Archive Node, Guide, Proposal_Bot, CosmosNodeMonitoring",
+          "tools_url": {
+            "Snapshots": "https://services.cryptech.com.ua/testnet/celestia/snapshot/README/",
+            "Guide": "https://services.cryptech.com.ua/testnet/celestia/installation/README/",
+            "Proposal_Bot": "https://t.me/Cryptech_ProposalBot",
+            "CosmosNodeMonitoring": "https://github.com/dvjromashkin/cosmos-monitoring"
+          },
+            "archive": "y",
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cryptech"
     },
     {
@@ -117,6 +198,12 @@
         "webservices": "",
         "x": "stakeflow",
         "validatorlogo": "stakeflow.jpg",
+       "explorer": "https://stakeflow.io/celestia-testnet",
+          "peers": "edebca7508b70df9659c1293b0d8cbc05c77c91f@peer-celestia-testnet-01.stakeflow.io:16007",
+          "seeds": "edebca7508b70df9659c1293b0d8cbc05c77c91f@seed-celestia-testnet-01.stakeflow.io:16007",
+          "api": "https://api-celestia-testnet-01.stakeflow.io",
+          "rpc": "https://rpc-celestia-testnet-01.stakeflow.io",
+          "grpc": "grpc-celestia-testnet-01.stakeflow.io:16002",
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakeflow"
     },
     {
@@ -124,20 +211,28 @@
         "webservices": "https://openbitlab.com/network/58/Celestia/docs",
         "x": "Openbitlab_node",
         "validatorlogo": "openbitlab.png",
+           "api": "https://celestia-testnet-api.openbitlab.com",
+          "rpc": "https://celestia-testnet-rpc.openbitlab.com",
+          "grpc": "celestia-testnet-grpc.openbitlab.com:443",
+          "snapshot": "https://openbitlab.com/network/24/Celestia/snapshot",
+          "tools": "Srvcheck monitoring tool, Validator Monitor bot",
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-openbitlab"
-    },
-    {
-        "name": "ChainodeTech",
-        "webservices": "",
-        "x": "ChainodeTech",
-        "validatorlogo": "chainode_tech.jpg",
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#chainode-tech"
     },
     {
         "name": "LuckyResearch.org",
         "webservices": "https://luckyresearch.org",
         "x": "LuckyResearchVN",
         "validatorlogo": "luckyresearch.jpg",
+            "explorer": "https://explorer.luckyresearch.org/Celestia-Testnet",
+          "api": "https://api-celestia-mocha.luckyresearch.org/",
+          "rpc": "https://rpc-celestia-mocha.luckyresearch.org/",
+          "bridge_node": "12D3KooW9tcjEJSjLtXDQtrqxiGULcgqQV11u8yQBztpcs8p53W3",
+          "content_url": {
+            "Services guide": "https://services.luckyresearch.org/lucky-research-services/testnet/celestia",
+            "Galxe campaign": "https://app.galxe.com/quest/kBZDkhZ8FD7AaBqaEX4Uk9/GCT9wtdmFw",
+            "Community contributions": "https://discord.com/channels/638338779505229824/804389559831232578/1168927959218913293",
+            "Vietnamese Blockchain Knowledge": "https://luckyresearch.notion.site/Gi-i-thi-u-v-Celestia-v-Modular-Blockchain-c9bd267748e8471ea7da8ec85e75fa29?pvs=74",
+          }
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-luckyresearchorg"
     },
     {
@@ -145,7 +240,13 @@
         "webservices": "https://services.suntzu.dev/mainnet/celestia/installation",
         "x": "suntzu_indexer",
         "validatorlogo": "suntzu.jpg",
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#suntzu"
+            "explorer": "https://explorer.suntzu.dev/celestia-testnet",
+          "peers": "92372368693bf06cdcec3811695c70fa662d6e40@95.217.204.154:11256",
+          "api": "https://celestia-testnet-api.suntzu.dev",
+          "rpc": "https://celestia-testnet-rpc.suntzu.dev",
+          "grpc": "celestia-testnet-grpc.suntzu.dev:11290",
+          "tools": "Monitor bridge/validator/system",
+         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#suntzu"
     },
     {
         "name": "ContributionDAO",
