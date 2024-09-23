@@ -102,14 +102,6 @@
   "webservices": "",
   "x": "cryptomolot",
   "validatorlogo": "cryptomolot.jpg",
-  "explorer": "",
-  "peers": "",
-  "seeds": "",
-  "api": "",
-  "rpc": "https://celestia-mocha-rpc.cryptomolot.com/",
-  "grpc": "",
-  "snapshot": "",
-  "addrbook": "",
   "tools": "Community guidelines, Galxe campaign",
   "tools_url": {
     "Galxe campaign": "https://app.galxe.com/quest/kBZDkhZ8FD7AaBqaEX4Uk9/GCT9wtdmFw"
