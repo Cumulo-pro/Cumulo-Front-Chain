@@ -1,3 +1,21 @@
+[
+  {
+  "autor": "HerculesNode",
+  "twitter": "HerculesNode",
+  "logo": "herculesnode.jpg",
+  "resources": [
+    {
+      "recurso": "RollApp Installation Guide ",
+      "enlace": "https://github.com/HerculesNode/Testnet-Rehber/blob/main/Dymension/Dymension.md",
+      "tipo": "Guide"
+    },
+    {
+      "recurso": "HerculesNode Telegram Faucet",
+      "enlace": "https://github.com/HerculesNode/Testnet-Rehber/blob/main/Dymension/faucet.md",
+      "tipo": "Faucet"
+    }
+  ]
+},
 {
   "autor": "CoinHunters",
   "twitter": "CoinHuntersTR",
@@ -6,12 +24,9 @@
     {
       "recurso": "RollApp Faucet Telegram Bot",
       "enlace": "https://t.me/rollappsfaucet_bot",
-      "tipo": "Bot tool"
-    },
-    {
-      "recurso": "Otro Recurso 1",
-      "enlace": "https://enlace1.com",
-      "tipo": "Documentation"
+      "tipo": "Faucet"
     }
   ]
 }
+
+]
