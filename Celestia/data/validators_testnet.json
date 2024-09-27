@@ -1,11 +1,4 @@
 [
-{
-        "name": "StakingCabin",
-        "webservices": "https://stakingcabin.com",
-        "x": "StakingCabin",
-        "validatorlogo": "stakingcabin.jpg",
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#node-operator-contributions"
-    },
     {
         "name": "NodesGuru",
         "webservices": "",
