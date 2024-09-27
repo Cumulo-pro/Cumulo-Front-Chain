@@ -1,0 +1,17 @@
+{
+  "autor": "CoinHunters",
+  "twitter": "CoinHuntersTR",
+  "logo": "coinhunters.jpg",
+  "resources": [
+    {
+      "recurso": "RollApp Faucet Telegram Bot",
+      "enlace": "https://t.me/rollappsfaucet_bot",
+      "tipo": "Bot tool"
+    },
+    {
+      "recurso": "Otro Recurso 1",
+      "enlace": "https://enlace1.com",
+      "tipo": "Documentation"
+    }
+  ]
+}
