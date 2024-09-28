@@ -5,14 +5,14 @@
   "logo": "herculesnode.jpg",
   "resources": [
     {
-      "recurso": "RollApp Installation Guide ",
-      "enlace": "https://github.com/HerculesNode/Testnet-Rehber/blob/main/Dymension/Dymension.md",
+      "resource": "RollApp Installation Guide ",
+      "link": "https://github.com/HerculesNode/Testnet-Rehber/blob/main/Dymension/Dymension.md",
       "tipo": "Guide"
     },
     {
-      "recurso": "HerculesNode Telegram Faucet",
-      "enlace": "https://github.com/HerculesNode/Testnet-Rehber/blob/main/Dymension/faucet.md",
-      "tipo": "Faucet"
+      "resource": "HerculesNode Telegram Faucet",
+      "link": "https://github.com/HerculesNode/Testnet-Rehber/blob/main/Dymension/faucet.md",
+      "type": "Faucet"
     }
   ]
 },
@@ -22,9 +22,26 @@
   "logo": "coinhunters.jpg",
   "resources": [
     {
-      "recurso": "RollApp Faucet Telegram Bot",
-      "enlace": "https://t.me/rollappsfaucet_bot",
-      "tipo": "Faucet"
+      "resource": "RollApp Faucet Telegram Bot",
+      "link": "https://t.me/rollappsfaucet_bot",
+      "type": "Faucet"
+    }
+  ]
+},
+   {
+  "autor": "Cumulo",
+  "twitter": "Cumulo_pro",
+  "logo": "cumulo.jpg",
+  "resources": [
+    {
+      "resource": "Testnet Playground endpoints",
+      "link": "https://cumulo.pro/dymension/resources.php",
+      "type": "Chain resource"
+    },
+    {
+      "resource": "Create your Rollapp in Dimension. Step-by-step guide",
+      "link": "https://medium.com/cumulo-pro/create-your-rollapp-in-dimension-step-by-step-guide-c088607b0870",
+      "type": "Guide"
     }
   ]
 }
