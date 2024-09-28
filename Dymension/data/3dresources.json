@@ -1,4 +1,16 @@
 [
+{
+  "autor": "AviaOne",
+  "twitter": "avia_one",
+  "logo": "avia_one.jpg",
+  "resources": [
+    {
+      "resource": "How to deploy a RollApp on Dymension 3D playground",
+      "link": "https://aviaone.com/blog/how-to-deploy-a-rollapp-on-dymension-3d-playground/",
+      "type": "Guide"
+    }
+  ]
+},
   {
   "autor": "HerculesNode",
   "twitter": "HerculesNode",
