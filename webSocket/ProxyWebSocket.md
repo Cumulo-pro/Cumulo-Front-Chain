@@ -5,11 +5,11 @@
   - [1. Install Node.js on your Server](#1-install-nodejs-on-your-server)
   - [2. Setting up a WebSocket Proxy with Node.js](#2-setting-up-a-websocket-proxy-with-nodejs)
   - [3. Configuring SystemD for your Node.js Proxy Server](#3-configuring-systemd-for-your-nodejs-proxy-server)
-    - [A. Create a SystemD Service File](#a-create-a-systemd-service-file)
-    - [B. Add Configuration to the Service File](#b-add-configuration-to-the-service-file)
-    - [C. Reload SystemD to Apply Changes](#c-reload-systemd-to-apply-changes)
-    - [D. Starting and Enabling the Service](#d-starting-and-enabling-the-service)
-    - [E. Check Service Status](#e-check-service-status)
+    - [a. Create a SystemD Service File](#a-create-a-systemd-service-file)
+    - [b. Add Configuration to the Service File](#b-add-configuration-to-the-service-file)
+    - [c. Reload SystemD to Apply Changes](#c-reload-systemd-to-apply-changes)
+    - [d. Starting and Enabling the Service](#d-starting-and-enabling-the-service)
+    - [e. Check Service Status](#e-check-service-status)
  - [4. Proxy testing with curl](#4-proxy-testing-with-curl)
     - [What You Should Expect](#what-you-should-expect)
 
@@ -96,13 +96,13 @@ node proxyServer.js
 
 To keep the proxy running even if you close the terminal, you can use the following steeps:
 
-### A. Create a SystemD Service File:  
+### a. Create a SystemD Service File:  
 Run the following command to create a service file for your Node.js application:  
 ```bash
 sudo vi /etc/systemd/system/proxyServer.service
 ```
 
-### B. Add Configuration to the Service File:  
+### b. Add Configuration to the Service File:  
 Copy and paste the following configuration into the file. Be sure to adjust the paths as needed:  
 ```bash
 [Unit]
@@ -123,12 +123,12 @@ WantedBy=multi-user.target
 
 ```
 
-### C. Reload SystemD to Apply Changes  
+### c. Reload SystemD to Apply Changes  
 ```bash
 sudo systemctl daemon-reload
 ```
 
-### D. Starting and Enabling the Service
+### d. Starting and Enabling the Service
 Start your proxy server with:  
 ```bash
 sudo systemctl start proxyServer
@@ -138,7 +138,7 @@ And make sure it starts automatically at system startup:
 sudo systemctl enable proxyServer
 ```
 
-### E. Check Service Status  
+### e. Check Service Status  
 You can verify that the service is working correctly with:  
 ```bash
 sudo systemctl status proxyServer
