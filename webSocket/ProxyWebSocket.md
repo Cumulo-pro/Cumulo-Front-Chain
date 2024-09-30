@@ -72,3 +72,42 @@ app.listen(port, () => {
     console.log(`Proxy server running at http://localhost:${port}`);
 });
 ```
+
+Run the proxy with:  
+```bash
+node proxyServer.js
+```
+
+## 3. Configuring SystemD for your Node.js Proxy Server  
+
+To keep the proxy running even if you close the terminal, you can use the following steeps:
+
+### A. Create a SystemD Service File:  
+Run the following command to create a service file for your Node.js application:  
+```bash
+sudo vi /etc/systemd/system/proxyServer.service
+```
+
+### B. Add Configuration to the Service File:  
+Copy and paste the following configuration into the file. Be sure to adjust the paths as needed:  
+```bash
+[Unit]
+Description=Node.js Proxy Server for WebSocket
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /path/to/your/proxyServer.js
+WorkingDirectory=/path/to/your/directory/proxyserver
+Restart=always
+User=<your user>
+Group=arixScum8
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
+
+
