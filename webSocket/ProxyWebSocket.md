@@ -1,5 +1,19 @@
 # Steps to Implement WebSocket Proxy with Node.js
 
+# Index
+
+  - [1. Install Node.js on your Server](#1-install-nodejs-on-your-server)
+  - [2. Setting up a WebSocket Proxy with Node.js](#2-setting-up-a-websocket-proxy-with-nodejs)
+  - [3. Configuring SystemD for your Node.js Proxy Server](#3-configuring-systemd-for-your-nodejs-proxy-server)
+    - [A. Create a SystemD Service File](#a-create-a-systemd-service-file)
+    - [B. Add Configuration to the Service File](#b-add-configuration-to-the-service-file)
+    - [C. Reload SystemD to Apply Changes](#c-reload-systemd-to-apply-changes)
+    - [D. Starting and Enabling the Service](#d-starting-and-enabling-the-service)
+    - [E. Check Service Status](#e-check-service-status)
+ - [4. Proxy testing with curl](#4-proxy-testing-with-curl)
+    - [What You Should Expect](#what-you-should-expect)
+
+
 ## 1. Install Node.js on your Server  
 
 If you don't have Node.js installed on your server, install it with the following commands
