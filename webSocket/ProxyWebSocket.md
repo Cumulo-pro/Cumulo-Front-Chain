@@ -168,5 +168,6 @@ If there is a connection error, you will receive an error message like:
 ```  
 This curl command will allow you to verify if your proxy is able to connect to the story-testnet-wss.cumulo.me WebSocket and if it is working as expected.
 
+![image](https://github.com/user-attachments/assets/9120f34a-a273-4e85-ab10-da6ccc6812fd)
 
 
