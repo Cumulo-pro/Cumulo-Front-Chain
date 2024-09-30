@@ -1,4 +1,15 @@
 # Steps to Implement WebSocket Proxy with Node.js
+The implementation of a WebSocket Proxy with Node.js is necessary to test EVM WebSocket endpoints (WSS) from a web page for the following reasons:  
+
+- CORS (Cross-Origin Resource Sharing) Restrictions: Modern browsers block WebSocket requests that attempt to connect directly to endpoints that do not allow cross-origin requests. Most EVM node servers do not enable CORS for WebSocket requests, preventing your web page from connecting directly to them. The proxy implemented with Node.js acts as an intermediary to bypass this restriction, allowing the web page to send requests to the proxy, which then connects to the WebSocket.  
+
+- Connection Security: WebSockets often require secure connections (WSS), but from a browser, it’s not possible to establish this connection directly if the server is not properly configured to allow external connections. The proxy helps handle these connections securely from the backend.  
+
+- Data Handling and Validation: The proxy can process and validate data before sending it to the EVM WebSocket and can also format and filter responses before delivering them to the web page. This provides greater control and security over the information exchanged between the frontend and backend.  
+
+In addition, if we want to test it from a server via CLI, we can use *wscat*.  
+
+In summary, the WebSocket Proxy acts as a secure bridge that enables the web page to effectively test EVM WSS endpoints, avoiding CORS restrictions and providing an additional layer of security and flexibility in the connection.  
 
 # Index
 
