@@ -109,5 +109,32 @@ WantedBy=multi-user.target
 
 ```
 
+### C. Reload SystemD to Apply Changes  
+```bash
+sudo systemctl daemon-reload
+```
+
+### D. Starting and Enabling the Service
+Start your proxy server with:  
+```bash
+sudo systemctl start proxyServer
+```
+And make sure it starts automatically at system startup:  
+```bash
+sudo systemctl enable proxyServer
+```
+
+### E. Check Service Status  
+You can verify that the service is working correctly with:  
+```bash
+sudo systemctl status proxyServer
+```
+Check your proxy logs with:  
+```bash
+journalctl -u proxyServer -f
+```
+
+
+
 
 
