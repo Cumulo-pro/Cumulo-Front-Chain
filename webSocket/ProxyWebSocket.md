@@ -134,7 +134,25 @@ Check your proxy logs with:
 journalctl -u proxyServer -f
 ```
 
+## 4. Proxy testing with curl  
+Use curl to send an HTTP POST request to the proxy and see if it responds correctly. Run the following command from your server terminal:  
+```bash
+curl -X POST http://localhost:3000/proxy \
+-H "Content-Type: application/json" \
+-d '{"wsUrl":"wss://story-testnet-wss.cumulo.me"}'
+```
 
+### What You Should Expect  
+If the connection is successful, you will receive a JSON response similar to this:
+```bash
+{“result”:“{\”jsonrpc\“:\”2.0\“,\”id\“:1,\”result\“:\”0x123456\“}”}
+Where 0x123456 would be the block in hexadecimal format returned by the WebSocket.
+```  
+If there is a connection error, you will receive an error message like:  
+```bash
+{“error”: “Error message indicating the problem”}
+```  
+This curl command will allow you to verify if your proxy is able to connect to the story-testnet-wss.cumulo.me WebSocket and if it is working as expected.
 
 
 
