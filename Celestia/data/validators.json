@@ -690,6 +690,12 @@
     "tools_url": {
         "Staging Explorer": "https://noders-app-staging.web.app/explorer"
     },
+  "content_url": {
+        "Medium": "https://docs.google.com/document/d/1VIYunKnLWbz65_C98CQ8MbANYnEbmc3StEteVByC57c",
+        "Celestia Hub Academy": "https://docs.google.com/document/d/1Q77MnVxqu6-ACvfYFzgJIProniNEB8uju9fLymCoATU",
+        "10 Tweets about Celestia": "https://docs.google.com/document/d/1PIkfDi6o0JoW46B0K-wO-CmBCO6ZLX3nD77d_rDw00s",
+       "31 Posts about Celestia": "https://docs.google.com/document/d/1BYJ9o4NAngU6Ma7BcPycwAQFdzLeIH_QG7WcTgDVuRw"
+    },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-noders-validator"
 }
 
