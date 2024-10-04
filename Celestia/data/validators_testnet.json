@@ -425,6 +425,21 @@
     "Installation Guide": "https://services.stake-town.com/home/testnet/celestia/installation"
   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#staketown"
+},
+    {
+   "name": "NODERS",
+    "webservices": "https://noders.services/mainnet-networks/celestia/",
+    "x": "NODERS_TEAM",
+    "validatorlogo": "noders.jpg",
+    "explorer": "https://noders.services/testnet-networks/celestia",
+    "peers": "8587162e70023e301fa7265ac5750a438e5b2692@65.109.54.91:21059",
+    "seeds": "",
+    "api": "https://celestia-t-api.noders.services",
+    "rpc": "https://celestia-t-rpc.noders.services",
+    "grpc": "celestia-t-grpc.noders.services:21090",
+    "snapshot": "",
+    "addrbook": "",
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-noders-validator"
 }
 
 
