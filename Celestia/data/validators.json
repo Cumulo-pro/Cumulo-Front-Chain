@@ -1,0 +1,678 @@
+[
+  {
+    "name": "StakingCabin",
+    "webservices": "https://stakingcabin.com",
+    "x": "StakingCabin",
+    "validatorlogo": "stakingcabin.jpg",
+    "explorer": "",
+    "peers": "c5a23c66db975038c4eb131f65717059f597fe59@celestia-mainnet.stakingcabin.com:21656",
+    "seeds": "",
+    "api": "https://celestia-mainnet.stakingcabin.com",
+    "rpc": "https://celestia-mainnet.stakingcabin.com",
+    "grpc": "celestia-mainnet.stakingcabin.com:443",
+    "snapshot": "",
+    "addrbook": "",
+    "tools": "Validator sign block and consensus state check",
+    "tools_url": {
+        "Validator sign block and consensus state check": "https://github.com/stakingcabin/celestia-task"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#node-operator-contributions"
+},
+  {
+    "name": "NodesGuru",
+    "webservices": "",
+    "x": "NodesGuru",
+    "validatorlogo": "nodesguru.png",
+    "explorer": "https://celestia.explorers.guru/",
+    "peers": "",
+    "seeds": "",
+    "api": "https://api-1.celestia.nodes.guru",
+    "rpc": "https://rpc-1.celestia.nodes.guru",
+    "grpc": "grpc-1.celestia.nodes.guru:10790",
+    "snapshot": "",
+    "addrbook": "",
+    "tools": "NodesChecker Bot",
+    "tools_url": {
+        "NodesChecker Bot": "https://t.me/NodesGuru_bot"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#nodesguru"
+},
+  {
+    "name": "BlackNodes",
+    "webservices": "",
+    "x": "BlackNodesHQ",
+    "validatorlogo": "blacknodes.jpg",
+    "explorer": "https://explorer.blacknodes.net/celestia",
+    "rpc": "https://celestia-testnet-rpc.blacknodes.net",
+    "grpc": "celestia-testnet-grpc.blacknodes.net:17090",
+    "snapshot": "https://files.blacknodes.net/celestia/celestia_mocha-4.tar.lz4",
+    "tools": "Celestia Faucet",
+    "tools_url": {
+       "Celestia Faucet By BlackNodes": "https://celestia-faucet.blacknodes.net"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#blacknodes-contribution-httpsblacknodesnet"
+},
+{
+    "name": "Lavender.Five Nodes",
+    "webservices": "https://services.lavenderfive.com/mainnet/celestia",
+    "x": "lavender_five",
+    "validatorlogo": "lavenderfive.jpg",
+    "api": "https://celestia-api.lavenderfive.com:443",
+    "rpc": "https://celestia-rpc.lavenderfive.com:443",
+    "grpc": "celestia-grpc.lavenderfive.com:443",
+    "snapshot": "",
+    "addrbook": "",
+    "tools": "Snapshot, State-sync, Installation Guide",
+    "tools_url": {
+        "Snapshot": "https://services.lavenderfive.com/mainnet/celestia/snapshot", 
+        "State-sync" :"https://services.lavenderfive.com/mainnet/celestia/statesync", 
+        "Installation Guide": "https://services.lavenderfive.com/mainnet/celestia/installation"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-lavenderfive-nodes"
+},
+{
+    "name": "DTEAM",
+    "webservices": "https://dteam.tech/services/testnet/overview/celestia",
+    "x": "dteamtech",
+    "validatorlogo": "dteam.jpg",
+    "explorer": "",
+    "peers": "076c9cc9de3039819a98522aeea39e8c72b49682@peer.celestia.mainnet.dteam.tech:28656",
+    "seeds": "9b1d22c3a78487d1a664a4b6a331fce527d14fb4@seed.celestia.mainnet.dteam.tech:27656",
+    "api": "https://api.archive.celestia.mainnet.dteam.tech",
+    "rpc": "https://rpc.archive.celestia.mainnet.dteam.tech",
+    "archive": "y",
+    "grpc": "grpc.archive.celestia.mainnet.dteam.tech:28090",
+    "snapshot": "",
+    "addrbook": "",
+    "tools": "Bridge node checker",
+    "tools_url": {
+        "Bridge node checker": "https://celestia-bridge-checker.dteam.tech/"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#dteam"
+},
+  {
+  "name": "cryptomolot",
+  "webservices": "",
+  "x": "cryptomolot",
+  "validatorlogo": "cryptomolot.jpg",
+  "tools": "Community guidelines, Galxe campaign",
+  "tools_url": {
+    "Galxe campaign": "https://app.galxe.com/quest/kBZDkhZ8FD7AaBqaEX4Uk9/GCT9wtdmFw"
+  },
+  "content":{
+    "Content contributions for Celestia by cryptomolot": "https://telegra.ph/Content-contributions-for-Celestia-by-cryptomolot-07-02",
+    "Community guidelines": "https://cryptomolot.gitbook.io/cryptomolot-docs/testnets/celestia"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cryptomolot"
+},
+  {
+    "name": "BlackBlocks",
+    "webservices": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia",
+    "x": "BlackBlocks_io",
+    "validatorlogo": "blackblocks.jpg",
+    "explorer": "https://explorer.celestia-mainnet.blackblocks.io/",
+    "archive": "y",
+    "rpc": "https://rpc.celestia-mainnet.blackblocks.io",
+    "grpc": "",
+    "snapshot": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#full-node-archival-snapshot",
+    "addrbook": "",
+    "tools": "Bridge Archival, Full Node Archival",
+    "tools_url": {
+        "Bridge Archival": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#bridge-node-archival-snapshot",
+        "Full Node Archival": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#full-node-archival-snapshot"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-blackblocks"
+},
+{
+  "name": "ITRocket",
+  "webservices": "https://itrocket.net/services/mainnet/celestia/",
+  "x": "itrocket_team",
+  "validatorlogo": "itrocket.jpg",
+  "explorer": "https://mainnet.itrocket.net/celestia/staking",
+  "peers": "d535cbf8d0efd9100649aa3f53cb5cbab33ef2d6@celestia-mainnet-peer.itrocket.net:40656",
+  "seeds": "12ad7c73c7e1f2460941326937a039139aa78884@celestia-mainnet-seed.itrocket.net:40656",
+  "api": "https://celestia-mainnet-api.itrocket.net",
+  "rpc": "https://celestia-mainnet-rpc.itrocket.net",
+  "grpc": "celestia-mainnet-grpc.itrocket.net:443",
+  "archive": "y",
+  "snapshot": "https://itrocket.net/services/mainnet/celestia/",
+  "addrbook": "",
+  "tools": "Decentralization Analytics, Governance Bot, Peer scanner, RPC Scanner",
+ "tools_url": {
+  "Decentralization Analytics": "https://itrocket.net/services/mainnet/celestia/decentralization/",
+  "Governance Bot": "https://t.me/itrocket_mainnet_proposal_bot",
+  "Peer scanner": "https://itrocket.net/services/mainnet/celestia/#peer",
+  "RPC Scanner": "https://itrocket.net/services/mainnet/celestia/public-rpc/"
+},
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#itrocket"
+},
+{
+    "name": "Validatrium",
+    "webservices": "",
+    "x": "validatrium",
+    "validatorlogo": "validatrium.jpg",
+    "explorer": "",
+    "peers": "706c8fbaaf38d3a1bf3186ca4c4d55fc07891ea4@49.12.172.53:10256",
+    "seeds": "",
+    "api": "https://api-celestia-archive.mainnet.validatrium.club",
+    "rpc": "https://rpc-celestia-archive.mainnet.validatrium.club",
+    "archive": "y",
+    "grpc": "",
+    "snapshot": "https://docs.validatrium.club/Celestia/archive-node-snapshot",
+    "addrbook": "",
+    "tools": "Bridge archive snapshot",
+    "tools_url": {
+        "Bridge archive snapshot": "https://docs.validatrium.club/Celestia/bridge-archive-snapshot"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#validatrium"
+},
+  {
+    "name": "STAKEME",
+    "webservices": "",
+    "x": "stakeme_pro",
+    "validatorlogo": "stakeme.jpg",
+    "explorer": "",
+    "peers": "f9f6aa4a23f8ff2bc3137fa603bfa4014b8d05cb@celestia-mainnet-peer.stakeme.pro:40656",
+    "seeds": "f9f6aa4a23f8ff2bc3137fa603bfa4014b8d05cb@celestia-mainnet-seed.stakeme.pro:40656",
+    "api": "https://celestia-rest.stakeme.pro",
+    "rpc": "https://celestia-rpc.stakeme.pro",
+    "archive": "y",
+    "grpc": "da-bridge-celestia.stakeme.pro:9090",
+    "snapshot": "",
+    "addrbook": "",
+    "tools": "Self-written explorer, RPC scanner & peers, Self-written faucet, Uptime validators",
+    "tools_url": {
+        "Self-written explorer": "https://celestia.exploreme.pro/",
+        "RPC scanner & peers": "https://celestia.exploreme.pro/network",
+        "Consensus": "https://celestia.exploreme.pro/utilities?tab=consensus",
+        "Uptime validators": "https://celestia.exploreme.pro/utilities?tab=uptime"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakeme"
+},
+{
+    "name": "AutoStake",
+    "webservices": "https://autostake.com/networks/celestia/#services",
+    "x": "AutoStake_",
+    "validatorlogo": "autostake.png",
+    "api": "https://celestia-mainnet-lcd.autostake.com:443",
+    "rpc": "https://celestia-mainnet-rpc.autostake.com:443",
+    "grpc": "https://celestia-mainnet-grpc.autostake.com:443",
+    "snapshot": "",
+    "addrbook": "",
+    "tools": "Services (Snapshot, Addrbook, State-sync)",
+    "tools_url": {
+        "Snapshot, addrbook, State-sync, Seed, Peer": "https://autostake.com/networks/celestia/#services"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#autostake"
+},
+{
+  "name": "Smart Stake",
+  "webservices": "",
+  "x": "SmartStake",
+  "validatorlogo": "smartstake.jpg",
+  "explorer": "",
+  "peers": "",
+  "seeds": "",
+  "api": "",
+  "rpc": "",
+  "grpc": "",
+  "snapshot": "",
+  "addrbook": "",
+  "tools": "Smart Stake Analytics, Decentralization Analytics, Relayer Analytics",
+  "tools_url": {
+    "Smart Stake Analytics": "https://smartstake.io/analytics/celestia",
+    "Decentralization Analytics": "https://smartstake.io/decentralization/celestia",
+    "Relayer Analytics": "https://smartstake.io/relayers/celestia"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#smart-stake"
+},
+{
+  "name": "CrypTech",
+  "webservices": "",
+  "x": "CrypTech",
+  "validatorlogo": "cryptech.jpg",
+  "explorer": "https://ping.pub/celestia",
+  "peers": "",
+  "seeds": "",
+  "api": "https://api-celestia.cryptech.com.ua",
+  "rpc": "https://rpc-celestia.cryptech.com.ua",
+  "json-rpc": "",
+  "grpc": "https://grpc-celestia.cryptech.com.ua",
+  "snapshot": "https://services.cryptech.com.ua/mainnet/celestia/snapshot/README/",
+  "addrbook": "",
+  "tools": "Proposal_Bot, Guide, Node Monitoring",
+  "tools_url": {
+    "Proposal_Bot": "https://t.me/Cryptech_ProposalBot",
+    "Node Monitoring": "https://github.com/dvjromashkin/cosmos-monitoring"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cryptech",
+  "content_url": {
+    "Russian Medium": "https://cryptech-nodes.medium.com/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D1%81%D0%B5%D1%82%D0%B8-celestia-3b5a0865c7f1",
+    "Guide": "https://services.cryptech.com.ua/mainnet/celestia/installation/README/"
+ }
+  },
+{
+  "name": "Stakeflow",
+  "webservices": "",
+  "x": "stakeflow",
+  "validatorlogo": "stakeflow.jpg",
+  "explorer": "https://stakeflow.io/celestia",
+  "peers": "24a607a217cf12be29bae5b2e8151391bde2d8c8@peer-celestia-01.stakeflow.io:15007",
+  "seeds": "24a607a217cf12be29bae5b2e8151391bde2d8c8@seed-celestia-01.stakeflow.io:15007",
+  "api": "https://api-celestia-01.stakeflow.io",
+  "rpc": "https://rpc-celestia-01.stakeflow.io",
+  "rpc_archive": "https://rpc-celestia-archive-01.stakeflow.io",
+  "archive": "y",
+  "grpc": "grpc-celestia-01.stakeflow.io:15002",
+  "snapshot": "",
+  "addrbook": "",
+  "content_url":{
+    "How Celestia Solves the Data Availability Problem": "https://blog.stakeflow.io/how-celestia-solves-the-data-availability-problem-ad844202751b",
+    "Celestia Staking Guide": "https://blog.stakeflow.io/celestia-tia-staking-guide-b6e8a1e9c5fe",
+    "How to choose your Celestia validator": "https://blog.stakeflow.io/how-to-choose-your-tia-celestia-validator-f03b47b37fb5",
+    "Basics of Celestia with Stakeflow explorer": "https://blog.stakeflow.io/basics-of-celestia-with-stakeflow-explorer-8942dbc688f2"
+  }
+},
+{
+  "name": "Openbitlab",
+  "webservices": "https://openbitlab.com/network/58/Celestia/docs",
+  "x": "Openbitlab_node",
+  "validatorlogo": "openbitlab.png",
+   "api": "https://celestia-api.openbitlab.com",
+  "rpc": "https://celestia-rpc.openbitlab.com",
+  "grpc": "celestia-grpc.openbitlab.com:443",
+  "snapshot": "https://openbitlab.com/network/58/Celestia/snapshot",
+  "addrbook": "",
+  "tools": "Srvcheck monitoring tool, Validator Monitor bot",
+  "tools_url": {
+    "Srvcheck monitoring tool": "https://github.com/openbitlab/celestia-srvcheck",
+    "Validator Monitor bot": "https://t.me/celestia_validator_monitor_bot"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-openbitlab"
+},
+{
+  "name": "ChainodeTech",
+  "webservices": "",
+  "x": "ChainodeTech",
+  "validatorlogo": "chainode_tech.jpg",
+  "explorer": "",
+  "peers": "48b55ac8d12b2f2cd28841891c0a68e1dffa912c@84.32.186.37:26856",
+  "seeds": "",
+  "api": "https://celestia-api.chainode.tech",
+  "rpc": "https://celestia-rpc.chainode.tech:33373/",
+  "archive": "y",
+  "grpc": "celestia-grpc.chainode.tech:443",
+  "wss": "wss://celestia-ws.chainode.tech:33373/websocket",
+  "grpc_web": "celestia-grpcweb.chainode.tech:443",
+  "snapshot": "",
+  "addrbook": "",
+  "tools": "Validator and Bridge Monitoring Tools",
+  "tools_url": {
+    "Validator and Bridge Monitoring Tools": "https://github.com/Chainode/CelestiaTools"
+  },
+  "content_url": {
+    "Explanatory Guide for Monitoring Tools": "https://medium.com/chainode-tech/chainode-tech-develops-a-validator-and-bridge-status-monitoring-solution-using-grafana-ad561f327c31",
+    "Insights and Community Participation": "https://medium.com/chainode-tech/celestia-explored-insights-and-opportunities-for-community-participation-and-growth-3f42b6b29deb",
+    "Celestia and Blockchain Modularity": "https://medium.com/chainode-tech/celestia-and-blockchain-modularity-5c055cdcd124"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#chainode-tech"
+},
+  {
+  "name": "LuckyResearch.org",
+  "webservices": "https://luckyresearch.org",
+  "x": "LuckyResearchVN",
+  "validatorlogo": "luckyresearch.jpg",
+  "explorer": "https://explorer.luckyresearch.org/Celestia-Mainet",
+  "api": "https://api-celestia-mainnet.luckyresearch.org",
+  "rpc": "https://rpc-celestia-mainnet.luckyresearch.org",
+  "grpc": "",
+   "content_url": {
+    "Galxe campaign": "https://app.galxe.com/quest/kBZDkhZ8FD7AaBqaEX4Uk9/GCT9wtdmFw",
+    "Services guide": "https://services.luckyresearch.org/lucky-research-services/mainet/celestia",
+    "Community contributions": "https://discord.com/channels/638338779505229824/804389559831232578/1168927959218913293",
+    "Vietnamese Blockchain Knowledge": "https://luckyresearch.notion.site/Gi-i-thi-u-v-Celestia-v-Modular-Blockchain-c9bd267748e8471ea7da8ec85e75fa29?pvs=74"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-luckyresearchorg"
+},
+{
+  "name": "Suntzu",
+  "webservices": "https://services.suntzu.dev/mainnet/celestia/installation",
+  "x": "suntzu_indexer",
+  "validatorlogo": "suntzu.jpg",
+  "explorer": "https://explorer.suntzu.dev/celestia-mainnet",
+  "peers": "a479fb1fe8ecf372c72b954f1eea59099dc86f6a@95.217.204.154:11156",
+  "seeds": "",
+  "api": "https://celestia-mainnet-api.suntzu.dev",
+  "rpc": "https://celestia-mainnet-rpc.suntzu.dev",
+  "grpc": "celestia-mainnet-grpc.suntzu.dev:11190",
+  "snapshot": "",
+  "addrbook": "",
+  "tools": "Monitor bridge/validator/system",
+  "tools_url": {
+    "Monitor bridge/validator/system": "https://github.com/suntzu93/system_monitor"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#suntzu"
+},
+{
+  "name": "ContributionDAO",
+  "webservices": "https://services.contributiondao.com/mainnet/celestia",
+  "x": "contributedao",
+  "validatorlogo": "contributiondao.jpg",
+  "explorer": "",
+  "peers": "https://services.contributiondao.com/mainnet/celestia/peers",
+  "seeds": "https://services.contributiondao.com/mainnet/celestia/peers",
+  "api": "https://celestia-api.contributiondao.com",
+  "rpc": "https://celestia-rpc.contributiondao.com",
+  "rpc_archive": "https://celestia-archive-mainnet-rpc.contributiondao.com",
+  "grpc": "https://celestia-archive-mainnet-grpc.contributiondao.com",
+  "snapshot": "https://services.contributiondao.com/mainnet/celestia/snapshots",
+  "addrbook": "",
+  "tools": "Bridge node snapshot",
+  "tools_url": {
+    "Bridge node snapshot": "https://services.contributiondao.com/mainnet/celestia/bridge-snapshots"
+  },
+  "content_url": {
+    "Installation Guide": "https://services.contributiondao.com/mainnet/celestia/installation"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributiondao"
+},
+{
+  "name": "Cosmostation",
+  "webservices": "",
+  "x": "CosmostationVD",
+  "validatorlogo": "cosmostation.png",
+  "explorer": "https://www.mintscan.io",
+  "peers": "d364357f55e37a038d9dbd143448ea792bb8edcf@15.235.115.156:16400",
+  "snapshot": "https://services.cosmostation.io/snapshot",
+  "addrbook": "",
+  "tools": "Mintscan Explorer, Mobile Wallet, Web Extension",
+  "tools_url": {
+    "Mintscan Explorer": "https://www.mintscan.io",
+    "Mobile Wallet": "https://wallet.cosmostation.io",
+    "Web Extension": "https://chrome.google.com/webstore/detail/cosmostation-wallet"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cosmostation"
+},
+{
+  "name": "Provalidator",
+  "webservices": "https://nodeservice.provalidator.com/docs/Network/Celestia",
+  "x": "Provalidator",
+  "validatorlogo": "provalidator.jpg",
+  "tools": "Governance Alert Bots",
+  "tools_url": {
+    "Governance Alert Bots": "https://github.com/Zenon-provalidator/celelstia_proposal_bot"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-provalidator"
+},
+{
+  "name": "Moonlet",
+  "webservices": "https://dashboard.moonlet.app/dashboard/?blockchain=TIA",
+  "x": "moonlet_hq",
+  "validatorlogo": "moonlet.jpg",
+  "explorer": "",
+  "peers": "cd37f245a236b7f695d06d99064c7d00af1ffb01@65.108.68.213:26657",
+  "seeds": "",
+  "api": "https://celestia-api.pub.moonlet.cloud/celestia-public",
+  "rpc": "https://celestia-rpc.pub.moonlet.cloud/celestia-public",
+  "grpc": "celestia-grpc.pub.moonlet.cloud:9099/celestia-public",
+  "snapshot": "https://dashboard.moonlet.app/dashboard/snapshots/?blockchain=TIA",
+  "addrbook": "https://snapshots.moonlet.cloud/mainnet/dymension/addrbook.json",
+  "genesis": "https://snapshots.moonlet.cloud/mainnet/dymension/genesis.json",
+  "tools": "Dashboard",
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-moonlet",
+  "tools_url": {
+    "Dashboard": "https://dashboard.moonlet.app/dashboard/?blockchain=TIA"
+  }
+},
+{
+  "name": "Conqueror",
+  "webservices": "",
+  "x": "Conquerorr_1",
+  "validatorlogo": "conqueror.jpg",
+  "tools": "Mainnet Beta DA nodes setup script, Mocha-4 nodes setup script",
+  "tools_url": {
+    "Mainnet Beta DA nodes setup script": "https://github.com/DasRasyo/Celestia-Mainnet-DA-Nodes/tree/main"
+   },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#conqueror"
+},
+{
+  "name": "Wavefive",
+  "webservices": "",
+  "x": "jimwavefive",
+  "validatorlogo": "wavefive.jpg",
+  "archive": "y",
+  "api": "https://celestia-api.0xcryptovestor.com",
+  "rpc": "https://celestia-rpc.0xcryptovestor.com",
+  "grpc": "https://celestia-grpc.0xcryptovestor.com",
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#wavefive"
+},
+{
+  "name": "F5 Nodes",
+  "webservices": "",
+  "x": "f5nodes",
+  "validatorlogo": "f5nodes.jpg",
+  "archive": "y",
+  "peers": "ec39096b831861bcda43896d098771fa9587ebce@seed.f5nodes.com:61456",
+  "seeds": "ec39096b831861bcda43896d098771fa9587ebce@seed.f5nodes.com:61456",
+  "api": "https://celestia-api.f5nodes.com",
+  "rpc": "https://celestia-rpc.f5nodes.com",
+  "grpc": "celestia-grpc.f5nodes.com:9390",
+  "snapshot": "https://celestia-snapshots-archive.f5nodes.com",
+   "prunedsnapshot": "https://celestia-snapshots.f5nodes.com",
+  "addrbook": "",
+  "tools": "Monitoring tool, Celestia Wiki, DA Nodes Management Script",
+  "tools_url": {
+    "Monitoring tool": "https://celestia.f5nodes.com",
+    "Celestia Wiki": "https://wiki.f5nodes.com",
+    "DA Nodes Management Script": "https://github.com/f5nodes/celestia-da-nodes"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#f5-nodes"
+},
+{
+  "name": "NakoTurk",
+  "webservices": "",
+  "x": "NakoTurk",
+  "validatorlogo": "nakoturk.jpg",
+  "tools": "Turkish Validator, Bridge, Full Storage, Light Node Guides",
+  "content_url": {
+    "Celestia Mainnet Turkish Step by Step Guide": "https://github.com/okannako/celestiamainnet",
+    "Celestia Mainnet Turkish Script Guide": "https://github.com/okannako/celestiamainnetscript",
+    "Celestia Mocha Testnet Turkish Step by Step Guide": "https://github.com/okannako/celestiamocha",
+    "Celestia Mocha Testnet Turkish Script Guide": "https://github.com/okannako/celestiamochascript"
+  },
+  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#nakoturk"
+},
+{
+  "name": "Brightlystake",
+  "webservices": "",
+  "x": "brightlystake",
+  "validatorlogo": "brightlystake.jpg",
+  "rpc": "https://celestia-rpc.brightlystake.com",
+  "grpc": "celestia-rpc.brightlystake.com:9090",
+  "tools": "Public tools for Celestia status check",
+  "tools_url": {
+    "Celestia RPC status checker": "https://celestia-tools.brightlystake.com/rpc-status",
+    "Celestia gRPC status checker": "https://celestia-tools.brightlystake.com/grpc-status"
+  },
+  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#list-of-contributions-from-brightlystakebrightlystakecom"
+},
+{
+  "name": "Enigma",
+  "webservices": "",
+  "x": "EnigmaValidator",
+  "validatorlogo": "enigma.png",
+  "snapshot": "https://doc.enigma-validator.com/docs/mainnets/Celestia/snapshot",
+  "addrbook": "https://doc.enigma-validator.com/docs/mainnets/Celestia/addrbooks",
+  "archive": "y",
+  "rpc": "https://celestia-rpc.enigma-validator.com/",
+  "rpc_archive": "https://celestia-rpc-archive.enigma-validator.com/",
+  "tools": "IBC Client Monitoring & Update Monitor, GenesisDrop Checker",
+  "tools_url": {
+    "IBC Client Monitoring": "https://discord.com/channels/638338779505229824/1176595874823028817/1262579736891228293",
+    "GenesisDrop Checker": "https://celestia.genesisdrop.enigma-validator.com/"
+  },
+  "content_url": {
+    "How to launch a node": "https://doc.enigma-validator.com/docs/mainnets/Celestia/setup-node",
+    "How to Stake TIA - French Guide": "https://enigmavalidator.substack.com/p/tutoriel-staking-tia",
+     "French article on modularity": "https://huzmond.substack.com/p/fr-2023-lannee-de-la-modularite",
+    "French content collaboration": "https://www.youtube.com/watch?v=6S0Nl-MYnKw",
+    "WEB3connect event website": "https://web3connect.fr/2024"
+  },
+  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#enigma"
+},
+{
+  "name": "Nodes Hub",
+  "webservices": "https://services.nodeshub.online/mainnet-networks/celestia/",
+  "x": "NodesHub",
+  "validatorlogo": "nodeshub.jpg",
+  "explorer": "https://explorer.nodeshub.online/celestia",
+  "archive": "y",
+  "peers": "81ca14a1bc274ece31b17115e938fe99135b5873@103.6.91.38:26657",
+  "seeds": "6f6a3a908634b79b6fe7c4988efec2553f188234@celestia.seed.nodeshub.online:11656",
+  "api": "https://celestia.archive.api.nodeshub.online",
+  "rpc": "https://celestia.archive.rpc.nodeshub.online",
+  "grpc": "https://celestia.archive.grpc.nodeshub.online",
+  "snapshot": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/snapshot/archive",
+  "prunedsnapshot": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/snapshot/pruned",
+ "addrbook": "",
+  "tools": "Installation guide, State-Sync, Upgrade History",
+  "tools_url": {
+   "State-Sync": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/state-sync"
+  },
+   "content_url": {
+     "Installation guide": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/installation"    
+  },
+  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#nodes-hub-contribution-httpsnodeshubonline"
+},
+{
+  "name": "Pro-Nodes75",
+  "webservices": "",
+  "x": "theNode75",
+  "validatorlogo": "pronodes75.png",
+  "explorer": "",
+  "peers": "ce99d7da2530f75d05880d13d9eda384d5a1afe4@peer.celestia.node75.org:23356",
+  "seeds": "86bd5cb6e762f673f1706e5889e039d5406b4b90@seed.celestia.node75.org:20356",
+  "api": "https://api.celestia.node75.org",
+  "rpc": "https://rpc.celestia.node75.org",
+  "grpc": "grpc.celestia.node75.org:9220",
+  "tools": "Celestia Cluster monitoring tool, Celestia IBC information matrix",
+  "tools_url": {
+    "Celestia Cluster monitoring tool": "https://github.com/the-node75/mon_celestia",
+    "Celestia IBC information matrix": "https://services.node75.org/ibc-matrix/celestia"
+  },
+ "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#pro-nodes75"
+},
+{
+  "name": "Maple Nodes",
+  "webservices": "https://docs.maplenodes.com/#celestia",
+  "x": "MapleNodes",
+  "validatorlogo": "maplenodes.jpg",
+  "tools": "Celestia Network Analytics Dashboard, Custom API Endpoints for Celestia",
+  "tools_url": {
+    "Celestia Network Analytics Dashboard": "https://celestia.maplenodes.com/analytics/",
+    "Custom API Endpoints for Celestia": "https://docs.maplenodes.com/#celestia"
+  },
+  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#contributions-by-maple-nodes"
+},
+{
+  "name": "Cumulo",
+  "x": "Cumulo_pro",
+  "webservices": "https://cumulo.pro/celestia/",
+  "validatorlogo": "cumulo.jpg",
+  "rpc": "https://celestia.cumulo.org.es:443",
+  "api": "https://celestia.api.cumulo.org.es:443",
+  "grpc": "celestia.grpc.cumulo.org.es:443",
+   "tools": "Dashboard for Consensus Nodes, Celestia Bridge Node Dashboard, Celestia Front Chain, Modular Expansion",
+  "tools_url": {
+    "Dashboard for Consensus Nodes with all available metrics for Celestia": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/grafana_consensus%20/README.md",
+    "Consensus Monitoring System Documentation": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/grafana_consensus%20/README.md",
+    "Dashboard in Grafana": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/bridge-monitor/README.md",
+    "Celestia Bridge Node Dashboard in Grafana": "https://grafana.com/grafana/dashboards/21116-celestia-consensus-validator-node/",
+    "Celestia Front Chain. Everything you need to know about Celestia in one place": "https://roller.frontchain.cumulo.pro/",
+    "Modular Expansion: All the projects that use Celestia as a DA": "https://cumulo.pro/celestia/img/expansion.jpeg"
+  },
+  "content_url": {
+    "Website dedicated to our content about Modular Summit events": "https://modular.cumulo.pro/",
+    "Compilation of technical guides and resources": "https://cumulo.pro/celestia/content.php"
+  },
+  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#contributions-by-cumulo"
+},
+  {
+  "name": "StakeTown",
+  "webservices": "https://services.stake-town.com/home/mainnet/celestia",
+  "x": "",
+  "validatorlogo": "staketown.jpg",
+   "api": "https://celestia-api.stake-town.com:443",
+  "rpc": "https://celestia-rpc.stake-town.com:443",
+  "grpc": "celestia-grpc.stake-town.com:443",
+  "snapshot": "https://services.stake-town.com/home/mainnet/celestia/sync",
+  "State-Sync": "https://services.stake-town.com/home/mainnet/celestia/sync",
+  "tools": "Monitoring stack for DA nodes, Bot for tracking health of important IBC paths, StakeTown relayer",
+  "tools_url": {
+    "Monitoring stack for DA nodes": "https://github.com/staketown/celestia-da-monitoring",
+    "Bot for tracking health of important IBC paths": "https://discord.com/channels/638338779505229824/1176595874823028817"
+  },
+  "content_url": {
+    "Installation Guide": "https://services.stake-town.com/home/mainnet/celestia/installation"
+  },
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#staketown"
+},
+  {
+  "name": "Staking Facilities",
+  "webservices": "https://stakingfacilities.com/networks/celestia-network",
+  "x": "stakingfac",
+  "validatorlogo": "stakingfacilities.jpg",
+  "tools": "Tiascan - Blockspace Race Dashboard",
+  "tools_url": {
+    "Tiascan - Blockspace Race Dashboard": "https://tiascan.com/"
+  },
+  "content_url": {
+    "Tutorials in our blog for TIA staking": "https://stakingfacilities.com/blog/celestia-x-keplr-wallet-staking-guide"
+  },
+   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-staking-facilities"
+},
+ {
+    "name": "Decentrio",
+    "webservices": "https://decentrio.ventures/services/celestia",
+    "x": "decentriolabs",
+    "validatorlogo": "decentrio.jpg",
+    "snapshot": "https://decentrio.ventures/services/celestia",
+    "api": "https://celestia.api.decentrio.ventures:443",
+    "rpc": "https://celestia.rpc.decentrio.ventures:443",
+    "grpc": "https://celestia-grpc.decentrio.ventures:443", 
+    "tools": "Services (Snapshot, Installation Guide)",
+    "tools_url": {
+      "Services (Snapshot, Installation Guide)": "https://decentrio.ventures/services/celestia"
+    },
+    "content_url": {
+      "Code Contributions - Working with Rollkit": "https://x.com/RollkitDev/status/1798007102612656476",
+      "Public Good Contributions": "https://decentrio.notion.site/Celestia-public-good-3cc3aa45c8cb4738b77d6c8946a1dcfd?pvs=4"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-decentrio"
+  },
+  {
+    "name": "kocality",
+    "webservices": "",
+    "x": "kkocality",
+    "validatorlogo": "kocality.jpg",
+    "tools": "Celestia Light Node Script",
+    "tools_url": {
+      "Celestia Light Node Script": "https://github.com/kocality/celestia-light-node-script"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-kocality"
+  },
+  {
+    "name": "Encapsulate (fka KingSuper)",
+    "x": "encapsulate_xyz",
+    "validatorlogo": "encapsulate.jpg",
+    "rpc": "https://celestia-mainnet-rpc.kingsuper.services",
+    "grpc": "https://celestia-mainnet-grpc.kingsuper.services",
+    "content_url": {
+      "Celestia Bridge Mainnet": "https://encapsulate.xyz/snapshots/celestia-bridge-mainnet",
+      "Celestia App Mainnet": "https://encapsulate.xyz/snapshots/celestia-app-mainnet"
+    },
+    "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#list-of-contributions-from-encapsulate-kingsuper"
+  }
+
+  
+]
