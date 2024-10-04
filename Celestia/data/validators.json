@@ -672,7 +672,28 @@
       "Celestia App Mainnet": "https://encapsulate.xyz/snapshots/celestia-app-mainnet"
     },
     "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#list-of-contributions-from-encapsulate-kingsuper"
-  }
+  },
+{
+    "name": "NODERS",
+    "webservices": "https://noders.services/mainnet-networks/celestia/",
+    "x": "NODERS_TEAM",
+    "validatorlogo": "noders.jpg",
+    "explorer": "https://celestiahub.org",
+    "peers": "27f6bac8492b1597146b6c4aeddc4d328fa8ac28@celestia-rpc.noders.services:11656",
+    "seeds": "",
+    "api": "https://celestia-api.noders.services",
+    "rpc": "https://celestia-rpc.noders.services",
+    "grpc": "celestia-grpc.noders.services:11090",
+    "snapshot": "https://noders.services/mainnet-networks/celestia/snapshot",
+    "addrbook": "https://config.noders.services/celestia/addrbook.json",
+    "tools": "Celestia CommunityHub",
+    "tools_url": {
+        "Staging Explorer": "https://noders-app-staging.web.app/explorer"
+    },
+    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-noders-validator"
+}
+
+
 
   
 ]
