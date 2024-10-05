@@ -60,9 +60,9 @@
     "grpc": "celestia-grpc.lavenderfive.com:443",
     "snapshot": "https://services.lavenderfive.com/mainnet/celestia/snapshot",
     "addrbook": "",
-    "tools": "State-sync, Installation Guide",
+    "tools": "State-sync",
     "tools_url": {
-        "State-sync" :"https://services.lavenderfive.com/mainnet/celestia/statesync", 
+        "State-sync" :"https://services.lavenderfive.com/mainnet/celestia/statesync"
      },
    "content":{
     "Installation Guide": "https://services.lavenderfive.com/mainnet/celestia/installation"
