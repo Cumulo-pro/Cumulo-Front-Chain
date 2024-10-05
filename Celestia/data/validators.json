@@ -24,8 +24,6 @@
     "x": "NodesGuru",
     "validatorlogo": "nodesguru.png",
     "explorer": "https://celestia.explorers.guru/",
-    "peers": "",
-    "seeds": "",
     "api": "https://api-1.celestia.nodes.guru",
     "rpc": "https://rpc-1.celestia.nodes.guru",
     "grpc": "grpc-1.celestia.nodes.guru:10790",
@@ -60,14 +58,15 @@
     "api": "https://celestia-api.lavenderfive.com:443",
     "rpc": "https://celestia-rpc.lavenderfive.com:443",
     "grpc": "celestia-grpc.lavenderfive.com:443",
-    "snapshot": "",
+    "snapshot": "https://services.lavenderfive.com/mainnet/celestia/snapshot",
     "addrbook": "",
-    "tools": "Snapshot, State-sync, Installation Guide",
+    "tools": "State-sync, Installation Guide",
     "tools_url": {
-        "Snapshot": "https://services.lavenderfive.com/mainnet/celestia/snapshot", 
         "State-sync" :"https://services.lavenderfive.com/mainnet/celestia/statesync", 
-        "Installation Guide": "https://services.lavenderfive.com/mainnet/celestia/installation"
-    },
+     },
+   "content":{
+    "Installation Guide": "https://services.lavenderfive.com/mainnet/celestia/installation"
+  },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-lavenderfive-nodes"
 },
 {
