@@ -6,7 +6,6 @@
     "validatorlogo": "stakingcabin.jpg",
     "explorer": "",
     "peers": "c5a23c66db975038c4eb131f65717059f597fe59@celestia-mainnet.stakingcabin.com:21656",
-    "seeds": "",
     "api": "https://celestia-mainnet.stakingcabin.com",
     "rpc": "https://celestia-mainnet.stakingcabin.com",
     "grpc": "celestia-mainnet.stakingcabin.com:443",
@@ -67,6 +66,26 @@
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-lavenderfive-nodes"
 },
   {
+    "name": "kjnodes",
+    "webservices": "https://services.kjnodes.com/mainnet/celestia/",
+    "x": "kjnodes",
+    "validatorlogo": "kjnodes.jpg",
+    "explorer": "https://explorer.kjnodes.com/celestia",
+    "api": "https://celestia.api.kjnodes.com",
+    "rpc": "https://celestia.rpc.kjnodes.com",
+    "grpc": "celestia.grpc.kjnodes.com:443",
+    "seeds": "400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc@celestia.rpc.kjnodes.com:12059",
+    "addrbook": "https://snapshots.kjnodes.com/celestia/addrbook.json",
+    "snapshot": "https://services.kjnodes.com/mainnet/celestia/snapshot/",
+    "tools": "state-sync,Public RPC,Slashboard",
+    "tools_url": {
+        "State-sync": "https://services.kjnodes.com/mainnet/celestia/state-sync/",
+        "Public RPC": "https://services.kjnodes.com/mainnet/celestia/public-rpc/",
+        "Slashboard": "https://services.kjnodes.com/mainnet/celestia/slashboard/"
+    },
+    "github": ""
+},
+  {
     "name": "Polkachu",
     "webservices": "https://polkachu.com/networks/celestia",
     "x": "polka_chu",
@@ -100,7 +119,6 @@
     "archive": "y",
     "grpc": "grpc.archive.celestia.mainnet.dteam.tech:28090",
     "snapshot": "",
-    "addrbook": "",
     "tools": "Bridge node checker",
     "tools_url": {
         "Bridge node checker": "https://celestia-bridge-checker.dteam.tech/"
