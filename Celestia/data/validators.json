@@ -169,6 +169,7 @@
   "api": "https://celestia-mainnet-api.itrocket.net",
   "rpc": "https://celestia-mainnet-rpc.itrocket.net",
   "grpc": "celestia-mainnet-grpc.itrocket.net:443",
+  "websocket": "wss://celestia-mainnet-ws.itrocket.net:443/websocket",
   "archive": "y",
   "snapshot": "https://itrocket.net/services/mainnet/celestia/",
   "addrbook": "",
@@ -617,6 +618,7 @@
   "rpc": "https://celestia.cumulo.org.es:443",
   "api": "https://celestia.api.cumulo.org.es:443",
   "grpc": "celestia.grpc.cumulo.org.es:443",
+  "websocket": "wss://celestia.cumulo.org.es:443/websocket",
    "tools": "Dashboard for Consensus Nodes, Celestia Bridge Node Dashboard, Celestia Front Chain, Modular Expansion",
   "tools_url": {
     "Dashboard for Consensus Nodes with all available metrics for Celestia": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/grafana_consensus%20/README.md",
@@ -746,7 +748,31 @@
     "grpc": "https://grpc.celestia.nodestake.org:443",
     "snapshot": "https://nodestake.org/celestia",
     "addrbook": "https://ss.celestia.nodestake.org/addrbook.json"
-    }
+    },
+  {
+    "name": "DTEAM",
+    "webservices": "https://dteam.tech/services/mainnet/overview/celestia",
+    "x": "dteamtech",
+    "validatorlogo": "dteamtech.jpg",
+    "explorer": "",
+    "peers": "076c9cc9de3039819a98522aeea39e8c72b49682@peer.celestia.mainnet.dteam.tech:28656",
+    "websocket": "wss://rpc.celestia.mainnet.dteam.tech:443/websocket",
+    "seeds": "9b1d22c3a78487d1a664a4b6a331fce527d14fb4@seed.celestia.mainnet.dteam.tech:27656",
+    "api": "https://api.celestia.mainnet.dteam.tech",
+    "rpc": "https://rpc.celestia.mainnet.dteam.tech",
+    "grpc": "grpc.celestia.mainnet.dteam.tech:28090",
+    "snapshot": "https://dteam.tech/services/mainnet/snapshot/celestia",
+    "addrbook": "https://dteam.tech/services/mainnet/addrbook/celestia",
+    "tools": "state-sync",
+    "tools_url": {
+      "state-sync": "https://dteam.tech/services/mainnet/state-sync/celestia"
+    },
+    "content_url": {
+      "Installation Guide": "https://dteam.tech/services/mainnet/installation-guide/celestia?type=consensus"
+    },
+    "github": ""
+}
+
 
 
 ]
