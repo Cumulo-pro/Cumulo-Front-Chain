@@ -746,11 +746,7 @@
     "grpc": "https://grpc.celestia.nodestake.org:443",
     "snapshot": "https://nodestake.org/celestia",
     "addrbook": "https://ss.celestia.nodestake.org/addrbook.json",
-    "tools": "",
-    "tools_url": {},
-    "content_url": {},
-    "github": ""
-}
+    }
 
 
 
