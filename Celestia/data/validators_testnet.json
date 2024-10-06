@@ -440,6 +440,19 @@
     "snapshot": "",
     "addrbook": "",
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-noders-validator"
+},
+     {
+    "name": "NodeStake",
+    "webservices": "https://nodestake.org/celestia",
+    "x": "NodeStake_top",
+    "validatorlogo": "nodestake.jpg",
+    "explorer": "https://explorer.nodestake.org/celestia-testnet",
+    "seeds": "afdc83e658c00274c7fc8fe103de766977a65cb2@rpc.celestia.nodestake.org:666",
+    "api": "https://api-t.celestia.nodestake.org",
+    "rpc": "https://rpc-t.celestia.nodestake.org",
+    "grpc": "https://grpc-t.celestia.nodestake.org:443",
+    "snapshot": "https://nodestake.org/celestia",
+    "addrbook": "https://ss-t.celestia.nodestake.org/addrbook.json"
 }
 
 
