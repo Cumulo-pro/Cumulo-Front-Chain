@@ -771,6 +771,16 @@
       "Installation Guide": "https://dteam.tech/services/mainnet/installation-guide/celestia?type=consensus"
     },
     "github": ""
+},
+  {
+    "name": "Chainode Tech",
+    "webservices": "",
+    "x": "ChainodeTech",
+    "validatorlogo": "chainode.jpg",
+    "api": "celestia-api.chainode.tech",
+    "rpc": "celestia-rpc.chainode.tech:33373",
+    "grpc": "celestia-grpc.chainode.tech:443",
+    "websocket": "wss://celestia-ws.chainode.tech:33373/websocket"   
 }
 
 
