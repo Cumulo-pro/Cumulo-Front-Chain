@@ -778,7 +778,7 @@
     "x": "ChainodeTech",
     "validatorlogo": "chainode.jpg",
     "api": "celestia-api.chainode.tech",
-    "rpc": "celestia-rpc.chainode.tech:33373",
+    "rpc": "https://celestia-rpc.chainode.tech:33373",
     "grpc": "celestia-grpc.chainode.tech:443",
     "websocket": "wss://celestia-ws.chainode.tech:33373/websocket"   
 }
