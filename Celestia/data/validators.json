@@ -732,7 +732,26 @@
        "31 Posts about Celestia": "https://docs.google.com/document/d/1BYJ9o4NAngU6Ma7BcPycwAQFdzLeIH_QG7WcTgDVuRw"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-noders-validator"
+},
+  {
+    "name": "NodeStake",
+    "webservices": "https://nodestake.org/celestia",
+    "x": "NodeStake_top",
+    "validatorlogo": "nodestake.jpg",
+    "explorer": "https://explorer.nodestake.org/celestia",
+    "peers": "ac54fab5e96c630fcbbed033c68092e6fb9ad0e5@104.154.23.38:26656,4670dc3021e779d814b8a3cd7e5dba166dd5c1c3@65.109.112.144:5020,23b88ebcfb2177dbd2d8b2920c363a25e038e69a@89.58.61.213:2000,a86cfe5a22e73ff0c9ceec388e9b52bf8355efdd@85.239.233.57:2000,b8c78f8edb68486ed07d7c34fc694be4fc37cd34@144.217.71.152:26656",
+    "seeds": "afdc83e658c00274c7fc8fe103de766977a65cb2@rpc.celestia.nodestake.org:666",
+    "api": "https://api.celestia.nodestake.org",
+    "rpc": "https://rpc.celestia.nodestake.org",
+    "grpc": "https://grpc.celestia.nodestake.org:443",
+    "snapshot": "https://nodestake.org/celestia",
+    "addrbook": "https://ss.celestia.nodestake.org/addrbook.json",
+    "tools": "",
+    "tools_url": {},
+    "content_url": {},
+    "github": ""
 }
+
 
 
 
