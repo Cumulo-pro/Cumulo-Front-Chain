@@ -150,6 +150,8 @@
     "rpc": "https://rpc.celestia-mainnet.blackblocks.io",
     "grpc": "",
     "snapshot": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#full-node-archival-snapshot",
+    "snapshot_archival": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#full-node-archival-snapshot",
+    "snapshot_bridge": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#bridge-node-archival-snapshot",
     "addrbook": "",
     "tools": "Bridge Archival, Full Node Archival",
     "tools_url": {
