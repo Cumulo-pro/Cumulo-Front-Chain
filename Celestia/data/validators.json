@@ -544,10 +544,11 @@
   "archive": "y",
   "rpc": "https://celestia-rpc.enigma-validator.com/",
   "rpc_archive": "https://celestia-rpc-archive.enigma-validator.com/",
-  "tools": "IBC Client Monitoring & Update Monitor, GenesisDrop Checker",
+  "tools": "IBC Client Monitoring & Update Monitor, GenesisDrop Checker,Celestia Network Node Map",
   "tools_url": {
     "IBC Client Monitoring": "https://discord.com/channels/638338779505229824/1176595874823028817/1262579736891228293",
-    "GenesisDrop Checker": "https://celestia.genesisdrop.enigma-validator.com/"
+    "GenesisDrop Checker": "https://celestia.genesisdrop.enigma-validator.com/",
+    "Celestia Network Node Map": "https://celestia-mapper.enigma-validator.com/"
   },
   "content_url": {
     "How to launch a node": "https://doc.enigma-validator.com/docs/mainnets/Celestia/setup-node",
