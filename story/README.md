@@ -16,6 +16,8 @@ Check the status of nodes connected to the network. Get insights on the number o
 #### Validators Resources  
 Access the Validators Resources section to find valuable tools and documentation specifically for Story validators. This includes configuration guides, network parameters, and best practices to ensure effective validator operations. Validators can use these resources to maintain optimal performance and stay up-to-date with the latest updates in the Story network.  
 
+🔄 Note: We will continuously update these resources throughout the development of the testnet to ensure validators have the most accurate and relevant information available.
+
 #### Test RPC  
 Test and validate the connection to Story node RPC endpoints. This feature is essential for verifying that the RPC node is responding correctly and processing requests.  
 
