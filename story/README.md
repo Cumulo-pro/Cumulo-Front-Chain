@@ -13,6 +13,9 @@ View key network metrics for Story, including data such as the number of transac
 #### Node Status  
 Check the status of nodes connected to the network. Get insights on the number of synchronized blocks, the current block height, and the RPC connection status. This section helps ensure the node is running smoothly.  
 
+#### Validators Resources  
+Access the Validators Resources section to find valuable tools and documentation specifically for Story validators. This includes configuration guides, network parameters, and best practices to ensure effective validator operations. Validators can use these resources to maintain optimal performance and stay up-to-date with the latest updates in the Story network.  
+
 #### Test RPC  
 Test and validate the connection to Story node RPC endpoints. This feature is essential for verifying that the RPC node is responding correctly and processing requests.  
 
