@@ -28,7 +28,7 @@ Test WebSocket connections specifically for the EVM network, providing real-time
 #### dApps  
 Access deployed dApps on the Story network directly from the dashboard. Explore and interact with decentralized applications built on the Story Front Chain.  
 
-### 🔍 Key Features:  
+### 🚀 Dashboard Highlights:   
   - Built with HTML, PHP, CSS, and JavaScript for a fast, smooth user experience without complex back-end systems. ⚡  
   - Real-time monitoring of node synchronization, block height, gas usage, and transaction efficiency for complete node management. 📊  
   - Continuous monitoring of critical endpoints (RPC, EVM-RPC, Websocket) to ensure service health and quick response to issues. 🟢🔴  
