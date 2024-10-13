@@ -9,7 +9,7 @@
   - Real-time monitoring of node synchronization, block height, gas usage, and transaction efficiency for complete node management. 📊  
   - Continuous monitoring of critical endpoints (RPC, EVM-RPC, Websocket) to ensure service health and quick response to issues. 🟢🔴  
   - Optimized performance with automatic live updates, no manual refresh needed. 🔄
-  - Test EVM WebSocket connections with WebSocket Proxy using Node.js (+ info)
+  - Test EVM WebSocket connections with WebSocket Proxy using Node.js ([+ info](https://github.com/Cumulo-pro/Cumulo-Front-Chain/blob/main/webSocket/ProxyWebSocket.md))
 
 
 
