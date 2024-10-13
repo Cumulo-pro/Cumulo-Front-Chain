@@ -1,9 +1,9 @@
 # Story Front Chain Dashboard
 ## the first modular front-end dashboard for Story nodes! 🎉  
 
-The Story Front Chain Dashboard is a comprehensive tool designed to monitor, verify, and test the status of the chain and nodes in the Story network, while also providing direct access to dApps within the ecosystem.
+[https://story.frontchain.cumulo.pro/](https://story.frontchain.cumulo.pro/)  
 
-![image](https://github.com/user-attachments/assets/6c21ba35-ee38-4cfc-8a81-77de379c4466)
+The Story Front Chain Dashboard is a comprehensive tool designed to monitor, verify, and test the status of the chain and nodes in the Story network, while also providing direct access to dApps within the ecosystem.
 
 ### 🔍 Key Features:  
 
@@ -38,3 +38,5 @@ Access deployed dApps on the Story network directly from the dashboard. Explore 
 
 🔗 Explore it here: [https://story.frontchain.cumulo.pro/](https://story.frontchain.cumulo.pro/)  
 💡 Read more on [Medium](https://medium.com/cumulo-pro/explore-the-story-front-chain-by-cumulo-37b7b28b2f44)
+
+![image](https://github.com/user-attachments/assets/6c21ba35-ee38-4cfc-8a81-77de379c4466)
