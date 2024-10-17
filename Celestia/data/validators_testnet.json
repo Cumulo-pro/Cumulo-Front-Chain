@@ -291,7 +291,7 @@
            "rpc": "https://celestia-testnet-rpc.0xcryptovestor.com/",
            "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#wavefive"
         },
-    {
+ {
   "name": "ERN VENTURES",
    "x": "ernventures",
   "validatorlogo": "ernventures.jpg",
@@ -311,7 +311,8 @@
     "Monitoring a Celestia consensus node (with Grafana)": "https://celestia.testnets.services-ernventures.com/guides/monitoring-with-grafana",
     "Celestia Validator monitoring guide (with tenderduty)": "https://celestia.testnets.services-ernventures.com/guides/validator-monitoring-tenderduty",
     "Celestia bridge alert": "https://celestia.testnets.services-ernventures.com/guides/bridge-alert",
-    "Useful command": "https://celestia.testnets.services-ernventures.com/guides/useful-commands"
+    "Useful command": "https://celestia.testnets.services-ernventures.com/guides/useful-commands",
+    "How to Secure Your Server: From Changing the SSH Port to Managing Validator Keys with TMKMS": "https://medium.com/@ernventures/server-protection-how-to-secure-access-and-save-validator-keys-dcc817a31956"
   }
 },
  {
