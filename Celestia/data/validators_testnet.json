@@ -259,7 +259,10 @@
         "explorer": "https://www.mintscan.io/celestia-testnet/",
         "x": "CosmostationVD",
         "validatorlogo": "cosmostation.png",
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cosmostation"
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cosmostation",
+          "tools_url": {
+            "Consensus Monitoring Data": "https://public-cosmos-vms.cosmostation.io/?orgId=1&refresh=5s&var-chain_id=mocha_4&var-chain=celestia"
+          }
     },
     {
         "name": "Provalidator",
