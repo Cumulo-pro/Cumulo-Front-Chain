@@ -106,25 +106,6 @@
   },
     "github": ""
 },
-{
-    "name": "DTEAM",
-    "webservices": "https://dteam.tech/services/testnet/overview/celestia",
-    "x": "dteamtech",
-    "validatorlogo": "dteam.jpg",
-    "explorer": "",
-    "peers": "076c9cc9de3039819a98522aeea39e8c72b49682@peer.celestia.mainnet.dteam.tech:28656",
-    "seeds": "9b1d22c3a78487d1a664a4b6a331fce527d14fb4@seed.celestia.mainnet.dteam.tech:27656",
-    "api": "https://api.archive.celestia.mainnet.dteam.tech",
-    "rpc": "https://rpc.archive.celestia.mainnet.dteam.tech",
-    "archive": "y",
-    "grpc": "grpc.archive.celestia.mainnet.dteam.tech:28090",
-    "snapshot": "",
-    "tools": "Bridge node checker",
-    "tools_url": {
-        "Bridge node checker": "https://celestia-bridge-checker.dteam.tech/"
-    },
-    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#dteam"
-},
   {
   "name": "cryptomolot",
   "webservices": "",
