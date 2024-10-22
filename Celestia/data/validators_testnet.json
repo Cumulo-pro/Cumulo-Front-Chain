@@ -457,53 +457,7 @@
     "grpc": "https://grpc-t.celestia.nodestake.org:443",
     "snapshot": "https://nodestake.org/celestia",
     "addrbook": "https://ss.celestia.nodestake.org/addrbook.json"
-},
-     {
-    "name": "DTEAM",
-    "webservices": "https://dteam.tech/services/mainnet/overview/celestia",
-    "x": "dteamtech",
-    "validatorlogo": "dteamtech.jpg",
-    "explorer": "",
-    "peers": "076c9cc9de3039819a98522aeea39e8c72b49682@peer.celestia.mainnet.dteam.tech:28656",
-    "websocket": "wss://rpc.celestia.mainnet.dteam.tech:443/websocket",
-    "seeds": "9b1d22c3a78487d1a664a4b6a331fce527d14fb4@seed.celestia.mainnet.dteam.tech:27656",
-    "api": "https://api.celestia.mainnet.dteam.tech",
-    "rpc": "https://rpc.celestia.mainnet.dteam.tech",
-    "grpc": "grpc.celestia.mainnet.dteam.tech:28090",
-    "snapshot": "https://dteam.tech/services/mainnet/snapshot/celestia",
-    "addrbook": "https://dteam.tech/services/mainnet/addrbook/celestia",
-    "tools": "state-sync",
-    "tools_url": {
-      "state-sync": "https://dteam.tech/services/mainnet/state-sync/celestia"
-    },
-    "content_url": {
-      "Installation Guide": "https://dteam.tech/services/mainnet/installation-guide/celestia?type=consensus"
-    },
-    "github": ""
-},
-     {
-    "name": "DTEAM",
-    "webservices": "https://dteam.tech/services/mainnet/overview/celestia",
-    "x": "dteamtech",
-    "validatorlogo": "dteamtech.jpg",
-    "explorer": "",
-    "peers": "6ed983017167d96c62b166725250940deb783563@peer.celestia.testnet.dteam.tech:27656",
-    "seeds": "70e8a8941f32dc5f696e46ee836c27620e773065@seed.celestia.testnet.dteam.tech:26656",
-    "api": "https://api.celestia.testnet.dteam.tech",
-    "rpc": "https://rpc.celestia.testnet.dteam.tech",
-    "grpc": "grpc.celestia.testnet.dteam.tech:27090",
-    "snapshot": "https://dteam.tech/services/testnet/snapshot/celestia",
-    "addrbook": "https://dteam.tech/services/testnet/addrbook/celestia",
-    "tools": "state-sync",
-    "tools_url": {
-      "state-sync": "https://dteam.tech/services/testnet/state-sync/celestia"
-    },
-    "content_url": {
-      "Installation Guide": "https://dteam.tech/services/testnet/installation-guide/celestia?type=consensus"
-    },
-    "github": ""
 }
-
 
 
 ]
