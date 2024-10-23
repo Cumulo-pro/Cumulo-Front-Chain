@@ -10,15 +10,15 @@
     "grpc": "warden-testnet-grpc.itrocket.net:443",
     "seeds": "8288657cb2ba075f600911685670517d18f54f3b@warden-testnet-seed.itrocket.net:18656",
     "addrbook": "https://server-4.itrocket.net/testnet/warden/addrbook.json",
-    "snapshot": "N/A",
+    "snapshot": "https://itrocket.net/services/testnet/warden/#snap",
     "tools": "State-sync,Peers scanner,Node Sync Status Checker,Public RPC endpoints,Decentralization Analytics,Proposal bot",
     "tools_url": {
         "State-sync": "https://warden-testnet-rpc.itrocket.net",
         "Peers scanner": "https://warden-testnet-peer.itrocket.net",
-        "Node Sync Status Checker": "https://itrocket.net/services/testnet/warden/sync-status",
+        "Node Sync Status Checker": "https://itrocket.net/services/testnet/warden/node-sync/",
         "Public RPC endpoints": "https://itrocket.net/services/testnet/warden/public-rpc",
-        "Decentralization Analytics": "https://itrocket.net/services/testnet/warden/analytics",
-        "Proposal bot": "https://itrocket.net/services/testnet/warden/proposal-bot"
+        "Decentralization Analytics": "https://itrocket.net/services/testnet/warden/decentralization/",
+        "Proposal bot": "https://t.me/itrocket_testnet_proposal_bot"
     },
     "content": {
         "Node Installation": "https://itrocket.net/services/testnet/warden/node-installation",
