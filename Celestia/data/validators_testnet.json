@@ -144,7 +144,7 @@
         "rpc": "https://celestia-testnet-rpc.stakeme.pro",
         "archive": "y",
         "grpc": "da-bridge-mocha-4.stakeme.pro:9090",
-        "tools": "Self-written explorer #staking/voting directly through the explorer using Keplr is supported, Consensus, Uptime validators, RPC scanner & peers, Self-written faucet",
+        "tools": "Consensus, Uptime validators, RPC scanner & peers, Self-written faucet",
         "tools_url": {
             "Consensus": "https://testnet.celestia.exploreme.pro/utilities?tab=consensus",
             "Uptime validators": "https://testnet.celestia.exploreme.pro/utilities?tab=uptime",
