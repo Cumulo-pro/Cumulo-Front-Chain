@@ -206,7 +206,7 @@
     "grpc": "da-bridge-celestia.stakeme.pro:9090",
     "snapshot": "",
     "addrbook": "",
-    "tools": "Self-written explorer, RPC scanner & peers, Self-written faucet, Uptime validators",
+    "tools": "RPC scanner & peers, Self-written faucet, Uptime validators",
     "tools_url": {
         "RPC scanner & peers": "https://celestia.exploreme.pro/network",
         "Consensus": "https://celestia.exploreme.pro/utilities?tab=consensus",
