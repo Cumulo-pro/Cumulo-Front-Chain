@@ -327,7 +327,7 @@
   "rpc": "https://celestia-rpc.chainode.tech:33373/",
   "archive": "y",
   "grpc": "celestia-grpc.chainode.tech:443",
-  "wss": "wss://celestia-ws.chainode.tech:33373/websocket",
+   "websocket": "wss://celestia-ws.chainode.tech:33373/websocket"   
   "grpc_web": "celestia-grpcweb.chainode.tech:443",
   "snapshot": "",
   "addrbook": "",
@@ -505,7 +505,7 @@
     "Celestia Mocha Testnet Turkish Step by Step Guide": "https://github.com/okannako/celestiamocha",
     "Celestia Mocha Testnet Turkish Script Guide": "https://github.com/okannako/celestiamochascript"
   },
-  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#nakoturk"
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#nakoturk"
 },
 {
   "name": "Brightlystake",
@@ -519,7 +519,7 @@
     "Celestia RPC status checker": "https://celestia-tools.brightlystake.com/rpc-status",
     "Celestia gRPC status checker": "https://celestia-tools.brightlystake.com/grpc-status"
   },
-  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#list-of-contributions-from-brightlystakebrightlystakecom"
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#list-of-contributions-from-brightlystakebrightlystakecom"
 },
 {
   "name": "Enigma",
@@ -544,7 +544,7 @@
     "French content collaboration": "https://www.youtube.com/watch?v=6S0Nl-MYnKw",
     "WEB3connect event website": "https://web3connect.fr/2024"
   },
-  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#enigma"
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#enigma"
 },
 {
   "name": "Nodes Hub",
@@ -568,7 +568,7 @@
    "content_url": {
      "Installation guide": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/installation"    
   },
-  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#nodes-hub-contribution-httpsnodeshubonline"
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#nodes-hub-contribution-httpsnodeshubonline"
 },
 {
   "name": "Pro-Nodes75",
@@ -586,7 +586,7 @@
     "Celestia Cluster monitoring tool": "https://github.com/the-node75/mon_celestia",
     "Celestia IBC information matrix": "https://services.node75.org/ibc-matrix/celestia"
   },
- "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#pro-nodes75"
+ "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#pro-nodes75"
 },
 {
   "name": "Maple Nodes",
@@ -598,7 +598,7 @@
     "Celestia Network Analytics Dashboard": "https://celestia.maplenodes.com/analytics/",
     "Custom API Endpoints for Celestia": "https://docs.maplenodes.com/#celestia"
   },
-  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#contributions-by-maple-nodes"
+  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-maple-nodes"
 },
 {
   "name": "Cumulo",
@@ -770,7 +770,7 @@
     "api": "celestia-api.chainode.tech",
     "rpc": "https://celestia-rpc.chainode.tech:33373",
     "grpc": "celestia-grpc.chainode.tech:443",
-    "websocket": "wss://celestia-ws.chainode.tech:33373/websocket"   
+    
 }
 
 
