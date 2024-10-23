@@ -2,7 +2,7 @@
 {
     "name": "itrocket",
     "webservices": "https://itrocket.net/services/testnet/warden/",
-    "x": "itrocket",
+    "x": "itrocket_team",
     "validatorlogo": "itrocket.jpg",
     "explorer": "https://testnet.itrocket.net",
     "api": "https://warden-testnet-api.itrocket.net",
@@ -24,5 +24,22 @@
         "Node Installation": "https://itrocket.net/services/testnet/warden/node-installation",
         "Oracle Installation": "https://itrocket.net/services/testnet/warden/oracle-installation",
      }
+},
+    {
+    "name": "𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀",
+    "webservices": "https://teletype.in/@lesnik13utsa/Pw2GAVJJ_7y",
+    "x": "lesnik13utsa",
+    "validatorlogo": "𝐥𝐞𝐬𝐧𝐢𝐤.jpg",
+    "explorer": "https://exp.utsa.tech/warden/staking",
+    "api": "https://t-warden.api.utsa.tech",
+    "rpc": "https://t-warden.rpc.utsa.tech",
+    "grpc": "t-warden.grpc.utsa.tech:443",
+    "seeds": "b14f35c07c1b2e58c4a1c1727c89a5933739eeea@warden-testnet-peer.utsa.tech:18656",
+    "addrbook": "https://share.utsa.tech/warden/addrbook.json",
+    "snapshot": "",
+    "content": {
+        "Node Installation": "https://utsa.gitbook.io/services/testnet/warden-protocol"       
+    }
 }
+
 ]
