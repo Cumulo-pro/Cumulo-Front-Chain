@@ -58,7 +58,25 @@
     "tools_url": {
         "Auto Install Tool": "https://cosmos-auto-install-script.coinsspor.com/"
     }    
+},
+    {
+    "name": "NodeSync",
+    "webservices": "https://explorer.nodesync.top/Warden-Testnet/staking",
+    "x": "nodesync_top",
+    "validatorlogo": "nodesync.jpg",
+    "explorer": "https://explorer.nodesync.top/Warden-Testnet/staking",
+    "api": "https://warden-testnet-api.nodesync.top",
+    "rpc": "https://warden-testnet-rpc.nodesync.top",
+    "grpc": "",
+    "seeds": "",
+    "addrbook": "",
+    "snapshot": "",
+    "tools": "Faucet",
+    "tools_url": {
+        "Faucet": "https://faucet.chiado.wardenprotocol.org/"
+    }
 }
+
 
 
 ]
