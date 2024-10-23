@@ -197,7 +197,7 @@
     "webservices": "",
     "x": "stakeme_pro",
     "validatorlogo": "stakeme.jpg",
-    "explorer": "",
+    "explorer": "https://celestia.exploreme.pro/",
     "peers": "f9f6aa4a23f8ff2bc3137fa603bfa4014b8d05cb@celestia-mainnet-peer.stakeme.pro:40656",
     "seeds": "f9f6aa4a23f8ff2bc3137fa603bfa4014b8d05cb@celestia-mainnet-seed.stakeme.pro:40656",
     "api": "https://celestia-rest.stakeme.pro",
@@ -208,7 +208,6 @@
     "addrbook": "",
     "tools": "Self-written explorer, RPC scanner & peers, Self-written faucet, Uptime validators",
     "tools_url": {
-        "Self-written explorer": "https://celestia.exploreme.pro/",
         "RPC scanner & peers": "https://celestia.exploreme.pro/network",
         "Consensus": "https://celestia.exploreme.pro/utilities?tab=consensus",
         "Uptime validators": "https://celestia.exploreme.pro/utilities?tab=uptime"
