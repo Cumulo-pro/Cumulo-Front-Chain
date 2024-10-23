@@ -137,20 +137,20 @@
         "webservices": "",
         "x": "stakeme_pro",
         "validatorlogo": "stakeme.jpg",
-             "peers": "83cda75ef0cb3826858eaafe60f0f14a2018d53f@celestia-testnet-peer.stakeme.pro:11656",
-    "seeds": "83cda75ef0cb3826858eaafe60f0f14a2018d53f@celestia-testnet-seed.stakeme.pro:11656",
-    "api": "https://celestia-testnet-rest.stakeme.pro",
-    "rpc": "https://celestia-testnet-rpc.stakeme.pro",
-    "archive": "y",
-    "grpc": "da-bridge-mocha-4.stakeme.pro:9090",
-    "tools": "Self-written explorer #staking/voting directly through the explorer using Keplr is supported, Consensus, Uptime validators, RPC scanner & peers, Self-written faucet",
-    "tools_url": {
-        "Self-written explorer": "https://testnet.celestia.exploreme.pro/",
-        "Consensus": "https://testnet.celestia.exploreme.pro/utilities?tab=consensus",
-        "Uptime validators": "https://testnet.celestia.exploreme.pro/utilities?tab=uptime",
-        "RPC scanner & peers": "https://testnet.celestia.exploreme.pro/network",
-        "Self-written faucet": "https://celestia-testnet.faucetme.pro/"
-    },
+        "explorer": "https://testnet.celestia.exploreme.pro/",
+        "peers": "83cda75ef0cb3826858eaafe60f0f14a2018d53f@celestia-testnet-peer.stakeme.pro:11656",
+        "seeds": "83cda75ef0cb3826858eaafe60f0f14a2018d53f@celestia-testnet-seed.stakeme.pro:11656",
+        "api": "https://celestia-testnet-rest.stakeme.pro",
+        "rpc": "https://celestia-testnet-rpc.stakeme.pro",
+        "archive": "y",
+        "grpc": "da-bridge-mocha-4.stakeme.pro:9090",
+        "tools": "Self-written explorer #staking/voting directly through the explorer using Keplr is supported, Consensus, Uptime validators, RPC scanner & peers, Self-written faucet",
+        "tools_url": {
+            "Consensus": "https://testnet.celestia.exploreme.pro/utilities?tab=consensus",
+            "Uptime validators": "https://testnet.celestia.exploreme.pro/utilities?tab=uptime",
+            "RPC scanner & peers": "https://testnet.celestia.exploreme.pro/network",
+            "Self-written faucet": "https://celestia-testnet.faucetme.pro/"
+        },
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakeme"
     },
     {
