@@ -156,13 +156,20 @@
   "archive": "y",
   "snapshot": "https://itrocket.net/services/mainnet/celestia/",
   "addrbook": "",
-  "tools": "Decentralization Analytics, Governance Bot, Peer scanner, RPC Scanner",
+  "tools": "Decentralization Analytics, Governance Bot, Peer scanner, RPC Scanner, DA Nodes Monitoring",
  "tools_url": {
   "Decentralization Analytics": "https://itrocket.net/services/mainnet/celestia/decentralization/",
   "Governance Bot": "https://t.me/itrocket_mainnet_proposal_bot",
   "Peer scanner": "https://itrocket.net/services/mainnet/celestia/#peer",
-  "RPC Scanner": "https://itrocket.net/services/mainnet/celestia/public-rpc/"
+  "RPC Scanner": "https://itrocket.net/services/mainnet/celestia/public-rpc/",
+  "DA Nodes Monitoring": "https://itrocket.net/services/testnet/celestia/monitoring/"
 },
+  "content_url": {
+    "Consensus Node installation": "https://itrocket.net/services/testnet/celestia/installation/",
+    "Bridhe Node installation": "https://itrocket.net/services/testnet/celestia/bridge-node/",
+    "Full Storage Node installation": "https://itrocket.net/services/testnet/celestia/full-node/",
+    "Deploy your own Celestia sovereign rollup": "https://github.com/itrocket-team/testnet_guides/tree/main/celestia/sovereign_rollup"
+ },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#itrocket"
 },
 {
