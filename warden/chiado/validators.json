@@ -40,6 +40,25 @@
     "content": {
         "Node Installation": "https://utsa.gitbook.io/services/testnet/warden-protocol"       
     }
+},
+    {
+    "name": "coinsspor",
+    "webservices": "https://nodescenter.coinsspor.com/testnet/warden-protocol",
+    "x": "coinsspor",
+    "validatorlogo": "coinsspor.jpg",
+    "explorer": "https://coinsspor.com/warden-chiado/staking",
+    "api": "https://warden-chiado-api.coinsspor.com",
+    "rpc": "https://warden-chiado-rpc.coinsspor.com",
+    "json_rpc": "https://warden-chiado-json-rpc.coinsspor.com",
+    "grpc": "",
+    "seeds": "",
+    "addrbook": "",
+    "snapshot": "",
+    "tools": "Auto Install Tool",
+    "tools_url": {
+        "Auto Install Tool": "https://cosmos-auto-install-script.coinsspor.com/"
+    }    
 }
+
 
 ]
