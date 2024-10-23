@@ -75,7 +75,17 @@
     "tools_url": {
         "Faucet": "https://faucet.chiado.wardenprotocol.org/"
     }
+},
+    {
+    "name": "Validator247.com",
+    "webservices": "https://docs.validator247.com/testnet/warden-protocol",
+    "x": "Validator247",
+    "validatorlogo": "validator247.jpg",
+    "explorer": "https://explorer.validator247.com/warden-testnet/staking",
+    "api": "https://warden-testnet-api.validator247.com",
+    "rpc": "https://warden-testnet-rpc.validator247.com"   
 }
+
 
 
 
