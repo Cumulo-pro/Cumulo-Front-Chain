@@ -327,7 +327,7 @@
   "rpc": "https://celestia-rpc.chainode.tech:33373/",
   "archive": "y",
   "grpc": "celestia-grpc.chainode.tech:443",
-   "websocket": "wss://celestia-ws.chainode.tech:33373/websocket"   
+   "websocket": "wss://celestia-ws.chainode.tech:33373/websocket", 
   "grpc_web": "celestia-grpcweb.chainode.tech:443",
   "snapshot": "",
   "addrbook": "",
