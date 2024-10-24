@@ -110,11 +110,25 @@
     "api": "https://warden-testnet-api.nodesrun.xyz",
     "rpc": "https://warden-testnet-rpc.nodesrun.xyz",
     "snapshot": "https://warden-testnet-snapshot.nodesrun.xyz",
-    "guides": {
+    "content": {
         "Guide Node": "https://nodesrun.com/warden-testnet-chiado-installation/"
     }
+},
+    {
+    "name": "SyaNodes",
+    "x": "syanodes",
+    "validatorlogo": "syanodes.jpg",
+    "webservices": "https://docs.syanodes.my.id/warden",
+    "explorer": "https://explorer.syanodes.my.id/warden-testnet",
+    "api": "https://warden-t-api.syanodes.my.id",
+    "rpc": "https://warden-t-rpc.syanodes.my.id",
+    "grpc": "warden-t-grpc.syanodes.my.id:443",
+    "addrbook": "https://testnet-files.syanodes.my.id/warden-addrbook.json",
+    "snapshot": "https://snapshot.syanodes.my.id/testnets/warden/snapshot-warden.tar.lz4",
+    "content": {
+        "Node Installation": "https://docs.syanodes.my.id/warden"  
+    }
 }
-
 
 
 ]
