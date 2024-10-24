@@ -181,7 +181,19 @@
     "seeds": "733df6fa10c97cbffc54808ff909d862be9545a9@65.109.93.124:27356",
     "snapshot": "https://storage.crouton.digital/testnet/warden/snapshots/",
     "addrbook": "https://storage.crouton.digital/testnet/warden/files/addrbook.json"
+},
+    {
+    "name": "Node39",
+    "x": "node39_",
+    "validatorlogo": "node39.jpg",
+    "api": "https://warden-testnet-api.node39.top/",
+    "rpc": "https://warden-testnet-rpc.node39.top/",
+    "grpc": "https://warden-testnet-grpc.node39.top/",
+    "explorer": "https://explorer.node39.top/warden-testnet",
+    "snapshot": "https://services.node39.top/index.html/cosmos/warden-protocol/sync",
+    "webservices": "https://services.node39.top/index.html/cosmos/warden-protocol/"
 }
+
 
 
 ]
