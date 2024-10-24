@@ -166,8 +166,22 @@
     "tools_url": {
         "Sync": "https://services.shazoe.xyz/testnets/warden/sync"
     }
+},
+   {
+    "name": "CroutonDigital",
+    "webservices": "https://crouton.digital/services/testnets/storyprotocol",
+    "x": "CroutonDigital",
+    "validatorlogo": "crouton.jpg",
+    "content": {
+        "Guide Installation": "https://crouton.digital/services/testnets/warden"
+    },
+    "rpc": "https://warden-testnet-rpc.crouton.digital/",
+    "api": "https://warden-testnet-api.crouton.digital/",
+    "grpc": "warden-testnet-grpc.crouton.digital:27390",
+    "seeds": "733df6fa10c97cbffc54808ff909d862be9545a9@65.109.93.124:27356",
+    "snapshot": "https://storage.crouton.digital/testnet/warden/snapshots/",
+    "addrbook": "https://storage.crouton.digital/testnet/warden/files/addrbook.json"
 }
-
 
 
 ]
