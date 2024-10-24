@@ -92,6 +92,27 @@
     "explorer": "https://explorer.herculesnode.com/Warden-Chiado/staking",
     "api": "https://warden-api.herculesnode.com",
     "rpc": "https://rpc-warden.herculesnode.com"
+},
+{
+    "name": "NodeRuneR",
+    "validatorlogo": "noderuner.jpg",
+    "explorer": "https://explorer.noderuner.xyz/warden",
+    "api": "https://warden-chiado-api.noderuner.xyz",
+    "rpc": "https://warden-chiado-rpc.noderuner.xyz",
+    "json_rpc": "https://warden-chiado-json-rpc.noderuner.xyz"
+},
+{
+    "name": "NodesRun",
+    "x": "turkeyairdrop2",
+    "webservices": "https://nodesrun.com/warden-services/",
+    "validatorlogo": "nodesrun.jpg",
+    "explorer": "https://explorer.nodesrun.xyz/Warden%20Testnet",
+    "api": "https://warden-testnet-api.nodesrun.xyz",
+    "rpc": "https://warden-testnet-rpc.nodesrun.xyz",
+    "snapshot": "https://warden-testnet-snapshot.nodesrun.xyz",
+    "guides": {
+        "Guide Node": "https://nodesrun.com/warden-testnet-chiado-installation/"
+    }
 }
 
 
