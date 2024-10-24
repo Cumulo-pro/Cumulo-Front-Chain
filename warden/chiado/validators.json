@@ -147,6 +147,25 @@
     "explorer": "https://testnet.explorer.nodeshub.online/warden",
     "api": "https://warden.test.api.nodeshub.online",
     "rpc": ": https://warden.test.rpc.nodeshub.online"
+},
+    {
+    "name": "Shazoe",
+    "x": "_Shazoe",
+    "webservices": "https://services.shazoe.xyz/testnets/warden",
+    "validatorlogo": "shazoe.jpg",
+    "explorer": "https://explorer.shazoe.xyz/warden-testnet",
+    "api": "https://warden-testnet-api.shazoe.xyz",
+    "rpc": ": https://warden-testnet-rpc.shazoe.xyz",
+    "grpc": "warden-testnet-grpc.shazoe.xyz",
+    "snapshot": "https://snapshot1.shazoe.xyz/testnets/snapshot1-warden.tar.lz4",
+    "content": {
+        "Guide Installation": "https://services.shazoe.xyz/testnets/warden/node-installation",
+        "Useful commands": "https://services.shazoe.xyz/testnets/warden/useful-commands"
+    },
+    "tools": "Faucet",
+    "tools_url": {
+        "Sync": "https://services.shazoe.xyz/testnets/warden/sync"
+    }
 }
 
 
