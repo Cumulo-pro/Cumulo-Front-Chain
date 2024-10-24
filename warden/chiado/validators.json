@@ -132,7 +132,7 @@
     {
     "name": "STAVR",
     "webservices": "https://story-tools.stavr.tech/",
-    "validatorlogo": "ndeo.jpg",
+    "validatorlogo": "stavr.jpg",
     "explorer": "https://explorer.stavr.tech/Warden-Testnet",
     "snapshot": "https://stavr-team.gitbook.io/nodes-guides/testnets/warden-protocol/statesync-snapshot",
     "content": {
