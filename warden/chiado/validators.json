@@ -192,7 +192,22 @@
     "explorer": "https://explorer.node39.top/warden-testnet",
     "snapshot": "https://services.node39.top/index.html/cosmos/warden-protocol/sync",
     "webservices": "https://services.node39.top/index.html/cosmos/warden-protocol/"
+},
+    {
+    "name": "Sychonix",
+    "x": "sychonixx",
+    "validatorlogo": "sychonixx.jpg",
+    "webservices": "https://sychonix.com/testnet/warden",
+    "explorer": "https://explorer.sychonix.com/warden-testnet",
+    "rpc": "https://rpc-warden-t.sychonix.com",
+    "api": "https://api-warden-t.sychonix.com",
+    "snapshot": "https://sychonix.com/testnet/warden/snap",
+    "addrbook": "https://sychonix.com/testnet/warden/addrbook",
+    "content": {
+        "Guide Installation": "https://sychonix.com/testnet/warden/installation"
+    }
 }
+
 
 
 
