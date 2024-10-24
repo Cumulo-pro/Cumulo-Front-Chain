@@ -84,8 +84,15 @@
     "explorer": "https://explorer.validator247.com/warden-testnet/staking",
     "api": "https://warden-testnet-api.validator247.com",
     "rpc": "https://warden-testnet-rpc.validator247.com"   
+},
+    {
+    "name": "HerculesNode",
+    "twitter": "HerculesNode",
+    "validatorlogo": "herculesnode.jpg",
+    "explorer": "https://explorer.herculesnode.com/Warden-Chiado/staking",
+    "api": "https://warden-api.herculesnode.com",
+    "rpc": "https://rpc-warden.herculesnode.com"
 }
-
 
 
 
