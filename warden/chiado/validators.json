@@ -138,6 +138,15 @@
     "content": {
         "Guide Installation": "https://stavr-team.gitbook.io/nodes-guides/testnets/warden-protocol/node-installation"
     }
+},
+    {
+    "name": "Nodes Hub",
+    "x": "Nodes_Hub",
+    "webservices": "https://services.nodeshub.online/testnet-networks/warden",
+    "validatorlogo": "nodes_hub.jpg",
+    "explorer": "https://testnet.explorer.nodeshub.online/warden",
+    "api": "https://warden.test.api.nodeshub.online",
+    "rpc": ": https://warden.test.rpc.nodeshub.online"
 }
 
 
