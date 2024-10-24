@@ -128,7 +128,18 @@
     "content": {
         "Node Installation": "https://docs.syanodes.my.id/warden"  
     }
+},
+    {
+    "name": "STAVR",
+    "webservices": "https://story-tools.stavr.tech/",
+    "validatorlogo": "stavr.jpg",
+    "explorer": "https://explorer.stavr.tech/Warden-Testnet",
+    "snapshot": "https://stavr-team.gitbook.io/nodes-guides/testnets/warden-protocol/statesync-snapshot",
+    "content": {
+        "Guide Installation": "https://stavr-team.gitbook.io/nodes-guides/testnets/warden-protocol/node-installation"
+    }
 }
+
 
 
 ]
