@@ -206,9 +206,24 @@
     "content": {
         "Guide Installation": "https://sychonix.com/testnet/warden/installation"
     }
+},
+    {
+    "name": "kjnodes",
+    "webservices": "https://services.kjnodes.com/testnet/warden/",
+    "x": "kjnodes",
+    "validatorlogo": "kjnodes.jpg",
+    "explorer": "https://explorer.kjnodes.com/warden-testnet",
+    "api": "https://warden-testnet.api.kjnodes.com",
+    "rpc": "https://warden-testnet.rpc.kjnodes.com",
+    "grpc": "warden-testnet.grpc.kjnodes.com:443",
+    "seeds": "3f472746f46493309650e5a033076689996c8881@warden-testnet.rpc.kjnodes.com:17859",
+    "addrbook": "https://snapshots.kjnodes.com/warden-testnet/addrbook.json",
+    "snapshot": "https://snapshots.kjnodes.com/warden-testnet/",
+    "tools_url": {
+        "State-sync": "https://services.kjnodes.com/testnet/warden/state-sync/",
+        "Public RPC": "https://services.kjnodes.com/testnet/warden/public-rpc/"
+    }
 }
-
-
 
 
 ]
