@@ -219,9 +219,28 @@
     "seeds": "3f472746f46493309650e5a033076689996c8881@warden-testnet.rpc.kjnodes.com:17859",
     "addrbook": "https://snapshots.kjnodes.com/warden-testnet/addrbook.json",
     "snapshot": "https://snapshots.kjnodes.com/warden-testnet/",
+    "tools": "State Sync,Public RPC",
     "tools_url": {
         "State-sync": "https://services.kjnodes.com/testnet/warden/state-sync/",
         "Public RPC": "https://services.kjnodes.com/testnet/warden/public-rpc/"
+    }
+},
+    {
+    "name": "MELLIFERA",
+    "validatorlogo": "mellifera.jpg",
+     "webservices": "https://services.mellifera.network/testnets/warden-network/install",
+    "peer": "3a01ed56372852ff30576d39a2b624b3d047932f@65.108.100.31:27756",
+    "seeds": "3a01ed56372852ff30576d39a2b624b3d047932f@65.108.100.31:27756",
+    "rpc": "https://warden-testnet-rpc.mellifera.network:443",
+    "rest": "https://warden-testnet-rest.mellifera.network",
+    "grpc": "warden-testnet-grpc.mellifera.network:443",
+    "snapshot": "https://services.mellifera.network/testnets/warden-network/snapshot_and_data",
+    "tools": "State Sync",
+    "tools_url": {
+        "State Sync": "https://services.mellifera.network/testnets/warden-network/state_sync"
+    },
+    "content": {
+        "Guide Installation": "https://services.mellifera.network/testnets/warden-network/install"
     }
 }
 
