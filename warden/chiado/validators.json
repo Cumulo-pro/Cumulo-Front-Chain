@@ -255,7 +255,7 @@
     "evm_rpc_wss": "wss://warden-chiado-evmrpc-wss.mictonode.com",
     "peer": "7b26de79a9d13e74987d1053055f1c88502ec852@warden-chiado-peers.mictonode.com:11956",
     "explorer": "https://explorer.mictonode.com/Warden-Chiado/staking/",
-    "guides": {
+    "content": {
         "Basic Guide": "https://services.mictonode.com/testnet/warden-protocol"
    }
 },
