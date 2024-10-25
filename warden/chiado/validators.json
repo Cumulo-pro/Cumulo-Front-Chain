@@ -242,7 +242,30 @@
     "content": {
         "Guide Installation": "https://services.mellifera.network/testnets/warden-network/install"
     }
+},
+{
+    "name": "MictoNode",
+    "x": "onurnft0",
+    "validatorlogo": "mictonode.jpg",
+    "rpc": "https://warden-chiado-rpc.mictonode.com",
+    "rpc_wss": "wss://warden-chiado-rpc.mictonode.com/websocket",
+    "api": "https://warden-chiado-api.mictonode.com",
+    "grpc": "https://warden-chiado-grpc.mictonode.com",
+    "evm_rpc": "https://warden-chiado-evmrpc.mictonode.com",
+    "evm_rpc_wss": "wss://warden-chiado-evmrpc-wss.mictonode.com",
+    "peer": "7b26de79a9d13e74987d1053055f1c88502ec852@warden-chiado-peers.mictonode.com:11956",
+    "explorer": "https://explorer.mictonode.com/Warden-Chiado/staking/",
+    "guides": {
+        "Basic Guide": "https://services.mictonode.com/testnet/warden-protocol"
+   }
+},
+{
+  "name": "Cumulo",
+  "x": "Cumulo_pro",
+  "webservices": "https://cumulo.pro/warden/",
+  "validatorlogo": "cumulo.jpg",
+  "rpc": "https://rpc.warden.cumulo.me:443",
+  "api": "https://api.warden.cumulo.me:443",
+  "grpc": "grpc.warden.cumulo.me:443"
 }
-
-
 ]
