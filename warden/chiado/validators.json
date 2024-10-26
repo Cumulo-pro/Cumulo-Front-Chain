@@ -316,6 +316,22 @@
         "decentralization_map": "https://app.nodejumper.io/warden-testnet/map",
          "public_rpcs": "https://api.nodejumper.io/api/v1/wardenprotocoltestnet/rpcs"
     }
+},
+{
+    "name": "NODERS",
+    "x": "NODERS_TEAM",
+    "twitter": "https://twitter.com/NODERS_TEAM",
+    "validatorlogo": "noders.jpg",
+    "webservices": "https://noders.services/testnet-networks/warden",
+    "guides": {
+        "Installation Guide": "https://noders.services/testnet-networks/warden/install"
+    },
+    "rpc": "https://warden-t-rpc.noders.services/",
+    "api": "https://warden-t-api.noders.services/",
+    "grpc": "http://warden-t-grpc.noders.services:23090/",
+    "peers": "https://noders.services/testnet-networks/warden/live-peers",
+    "state_sync": "https://noders.services/testnet-networks/warden/statesync",
+    "snapshot": "https://noders.services/testnet-networks/warden/snapshot"
 }
 
 
