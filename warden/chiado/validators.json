@@ -351,6 +351,18 @@
     "api": "https://api.warden.elationodes.xyz/",
     "rpc": "https://rpc.warden.elationodes.xyz/",
     "peers": "23c59ec0a53850a03c48284d2763eb21c7f86aaf@45.8.133.106:26656"
+},
+    {
+    "name": "kgnodes Services",
+    "x": "kgnodes",
+    "validatorlogo": "kgnodes.jpg",
+    "service": "https://services.kgnodes.xyz/docs/installation-guides/warden-protocol",
+    "validator": "https://explorer.kgnodes.xyz/warden/staking/wardenvaloper179tg0vq5xcclwsjwmtn40qmtvdn2gf988mmz7t",
+    "explorer": "https://explorer.kgnodes.xyz/warden",
+    "snapshot": "https://snapshot.kgnodes.xyz/snapshot/warden/snap_warden.tar.lz4",
+    "rpc": "https://warden.rpc.kgnodes.xyz/",
+    "api": "https://warden.api.kgnodes.xyz/",
+    "grpc": "https://warden.grpc.kgnodes.xyz/"
 }
 
 ]
