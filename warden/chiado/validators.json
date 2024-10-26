@@ -267,5 +267,15 @@
   "rpc": "https://rpc.warden.cumulo.me:443",
   "api": "https://api.warden.cumulo.me:443",
   "grpc": "grpc.warden.cumulo.me:443"
+},
+    {
+    "name": "Inter Blockchain Services",
+    "x": "IBSvalidator",
+    "validatorlogo": "ibs.jpg",
+    "seeds": "496ac0ba20188f70f41e0a814dfd4d9a617338f8@warden-testnet-seed.ibs.team:16661",
+    "api": "https://warden-testnet-api.ibs.team/",
+    "rpc": "https://warden-testnet-rpc.ibs.team/",
+    "snapshot": "https://testnet-snapshot.ibs.team/Warden/"
 }
+
 ]
