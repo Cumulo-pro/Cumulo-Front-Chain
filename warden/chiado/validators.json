@@ -276,6 +276,26 @@
     "api": "https://warden-testnet-api.ibs.team/",
     "rpc": "https://warden-testnet-rpc.ibs.team/",
     "snapshot": "https://testnet-snapshot.ibs.team/Warden/"
+},
+    {
+    "name": "Hummagumma",
+    "x": "HUMMAGUMMA",
+    "twitter": "https://twitter.com/HUMMAGUMMA",
+    "validatorlogo": "hummagumma.jpg",
+    "content": {
+        "Node Guide (English)": "https://medium.com/Warden-Protocol-Validator-Alfama-Testnet",
+        "Node Guide (Spanish)": "https://medium.com/Nodo-Validador-en-Warden-Protocol-Alfama-Testnet"
+    }
+},
+    {
+    "name": "NodeSync.Top",
+    "x": "nodesync_top",
+   "validatorlogo": "nodesync.jpg",
+    "webservices": "https://docs.nodesync.top",
+    "api": "https://warden-testnet-api.nodesync.top/",
+    "rpc": "https://warden-testnet-rpc.nodesync.top/"
 }
+
+
 
 ]
