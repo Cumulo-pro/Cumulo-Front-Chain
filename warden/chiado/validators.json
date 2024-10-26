@@ -298,7 +298,6 @@
 {
     "name": "NODEJUMPER",
     "x": "nodejumper",
-    "twitter": "https://twitter.com/nodejumper",
     "validatorlogo": "nodejumper.jpg",
     "webservices": "https://app.nodejumper.io/warden-testnet",
     "guides": {
