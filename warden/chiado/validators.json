@@ -316,7 +316,7 @@
      "tools_url": {
         "decentralization_map": "https://app.nodejumper.io/warden-testnet/map",
          "public_rpcs": "https://api.nodejumper.io/api/v1/wardenprotocoltestnet/rpcs"
-    },
+    }
 }
 
 
