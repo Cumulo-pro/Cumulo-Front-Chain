@@ -332,7 +332,17 @@
     "peers": "https://noders.services/testnet-networks/warden/live-peers",
     "state_sync": "https://noders.services/testnet-networks/warden/statesync",
     "snapshot": "https://noders.services/testnet-networks/warden/snapshot"
-}
+},
+    {
+    "name": "TrustedPoint",
+    "webservices": "",
+    "x": "Trusted_Point",
+    "validatorlogo": "trustedpoint.jpg",
+    "tools": "Discord bot",
+    "tools_url": {
+      "API": "https://discord.gg/BeEeAz8s"
+    }
+  }
 
 
 ]
