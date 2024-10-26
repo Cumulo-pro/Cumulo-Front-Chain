@@ -342,7 +342,15 @@
     "tools_url": {
       "API": "https://discord.gg/BeEeAz8s"
     }
-  }
-
+  },
+{
+    "name": "Elationodes",
+    "x": "elationodes",
+    "validatorlogo": "elationodes.jpg",
+    "explorer": "https://explorer.elationodes.xyz/",
+    "api": "https://api.warden.elationodes.xyz/",
+    "rpc": "https://rpc.warden.elationodes.xyz/",
+    "peers": "23c59ec0a53850a03c48284d2763eb21c7f86aaf@45.8.133.106:26656"
+}
 
 ]
