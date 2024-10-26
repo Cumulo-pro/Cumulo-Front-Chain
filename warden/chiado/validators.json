@@ -294,8 +294,30 @@
     "webservices": "https://docs.nodesync.top",
     "api": "https://warden-testnet-api.nodesync.top/",
     "rpc": "https://warden-testnet-rpc.nodesync.top/"
+},
+{
+    "name": "NODEJUMPER",
+    "x": "nodejumper",
+    "twitter": "https://twitter.com/nodejumper",
+    "validatorlogo": "nodejumper.jpg",
+    "webservices": "https://app.nodejumper.io/warden-testnet",
+    "guides": {
+        "Guide": "https://app.nodejumper.io/warden-testnet/installation"
+    },
+    "rpc": "https://rpc.nodejumper.io:443/wardenprotocoltestnet",
+    "api": "https://rest.nodejumper.io/wardenprotocoltestnet",
+    "public_endpoints": "https://app.nodejumper.io/warden-testnet",
+    "genesis": "https://app.nodejumper.io/warden-testnet",
+    "seed_node": "https://app.nodejumper.io/warden-testnet",
+    "addrbook": "https://snapshots-testnet.nodejumper.io/warden/addrbook.json",
+    "peers": "https://app.nodejumper.io/warden-testnet",
+    "snapshot": "https://app.nodejumper.io/warden-testnet/sync",
+     "tools": "Decentralization Map,Public rpcs",
+     "tools_url": {
+        "decentralization_map": "https://app.nodejumper.io/warden-testnet/map",
+         "public_rpcs": "https://api.nodejumper.io/api/v1/wardenprotocoltestnet/rpcs"
+    },
 }
-
 
 
 ]
