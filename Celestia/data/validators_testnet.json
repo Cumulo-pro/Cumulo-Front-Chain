@@ -457,7 +457,19 @@
     "grpc": "https://grpc-t.celestia.nodestake.org:443",
     "snapshot": "https://nodestake.org/celestia",
     "addrbook": "https://ss.celestia.nodestake.org/addrbook.json"
+},
+ {
+    "name": "STAKEUS",
+    "webservices": " https://celestia-services.stakeus.xyz/",
+    "x": "StakeusXyz",
+    "validatorlogo": "stakeus.jpg",
+    "peer": "0d2001b7189c3cbf412bab89f36f710c9162b010@mocha-4-full-consensus-rpc.stakeus.xyz",
+    "api": "https://celestia-testnet-api.stakeus.xyz",
+    "rpc": "https://celestia-testnet-rpc.stakeus.xyz",
+    "grpc": "celestia-testnet-grpc.stakeus.xyz",
+    "addrbook": "https://snapshots2.stakeus.xyz/celestia-testnet/addrbook.json",
+    "content_url": {
+    "Setup Guides": "https://celestia-services.stakeus.xyz/"
+      }
 }
-
-
 ]
