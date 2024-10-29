@@ -363,6 +363,21 @@
     "rpc": "https://warden.rpc.kgnodes.xyz/",
     "api": "https://warden.api.kgnodes.xyz/",
     "grpc": "https://warden.grpc.kgnodes.xyz/"
+},
+    {
+    "name": "LiveRaveN",
+    "validatorlogo": "liveraven.jpg",
+    "webservices": "https://services.liveraven.net/cosmos-testnets/warden-protocol",
+    "explorer": "https://testnet.explorer.liveraven.net/warden",
+    "rpc": "https://testnet.warden.rpc.liveraven.net",
+    "api": "https://testnet.warden.api.liveraven.net",
+    "grpc": "testnet.warden.grpc.liveraven.net:443",
+    "peers": "1eed7f989dee2a7d7cb0f067154dfc72eac09f5c@23.88.5.169:34656",
+    "addrbook": "https://snapshots.liveraven.net/snapshots/testnet/warden-protocol/addrbook.json",
+    "snapshot": "https://services.liveraven.net/cosmos-testnets/warden-protocol/snapshots",
+    "guides": {
+        "Management Guide": "https://services.liveraven.net/cosmos-testnets/warden-protocol/management"
+    }
 }
 
 ]
