@@ -771,5 +771,16 @@
    "tools_url": {
     "Celestia sync server dashboard": "https://sync.easy2stake.com/d/ce1jmvhesy1hce/state-sync-server?orgId=1&var-chain_id=celestia&var-source=sync-server-1&var-rpc_server=https:%2F%2Fcelestia-rpc.easy2stake.com:443&var-default_homedir=$HOME%2F.celestia-app&var-seeds=edc6bc6ee3c37a698225e17bd4b8c687ee05f977@celestia-seed.easy2stake.com:26756&var-peers=372f0ee5553cf34fc5cf9fc6294f42b09048fb1b@138.201.63.38:26756,edc6bc6ee3c37a698225e17bd4b8c687ee05f977@138.201.63.42:26756&var-binary_name=celestia-appd&var-lcd_server=https:%2F%2Fcelestia-lcd.easy2stake.com"
     }
+},
+  {
+    "name": "Bitszn",
+    "webservices": "https://services.valopers.com/mainnet/celestia/",
+    "x": "bitszn_com",
+    "validatorlogo": "bitszn.png",
+    "explorer": "https://celestia.valopers.com",
+    "tools": "celestia bridge explorer",
+    "tools_url": {
+        "celestia bridge explorer": "https://celestia.valopers.com/bridges"
+    }
 }
 ]
