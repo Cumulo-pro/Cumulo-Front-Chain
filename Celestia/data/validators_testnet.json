@@ -492,5 +492,23 @@
     "tools_url": {
         "celestia bridge explorer": "https://testnet.celestia.valopers.com/bridges"
     }
-}
+},
+    {
+    "name": "CroutonDigital",
+    "webservices": "https://crouton.digital/services/testnets/celestia",
+    "x": "CroutonDigital",
+    "validatorlogo": "croutondigital.jpg",
+    "explorer": "",
+    "api": "https://celestia-testnet-api.crouton.digital/",
+    "rpc": "https://celestia-testnet-rpc.crouton.digital/",
+    "grpc": "celestia-testnet-grpc.crouton.digital:28690",
+    "peer": "24edf6772ef297058ee972bad6198a2f7b519c5c@46.4.51.104:28656",
+    "addrbook": "https://storage.crouton.digital/testnet/celestia/files/addrbook.json",
+    "snapshot": "https://storage.crouton.digital/testnet/celestia/snapshots/celestia_latest.tar.lz4",
+    "tools": "guide,endpoints,files",
+    "content": {
+        "Guide": "https://crouton.digital/services/testnets/celestia"
+    }
+ }
+
 ]
