@@ -782,5 +782,27 @@
     "tools_url": {
         "celestia bridge explorer": "https://celestia.valopers.com/bridges"
     }
+},
+   {
+    "name": "STAVR",
+    "webservices": "https://celestia-tools.stavr.tech/",
+    "x": "",
+    "validatorlogo": "stavr.jpg",
+    "explorer": "",
+    "peers": "",
+    "seeds": "",
+    "api": "",
+    "rpc": "",
+    "grpc": "",
+    "snapshot": "https://celestia-tools.stavr.tech/consensus/",
+    "snapshot_bridge": "https://celestia-tools.stavr.tech/bridge/",
+    "addrbook": "",
+    "tools": "RPC Locator, Uptime, Map,Celestia Mainnet Upgrade",
+    "tools_url": {
+        "RPC Locator": "https://celestia-tools.stavr.tech/",
+        "Uptime": "https://celestia-tools.stavr.tech/uptime/",
+        "Map": "https://celestia-tools.stavr.tech/map/",
+       "Celestia Mainnet Upgrade": "https://celestia-tools.stavr.tech/upgradem/"
+    }
 }
 ]
