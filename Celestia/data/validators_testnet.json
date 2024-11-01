@@ -509,6 +509,28 @@
     "content": {
         "Guide": "https://crouton.digital/services/testnets/celestia"
     }
- }
+ },
+    {
+    "name": "STAVR",
+    "webservices": "https://celestia-tools.stavr.tech/",
+    "x": "",
+    "validatorlogo": "stavr.jpg",
+    "explorer": "",
+    "peers": "",
+    "seeds": "",
+    "api": "",
+    "rpc": "",
+    "grpc": "",
+    "snapshot": "https://celestia-tools.stavr.tech/consensus/",
+    "snapshot_bridge": "https://celestia-tools.stavr.tech/bridge/",
+    "addrbook": "",
+    "tools": "RPC Locator, Uptime, Map,Celestia Testnet Upgrade",
+    "tools_url": {
+        "RPC Locator": "https://celestia-tools.stavr.tech/",
+        "Uptime": "https://celestia-tools.stavr.tech/uptime/",
+        "Map": "https://celestia-tools.stavr.tech/map/",
+        "Celestia Testnet Upgrade": "https://celestia-tools.stavr.tech/upgrade/"
+    }
+}
 
 ]
