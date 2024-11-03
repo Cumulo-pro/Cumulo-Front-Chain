@@ -470,7 +470,11 @@
     "addrbook": "https://snapshots2.stakeus.xyz/celestia-testnet/addrbook.json",
     "content_url": {
     "Setup Guides": "https://celestia-services.stakeus.xyz/"
-      }
+      },
+      "tools": "Celestia Faucet",
+     "tools_url": {
+    "Celestia Faucet": "https://celestia-faucet.stakeus.xyz/"
+    }
 },
  {
     "name": "Easy2Stake",
