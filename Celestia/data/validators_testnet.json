@@ -463,6 +463,7 @@
     "webservices": " https://celestia-services.stakeus.xyz/",
     "x": "StakeusXyz",
     "validatorlogo": "stakeus.jpg",
+    "explorer": "https://celestia-nodes.stakeus.xyz/",
     "peer": "0d2001b7189c3cbf412bab89f36f710c9162b010@mocha-4-full-consensus-rpc.stakeus.xyz",
     "api": "https://celestia-testnet-api.stakeus.xyz",
     "rpc": "https://celestia-testnet-rpc.stakeus.xyz",
