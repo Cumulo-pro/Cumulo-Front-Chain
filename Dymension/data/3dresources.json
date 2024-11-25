@@ -61,6 +61,18 @@
       "type": "Guide"
     }
   ]
+},
+{
+  "autor": "VNBnode",
+  "twitter": "vnbnode",
+  "logo": "vnbnode.jpg",
+  "resources": [
+    {
+      "resource": "3D Rollapp - Playground Guide",
+      "link": "https://github.com/vnbnode/VNBnode-Guides/blob/main/Testnet/Dymension/3D_Rollapp.md",
+      "type": "Guide"
+    }
+  ]
 }
 
 ]
