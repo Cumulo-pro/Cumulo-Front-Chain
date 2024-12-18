@@ -805,8 +805,7 @@
        "Celestia Mainnet Upgrade": "https://celestia-tools.stavr.tech/upgradem/"
     }
 },
-  ,
-   {
+  {
     "name": "",
     "webservices": "https://services.tienthuattoan.com/mainnet/celestia",
     "x": "TTTcapital",
