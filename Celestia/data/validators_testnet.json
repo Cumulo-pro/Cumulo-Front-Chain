@@ -536,6 +536,18 @@
         "Map": "https://celestia-tools.stavr.tech/map/",
         "Celestia Testnet Upgrade": "https://celestia-tools.stavr.tech/upgrade/"
     }
-}
+},
+     {
+    "name": "TTT Capital",
+    "webservices": "https://services.tienthuattoan.com/testnet/celestia",
+    "x": "TTTcapital",
+    "validatorlogo": "tttcapital.jpg",
+    "explorer": "",
+    "peers": "",
+    "seeds": "",
+    "api": "https://celestia-testnet-api.tienthuattoan.com",
+    "rpc": "https://celestia-testnet-rpc.tienthuattoan.com",
+    "grpc": "celestia-testnet-grpc.tienthuattoan.com:9490"
+    }
 
 ]
