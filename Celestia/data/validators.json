@@ -815,9 +815,6 @@
     "seeds": "",
     "api": "https://celestia-api.tienthuattoan.com",
     "rpc": "https://celestia-rpc.tienthuattoan.com",
-    "grpc": "celestia-grpc.tienthuattoan.com:9090",
-    "snapshot": "",
-    "snapshot_bridge": "",
-    "addrbook": "",
+    "grpc": "celestia-grpc.tienthuattoan.com:9090"
     }
 ]
