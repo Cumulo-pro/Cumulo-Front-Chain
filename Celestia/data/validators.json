@@ -804,5 +804,21 @@
         "Map": "https://celestia-tools.stavr.tech/map/",
        "Celestia Mainnet Upgrade": "https://celestia-tools.stavr.tech/upgradem/"
     }
-}
+},
+  ,
+   {
+    "name": "",
+    "webservices": "https://services.tienthuattoan.com/mainnet/celestia",
+    "x": "TTTcapital",
+    "validatorlogo": "tttcapital.jpg",
+    "explorer": "",
+    "peers": "",
+    "seeds": "",
+    "api": "https://celestia-api.tienthuattoan.com",
+    "rpc": "https://celestia-rpc.tienthuattoan.com",
+    "grpc": "celestia-grpc.tienthuattoan.com:9090",
+    "snapshot": "",
+    "snapshot_bridge": "",
+    "addrbook": "",
+    }
 ]
