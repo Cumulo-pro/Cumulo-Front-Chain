@@ -1,5 +1,18 @@
 [
         {
+        "rollapp": "Odysphere",
+        "type_rollapp": "DeFi",
+        "twitter": "odysphere_io",
+        "public": "no",
+        "about": "The Genesis of DeFi on Dymension",
+        "content": "",
+        "Submission": "",
+        "logo": "odysphere.jpg",
+        "airdrop": "?",
+        "web": "https://odysphere.io/",
+        "airdrop_claim": "n"
+   }, 
+        {
         "rollapp": "ALLiN BETS",
         "type_rollapp": "Gaming",
         "twitter": "allinbetsgaming",
