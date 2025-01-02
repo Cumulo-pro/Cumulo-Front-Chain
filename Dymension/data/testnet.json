@@ -1,5 +1,15 @@
 [
   {
+    "rollapp": "Odysphere",
+    "logo": "odysphere.jpg",
+    "web": "https://odysphere.io/",
+    "testneturl": "https://medium.com/@odysphere/odysphere-testnet-launch-experience-the-future-of-defi-on-dymension-70472a80d7a3",
+    "finish": "n",
+    "incentivized": "y",
+    "twitter": "odysphere_io",
+    "resume": "Odysphere’s testnet is launching soon, introducing the first modular stablecoin protocol that lets you borrow OUSD using DYM as collateral."
+  },
+  {
     "rollapp": "Aigisos",
     "logo": "aigisos.jpg",
     "web": "https://aigisos.com/",
