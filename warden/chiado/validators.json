@@ -389,6 +389,16 @@
      "tools_url": {
         "decentralization_map": "https://quadro.network/faucets/Warden-Protocol"
     }
+},
+    {
+    "name": "Quadro Network",
+    "validatorlogo": "bitnodes.jpg",
+    "webservices": "",
+    "explorer": "",
+    "rpc": " https://warden-rpc.bitnodes.xyz/",
+    "api": "https://warden-api.bitnodes.xyz/",
+    "grpc": "warden-grpc.bitnodes.xyz"
 }
+
 
 ]
