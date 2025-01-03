@@ -378,6 +378,17 @@
     "content": {
         "Management Guide": "https://services.liveraven.net/cosmos-testnets/warden-protocol/management"
     }
+},
+    {
+    "name": "Quadro Network",
+    "validatorlogo": "quadro.jpg",
+    "webservices": "",
+    "explorer": "https://explorer.quadro.network/warden/",
+    "x": "quadro_network",
+    "tools": "Warden-Protocol Faucet",
+     "tools_url": {
+        "decentralization_map": "https://quadro.network/faucets/Warden-Protocol"
+    }
 }
 
 ]
