@@ -394,7 +394,6 @@
     "name": "BITNODES",
     "validatorlogo": "bitnodes.jpg",
     "webservices": "",
-    "validator": "https://explorer.bitnodes.xyz/warden(chiado)/staking/wardenvaloper19q5mf7ynxn2jq6yj847l4s9lms9qug86f77lfp",
     "explorer": "https://explorer.bitnodes.xyz/warden(chiado)",
     "rpc": " https://warden-rpc.bitnodes.xyz/",
     "api": "https://warden-api.bitnodes.xyz/",
