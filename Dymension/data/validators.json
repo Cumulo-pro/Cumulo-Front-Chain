@@ -124,9 +124,18 @@
         "Public RPC Endpoints Tool": "https://services.kjnodes.com/public-rpc",
         "Validator Slashboard": "https://services.kjnodes.com/slashboard"
     }
+},
+{
+    "name": "SECARD",
+    "webservices": "",
+    "x": "SECARDnodE",
+    "validatorlogo": "secard.jpg",
+    "api": "https://api.dym.secardnode.com/",
+    "rpc": "https://rpc.dym.secardnode.com/",
+    "grpc": "https://grpc.dym.secardnode.com/",
+    "seeds": "",
+    "addrbook": ""   
 }
-
-
 
     
 ]
