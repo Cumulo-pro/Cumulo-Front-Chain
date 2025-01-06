@@ -173,6 +173,27 @@
      "content": {
         "Node Guide": "https://noders.services/mainnet-networks/dymension/install"
      }
+},
+{
+    "name": "Lavender Five Nodes",
+    "webservices": "https://services.lavenderfive.com/mainnet/dymension",
+    "x": "lavender_five",
+    "validatorlogo": "lavenderfive.jpg",
+    "explorer": null,
+    "api": "https://dymension-api.lavenderfive.com/",
+    "rpc": "https://dymension-rpc.lavenderfive.com/",
+    "grpc": "https://dymension-jsonrpc.lavenderfive.com/",
+    "jsonrpc": "https://dymension-jsonrpc.lavenderfive.com/",
+    "seeds": "20e1000e88125698264454a884812746c2eb4807@seeds.lavenderfive.com:20556",
+    "addrbook": "https://snapshots.lavenderfive.com/addrbooks/dymension/addrbook.json",
+    "snapshot": "https://services.lavenderfive.com/mainnet/dymension/snapshot",
+    "tools": "State sync",
+    "tools_url": {
+       "State sync": "https://services.lavenderfive.com/mainnet/dymension/statesync"
+    },
+     "content": {
+        "Node Guide": "https://services.lavenderfive.com/mainnet/dymension/installation"
+     }
 }
 
     
