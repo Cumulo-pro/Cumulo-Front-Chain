@@ -135,6 +135,23 @@
     "grpc": "https://grpc.dym.secardnode.com/",
     "seeds": "",
     "addrbook": ""   
+},
+{
+    "name": "Nodeist",
+    "webservices": "https://nodeist.net/Dymension/",
+    "x": "Nodeist",
+    "validatorlogo": "nodeistt.jpg",
+    "explorer": "https://explorer.ist/dymension",
+    "api": "https://api.dymension.nodeist.net/",
+    "rpc": "https://rpc.dymension.nodeist.net/",
+    "grpc": "https://grpc.dymension.nodeist.net/",
+    "seeds": "",
+    "peers": "73d55cb8271bb4f4d64205cbf1ff3788cb8bda1c@185.119.118.117:4000,5d2936be95aece65690caa560e0e5e571ffe8acb@34.68.56.89:26656",
+    "addrbook": "https://ss.nodeist.net/dymension/addrbook.json",
+    "snapshot": "https://nodeist.net/Dymension/snapshot",
+     "content": {
+        "Node Guide": "https://nodeist.net/Dymension/"
+     }
 }
 
     
