@@ -179,7 +179,6 @@
     "webservices": "https://services.lavenderfive.com/mainnet/dymension",
     "x": "lavender_five",
     "validatorlogo": "lavenderfive.jpg",
-    "explorer": null,
     "api": "https://dymension-api.lavenderfive.com/",
     "rpc": "https://dymension-rpc.lavenderfive.com/",
     "grpc": "https://dymension-jsonrpc.lavenderfive.com/",
@@ -194,7 +193,19 @@
      "content": {
         "Node Guide": "https://services.lavenderfive.com/mainnet/dymension/installation"
      }
+},
+    {
+    "name": "STAKE & RELAX",
+    "webservices": "",
+    "x": "StakeandRelax",
+    "validatorlogo": "stakeandselax.jpg",
+    "api": "https://dymension-api.stakeandrelax.net/",
+    "rpc": "https://dymension-rpc.stakeandrelax.net/",
+    "grpc": "http://dymension-grpc.stakeandrelax.net:20590/",
+    "seeds": "",
+    "addrbook": ""
 }
+
 
     
 ]
