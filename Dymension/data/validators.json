@@ -16,7 +16,22 @@
         "snapshot": "https://services.contributiondao.com/snapshot",
         "tools": "RPC,Seed,Peer,Snapshot",
         "peers": "https://services.contributiondao.com/peer"
+    },
+    {
+        "name": "AutoStake",
+        "webservices": "https://autostake.com/networks/dymension/",
+        "x": "AutoStake_",
+        "validatorlogo": "autostake.jpg",
+        "api": "https://dymension-mainnet-lcd.autostake.com/",
+        "rpc": "https://dymension-mainnet-rpc.autostake.com/",
+        "grpc": "dymension-mainnet-grpc.autostake.com",
+        "seeds": "https://autostake.com/seed",
+        "addrbook": "https://autostake.com/addrbook",
+        "snapshot": "https://autostake.com/snapshot",
+        "tools": "Snapshots,Addrbook,Seed,Peer,RPC,API,gRPC",
+        "peers": "https://autostake.com/peer"
     }
+
     
 ]
 
