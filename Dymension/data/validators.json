@@ -228,7 +228,25 @@
     "api": "https://dymension-api.kalia.network/",
     "rpc": "https://dymension-rpc.kalia.network/",
     "json_rpc": "https://dymension-jsonrpc.kalia.network/"
+},
+    {
+    "name": "NODEJUMPER",
+    "webservices": "https://app.nodejumper.io",
+    "x": "NODEJUMPER",
+    "validatorlogo": "nodejumper.jpg",
+    "rpc": "https://dymension.nodejumper.io:443",
+    "api": "https://dymension.nodejumper.io:1317",
+    "grpc": "https://dymension.nodejumper.io:9090",
+    "tools": "Governance Bot,Monitoring Tool",
+    "tools_url": {
+       "Governance Bot": "https://t.me",
+        "Monitoring Tool": "https://github.com/nodejumper-org/monitoring-tool"
+    },
+     "content": {
+       "Node Guide": "https://app.nodejumper.io/guide"
+     }
 }
+
 
 
     
