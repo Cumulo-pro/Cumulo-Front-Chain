@@ -102,15 +102,28 @@
     "peers": "https://polkachu.com/live_peers/dymension",
     "addrbook": "https://polkachu.com/addrbooks/dymension",
     "snapshot": "https://polkachu.com/networks/dymension/snapshot",
-    "tools": "State-Sync,Node Snapshot,Live Peers,Seed Node,Addrbook,Genesis,Node Guide,Public Endpoints",
+    "tools": "State-Sync",
     "tools_url": {
-        "State-Sync": "https://polkachu.com/state_sync/dymension",
-        "Node Guide": "https://polkachu.com/networks/dymension/node-guide",
-        "Public Endpoints": "https://polkachu.com/networks/dymension/public-endpoints"
+        "State-Sync": "https://polkachu.com/state_sync/dymension"      
     },
     "content": {
         "Node Guide": "https://polkachu.com/installation/dymension"
      }
+},
+{
+    "name": "Kjnodes",
+    "webservices": "https://services.kjnodes.com",
+    "x": "Kjnodes",
+    "validatorlogo": "kjnodes.jpg",
+    "explorer": "https://services.kjnodes.com/explorer",
+    "snapshot": "https://services.kjnodes.com/mainnet/dymension/snapshot/",
+    "tools": "State-Sync,Addrbook,Telegram Proposal Bot,Public RPC Endpoints Tool,Validator Slashboard",
+    "tools_url": {
+        "State-Sync": "https://services.kjnodes.com/mainnet/dymension/state-sync/",
+        "Telegram Proposal Bot": "https://services.kjnodes.com/telegram-proposal-bot",
+        "Public RPC Endpoints Tool": "https://services.kjnodes.com/public-rpc",
+        "Validator Slashboard": "https://services.kjnodes.com/slashboard"
+    }
 }
 
 
