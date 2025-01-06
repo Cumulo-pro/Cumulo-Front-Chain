@@ -89,6 +89,28 @@
         "Stake DYM": "https://aviaone.com/how-to-stake-dym",
         "View DYM on Keplr": "https://aviaone.com/how-to-see-dym-on-keplr"
     }
+},
+{
+    "name": "Polkachu",
+    "webservices": "https://polkachu.com/networks/dymension",
+    "x": "polka_chu",
+    "validatorlogo": "polkachu.jpg",
+    "api": "https://dymension-api.polkachu.com/",
+    "rpc": "https://dymension-rpc.polkachu.com/",
+    "grpc": "https://polkachu.com/public_grpc",
+    "seeds": "https://polkachu.com/seeds/dymension",
+    "peers": "https://polkachu.com/live_peers/dymension",
+    "addrbook": "https://polkachu.com/addrbooks/dymension",
+    "snapshot": "https://polkachu.com/networks/dymension/snapshot",
+    "tools": "State-Sync,Node Snapshot,Live Peers,Seed Node,Addrbook,Genesis,Node Guide,Public Endpoints",
+    "tools_url": {
+        "State-Sync": "https://polkachu.com/state_sync/dymension",
+        "Node Guide": "https://polkachu.com/networks/dymension/node-guide",
+        "Public Endpoints": "https://polkachu.com/networks/dymension/public-endpoints"
+    },
+    "content": {
+        "Node Guide": "https://polkachu.com/installation/dymension"
+     }
 }
 
 
