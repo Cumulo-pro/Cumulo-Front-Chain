@@ -260,7 +260,7 @@
 },
 {
     "name": "StingRay Validator",
-    "webservices": null,
+    "webservices": "",
     "x": "Mikhail00847153",
     "validatorlogo": "stingray.png",
     "api": "https://api-dymension.stingray.plus/",
@@ -277,6 +277,26 @@
     "api": "https://dymension-rest.publicnode.com",
     "grpc": "dymension-grpc.publicnode.com:443",
     "evm_rpc": "https://dymension-evm-rpc.publicnode.com"
+},
+{
+    "name": "POSTHUMAN",
+    "webservices": "https://nodes.posthuman.digital/chains/dymension",
+    "x": "POSTHUMAN_DVS",
+    "validatorlogo": "posthuman.jpg",
+    "explorer": "https://explorer.posthuman.digital/dymension",
+   "rpc": "https://rpc.dymension.posthuman.digital",
+    "wss": "wss://rpc.dymension.posthuman.digital",
+    "rest": "https://rest.dymension.posthuman.digital",
+    "grpc": "https://grpc.dymension.posthuman.digital",
+    "evm_rpc": "https://evm-rpc.dymension.posthuman.digital",
+    "seed_node": "82a81ed97ee8fe5a8bfa26446737865333eadca1@46.39.246.50:36656",
+     "tools": "State sync",
+    "tools_url": {
+       "State sync": "https://nodes.posthuman.digital/chains/dymension?tab=state-sync"
+    },
+     "content": {
+       "Node Guide": "https://nodes.posthuman.digital/chains/dymension?tab=installation-guide"
+     }
 }
 
 
