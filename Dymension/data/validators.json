@@ -202,16 +202,6 @@
 },
 {
     "name": "SILENT",
-    "webservices": "https://silentvalidator.com/",
-    "x": "EthExploring",
-    "validatorlogo": "silent.jpg",
-    "api": "https://api.dymension.silentvalidator.com/",
-    "rpc": "https://rpc.dymension.silentvalidator.com/",
-    "grpc": "grpc.dymension.silentvalidator.com:443",
-    "jsonrpc": "https://evm-rpc.dymension.silentvalidator.com/"
-},
-{
-    "name": "SILENT",
     "webservices": "",
     "x": "Waveibc",
     "validatorlogo": "silent.jpg",
@@ -256,6 +246,17 @@
         "Dymension Wiki": "https://wiki.f5nodes.com",
         "Daily Archive Snapshots": "https://dymension-snapshots.f5nodes.com"
     }
+},
+{
+    "name": "WhisperNode",
+    "webservices": "https://guides.whispernode.com",
+    "x": "whispernode",
+    "validatorlogo": "whispernode.jpg",
+    "api": "https://api-dymension.whispernode.com/",
+    "rpc": "https://rpc-dymension.whispernode.com/",
+    "grpc": "https://grpc-dymension.whispernode.com/",
+    "evm_rpc": "https://evm-dymension.whispernode.com/",
+    "seeds": "c28827cb96c14c905b127b92065a3fb4cd77d7f6@seeds.whispernode.com:20556"
 }
 
 
