@@ -21,7 +21,7 @@
         "name": "AutoStake",
         "webservices": "https://autostake.com/networks/dymension/",
         "x": "AutoStake_",
-        "validatorlogo": "autostake.jpg",
+        "validatorlogo": "autostake.png",
         "api": "https://dymension-mainnet-lcd.autostake.com/",
         "rpc": "https://dymension-mainnet-rpc.autostake.com/",
         "grpc": "dymension-mainnet-grpc.autostake.com",
