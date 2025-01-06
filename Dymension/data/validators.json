@@ -208,7 +208,17 @@
     "api": "https://api.dymension.silentvalidator.com/",
     "rpc": "https://rpc.dymension.silentvalidator.com/",
     "grpc": "grpc.dymension.silentvalidator.com:443",
-    "jsonrpc":: "https://evm-rpc.dymension.silentvalidator.com/"
+    "jsonrpc": "https://evm-rpc.dymension.silentvalidator.com/"
+},
+{
+    "name": "SILENT",
+    "webservices": "",
+    "x": "Waveibc",
+    "validatorlogo": "silent.jpg",
+    "api": "https://api.dymension.silentvalidator.com/",
+    "rpc": "https://rpc.dymension.silentvalidator.com/",
+    "grpc": "grpc.dymension.silentvalidator.com:443",
+    "jsonrpc": "https://evm-rpc.dymension.silentvalidator.com/"
 }
 
 
