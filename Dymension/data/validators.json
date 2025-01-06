@@ -145,7 +145,6 @@
     "api": "https://api.dymension.nodeist.net/",
     "rpc": "https://rpc.dymension.nodeist.net/",
     "grpc": "https://grpc.dymension.nodeist.net/",
-    "seeds": "",
     "peers": "73d55cb8271bb4f4d64205cbf1ff3788cb8bda1c@185.119.118.117:4000,5d2936be95aece65690caa560e0e5e571ffe8acb@34.68.56.89:26656",
     "addrbook": "https://ss.nodeist.net/dymension/addrbook.json",
     "snapshot": "https://nodeist.net/Dymension/snapshot",
@@ -158,12 +157,10 @@
     "webservices": "https://noders.services/mainnet-networks/dymension",
     "x": "Noders",
     "validatorlogo": "noders.jpg",
-    "explorer": null,
     "api": "https://dymension-api.noders.services/",
     "rpc": "https://dymension-rpc.noders.services/",
     "grpc": "http://dymension-grpc.noders.services:12090/",
     "jsonrpc": "https://dymension-jsonrpc.noders.services/",
-    "seeds": "",
     "addrbook": "https://noders.services/mainnet-networks/dymension/addrbook.json",
     "snapshot": "https://noders.services/mainnet-networks/dymension/snapshot",
     "tools": "State-Sync",
@@ -201,9 +198,17 @@
     "validatorlogo": "stakeandselax.jpg",
     "api": "https://dymension-api.stakeandrelax.net/",
     "rpc": "https://dymension-rpc.stakeandrelax.net/",
-    "grpc": "http://dymension-grpc.stakeandrelax.net:20590/",
-    "seeds": "",
-    "addrbook": ""
+    "grpc": "http://dymension-grpc.stakeandrelax.net:20590/"
+},
+{
+    "name": "SILENT",
+    "webservices": "https://silentvalidator.com/",
+    "x": "EthExploring",
+    "validatorlogo": "silent.jpg",
+    "api": "https://api.dymension.silentvalidator.com/",
+    "rpc": "https://rpc.dymension.silentvalidator.com/",
+    "grpc": "grpc.dymension.silentvalidator.com:443",
+    "jsonrpc":: "https://evm-rpc.dymension.silentvalidator.com/"
 }
 
 
