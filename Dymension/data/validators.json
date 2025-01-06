@@ -245,6 +245,17 @@
      "content": {
        "Node Guide": "https://app.nodejumper.io/guide"
      }
+},
+{
+    "name": "F5 Nodes",
+    "webservices": "",
+    "x": "f5nodes",
+    "validatorlogo": "f5nodes.jpg",
+    "tools": "Dymension Wiki,Daily Archive Snapshots",
+    "tools_url": {
+        "Dymension Wiki": "https://wiki.f5nodes.com",
+        "Daily Archive Snapshots": "https://dymension-snapshots.f5nodes.com"
+    }
 }
 
 
