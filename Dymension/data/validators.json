@@ -32,25 +32,25 @@
         "peers": "https://autostake.com/peer"
     },
     {
-    "name": "Nodestake",
-    "webservices": "https://nodestake.org/dymension",
-    "x": "NodeStake_top",
-    "validatorlogo": "nodeStake.jpg",
-    "explorer": "https://nodestake.org/explorer",
-    "api": "https://api.dymension.nodestake.org",
-    "rpc": "https://rpc.dymension.nodestake.org",
-    "grpc": "https://grpc.dymension.nodestake.org:443",
-    "seeds": "0a2ab467db680b5b6665c511a48ef4476b176d59@rpc.dymension.nodestake.org:666",
-    "addrbook": "https://ss.dymension.nodestake.org/addrbook.json",
-    "snapshot": "https://nodestake.org/dymension",
-    "peers": "827e5707ab795e3f51d324328d86434e0306807f@57.129.59.139:26656,d288a3bbd11c9cea4c8069a19246f7bc5fbcc6c0@5.9.80.215:56656,b7c022045cc1e04f460dece6d1864eab262dc31c@176.9.29.248:20556",
-    "tools": "Explorer,Restake,Guide,RPC,Public Endpoints,Genesis,Seed Node,Addrbook,Peers,State Sync,Snapshot",
-     "content_url": {
-        "Guide": "https://nodestake.org/dymension"
-    },
-    "tools_url": {
-       "State Sync": "https://nodestake.org/dymension",
-    }
+        "name": "Nodestake",
+        "webservices": "https://nodestake.org/dymension",
+        "x": "NodeStake_top",
+        "validatorlogo": "nodeStake.jpg",
+        "explorer": "https://nodestake.org/explorer",
+        "api": "https://api.dymension.nodestake.org",
+        "rpc": "https://rpc.dymension.nodestake.org",
+        "grpc": "https://grpc.dymension.nodestake.org:443",
+        "seeds": "0a2ab467db680b5b6665c511a48ef4476b176d59@rpc.dymension.nodestake.org:666",
+        "addrbook": "https://ss.dymension.nodestake.org/addrbook.json",
+        "snapshot": "https://nodestake.org/dymension",
+        "peers": "827e5707ab795e3f51d324328d86434e0306807f@57.129.59.139:26656,d288a3bbd11c9cea4c8069a19246f7bc5fbcc6c0@5.9.80.215:56656,b7c022045cc1e04f460dece6d1864eab262dc31c@176.9.29.248:20556",
+        "tools": "Explorer,Restake,Guide,RPC,Public Endpoints,Genesis,Seed Node,Addrbook,Peers,State Sync,Snapshot",
+         "content_url": {
+            "Guide": "https://nodestake.org/dymension"
+        },
+        "tools_url": {
+           "State Sync": "https://nodestake.org/dymension",
+        }
 }
 
 
