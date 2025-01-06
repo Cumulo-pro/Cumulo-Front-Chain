@@ -48,7 +48,7 @@
         "tools_url": {
            "State Sync": "https://nodestake.org/dymension"
         },
-         "content_url": {
+         "content": {
             "Guide": "https://nodestake.org/dymension"
         }
     },
@@ -81,7 +81,7 @@
     "seeds": "258f523c96efde50d5fe0a9faeea8a3e83be22ca@seed.mainnet.dymension.aviaone.com:10290",
     "addrbook": "",
     "snapshot": "https://aviaone.com/blockchains-service/dymension-dymension_1100-1.html",
-    "guides": {
+    "content": {
         "Node Guide": "https://aviaone.com/install",
         "View DYM on Metamask": "https://aviaone.com/how-to-see-your-dym-on-metamask",
         "Send DYM from Metamask to Keplr": "https://aviaone.com/how-to-send-dym-to-keplr",
