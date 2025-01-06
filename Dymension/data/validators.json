@@ -68,7 +68,29 @@
         "StateSync": "https://stavr-team.gitbook.io/nodes-guides/mainnets/Dymension/statesync-snapshot",
         "Archive Node": "https://stavr-team.gitbook.io/dymension/archive-node"
     }
+},
+    {
+    "name": "AviaOne",
+    "webservices": "https://aviaone.com/blockchains-service/dymension-dymension_1100-1.html",
+    "x": "avia_one",
+    "validatorlogo": "aviaone.jpg",
+    "api": "https://api.mainnet.dymension.aviaone.com/",
+    "rpc": "https://rpc.mainnet.dymension.aviaone.com/",
+    "peers": "c600039ef70040740ae130d455768c509d173b12@85.10.200.232:23836,e1b058e5cfa2b836ddaa496b10911da62dcf182e@134.65.193.166:26656",
+    "grpc": "grpc.mainnet.dymension.aviaone.com:9092",
+    "seeds": "258f523c96efde50d5fe0a9faeea8a3e83be22ca@seed.mainnet.dymension.aviaone.com:10290",
+    "addrbook": "",
+    "snapshot": "https://aviaone.com/blockchains-service/dymension-dymension_1100-1.html",
+    "guides": {
+        "Node Guide": "https://aviaone.com/install",
+        "View DYM on Metamask": "https://aviaone.com/how-to-see-your-dym-on-metamask",
+        "Send DYM from Metamask to Keplr": "https://aviaone.com/how-to-send-dym-to-keplr",
+        "Send DYM to Binance": "https://aviaone.com/how-to-send-dym-to-binance",
+        "Stake DYM": "https://aviaone.com/how-to-stake-dym",
+        "View DYM on Keplr": "https://aviaone.com/how-to-see-dym-on-keplr"
+    }
 }
+
 
 
     
