@@ -219,6 +219,15 @@
     "rpc": "https://rpc.dymension.silentvalidator.com/",
     "grpc": "grpc.dymension.silentvalidator.com:443",
     "jsonrpc": "https://evm-rpc.dymension.silentvalidator.com/"
+},
+{
+    "name": "Kalia Network",
+    "webservices": "",
+    "x": "KaliaNetwork",
+    "validatorlogo": "kaliaNetwork.jpg",
+    "api": "https://dymension-api.kalia.network/",
+    "rpc": "https://dymension-rpc.kalia.network/",
+    "json_rpc": "https://dymension-jsonrpc.kalia.network/"
 }
 
 
