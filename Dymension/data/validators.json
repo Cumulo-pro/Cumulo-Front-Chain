@@ -152,6 +152,27 @@
      "content": {
         "Node Guide": "https://nodeist.net/Dymension/"
      }
+},
+{
+    "name": "Noders",
+    "webservices": "https://noders.services/mainnet-networks/dymension",
+    "x": "Noders",
+    "validatorlogo": "noders.jpg",
+    "explorer": null,
+    "api": "https://dymension-api.noders.services/",
+    "rpc": "https://dymension-rpc.noders.services/",
+    "grpc": "http://dymension-grpc.noders.services:12090/",
+    "jsonrpc": "https://dymension-jsonrpc.noders.services/",
+    "seeds": "",
+    "addrbook": "https://noders.services/mainnet-networks/dymension/addrbook.json",
+    "snapshot": "https://noders.services/mainnet-networks/dymension/snapshot",
+    "tools": "State-Sync",
+    "tools_url": {
+         "State-Sync": "https://noders.services/mainnet-networks/dymension/statesync"
+    },
+     "content": {
+        "Node Guide": "https://noders.services/mainnet-networks/dymension/install"
+     }
 }
 
     
