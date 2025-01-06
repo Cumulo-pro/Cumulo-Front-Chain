@@ -4,4 +4,18 @@
     "x": "NodesGuru",
     "validatorlogo": "nodesguru.png",
     "explorer": "https://dymension.explorers.guru/"      
+},
+{
+    "name": "ContributionDAO",
+    "webservices": "https://services.contributiondao.com",
+    "x": "contributedao",
+    "validatorlogo": "contributiondao.jpg",
+    "rpc": "https://services.contributiondao.com/rpc",
+    "seeds": "https://services.contributiondao.com/seeds",
+    "snapshot": "https://services.contributiondao.com/snapshot",
+    "tools": "RPC,Seed,Peer,Snapshot",
+    "peers": "https://services.contributiondao.com/peer"
 }
+    
+}
+
