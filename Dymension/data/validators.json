@@ -255,7 +255,7 @@
     "api": "https://api-dymension.whispernode.com/",
     "rpc": "https://rpc-dymension.whispernode.com/",
     "grpc": "https://grpc-dymension.whispernode.com/",
-    "evm_rpc": "https://evm-dymension.whispernode.com/",
+    "json_rpc": "https://evm-dymension.whispernode.com/",
     "seeds": "c28827cb96c14c905b127b92065a3fb4cd77d7f6@seeds.whispernode.com:20556"
 },
 {
@@ -276,7 +276,7 @@
     "rpc": "https://dymension-rpc.publicnode.com:443",
     "api": "https://dymension-rest.publicnode.com",
     "grpc": "dymension-grpc.publicnode.com:443",
-    "evm_rpc": "https://dymension-evm-rpc.publicnode.com"
+    "json_rpc": "https://dymension-evm-rpc.publicnode.com"
 },
 {
     "name": "POSTHUMAN",
@@ -288,7 +288,7 @@
     "wss": "wss://rpc.dymension.posthuman.digital",
     "rest": "https://rest.dymension.posthuman.digital",
     "grpc": "https://grpc.dymension.posthuman.digital",
-    "evm_rpc": "https://evm-rpc.dymension.posthuman.digital",
+    "json_rpc": "https://evm-rpc.dymension.posthuman.digital",
     "seed_node": "82a81ed97ee8fe5a8bfa26446737865333eadca1@46.39.246.50:36656",
      "tools": "State sync",
     "tools_url": {
@@ -297,6 +297,26 @@
      "content": {
        "Node Guide": "https://nodes.posthuman.digital/chains/dymension?tab=installation-guide"
      }
+}.
+{
+    "name": "Brightlystake",
+    "webservices": "",
+    "x": "brightlystake",
+    "validatorlogo": "brightlystake.jpg",
+    "api": "https://dym-archive.brightlystake.com/api",
+    "json_rpc": "https://dym-archive.brightlystake.com/evm",
+    "grpc": "dym-archive.brightlystake.com:9290"
+},
+{
+    "name": "LuckyResearch",
+    "webservices": "https://services.luckyresearch.org/lucky-research-services/mainet/dymension",
+    "x": "LuckyResearch",
+    "validatorlogo": "luckyresearch.jpg",
+    "rpc": "https://rpc-dymension.luckyresearch.org/",
+    "api": "https://api-dymension.luckyresearch.org/",
+    "content": {
+        "Installation guide": "https://services.luckyresearch.org/installation-guide"
+    }
 }
 
 
