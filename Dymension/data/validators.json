@@ -328,10 +328,23 @@
     "snapshot": "https://services.contributiondao.com/mainnet/dymension/snapshots",
     "seeds": "59df4b3832446cd0f9c369da01f2aa5fe9647248@135.181.220.61:33756",
     "peers": "https://services.contributiondao.com/mainnet/dymension/peers"
+},
+{
+    "name": "deNodes",
+    "webservices": "https://services.denodes.xyz/dymension/services",
+    "x": "denodes_io",
+    "validatorlogo": "denodes.jpg",
+    "rpc": "https://dymension-rpc.denodes.xyz",
+    "grpc": "dymension-grpc.denodes.xyz:443",
+    "api": "https://dymension-api.denodes.xyz",
+    "json_rpc": "https://dymension-evm-rpc.denodes.xyz",
+    "addrbook": "https://dymension-snap.denodes.xyz/addrbook.json",
+    "snapshot": "https://services.denodes.xyz/dymension/snapshot",
+    "tools": "DymTool Monitoring Bot",
+    "tools_url": {
+        "DymTool Monitoring Bot": "https://services.denodes.xyz/dymension/dymtool"
+    }
 }
-
-
-
     
 ]
 
