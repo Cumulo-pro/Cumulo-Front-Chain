@@ -2,7 +2,7 @@
 {
   "autor": "AviaOne",
   "twitter": "avia_one",
-  "logo": "avia_one.jpg",
+  "logo": "aviaone.jpg",
   "resources": [
     {
       "resource": "How to deploy a RollApp on Dymension 3D playground",
@@ -46,11 +46,6 @@
   "logo": "cumulo.jpg",
   "resources": [
     {
-      "resource": "Testnet Playground endpoints",
-      "link": "https://cumulo.pro/dymension/resources.php",
-      "type": "Chain resource"
-    },
-    {
       "resource": "Create your Rollapp in Dimension. Step-by-step guide",
       "link": "https://medium.com/cumulo-pro/create-your-rollapp-in-dimension-step-by-step-guide-c088607b0870",
       "type": "Guide"
@@ -69,7 +64,7 @@
   "resources": [
     {
       "resource": "3D Rollapp - Playground Guide",
-      "link": "https://github.com/vnbnode/VNBnode-Guides/blob/main/Testnet/Dymension/3D_Rollapp.md",
+      "link": "https://github.com/vnbnode/VNBnode-Guides/blob/main/Mainnet/DYM/3DRollapp.md",
       "type": "Guide"
     }
   ]
