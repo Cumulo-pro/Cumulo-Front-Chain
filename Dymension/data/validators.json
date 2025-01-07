@@ -317,6 +317,17 @@
     "content": {
         "Installation guide": "https://services.luckyresearch.org/installation-guide"
     }
+},
+{
+    "name": "ContributionDAO",
+    "webservices": "https://services.contributiondao.com/mainnet/dymension/",
+    "x": "contributedao",
+    "validatorlogo": "contributiondao.jpg",
+    "rpc": "https://dymension-rpc.contributiondao.com",
+    "api": "https://dymension-api.contributiondao.com",
+    "snapshot": "https://services.contributiondao.com/mainnet/dymension/snapshots",
+    "seeds": "59df4b3832446cd0f9c369da01f2aa5fe9647248@135.181.220.61:33756",
+    "peers": "https://services.contributiondao.com/mainnet/dymension/peers"
 }
 
 
