@@ -398,7 +398,15 @@
     "rpc": " https://warden-rpc.bitnodes.xyz/",
     "api": "https://warden-api.bitnodes.xyz/",
     "grpc": "warden-grpc.bitnodes.xyz"
+},
+{
+    "name": "CryptoNodeID",
+    "webservices": "https://docs.cryptonode.id/en/testnet/warden-protocol",
+    "x": "CryptoNodeID",
+    "validatorlogo": "cryptonodeid.png",
+    "explorer": "https://testnet.cryptonode.id",
+    "api": "https://warden-testnet-api.cryptonode.id",
+    "rpc": "https://warden-testnet-rpc.cryptonode.id",
+    "grpc": "warden-testnet-grpc..cryptonode.id:443",
 }
-
-
 ]
