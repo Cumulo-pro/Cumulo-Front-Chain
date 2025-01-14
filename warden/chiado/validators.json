@@ -407,6 +407,6 @@
     "explorer": "https://testnet.cryptonode.id",
     "api": "https://warden-testnet-api.cryptonode.id",
     "rpc": "https://warden-testnet-rpc.cryptonode.id",
-    "grpc": "warden-testnet-grpc..cryptonode.id:443",
+    "grpc": "warden-testnet-grpc..cryptonode.id:443"
 }
 ]
