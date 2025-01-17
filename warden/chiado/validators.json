@@ -247,16 +247,16 @@
     "name": "MictoNode",
     "x": "onurnft0",
     "validatorlogo": "mictonode.jpg",
-    "rpc": "https://warden-chiado-rpc.mictonode.com",
-    "rpc_wss": "wss://warden-chiado-rpc.mictonode.com/websocket",
-    "api": "https://warden-chiado-api.mictonode.com",
-    "grpc": "https://warden-chiado-grpc.mictonode.com",
-    "evm_rpc": "https://warden-chiado-evmrpc.mictonode.com",
-    "evm_rpc_wss": "wss://warden-chiado-evmrpc-wss.mictonode.com",
-    "peer": "7b26de79a9d13e74987d1053055f1c88502ec852@warden-chiado-peers.mictonode.com:11956",
+    "rpc": "https://warden-testnet-rpc.mictonode.com",
+    "rpc_wss": "wss://warden-testnet-rpc.mictonode.com/websocket",
+    "api": "https://warden-testnet-api.mictonode.com",
+    "grpc": "warden-testnet-grpc.mictonode.com:11990",
+    "evm_rpc": "https://warden-testnet-evmrpc.mictonode.com",
+    "evm_rpc_wss": "wss://warden-testnet-evmrpc-wss.mictonode.com",
+    "peer": "d8106774d544591c0dd5b073ac0fd2e481669cf0@warden-testnet-peers.mictonode.com:11956",
     "explorer": "https://explorer.mictonode.com/Warden-Chiado/staking/",
     "content": {
-        "Basic Guide": "https://services.mictonode.com/testnet/warden-protocol"
+        "Basic Guide": "https://services.mictonode.com/warden-protocol-chiado"
    }
 },
 {
