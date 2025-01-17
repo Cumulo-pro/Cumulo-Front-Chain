@@ -356,7 +356,19 @@
         "Stake and Auto-compounding with REStake": "https://medium.com/@Cumulo/how-to-stake-and-auto-compounding-of-dymension-with-restake",
         "Monitoring with Grafana and Prometheus": "https://github.com/Cumulo-pro/Dymension/blob/main/monitoring/Grafana%26Prometheus.md"
     }
+},
+    {
+    "name": "𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀",
+    "webservices": "https://utsa.gitbook.io/services/mainnet/dymension",
+    "x": "lesnik13utsa",
+    "validatorlogo": "𝐥𝐞𝐬𝐧𝐢𝐤.jpg",
+   "tools": "State Sync",
+    "tools_url": {
+        "State Sync": "https://utsa.gitbook.io/services/mainnet/dymension/state-sync"
+    },
+    "content": {
+        "Guide": "https://utsa.gitbook.io/services/mainnet/dymension/installation"
+    }
 }
-    
 ]
 
