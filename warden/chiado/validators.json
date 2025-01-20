@@ -397,7 +397,10 @@
     "explorer": "https://explorer.bitnodes.xyz/warden(chiado)",
     "rpc": " https://warden-rpc.bitnodes.xyz/",
     "api": "https://warden-api.bitnodes.xyz/",
-    "grpc": "warden-grpc.bitnodes.xyz"
+    "grpc": "warden-grpc.bitnodes.xyz",
+    "content": {
+        "Node Guide (English)": "https://bitnodes.xyz/warden",
+    }
 },
 {
     "name": "CryptoNodeID",
