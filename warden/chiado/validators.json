@@ -393,7 +393,7 @@
     {
     "name": "BITNODES",
     "validatorlogo": "bitnodes.jpg",
-    "webservices": "",
+    "webservices": "https://bitnodes.xyz/services",
     "explorer": "https://explorer.bitnodes.xyz/warden(chiado)",
     "rpc": " https://warden-rpc.bitnodes.xyz/",
     "api": "https://warden-api.bitnodes.xyz/",
