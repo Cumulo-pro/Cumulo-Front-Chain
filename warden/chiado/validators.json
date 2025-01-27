@@ -399,7 +399,7 @@
     "api": "https://warden-api.bitnodes.xyz/",
     "grpc": "warden-grpc.bitnodes.xyz",
     "content": {
-        "Node Guide (English)": "https://bitnodes.xyz/warden",
+        "Node Guide (English)": "https://bitnodes.xyz/warden"
     }
 },
 {
