@@ -825,8 +825,7 @@
     "seeds": "",
     "api": "",
     "rpc": "",
-    "grpc": ""
-    },
+    "grpc": "",
    "tools": "Celestia Snapshot Finder",
     "tools_url": {
         "RPC Locator": "https://github.com/21state/celestia-snapshot-finder"
