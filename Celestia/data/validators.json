@@ -814,5 +814,21 @@
     "api": "https://celestia-api.tienthuattoan.com",
     "rpc": "https://celestia-rpc.tienthuattoan.com",
     "grpc": "celestia-grpc.tienthuattoan.com:9090"
+    },
+  {
+    "name": "21state",
+    "webservices": "https://21state.com/",
+    "x": "TTTcapital",
+    "validatorlogo": "21state.png",
+    "explorer": "",
+    "peers": "",
+    "seeds": "",
+    "api": "",
+    "rpc": "",
+    "grpc": ""
+    },
+   "tools": "Celestia Snapshot Finder",
+    "tools_url": {
+        "RPC Locator": "https://github.com/21state/celestia-snapshot-finder"
     }
 ]
