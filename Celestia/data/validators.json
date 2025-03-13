@@ -27,7 +27,8 @@
     "snapshot": "",
     "tools": "NodesChecker Bot",
     "tools_url": {
-        "NodesChecker Bot": "https://t.me/NodesGuru_bot"
+        "NodesChecker Bot": "https://t.me/NodesGuru_bot",
+        "Celestia Bridge Healthcheck Script": "https://github.com/NodesGuru/celestia-bridge-healthcheck"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#nodesguru"
 },
