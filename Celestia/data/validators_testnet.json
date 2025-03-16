@@ -573,6 +573,27 @@
         "Full Node Installation": "https://services.validexis.com/testnets/celestia/full-node-installation",
        "Bridge Node Installation": "https://services.validexis.com/testnets/celestia/bridge-node-installation"
     }
+  },
+  {
+    "name": "Stakeus",
+    "webservices": "https://celestia-services.stakeus.xyz/",
+    "x": "StakeusXyz",
+    "validatorlogo": "stakeusxyz.jpg",
+    "explorer": "",
+    "snapshot": "https://snapshots2.stakeus.xyz/celestia-testnet/mocha-4_cl_4625541.tar.lz4",
+    "api": "https://celestia-testnet-api.stakeus.xyz",
+    "rpc": "https://celestia-testnet-rpc.stakeus.xyz",
+    "grpc": "celestia-testnet-grpc.stakeus.xyz",
+    "addrbook": "https://snapshots2.stakeus.xyz/celestia-testnet/addrbook.json",
+    "peers": "https://snapshots2.stakeus.xyz/celestia-testnet/mocha-4_cl_4625541.tar.lz4",
+    "content_url": {
+        "Node Setup Guide": "https://celestia-services.stakeus.xyz/"
+    },
+   "tools": "Celestia Faucet,Celestia Bridge Explorer",
+    "tools_url": {
+        "Celestia Faucet": "https://celestia-services.stakeus.xyz/#",
+        "Celestia Bridge Explorer": "https://celestia-bridges.stakeus.xyz/"
+    }
   }
 
 ]
