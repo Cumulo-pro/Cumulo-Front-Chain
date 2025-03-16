@@ -873,5 +873,20 @@
     "content_url": {
         "Node Installation": "https://crouton.digital/services/mainnets/celestia"
     }
+  },
+  {
+    "name": "Stakeus",
+    "webservices": "",
+    "x": "StakeusXyz",
+    "validatorlogo": "stakeusxyz.jpg",
+    "explorer": "",
+    "snapshot": "",
+    "api": "",
+    "rpc": "",
+    "grpc": "",
+    "addrbook": "",
+    "content_url": {
+        "Node Installation": ""
+    }
   }
 ]
