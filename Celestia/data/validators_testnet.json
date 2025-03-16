@@ -120,7 +120,8 @@
             "Decentralization Analytics": "https://itrocket.net/services/testnet/celestia/decentralization/",
             "Governance Bot": "https://t.me/itrocket_testnet_proposal_bot",
             "Peer scanner": "https://itrocket.net/services/testnet/celestia/#peer",
-            "RPC Scanner": "https://itrocket.net/services/testnet/celestia/public-rpc/"
+            "RPC Scanner": "https://itrocket.net/services/testnet/celestia/public-rpc/",
+            "consensus-signal-tracker": "https://itrocket.net/services/testnet/celestia/analytics/consensus-signal-tracker/"
           },
             "content_url": {
             "Consensus Node installation (with Cheat sheet & upgrade guides)": "https://itrocket.net/guides/consensus-node-installation",
