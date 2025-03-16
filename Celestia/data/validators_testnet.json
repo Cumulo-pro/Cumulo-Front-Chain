@@ -549,6 +549,29 @@
     "api": "https://celestia-testnet-api.tienthuattoan.com",
     "rpc": "https://celestia-testnet-rpc.tienthuattoan.com",
     "grpc": "celestia-testnet-grpc.tienthuattoan.com:9490"
+    },
+  {
+    "name": "Validexis",
+    "webservices": "https://services.validexis.com/testnets/celestia/",
+    "x": "validexis",
+    "validatorlogo": "validexis.jpg",
+    "explorer": "",
+    "snapshot": "https://services.validexis.com/testnets/celestia/snapshot",
+    "peers": "31d3c08f6d9dfb05c0cef18604a64d30cc48ac7f@peer-celestia-testnet.validexis.com:26656",
+    "api": "https://api-celestia-testnet.validexis.com/",
+    "rpc": "https://rpc-celestia-testnet.validexis.com",
+    "grpc": "grpc-celestia-testnet.validexis.com:443",
+   "tools": "CelestiaUltraBot",
+   "addrbook": "https://testnet.validexis.com/celestia/addrbook.json",
+    "tools_url": {
+        "CelestiaUltraBot": "https://validexis.com/celestiaultrabot"
+    },
+    "content_url": {
+        "Node Installation": "https://services.validexis.com/testnets/celestia/validator-node-installation",
+        "Useful Commands": "https://services.validexis.com/testnets/celestia/validator-node-installation/useful-commands",
+        "Full Node Installation": "https://services.validexis.com/testnets/celestia/full-node-installation",
+       "Bridge Node Installation": "https://services.validexis.com/testnets/celestia/bridge-node-installation"
     }
+  }
 
 ]
