@@ -832,5 +832,28 @@
     "tools_url": {
         "RPC Locator": "https://github.com/21state/celestia-snapshot-finder"
     }
+  },
+  {
+    "name": "Validexis",
+    "webservices": "",
+    "x": "validexis",
+    "validatorlogo": "validexis.jpg",
+    "explorer": "",
+    "snapshot": "https://services.validexis.com/mainnets/celestia/snapshot",
+    "peers": "60d481edb7e49efe01fa0b49a346cf9f8400db19@peer-celestia-mainnet.val",
+    "api": "https://api-celestia-mainnet.validexis.com",
+    "rpc": "https://rpc-celestia-mainnet.validexis.com",
+    "grpc": "grpc-celestia-mainnet.validexis.com:443",
+   "tools": "CelestiaUltraBot",
+   "addrbook": "https://mainnets.validexis.com/celestia/addrbook.json",
+    "tools_url": {
+        "CelestiaUltraBot": "https://validexis.com/celestiaultrabot"
+    },
+    "content_url": {
+        "Node Installation": "https://services.validexis.com/mainnets/celestia/validator-node-installation",
+        "Useful Commands": "https://services.validexis.com/mainnets/celestia/validator-node-installation/useful-commands",
+        "Full Node Installation": "https://services.validexis.com/mainnets/celestia/full-node-installation",
+       "Bridge Node Installation": "https://services.validexis.com/mainnets/celestia/bridge-node-installation"
+    }
   }
 ]
