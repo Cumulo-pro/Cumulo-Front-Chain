@@ -887,6 +887,10 @@
     "addrbook": "",
     "content_url": {
         "Node Installation": ""
+    },
+    "tools": "Celestia Bridge Explorer",
+    "tools_url": {
+        "Celestia Bridge Explorer": "https://celestia-bridges.stakeus.xyz/"
     }
   }
 ]
