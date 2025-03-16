@@ -157,13 +157,14 @@
   "archive": "y",
   "snapshot": "https://itrocket.net/services/mainnet/celestia/",
   "addrbook": "",
-  "tools": "Decentralization Analytics, Governance Bot, Peer scanner, RPC Scanner, DA Nodes Monitoring",
+  "tools": "Decentralization Analytics, Governance Bot, Peer scanner, RPC Scanner, DA Nodes Monitoring,Consensus-signal-tracker",
  "tools_url": {
   "Decentralization Analytics": "https://itrocket.net/services/mainnet/celestia/decentralization/",
   "Governance Bot": "https://t.me/itrocket_mainnet_proposal_bot",
   "Peer scanner": "https://itrocket.net/services/mainnet/celestia/#peer",
   "RPC Scanner": "https://itrocket.net/services/mainnet/celestia/public-rpc/",
-  "DA Nodes Monitoring": "https://itrocket.net/services/testnet/celestia/monitoring/"
+  "DA Nodes Monitoring": "https://itrocket.net/services/testnet/celestia/monitoring/",
+  "consensus-signal-tracker": "https://itrocket.net/services/mainnet/celestia/analytics/consensus-signal-tracker/"
 },
   "content_url": {
     "Consensus Node installation": "https://itrocket.net/services/testnet/celestia/installation/",
