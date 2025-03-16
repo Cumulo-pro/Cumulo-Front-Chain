@@ -856,5 +856,21 @@
         "Full Node Installation": "https://services.validexis.com/mainnets/celestia/full-node-installation",
        "Bridge Node Installation": "https://services.validexis.com/mainnets/celestia/bridge-node-installation"
     }
+  },
+  ,
+  {
+    "name": "Crouton Digital",
+    "webservices": "https://crouton.digital/services/mainnets/celestia",
+    "x": "CroutonDigital",
+    "validatorlogo": "croutondigital.jpg",
+    "explorer": "",
+    "snapshot": "https://storage.crouton.digital/mainnet/celestia/snapshots/celestia_latest.tar.lz4",
+    "api": "https://celestia-mainnet-api.crouton.digital/",
+    "rpc": "https://celestia-mainnet-rpc.crouton.digital/",
+    "grpc": "gRPC: celestia-mainnet-grpc.crouton.digital:11690",
+    "addrbook": "https://storage.crouton.digital/mainnet/celestia/files/addrbook.json",
+    "content_url": {
+        "Node Installation": "https://crouton.digital/services/mainnets/celestia"
+    }
   }
 ]
