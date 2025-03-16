@@ -835,7 +835,7 @@
   },
   {
     "name": "Validexis",
-    "webservices": "",
+    "webservices": "https://services.validexis.com/mainnets/celestia",
     "x": "validexis",
     "validatorlogo": "validexis.jpg",
     "explorer": "",
