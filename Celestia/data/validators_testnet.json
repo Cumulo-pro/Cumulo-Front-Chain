@@ -334,7 +334,8 @@
   "tools": "Celestia Mocha Testnet Turkish Validator, Bridge, Full Storage ve Light Node Guides",
   "content_url": {
     "Celestia Mocha Testnet Turkish Step by Step Guide": "https://github.com/okannako/celestiamocha",
-    "Celestia Mocha Testnet Turkish Script Guide": "https://github.com/okannako/celestiamochascript"
+    "Celestia Mocha Testnet Turkish Script Guide": "https://github.com/okannako/celestiamochascript",
+    "Celestia Endpoints Ninja" : "https://celestia.endpoints.ninja/"
   },
   "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#nakoturk"
 },
