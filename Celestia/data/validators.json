@@ -488,7 +488,8 @@
   "tools_url": {
     "Monitoring tool": "https://celestia.f5nodes.com",
     "Celestia Wiki": "https://wiki.f5nodes.com",
-    "DA Nodes Management Script": "https://github.com/f5nodes/celestia-da-nodes"
+    "DA Nodes Management Script": "https://github.com/f5nodes/celestia-da-nodes",
+    "Celestia Endpoints Ninja" : "https://celestia.endpoints.ninja/"
   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#f5-nodes"
 },
