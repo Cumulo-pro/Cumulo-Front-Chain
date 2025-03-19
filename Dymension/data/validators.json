@@ -388,7 +388,7 @@
     "tools_url": {
         "Discord Validator Bot": "https://docs.silknodes.io/validator-tools-guide",
         "Discord Price Bot": "https://silknodes.io/discord-bot#bots",
-        "StateSync": "https://silknodes.io/services/statesync/dymension",
+        "StateSync": "https://silknodes.io/services/statesync/dymension"
     },
     "content": {
         "Node Guide": "https://silknodes.io/services/installguide/dymension",
