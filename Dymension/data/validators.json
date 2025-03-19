@@ -339,7 +339,7 @@
     "webservices": "https://cumulo.pro",
     "x": "Cumulo_pro",
     "validatorlogo": "cumulo.jpg",
-    "rpc": " https://rollapp.rpc.cumulo.com.es:443",
+    "rpc": "https://rollapp.rpc.cumulo.com.es:443",
     "rest": "https://rollapp.rest.cumulo.com.es:443",
     "grpc": "rollapp.grpc.cumulo.com.es",
     "json_rpc": "rollapp.jrpc.cumulo.com.es",
@@ -369,6 +369,31 @@
     "content": {
         "Guide": "https://utsa.gitbook.io/services/mainnet/dymension/installation"
     }
+},
+    {
+    "name": "Silk Nodes",
+    "webservices": "https://silknodes.io/networks/dymension",
+    "x": "silk_nodes",
+    "validatorlogo": "silk_nodes.jpg",
+    "rpc": "https://dymension.rpc.silknodes.io/",
+    "rest": "https://dymension.api.silknodes.io",
+    "snapshot": "https://silknodes.io/services/snapshot/dymension",
+    "grpc": "https://silknodes.io/services/grpc/dymension",
+    "addrbook": "https://services.silknodes.io/addrbook/dymension/addrbook.json",
+    "json_rpc": "",
+    "explorer": "https://explorer.silknodes.io/dymension",
+    "peers": "https://silknodes.io/services/livepeers/dymension",
+    "seeds": "https://silknodes.io/services/seednode/dymension",
+    "tools": "Discord Validator Bot,Discord Price Bot,StateSync",
+    "tools_url": {
+        "Discord Validator Bot": "https://docs.silknodes.io/validator-tools-guide",
+        "Discord Price Bot": "https://silknodes.io/discord-bot#bots",
+        "StateSync": "https://silknodes.io/services/statesync/dymension",
+    },
+    "content": {
+        "Node Guide": "https://silknodes.io/services/installguide/dymension",
+    }
 }
+    
 ]
 
