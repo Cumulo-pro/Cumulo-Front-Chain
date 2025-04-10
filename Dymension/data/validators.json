@@ -17,7 +17,6 @@
         "seeds": "https://autostake.com/seed",
         "addrbook": "https://autostake.com/addrbook",
         "snapshot": "https://autostake.com/snapshot",
-        "tools": "Snapshots,Addrbook,Seed,Peer,RPC,API,gRPC",
         "peers": "https://autostake.com/peer"
     },
     {
