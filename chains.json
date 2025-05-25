@@ -4,7 +4,11 @@
     "url": "https://raw.githubusercontent.com/Cumulo-pro/xrplevmTools/main/data/validators_testnet.json"
   },
   {
-    "name": "Story Protocol",
+    "name": "Story Protocol Aeneid",
     "url": "https://raw.githubusercontent.com/Cumulo-pro/Story_protocol/refs/heads/main/data/validators_aeneid.json"
+  },
+  {
+    "name": "Celestia mainnet",
+    "url": "https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/Celestia/data/validators.json"
   }
 ]
