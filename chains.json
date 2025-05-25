@@ -1,0 +1,10 @@
+[
+  {
+    "name": "XRPL EVM Testnet",
+    "url": "https://raw.githubusercontent.com/Cumulo-pro/xrplevmTools/main/data/validators_testnet.json"
+  },
+  {
+    "name": "Story Protocol",
+    "url": "https://raw.githubusercontent.com/Cumulo-pro/Story_protocol/refs/heads/main/data/validators_aeneid.json"
+  }
+]
