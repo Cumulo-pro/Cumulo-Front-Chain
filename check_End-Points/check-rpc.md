@@ -90,7 +90,7 @@ The system is designed to run **continuously and autonomously**, refreshing the 
       "detail": "OK"
     }
   ]
-}```
+}
 
 ## 📜 License
 
