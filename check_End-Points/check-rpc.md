@@ -1,4 +1,4 @@
-🛰️ check_rpc — Multi-chain RPC Monitoring Tool
+# 🛰️ check_rpc — Multi-chain RPC Monitoring Tool
 check_rpc is a decentralized monitoring system designed to evaluate the availability, synchronization, and responsiveness of public blockchain RPC endpoints across multiple networks.
 
 It is designed for validators, infrastructure providers, and ecosystem maintainers who need trustable, transparent, and real-time observability over the nodes that serve JSON-RPC data.
@@ -134,32 +134,6 @@ With **regional probing** and **smart aggregation**, `check_rpc` becomes a power
   "latencyByRegion": [
     { "location": "US", "ms": 347 },
     { "location": "EU", "ms": 205 }
-  ]
-}
-
-
-📈 Example Output (JSON)
-```json
-{
-  "XRPL EVM Testnet": [
-    {
-      "name": "Polkachu",
-      "rpc": "https://xrp-testnet-rpc.polkachu.com",
-      "status": "Synced",
-      "block": "1481390",
-      "indexing": "Indexed",
-      "moniker": "hello-xrp-testrelay",
-      "node_id": "737b3b33...",
-      "version": "0.38.17",
-      "isValidator": false,
-      "latency": 353,
-      "latencySamples": [
-        { "location": "US", "ms": 347 },
-        { "location": "EU", "ms": 205 }
-      ],
-      "averageLatency": 276,
-      "detail": "OK"
-    }
   ]
 }
 ```
