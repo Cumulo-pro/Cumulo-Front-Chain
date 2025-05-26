@@ -75,7 +75,6 @@ The system is designed to run **continuously and autonomously**, refreshing the 
 
 ## 📈 Example Output (JSON)
 
-```json
 {
   "XRPL EVM Testnet": [
     {
