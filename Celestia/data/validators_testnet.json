@@ -583,6 +583,7 @@
     "validatorlogo": "stakeusxyz.jpg",
     "explorer": "",
     "snapshot": "https://snapshots2.stakeus.xyz/celestia-testnet/mocha-4_cl_4625541.tar.lz4",
+    "snapshot_bridge": "https://celestia-services.stakeus.xyz/",
     "api": "https://celestia-testnet-api.stakeus.xyz",
     "rpc": "https://celestia-testnet-rpc.stakeus.xyz",
     "grpc": "celestia-testnet-grpc.stakeus.xyz",
