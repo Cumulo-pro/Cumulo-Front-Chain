@@ -597,7 +597,7 @@
   },
  {
   "name": "ITRocket",
-  "webservices": "https://itrocket.net/services/testnet/story/",
+  "webservices": "https://itrocket.net/services/testnet/celestia/",
   "x": "itrocket_team",
   "validatorlogo": "itrocket.png",
   "peers": "daf2cecee2bd7f1b3bf94839f993f807c6b15fbf@celestia-testnet-peer.itrocket.net:11656",
