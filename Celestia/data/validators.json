@@ -892,5 +892,28 @@
     "tools_url": {
         "Celestia Bridge Explorer": "https://celestia-bridges.stakeus.xyz/"
     }
+  },
+  {
+  "name": "ITRocket",
+  "webservices": "https://itrocket.net/services/mainnet/celestia/",
+  "x": "itrocket_team",
+  "validatorlogo": "itrocket.png",
+  "peers": "",
+  "seeds": "",
+  "api": "https://celestia-mainnet-api.itrocket.net",
+  "rpc": "https://celestia-mainnet-rpc.itrocket.net",
+  "grpc": "celestia-mainnet-grpc.itrocket.net:443",
+  "websocket": "",
+ "snapshot": "",
+  "snapshot_archival": "",
+  "tools": "Validator Analytics, Decentralization Analytics, Peer scanner",
+ "tools_url": {
+  "Validator Analytics": "",
+  "Decentralization Analytics": "",
+  "Peer scanner": ""
+    },
+    "content": {
+        "Installation Guide": ""
+    }
   }
 ]
