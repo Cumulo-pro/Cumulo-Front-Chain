@@ -905,6 +905,7 @@
   "grpc": "celestia-mainnet-grpc.itrocket.net:443",
   "websocket": "",
  "snapshot": "https://itrocket.net/services/mainnet/celestia/",
+  "snapshot_bridge": "https://itrocket.net/services/mainnet/celestia/bridge-node/",
   "snapshot_archival": "https://itrocket.net/services/mainnet/celestia/",
   "tools": "Validator Analytics, Decentralization Analytics, Peer scanner",
  "tools_url": {
