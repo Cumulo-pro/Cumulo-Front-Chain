@@ -843,6 +843,8 @@
     "validatorlogo": "validexis.jpg",
     "explorer": "",
     "snapshot": "https://services.validexis.com/mainnets/celestia/snapshot",
+     "snapshot_archival": "https://services.validexis.com/mainnets/celestia/snapshot",
+    "snapshot_bridge": "https://services.validexis.com/mainnets/celestia/snapshot",
     "peers": "60d481edb7e49efe01fa0b49a346cf9f8400db19@peer-celestia-mainnet.val",
     "api": "https://api-celestia-mainnet.validexis.com",
     "rpc": "https://rpc-celestia-mainnet.validexis.com",
