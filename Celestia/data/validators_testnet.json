@@ -600,22 +600,22 @@
   "webservices": "https://itrocket.net/services/testnet/story/",
   "x": "itrocket_team",
   "validatorlogo": "itrocket.png",
-  "peers": "",
-  "seeds": "",
-  "api": "",
-  "rpc": "",
-  "grpc": "",
+  "peers": "daf2cecee2bd7f1b3bf94839f993f807c6b15fbf@celestia-testnet-peer.itrocket.net:11656",
+  "seeds": "5d0bf034d6e6a8b5ee31a2f42f753f1107b3a00e@celestia-testnet-seed.itrocket.net:11656",
+  "api": "https://celestia-testnet-api.itrocket.net",
+  "rpc": "https://celestia-testnet-rpc.itrocket.net",
+  "grpc": "celestia-testnet-grpc.itrocket.net:443",
   "websocket": "",
- "snapshot": "",
-  "snapshot_archival": "",
-  "tools": "Validator Analytics, Validators Performance Dashboard, Peer scanner",
+ "snapshot": "https://itrocket.net/services/testnet/celestia/",
+  "snapshot_archival": "https://itrocket.net/services/testnet/celestia/",
+  "tools": "Validator Analytics, Decentralization Analytics, Peer scanner",
  "tools_url": {
   "Validator Analytics": "https://itrocket.net/services/testnet/story/analytics/validators-performance/",
-  "Validators Performance Dashboard": "https://itrocket.net/services/testnet/story/analytics/validators-performance/?mode=full&range=last3months",
-  "Peer scanner": "https://itrocket.net/services/testnet/story/public-rpc/"
+  "Decentralization Analytics": "https://itrocket.net/services/testnet/celestia/decentralization/",
+  "Peer scanner": "https://itrocket.net/services/testnet/celestia/public-rpc/"
     },
     "content": {
-        "Installation Guide": "https://itrocket.net/services/testnet/story/installation/"
+        "Installation Guide": "https://itrocket.net/services/testnet/celestia/installation/"
     }
   }
 ]
