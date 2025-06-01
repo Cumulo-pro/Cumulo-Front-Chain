@@ -608,6 +608,7 @@
   "websocket": "",
  "snapshot": "https://itrocket.net/services/testnet/celestia/",
   "snapshot_archival": "https://itrocket.net/services/testnet/celestia/",
+    "snapshot_bridge": "https://itrocket.net/services/testnet/celestia/bridge-node/",
   "tools": "Validator Analytics, Decentralization Analytics, Peer scanner",
  "tools_url": {
   "Validator Analytics": "https://itrocket.net/services/testnet/story/analytics/validators-performance/",
