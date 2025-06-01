@@ -594,6 +594,28 @@
         "Celestia Faucet": "https://celestia-services.stakeus.xyz/#",
         "Celestia Bridge Explorer": "https://celestia-bridges.stakeus.xyz/"
     }
+  },
+ {
+  "name": "ITRocket",
+  "webservices": "https://itrocket.net/services/testnet/story/",
+  "x": "itrocket_team",
+  "validatorlogo": "itrocket.png",
+  "peers": "",
+  "seeds": "",
+  "api": "",
+  "rpc": "",
+  "grpc": "",
+  "websocket": "",
+ "snapshot": "",
+  "snapshot_archival": "",
+  "tools": "Validator Analytics, Validators Performance Dashboard, Peer scanner",
+ "tools_url": {
+  "Validator Analytics": "https://itrocket.net/services/testnet/story/analytics/validators-performance/",
+  "Validators Performance Dashboard": "https://itrocket.net/services/testnet/story/analytics/validators-performance/?mode=full&range=last3months",
+  "Peer scanner": "https://itrocket.net/services/testnet/story/public-rpc/"
+    },
+    "content": {
+        "Installation Guide": "https://itrocket.net/services/testnet/story/installation/"
+    }
   }
-
 ]
