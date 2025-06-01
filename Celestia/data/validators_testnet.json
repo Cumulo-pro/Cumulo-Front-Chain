@@ -558,6 +558,8 @@
     "validatorlogo": "validexis.jpg",
     "explorer": "",
     "snapshot": "https://services.validexis.com/testnets/celestia/snapshot",
+    "snapshot_archival": "https://services.validexis.com/testnets/celestia/snapshot",
+    "snapshot_bridge": "https://services.validexis.com/testnets/celestia/snapshot",
     "peers": "31d3c08f6d9dfb05c0cef18604a64d30cc48ac7f@peer-celestia-testnet.validexis.com:26656",
     "api": "https://api-celestia-testnet.validexis.com/",
     "rpc": "https://rpc-celestia-testnet.validexis.com",
@@ -608,7 +610,7 @@
   "websocket": "",
  "snapshot": "https://itrocket.net/services/testnet/celestia/",
   "snapshot_archival": "https://itrocket.net/services/testnet/celestia/",
-    "snapshot_bridge": "https://itrocket.net/services/testnet/celestia/bridge-node/",
+  "snapshot_bridge": "https://itrocket.net/services/testnet/celestia/bridge-node/",
   "tools": "Validator Analytics, Decentralization Analytics, Peer scanner",
  "tools_url": {
   "Validator Analytics": "https://itrocket.net/services/testnet/story/analytics/validators-performance/",
