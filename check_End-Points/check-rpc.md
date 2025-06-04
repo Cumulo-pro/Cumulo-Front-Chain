@@ -84,113 +84,74 @@ With **real queries**, **distributed agents**, and **open aggregation**, `check_
 
 ---
 
-🔁 How It Works (At a High Level)
-- A hosted `chains.json` file defines which chains to test and where to fetch lists of RPC endpoints.
-- Each endpoint is queried concurrently using JSON-RPC with strict timeout control.
-- A per-chain aggregation summarizes:
-  - Node-by-node statuses
-  - Per-region latency measurements and average
-  - Availability and sync status
-- The results are served as JSON (`/check-rpcs`) and rendered in a responsive frontend dashboard.
-- The frontend includes sortable columns for live analysis and comparison.
-- The system is designed to run continuously and autonomously, refreshing the data every 5 minutes and ignoring nodes that return invalid or malformed responses.
+## 🔁 How It Works (At a High Level)
 
-🔐 Why It's Trustworthy
-✅ Uses real RPC queries — no synthetic checks or hardcoded assumptions.  
-🧪 Applies the same logic across all endpoints for consistency.  
-📉 Excludes nodes with unreachable or invalid RPCs from metrics (no skew).  
-📂 All chains and endpoints are publicly listed in GitHub (auditable).  
-🚫 No proprietary APIs — only open, documented standards like Tendermint `/status`.  
-🖥 Server locations are fixed and transparent (latency is geographically relative, but consistent).  
-💡 Data is kept read-only and is not modified or filtered beyond validation.  
-
-👥 Intended Audience
-- Validator operators looking to audit RPC uptime across competitors.
-- Blockchain core teams monitoring network health.
-- Delegators evaluating infrastructure quality.
-- Bridge operators or indexers verifying endpoint reliability.
-
-## 🌐 Distributed Latency Measurement
-
-Unlike traditional uptime checkers that test from a single server, **check_rpc** uses a distributed aggregation system to provide **geographically-aware performance insights**. This makes latency measurements **realistic, transparent, and representative** of what users experience globally.
+- A hosted `chains.json` file defines which chains to test and where to fetch RPC endpoint lists
+- Each endpoint is queried concurrently with strict timeout and validation
+- Aggregators group per-chain results, calculating:
+  - Node-by-node status
+  - Regional and global latency
+  - Sync and availability metrics
+- Results are served as JSON (`/aggregate-evm`) and rendered in a web dashboard
+- System runs every 5 minutes, skipping nodes with invalid responses
 
 ---
 
-### 📍 How Regional Latency Is Measured
+## 📍 How Regional Latency Is Measured
 
-The system is composed of multiple regional agents, each executing the same `check_rpc` script from different data centers:
+The system currently includes agents in:
 
-- 🇺🇸 **United States**
-- 🇪🇺 **Central Europe**
-- 🇬🇧 **United Kingdom**
+- 🇺🇸 United States
+- 🇪🇺 Central Europe
+- 🇨🇦 Canada
 
-Each agent performs a real JSON-RPC call (typically `GET /status`) against each endpoint listed. Unlike synthetic ping tests, these are **live application-level RPC queries**, returning:
+Each agent performs a **real RPC call** from its region:
 
-- Full block height and node status
-- HTTP response latency
-- Node metadata (ID, moniker, version)
-- Indexing and synchronization flags
-
----
-
-### 🧠 Aggregator Logic
-
-A central service (`aggregator.js`) collects the JSON outputs from all active regional agents. It merges and processes the results using the following logic:
-
-1. **Match endpoints** across all sources by `rpc` URL.
-2. **Store each regional latency sample** under `latencySamples`.
-3. **Compute `averageLatency`** from all valid samples.
-4. **Expose** both regional and average metrics through `/aggregate-rpcs`.
-
-This allows every RPC node to be evaluated **per location** and across **regions**, offering detailed observability.
-
-### 💡 Why It Matters
-
-- 🔬 **Latency is relative** — this model captures true RPC responsiveness per region.
-- 🛠 **Validators and node providers** can compare how their infrastructure performs globally.
-- 🌎 **Delegators, bridges, and explorers** can choose RPCs with optimal proximity.
-- 📉 **Detect asymmetric networking issues** or overloaded regional nodes.
+- Not just pings — actual protocol-level queries (JSON-RPC, gRPC, REST)
+- Latency is measured at the application layer
+- Full node metadata is retrieved (block height, sync status, version)
 
 ---
 
-### 🔐 Trust & Reproducibility
+## 🧠 Aggregator Logic
 
-| Property                  | Description                                                                 |
-|---------------------------|-----------------------------------------------------------------------------|
-| ✅ Real Queries           | Uses standard JSON-RPC `/status` calls — no fakes or mocks                  |
-| 🧪 Uniform Evaluation     | All endpoints are tested under identical logic                              |
-| 🌍 Regional Transparency  | Server regions are fixed and documented                                     |
-| 🚫 Invalid Nodes Skipped  | Errors and non-responders are excluded from latency averages                |
-| 📁 Open Definitions       | Chain & endpoint definitions are public (e.g. `chains.json` on GitHub)      |
+A central service (`aggregator-evm.js`) performs:
 
----
+1. Endpoint matching across agents
+2. Aggregation of latency data per region
+3. Calculation of global averages
+4. Output to `/aggregate-evm` for frontend and API usage
 
-With **regional probing** and **smart aggregation**, `check_rpc` becomes a powerful and transparent monitoring layer for blockchain RPC infrastructure — **trusted by validators, explorers, and protocol teams alike**.
+This enables **multi-perspective analysis** of each endpoint.
 
 ---
 
-### 📊 Example Output (Per RPC Node)
+## 🔐 Trust & Reproducibility
+
+| Property               | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| ✅ Real Queries        | No mocks — only live RPC calls                                              |
+| 🧪 Uniform Evaluation  | Every node checked using same logic                                         |
+| 🌍 Regional Awareness  | Latency varies by region, agents reflect user proximity                    |
+| 🚫 Error Filtering     | Invalid endpoints are excluded from averages                                |
+| 📁 Fully Auditable     | All scripts and configs are open on GitHub                                  |
+
+---
+
+## 📊 Example Output (Per RPC Node)
 
 ```json
 {
-  "name": "Polkachu",
-  "rpc": "https://xrp-testnet-rpc.polkachu.com",
-  "status": "Synced",
-  "block": "1487768",
-  "indexing": "Indexed",
-  "moniker": "hello-xrp-testrelay",
-  "node_id": "737b3b337173cc00830a43314cff8d6a1ae8b046",
-  "version": "0.38.17",
-  "isValidator": false,
-  "latencySamples": [
-    { "location": "US", "ms": 347 },
-    { "location": "EU", "ms": 205 }
-  ],
-  "averageLatency": 276,
-  "latencyByRegion": [
-    { "location": "US", "ms": 347 },
-    { "location": "EU", "ms": 205 }
-  ]
+  "name": "Cumulo Pro",
+  "rpc": "https://rpc.xrpl.evm.cumulo.com.es",
+  "status_eu": "OK",
+  "latency_eu": 176,
+  "status_us": "OK",
+  "latency_us": 298,
+  "status_ca": "OK",
+  "latency_ca": 267,
+  "block_eu": "0x1a3cde",
+  "uptime_eu": 99.65
 }
 ```
 
