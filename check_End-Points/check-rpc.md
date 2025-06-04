@@ -1,32 +1,88 @@
-# 🛰️ check_rpc — Multi-chain RPC Monitoring Tool
-check_rpc is a decentralized monitoring system designed to evaluate the availability, synchronization, and responsiveness of public blockchain RPC endpoints across multiple networks.
+# 🛰️ check_d — Decentralized Endpoint Monitoring Tool
 
-It is designed for validators, infrastructure providers, and ecosystem maintainers who need trustable, transparent, and real-time observability over the nodes that serve JSON-RPC data.
+**check_d** is a decentralized monitoring system designed to evaluate the health, availability, synchronization, and performance of public blockchain endpoints. Unlike traditional tools, it performs **real protocol-level queries** (JSON-RPC, gRPC, REST) from **multiple geographic locations**, generating reproducible metrics for infrastructure observability.
 
-📌 Purpose
-The tool was built to offer:
+## 🚀 Why This Tool?
 
-- A consistent and reproducible methodology to test the health of JSON-RPC nodes.
-- A multi-chain perspective, aggregating results for dozens of validators per chain.
-- A live web dashboard and API that shows clear, color-coded statuses and metrics.
+In a growing modular blockchain ecosystem, access to reliable public nodes is critical for:
 
-This provides visibility not only into the availability of endpoints, but also into block synchronization, latency performance, and node configuration consistency.
+- Block explorers
+- Indexers and index services
+- Cross-chain bridges
+- Decentralized applications (dApps)
+- Staking infrastructure and delegators
 
-📊 What Does It Measure?
-Each node is tested using a real status JSON-RPC call. This is a standard method supported by Tendermint-based and Cosmos SDK chains, and provides:
+Yet most existing endpoint checkers are **centralized**, based on pings or TCP checks, and **fail to reflect real-world performance**. They also lack transparency, regional insights, and fair comparison models.
 
-- Block height: current latest block served by the node.
-- Indexing status: whether the node supports transaction indexing.
-- Sync state: whether the node is fully synced with the network.
-- Latency:
-  - Per-region latency: round-trip time from each regional server (e.g. US, EU, UK).
-  - Average latency: computed from valid regional latencies.
-- Node ID: unique identifier of the node (from Tendermint).
-- Software version: of the binary or daemon running.
-- Moniker: human-readable alias of the node (if set).
-- Validator status: inferred from the node’s voting power or inclusion in validator sets.
+**check_d** was built to address these limitations by offering a decentralized, extensible, and transparent monitoring system that:
 
-The result is a uniform profile of each node tested.
+- Executes **real RPC or gRPC calls** (e.g., `eth_blockNumber`, `/status`, etc.)
+- Measures **latency from multiple regions** (🇺🇸 US, 🇪🇺 EU, 🇨🇦 CA, ...)
+- Collects metrics such as **average latency, block height, uptime**, and sync status
+- Exposes a structured **JSON API** for programmatic access (`/aggregate-evm`)
+- Provides per-network **dashboards** for live comparison and exploration
+
+## 📊 What Does It Measure?
+
+Each endpoint is tested using a **real application-level request** depending on its protocol:
+
+- `eth_blockNumber` for EVM-compatible chains
+- `GET /status` for Tendermint / Cosmos SDK chains
+- `grpc.health.v1.Health/Check` for gRPC endpoints
+- `GET /node_info` or similar for REST APIs
+
+These queries:
+
+- Are sent from **distributed regional agents**
+- Measure actual **response time (latency)**
+- Confirm whether the node **responds correctly with valid data**
+- Extract additional metadata: block height, version, moniker, sync flags, etc.
+
+## 🌐 Decentralized Architecture
+
+The system consists of:
+
+- **Regional agents** (`server-evm.js`, etc.) that run independently in US, EU, CA, etc.
+- A central **aggregator** (`aggregator-evm.js`) that merges all results without modifying them
+- A public API (`/aggregate-evm`) that returns structured JSON grouped by chain
+
+The decentralized nature of the agents makes it easy to expand across more data centers and jurisdictions, increasing transparency and trust.
+
+## ✅ Why Is It Trustworthy?
+
+| Feature              | Description                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| Real RPC calls       | Uses application-level queries (not synthetic ping or TCP handshakes)       |
+| Multi-region probes  | Simulates real-world user experience from different locations               |
+| Uniform logic        | All nodes in a network are tested using the exact same rules                |
+| Transparent data     | All endpoints, scripts, and configurations are open and auditable           |
+| Extensible design    | Easily supports new chains and protocols via config or plugins              |
+| Public results       | JSON API and web dashboards are open to the public, no paywalls             |
+
+## 🔧 Improvements Over Traditional Checkers
+
+| Aspect               | Legacy Tools         | **check_d**                                |
+|----------------------|----------------------|---------------------------------------------|
+| Real latency         | ❌ No (uses ping/TCP) | ✅ Yes, real protocol calls                 |
+| Decentralized agents | ❌ No                | ✅ Yes, globally distributed                |
+| Cross-chain support  | ❌ Limited           | ✅ Yes (EVM, Cosmos, gRPC, etc.)           |
+| Extensible           | ❌ Closed            | ✅ Open-source and modular                 |
+| Validator comparison | ❌ Not supported     | ✅ Yes, per-provider latency/Uptime        |
+| Detailed metrics     | ❌ Minimal           | ✅ Full latency, sync, block height, etc.  |
+
+## 📈 Who Is It For?
+
+- Validator operators comparing the quality of their RPCs against others
+- Protocol teams monitoring public infrastructure
+- Delegators choosing high-quality validators
+- Indexers and explorers selecting fast and reliable endpoints
+- dApp developers seeking the best RPC provider per region
+
+---
+
+With **real queries**, **distributed agents**, and **open aggregation**, `check_d` offers a transparent and reliable monitoring solution for blockchain infrastructure — trusted by validators, developers, and communities.
+
+---
 
 🔁 How It Works (At a High Level)
 - A hosted `chains.json` file defines which chains to test and where to fetch lists of RPC endpoints.
