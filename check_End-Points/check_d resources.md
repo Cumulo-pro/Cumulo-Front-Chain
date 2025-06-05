@@ -12,4 +12,4 @@ check_d currently exposes live monitoring data through two structured JSON APIs:
 - **Cosmos / Tendermint RPCs**:  
   [`/aggregate-rpcs`](https://aggregate-rpcs.cumulo.com.es/aggregate-rpcs)  
   → Returns metrics for Tendermint-style endpoints.  
-  chains: XRPLEVM, Story mainnet, Story aenet
+  - chains: XRPLEVM, Story mainnet, Story aenet
