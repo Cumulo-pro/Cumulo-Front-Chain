@@ -138,6 +138,29 @@ This enables **multi-perspective analysis** of each endpoint.
 
 ---
 
+## 🔌 Public Aggregator Endpoints
+
+check_d currently exposes live monitoring data through two structured JSON APIs:
+
+- **EVM-compatible RPCs**:  
+  [`/aggregate-evm`](https://aggregate-evm-rpcs.cumulo.com.es/aggregate-evm)  
+  → Returns metrics for Ethereum-like endpoints using `eth_blockNumber`.
+
+- **Cosmos / Tendermint RPCs**:  
+  [`/aggregate-rpcs`](https://aggregate-rpcs.cumulo.com.es/aggregate-rpcs)  
+  → Returns metrics for Tendermint-style endpoints using `/status`.
+
+Each API provides:
+- Per-region latency (🇺🇸, 🇪🇺, 🇨🇦)
+- Average latency
+- Block height per region
+- Uptime percentage over the past 7 days
+- Endpoint status (OK, Error + reason)
+- Node metadata (version, moniker, etc.)
+
+The results are grouped by chain and structured for easy consumption in dashboards, scripts, or other tooling.
+
+
 ## 📊 Example Output (Per RPC Node)
 
 ```json
