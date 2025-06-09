@@ -411,5 +411,16 @@
     "api": "https://warden-testnet-api.cryptonode.id",
     "rpc": "https://warden-testnet-rpc.cryptonode.id",
     "grpc": "warden-testnet-grpc..cryptonode.id:443"
-}
+},
+    {
+    "name": "Citizen Web3",
+    "x": "@citizen_web3",
+    "services": "https://staking.citizenweb3.com/chains/warden",
+    "validatorlogo": "citizenweb3.png",
+    "api": "https://api.warden-testnet.citizenweb3.com",
+    "rpc": "https://rpc.warden-testnet.citizenweb3.com",
+    "grpc": "grpc.warden-testnet.citizenweb3.com",
+    "seed/peer": "81ce7b70b2fbef5c33fa2d7c1898512cd1ae5ba7@195.201.197.246:17856",
+    "snapshot": "https://staking.citizenweb3.com/chains/warden?tab=snapshot",
+    }
 ]
