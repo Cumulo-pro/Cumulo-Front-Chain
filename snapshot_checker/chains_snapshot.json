@@ -1,0 +1,10 @@
+[
+  {
+    "network": "story_mainnet",
+    "url": "https://raw.githubusercontent.com/Cumulo-pro/Story_protocol/main/data/validators_mainnet.json"
+  },
+  {
+    "network": "story_aeneid",
+    "url": "https://raw.githubusercontent.com/Cumulo-pro/Story_protocol/main/data/validators_aeneid.json"
+  }
+]
