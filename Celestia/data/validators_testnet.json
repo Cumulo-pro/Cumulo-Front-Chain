@@ -622,5 +622,20 @@
     "content": {
         "Installation Guide": "https://itrocket.net/services/testnet/celestia/installation/"
     }
-  }
+  },
+     {
+        "name": "Krews",
+        "webservices": "",
+        "x": "Krewstake",
+        "validatorlogo": "krews.jpg",
+        "github": "",
+        "rpc": "",
+        "api": "",
+        "grpc": "",
+        "explorer": "",
+        "tools": "validator performance dashboard",
+        "tools_url": {
+            "validator performance dashboard": "https://celestia-status.krews.xyz"
+        }
+    }
 ]
