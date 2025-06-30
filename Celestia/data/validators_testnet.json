@@ -192,13 +192,14 @@
         "webservices": "",
         "x": "stakeflow",
         "validatorlogo": "stakeflow.jpg",
-       "explorer": "https://stakeflow.io/celestia-testnet",
+        "explorer": "https://stakeflow.io/celestia-testnet",
+        "bridge_explorer": "https://stakeflow.io/celestia-testnet/bridge-nodes",
           "peers": "edebca7508b70df9659c1293b0d8cbc05c77c91f@peer-celestia-testnet-01.stakeflow.io:16007",
           "seeds": "edebca7508b70df9659c1293b0d8cbc05c77c91f@seed-celestia-testnet-01.stakeflow.io:16007",
           "api": "https://api-celestia-testnet-01.stakeflow.io",
           "rpc": "https://rpc-celestia-testnet-01.stakeflow.io",
           "grpc": "grpc-celestia-testnet-01.stakeflow.io:16002",
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakeflow"
+          "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakeflow"
     },
     {
         "name": "Openbitlab",
