@@ -4,6 +4,10 @@
     "url": "https://raw.githubusercontent.com/Cumulo-pro/xrplevmTools/main/data/validators_testnet.json"
   },
   {
+    "name": "XRPL EVM Mainnet",
+    "url": "https://raw.githubusercontent.com/Cumulo-pro/xrplevmTools/refs/heads/main/data/validators_mainnet.json"
+  },
+  {
     "name": "Story Protocol Aeneid",
     "url": "https://raw.githubusercontent.com/Cumulo-pro/Story_protocol/refs/heads/main/data/validators_aeneid.json"
   },
