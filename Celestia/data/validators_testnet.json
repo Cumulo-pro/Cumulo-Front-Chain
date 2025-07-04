@@ -24,15 +24,15 @@
     "api": "https://celestia-testnet-api.blacknodes.net",
     "rpc": "https://celestia-testnet-rpc.blacknodes.net",
     "grpc": "celestia-testnet-grpc.blacknodes.net:17090",
-    "rpc_archive": "consensus-full-mocha.blacknodes.net",
-    "archive": "y",
-    "snapshot": "https://files.blacknodes.net/celestia/celestia_mocha-4.tar.lz4",
-    "addrbook": "",
-    "tools": "Services(Snapshot,State-Sync,Endpoints,LivePeers,Node-Monitoring), Node Tutorial Guide, Node-Monitoring Guide",
+    "rpc_consensus": "consensus-full-mocha.blacknodes.net",
+    "snapshot": "https://services.blacknodes.net/Celestia/",
+    "snap_url": "https://files.blacknodes.net/celestia/celestia_mocha-4.tar.lz4",
+    "addrbook": "https://files.blacknodes.net/celestia/addrbook.json",
+    "tools": "Node Tutorial Guide, Node-Monitoring Guide, Celestia faucet",
     "tools_url": {
-        "Services(Snapshot,State-Sync,Endpoints,LivePeers,Node-Monitoring)": "https://services.blacknodes.net/Celestia",
         "Node Tutorial Guide": "https://github.com/blacknodes/Node-Services/tree/main/Projects/celestia",
-        "Node-Monitoring Guide": "https://github.com/blacknodes/Node-Services/tree/main/Projects/celestia/Celestia-Node-Monitoring"
+        "Node-Monitoring Guide": "https://github.com/blacknodes/Node-Services/tree/main/Projects/celestia/Celestia-Node-Monitoring",
+        "Celestia faucet": "https://celestia-faucet.blacknodes.net/"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#blacknodes-contribution-httpsblacknodesnet"
 },
