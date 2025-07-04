@@ -177,25 +177,6 @@
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#autostake"
     },
     {
-        "name": "CrypTech",
-        "webservices": "",
-        "x": "CrypTech",
-        "validatorlogo": "cryptech.jpg",
-            "api": "https://api-celestia-testnet.cryptech.com.ua",
-          "rpc": "https://rpc-celestia-testnet.cryptech.com.ua",
-          "grpc": "https://grpc-celestia-testnet.cryptech.com.ua",
-          "snapshot": "https://services.cryptech.com.ua/testnet/celestia/snapshot/README/",
-          "tools": "Explorer.Fork.Ping.Pub - with Archive Node, Guide, Proposal_Bot, CosmosNodeMonitoring",
-          "tools_url": {
-            "Snapshots": "https://services.cryptech.com.ua/testnet/celestia/snapshot/README/",
-            "Guide": "https://services.cryptech.com.ua/testnet/celestia/installation/README/",
-            "Proposal_Bot": "https://t.me/Cryptech_ProposalBot",
-            "CosmosNodeMonitoring": "https://github.com/dvjromashkin/cosmos-monitoring"
-          },
-            "archive": "y",
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cryptech"
-    },
-    {
         "name": "Stakeflow",
         "webservices": "",
         "x": "stakeflow",
@@ -228,8 +209,13 @@
         "validatorlogo": "luckyresearch.jpg",
             "explorer": "https://explorer.luckyresearch.org/Celestia-Testnet",
           "api": "https://api-celestia-mocha.luckyresearch.org/",
+         "snapshot": "https://snapshot.luckyresearch.org/Celestia/Mocha/",
           "rpc": "https://rpc-celestia-mocha.luckyresearch.org/",
-          "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-luckyresearchorg"
+          "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-luckyresearchorg",
+        "tools_url": {
+            "Celestia Performance Status Bot": "https://t.me/celestia_bridge_check_bot",
+            "Celestia Bridge Status Checker": "https://celestia-bridge-checker.luckyresearch.org/ "
+        }
     },
     {
         "name": "Suntzu",
