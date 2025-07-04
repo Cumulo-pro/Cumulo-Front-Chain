@@ -490,10 +490,7 @@
     "x": "bitszn_com",
     "validatorlogo": "bitszn.png",
     "explorer": "https://celestia.valopers.com",
-    "tools": "celestia bridge explorer",
-    "tools_url": {
-        "celestia bridge explorer": "https://testnet.celestia.valopers.com/bridges"
-    }
+    "bridge_explorer": "https://testnet.celestia.valopers.com/bridges"
 },
     {
     "name": "CroutonDigital",
@@ -562,7 +559,8 @@
    "tools": "CelestiaUltraBot",
    "addrbook": "https://testnet.validexis.com/celestia/addrbook.json",
     "tools_url": {
-        "CelestiaUltraBot": "https://validexis.com/celestiaultrabot"
+        "CelestiaUltraBot": "https://validexis.com/celestiaultrabot",
+        "Dashboard Upgrades": "https://celestiabridge.com/testnet/upgrades"
     },
     "content_url": {
         "Node Installation": "https://services.validexis.com/testnets/celestia/validator-node-installation",
