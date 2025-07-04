@@ -38,18 +38,20 @@
 },
     {
         "name": "Lavender.Five Nodes",
-        "webservices": "https://services.lavenderfive.com/testnet/celestia",
+        "webservices": "https://www.lavenderfive.com/tools/testnet_celestia/overview",
         "x": "lavender_five",
         "validatorlogo": "lavenderfive.jpg",
         "rpc": "https://testnet-celestia-rpc.lavenderfive.com:443",
         "grpc": "testnet-celestia-grpc.lavenderfive.com:443",
         "api": "https://testnet-celestia-api.lavenderfive.com:443",
-             "tools": "Snapshot, State-sync, Installation Guide",
-             "tools_url": {
-        "Snapshot": "https://services.lavenderfive.com/testnet/celestia/snapshot",
-        "State-sync": "https://services.lavenderfive.com/testnet/celestia/statesync",
-        "Installation Guide": "https://services.lavenderfive.com/testnet/celestia/installation"
+        "websocket": "wss://testnet-rpc.lavenderfive.com:443/celestia/websocket",
+         "tools": "State-sync",
+         "tools_url": {
+        "State-sync": "https://services.lavenderfive.com/testnet/celestia/statesync"
     },
+         "content":{
+            "Installation Guide": "https://services.lavenderfive.com/testnet/celestia/installation"
+          },
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-lavenderfive-nodes"
     },
     {
