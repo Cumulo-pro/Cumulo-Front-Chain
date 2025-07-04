@@ -151,7 +151,6 @@
         "seeds": "83cda75ef0cb3826858eaafe60f0f14a2018d53f@celestia-testnet-seed.stakeme.pro:11656",
         "api": "https://celestia-testnet-rest.stakeme.pro",
         "rpc": "https://celestia-testnet-rpc.stakeme.pro",
-        "archive": "y",
         "grpc": "da-bridge-mocha-4.stakeme.pro:9090",
         "tools": "Consensus, Uptime validators, RPC scanner & peers, Self-written faucet",
         "tools_url": {
@@ -170,10 +169,11 @@
             "api": "https://celestia-testnet-lcd.autostake.com:443",
             "rpc": "https://celestia-testnet-rpc.autostake.com:443",
             "grpc": "celestia-testnet-grpc.autostake.com:443",
-            "tools": "Services (Snapshot, addrbook, Seed, Peer)",
-            "tools_url": {
-        "Snapshot, addrbook, Seed, Peer": "https://autostake.com/networks/testnets/celestia/#services"
-    },
+         "snapshot": "https://autostake.com/networks/testnets/celestia/",
+        "seeds": "5c2a752c9b1952dbed075c56c600c3a79b58c395@celestia-testnet-seed.autostake.com:27206",
+        "addrbook": "http://snapshots.autostake.com/lyIs25DaSWMSm8evWKHGQrb/mocha-4/addrbook.json",
+          "snap_url": "http://snapshots.autostake.com/lyIs25DaSWMSm8evWKHGQrb/mocha-4/latest.tar.lz4",
+        "peers": "5c2a752c9b1952dbed075c56c600c3a79b58c395@celestia-testnet-peer.autostake.com:27206", 
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#autostake"
     },
     {
