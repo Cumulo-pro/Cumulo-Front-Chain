@@ -520,7 +520,7 @@
     "x": "StakeusXyz",
     "validatorlogo": "stakeusxyz.jpg",
     "explorer": "",
-    "bridge_explorer": "https://celestia-bridges.stakeus.xyz/"
+    "bridge_explorer": "https://celestia-bridges.stakeus.xyz/",
     "snapshot": "https://snapshots2.stakeus.xyz/celestia-testnet/mocha-4_cl_4625541.tar.lz4",
     "snapshot_bridge": "https://celestia-services.stakeus.xyz/",
     "api": "https://celestia-testnet-api.stakeus.xyz",
@@ -531,7 +531,6 @@
     "content_url": {
         "Node Setup Guide": "https://celestia-services.stakeus.xyz/"
     },
-   "tools": "Celestia Faucet,Celestia Bridge Explorer",
     "tools_url": {
         "Celestia Faucet": "https://celestia-services.stakeus.xyz/#"
     }
