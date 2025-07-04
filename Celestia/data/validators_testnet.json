@@ -119,8 +119,11 @@
           "api": "https://celestia-testnet-api.itrocket.net",
           "rpc": "https://celestia-testnet-rpc.itrocket.net",
           "grpc": "celestia-testnet-grpc.itrocket.net:443",
-          "archive": "y",
-            "tools": "Decentralization Analytics #validators, RPC, and all nodes; Governance Bot #with status & UPD timer notifications; Peer scanner #with real time peer uptime verification; RPC Scanner #with Raw scan results",
+          "snapshot": "https://itrocket.net/services/testnet/celestia/",
+          "snap_url": "",
+          "archive_snapshot": "https://itrocket.net/services/testnet/celestia/",
+          "bridge_snap": "https://itrocket.net/services/testnet/celestia/bridge-node/",
+           "tools": "Decentralization Analytics #validators, RPC, and all nodes; Governance Bot #with status & UPD timer notifications; Peer scanner #with real time peer uptime verification; RPC Scanner #with Raw scan results",
           "tools_url": {
             "Decentralization Analytics": "https://itrocket.net/services/testnet/celestia/decentralization/",
             "Governance Bot": "https://t.me/itrocket_testnet_proposal_bot",
