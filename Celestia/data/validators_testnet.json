@@ -45,8 +45,8 @@
         "grpc": "testnet-celestia-grpc.lavenderfive.com:443",
         "api": "https://testnet-celestia-api.lavenderfive.com:443",
         "websocket": "wss://testnet-rpc.lavenderfive.com:443/celestia/websocket",
-         "tools": "State-sync",
-         "tools_url": {
+       "tools": "State-sync",
+       "tools_url": {
         "State-sync": "https://services.lavenderfive.com/testnet/celestia/statesync"
     },
          "content":{
@@ -55,23 +55,29 @@
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-lavenderfive-nodes"
     },
     {
-        "name": "DTEAM",
-        "webservices": "https://dteam.tech/services/testnet/overview/celestia",
-        "x": "dteamtech",
-        "validatorlogo": "dteam.jpg",
+    "name": "DTEAM",
+    "webservices": "https://dteam.tech/services/testnet/overview/celestia",
+    "x": "dteamtech",
+     "validatorlogo": "dteam.jpg",
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#dteam",
              "tools": "Installation guides, snapshot, state sync and etc.",
     "explorer": "Testnet explorer",
     "tools_url": {
         "Bridge node checker / website": "https://celestia-bridge-checker.dteam.tech/",
         "Bridge node checker / Discord": "https://discord.com/invite/BCeXe63Mm8",
-        "Community faucet (10TIA / 24h)": "https://discord.com/invite/BCeXe63Mm8"
+        "Community faucet (10TIA / 24h)": "https://discord.com/invite/BCeXe63Mm8", 
+        "State-sync": "https://dteam.tech/services/state-sync/celestia/mainnet"
     },
     "rpc": "https://rpc.archive.celestia.testnet.dteam.tech",
     "api": "https://api.archive.celestia.testnet.dteam.tech",
     "grpc": "grpc.archive.celestia.testnet.dteam.tech:27090",
+    "snapshot": "https://dteam.tech/services/snapshot/celestia/mainnet",
+    "snap_url": "https://dteam.tech/services/snapshot/celestia/mainnet",
     "seeds": "70e8a8941f32dc5f696e46ee836c27620e773065@seed.celestia.testnet.dteam.tech:26656",
-    "peers": "76ed983017167d96c62b166725250940deb783563@peer.celestia.testnet.dteam.tech:27656"
+    "peers": "76ed983017167d96c62b166725250940deb783563@peer.celestia.testnet.dteam.tech:27656", 
+     "content":{
+            "Installation Guide": "https://dteam.tech/services/installation-guide/celestia/mainnet"
+      }
     },
     {
         "name": "cryptomolot",
@@ -95,14 +101,11 @@
         "x": "BlackBlocks_io",
         "validatorlogo": "blackblocks.jpg",
         "rpc": "https://rpc.celestia-mocha-4.blackblocks.io/",
-        "archive": "y",
-            "api": "https://bridge.celestia-mocha-4.blackblocks.io/",
-            "snapshot": "https://wiki.blackblocks.io/en/public/services/testnet/celestia#full-node-archival-snapshot",
-            "tools": "Bridge Archival, Full Node Archival",
-            "tools_url": {
-        "Bridge Archival": "https://wiki.blackblocks.io/en/public/services/testnet/celestia#bridge-node-archival-snapshot",
-        "Full Node Archival": "https://wiki.blackblocks.io/en/public/services/testnet/celestia#full-node-archival-snapshot"
-    },
+        "api": "https://bridge.celestia-mocha-4.blackblocks.io/",
+        "snapshot": "https://wiki.blackblocks.io/en/public/services/testnet/celestia#full-node-archival-snapshot",
+        "snap_url": "http://snapshots.blackblocks.io/testnet/celestia/fullnode/archive/celestia_fullnode_archive_mocha-4_latest.tar.lz4",
+        "bridge_snap": "https://wiki.blackblocks.io/en/public/services/testnet/celestia#bridge-node-archival-snapshot",
+        "bridge_snap_url": "http://snapshots.blackblocks.io/testnet/celestia/bridge/archive/celestia_bridge_archive_mocha-4_latest.tar.lz4",
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-blackblocks"
     },
     {
