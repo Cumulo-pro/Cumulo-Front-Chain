@@ -112,7 +112,7 @@
         "name": "ITRocket",
         "webservices": "https://itrocket.net/services/testnet/celestia/",
         "x": "itrocket_team",
-        "validatorlogo": "itrocket.jpg",
+        "validatorlogo": "itrocket.png",
         "explorer": "https://testnet.itrocket.net/celestia/staking",
           "peers": "daf2cecee2bd7f1b3bf94839f993f807c6b15fbf@celestia-testnet-peer.itrocket.net:11656",
           "seeds": "5d0bf034d6e6a8b5ee31a2f42f753f1107b3a00e@celestia-testnet-seed.itrocket.net:11656",
@@ -241,10 +241,7 @@
           "rpc": "https://celestia-testnet-rpc.contributiondao.com",
           "snapshot": "https://services.contributiondao.com/testnet/celestia/snapshots",
           "tools": "Pruning node snapshot (Every 6 hours)",
-          "tools_url": {
-            "Pruning node snapshot": "https://services.contributiondao.com/testnet/celestia/snapshots"
-          },
-          "content_url": {
+         "content_url": {
             "Celestia node Installation Guide": "https://services.contributiondao.com/testnet/celestia/installation"
           },
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributiondao"
@@ -261,16 +258,6 @@
           }
     },
     {
-        "name": "Provalidator",
-        "webservices": "https://nodeservice.provalidator.com/docs/Network/Celestia",
-        "x": "Provalidator",
-        "validatorlogo": "provalidator.jpg",
-            "tools_url": {
-            "Public Goods (RPC, API, Snapshots, and more)": "https://nodeservice.provalidator.com/docs/Network/Celestia"
-          },
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-provalidator"
-    },
-    {
         "name": "Conqueror",
         "x": "Conquerorr_1",
         "validatorlogo": "conqueror.jpg",
@@ -279,39 +266,7 @@
           },
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#conqueror"
     },
-        {
-          "name": "Wavefive",
-          "webservices": "",
-          "x": "jimwavefive",
-          "validatorlogo": "wavefive.jpg",
-           "rpc": "https://celestia-testnet-rpc.0xcryptovestor.com/",
-           "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#wavefive"
-        },
- {
-  "name": "ERN VENTURES",
-   "x": "ernventures",
-  "validatorlogo": "ernventures.jpg",
-  "tools": "Testnet tools: Decentralization map #beta, Peer scanner, RPC Scanner, Snapshots",
-  "tools_url": {
-    "Consensus Node Snapshot (archive)": "https://celestia.rpc.testnets.services-ernventures.com/archive-snapshot",
-    "Consensus Node Snapshot (pruned)": "https://celestia.rpc.testnets.services-ernventures.com/pruned-snapshot",
-    "Bridge Node Snapshot (archive)": "https://celestia.rpc.testnets.services-ernventures.com/bridge-snapshot"
-  },
-  "rpc": "https://celestia.rpc.testnets.services-ernventures.com",
-  "api": "https://celestia.api.testnets.services-ernventures.com",
-  "peers": "46e5a89a4a9bfad45864316ca596e5392890b06f@85.10.196.25:26656",
-  "content_url": {
-    "Consensus Node installation (pruned)": "https://celestia.testnets.services-ernventures.com/guides/consensus-pruned-installation",
-    "Consensus Node installation (archive)": "https://celestia.testnets.services-ernventures.com/guides/consensus-archive-installation",
-    "Bridge Node installation": "https://celestia.testnets.services-ernventures.com/guides/bridge-node-installation",
-    "Monitoring a Celestia consensus node (with Grafana)": "https://celestia.testnets.services-ernventures.com/guides/monitoring-with-grafana",
-    "Celestia Validator monitoring guide (with tenderduty)": "https://celestia.testnets.services-ernventures.com/guides/validator-monitoring-tenderduty",
-    "Celestia bridge alert": "https://celestia.testnets.services-ernventures.com/guides/bridge-alert",
-    "Useful command": "https://celestia.testnets.services-ernventures.com/guides/useful-commands",
-    "How to Secure Your Server: From Changing the SSH Port to Managing Validator Keys with TMKMS": "https://medium.com/@ernventures/server-protection-how-to-secure-access-and-save-validator-keys-dcc817a31956"
-  }
-},
- {
+{
   "name": "F5 Nodes",
   "webservices": "",
   "x": "f5nodes",
@@ -444,7 +399,7 @@
 },
      {
     "name": "NodeStake",
-    "webservices": "https://nodestake.org/celestia",
+    "webservices": "https://noders.services/testnet/overview",
     "x": "NodeStake_top",
     "validatorlogo": "nodestake.jpg",
     "explorer": "https://explorer.nodestake.org/celestia-testnet",
@@ -475,16 +430,6 @@
     }
 },
  {
-    "name": "Easy2Stake",
-    "webservices": "",
-    "x": "Easy2Stake",
-    "validatorlogo": "easy2stake.jpg",
-    "tools": "Celestia sync server dashboard",
-   "tools_url": {
-    "Celestia sync server dashboard": "https://sync.easy2stake.com/d/ce1jmvhesy1hce/state-sync-server?orgId=1&var-chain_id=mocha-4&var-source=sync-server-1&var-rpc_server=https:%2F%2Fmocha-rpc.easy2stake.com:443&var-default_homedir=$HOME%2F.celestia-app&var-seeds=8badeed7f48eefd5d43af7eb7662f2b578304a27@mocha-seed.easy2stake.com:26686&var-peers=8badeed7f48eefd5d43af7eb7662f2b578304a27@138.201.63.38:26686&var-binary_name=celestia-appd&var-lcd_server=https:%2F%2Fmocha-lcd.easy2stake.com"
-    }
-},
-     {
     "name": "Bitszn",
     "webservices": "https://testnet.celestia.valopers.com",
     "x": "bitszn_com",
@@ -575,6 +520,7 @@
     "x": "StakeusXyz",
     "validatorlogo": "stakeusxyz.jpg",
     "explorer": "",
+    "bridge_explorer": "https://celestia-bridges.stakeus.xyz/"
     "snapshot": "https://snapshots2.stakeus.xyz/celestia-testnet/mocha-4_cl_4625541.tar.lz4",
     "snapshot_bridge": "https://celestia-services.stakeus.xyz/",
     "api": "https://celestia-testnet-api.stakeus.xyz",
@@ -587,32 +533,7 @@
     },
    "tools": "Celestia Faucet,Celestia Bridge Explorer",
     "tools_url": {
-        "Celestia Faucet": "https://celestia-services.stakeus.xyz/#",
-        "Celestia Bridge Explorer": "https://celestia-bridges.stakeus.xyz/"
-    }
-  },
- {
-  "name": "ITRocket",
-  "webservices": "https://itrocket.net/services/testnet/celestia/",
-  "x": "itrocket_team",
-  "validatorlogo": "itrocket.png",
-  "peers": "daf2cecee2bd7f1b3bf94839f993f807c6b15fbf@celestia-testnet-peer.itrocket.net:11656",
-  "seeds": "5d0bf034d6e6a8b5ee31a2f42f753f1107b3a00e@celestia-testnet-seed.itrocket.net:11656",
-  "api": "https://celestia-testnet-api.itrocket.net",
-  "rpc": "https://celestia-testnet-rpc.itrocket.net",
-  "grpc": "celestia-testnet-grpc.itrocket.net:443",
-  "websocket": "",
- "snapshot": "https://itrocket.net/services/testnet/celestia/",
-  "snapshot_archival": "https://itrocket.net/services/testnet/celestia/",
-  "snapshot_bridge": "https://itrocket.net/services/testnet/celestia/bridge-node/",
-  "tools": "Validator Analytics, Decentralization Analytics, Peer scanner",
- "tools_url": {
-  "Validator Analytics": "https://itrocket.net/services/testnet/story/analytics/validators-performance/",
-  "Decentralization Analytics": "https://itrocket.net/services/testnet/celestia/decentralization/",
-  "Peer scanner": "https://itrocket.net/services/testnet/celestia/public-rpc/"
-    },
-    "content": {
-        "Installation Guide": "https://itrocket.net/services/testnet/celestia/installation/"
+        "Celestia Faucet": "https://celestia-services.stakeus.xyz/#"
     }
   },
      {
