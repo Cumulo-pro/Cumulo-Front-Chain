@@ -222,7 +222,7 @@
     },
     {
         "name": "Suntzu",
-        "webservices": "https://services.suntzu.dev/mainnet/celestia/installation",
+        "webservices": "https://services.suntzu.dev/testnet/celestia",
         "x": "suntzu_indexer",
         "validatorlogo": "suntzu.jpg",
             "explorer": "https://explorer.suntzu.dev/celestia-testnet",
@@ -231,6 +231,12 @@
           "rpc": "https://celestia-testnet-rpc.suntzu.dev",
           "grpc": "celestia-testnet-grpc.suntzu.dev:11290",
           "tools": "Monitor bridge/validator/system",
+          "snapshot": "https://services.suntzu.dev/testnet/celestia/snapshot",
+          "snap_url": "https://testnet-files.suntzu.dev/download/testnet/celestia/celestia-snapshot.tar.lz4",
+        "tools_url": {
+            "State Sync": "https://services.suntzu.dev/testnet/celestia/state-sync",
+            "Celestia Bridge Status Checker": "https://celestia-bridge-checker.luckyresearch.org/ "
+        },
          "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#suntzu"
     },
     {
