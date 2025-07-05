@@ -545,7 +545,7 @@
         "Celestia Bridge Node Dashboard in Grafana": "https://grafana.com/grafana/dashboards/21116-celestia-consensus-validator-node/",
         "Celestia underneath: All the projects that use Celestia as a DA": "https://celestia.frontchain.cumulo.pro/underneath"
       },
-      "content_url": {
+      "content": {
         "Website dedicated to our content about Modular Summit events": "https://modular.cumulo.pro/",
         "Compilation of technical guides and resources": "https://cumulo.pro/celestia/content"
       },
