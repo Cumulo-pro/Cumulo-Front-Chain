@@ -337,7 +337,7 @@
   "name": "Encapsulate (fka KingSuper)",
   "x": "encapsulate_xyz",
   "validatorlogo": "encapsulate.jpg",
-  "content_url": {
+  "content": {
     "Celestia Bridge Testnet": "https://encapsulate.xyz/snapshots/celestia-bridge-testnet"
   },
   "tools": "Submit Pay for Blob,Light Node Health Checker",
