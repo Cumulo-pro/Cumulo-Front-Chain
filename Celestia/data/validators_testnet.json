@@ -302,7 +302,7 @@
   "webservices": "",
   "x": "brightlystake",
   "validatorlogo": "brightlystake.jpg",
-  "rpc": "http://celestia-testnet.brightlystake.com",
+  "rpc": "https://celestia-testnet.brightlystake.com",
   "grpc": "celestia-testnet.brightlystake.com:9090",
   "tools": "Public tools for Celestia status check",
   "tools_url": {
