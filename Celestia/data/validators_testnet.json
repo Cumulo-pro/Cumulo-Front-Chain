@@ -322,11 +322,8 @@
   "api": "https://celestia.test.archive.api.nodeshub.online",
   "rpc": "https://celestia.test.archive.rpc.nodeshub.online",
   "grpc": "https://celestia.test.archive.grpc.nodeshub.online",
-  "snapshot": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/snapshot/archive",
-  "prunedsnapshot": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/snapshot/pruned",
-  "bridge_node": "12D3KooWHWmuydGajpZnJNPVjSS8efJ8UHBBQwPxS1WjhrVu37Mn",
-  "validator": "celestiavaloper1zf7t8ahyt75vt0pctula20vs76ml6yprf5dm0c",
-  "tools": "Installation guide, State-Sync, Upgrade History",
+  "archive_snapshot": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/snapshot/archive",
+  "snapshot": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/snapshot/pruned",
   "tools_url": {
     "State-Sync": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/state-sync",
     "Upgrade History": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/upgrade"
