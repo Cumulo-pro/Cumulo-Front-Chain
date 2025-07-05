@@ -249,7 +249,6 @@
           "api": "https://celestia-testnet-api.contributiondao.com",
           "rpc": "https://celestia-testnet-rpc.contributiondao.com",
           "snapshot": "https://services.contributiondao.com/testnet/celestia/snapshots",
-          "tools": "Pruning node snapshot (Every 6 hours)",
          "content": {
             "Celestia node Installation Guide": "https://services.contributiondao.com/testnet/celestia/installation"
           },
