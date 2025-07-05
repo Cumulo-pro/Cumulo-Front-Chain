@@ -356,12 +356,6 @@
   "api": "https://celestia-testnet-api.crouton.digital",
   "grpc": "celestia-testnet-api.crouton.digital:28690",
   "peer": "854f67cdd27f568f2aa4f46a9d35cc727604958e@65.109.93.124:28656",
-  "tools": "Terraform for Celestia, Tested Code of Celestia",
-  "tools_url": {
-    "Terraform for Celestia (SSH Module)": "https://registry.terraform.io/modules/Crouton-Digital/celestia/ssh/latest/examples/celestia-node",
-    "Terraform for Celestia (GitHub)": "https://github.com/Crouton-Digital/terraform-ssh-celestia",
-    "Tested Code of Celestia": "https://drive.google.com/drive/u/0/folders/1881mgxtVEY9QqU2xywFw9s0ZScBzCLik"
-  },
   "content": {
     "Guide": "https://crouton.digital/services/testnets/celestia"
   },
