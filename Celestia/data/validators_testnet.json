@@ -409,26 +409,7 @@
     "snapshot": "https://nodestake.org/celestia",
     "addrbook": "https://ss.celestia.nodestake.org/addrbook.json"
 },
- {
-    "name": "STAKEUS",
-    "webservices": " https://celestia-services.stakeus.xyz/",
-    "x": "StakeusXyz",
-    "validatorlogo": "stakeus.jpg",
-    "explorer": "https://celestia-nodes.stakeus.xyz/",
-    "peer": "0d2001b7189c3cbf412bab89f36f710c9162b010@mocha-4-full-consensus-rpc.stakeus.xyz",
-    "api": "https://celestia-testnet-api.stakeus.xyz",
-    "rpc": "https://celestia-testnet-rpc.stakeus.xyz",
-    "grpc": "celestia-testnet-grpc.stakeus.xyz",
-    "addrbook": "https://snapshots2.stakeus.xyz/celestia-testnet/addrbook.json",
-    "content": {
-    "Setup Guides": "https://celestia-services.stakeus.xyz/"
-      },
-      "tools": "Celestia Faucet",
-     "tools_url": {
-    "Celestia Faucet": "https://celestia-faucet.stakeus.xyz/"
-    }
-},
- {
+  {
     "name": "Bitszn",
     "webservices": "https://testnet.celestia.valopers.com",
     "x": "bitszn_com",
@@ -520,7 +501,7 @@
     "explorer": "",
     "bridge_explorer": "https://celestia-bridges.stakeus.xyz/",
     "snapshot": "https://snapshots2.stakeus.xyz/celestia-testnet/mocha-4_cl_4625541.tar.lz4",
-    "snapshot_bridge": "https://celestia-services.stakeus.xyz/",
+    "bridge_snap": "https://celestia-services.stakeus.xyz/",
     "api": "https://celestia-testnet-api.stakeus.xyz",
     "rpc": "https://celestia-testnet-rpc.stakeus.xyz",
     "grpc": "celestia-testnet-grpc.stakeus.xyz",
