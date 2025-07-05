@@ -336,6 +336,11 @@
 {
   "name": "Encapsulate (fka KingSuper)",
   "x": "encapsulate_xyz",
+   "webservices": "https://encapsulate.xyz/services/celestia",
+  "api": "https://api.celestia.mainnet.encapsulate.xyz",
+  "rpc": "https://rpc.celestia.mainnet.encapsulate.xyz",
+  "grpc": "https://grpc.celestia.mainnet.encapsulate.xyz",
+  "bridge_snap": "https://encapsulate.xyz/snapshots/celestia-bridge-testnet",
   "validatorlogo": "encapsulate.jpg",
   "content": {
     "Celestia Bridge Testnet": "https://encapsulate.xyz/snapshots/celestia-bridge-testnet"
