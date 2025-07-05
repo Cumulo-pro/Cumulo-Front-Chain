@@ -48,8 +48,8 @@
        "tools": "State-sync",
        "tools_url": {
         "State-sync": "https://services.lavenderfive.com/testnet/celestia/statesync"
-    },
-         "content":{
+      },
+       "content":{
             "Installation Guide": "https://services.lavenderfive.com/testnet/celestia/installation"
           },
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-lavenderfive-nodes"
@@ -131,7 +131,7 @@
             "RPC Scanner": "https://itrocket.net/services/testnet/celestia/public-rpc/",
             "consensus-signal-tracker": "https://itrocket.net/services/testnet/celestia/analytics/consensus-signal-tracker/"
           },
-            "content_url": {
+         "content": {
             "Consensus Node installation (with Cheat sheet & upgrade guides)": "https://itrocket.net/guides/consensus-node-installation",
             "Bridge Node installation (with Cheat sheet & upgrade guides)": "https://itrocket.net/guides/bridge-node-installation",
             "Full Storage Node installation (with Cheat sheet & upgrade guides)": "https://itrocket.net/guides/full-storage-node-installation",
@@ -250,7 +250,7 @@
           "rpc": "https://celestia-testnet-rpc.contributiondao.com",
           "snapshot": "https://services.contributiondao.com/testnet/celestia/snapshots",
           "tools": "Pruning node snapshot (Every 6 hours)",
-         "content_url": {
+         "content": {
             "Celestia node Installation Guide": "https://services.contributiondao.com/testnet/celestia/installation"
           },
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributiondao"
@@ -292,7 +292,7 @@
   "x": "NakoTurk",
   "validatorlogo": "nakoturk.jpg",
   "tools": "Celestia Mocha Testnet Turkish Validator, Bridge, Full Storage ve Light Node Guides",
-  "content_url": {
+  "content": {
     "Celestia Mocha Testnet Turkish Step by Step Guide": "https://github.com/okannako/celestiamocha",
     "Celestia Mocha Testnet Turkish Script Guide": "https://github.com/okannako/celestiamochascript",
     "Celestia Endpoints Ninja" : "https://celestia.endpoints.ninja/"
@@ -334,7 +334,7 @@
     "State-Sync": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/state-sync",
     "Upgrade History": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/upgrade"
   },
-  "content_url": {
+  "content": {
     "Installation guide": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/installation"
   },
   "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#nodes-hub-contribution-httpsnodeshubonline"
@@ -368,7 +368,7 @@
     "Terraform for Celestia (GitHub)": "https://github.com/Crouton-Digital/terraform-ssh-celestia",
     "Tested Code of Celestia": "https://drive.google.com/drive/u/0/folders/1881mgxtVEY9QqU2xywFw9s0ZScBzCLik"
   },
-  "content_url": {
+  "content": {
     "Guide": "https://crouton.digital/services/testnets/celestia"
   },
   "snapshot": "https://storage.crouton.digital/testnet/celestia/snapshots/celestia_latest.tar.lz4",
@@ -386,7 +386,7 @@
   "grpc": "celestia-testnet-grpc.stake-town.com:443",
   "snapshot": "https://services.stake-town.com/home/testnet/celestia/sync",
   "State-Sync": "https://services.stake-town.com/home/testnet/celestia/sync",
-  "content_url": {
+  "content": {
     "Installation Guide": "https://services.stake-town.com/home/testnet/celestia/installation"
   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#staketown"
@@ -430,7 +430,7 @@
     "rpc": "https://celestia-testnet-rpc.stakeus.xyz",
     "grpc": "celestia-testnet-grpc.stakeus.xyz",
     "addrbook": "https://snapshots2.stakeus.xyz/celestia-testnet/addrbook.json",
-    "content_url": {
+    "content": {
     "Setup Guides": "https://celestia-services.stakeus.xyz/"
       },
       "tools": "Celestia Faucet",
@@ -516,7 +516,7 @@
         "CelestiaUltraBot": "https://validexis.com/celestiaultrabot",
         "Dashboard Upgrades": "https://celestiabridge.com/testnet/upgrades"
     },
-    "content_url": {
+    "content": {
         "Node Installation": "https://services.validexis.com/testnets/celestia/validator-node-installation",
         "Useful Commands": "https://services.validexis.com/testnets/celestia/validator-node-installation/useful-commands",
         "Full Node Installation": "https://services.validexis.com/testnets/celestia/full-node-installation",
@@ -537,7 +537,7 @@
     "grpc": "celestia-testnet-grpc.stakeus.xyz",
     "addrbook": "https://snapshots2.stakeus.xyz/celestia-testnet/addrbook.json",
     "peers": "https://snapshots2.stakeus.xyz/celestia-testnet/mocha-4_cl_4625541.tar.lz4",
-    "content_url": {
+    "content": {
         "Node Setup Guide": "https://celestia-services.stakeus.xyz/"
     },
     "tools_url": {
