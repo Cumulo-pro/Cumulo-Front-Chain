@@ -199,7 +199,10 @@
           "rpc": "https://celestia-testnet-rpc.openbitlab.com",
           "grpc": "celestia-testnet-grpc.openbitlab.com:443",
           "snapshot": "https://openbitlab.com/network/24/Celestia/snapshot",
-          "tools": "Srvcheck monitoring tool, Validator Monitor bot",
+          "tools_url": {
+            "celestia-srvcheck": "https://github.com/openbitlab/celestia-srvcheck",
+            "celestia-telegram-bot": "https://t.me/celestia_validator_monitor_bot"
+        },
         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-openbitlab"
     },
     {
