@@ -37,6 +37,4 @@ To propose changes or add your validator’s resources:
   "api": "https://api.celestia.cumulo.com.es",
   "explorer": "https://explorer.celestia.org/validator/celestiavaloper...",
   "snap_url": "https://snapshots.cumulo.com.es/celestia/latest.tar.lz4",
-  ...
-  }
 }
