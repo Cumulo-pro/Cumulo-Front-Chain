@@ -459,6 +459,7 @@
     "x": "validexis",
     "validatorlogo": "validexis.jpg",
     "explorer": "",
+    "bridge_explorer": "https://celestiabridge.com/testnet",
     "snapshot": "https://services.validexis.com/testnets/celestia/snapshot",
     "archive_snapshot": "https://services.validexis.com/testnets/celestia/snapshot",
     "bridge_snap": "https://services.validexis.com/testnets/celestia/snapshot",
