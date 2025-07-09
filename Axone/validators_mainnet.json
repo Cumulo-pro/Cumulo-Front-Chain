@@ -13,6 +13,15 @@
     "validatorlogo": "aknodes.jpg",
     "explorer": "https://explorer.aknodes.com/"
 },
+  {
+    "name": "High Stakes",
+    "webservices": "",
+    "x": "HighStakes_CH",
+    "validatorlogo": "highstakes.jpg",
+    "rpc": "https://axone-rpc.highstakes.ch",
+    "api": "https://axone-api.highstakes.ch",
+    "grpc": "axone-grpc.highstakes.ch"
+},
    {
       "name": "Cumulo",
       "x": "Cumulo_pro",
