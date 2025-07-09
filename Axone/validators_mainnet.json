@@ -32,6 +32,23 @@
     "api": "https://axone-api.highstakes.ch",
     "grpc": "axone-grpc.highstakes.ch"
 },
+  {
+    "name": "NodeStake",
+    "webservices": "https://nodestake.org/axone",
+    "x": "NodeStake_top",
+    "validatorlogo": "nodestake.jpg",
+    "explorer": "https://explorer.nodestake.org/axone",
+    "seeds": "327fb4151de9f78f29ff10714085e347a4e3c836@rpc.axone.nodestake.org:666",
+    "api": "https://api.axone.nodestake.org",
+    "rpc": "https://rpc.axone.nodestake.org",
+    "grpc": "grpc.axone.nodestake.org:443",
+    "peers": "b356ae3dbfc97a21a89db0d58fdf00c7158d4d85@142.132.131.184:26656,dcc0c9c254bdb81107b61f30ddb5f9ed32f24645@168.119.143.51:18656,a963a7a927a49dd66e9bf1c1a04127d34d7edb6f@65.21.227.52:26332,b5b93e898b3df6ac6ee658cf6bc8cb7cac52b3d4@104.234.124.70:26656,740741048700f4e8cc1fb6609bddc569e5b9d6d5@65.108.236.5:20056,ea1d3b5b70ac85d553a645561fbfd95577afee4c@148.113.153.62:26656,88a89303f7efed5310d2333fc40940aaacac7d3d@217.160.102.31:26656",
+    "snapshot": "https://nodestake.org/axone",
+    "addrbook": "https://ss.axone.nodestake.org/addrbook.json",
+    "content":{
+          "Node Guide": "https://nodestake.org/axone"
+     }
+    },
    {
       "name": "Cumulo",
       "x": "Cumulo_pro",
