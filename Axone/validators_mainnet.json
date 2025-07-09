@@ -5,7 +5,21 @@
     "x": "bitszn_com",
     "validatorlogo": "bitszn.png",
     "explorer": "https://axone.valopers.com"
-}
-
-  
+},
+{
+    "name": "AKNodes",
+    "webservices": "",
+    "x": "AKNodes",
+    "validatorlogo": "aknodes.jpg",
+    "explorer": "https://explorer.aknodes.com/"
+},
+   {
+      "name": "Cumulo",
+      "x": "Cumulo_pro",
+      "webservices": "https://cumulo.pro/services/axone",
+      "validatorlogo": "cumulo.jpg",
+      "rpc": "https://rpc.axone.cumulo.com.es",
+      "api": "https://api.axone.cumulo.com.es",
+      "grpc": "grpc.axone.cumulo.com.es"
+    }
 ]
