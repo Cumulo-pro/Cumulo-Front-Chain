@@ -8,10 +8,20 @@
 },
 {
     "name": "AKNodes",
-    "webservices": "",
+    "webservices": "https://services.aknodes.com/mainnet-networks/axone",
     "x": "AKNodes",
     "validatorlogo": "aknodes.jpg",
-    "explorer": "https://explorer.aknodes.com/"
+    "explorer": "https://explorer.aknodes.com/",
+    "rpc": "https://rpc.axone-mainnet.aknodes.net",
+    "api": "https://api.axone-mainnet.aknodes.net",
+    "grpc": "grpc.axone-mainnet.aknodes.net:9290",
+    "snapshot": "https://services.aknodes.com/mainnet-networks/axone/sync",
+    "tools_url": {
+        "State Sync": "https://services.aknodes.com/mainnet-networks/axone/sync"
+     },
+    "content":{
+          "Node Guide": "https://services.aknodes.com/mainnet-networks/axone/installation"
+     }
 },
   {
     "name": "High Stakes",
