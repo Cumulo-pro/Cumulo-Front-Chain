@@ -70,8 +70,8 @@
       "x": "indonodev",
       "webservices": "",
       "validatorlogo": "indonodev.png",
-      "rpc": "",
-      "api": "",
+      "rpc": "https://rpc.axone.indonode.net",
+      "api": "https://api.axone.indonode.net",
       "grpc": ""
     },
    {
