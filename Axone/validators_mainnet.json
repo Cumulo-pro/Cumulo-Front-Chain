@@ -74,6 +74,18 @@
       "api": "https://api.axone.indonode.net",
       "grpc": ""
     },
+  {
+    "name": "WinNode",
+    "webservices": "",
+    "x": "WinNode",
+    "validatorlogo": "winnode.jpg",
+    "rpc": "https://rpc-axone.winsnip.site",
+    "api": " https://api-axone.winsnip.site", 
+    "grpc": " https://grpc-axone.winsnip.site",
+    "addrbook": "https://snapshot-axone.winsnip.site/addrbook.json",
+    "snapshot": "https://snapshot-axone.winsnip.site",
+    "explorer": "https://portal.winsnip.xyz/axone-main"
+  },
    {
       "name": "Cumulo",
       "x": "Cumulo_pro",
