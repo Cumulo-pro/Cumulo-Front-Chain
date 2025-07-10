@@ -66,6 +66,15 @@
      }
    },
    {
+      "name": "Indonode",
+      "x": "indonodev",
+      "webservices": "",
+      "validatorlogo": "indonodev.png",
+      "rpc": "",
+      "api": "",
+      "grpc": ""
+    },
+   {
       "name": "Cumulo",
       "x": "Cumulo_pro",
       "webservices": "https://cumulo.pro/services/axone",
