@@ -50,6 +50,22 @@
      }
     },
    {
+    "name": "LuckyStar",
+    "webservices": "",
+    "x": "LuckyStar_Asia",
+    "validatorlogo": "luckystar.jpg",
+    "api": "https://axone-mainnet-api.luckystar.asia",
+    "rpc": "https://axone-mainnet-rpc.luckystar.asia",
+    "grpc": "https://axone-mainnet-grpc.luckystar.asia",
+    "snapshot": "https://luckystar-1.gitbook.io/luckystar.asia/mainnet/cosmos-eco/axone/snapshot",
+    "websocket": "wss://axone-mainnet-rpc.luckystar.asia/ws",
+    "addrbook": "",
+    "explorer": "https://explorer.luckystar.asia/Axone-Mainnet",
+        "content":{
+      "Node Guide": "https://luckystar-1.gitbook.io/luckystar.asia/mainnet/cosmos-eco/axone"
+     }
+   },
+   {
       "name": "Cumulo",
       "x": "Cumulo_pro",
       "webservices": "https://cumulo.pro/services/axone",
