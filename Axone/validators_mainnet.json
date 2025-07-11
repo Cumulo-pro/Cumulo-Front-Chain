@@ -88,6 +88,25 @@
     "snapshot": "https://snapshot-axone.winsnip.site",
     "explorer": "https://portal.winsnip.xyz/axone-main"
   },
+   "name": "NODESYNC",
+    "webservices": "https://nodesync.top/services/mainnet/axone/",
+    "x": "nodesync_top",
+    "validatorlogo": "nodesync.jpg",
+    "api": "https://axone-api.nodesync.top",
+    "rpc": "https://axone-rpc.nodesync.top",
+    "grpc": "",
+    "snapshot": "https://nodesync.top/services/mainnet/axone/api-sync#snapshot",
+    "websocket": "",
+    "addrbook": "",
+    "explorer": "https://explorer.nodesync.top/Axone-Mainnet",
+     "content":{
+      "Node Guide": "https://nodesync.top/services/mainnet/axone/installation"
+     },
+     "tools_url": {
+        "State Sync": "https://nodesync.top/services/mainnet/axone/api-sync/#state-sync",
+        "Peers Scaner": "https://nodesync.top/services/mainnet/axone/api-sync#peers-scanner"
+     }
+   },
    {
       "name": "Cumulo",
       "x": "Cumulo_pro",
