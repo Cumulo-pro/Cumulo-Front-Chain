@@ -222,6 +222,25 @@
     "snapshot": "https://documentation.codeblocklabs.com/blockchain-nodes/axone/snapshot"
 },
    {
+    "name": "Mellifera",
+    "x": "",
+    "validatorlogo": "",
+    "webservices": "",
+    "guides": {
+        "Guide": "https://services.mellifera.network/Mainnet/axone-network/install"
+    },
+    "rpc": "https://axone-mainnet-rpc.mellifera.network:443",
+    "api": "https://axone-mainnet-rest.mellifera.network:443",
+    "grpc": "axone-mainnet-grpc.mellifera.network:443",
+    "addrbook": "",
+     "peers": "8638a5ec1622743940c8e30322f6fa503631d468@95.217.85.81:36456",
+     "seeds": "8638a5ec1622743940c8e30322f6fa503631d468@95.217.85.81:36456",
+    "snapshot": "https://services.mellifera.network/Mainnet/axone-network/snapshot_and_data",
+      "tools_url": {
+        "State Sync": "https://services.mellifera.network/Mainnet/axone-network/state_sync"
+     }
+},
+   {
       "name": "Cumulo",
       "x": "Cumulo_pro",
       "webservices": "https://cumulo.pro/services/axone",
