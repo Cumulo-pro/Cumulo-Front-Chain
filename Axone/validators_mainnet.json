@@ -192,6 +192,22 @@
     "snapshot": "",
     "explorer": "https://explorer.maouam.xyz/axone-mainnet"
   },
+  {
+    "name": "NODEJUMPER",
+    "x": "nodejumper",
+    "validatorlogo": "nodejumper.jpg",
+    "webservices": "https://app.nodejumper.io/axone",
+    "guides": {
+        "Guide": "https://app.nodejumper.io/axone/installation"
+    },
+    "rpc": "https://rpc.nodejumper.io:443/axone",
+    "api": "https://rest.nodejumper.io/axone",
+    "addrbook": "https://snapshots.nodejumper.io/axone/addrbook.json",
+    "snapshot": "https://app.nodejumper.io/axone/sync",
+     "tools_url": {
+        "decentralization_map": "https://app.nodejumper.io/axone/map"
+    }
+},
    {
       "name": "Cumulo",
       "x": "Cumulo_pro",
