@@ -69,6 +69,8 @@
       "name": "Indonode",
       "x": "indonodev",
       "webservices": "",
+      "snapshot": "https://snapshots.indonode.net/axone/",
+      "explorer": "https://explorer.indonode.net/axone",
       "validatorlogo": "indonodev.png",
       "rpc": "https://rpc.axone.indonode.net",
       "api": "https://api.axone.indonode.net",
