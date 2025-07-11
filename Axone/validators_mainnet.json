@@ -209,6 +209,19 @@
     }
 },
    {
+    "name": "CodeBlockLabs",
+    "x": "codeblocklabs",
+    "validatorlogo": "codeblocklabs.jpg",
+    "webservices": "https://documentation.codeblocklabs.com/blockchain-nodes/axone",
+    "guides": {
+        "Guide": "https://documentation.codeblocklabs.com/blockchain-nodes/axone"
+    },
+    "rpc": "https://axone-rpc.codeblocklabs.com",
+    "api": "https://axone-api.codeblocklabs.com",
+    "addrbook": "http://green.codeblocklabs.com/mainnet/axone/addrbook.json",
+    "snapshot": "https://documentation.codeblocklabs.com/blockchain-nodes/axone/snapshot"
+},
+   {
       "name": "Cumulo",
       "x": "Cumulo_pro",
       "webservices": "https://cumulo.pro/services/axone",
