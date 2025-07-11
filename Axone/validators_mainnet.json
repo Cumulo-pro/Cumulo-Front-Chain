@@ -165,6 +165,22 @@
      }
   },
    {
+    "name": "Will | WHTech",
+    "webservices": "https://whtech.gitbook.io/services/guides/mainnet/axone/installation",
+    "x": "WHTechno",
+    "validatorlogo": "whtechno.jpg",
+    "rpc": "",
+    "api": " ", 
+    "grpc": "",
+    "addrbook": "",
+    "snapshot": "",
+    "explorer": "https://explorer-whtech.netlify.app/axone-mainnet",
+    "content":{
+      "Node Guide": "https://whtech.gitbook.io/services/guides/mainnet/axone/installation",
+      "Key Management": "https://whtech.gitbook.io/services/guides/mainnet/axone/command"
+     }
+  },
+   {
       "name": "Cumulo",
       "x": "Cumulo_pro",
       "webservices": "https://cumulo.pro/services/axone",
