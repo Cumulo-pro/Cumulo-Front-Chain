@@ -257,6 +257,20 @@
      }
 },
    {
+    "name": "sychonix",
+    "x": "sychonixx",
+    "validatorlogo": "sychonixx.jpg",
+    "webservices": "",
+    "guides": {
+        "Guide": "https://sychonix.com/mainnet/axone/installation"
+    },
+    "rpc": "https://rpc-axone.sychonix.com",
+    "api": "https://api-axone.sychonix.com",
+    "grpc": "",
+     "snapshot": "https://sychonix.com/mainnet/axone/snap",
+    "explorer": "https://explorer.sychonix.com/axone-mainnet"
+},
+   {
       "name": "Cumulo",
       "x": "Cumulo_pro",
       "webservices": "https://cumulo.pro/services/axone",
