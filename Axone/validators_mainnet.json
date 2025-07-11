@@ -82,11 +82,14 @@
     "x": "WinNode",
     "validatorlogo": "winnode.jpg",
     "rpc": "https://rpc-axone.winsnip.site",
-    "api": " https://api-axone.winsnip.site", 
-    "grpc": " https://grpc-axone.winsnip.site",
+    "api": "https://api-axone.winsnip.site", 
+    "grpc": "https://grpc-axone.winsnip.site",
     "addrbook": "https://snapshot-axone.winsnip.site/addrbook.json",
     "snapshot": "https://snapshot-axone.winsnip.site",
-    "explorer": "https://portal.winsnip.xyz/axone-main"
+    "explorer": "https://portal.winsnip.xyz/axone-main",
+    "content":{
+      "Node Guide": "https://service.winsnip.xyz/service/axone/installation"
+     }
   },
   {
    "name": "NODESYNC",
@@ -146,6 +149,21 @@
         "State Sync": "https://node39.top/docs/Mainnet/Axone/Sync%20&%20Endpoint/"
      }
 },
+  {
+    "name": "Ryddd",
+    "webservices": "",
+    "x": "Ryddd29",
+    "validatorlogo": "ryddd.png",
+    "rpc": "https://rpc-axone.provewithryd.xyz",
+    "api": " https://api-axone.provewithryd.xyz", 
+    "grpc": "",
+    "addrbook": "",
+    "snapshot": "",
+    "explorer": "https://explorer.provewithryd.xyz/axone-mainnet/",
+    "content":{
+      "Node Guide": "https://docs.provewithryd.xyz/mainnet/axone"
+     }
+  },
    {
       "name": "Cumulo",
       "x": "Cumulo_pro",
