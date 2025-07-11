@@ -88,6 +88,7 @@
     "snapshot": "https://snapshot-axone.winsnip.site",
     "explorer": "https://portal.winsnip.xyz/axone-main"
   },
+  {
    "name": "NODESYNC",
     "webservices": "https://nodesync.top/services/mainnet/axone/",
     "x": "nodesync_top",
