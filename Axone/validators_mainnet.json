@@ -108,6 +108,26 @@
         "Peers Scaner": "https://nodesync.top/services/mainnet/axone/api-sync#peers-scanner"
      }
    },
+  {
+   "name": "NODERS",
+    "webservices": "https://noders.services/mainnet/axone/",
+    "x": "NODERS_TEAM",
+    "validatorlogo": "noders.jpg",
+    "explorer": "",
+    "peers": "3714fae5df6b7c18a0fb1409b7284a4bfc2a5af7@axone-rpc.noders.services:20056",
+    "seeds": "3714fae5df6b7c18a0fb1409b7284a4bfc2a5af7@axone-seed.noders.services:20056",
+    "api": "https://axone-api.noders.services",
+    "rpc": "https://axone-rpc.noders.services",
+    "grpc": "axone-grpc.noders.services:443",
+    "snapshot": "https://noders.services/mainnet/axone/snapshot",
+    "content":{
+      "Node Guide": "https://noders.services/mainnet/axone/install"
+     },
+     "tools_url": {
+        "State Sync": "https://noders.services/mainnet/axone/statesync",
+        "Monitoring": "https://noders.services/mainnet/axone/monitoring"
+     }
+},
    {
       "name": "Cumulo",
       "x": "Cumulo_pro",
