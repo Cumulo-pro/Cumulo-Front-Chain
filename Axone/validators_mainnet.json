@@ -129,6 +129,24 @@
      }
 },
    {
+    "name": "Node39",
+    "x": "node39_",
+    "validatorlogo": "node39.jpg",
+    "api": "https://axone-api.node39.top:443",
+    "rpc": "https://axone-rpc.node39.top:443",
+    "grpc": "axone-grpc.node39.top:443",
+    "explorer": "https://explorer.node39.top/axone",
+    "peers": "1849d58c77c446feae4bf8ad109f494dfc69a268@axone-peers.node39.top:18656",
+    "snapshot": "https://node39.top/docs/Mainnet/Axone/Sync%20&%20Endpoint/#snapshot",
+    "webservices": "https://node39.top/docs/Mainnet/Axone/Installation",
+     "content":{
+      "Node Guide": "https://node39.top/docs/Mainnet/Axone/Installation"
+     },
+     "tools_url": {
+        "State Sync": "https://node39.top/docs/Mainnet/Axone/Sync%20&%20Endpoint/"
+     }
+},
+   {
       "name": "Cumulo",
       "x": "Cumulo_pro",
       "webservices": "https://cumulo.pro/services/axone",
