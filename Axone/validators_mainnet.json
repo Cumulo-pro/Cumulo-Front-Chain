@@ -241,6 +241,22 @@
      }
 },
    {
+    "name": "StakeAngle",
+    "x": "",
+    "validatorlogo": "",
+    "webservices": "https://services.stakeangle.com/mainnets/axone",
+    "guides": {
+        "Guide": "https://services.stakeangle.com/mainnets/axone/installation"
+    },
+    "rpc": "https://axone-rpc.stakeangle.com",
+    "api": "http://axone-rpc.stakeangle.com:41717",
+    "grpc": "axone-rpc.stakeangle.com:41790",
+    "snapshot": "",
+      "tools_url": {
+        "State Sync": "https://services.stakeangle.com/mainnets/axone/state-sync"
+     }
+},
+   {
       "name": "Cumulo",
       "x": "Cumulo_pro",
       "webservices": "https://cumulo.pro/services/axone",
