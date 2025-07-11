@@ -180,6 +180,18 @@
       "Key Management": "https://whtech.gitbook.io/services/guides/mainnet/axone/command"
      }
   },
+  {
+    "name": "Nodelab",
+    "webservices": "",
+    "x": "MaouamNodelab",
+    "validatorlogo": "nodelab.jpg",
+    "rpc": "https://rpc-axone-mainnet.maouam.xyz/ ",
+    "api": "https://api-axone-mainnet.maouam.xyz/ ", 
+    "grpc": "",
+    "addrbook": "",
+    "snapshot": "",
+    "explorer": "https://explorer.maouam.xyz/axone-mainnet"
+  },
    {
       "name": "Cumulo",
       "x": "Cumulo_pro",
