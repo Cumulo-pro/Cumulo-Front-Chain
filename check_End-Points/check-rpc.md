@@ -48,6 +48,9 @@ The system consists of:
 
 The decentralized nature of the agents makes it easy to expand across more data centers and jurisdictions, increasing transparency and trust.
 
+<img width="806" height="721" alt="image" src="https://github.com/user-attachments/assets/79182fad-dcd9-4bc8-8346-49450486104f" />
+
+
 ## ✅ Why Is It Trustworthy?
 
 | Feature              | Description                                                                 |
