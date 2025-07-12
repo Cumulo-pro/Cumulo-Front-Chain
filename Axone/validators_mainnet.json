@@ -271,6 +271,17 @@
     "explorer": "https://explorer.sychonix.com/axone-mainnet"
 },
    {
+    "name": "Bitnodes",
+    "x": "0psmanager",
+    "validatorlogo": "bitnodes.jpg",
+    "webservices": "",
+    "rpc": "https://axone-rpc.bitnodes.xyz",
+    "api": "https://axone-api.bitnodes.xyz",
+    "grpc": "axone-grpc.bitnodes.xyz",
+     "snapshot": "",
+    "explorer": "https://explorer.bitnodes.xyz/"
+},
+   {
       "name": "Cumulo",
       "x": "Cumulo_pro",
       "webservices": "https://cumulo.pro/services/axone",
