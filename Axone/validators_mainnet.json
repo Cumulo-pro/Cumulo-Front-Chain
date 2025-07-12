@@ -296,7 +296,7 @@
       "name": "Cumulo",
       "x": "Cumulo_pro",
       "webservices": "https://cumulo.pro/services/axone",
-      "validatorlogo": "cumulo.jpg",
+      "validatorlogo": "cumulo.png",
       "snapshot": "http://localhost/cumulo/services_cumulo0/axone/snapshot",
       "rpc": "https://rpc.axone.cumulo.com.es",
       "api": "https://api.axone.cumulo.com.es",
