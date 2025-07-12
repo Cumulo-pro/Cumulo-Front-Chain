@@ -197,7 +197,7 @@
     "x": "nodejumper",
     "validatorlogo": "nodejumper.jpg",
     "webservices": "https://app.nodejumper.io/axone",
-    "guides": {
+    "content": {
         "Guide": "https://app.nodejumper.io/axone/installation"
     },
     "rpc": "https://rpc.nodejumper.io:443/axone",
@@ -226,7 +226,7 @@
     "x": "",
     "validatorlogo": "",
     "webservices": "",
-    "guides": {
+    "content": {
         "Guide": "https://services.mellifera.network/Mainnet/axone-network/install"
     },
     "rpc": "https://axone-mainnet-rpc.mellifera.network:443",
@@ -293,6 +293,17 @@
     "explorer": "https://ping.dnsarz.xyz/axone"
 },
    {
+    "name": "Catsmile Project",
+    "x": "catsmileproject",
+    "validatorlogo": "catsmileproject.jpg",
+    "webservices": "https://www.catsmile.cloud/Mainnet/axone",
+    "rpc": "https://rpc-axone.catsmile.space",
+    "api": "https://api-axone.catsmile.space",
+    "grpc": "grpc-axone.catsmile.space",
+    "addrbook": "https://files-axone.catsmile.space/addrbook.json",
+    "explorer": "https://explorer.catsmile.cloud/axone-mainnet/staking"
+},
+   {
       "name": "Cumulo",
       "x": "Cumulo_pro",
       "webservices": "https://cumulo.pro/services/axone",
@@ -300,6 +311,10 @@
       "snapshot": "http://localhost/cumulo/services_cumulo0/axone/snapshot",
       "rpc": "https://rpc.axone.cumulo.com.es",
       "api": "https://api.axone.cumulo.com.es",
-      "grpc": "grpc.axone.cumulo.com.es"
+      "grpc": "grpc.axone.cumulo.com.es",
+      "peers": "88a89303f7efed5310d2333fc40940aaacac7d3d@217.160.102.31:26656",
+      "content":{
+        "Node Guide": "https://cumulo.pro/services/axone/install"
+       }
     }
 ]
