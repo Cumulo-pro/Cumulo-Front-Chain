@@ -102,7 +102,7 @@
         "validatorlogo": "blackblocks.jpg",
         "rpc": "https://rpc.celestia-mocha-4.blackblocks.io/",
         "api": "https://bridge.celestia-mocha-4.blackblocks.io/",
-        "snapshot": "https://wiki.blackblocks.io/en/public/services/testnet/celestia#full-node-archival-snapshot",
+        "archive_snapshot": "https://wiki.blackblocks.io/en/public/services/testnet/celestia#full-node-archival-snapshot",
         "snap_url": "http://snapshots.blackblocks.io/testnet/celestia/fullnode/archive/celestia_fullnode_archive_mocha-4_latest.tar.lz4",
         "bridge_snap": "https://wiki.blackblocks.io/en/public/services/testnet/celestia#bridge-node-archival-snapshot",
         "bridge_snap_url": "http://snapshots.blackblocks.io/testnet/celestia/bridge/archive/celestia_bridge_archive_mocha-4_latest.tar.lz4",
