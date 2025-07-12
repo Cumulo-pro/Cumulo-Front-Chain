@@ -282,6 +282,17 @@
     "explorer": "https://explorer.bitnodes.xyz/"
 },
    {
+    "name": "dnsarz",
+    "x": "aidilfahmii",
+    "validatorlogo": "dnsarz.jpg",
+    "webservices": "https://dnsarz.xyz/services/mainnet/axone/",
+    "rpc": "https://rpc-axone.dnsarz.xyz:443",
+    "api": "https://api-axone.dnsarz.xyz:443",
+    "grpc": "",
+     "addrbook": "https://files.dnsarz.xyz/mainnet/axone/addrbook.json",
+    "explorer": "https://ping.dnsarz.xyz/axone"
+},
+   {
       "name": "Cumulo",
       "x": "Cumulo_pro",
       "webservices": "https://cumulo.pro/services/axone",
