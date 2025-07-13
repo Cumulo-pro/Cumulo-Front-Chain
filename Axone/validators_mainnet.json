@@ -321,6 +321,21 @@
         "State Sync": "https://services.shazoes.xyz/mainnets/axone/sync"
      }
 },
+  {
+    "name": "Nodevism",
+    "webservices": "https://docs.nodevism.com/mainnet/axone",
+    "x": "Sir_Bell_",
+    "validatorlogo": "nodevism.jpg",
+    "api": "https://api.axone.nodevism.com/",
+    "rpc": "https://rpc.axone.nodevism.com/",
+    "grpc": "",
+    "snapshot": "https://docs.nodevism.com/mainnet/axone/snapshot",
+    "seeds": "bf44feb42ffadbaeec76b47f78cc5e21fc5f8809@@axone.nodevism.com:39656",
+    "peers": "",
+     "content":{
+      "Node Guide": "https://docs.nodevism.com/mainnet/axone/installation"
+     }
+    },
    {
       "name": "Cumulo",
       "x": "Cumulo_pro",
