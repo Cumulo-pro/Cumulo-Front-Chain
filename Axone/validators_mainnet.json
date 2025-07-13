@@ -341,7 +341,6 @@
       "x": "Cumulo_pro",
      "validatorlogo": "cumulo.jpg",
       "webservices": "https://cumulo.pro/services/axone",
-      "validatorlogo": "cumulo.png",
       "snapshot": "http://localhost/cumulo/services_cumulo0/axone/snapshot",
       "rpc": "https://rpc.axone.cumulo.com.es",
       "api": "https://api.axone.cumulo.com.es",
