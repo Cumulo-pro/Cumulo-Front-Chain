@@ -304,6 +304,24 @@
     "explorer": "https://explorer.catsmile.cloud/axone-mainnet/staking"
 },
    {
+    "name": "Shazoes",
+    "x": "Shazoes",
+    "validatorlogo": "shazoes.jpg",
+    "webservices": "https://services.shazoes.xyz/mainnets/axone/",
+    "rpc": "https://axone-mainnet-api.shazoes.xyz",
+    "api": "https://axone-mainnet-rpc.shazoes.xyz",
+    "grpc": "axone-mainnet-grpc.shazoes.xyz:30490",
+    "snapshot": "https://services.shazoes.xyz/mainnets/axone/sync",
+    "addrbook": "https://files.shazoes.xyz/mainnets/axone/addrbook.json",
+    "explorer": "",
+      "content": {
+        "Guide": "https://services.shazoes.xyz/mainnets/axone/node-installation"
+    },
+      "tools_url": {
+        "State Sync": "https://services.shazoes.xyz/mainnets/axone/sync"
+     }
+},
+   {
       "name": "Cumulo",
       "x": "Cumulo_pro",
      "validatorlogo": "cumulo.jpg",
