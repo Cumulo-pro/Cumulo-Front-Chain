@@ -385,21 +385,27 @@
 },
     {
    "name": "NODERS",
-    "webservices": "https://noders.services/mainnet-networks/celestia/",
+    "webservices": "https://noders.services/testnet/celestia/",
     "x": "NODERS_TEAM",
     "validatorlogo": "noders.jpg",
     "explorer": "https://noders.services/testnet-networks/celestia",
-    "peers": "8587162e70023e301fa7265ac5750a438e5b2692@65.109.54.91:21059",
-    "seeds": "",
+    "peers": "2d40e73c3b0fcccc5c7806621ff9943a7fb3199e@celestia-t-rpc.noders.services:11656",
+    "seeds": "b9d69dd4f030a52970943839b7ff41b8ab56e3ab@celestia-t-seed.noders.services:11633",
     "api": "https://celestia-t-api.noders.services",
     "rpc": "https://celestia-t-rpc.noders.services",
     "grpc": "celestia-t-grpc.noders.services:21090",
-    "snapshot": "",
-    "addrbook": "",
+    "snapshot": "https://noders.services/testnet/celestia/snapshot",
+    "addrbook": "https://snapshots.noders.services/celestia/addrbook.json",
     "tools_url": {
-      "Celestia's complete Dashboard": "https://celestiahub.org/explorer/dashboard"
+      "Celestia's complete Dashboard": "https://celestiahub.org/explorer/dashboard",
+      "State Sync": "https://noders.services/testnet/celestia/statesync",
+      "Celestia Monitoring Setup": "https://noders.services/testnet/celestia/monitoring",
+      "Celestia Public Endpoints": "https://noders.services/testnet/celestia/public-endpoints"
+    },
+      "content": {
+        "Installation Guide": "https://noders.services/testnet/celestia/install"
     }
-},
+   },
      {
     "name": "NodeStake",
     "webservices": "https://noders.services/testnet/overview",
