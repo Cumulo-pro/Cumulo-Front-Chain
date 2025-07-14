@@ -148,7 +148,7 @@
     "api": "https://dymension-api.noders.services/",
     "rpc": "https://dymension-rpc.noders.services/",
     "grpc": "http://dymension-grpc.noders.services:12090/",
-    "jsonrpc": "https://dymension-jsonrpc.noders.services/",
+    "evm": "https://dymension-jsonrpc.noders.services/",
     "addrbook": "https://noders.services/mainnet-networks/dymension/addrbook.json",
     "snapshot": "https://noders.services/mainnet-networks/dymension/snapshot",
     "tools": "State-Sync",
@@ -167,7 +167,7 @@
     "api": "https://dymension-api.lavenderfive.com/",
     "rpc": "https://dymension-rpc.lavenderfive.com/",
     "grpc": "https://dymension-jsonrpc.lavenderfive.com/",
-    "jsonrpc": "https://dymension-jsonrpc.lavenderfive.com/",
+    "evm": "https://dymension-jsonrpc.lavenderfive.com/",
     "seeds": "20e1000e88125698264454a884812746c2eb4807@seeds.lavenderfive.com:20556",
     "addrbook": "https://snapshots.lavenderfive.com/addrbooks/dymension/addrbook.json",
     "snapshot": "https://services.lavenderfive.com/mainnet/dymension/snapshot",
@@ -196,7 +196,7 @@
     "api": "https://api.dymension.silentvalidator.com/",
     "rpc": "https://rpc.dymension.silentvalidator.com/",
     "grpc": "grpc.dymension.silentvalidator.com:443",
-    "jsonrpc": "https://evm-rpc.dymension.silentvalidator.com/"
+    "evm": "https://evm-rpc.dymension.silentvalidator.com/"
 },
 {
     "name": "Kalia Network",
@@ -243,7 +243,7 @@
     "api": "https://api-dymension.whispernode.com/",
     "rpc": "https://rpc-dymension.whispernode.com/",
     "grpc": "https://grpc-dymension.whispernode.com/",
-    "jsonrpc": "https://evm-dymension.whispernode.com/",
+    "evm": "https://evm-dymension.whispernode.com/",
     "seeds": "c28827cb96c14c905b127b92065a3fb4cd77d7f6@seeds.whispernode.com:20556"
 },
 {
@@ -264,7 +264,7 @@
     "rpc": "https://dymension-rpc.publicnode.com:443",
     "api": "https://dymension-rest.publicnode.com",
     "grpc": "dymension-grpc.publicnode.com:443",
-    "jsonrpc": "https://dymension-evm-rpc.publicnode.com"
+    "evm": "https://dymension-evm-rpc.publicnode.com"
 },
 {
     "name": "POSTHUMAN",
@@ -276,7 +276,7 @@
     "wss": "wss://rpc.dymension.posthuman.digital",
     "rest": "https://rest.dymension.posthuman.digital",
     "grpc": "https://grpc.dymension.posthuman.digital",
-    "jsonrpc": "https://evm-rpc.dymension.posthuman.digital",
+    "evm": "https://evm-rpc.dymension.posthuman.digital",
     "seed_node": "82a81ed97ee8fe5a8bfa26446737865333eadca1@46.39.246.50:36656",
      "tools": "State sync",
     "tools_url": {
@@ -292,7 +292,7 @@
     "x": "brightlystake",
     "validatorlogo": "brightlystake.jpg",
     "api": "https://dym-archive.brightlystake.com/api",
-    "jsonrpc": "https://dym-archive.brightlystake.com/evm",
+    "evm": "https://dym-archive.brightlystake.com/evm",
     "grpc": "dym-archive.brightlystake.com:9290"
 },
 {
@@ -325,7 +325,7 @@
     "rpc": "https://dymension-rpc.denodes.xyz",
     "grpc": "dymension-grpc.denodes.xyz:443",
     "api": "https://dymension-api.denodes.xyz",
-    "jsonrpcc": "https://dymension-evm-rpc.denodes.xyz",
+    "evm": "https://dymension-evm-rpc.denodes.xyz",
     "addrbook": "https://dymension-snap.denodes.xyz/addrbook.json",
     "snapshot": "https://services.denodes.xyz/dymension/snapshot",
     "tools": "DymTool Monitoring Bot",
@@ -341,7 +341,7 @@
     "rpc": "https://rollapp.rpc.cumulo.com.es:443",
     "rest": "https://rollapp.rest.cumulo.com.es:443",
     "grpc": "rollapp.grpc.cumulo.com.es",
-    "jsonrpc": "rollapp.jrpc.cumulo.com.es",
+    "evm": "rollapp.jrpc.cumulo.com.es",
     "tools": "Roller Front-Chain,Grafana Dashboard",
     "tools_url": {
          "Roller Front-Chain": "https://roller.frontchain.cumulo.pro",
@@ -379,7 +379,7 @@
     "snapshot": "https://silknodes.io/services/snapshot/dymension",
     "grpc": "https://silknodes.io/services/grpc/dymension",
     "addrbook": "https://services.silknodes.io/addrbook/dymension/addrbook.json",
-    "jsonrpc": "",
+    "evm": "",
     "explorer": "https://explorer.silknodes.io/dymension",
     "peers": "https://silknodes.io/services/livepeers/dymension",
     "seeds": "https://silknodes.io/services/seednode/dymension",
