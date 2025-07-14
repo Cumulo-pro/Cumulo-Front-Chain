@@ -377,6 +377,7 @@
     "validatorlogo": "cumulo.jpg",
     "rpc": "https://rollapp.rpc.cumulo.com.es:443",
     "rest": "https://rollapp.rest.cumulo.com.es:443",
+    "api": "https://rollapp.rest.cumulo.com.es",
     "grpc": "rollapp.grpc.cumulo.com.es",
     "evm": "https://rollapp.jrpc.cumulo.com.es",
     "tools": "Roller Front-Chain,Grafana Dashboard",
