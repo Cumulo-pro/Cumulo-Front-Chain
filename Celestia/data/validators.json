@@ -482,7 +482,6 @@
   "webservices": "",
   "x": "NakoTurk",
   "validatorlogo": "nakoturk.jpg",
-  "tools": "Turkish Validator, Bridge, Full Storage, Light Node Guides",
   "content_url": {
     "Celestia Mainnet Turkish Step by Step Guide": "https://github.com/okannako/celestiamainnet",
     "Celestia Mainnet Turkish Script Guide": "https://github.com/okannako/celestiamainnetscript",
