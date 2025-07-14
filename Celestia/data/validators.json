@@ -78,14 +78,13 @@
     "seeds": "400f3d9e30b69e78a7fb891f60d76fa3c73f0ecc@celestia.rpc.kjnodes.com:12059",
     "addrbook": "https://snapshots.kjnodes.com/celestia/addrbook.json",
     "snapshot": "https://services.kjnodes.com/mainnet/celestia/snapshot/",
-    "snapshot_archival": "https://services.kjnodes.com/mainnet/celestia/snapshot-archive",
+    "archive_snapshot": "https://services.kjnodes.com/mainnet/celestia/snapshot-archive",
     "tools": "state-sync,Public RPC,Slashboard",
     "tools_url": {
         "State-sync": "https://services.kjnodes.com/mainnet/celestia/state-sync/",
         "Public RPC": "https://services.kjnodes.com/mainnet/celestia/public-rpc/",
         "Slashboard": "https://services.kjnodes.com/mainnet/celestia/slashboard/"
-    },
-    "github": ""
+    }
 },
   {
     "name": "Polkachu",
@@ -97,16 +96,14 @@
     "grpc": "celestia-grpc.polkachu.com:11690",
     "snapshot": "https://polkachu.com/tendermint_snapshots/celestia",
     "addrbook": "https://polkachu.com/addrbooks/celestia",
-    "archive": "y",
-    "rpc_archive": "https://polkachu.com/archive_snapshots/celestia",
+    "archive_snapshot": "https://polkachu.com/archive_snapshots/celestia",
     "tools": "State-sync",
     "tools_url": {
         "State-sync" :"https://polkachu.com/state_sync/celestia"
      },
    "content":{
     "Installation Guide": "https://polkachu.com/installation/celestia"
-  },
-    "github": ""
+  }
 },
   {
   "name": "cryptomolot",
@@ -129,19 +126,11 @@
     "x": "BlackBlocks_io",
     "validatorlogo": "blackblocks.jpg",
     "explorer": "https://explorer.celestia-mainnet.blackblocks.io/",
-    "archive": "y",
-    "rpc": "https://rpc.celestia-mainnet.blackblocks.io",
+     "rpc": "https://rpc.celestia-mainnet.blackblocks.io",
     "grpc": "",
     "snapshot": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#full-node-archival-snapshot",
-    "snapshot_archival": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#full-node-archival-snapshot",
-    "snapshot_bridge": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#bridge-node-archival-snapshot",
-    "addrbook": "",
-    "tools": "Bridge Archival, Full Node Archival",
-    "tools_url": {
-        "Bridge Archival": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#bridge-node-archival-snapshot",
-        "Full Node Archival": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#full-node-archival-snapshot"
-    },
-    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-blackblocks"
+    "archive_snapshot": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#full-node-archival-snapshot",
+    "bridge_snap": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#bridge-node-archival-snapshot"
 },
 {
   "name": "ITRocket",
@@ -155,8 +144,8 @@
   "rpc": "https://celestia-mainnet-rpc.itrocket.net",
   "grpc": "celestia-mainnet-grpc.itrocket.net:443",
   "websocket": "wss://celestia-mainnet-ws.itrocket.net:443/websocket",
-  "archive": "y",
   "snapshot": "https://itrocket.net/services/mainnet/celestia/",
+  "archive_snapshot": "https://itrocket.net/services/mainnet/celestia/",
   "addrbook": "",
   "tools": "Decentralization Analytics, Governance Bot, Peer scanner, RPC Scanner, DA Nodes Monitoring,Consensus-signal-tracker",
  "tools_url": {
@@ -185,9 +174,8 @@
     "seeds": "",
     "api": "https://api-celestia-archive.mainnet.validatrium.club",
     "rpc": "https://rpc-celestia-archive.mainnet.validatrium.club",
-    "archive": "y",
     "grpc": "",
-    "snapshot": "https://docs.validatrium.club/Celestia/archive-node-snapshot",
+    "archive_snapshot":: "https://docs.validatrium.club/Celestia/archive-node-snapshot",
     "addrbook": "",
     "tools": "Bridge archive snapshot",
     "tools_url": {
@@ -205,7 +193,6 @@
     "seeds": "f9f6aa4a23f8ff2bc3137fa603bfa4014b8d05cb@celestia-mainnet-seed.stakeme.pro:40656",
     "api": "https://celestia-rest.stakeme.pro",
     "rpc": "https://celestia-rpc.stakeme.pro",
-    "archive": "y",
     "grpc": "da-bridge-celestia.stakeme.pro:9090",
     "snapshot": "",
     "addrbook": "",
@@ -214,8 +201,7 @@
         "RPC scanner & peers": "https://celestia.exploreme.pro/network",
         "Consensus": "https://celestia.exploreme.pro/utilities?tab=consensus",
         "Uptime validators": "https://celestia.exploreme.pro/utilities?tab=uptime"
-    },
-    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakeme"
+    }
 },
 {
     "name": "AutoStake",
@@ -289,8 +275,7 @@
   "seeds": "24a607a217cf12be29bae5b2e8151391bde2d8c8@seed-celestia-01.stakeflow.io:15007",
   "api": "https://api-celestia-01.stakeflow.io",
   "rpc": "https://rpc-celestia-01.stakeflow.io",
-  "rpc_archive": "https://rpc-celestia-archive-01.stakeflow.io",
-  "archive": "y",
+  "archive_snapshot": "https://rpc-celestia-archive-01.stakeflow.io",
   "grpc": "grpc-celestia-01.stakeflow.io:15002",
   "snapshot": "",
   "addrbook": "",
@@ -328,7 +313,6 @@
   "seeds": "",
   "api": "https://celestia-api.chainode.tech",
   "rpc": "https://celestia-rpc.chainode.tech:33373/",
-  "archive": "y",
   "grpc": "celestia-grpc.chainode.tech:443",
    "websocket": "wss://celestia-ws.chainode.tech:33373/websocket", 
   "grpc_web": "celestia-grpcweb.chainode.tech:443",
@@ -389,7 +373,7 @@
   "seeds": "https://services.contributiondao.com/mainnet/celestia/peers",
   "api": "https://celestia-api.contributiondao.com",
   "rpc": "https://celestia-rpc.contributiondao.com",
-  "rpc_archive": "https://celestia-archive-mainnet-rpc.contributiondao.com",
+  "archive_snapshot": "https://celestia-archive-mainnet-rpc.contributiondao.com",
   "grpc": "https://celestia-archive-mainnet-grpc.contributiondao.com",
   "snapshot": "https://services.contributiondao.com/mainnet/celestia/snapshots",
   "addrbook": "",
@@ -466,7 +450,6 @@
   "webservices": "",
   "x": "jimwavefive",
   "validatorlogo": "wavefive.jpg",
-  "archive": "y",
   "api": "https://celestia-api.0xcryptovestor.com",
   "rpc": "https://celestia-rpc.0xcryptovestor.com",
   "grpc": "https://celestia-grpc.0xcryptovestor.com",
@@ -477,14 +460,13 @@
   "webservices": "",
   "x": "f5nodes",
   "validatorlogo": "f5nodes.jpg",
-  "archive": "y",
   "peers": "ec39096b831861bcda43896d098771fa9587ebce@seed.f5nodes.com:61456",
   "seeds": "ec39096b831861bcda43896d098771fa9587ebce@seed.f5nodes.com:61456",
   "api": "https://celestia-api.f5nodes.com",
   "rpc": "https://celestia-rpc.f5nodes.com",
   "grpc": "celestia-grpc.f5nodes.com:9390",
-  "snapshot": "https://celestia-snapshots-archive.f5nodes.com",
-   "prunedsnapshot": "https://celestia-snapshots.f5nodes.com",
+  "archive_snapshot": "https://celestia-snapshots-archive.f5nodes.com",
+  "snapshot": "https://celestia-snapshots.f5nodes.com",
   "addrbook": "",
   "tools": "Monitoring tool, Celestia Wiki, DA Nodes Management Script",
   "tools_url": {
@@ -530,7 +512,6 @@
   "validatorlogo": "enigma.png",
   "snapshot": "https://doc.enigma-validator.com/docs/mainnets/Celestia/snapshot",
   "addrbook": "https://doc.enigma-validator.com/docs/mainnets/Celestia/addrbooks",
-  "archive": "y",
   "rpc": "https://celestia-rpc.enigma-validator.com/",
   "rpc_archive": "https://celestia-rpc-archive.enigma-validator.com/",
   "tools": "IBC Client Monitoring & Update Monitor, GenesisDrop Checker,Celestia Network Node Map",
@@ -554,14 +535,13 @@
   "x": "NodesHub",
   "validatorlogo": "nodeshub.jpg",
   "explorer": "https://explorer.nodeshub.online/celestia",
-  "archive": "y",
   "peers": "81ca14a1bc274ece31b17115e938fe99135b5873@103.6.91.38:26657",
   "seeds": "6f6a3a908634b79b6fe7c4988efec2553f188234@celestia.seed.nodeshub.online:11656",
   "api": "https://celestia.archive.api.nodeshub.online",
   "rpc": "https://celestia.archive.rpc.nodeshub.online",
   "grpc": "https://celestia.archive.grpc.nodeshub.online",
-  "snapshot": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/snapshot/archive",
-  "prunedsnapshot": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/snapshot/pruned",
+  "archive_snapshot": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/snapshot/archive",
+  "snapshot": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/snapshot/pruned",
  "addrbook": "",
   "tools": "Installation guide, State-Sync, Upgrade History",
   "tools_url": {
@@ -798,7 +778,7 @@
     "rpc": "",
     "grpc": "",
     "snapshot": "https://celestia-tools.stavr.tech/consensus/",
-    "snapshot_bridge": "https://celestia-tools.stavr.tech/bridge/",
+    "bridge_snap": "https://celestia-tools.stavr.tech/bridge/",
     "addrbook": "",
     "tools": "RPC Locator, Uptime, Map,Celestia Mainnet Upgrade",
     "tools_url": {
@@ -848,8 +828,8 @@
     "validatorlogo": "validexis.jpg",
     "explorer": "",
     "snapshot": "https://services.validexis.com/mainnets/celestia/snapshot",
-     "snapshot_archival": "https://services.validexis.com/mainnets/celestia/snapshot",
-    "snapshot_bridge": "https://services.validexis.com/mainnets/celestia/snapshot",
+    "archive_snapshot": "https://services.validexis.com/mainnets/celestia/snapshot",
+    "bridge_snap": "https://services.validexis.com/mainnets/celestia/snapshot",
     "peers": "60d481edb7e49efe01fa0b49a346cf9f8400db19@peer-celestia-mainnet.val",
     "api": "https://api-celestia-mainnet.validexis.com",
     "rpc": "https://rpc-celestia-mainnet.validexis.com",
@@ -911,9 +891,9 @@
   "rpc": "https://celestia-mainnet-rpc.itrocket.net",
   "grpc": "celestia-mainnet-grpc.itrocket.net:443",
   "websocket": "",
- "snapshot": "https://itrocket.net/services/mainnet/celestia/",
-  "snapshot_bridge": "https://itrocket.net/services/mainnet/celestia/bridge-node/",
-  "snapshot_archival": "https://itrocket.net/services/mainnet/celestia/",
+  "snapshot": "https://itrocket.net/services/mainnet/celestia/",
+  "bridge_snap": "https://itrocket.net/services/mainnet/celestia/bridge-node/",
+  "archive_snapshot": "https://itrocket.net/services/mainnet/celestia/",
   "tools": "Validator Analytics, Decentralization Analytics, Peer scanner",
  "tools_url": {
   "Validator Analytics": "https://itrocket.net/services/mainnet/celestia/analytics/validators-performance/",
