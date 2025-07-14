@@ -396,7 +396,9 @@
     "grpc": "celestia-t-grpc.noders.services:21090",
     "snapshot": "",
     "addrbook": "",
-    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-noders-validator"
+    "tools_url": {
+      "Celestia's complete Dashboard": "https://celestiahub.org/explorer/dashboard"
+    }
 },
      {
     "name": "NodeStake",
