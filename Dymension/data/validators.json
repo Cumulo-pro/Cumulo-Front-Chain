@@ -334,29 +334,6 @@
     }
 },
     {
-    "name": "Cumulo",
-    "webservices": "https://cumulo.pro",
-    "x": "Cumulo_pro",
-    "validatorlogo": "cumulo.jpg",
-    "rpc": "https://rollapp.rpc.cumulo.com.es:443",
-    "rest": "https://rollapp.rest.cumulo.com.es:443",
-    "grpc": "rollapp.grpc.cumulo.com.es",
-    "evm": "rollapp.jrpc.cumulo.com.es",
-    "tools": "Roller Front-Chain,Grafana Dashboard",
-    "tools_url": {
-         "Roller Front-Chain": "https://roller.frontchain.cumulo.pro",
-        "Grafana Dashboard": "https://grafana.com/grafana/dashboards/dymension-validator-dashboard"
-    },
-    "content": {
-        "Stake DYM in Portal": "https://medium.com/@Cumulo/dymension-portal-user-guide-mainnet",
-        "Manage DYM with MetaMask": "https://medium.com/@Cumulo/how-to-manage-dym-with-metamask-wallet",
-        "Stake DYM with Keplr": "https://medium.com/@Cumulo/how-to-stake-dymension-tokens-with-keplr",
-        "Stake DYM with Leap Wallet": "https://medium.com/@Cumulo/how-to-stake-dymension-tokens-with-leap-wallet",
-        "Stake and Auto-compounding with REStake": "https://medium.com/@Cumulo/how-to-stake-and-auto-compounding-of-dymension-with-restake",
-        "Monitoring with Grafana and Prometheus": "https://github.com/Cumulo-pro/Dymension/blob/main/monitoring/Grafana%26Prometheus.md"
-    }
-},
-    {
     "name": "𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀",
     "webservices": "https://utsa.gitbook.io/services/mainnet/dymension",
     "x": "lesnik13utsa",
@@ -392,7 +369,29 @@
     "content": {
         "Node Guide": "https://silknodes.io/services/installguide/dymension"
     }
+},
+    {
+    "name": "Cumulo",
+    "webservices": "https://cumulo.pro",
+    "x": "Cumulo_pro",
+    "validatorlogo": "cumulo.jpg",
+    "rpc": "https://rollapp.rpc.cumulo.com.es:443",
+    "rest": "https://rollapp.rest.cumulo.com.es:443",
+    "grpc": "rollapp.grpc.cumulo.com.es",
+    "evm": "rollapp.jrpc.cumulo.com.es",
+    "tools": "Roller Front-Chain,Grafana Dashboard",
+    "tools_url": {
+         "Roller Front-Chain": "https://roller.frontchain.cumulo.pro",
+        "Grafana Dashboard": "https://grafana.com/grafana/dashboards/dymension-validator-dashboard"
+    },
+    "content": {
+        "Stake DYM in Portal": "https://medium.com/@Cumulo/dymension-portal-user-guide-mainnet",
+        "Manage DYM with MetaMask": "https://medium.com/@Cumulo/how-to-manage-dym-with-metamask-wallet",
+        "Stake DYM with Keplr": "https://medium.com/@Cumulo/how-to-stake-dymension-tokens-with-keplr",
+        "Stake DYM with Leap Wallet": "https://medium.com/@Cumulo/how-to-stake-dymension-tokens-with-leap-wallet",
+        "Stake and Auto-compounding with REStake": "https://medium.com/@Cumulo/how-to-stake-and-auto-compounding-of-dymension-with-restake",
+        "Monitoring with Grafana and Prometheus": "https://github.com/Cumulo-pro/Dymension/blob/main/monitoring/Grafana%26Prometheus.md"
+    }
 }
-    
 ]
 
