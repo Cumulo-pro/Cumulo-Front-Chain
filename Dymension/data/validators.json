@@ -378,7 +378,7 @@
     "rpc": "https://rollapp.rpc.cumulo.com.es:443",
     "rest": "https://rollapp.rest.cumulo.com.es:443",
     "grpc": "rollapp.grpc.cumulo.com.es",
-    "evm": "rollapp.jrpc.cumulo.com.es",
+    "evm": "https://rollapp.jrpc.cumulo.com.es",
     "tools": "Roller Front-Chain,Grafana Dashboard",
     "tools_url": {
          "Roller Front-Chain": "https://roller.frontchain.cumulo.pro",
