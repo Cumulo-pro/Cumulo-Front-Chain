@@ -175,7 +175,7 @@
     "api": "https://api-celestia-archive.mainnet.validatrium.club",
     "rpc": "https://rpc-celestia-archive.mainnet.validatrium.club",
     "grpc": "",
-    "archive_snapshot":: "https://docs.validatrium.club/Celestia/archive-node-snapshot",
+    "archive_snapshot": "https://docs.validatrium.club/Celestia/archive-node-snapshot",
     "addrbook": "",
     "tools": "Bridge archive snapshot",
     "tools_url": {
