@@ -279,7 +279,10 @@
     "api": "https://axone-api.bitnodes.xyz",
     "grpc": "axone-grpc.bitnodes.xyz",
      "snapshot": "",
-    "explorer": "https://explorer.bitnodes.xyz/"
+    "explorer": "https://explorer.bitnodes.xyz/",
+       "content": {
+        "Guide for deploying an Axone Mainnet node": "https://bitnodes.xyz/axonemainnet"
+    }
 },
    {
     "name": "dnsarz",
