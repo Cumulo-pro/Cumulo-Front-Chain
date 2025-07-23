@@ -581,30 +581,6 @@
   },
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-maple-nodes"
 },
-{
-  "name": "Cumulo",
-  "x": "Cumulo_pro",
-  "webservices": "https://cumulo.pro/celestia/",
-  "validatorlogo": "cumulo.jpg",
-  "rpc": "https://celestia.cumulo.org.es:443",
-  "api": "https://celestia.api.cumulo.org.es:443",
-  "grpc": "celestia.grpc.cumulo.org.es:443",
-  "websocket": "wss://celestia.cumulo.org.es:443/websocket",
-   "tools": "Dashboard for Consensus Nodes, Celestia Bridge Node Dashboard, Celestia Front Chain, Modular Expansion",
-  "tools_url": {
-    "Dashboard for Consensus Nodes with all available metrics for Celestia": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/grafana_consensus%20/README.md",
-    "Consensus Monitoring System Documentation": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/grafana_consensus%20/README.md",
-    "Dashboard in Grafana": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/bridge-monitor/README.md",
-    "Celestia Bridge Node Dashboard in Grafana": "https://grafana.com/grafana/dashboards/21116-celestia-consensus-validator-node/",
-    "Celestia Front Chain. Everything you need to know about Celestia in one place": "https://roller.frontchain.cumulo.pro/",
-    "Celestia underneath: All the projects that use Celestia as a DA": "https://celestia.frontchain.cumulo.pro/underneath"
-  },
-  "content_url": {
-    "Website dedicated to our content about Modular Summit events": "https://modular.cumulo.pro/",
-    "Compilation of technical guides and resources": "https://cumulo.pro/celestia/posts"
-  },
-  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#contributions-by-cumulo"
-},
   {
   "name": "StakeTown",
   "webservices": "https://services.stake-town.com/home/mainnet/celestia",
@@ -902,5 +878,44 @@
     "content": {
         "Installation Guide": "https://itrocket.net/services/mainnet/celestia/installation/"
     }
+  },
+   {
+  "name": "Informal Systems",
+  "webservices": "",
+  "x": "informalinc",
+  "validatorlogo": "informalinc.jpg",
+  "api": "",
+  "rpc": "",
+   "websocket": "",
+  "snapshot": "",
+  "bridge_snap": "",
+  "archive_snapshot": "",
+  "tools": "",
+ "tools_url": {
+  "Celestia Upgrade Monitor": "https://github.com/sryps/celestia-upgrade-monitor"
+    }
+  },
+  {
+  "name": "Cumulo",
+  "x": "Cumulo_pro",
+  "webservices": "https://cumulo.pro/celestia/",
+  "validatorlogo": "cumulo.jpg",
+  "rpc": "https://celestia.cumulo.org.es:443",
+  "api": "https://celestia.api.cumulo.org.es:443",
+  "grpc": "celestia.grpc.cumulo.org.es:443",
+  "websocket": "wss://celestia.cumulo.org.es:443/websocket",
+   "tools": "Dashboard for Consensus Nodes, Celestia Bridge Node Dashboard, Celestia Front Chain, Modular Expansion",
+  "tools_url": {
+    "Dashboard for Consensus Nodes with all available metrics for Celestia": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/grafana_consensus%20/README.md",
+    "Consensus Monitoring System Documentation": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/grafana_consensus%20/README.md",
+    "Dashboard in Grafana": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/bridge-monitor/README.md",
+    "Celestia Bridge Node Dashboard in Grafana": "https://grafana.com/grafana/dashboards/21116-celestia-consensus-validator-node/",
+    "Celestia Front Chain. Everything you need to know about Celestia in one place": "https://roller.frontchain.cumulo.pro/",
+    "Celestia underneath: All the projects that use Celestia as a DA": "https://celestia.frontchain.cumulo.pro/underneath"
+  },
+  "content_url": {
+    "Website dedicated to our content about Modular Summit events": "https://modular.cumulo.pro/",
+    "Compilation of technical guides and resources": "https://cumulo.pro/celestia/posts"
   }
+}
 ]
