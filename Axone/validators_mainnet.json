@@ -165,7 +165,7 @@
      }
   },
    {
-    "name": "Will | WHTech",
+    "name": "WHTech",
     "webservices": "https://whtech.gitbook.io/services/guides/mainnet/axone/installation",
     "x": "WHTechno",
     "validatorlogo": "whtechno.jpg",
@@ -287,7 +287,7 @@
    {
     "name": "dnsarz",
     "x": "aidilfahmii",
-    "validatorlogo": "dnsarz.jpg",
+    "validatorlogo": "dnsarz.png",
     "webservices": "https://dnsarz.xyz/services/mainnet/axone/",
     "rpc": "https://rpc-axone.dnsarz.xyz:443",
     "api": "https://api-axone.dnsarz.xyz:443",
@@ -339,20 +339,7 @@
       "Node Guide": "https://docs.nodevism.com/mainnet/axone/installation"
      }
     },
-  {
-    "name": "WHTech",
-    "webservices": "",
-    "x": "WHTech",
-    "validatorlogo": "whtech.jpg",
-    "api": "",
-    "rpc": "",
-    "grpc": "",
-    "explorer": "https://explorerku.whtech.xyz/",
-    "content":{
-      "Node Guide": "https://whtech.gitbook.io/services/guides/mainnet/axone/installation"
-     }
-    },
-   {
+ {
       "name": "Cumulo",
       "x": "Cumulo_pro",
      "validatorlogo": "cumulo.jpg",
