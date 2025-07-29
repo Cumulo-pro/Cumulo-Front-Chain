@@ -339,6 +339,19 @@
       "Node Guide": "https://docs.nodevism.com/mainnet/axone/installation"
      }
     },
+  {
+    "name": "WHTech",
+    "webservices": "",
+    "x": "WHTech",
+    "validatorlogo": "whtech.jpg",
+    "api": "",
+    "rpc": "",
+    "grpc": "",
+    "explorer": "https://explorerku.whtech.xyz/",
+    "content":{
+      "Node Guide": "https://whtech.gitbook.io/services/guides/mainnet/axone/installation"
+     }
+    },
    {
       "name": "Cumulo",
       "x": "Cumulo_pro",
