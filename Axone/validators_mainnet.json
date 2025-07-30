@@ -108,7 +108,8 @@
      },
      "tools_url": {
         "State Sync": "https://nodesync.top/services/mainnet/axone/api-sync/#state-sync",
-        "Peers Scaner": "https://nodesync.top/services/mainnet/axone/api-sync#peers-scanner"
+        "Peers Scaner": "https://nodesync.top/services/mainnet/axone/api-sync#peers-scanner",
+        "Monitoring Bot": "https://t.co/Gs8BUVsPsu"
      }
    },
   {
