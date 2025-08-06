@@ -90,12 +90,46 @@ Each peer entry contains:
 
 ## 📐 Scoring & Evaluation Strategy
 
-| Metric        | Source                 | Purpose                                |
-|---------------|------------------------|----------------------------------------|
-| `uptime`      | History of appearance  | Availability indicator                 |
-| `latency_ms`  | Real-time ping         | Responsiveness measure                 |
-| `score`       | Derived from latency   | Used for ranking and prioritization    |
-| `geo`         | IP enrichment          | Geographic diversity, relay targeting  |
+### 🧮 Score Computation Details
+
+#### 1. Latency Tier (0 – 100 points)
+| Round-trip latency (ms) | Latency points |
+|-------------------------|----------------|
+| `< 50`                  | **100**        |
+| `< 100`                 | **80**         |
+| `< 200`                 | **60**         |
+| `< 300`                 | **40**         |
+| `≥ 300` or timeout      | **20** (or 0 if unreachable) |
+
+*Measurement*: single ICMP ping from the probe host (`ping -c 1 -W 1 <ip>`).  
+If the peer does not reply within 1 s, latency is recorded as `null` and latency points = **0**.
+
+#### 2. Uptime Ratio (0 – 100 %)
+`uptime % = (# snapshots in which the peer appears) / (total snapshots) × 100`
+
+*Snapshot uniqueness*: a peer is counted **once per snapshot file**, even if it appears multiple times in the same RPC response.  
+Snapshots older than 30 days are automatically pruned, so uptime always reflects roughly the last month of observations.
+
+#### 3. Final Score (0 – 100)
+*Examples*  
+
+| Latency points | Uptime % | Final score |
+|----------------|----------|-------------|
+| 100            | 100 %    | **100**     |
+| 100            |  50 %    | 50          |
+|  60            |  80 %    | 48          |
+|  0             |  90 %    | 0           |
+
+*Interpretation*:  
+- A peer can only reach **100** if it has *both* top-tier latency **and** perfect uptime.  
+- High-latency but very stable peers still receive a modest score; low-latency but flaky peers are penalised similarly.  
+- Scores are capped at 100 to keep the scale intuitive and comparable across deployments.
+
+> **Tip for operators**  
+> - Aim for latency < 100 ms **and** appear in every 4-hour scan to stay in the 80-100 range.  
+> - Occasional missing snapshots (maintenance, restarts) will gradually lower the score until stability is restored.
+
+
 
 ---
 
