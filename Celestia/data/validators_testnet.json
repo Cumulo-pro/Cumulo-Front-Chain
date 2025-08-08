@@ -334,25 +334,6 @@
   "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#nodes-hub-contribution-httpsnodeshubonline"
 },
 {
-  "name": "Encapsulate (fka KingSuper)",
-  "x": "encapsulate_xyz",
-   "webservices": "https://encapsulate.xyz/services/celestia",
-  "api": "https://api.celestia.mainnet.encapsulate.xyz",
-  "rpc": "https://rpc.celestia.mainnet.encapsulate.xyz",
-  "grpc": "https://grpc.celestia.mainnet.encapsulate.xyz",
-  "bridge_snap": "https://encapsulate.xyz/snapshots/celestia-bridge-testnet",
-  "validatorlogo": "encapsulate.jpg",
-  "content": {
-    "Celestia Bridge Testnet": "https://encapsulate.xyz/snapshots/celestia-bridge-testnet"
-  },
-  "tools": "Submit Pay for Blob,Light Node Health Checker",
-  "tools_url": {
-    "Submit Pay for Blob": "https://celestia-pfb.kingsuper.services",
-    "Light Node Health Checker": "https://celestia-node-checker.kingsuper.services"
-  },
-  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#list-of-contributions-from-encapsulate-kingsuper"
-},
-        {
   "name": "Crouton Digital",
   "x": "CroutonDigital",
   "validatorlogo": "crouton.jpg",
