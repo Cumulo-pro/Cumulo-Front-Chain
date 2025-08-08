@@ -2,5 +2,9 @@
   {
     "name": "Celestia mainnet",
     "url": "https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/Celestia/data/validators.json"
+  },
+  {
+    "name": "XRPL EVM Mainnet",
+    "url": "https://raw.githubusercontent.com/Cumulo-pro/xrplevmTools/refs/heads/main/data/validators_mainnet.json"
   }
 ]
