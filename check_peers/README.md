@@ -110,6 +110,24 @@ If the peer does not reply within 1 s, latency is recorded as `null` and latency
 *Snapshot uniqueness*: a peer is counted **once per snapshot file**, even if it appears multiple times in the same RPC response.  
 Snapshots older than 30 days are automatically pruned, so uptime always reflects roughly the last month of observations.
 
+##### How it’s computed  
+1. Load all files in history/ that match peers_*.json. 
+2. In each snapshot, count a peer at most once, using the unique key:  
+   node_id@ip:port
+   This avoids duplicate counts when a peer appears multiple times in the same file.  
+4. For every peer, compute:
+   seen       = number of snapshots where the peer appears (once per snapshot)  
+   total      = total number of snapshots loaded  
+   uptime (%) = round( (seen / total) * 100 )  
+
+*Example*  
+If there are 8 snapshots and a peer appears in 7 of them:  
+   uptime = round(7 / 8 * 100) = 88  
+
+*Retention window*  
+Snapshots older than 30 days are automatically pruned.  
+As a result, the uptime percentage reflects roughly the last month of observations.  
+
 #### 3. Final Score (0 – 100)
 *Examples*  
 
