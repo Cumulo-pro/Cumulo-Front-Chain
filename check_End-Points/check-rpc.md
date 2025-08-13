@@ -48,9 +48,6 @@ The system consists of:
 
 The decentralized nature of the agents makes it easy to expand across more data centers and jurisdictions, increasing transparency and trust.
 
-<img width="806" height="721" alt="image" src="https://github.com/user-attachments/assets/79182fad-dcd9-4bc8-8346-49450486104f" />
-
-
 ## ✅ Why Is It Trustworthy?
 
 | Feature              | Description                                                                 |
@@ -81,12 +78,6 @@ The decentralized nature of the agents makes it easy to expand across more data 
 - Indexers and explorers selecting fast and reliable endpoints
 - dApp developers seeking the best RPC provider per region
 
----
-
-With **real queries**, **distributed agents**, and **open aggregation**, `check_d` offers a transparent and reliable monitoring solution for blockchain infrastructure — trusted by validators, developers, and communities.
-
----
-
 ## 🔁 How It Works (At a High Level)
 
 - A hosted `chains.json` file defines which chains to test and where to fetch RPC endpoint lists
@@ -97,8 +88,6 @@ With **real queries**, **distributed agents**, and **open aggregation**, `check_
   - Sync and availability metrics
 - Results are served as JSON (`/aggregate-evm`) and rendered in a web dashboard
 - System runs every 5 minutes, skipping nodes with invalid responses
-
----
 
 ## 📍 How Regional Latency Is Measured
 
@@ -114,8 +103,6 @@ Each agent performs a **real RPC call** from its region:
 - Latency is measured at the application layer
 - Full node metadata is retrieved (block height, sync status, version)
 
----
-
 ## 🧠 Aggregator Logic
 
 A central service (`aggregator-evm.js`) performs:
@@ -126,20 +113,6 @@ A central service (`aggregator-evm.js`) performs:
 4. Output to `/aggregate-evm` for frontend and API usage
 
 This enables **multi-perspective analysis** of each endpoint.
-
----
-
-## 🔐 Trust & Reproducibility
-
-| Property               | Description                                                                 |
-|------------------------|-----------------------------------------------------------------------------|
-| ✅ Real Queries        | No mocks — only live RPC calls                                              |
-| 🧪 Uniform Evaluation  | Every node checked using same logic                                         |
-| 🌍 Regional Awareness  | Latency varies by region, agents reflect user proximity                    |
-| 🚫 Error Filtering     | Invalid endpoints are excluded from averages                                |
-| 📁 Fully Auditable     | All scripts and configs are open on GitHub                                  |
-
----
 
 ## 🔌 Public Aggregator Endpoints
 
@@ -161,9 +134,6 @@ Each API provides:
 - Endpoint status (OK, Error + reason)
 - Node metadata (version, moniker, etc.)
 
-The results are grouped by chain and structured for easy consumption in dashboards, scripts, or other tooling.
-
-
 ## 📊 Example Output (Per RPC Node)
 
 ```json
@@ -181,5 +151,33 @@ The results are grouped by chain and structured for easy consumption in dashboar
 }
 ```
 
-📜 License
+---
+
+## 📏 How Uptime Is Calculated
+
+Every time a regional agent runs a check (by default, every **5 minutes**), it:
+
+1. Executes a **real protocol-level query** (e.g., `/status` on Tendermint RPC).
+2. Determines whether the endpoint is considered **up**:
+   - ✅ *Up* if the query returns a valid JSON structure and no fatal error occurs.  
+     *(Both `Synced` and `Not Synced` states count as up — only `"Error"` is considered down.)*
+   - ❌ *Down* if there is no response, a timeout, or an invalid JSON structure.
+3. Stores a boolean (`true` = up, `false` = down) in a persistent history (`uptime.json`) for that exact endpoint URL.
+4. Keeps only the **last 2,048** checks per endpoint (oldest entries are discarded).
+5. Calculates uptime percentage as:  
+
+   ```
+   uptime% = (number_of_true / total_checks) × 100
+   ```
+
+### Important Notes
+- If a node is stopped **between two check cycles**, it will still show its last recorded status until the next scheduled run.
+- With a long history, a single failure may not significantly change the percentage — e.g.,  
+  1 failed check out of 1,000 = 99.9% (rounded to 100% if using integer rounding).
+- The uptime value is **region-independent** — it reflects whether the endpoint responded at all from that agent’s perspective, not whether it was fast or slow.
+- URL normalization matters: the same RPC endpoint with and without a trailing slash is tracked separately unless normalized.
+
+---
+
+📜 License  
 MIT © [Cumulo Pro](https://cumulo.pro)
