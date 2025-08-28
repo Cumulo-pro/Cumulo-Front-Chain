@@ -1,4 +1,4 @@
-# 🛰️ Decentralized Peer Monitor 
+# 🛰️ DEcentralized Peer Monitor 
 
 A professional-grade tool designed by Cumulo Pro to monitor and evaluate the reliability of P2P peers in Cosmos SDK-based networks (initially Celestia). It aggregates and analyzes data from network peers using a distributed and auditable process.
 
