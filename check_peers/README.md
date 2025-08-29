@@ -1,4 +1,4 @@
-# 🛰️ Decentralized Peer Monitor
+# 🛰️ DEcentralized Peer Monitor
 
 A professional‑grade toolkit designed by **Cumulo Pro** to monitor and evaluate the reliability of P2P peers in blockchains networks. It aggregates and analyzes data from network peers using a distributed and auditable process, then exposes ranked views for operators and UIs (PeerScan & Connectivity).
 
