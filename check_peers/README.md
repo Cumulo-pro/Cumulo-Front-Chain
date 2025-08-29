@@ -1,12 +1,12 @@
 # 🛰️ Decentralized Peer Monitor
 
-A professional-grade tool designed by **Cumulo Pro** to monitor and evaluate the reliability of P2P peers in Cosmos SDK–based networks (initially Celestia and Story). It aggregates and analyzes data from network peers using a distributed and auditable process, then exposes ranked views for operators and UIs.
+A professional‑grade toolkit designed by **Cumulo Pro** to monitor and evaluate the reliability of P2P peers in blockchains networks. It aggregates and analyzes data from network peers using a distributed and auditable process, then exposes ranked views for operators and UIs (PeerScan & Connectivity).
 
 ---
 
 ## 📌 Overview
 
-This toolkit performs scheduled scans of peer-to-peer (P2P) networks using validator RPC endpoints. It stores and aggregates information about active peers, measures response latency (globally and per region), enriches IPs with geolocation, and builds a historical dataset to evaluate long-term availability (uptime) and performance (scores). A small API proxy serves a normalized JSON that powers the frontend (PeerScan & Connectivity pages).
+This toolkit performs scheduled scans of peer‑to‑peer (P2P) networks using validator **RPC endpoints**. It stores and aggregates information about active peers, measures response latency (globally and per region), enriches IPs with geolocation, and builds a historical dataset to evaluate long‑term availability (**uptime**) and performance (**scores**). A small **API proxy** serves a normalized JSON that powers the frontend (PeerScan & Connectivity pages).
 
 ---
 
@@ -33,18 +33,19 @@ project-root/
 ## 🛠 Scripts (What runs where)
 
 ### 1) `server-peers.js` — Discovery & Snapshots
+
 **What it does**
-- Reads `chains_peers.json` (each chain points to a validator metadata JSON).
-- Extracts `rpc` endpoints and calls `GET /net_info` to discover peers (`node_id@ip:port`, `moniker`, `version`).
-- Filters public IPs, enriches with geo-IP (`ip-api.com`), and writes snapshots.
+- Reads **`chains_peers.json`** (each chain points to a validator metadata JSON).
+- Extracts **`rpc`** endpoints and calls `GET /net_info` to discover peers (`node_id@ip:port`, `moniker`, `version`).
+- Filters **public IPs**, enriches with geo‑IP (`ip-api.com`), and writes snapshots.
 
 **Inputs**
 - `chains_peers.json` (validator metadata sources).
 
 **Outputs**
-- `peers.json` (latest live snapshot).
-- `history/peers_YYYY-MM-DDTHH-mm.json` (historical snapshots; retained ~30 days).
-- `logs/systemd.err.log` (RPC failures, timeouts).
+- `peers.json` — latest live snapshot (flat list).
+- `history/peers_YYYY-MM-DDTHH-mm.json` — historical snapshots; retained ~30 days.
+- `logs/systemd.err.log` — RPC failures, timeouts, malformed payloads.
 
 **Config (env)**
 - `RPC_TIMEOUT_MS` (default: `15000`)
@@ -64,19 +65,20 @@ node server-peers.js
 ---
 
 ### 2) `analyze_peers.js` — Aggregation, Scoring & “analyze-dashboard”
+
 **What it does**
-- Loads `history/peers_*.json`, deduplicates peers by `node_id@ip:port`.
-- Computes **uptime%** across the ~30-day rolling window: `(appearances / snapshots) × 100`.
-- Normalizes region labels (**`Americas/*` → `America/*`**) for consistency.
-- Computes **latency** (global average) and **per-region** averages (ignores `< 1 ms` as LAN noise).
+- Loads `history/peers_*.json`, **deduplicates** peers by `node_id@ip:port`.
+- Computes **uptime%** across the ~30‑day rolling window: `(appearances / snapshots) × 100`.
+- **Normalizes region labels** (`Americas/*` → `America/*`) for consistency.
+- Computes **latency** (global average) and **per‑region** averages (ignores `< 1 ms` as LAN noise).
 - Assigns **scores** (global and per region) and builds:
   - `chains[chain].all` → full peer dataset with metrics.
   - `chains[chain].top_by_region[Region]` → ranked lists per region.
-- Produces **Top-N by region** (default **12**) ordered by:
+- Produces **Top‑N by region** (default **12**) ordered by:
   1) `score_region` (desc),
   2) `latency_ms` (asc),
   3) `uptime` (desc),
-  4) `moniker` (asc; tie-breaker).
+  4) `moniker` (asc; tie‑breaker).
 
 **Outputs**
 - `data/analyze-dashboard` (JSON for the web UI).
@@ -95,12 +97,13 @@ node analyze_peers.js
 
 **Notes**
 - Global score combines latency + uptime on a 0–100 scale.
-- Region score is derived from the latency seen in that region (and its consistency / sample size).
-- `< 1 ms` latencies are discarded (considered noise).
+- Region score is derived from latency observed in that region (and its consistency / sample size).
+- Latencies `< 1 ms` are discarded (considered noise).
 
 ---
 
 ### 3) `peer_analyze.php` — API Proxy for the Frontend
+
 **What it does**
 - Serves `data/analyze-dashboard` to the frontend (PeerScan table & Connectivity pages).
 - Normalizes legacy payloads if needed.
@@ -127,7 +130,7 @@ echo file_get_contents($path);
 
 ## 📊 Data Model — `data/analyze-dashboard`
 
-**Top-level**
+**Top‑level**
 ```json
 {
   "last_updated": "2025-08-27T17:00:43.036Z",
@@ -170,7 +173,7 @@ echo file_get_contents($path);
 | `< 300` | **40** |
 | `≥ 300` or timeout | **20** (or 0 if unreachable) |
 
-*Measurement*: single ICMP ping or request-based inference per probe. Latencies `< 1 ms` are discarded.
+*Measurement*: single ICMP ping or request‑based inference per probe. Latencies `< 1 ms` are discarded.
 
 #### 2) Uptime Ratio (0–100 %)
 ```
@@ -182,33 +185,33 @@ uptime % = (# snapshots the peer appears in) / (total snapshots) × 100
 #### 3) Final Score (0–100)
 A 0–100 scale that combines latency class and uptime share.
 - 100 is only achievable with **top latency** and **perfect uptime**.
-- Both very stable high-latency and very fast but flaky peers are penalized.
+- Both very stable high‑latency and very fast but flaky peers are penalized.
 
 ---
 
 ## 🌍 Geolocation Strategy
 
-We use `http://ip-api.com/json/{ip}` to classify nodes by continent, country, region/state, city, and ISP. This enables distribution analysis and policy-aware peer selection.
+We use `http://ip-api.com/json/{ip}` to classify nodes by continent, country, region/state, city, and ISP. This enables distribution analysis and policy‑aware peer selection.
 
 ---
 
-## 🔗 Top-N per Region & Connectivity UI
+## 🔗 Top‑N per Region & Connectivity UI
 
-We publish **Top-N (default 12) peers per region** to strike a balance between latency, uptime, diversity (different providers/locations), and redundancy.  
-Within each region, we rank candidates by **regional score** (desc), then **latency** (asc), then **uptime** (desc), and finally **moniker** (asc) as a tie-breaker.
+We publish **Top‑N (default 12) peers per region** to strike a balance between **latency**, **uptime**, **diversity** (different providers/locations), and **redundancy**.  
+Within each region, we rank candidates by **regional score** (desc), then **latency** (asc), then **uptime** (desc), and finally **moniker** (asc) as a tie‑breaker.
 
 You can inspect the full dataset and how each peer performs in the **PeerScan** table:
 - **PeerScan:** `peer-monitor.php` (sortable columns, filters, CSV)
-- **Connectivity:** region cards (copy-to-clipboard lists for `persistent_peers` in `config.toml`)
+- **Connectivity:** region cards (copy‑to‑clipboard lists for `persistent_peers` in `config.toml`)
 
 ---
 
 ## 🔐 Reliability & Fault Handling
 
-- Per-request timeouts (`AbortController`, default 15 s).
+- Per‑request timeouts (`AbortController`, default 15 s).
 - All failures logged to `logs/systemd.err.log`.
 - Skips malformed validator files or unresponsive RPCs.
-- Throttled IP lookups (`sleep 1500 ms`) to avoid rate-limits.
+- Throttled IP lookups (`sleep 1500 ms`) to avoid rate‑limits.
 
 ---
 
@@ -222,16 +225,16 @@ You can inspect the full dataset and how each peer performs in the **PeerScan** 
 5 */4 * * * /usr/bin/node /opt/peer-monitor/analyze_peers.js >> /var/log/peer-monitor.log 2>&1
 ```
 
-Ensure your web server (e.g., Nginx/Apache/PHP-FPM) can read `data/analyze-dashboard` and that `peer_analyze.php` returns JSON with `Cache-Control: no-store`.
+Ensure your web server (e.g., Nginx/Apache/PHP‑FPM) can read `data/analyze-dashboard` and that `peer_analyze.php` returns JSON with `Cache-Control: no-store`.
 
 ---
 
 ## 🛣 Roadmap
 
-- Multi-region probes (truly distributed latency measurements)
+- Multi‑region probes (truly distributed latency measurements)
 - Advanced scoring with jitter/variance and recentness weighting
 - CLI summaries and Prometheus/Grafana exporters
-- Web GeoMap and richer drill-downs
+- Web GeoMap and richer drill‑downs
 
 ---
 
@@ -239,7 +242,7 @@ Ensure your web server (e.g., Nginx/Apache/PHP-FPM) can read `data/analyze-dashb
 
 Designed for validators and infrastructure teams who need to:
 - Evaluate peer stability and performance
-- Select low-latency, high-availability peers
+- Select low‑latency, high‑availability peers
 - Maintain a healthy gossip layer in Cosmos SDK chains
 
 Maintained with 🛰️ by **Cumulo Pro** — https://cumulo.pro
