@@ -1,12 +1,12 @@
-# 🛰️ DEcentralized Peer Monitor 
+# 🛰️ Decentralized Peer Monitor
 
-A professional-grade tool designed by Cumulo Pro to monitor and evaluate the reliability of P2P peers in Cosmos SDK-based networks (initially Celestia). It aggregates and analyzes data from network peers using a distributed and auditable process.
+A professional-grade tool designed by **Cumulo Pro** to monitor and evaluate the reliability of P2P peers in Cosmos SDK–based networks (initially Celestia and Story). It aggregates and analyzes data from network peers using a distributed and auditable process, then exposes ranked views for operators and UIs.
 
 ---
 
 ## 📌 Overview
 
-This tool performs scheduled scans of peer-to-peer (P2P) networks using publicly available RPC endpoints of blockchain validators. It stores and aggregates information about active peers, measures their response latency, enriches IP data with geolocation metadata, and generates a historical dataset to evaluate long-term availability (uptime) and performance (latency score).
+This toolkit performs scheduled scans of peer-to-peer (P2P) networks using validator RPC endpoints. It stores and aggregates information about active peers, measures response latency (globally and per region), enriches IPs with geolocation, and builds a historical dataset to evaluate long-term availability (uptime) and performance (scores). A small API proxy serves a normalized JSON that powers the frontend (PeerScan & Connectivity pages).
 
 ---
 
@@ -14,77 +14,146 @@ This tool performs scheduled scans of peer-to-peer (P2P) networks using publicly
 
 ```
 project-root/
-├── server-peers.js           # Fetches and stores current peers from public RPC endpoints
-├── analyze_peers.js          # Processes historical peer snapshots and calculates uptime, latency, score
-├── history/                  # Folder containing daily peer snapshots
-├── peers.json                # Latest snapshot of discovered peers
-├── analyze_output.json       # Final structured output grouped by country/region
-├── systemd.err.log           # Log file of any RPC failures or unexpected responses
+├── chains_peers.json          # Chain catalog → points to validator metadata that include RPC endpoints
+├── server-peers.js            # (1) Discovery: fetch peers from /net_info, enrich geo-IP, write snapshots
+├── analyze_peers.js           # (2) Analysis: compute uptime, latency (global/region), scores, top-by-region
+├── peer_analyze.php           # (3) API proxy: serves the final JSON to the frontend
+├── history/                   # Timestamped peer snapshots (rolling window ~30 days)
+│   └── peers_2025-08-03T16-20.json
+├── peers.json                 # Latest live snapshot (flat)
+├── data/
+│   └── analyze-dashboard      # Final structured JSON consumed by the web UI
+├── logs/
+│   └── systemd.err.log        # Failures, timeouts, malformed payloads, etc.
+└── README.md
 ```
 
 ---
 
-## 🔁 Peer Scanner (`server-peers.js`)
+## 🛠 Scripts (What runs where)
 
-This script:
+### 1) `server-peers.js` — Discovery & Snapshots
+**What it does**
+- Reads `chains_peers.json` (each chain points to a validator metadata JSON).
+- Extracts `rpc` endpoints and calls `GET /net_info` to discover peers (`node_id@ip:port`, `moniker`, `version`).
+- Filters public IPs, enriches with geo-IP (`ip-api.com`), and writes snapshots.
 
-1. Loads a list of Cosmos SDK-based chains from `chains_peers.json`, each with a link to validator metadata.
-2. For each chain:
-   - Extracts all `rpc` endpoints from validator metadata.
-   - Sends a GET request to `/net_info` on each endpoint.
-   - Parses peer information (`node_id`, `moniker`, `ip`, `port`, `version`).
-3. Validates if the peer's IP is public.
-4. Performs a **geo-IP enrichment** via `ip-api.com` for valid IPs.
-5. Stores:
-   - A current snapshot in `peers.json`
-   - A timestamped file in `history/` (e.g. `peers_2025-08-03T16-20.json`)
-6. Deletes historical files older than 30 days.
+**Inputs**
+- `chains_peers.json` (validator metadata sources).
 
-### Example command:
+**Outputs**
+- `peers.json` (latest live snapshot).
+- `history/peers_YYYY-MM-DDTHH-mm.json` (historical snapshots; retained ~30 days).
+- `logs/systemd.err.log` (RPC failures, timeouts).
+
+**Config (env)**
+- `RPC_TIMEOUT_MS` (default: `15000`)
+- `RPC_CONCURRENCY` (e.g., `8–16`)
+- `IP_API_BASE` (default: `http://ip-api.com/json/`)
+- `IP_API_SLEEP_MS` (default: `1500`)
+- `HISTORY_RETENTION_DAYS` (default: `30`)
+- `CHAIN_FILTER` (optional: process only that chain)
+
+**Run & Schedule**
 ```bash
 node server-peers.js
-```
-
-### Cron job idea:
-```cron
+# cron every 4h
 0 */4 * * * /usr/bin/node /path/to/server-peers.js
 ```
 
 ---
 
-## 📊 Peer Analyzer (`analyze_peers.js`)
+### 2) `analyze_peers.js` — Aggregation, Scoring & “analyze-dashboard”
+**What it does**
+- Loads `history/peers_*.json`, deduplicates peers by `node_id@ip:port`.
+- Computes **uptime%** across the ~30-day rolling window: `(appearances / snapshots) × 100`.
+- Normalizes region labels (**`Americas/*` → `America/*`**) for consistency.
+- Computes **latency** (global average) and **per-region** averages (ignores `< 1 ms` as LAN noise).
+- Assigns **scores** (global and per region) and builds:
+  - `chains[chain].all` → full peer dataset with metrics.
+  - `chains[chain].top_by_region[Region]` → ranked lists per region.
+- Produces **Top-N by region** (default **12**) ordered by:
+  1) `score_region` (desc),
+  2) `latency_ms` (asc),
+  3) `uptime` (desc),
+  4) `moniker` (asc; tie-breaker).
 
-This script:
+**Outputs**
+- `data/analyze-dashboard` (JSON for the web UI).
 
-1. Scans all `peers_*.json` files in the `history/` directory.
-2. Aggregates unique peers (by `node_id@ip:port`).
-3. **Measures real-time latency** using ICMP ping (`ping -c 1 -W 1 <ip>`).
-4. **Calculates peer uptime**:
-   - Based on the number of snapshots in which a given peer appeared.
-   - Expressed as a percentage relative to the total number of scans.
-5. **Assigns a score** based on latency:
-   - `< 50ms`: 100
-   - `< 100ms`: 80
-   - `< 200ms`: 50
-   - Else: 20
-6. Outputs final report in `analyze_output.json`, grouped by:
-   - `continent`
-   - `country`
+**Config (env)**
+- `TOP_N_PER_REGION` (default: `12`)
+- `REGION_NORMALIZE_AMERICAS` (default: `true`)
+- `OUTPUT_PATH` (default: `data/analyze-dashboard`)
+
+**Run & Schedule**
+```bash
+node analyze_peers.js
+# cron 5 min after discovery
+5 */4 * * * /usr/bin/node /path/to/analyze_peers.js
+```
+
+**Notes**
+- Global score combines latency + uptime on a 0–100 scale.
+- Region score is derived from the latency seen in that region (and its consistency / sample size).
+- `< 1 ms` latencies are discarded (considered noise).
 
 ---
 
-## 📈 Metrics in `analyze_output.json`
+### 3) `peer_analyze.php` — API Proxy for the Frontend
+**What it does**
+- Serves `data/analyze-dashboard` to the frontend (PeerScan table & Connectivity pages).
+- Normalizes legacy payloads if needed.
+- Sends correct headers (`Content-Type: application/json`, `Cache-Control: no-store`).
+- Returns JSON error if the dataset is unavailable.
 
-Each peer entry contains:
+**Minimal implementation**
+```php
+<?php
+header('Content-Type: application/json; charset=utf-8');
+header('Cache-Control: no-store');
 
-- `moniker`: validator name
-- `ip`, `port`: networking data
-- `node_id`: peer identifier
-- `version`: software version
-- `uptime`: appearance rate across historical snapshots (0–100%)
-- `latency_ms`: real-time ping latency
-- `score`: performance score based on latency
-- `chain`: chain name from `chains_peers.json`
+$path = __DIR__ . '/../data/analyze-dashboard';
+if (!is_readable($path)) {
+  http_response_code(503);
+  echo json_encode(['error' => 'unavailable']);
+  exit;
+}
+echo file_get_contents($path);
+```
+```
+
+---
+
+## 📊 Data Model — `data/analyze-dashboard`
+
+**Top-level**
+```json
+{
+  "last_updated": "2025-08-27T17:00:43.036Z",
+  "chains": {
+    "Story Protocol Aeneid": {
+      "all": [ /* ... full peers ... */ ],
+      "top_by_region": {
+        "EU/UK": [ /* ranked peers */ ],
+        "America/Canada": [ /* ranked peers */ ]
+      }
+    }
+  }
+}
+```
+
+**Peer object (typical fields)**
+- `peer` — `"node_id@ip:port"`
+- `moniker` — validator/peer name
+- `version` — software version (if available)
+- `uptime` — integer `%` (0–100), last ~30 days
+- `latency_avg_ms` — global average latency (rounded, `null` if < 1 ms or missing)
+- `latency_by_region` — `{ "EU/UK": { "avg_ms": 23, "score": 100, "n": 14 }, ... }`
+- `score` — global score (0–100)
+- `location` — `{ "country": "Germany", "region": "Bavaria", "city": "Nuremberg", "isp": "..." }`
+
+> **Region normalization**: any incoming `Americas/*` label is normalized to `America/*`.
 
 ---
 
@@ -92,105 +161,85 @@ Each peer entry contains:
 
 ### 🧮 Score Computation Details
 
-#### 1. Latency Tier (0 – 100 points)
+#### 1) Latency Tier (0–100 points)
 | Round-trip latency (ms) | Latency points |
-|-------------------------|----------------|
-| `< 50`                  | **100**        |
-| `< 100`                 | **80**         |
-| `< 200`                 | **60**         |
-| `< 300`                 | **40**         |
-| `≥ 300` or timeout      | **20** (or 0 if unreachable) |
+| --- | --- |
+| `< 50` | **100** |
+| `< 100` | **80** |
+| `< 200` | **60** |
+| `< 300` | **40** |
+| `≥ 300` or timeout | **20** (or 0 if unreachable) |
 
-*Measurement*: single ICMP ping from the probe host (`ping -c 1 -W 1 <ip>`).  
-If the peer does not reply within 1 s, latency is recorded as `null` and latency points = **0**.
+*Measurement*: single ICMP ping or request-based inference per probe. Latencies `< 1 ms` are discarded.
 
-#### 2. Uptime Ratio (0 – 100 %)
-`uptime % = (# snapshots in which the peer appears) / (total snapshots) × 100`
+#### 2) Uptime Ratio (0–100 %)
+```
+uptime % = (# snapshots the peer appears in) / (total snapshots) × 100
+```
+- Unique per snapshot: a peer counts **once** per snapshot file.
+- Rolling window: ~30 days (older files pruned).
 
-*Snapshot uniqueness*: a peer is counted **once per snapshot file**, even if it appears multiple times in the same RPC response.  
-Snapshots older than 30 days are automatically pruned, so uptime always reflects roughly the last month of observations.
-
-##### How it’s computed  
-1. Load all files in history/ that match peers_*.json. 
-2. In each snapshot, count a peer at most once, using the unique key:  
-   node_id@ip:port
-   This avoids duplicate counts when a peer appears multiple times in the same file.  
-4. For every peer, compute:
-   seen       = number of snapshots where the peer appears (once per snapshot)  
-   total      = total number of snapshots loaded  
-   uptime (%) = round( (seen / total) * 100 )  
-
-*Example*  
-If there are 8 snapshots and a peer appears in 7 of them:  
-   uptime = round(7 / 8 * 100) = 88  
-
-*Retention window*  
-Snapshots older than 30 days are automatically pruned.  
-As a result, the uptime percentage reflects roughly the last month of observations.  
-
-#### 3. Final Score (0 – 100)
-*Examples*  
-
-| Latency points | Uptime % | Final score |
-|----------------|----------|-------------|
-| 100            | 100 %    | **100**     |
-| 100            |  50 %    | 50          |
-|  60            |  80 %    | 48          |
-|  0             |  90 %    | 0           |
-
-*Interpretation*:  
-- A peer can only reach **100** if it has *both* top-tier latency **and** perfect uptime.  
-- High-latency but very stable peers still receive a modest score; low-latency but flaky peers are penalised similarly.  
-- Scores are capped at 100 to keep the scale intuitive and comparable across deployments.
-
-> **Tip for operators**  
-> - Aim for latency < 100 ms **and** appear in every 4-hour scan to stay in the 80-100 range.  
-> - Occasional missing snapshots (maintenance, restarts) will gradually lower the score until stability is restored.
-
-
+#### 3) Final Score (0–100)
+A 0–100 scale that combines latency class and uptime share.
+- 100 is only achievable with **top latency** and **perfect uptime**.
+- Both very stable high-latency and very fast but flaky peers are penalized.
 
 ---
 
 ## 🌍 Geolocation Strategy
 
-We use the free API at `http://ip-api.com/json/{ip}` to classify nodes by:
+We use `http://ip-api.com/json/{ip}` to classify nodes by continent, country, region/state, city, and ISP. This enables distribution analysis and policy-aware peer selection.
 
-- Continent
-- Country
-- ISP
-- City
+---
 
-This allows visualizations, distribution analysis, and policy-aware relay selection.
+## 🔗 Top-N per Region & Connectivity UI
+
+We publish **Top-N (default 12) peers per region** to strike a balance between latency, uptime, diversity (different providers/locations), and redundancy.  
+Within each region, we rank candidates by **regional score** (desc), then **latency** (asc), then **uptime** (desc), and finally **moniker** (asc) as a tie-breaker.
+
+You can inspect the full dataset and how each peer performs in the **PeerScan** table:
+- **PeerScan:** `peer-monitor.php` (sortable columns, filters, CSV)
+- **Connectivity:** region cards (copy-to-clipboard lists for `persistent_peers` in `config.toml`)
 
 ---
 
 ## 🔐 Reliability & Fault Handling
 
-- Uses per-request timeouts (15 seconds) via `AbortController`.
-- Logs failures to `systemd.err.log`.
-- Automatically skips malformed validator files or non-responsive RPC endpoints.
-- Spaced API calls (`sleep 1500ms`) to avoid rate-limiting by IP APIs.
+- Per-request timeouts (`AbortController`, default 15 s).
+- All failures logged to `logs/systemd.err.log`.
+- Skips malformed validator files or unresponsive RPCs.
+- Throttled IP lookups (`sleep 1500 ms`) to avoid rate-limits.
 
 ---
 
-## 🛠️ Future Improvements
+## 🚀 Deployment (Suggested Cron)
 
-- Multi-region latency testing (via distributed probe agents)
-- Peer scoring algorithm with uptime weighting
-- CLI summary tool for peer analysis
-- Peer export to Prometheus/Grafana format
-- Web-based frontend (GeoMap + Metrics)
+```cron
+# Discovery every 4h
+0 */4 * * * /usr/bin/node /opt/peer-monitor/server-peers.js >> /var/log/peer-monitor.log 2>&1
+
+# Analysis 5 min later
+5 */4 * * * /usr/bin/node /opt/peer-monitor/analyze_peers.js >> /var/log/peer-monitor.log 2>&1
+```
+
+Ensure your web server (e.g., Nginx/Apache/PHP-FPM) can read `data/analyze-dashboard` and that `peer_analyze.php` returns JSON with `Cache-Control: no-store`.
 
 ---
 
-## ✅ Designed for Infra Teams
+## 🛣 Roadmap
 
-This tool is built for validators and infrastructure teams seeking to:
+- Multi-region probes (truly distributed latency measurements)
+- Advanced scoring with jitter/variance and recentness weighting
+- CLI summaries and Prometheus/Grafana exporters
+- Web GeoMap and richer drill-downs
 
-- Evaluate the stability of their peers
+---
+
+## ✅ Built for Infra Teams
+
+Designed for validators and infrastructure teams who need to:
+- Evaluate peer stability and performance
 - Select low-latency, high-availability peers
-- Maintain a healthy gossip layer in Cosmos SDK chains (e.g., Celestia)
+- Maintain a healthy gossip layer in Cosmos SDK chains
 
----
-
-Maintained with 🛰️ by **Cumulo Pro** — [https://cumulo.pro](https://cumulo.pro)
+Maintained with 🛰️ by **Cumulo Pro** — https://cumulo.pro
