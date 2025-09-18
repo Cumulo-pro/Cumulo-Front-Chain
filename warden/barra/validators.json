@@ -1,4 +1,21 @@
 [
+     {
+    "name": "Polkachu",
+    "webservices": "https://polkachu.com/testnets/warden",
+    "x": "polka_chu",
+    "validatorlogo": "polkachu.jpg",
+    "api": "https://warden-testnet-api.polkachu.com/",
+    "rpc": "https://warden-testnet-rpc.polkachu.com/",
+    "grpc": "warden-testnet-grpc.polkachu.com:27390",
+    "snapshot": "https://polkachu.com/testnets/warden/snapshots",
+    "addrbook": "https://polkachu.com/testnets/warden/addrbooks",
+    "tools": "State-sync",
+    "tools_url": {
+        "State-sync": "https://polkachu.com/testnets/warden/state_sync"
+     },
+   "content":{
+    "Installation Guide": "https://polkachu.com/testnets/warden/installation"
+  },
 {
     "name": "itrocket",
     "webservices": "https://itrocket.net/services/testnet/warden/",
