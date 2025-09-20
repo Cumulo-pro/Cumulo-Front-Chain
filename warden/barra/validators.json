@@ -59,24 +59,7 @@
         "Node Installation": "https://utsa.gitbook.io/services/testnet/warden-protocol"       
     }
 },
-    {
-    "name": "NodeSync",
-    "webservices": "https://explorer.nodesync.top/Warden-Testnet/staking",
-    "x": "nodesync_top",
-    "validatorlogo": "nodesync.jpg",
-    "explorer": "https://explorer.nodesync.top/Warden-Testnet/staking",
-    "api": "https://warden-testnet-api.nodesync.top",
-    "rpc": "https://warden-testnet-rpc.nodesync.top",
-    "grpc": "",
-    "seeds": "",
-    "addrbook": "",
-    "snapshot": "",
-    "tools": "Faucet",
-    "tools_url": {
-        "Faucet": "https://faucet.chiado.wardenprotocol.org/"
-    }
-},
-   {
+  {
     "name": "CroutonDigital",
     "webservices": "https://crouton.digital/services/testnets/storyprotocol",
     "x": "CroutonDigital",
