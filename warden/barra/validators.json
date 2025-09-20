@@ -15,6 +15,7 @@
      },
    "content":{
     "Installation Guide": "https://polkachu.com/testnets/warden/installation"
+     }
   },
 {
     "name": "itrocket",
@@ -159,7 +160,7 @@
     "name": "LiveRaveN",
     "validatorlogo": "liveraven.jpg",
     "webservices": "https://services.liveraven.net/cosmos-testnets/warden-protocol",
-    "explorer": "https://testnet.explorer.liveraven.net/warden",
+    "explorer": "https://testnet.explorer.liveraven.net/warden/",
     "rpc": "https://testnet.warden.rpc.liveraven.net",
     "api": "https://testnet.warden.api.liveraven.net",
     "grpc": "testnet.warden.grpc.liveraven.net:443",
