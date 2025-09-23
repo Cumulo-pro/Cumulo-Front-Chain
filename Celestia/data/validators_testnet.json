@@ -505,6 +505,24 @@
         }
     },
     {
+        "name": "Pro-Nodes75",
+        "webservices": "",
+        "x": "theNode75",
+        "validatorlogo": "pronodes75.png",
+        "explorer": "",
+        "peers": "27971306bc55695fa7ca38b14df9181043aab5a1@peer.celestia.testnet.node75.org:32356",
+        "seeds": "86bd5cb6e762f673f1706e5889e039d5406b4b90@seed.celestia.testnet.node75.org:37116",
+        "api": "https://api.celestia.testnet.node75.org",
+        "rpc": "https://rpc.celestia.testnet.node75.org",
+        "grpc": "grpc.celestia.testnet.node75.org:9220",
+        "tools": "DA RPC light node, Faucet",
+        "tools_url": {
+            "DA RPC": "https://public-da-rpc.celestia.testnet.node75.org:443",
+            "Faucet": "https://faucet.celestia.node75.org/"
+        },
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#pro-nodes75"
+    },
+    {
       "name": "Cumulo",
       "x": "Cumulo_pro",
       "webservices": "https://cumulo.pro/services/celestia_mocha",
