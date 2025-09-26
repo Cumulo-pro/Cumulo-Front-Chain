@@ -533,9 +533,10 @@
   "explorer": "",
   "peers": "ce99d7da2530f75d05880d13d9eda384d5a1afe4@peer.celestia.node75.org:23356",
   "seeds": "86bd5cb6e762f673f1706e5889e039d5406b4b90@seed.celestia.node75.org:20356",
-  "api": "https://api.celestia.node75.org",
-  "rpc": "https://rpc.celestia.node75.org",
-  "grpc": "grpc.celestia.node75.org:9220",
+  "api": ["https://api.celestia.node75.org", "https://api-archive.celestia.node75.org"],
+  "rpc": ["https://rpc.celestia.node75.org", "https://rpc-archive.celestia.node75.org"],
+  "grpc": ["grpc.celestia.node75.org:9220", "grpc-archive.celestia.node75.org:9740"],
+  "archive_snapshot": "https://snap-archive.celestia.node75.org/",
   "tools": "Celestia Cluster monitoring tool, Celestia IBC information matrix",
   "tools_url": {
     "Celestia Cluster monitoring tool": "https://github.com/the-node75/mon_celestia",
