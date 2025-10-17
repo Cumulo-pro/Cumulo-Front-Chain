@@ -133,38 +133,6 @@
     "bridge_snap": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#bridge-node-archival-snapshot"
 },
 {
-  "name": "ITRocket",
-  "webservices": "https://itrocket.net/services/mainnet/celestia/",
-  "x": "itrocket_team",
-  "validatorlogo": "itrocket.jpg",
-  "explorer": "https://mainnet.itrocket.net/celestia/staking",
-  "peers": "d535cbf8d0efd9100649aa3f53cb5cbab33ef2d6@celestia-mainnet-peer.itrocket.net:40656",
-  "seeds": "12ad7c73c7e1f2460941326937a039139aa78884@celestia-mainnet-seed.itrocket.net:40656",
-  "api": "https://celestia-mainnet-api.itrocket.net",
-  "rpc": "https://celestia-mainnet-rpc.itrocket.net",
-  "grpc": "celestia-mainnet-grpc.itrocket.net:443",
-  "websocket": "wss://celestia-mainnet-ws.itrocket.net:443/websocket",
-  "snapshot": "https://itrocket.net/services/mainnet/celestia/",
-  "archive_snapshot": "https://itrocket.net/services/mainnet/celestia/",
-  "addrbook": "",
-  "tools": "Decentralization Analytics, Governance Bot, Peer scanner, RPC Scanner, DA Nodes Monitoring,Consensus-signal-tracker",
- "tools_url": {
-  "Decentralization Analytics": "https://itrocket.net/services/mainnet/celestia/decentralization/",
-  "Governance Bot": "https://t.me/itrocket_mainnet_proposal_bot",
-  "Peer scanner": "https://itrocket.net/services/mainnet/celestia/#peer",
-  "RPC Scanner": "https://itrocket.net/services/mainnet/celestia/public-rpc/",
-  "DA Nodes Monitoring": "https://itrocket.net/services/testnet/celestia/monitoring/",
-  "consensus-signal-tracker": "https://itrocket.net/services/mainnet/celestia/analytics/consensus-signal-tracker/"
-},
-  "content_url": {
-    "Consensus Node installation": "https://itrocket.net/services/testnet/celestia/installation/",
-    "Bridhe Node installation": "https://itrocket.net/services/testnet/celestia/bridge-node/",
-    "Full Storage Node installation": "https://itrocket.net/services/testnet/celestia/full-node/",
-    "Deploy your own Celestia sovereign rollup": "https://github.com/itrocket-team/testnet_guides/tree/main/celestia/sovereign_rollup"
- },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#itrocket"
-},
-{
     "name": "Validatrium",
     "webservices": "",
     "x": "validatrium",
