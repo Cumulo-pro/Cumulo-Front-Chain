@@ -34,5 +34,17 @@
   "client": "Axone v12.0.0",
   "url": "https://rpc.axone.cumulo.com.es/",
   "note": "Enabled proper CORS on preflight (OPTIONS) requests for the Axone mainnet RPC. Previously, no CORS headers were returned on OPTIONS, causing browser-based dApps to be blocked. Now the endpoint serves the expected Access-Control-* headers."
+},
+  {
+  "id": "dymension-blumbus-upgrade-v4-0-0-rc05-2025-11-07",
+  "date": "2025-11-07T23:00:00Z",
+  "incident_type": "update",
+  "status": "completed",
+  "chain": "Dymension",
+  "network": "testnet (Blumbus)",
+  "node_type": ["validator", "rpc"],
+  "client": "Dymension v4.0.0-rc05",
+  "url": "https://github.com/dymensionxyz/dymension/releases/tag/v4.0.0-rc05",
+  "note": "Throughout the week, several express upgrades and patches were applied to Blumbus testnet nodes to improve network stability and synchronization. The final upgrade to v4.0.0-rc05 was executed successfully, setting `halt-height = 10301500` (approx. 11h after release). All validator, RPC, and backup nodes resumed operation normally after the halt, completing the transition without downtime."
 }
 ]
