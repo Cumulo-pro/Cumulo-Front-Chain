@@ -6,6 +6,7 @@
     "status": "completed",
     "url": "https://github.com/NethermindEth/juno/releases/tag/v0.15.10",
     "chain": "starknet",
+    "client": "Juno",
     "node_type": ["validator", "rpc", "backup"],
     "network": "mainnet/testnet",
     "note": "Upgrade to Juno v0.15.10 including important bug fixes and performance improvements. Update applied across validator, RPC, and backup nodes. All services verified and fully synchronized."
