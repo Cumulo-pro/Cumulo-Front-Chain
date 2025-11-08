@@ -1,0 +1,13 @@
+[
+  {
+    "id": "starknet-2025-11-08-update-juno-01510",
+    "date": "2025-11-08T06:00:00+01:00",
+    "incident_type": "update",
+    "status": "completed",
+    "url": "https://github.com/NethermindEth/juno/releases/tag/v0.15.10",
+    "chain": "starknet",
+    "node_type": ["validator", "rpc", "backup"],
+    "network": "mainnet/testnet",
+    "note": "Upgrade to Juno v0.15.10 including important bug fixes and performance improvements. Update applied across validator, RPC, and backup nodes. All services verified and fully synchronized."
+  }
+]
