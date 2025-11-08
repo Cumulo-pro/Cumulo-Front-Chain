@@ -13,7 +13,7 @@
   },
   {
   "id": "story-2025-10-31-update-v1-4-0-aeneid",
-  "date": "2025-10-31T06:00:00+01:00",
+  "date": "2025-11-08T06:00:00+01:00",
   "incident_type": "update",
   "status": "completed",
   "url": "https://github.com/piplabs/story/releases/tag/v1.4.0",
@@ -22,6 +22,17 @@
   "node_type": ["validator", "rpc", "backup"],
   "network": "testnet (Aeneid)",
   "note": "Story v1.4.0 (Terence) released for Aeneid Testnet. This major upgrade introduces single binary support, protobuf-based serialization, and new staking module API endpoints. All Aeneid nodes were required to upgrade before height 10886688 (~Nov 8th, 08:45 UTC). Upgrade successfully completed across validator, RPC, and backup nodes with Cosmovisor handling the process."
+},
+  {
+  "id": "axone-rpc-cors-preflight-fix-2025-11-07",
+  "date": "2025-11-07T00:00:00Z",
+  "incident_type": "configuration",
+  "status": "completed",
+  "chain": "Axone",
+  "network": "mainnet",
+  "node_type": ["rpc"],
+  "client": "Axone v12.0.0",
+  "url": "https://rpc.axone.cumulo.com.es/",
+  "note": "Enabled proper CORS on preflight (OPTIONS) requests for the Axone mainnet RPC. Previously, no CORS headers were returned on OPTIONS, causing browser-based dApps to be blocked. Now the endpoint serves the expected Access-Control-* headers."
 }
-
 ]
