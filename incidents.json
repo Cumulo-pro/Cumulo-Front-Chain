@@ -10,5 +10,18 @@
     "node_type": ["validator", "rpc", "backup"],
     "network": "mainnet/testnet",
     "note": "Upgrade to Juno v0.15.10 including important bug fixes and performance improvements. Update applied across validator, RPC, and backup nodes. All services verified and fully synchronized."
-  }
+  },
+  {
+  "id": "story-2025-10-31-update-v1-4-0-aeneid",
+  "date": "2025-10-31T06:00:00+01:00",
+  "incident_type": "update",
+  "status": "completed",
+  "url": "https://github.com/piplabs/story/releases/tag/v1.4.0",
+  "chain": "story",
+  "client": "Story",
+  "node_type": ["validator", "rpc", "backup"],
+  "network": "testnet (Aeneid)",
+  "note": "Story v1.4.0 (Terence) released for Aeneid Testnet. This major upgrade introduces single binary support, protobuf-based serialization, and new staking module API endpoints. All Aeneid nodes were required to upgrade before height 10886688 (~Nov 8th, 08:45 UTC). Upgrade successfully completed across validator, RPC, and backup nodes with Cosmovisor handling the process."
+}
+
 ]
