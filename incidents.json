@@ -1,4 +1,15 @@
-[
+[{
+  "id": "celestia-mainnet-upgrade-matcha-v6-2025-11-08",
+  "date": "2025-11-08T09:00:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["validator", "bridge", "rpc"],
+  "client": ["celestia-app v6.2.4", "celestia-node v0.28.2"],
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v6.2.4",
+  "note": "Celestia Matcha upgrade announced — introducing celestia-app v6.2.4 and celestia-node v0.28.2. This is a consensus and configuration breaking release focused on throughput, blob size, inflation reduction (2.5%), and fee parameter changes. Validators must ensure at least 1Gbps bandwidth, update Horcrux (Celestia fork) or tmKMS (v0.15.0), and apply the updated config via `celestia-appd update-config`. Signaling for upgrade to v6 is now active on-chain, with the transition scheduled to execute 7 days after 5/6+ voting power has signaled. The upgrade will move mainnet to the Matcha architecture and enable larger blocks and squares."
+},
   {
   "id": "dymension-hyperlane-bridge-keys-2025-11-10",
   "date": "2025-11-10T19:00:00+01:00",
