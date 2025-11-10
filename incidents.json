@@ -1,5 +1,17 @@
 [
   {
+  "id": "dymension-hyperlane-bridge-keys-2025-11-10",
+  "date": "2025-11-10T19:00:00+01:00",
+  "incident_type": "setup",
+  "status": "completed",
+  "chain": "Dymension",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": "Hyperlane Monorepo / AWS KMS",
+  "url": "https://github.com/dymensionxyz/hyperlane-monorepo",
+  "note": "Successfully generated and configured bridge validator keys for the Dymension ↔ Kaspa Hyperlane connection. The setup included creation of symmetric (Kaspa escrow) and asymmetric (Dymension signer) KMS keys under AWS region ap-southeast-1, configuration of IAM policies, and validation of outputs. Kaspa Escrow Public Key: 036611f55361dee173e1a5dcffdbcf6ccd142e37ba7a8d8b32caf1bbf8d2465a97, Dymension Public Address: 0x995871E50396de955989415fbF5564AeAd0819F0."
+},
+  {
     "id": "starknet-2025-11-08-update-juno-01510",
     "date": "2025-11-08T06:00:00+01:00",
     "incident_type": "update",
