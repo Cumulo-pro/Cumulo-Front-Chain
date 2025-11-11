@@ -1,4 +1,17 @@
-[{
+[
+  {
+  "id": "xrplevm-testnet-archive-node-deployment-2025-11-11",
+  "date": "2025-11-11T12:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "testnet (xrplevm_1449000-1)",
+  "node_type": ["archive", "snapshot"],
+  "client": "XRPL EVM Node",
+  "url": "https://cumulo.pro/services/xrplevm/snapshot",
+  "note": "At the request of the XRPL EVM team, a full archive node has been deployed on the testnet (Chain ID: xrplevm_1449000-1). The node provides complete historical state data to support dApp indexing and testing. A corresponding snapshot of the archive node is now publicly available at the provided URL."
+},
+  {
   "id": "celestia-mainnet-upgrade-matcha-v6-2025-11-08",
   "date": "2025-11-08T09:00:00Z",
   "incident_type": "upgrade",
