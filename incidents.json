@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-app-v6.2.5-mocha-upgrade",
+  "date": "2025-11-13T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "client": "celestia-app",
+  "network": "testnet (mocha)",
+  "node_type": ["validator", "rpc", "bridge"],
+  "note": "New Celestia-App v6.2.5-mocha released for Mocha testnet. This update stabilizes mainnet-related logic and fixes indexing bugs introduced in v5. Validators and operators are requested to upgrade as soon as possible.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v6.2.5-mocha"
+},
+  {
   "id": "xrplevm-testnet-archive-node-deployment-2025-11-11",
   "date": "2025-11-11T12:00:00Z",
   "incident_type": "deployment",
