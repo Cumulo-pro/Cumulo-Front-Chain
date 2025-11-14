@@ -1,5 +1,16 @@
 [
   {
+  "id": "empower-mainnet-validator-decommission-2025-11-14",
+  "date": "2025-11-14T09:00:00Z",
+  "incident_type": "decommission",
+  "status": "completed",
+  "chain": "Empower",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Cumulo has officially discontinued its validator services on Empower Chain mainnet as of November 14th, 2025. Delegators were advised to restake their assets due to the network's prolonged inactivity and lack of communication.",
+  "url": "https://x.com/Cumulo_pro/status/1986025572724601130"
+},
+  {
   "id": "celestia-app-v6.2.5-mocha-upgrade",
   "date": "2025-11-13T00:00:00Z",
   "incident_type": "upgrade",
