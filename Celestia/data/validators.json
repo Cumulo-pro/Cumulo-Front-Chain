@@ -694,6 +694,22 @@
        "Celestia Mainnet Upgrade": "https://celestia-tools.stavr.tech/upgradem/"
     }
 },
+   {
+        "name": "Krews",
+        "webservices": "",
+        "x": "Krewstake",
+        "validatorlogo": "krews.jpg",
+        "github": "",
+        "rpc": "",
+        "api": "",
+        "snapshot": "https://celestia-dashboard.krews.xyz/celestia/snapshots?pruning=pruned",
+        "explorer": "https://celestia-dashboard.krews.xyz/celestia/validators",
+        "tools": "validator performance dashboard",
+        "tools_url": {
+            "Validator missed proposals": "https://celestia-dashboard.krews.xyz/celestia/missed-proposals",
+            "Bridge Nodes explorer": "https://celestia-dashboard.krews.xyz/celestia/bridge-nodes"
+        }
+    },
   {
     "name": "TTT VN",
     "webservices": "https://services.tienthuattoan.com/mainnet/celestia",
