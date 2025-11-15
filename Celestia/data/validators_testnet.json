@@ -497,11 +497,12 @@
         "github": "",
         "rpc": "",
         "api": "",
-        "grpc": "",
-        "explorer": "",
+        "snapshot": "https://celestia-dashboard.krews.xyz/celestia-mocha/snapshots?pruning=pruned",
+        "explorer": "https://celestia-dashboard.krews.xyz/celestia-mocha/validators",
         "tools": "validator performance dashboard",
         "tools_url": {
-            "validator performance dashboard": "https://celestia-status.krews.xyz"
+            "Validator missed proposals": "https://celestia-dashboard.krews.xyz/celestia-mocha/missed-proposals",
+            "Bridge Nodes explorer": "https://celestia-dashboard.krews.xyz/celestia-mocha/bridge-nodes"
         }
     },
     {
