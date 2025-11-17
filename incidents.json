@@ -1,5 +1,16 @@
 [
   {
+  "id": "dymension-beyond-upgrade-governance-proposal-2025-11-14",
+  "date": "2025-11-14T12:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "in_progress",
+  "chain": "Dymension",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "The Beyond upgrade governance proposal is now live. The upgrade is scheduled for block 10192266 (~ Nov 24, 2025, 13:00 UTC). Validators must review and follow the official upgrade instructions. This upgrade includes changes to block times; the team will track which validators have updated both their binaries and fast block configurations. A dedicated Discord thread will be opened for coordination.",
+  "url": "https://dymension.explorers.guru/proposal/31"
+},
+  {
   "id": "empower-mainnet-validator-decommission-2025-11-14",
   "date": "2025-11-14T09:00:00Z",
   "incident_type": "decommission",
