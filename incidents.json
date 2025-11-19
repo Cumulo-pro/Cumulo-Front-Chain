@@ -3,7 +3,7 @@
   "id": "story-mainnet-v1.4.1-terence-hardfork-upgrade",
   "date": "2025-11-17T02:18:00Z",
   "incident_type": "upgrade",
-  "chain": "Story Protocol",
+  "chain": "Story",
   "network": "mainnet",
   "status": "in_progress",
   "node_type": ["validator", "rpc", "backup"],
