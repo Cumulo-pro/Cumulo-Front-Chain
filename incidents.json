@@ -1,5 +1,17 @@
 [
   {
+  "id": "story-mainnet-v1.4.1-terence-hardfork-upgrade",
+  "date": "2025-11-17T02:18:00Z",
+  "incident_type": "upgrade",
+  "chain": "Story Protocol",
+  "network": "mainnet",
+  "status": "in_progress",
+  "node_type": ["validator", "rpc", "full"],
+  "client": "story",
+  "note": "Mandatory Story Mainnet hardfork (codename Terence) to v1.4.1. Upgrade height is 11,538,000, estimated around December 5, 2025 between 06:00–10:00 UTC. All node operators must upgrade binaries before this height to remain in consensus; staying out of sync for ~1.5 days leads to slashing. Countdown: https://storyscan.io/block/countdown/11538000.",
+  "url": "https://github.com/piplabs/story/releases/tag/v1.4.1"
+},
+  {
   "id": "dymension-beyond-upgrade-governance-proposal-2025-11-14",
   "date": "2025-11-14T12:00:00Z",
   "incident_type": "governance_proposal",
