@@ -1,4 +1,15 @@
 [
+  {
+    "name": "CoreNode",
+    "webservices": "https://services.corenodehq.xyz/mainnet/warden-mainnet",
+    "x": "corenodeHQ",
+    "validatorlogo": "corenode.jpg",
+    "api": "https://warden-mainnet-api.corenodehq.xyz/",
+    "rpc": "https://warden-mainnet-rpc.corenodehq.xyz/",
+    "evm_rpc": "https://warden-mainnet-evm.corenodehq.xyz/",
+    "snapshot": " https://services.corenodehq.xyz/mainnet/warden-mainnet/snap",
+    "explorer": "https://explorer.corenodehq.xyz/Warden-Mainnet"
+   },
      {
     "name": "Polkachu",
     "webservices": "https://polkachu.com/testnets/warden",
