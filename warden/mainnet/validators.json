@@ -1,0 +1,135 @@
+[
+     {
+    "name": "Polkachu",
+    "webservices": "https://polkachu.com/testnets/warden",
+    "x": "polka_chu",
+    "validatorlogo": "polkachu.jpg",
+    "api": "",
+    "rpc": "https://warden-rpc.polkachu.com/",
+    "grpc": "",
+    "snapshot": "",
+    "addrbook": "",
+    "tools": "State-sync",
+    "tools_url": {
+        "State-sync": ""
+     },
+   "content":{
+    "Installation Guide": ""
+     }
+  },
+{
+    "name": "itrocket",
+    "webservices": "https://itrocket.net/services/mainnet/warden/",
+    "x": "itrocket_team",
+    "validatorlogo": "itrocket.jpg",
+    "explorer": "https://mainnet.itrocket.net",
+    "api": "https://warden-mainnet-rpc.itrocket.net",
+    "rpc": "https://warden-mainnet-rpc.itrocket.net",
+    "grpc": "warden-mainnet-grpc.itrocket.net:443",
+    "seeds": "577bc08457d716f09def49b496952f3af4d60ba1@warden-mainnet-seed.itrocket.net:36656",
+    "addrbook": "https://server-2.itrocket.net/mainnet/warden/addrbook.json",
+    "snapshot": "https://itrocket.net/services/mainnet/warden/#snap",
+    "tools": "State-sync,Peers scanner,Node Sync Status Checker,Public RPC endpoints,Decentralization Analytics,Proposal bot",
+    "tools_url": {
+        "State-sync": "https://warden-mainnet-rpc.itrocket.net",
+        "Peers scanner": "https://warden-mainnet-peer.itrocket.net",
+        "Node Sync Status Checker": "https://itrocket.net/services/mainnet/warden/node-sync/",
+        "Public RPC endpoints": "https://itrocket.net/services/mainnet/warden/public-rpc",
+        "Decentralization Analytics": "https://itrocket.net/services/mainnet/warden/decentralization/",
+        "Proposal bot": "https://t.me/itrocket_mainnet_proposal_bot"
+    },
+    "content": {
+        "Node Installation": "https://itrocket.net/services/mainnet/warden/node-installation",
+        "Oracle Installation": "https://itrocket.net/services/mainnet/warden/oracle-installation"
+     }
+},
+    {
+    "name": "𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀",
+    "webservices": "https://teletype.in/@lesnik13utsa/Pw2GAVJJ_7y",
+    "x": "lesnik13utsa",
+    "validatorlogo": "𝐥𝐞𝐬𝐧𝐢𝐤.jpg",
+    "explorer": "https://exp.utsa.tech/warden/staking",
+    "api": "",
+    "rpc": "",
+    "grpc": "",
+    "seeds": "",
+    "addrbook": "",
+    "snapshot": "",
+    "content": {
+        "Node Installation": ""       
+    }
+},
+ {
+    "name": "MictoNode",
+    "x": "onurnft0",
+    "validatorlogo": "mictonode.jpg",
+    "rpc": "",
+    "rpc_wss": "",
+    "api": "",
+    "grpc": "",
+    "evm_rpc": "",
+    "evm_rpc_wss": "",
+    "peer": "",
+    "explorer": "",
+    "content": {
+        "Basic Guide": ""
+   }
+},
+{
+  "name": "Cumulo",
+  "x": "Cumulo_pro",
+  "webservices": "https://cumulo.pro/warden/",
+  "validatorlogo": "cumulo.jpg",
+  "rpc": "",
+  "api": "",
+  "grpc": ""
+},
+    {
+    "name": "NodeSync.Top",
+    "x": "nodesync_top",
+   "validatorlogo": "nodesync.jpg",
+    "webservices": "",
+    "api": "",
+    "rpc": ""
+},
+{
+    "name": "NODEJUMPER",
+    "x": "nodejumper",
+    "validatorlogo": "nodejumper.jpg",
+    "webservices": "https://app.nodejumper.io/warden-testnet",
+    "guides": {
+        "Guide": "https://app.nodejumper.io/warden-testnet/installation"
+    },
+    "rpc": "",
+    "api": "",
+    "public_endpoints": "",
+    "genesis": "",
+    "seed_node": ""
+},
+    {
+    "name": "TrustedPoint",
+    "webservices": "",
+    "x": "Trusted_Point",
+    "validatorlogo": "trustedpoint.jpg",
+    "tools": "Discord bot",
+    "tools_url": {
+      "API": "https://discord.gg/BeEeAz8s"
+    }
+  },
+    {
+    "name": "LiveRaveN",
+    "validatorlogo": "liveraven.jpg",
+    "webservices": "https://services.liveraven.net/cosmos-testnets/warden-protocol",
+    "explorer": "",
+    "rpc": "",
+    "api": "",
+    "grpc": "",
+    "peers": "",
+    "addrbook": "",
+    "snapshot": "",
+    "content": {
+        "Management Guide": ""
+    }
+}
+
+]
