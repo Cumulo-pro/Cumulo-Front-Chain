@@ -6,10 +6,22 @@
   "chain": "Story Protocol",
   "network": "mainnet",
   "status": "in_progress",
-  "node_type": ["validator", "rpc", "full"],
+  "node_type": ["validator", "rpc", "backup"],
   "client": "story",
   "note": "Mandatory Story Mainnet hardfork (codename Terence) to v1.4.1. Upgrade height is 11,538,000, estimated around December 5, 2025 between 06:00–10:00 UTC. All node operators must upgrade binaries before this height to remain in consensus; staying out of sync for ~1.5 days leads to slashing. Countdown: https://storyscan.io/block/countdown/11538000.",
   "url": "https://github.com/piplabs/story/releases/tag/v1.4.1"
+},
+  {
+  "id": "starknet-juno-v0.15.11-upgrade-mainnet-testnet",
+  "date": "2025-11-18T00:00:00Z",
+  "incident_type": "upgrade",
+  "chain": "Starknet",
+  "network": "mainnet/testnet",
+  "status": "in_progress",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "juno",
+  "note": "Release of Juno v0.15.11 with full support for Starknet 0.14.1. Testnet activation scheduled for tomorrow. Previous version v0.15.10 supported SN 0.14.1 except execution RPC calls. Includes a short migration (~1:30) on standard hardware. Validators should upgrade outside their attestation window.",
+  "url": "https://github.com/NethermindEth/juno/releases/tag/v0.15.11"
 },
   {
   "id": "dymension-beyond-upgrade-governance-proposal-2025-11-14",
