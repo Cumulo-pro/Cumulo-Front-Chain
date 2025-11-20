@@ -74,16 +74,16 @@
     "name": "MictoNode",
     "x": "onurnft0",
     "validatorlogo": "mictonode.jpg",
-    "rpc": "",
-    "rpc_wss": "",
-    "api": "",
-    "grpc": "",
-    "evm_rpc": "",
-    "evm_rpc_wss": "",
-    "peer": "",
-    "explorer": "",
+    "rpc": "https://warden-mainnet-rpc.mictonode.com",
+    "rpc_wss": "wss://warden-mainnet-rpc.mictonode.com/websocket",
+    "api": "https://warden-mainnet-api.mictonode.com",
+    "grpc": "warden-mainnet-grpc.mictonode.com:12090",
+    "evm_rpc": "https://warden-mainnet-evmrpc.mictonode.com",
+    "evm_rpc_wss": "wss://warden-mainnet-evmrpc-wss.mictonode.com",
+    "snapshot": "https://github.com/MictoNode/MictoNode-warden-mainnet-guide/blob/main/snapshot.md",
+    "explorer": "https://explorer.mictonode.com/Warden-Mainnet/staking",
     "content": {
-        "Basic Guide": ""
+        "Basic Guide": "https://github.com/MictoNode/MictoNode-warden-mainnet-guide"
    }
 },
 {
