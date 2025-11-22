@@ -29,7 +29,7 @@
   "incident_type": "upgrade",
   "chain": "Starknet",
   "network": "mainnet/testnet",
-  "status": "in_progress",
+  "status": "completed",
   "node_type": ["validator", "rpc", "backup"],
   "client": "juno",
   "note": "Release of Juno v0.15.11 with full support for Starknet 0.14.1. Testnet activation scheduled for tomorrow. Previous version v0.15.10 supported SN 0.14.1 except execution RPC calls. Includes a short migration (~1:30) on standard hardware. Validators should upgrade outside their attestation window.",
