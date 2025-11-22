@@ -1,5 +1,17 @@
 [
   {
+  "id": "kaspa-testnet-node-and-indexer-setup-2025-11-14",
+  "date": "2025-11-22T18:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Kaspa",
+  "network": "mainnet",
+  "node_type": ["full node"],
+  "client": ["rusty-kaspad", "kaspa-rest-server", "simply-kaspa-indexer"],
+  "url": "https://docs.kas.fyi/guides/new-to-kaspa/run-a-kaspa-node",
+  "note": "Kaspa testnet node deployed with full indexer stack. Components: rusty-kaspad (RPC ports 16210/17210), kaspa-rest-server, simply-kaspa-socket-server, simply-kaspa-indexer and PostgreSQL 16 with 10GB shared memory. Docker Compose manages all services with persistent volumes. Repository cloned from supertypo/simply-kaspa-indexer (tag v1.6.0-beta1). Node launched with utxoindex enabled and network testnet-10. Sync and logs validated."
+},
+  {
   "id": "story-mainnet-v1.4.1-terence-hardfork-upgrade",
   "date": "2025-11-17T02:18:00Z",
   "incident_type": "upgrade",
