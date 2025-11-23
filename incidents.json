@@ -1,5 +1,17 @@
 [
  {
+  "id": "dymension-kaspa-bridge-validator-setup-2025-11-24",
+  "date": "2025-11-24T18:00:00Z",
+  "incident_type": "deployment",
+  "status": "in_progress",
+  "chain": "Dymension",
+  "network": "mainnet",
+  "node_type": ["bridge-validator", "kms", "hyperlane"],
+  "client": ["hyperlane-monorepo", "kaspa-bridge-validator"],
+  "url": "https://github.com/dymensionxyz/hyperlane-monorepo",
+  "note": "Deployment of the Dymension ↔ Kaspa bridge validator instance. A single validator node is configured with two key pairs to process KAS → DYM bridging. Key generation completed (ISM key + Kaspa escrow key), public keys shared with the Dymension team, and awaiting final validator-config template. Environment prepared for both bare-metal and AWS KMS workflows. Systemd service and Docker/KMS architecture validated. Hardware meets requirements (2 CPU, 2GB RAM, 128GB disk). Metrics exposed on port 9090 for monitoring."
+},
+ {
   "id": "dymension-kaspa-bridge-node-setup-2025-11-14",
   "date": "2025-11-22T18:00:00Z",
   "incident_type": "deployment",
