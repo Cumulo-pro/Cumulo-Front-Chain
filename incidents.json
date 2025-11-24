@@ -1,5 +1,16 @@
 [
  {
+  "id": "dymension-kas-bootstrap-module-governance-proposal-2025-11-24",
+  "date": "2025-11-24T18:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "in_progress",
+  "chain": "Dymension",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance proposal #32 — Bootstrap KAS Module. This proposal initializes the Kaspa–Dymension bridge (KAS) module with its core components, enabling cross-chain operations. Proposal type: /dymensionxyz.dymension.kas.MsgBootstrap. Voting ends on 2025-11-25 at 20:35 (Europe/Madrid). With ❤ by kjnodes.",
+  "url": "https://dym.fyi/proposal/32"
+},
+ {
   "id": "dymension-kaspa-bridge-validator-setup-2025-11-24",
   "date": "2025-11-24T18:00:00Z",
   "incident_type": "deployment",
