@@ -1,5 +1,17 @@
 [
  {
+  "id": "starknet-juno-v0.15.12-upgrade-mainnet-testnet",
+  "date": "2025-11-25T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "mainnet/testnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "juno",
+  "note": "Release of Juno v0.15.12 containing multiple bug fixes and improvements, especially important for RPC providers. Mainnet and testnet nodes should update to ensure stability and correct RPC behavior. Update applied across validator, RPC, and backup nodes.",
+  "url": "https://github.com/NethermindEth/juno/releases/tag/v0.15.12"
+},
+ {
   "id": "dymension-kas-bootstrap-module-governance-proposal-2025-11-24",
   "date": "2025-11-24T18:00:00Z",
   "incident_type": "governance_proposal",
