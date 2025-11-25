@@ -1,5 +1,17 @@
 [
  {
+  "id": "dymension-mainnet-rpc-hotfix-v4.0.1-2025-11-24",
+  "date": "2025-11-24T12:00:00Z",
+  "incident_type": "update",
+  "status": "completed",
+  "chain": "Dymension",
+  "network": "mainnet",
+  "node_type": ["rpc"],
+  "client": "dymension v4.0.1",
+  "note": "Hotfix update v4.0.1 released for Dymension mainnet. Fixes a critical issue affecting eth_gasPrice queries. Required for all operators running public RPC or client-facing nodes. Optional for validator/full nodes. This release is not consensus-breaking and requires no coordination or halt—just a simple binary replacement.",
+  "url": "https://github.com/dymensionxyz/dymension/releases/tag/v4.0.1"
+},
+ {
   "id": "starknet-juno-v0.15.12-upgrade-mainnet-testnet",
   "date": "2025-11-25T00:00:00Z",
   "incident_type": "upgrade",
