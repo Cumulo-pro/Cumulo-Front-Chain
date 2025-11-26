@@ -1,5 +1,17 @@
 [
  {
+  "id": "starknet-juno-v01511-sync-regression-2025-11-25",
+  "date": "2025-11-25T19:45:00Z",
+  "incident_type": "performance_issue",
+  "status": "resolved",
+  "chain": "Starknet",
+  "network": "mainnet/testnet",
+  "node_type": ["rpc", "backup"],
+  "client": "Juno v0.15.11",
+  "url": "https://github.com/NethermindEth/juno/releases/tag/v0.15.11",
+  "note": "Following the upgrade to Juno v0.15.11, both Starknet RPC and backup nodes began experiencing severe sync regression: block ingestion slowed dramatically, recurring 'Restarting sync process (catchUpMode)' events were logged, and L1 WebSocket subscriptions collapsed regularly with 'failed to read frame header: EOF'. This behavior did not exist prior to the upgrade. Investigation revealed that the local Ethereum node (geth + beacon) was under heavy load, causing unstable L1 feeds and triggering gateway throttling. Mitigation steps included: (1) temporarily stopping the local Ethereum node to confirm the bottleneck, which immediately improved block download speed; (2) switching Juno's --eth-node to a remote L1 endpoint hosted on another node of our infrastructure; (3) applying safe Juno performance tuning — increasing db-cache-size to 4096, db-max-handles to 4096, and widening gw-timeouts. After these changes, sync speed normalized, L1 feed stabilized, and catchUpMode loops ceased. All nodes now operate normally and no further impact has been detected."
+},
+ {
   "id": "dymension-mainnet-rpc-hotfix-v4.0.1-2025-11-24",
   "date": "2025-11-24T12:00:00Z",
   "incident_type": "update",
