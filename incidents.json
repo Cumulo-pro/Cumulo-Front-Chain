@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-mocha-governance-proposal-16-2025-11-24",
+  "date": "2025-11-26T16:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "in_progress",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator"],
+  "client": "celestia-app",
+  "note": "Governance Proposal #16 — Increase Max Square Size to 512 and Block Size to 128 MiB. Updates blob-related parameters for Mocha testnet. This proposal aligns Mocha with the planned 128MB block architecture. Validators should review and vote accordingly, as this change impacts data availability parameters and block production constraints.",
+  "url": "https://testnet.celestia.explorers.guru/proposal/16"
+},
+ {
   "id": "celestia-app-v6.3.0-mocha-upgrade-2025-11-24",
   "date": "2025-11-26T15:00:00Z",
   "incident_type": "upgrade",
