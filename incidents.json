@@ -1,5 +1,22 @@
 [
  {
+  "id": "dymension-kaspa-bridge-validator-full-setup-2025-11-25",
+  "date": "2025-11-25T20:10:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Dymension",
+  "network": "mainnet",
+  "node_type": ["bridge-validator", "hyperlane", "kaspa-node", "indexer"],
+  "client": [
+    "hyperlane-validator (main-dym branch)",
+    "rusty-kaspad v1.0.1",
+    "kaspa-rest-server",
+    "simply-kaspa-indexer v1.6.0-beta1"
+  ],
+  "url": "https://github.com/dymensionxyz/hyperlane-monorepo/tree/main-dym/dymension",
+  "note": "Completed the full setup of the Cumulo bridge validator for the Dymension ↔ Kaspa connection. The deployment included updating to the latest main-dym Hyperlane monorepo, rebuilding the validator binary, and integrating a fresh validator-config.json from the updated template. Both key pairs (ISM signer + Kaspa escrow) were generated, extracted, and inserted with correct formatting, including the quoted Kaspa escrow secret and 0x-prefixed ISM validator key. Local Kaspa endpoints were configured through kaspaUrlsWrpc=127.0.0.1:17210 and kaspaUrlsRest=http://127.0.0.1:8000. A dummy kaspa.wallet was installed as required, validator DB initialized, environment variables exported, and systemd deployed to run the Hyperlane validator. In parallel, the Kaspa node stack (rusty-kaspad + utxoindex + rest + simply-kaspa-indexer) was fully deployed and verified, with REST API operational via /openapi.json and /info/health. The bridge validator and the complete Kaspa data stack are now fully active, synchronized, and functioning normally."
+},
+ {
   "id": "starknet-juno-v01511-sync-regression-2025-11-25",
   "date": "2025-11-25T19:45:00Z",
   "incident_type": "performance_issue",
