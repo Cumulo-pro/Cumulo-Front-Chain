@@ -3,7 +3,7 @@
   "id": "starknet-juno-v01511-sync-regression-2025-11-25",
   "date": "2025-11-25T19:45:00Z",
   "incident_type": "performance_issue",
-  "status": "resolved",
+  "status": "completed",
   "chain": "Starknet",
   "network": "mainnet/testnet",
   "node_type": ["rpc", "backup"],
