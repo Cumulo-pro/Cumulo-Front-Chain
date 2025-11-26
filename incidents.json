@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-app-v6.3.0-mocha-upgrade-2025-11-24",
+  "date": "2025-11-26T15:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator", "rpc", "consensus"],
+  "client": "celestia-app v6.3.0-mocha",
+  "note": "New Celestia-App v6.3.0-mocha released for Mocha testnet. This upgrade introduces key bug fixes and enables validators to bump to 128MB/6s blocks. Mocha validators must ensure their hardware is fully compatible with the 128MB/6s requirements to avoid falling out of sync or losing the ability to propose blocks. Recommended to upgrade immediately after the announcement. Refer to v6 hardware and block-size guidelines in the release notes.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v6.3.0-mocha"
+},
+ {
   "id": "dymension-kaspa-bridge-validator-full-setup-2025-11-25",
   "date": "2025-11-25T20:10:00Z",
   "incident_type": "deployment",
@@ -141,7 +153,7 @@
   "chain": "Celestia",
   "client": "celestia-app",
   "network": "testnet (mocha)",
-  "node_type": ["validator", "rpc", "bridge"],
+  "node_type": ["validator", "rpc", "consensus"],
   "note": "New Celestia-App v6.2.5-mocha released for Mocha testnet. This update stabilizes mainnet-related logic and fixes indexing bugs introduced in v5. Validators and operators are requested to upgrade as soon as possible.",
   "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v6.2.5-mocha"
 },
