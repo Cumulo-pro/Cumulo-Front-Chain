@@ -145,6 +145,23 @@
     "content": {
         "Management Guide": ""
     }
-}
+},
+  {
+    "name": "AKNodes",
+    "webservices": "https://services.aknodes.com/mainnet-networks/warden-protocol",
+    "x": "AKNodes",
+    "validatorlogo": "aknodes.jpg",
+    "explorer": "https://explorer.aknodes.com/WARDEN-MAINNET",
+    "rpc": "https://rpc.warden-mainnet.aknodes.net",
+    "api": "https://api.warden-mainnet.aknodes.net",
+    "grpc": "grpc.warden.aknodes.net:18090",
+    "snapshot": "https://services.aknodes.com/mainnet-networks/warden-protocol/sync",
+    "tools_url": {
+        "State Sync": "https://services.aknodes.com/mainnet-networks/warden-protocol/sync"
+     },
+    "content":{
+          "Node Guide": "https://services.aknodes.com/mainnet-networks/warden-protocol/installation"
+     }
+},
 
 ]
