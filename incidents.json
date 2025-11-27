@@ -196,7 +196,7 @@
   {
   "id": "celestia-mainnet-upgrade-matcha-v6-2025-11-08",
   "date": "2025-11-08T09:00:00Z",
-  "incident_type": "update",
+  "incident_type": "upgrade",
   "status": "completed",
   "chain": "Celestia",
   "network": "mainnet",
