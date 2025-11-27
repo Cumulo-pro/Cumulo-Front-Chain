@@ -56,18 +56,22 @@
 },
     {
     "name": "𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀",
-    "webservices": "https://teletype.in/@lesnik13utsa/Pw2GAVJJ_7y",
+    "webservices": "https://utsa.gitbook.io/services/mainnet/warden-protocol",
     "x": "lesnik13utsa",
     "validatorlogo": "𝐥𝐞𝐬𝐧𝐢𝐤.jpg",
     "explorer": "https://exp.utsa.tech/warden/staking",
-    "api": "",
-    "rpc": "",
-    "grpc": "",
+    "api": "https://m-warden.api.utsa.tech/",
+    "rpc": "https://m-warden.rpc.utsa.tech/",
+    "peers": "https://utsa.gitbook.io/services/mainnet/warden-protocol#peering",
     "seeds": "",
     "addrbook": "",
     "snapshot": "",
+    "tools_url": {
+      "State sync": "https://utsa.gitbook.io/services/mainnet/warden-protocol/state-sync"
+    }
     "content": {
-        "Node Installation": ""       
+        "Node Installation": "https://teletype.in/@lesnik13utsa/Pw2GAVJJ_7y",
+        "Oracle guida": "https://utsa.gitbook.io/services/mainnet/warden-protocol/oracle"
     }
 },
  {
