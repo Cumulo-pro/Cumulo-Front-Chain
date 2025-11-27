@@ -15,7 +15,7 @@
   "id": "celestia-mainnet-governance-proposal-8-2025-11-27",
   "date": "2025-11-27T04:10:00Z",
   "incident_type": "governance_proposal",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "Celestia",
   "network": "mainnet",
   "node_type": ["validator"],
