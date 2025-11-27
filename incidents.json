@@ -92,7 +92,7 @@
   "id": "dymension-kas-bootstrap-module-governance-proposal-2025-11-24",
   "date": "2025-11-24T18:00:00Z",
   "incident_type": "governance_proposal",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "Dymension",
   "network": "mainnet",
   "node_type": ["validator"],
