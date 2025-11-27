@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-mainnet-upgrade-v6.3.0-node-v0.28.4-2025-11-27",
+  "date": "2025-11-27T15:25:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc", "archive", "full", "bridge"],
+  "client": ["celestia-app v6.3.0", "celestia-node v0.28.4"],
+  "note": "Mainnet Beta upgrade to celestia-app v6.3.0 and celestia-node v0.28.4. Scheduled between 15:25–15:55 UTC on November 27, 2025. This release contains major changes required for correct node operation and introduces the foundation for 32MB/6s blocks. All node operators — validators, consensus full nodes, RPC providers, and archive nodes — must upgrade promptly. It is critical to update configs, use an updated KMS, and validate node performance after applying the release.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v6.3.0"
+},
+ {
   "id": "celestia-mainnet-governance-proposal-8-2025-11-27",
   "date": "2025-11-27T04:10:00Z",
   "incident_type": "governance_proposal",
