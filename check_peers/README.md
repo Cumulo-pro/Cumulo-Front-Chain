@@ -1,4 +1,5 @@
 # 🛰️ DEcentralized Peer Monitor
+A distributed, professional-grade toolkit for evaluating P2P peers in blockchain networks.  
 
 A professional‑grade toolkit designed by **Cumulo Pro** to monitor and evaluate the reliability of P2P peers in blockchains networks. It aggregates and analyzes data from network peers using a distributed and auditable process, then exposes ranked views for operators and UIs (PeerScan & Connectivity).
 
@@ -16,17 +17,47 @@ This toolkit performs scheduled scans of peer‑to‑peer (P2P) networks using v
 project-root/
 ├── chains_peers.json          # Chain catalog → points to validator metadata that include RPC endpoints
 ├── server-peers.js            # (1) Discovery: fetch peers from /net_info, enrich geo-IP, write snapshots
-├── analyze_peers.js           # (2) Analysis: compute uptime, latency (global/region), scores, top-by-region
-├── peer_analyze.php           # (3) API proxy: serves the final JSON to the frontend
+├── analyze_peers.js           # (2) Aggregation: combine history + agents to compute final scores
+├── agent_server.js            # (3) Distributed uptime/latency agent (ICMP + TCP tests)
+├── peer_analyze.php           # (4) API proxy: serves final JSON to frontend
+├── agent_config.example.json  # Template for configuring agents
 ├── history/                   # Timestamped peer snapshots (rolling window ~30 days)
 │   └── peers_2025-08-03T16-20.json
 ├── peers.json                 # Latest live snapshot (flat)
 ├── data/
 │   └── analyze-dashboard      # Final structured JSON consumed by the web UI
 ├── logs/
-│   └── systemd.err.log        # Failures, timeouts, malformed payloads, etc.
+│   └── systemd.err.log        # Failures, timeouts, malformed payloads
 └── README.md
 ```
+## 🌐 Distributed Agents Architecture (NEW)  
+  
+The system supports multi-region distributed agents that run ICMP/TCP latency probes independently.
+This enables accurate geographically-aware performance scoring.  
+
+                   ┌─────────────────────┐
+                   │  server-peers.js    │
+                   │  (peer discovery)   │
+                   └─────────┬───────────┘
+                             │ peers.json
+                             ▼
+               ┌──────────────────────────────┐
+               │ Distributed Uptime Agents    │
+               │  ICMP + TCP latency probes   │
+               │  /health + /results          │
+               └──────┬─────────┬────────────┘
+                      │         │
+       Canada (server1)    │   UK (server2)    │   Future agents (US/DE/BR)
+                      ▼         ▼          ▼
+         http://IP:3010      http://IP:3010     ...
+                             (agent_server.js)
+                             │
+                             ▼
+                     analyze_peers.js
+                             │
+                             ▼
+                 data/analyze-dashboard (UI)
+
 
 ---
 
