@@ -380,10 +380,11 @@
     "api": "https://rollapp.rest.cumulo.com.es",
     "grpc": "rollapp.grpc.cumulo.com.es",
     "evm": "https://rollapp.jrpc.cumulo.com.es",
-    "tools": "Roller Front-Chain,Grafana Dashboard",
+    "tools": "check_d,Grafana Dashboard",
     "tools_url": {
-         "Roller Front-Chain": "https://roller.frontchain.cumulo.pro",
-        "Grafana Dashboard": "https://grafana.com/grafana/dashboards/dymension-validator-dashboard"
+         "check_d — Decentralized Peer Monitor": "https://cumulo.pro/services/dymension/peerscan",
+         "Grafana Dashboard": "https://grafana.com/grafana/dashboards/dymension-validator-dashboard",
+         "EndPoint Scan": "https://cumulo.pro/services/dymension/rpcscan"
     },
     "content": {
         "Stake DYM in Portal": "https://medium.com/@Cumulo/dymension-portal-user-guide-mainnet",
