@@ -59,6 +59,47 @@ This enables accurate geographically-aware performance scoring.
                  data/analyze-dashboard (UI)
 
 
+## Distributed Agents
+
+Each agent operates as an independent regional probe and performs latency and availability checks for all discovered peers.
+
+### What each agent does
+
+Each agent:
+
+- Pulls the global peer list from the aggregator (`peers.json`) via `PEERS_URL`
+- Measures latency using:
+  - **ICMP ping** (preferred)
+  - **TCP port check** (fallback when ICMP is blocked)
+- Stores its latest measurement results locally
+- Exposes a small HTTP API:
+
+  - `GET /health` — agent status, configuration and last execution metadata  
+  - `GET /results` — last measurement results in JSON format  
+  - `POST /run-now` — manually triggers an immediate measurement cycle
+
+### Deployment model
+
+Agents run independently on remote servers, typically one per region. Examples of deployed regions:
+
+- `americas-ca-montreal-1`
+- `eu-uk-london-1`
+
+Future planned regions may include:
+
+- `americas-us-east-1`
+- `eu-de-frankfurt-1`
+- other locations as needed
+
+Each agent is configured via a small JSON file (for example `agent_config.json`) that defines:
+
+- `agent_id` — unique identifier of the agent (e.g. `eu-uk-london-1`)
+- `region` — logical region label (e.g. `EU/UK`, `America/Canada`)
+- `peers_url` — URL of the aggregator’s `/data/peers` endpoint
+- `interval_sec` — interval between automatic measurement cycles
+- `ping_concurrency`, `ping_timeout_ms`, `ping_attempts`
+- `tcp_timeout_ms`, `tcp_attempts`
+
 ---
 
 ## 🛠 Scripts (What runs where)
