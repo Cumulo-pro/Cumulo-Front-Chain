@@ -1,9 +1,21 @@
 [
  {
+  "id": "avail-mainnet-testnet-upgrade-v2.3.4.1-2025-12-01",
+  "date": "2025-12-01T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Avail",
+  "network": "mainnet/testnet",
+  "node_type": ["validator", "rpc", "full"],
+  "client": "avail-node v2.3.4.1",
+  "note": "New Avail node release v2.3.4.1 is available for both mainnet and testnet. The upgrade includes important fixes and improvements. All operators are advised to upgrade as soon as possible to stay aligned with the latest changes. Validator Engagement Team offers support if any issues occur during the update.",
+  "url": "https://github.com/availproject/avail/releases/tag/v2.3.4.1"
+},
+ {
   "id": "celestia-mainnet-upgrade-v6.3.0-node-v0.28.4-2025-11-27",
   "date": "2025-11-27T15:25:00Z",
   "incident_type": "upgrade",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "Celestia",
   "network": "mainnet",
   "node_type": ["validator", "rpc", "archive", "full", "bridge"],
