@@ -1,5 +1,17 @@
 [
  {
+  "id": "arcium-devnet-node-deployment-2025-12-03",
+  "date": "2025-12-03T10:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Arcium",
+  "network": "devnet",
+  "node_type": ["validator", "arx-node", "cluster-member"],
+  "client": "arcium-node",
+  "note": "Initial deployment of the Arcium (ARX) node on devnet. The node was initialized with a freshly generated node-keypair.json and successfully registered on-chain using arcium init. Solana RPC connectivity validated, offsets assigned, and node status confirmed via arcium status. The ARX node was then added to Cumulo’s first cluster, with max-nodes defined and the cluster offset recorded. All services are operating normally and producing valid proofs. Configuration steps included: keypair generation, node registration, RPC sync validation, and cluster membership setup.",
+  "url": "https://github.com/arcium/arx"
+},
+ {
   "id": "dymension-mainnet-governance-proposal-34-tee-fast-withdrawal-2025-12-03",
   "date": "2025-12-03T12:00:00Z",
   "incident_type": "governance_proposal",
