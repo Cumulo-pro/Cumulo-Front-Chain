@@ -1,5 +1,17 @@
 [
  {
+  "id": "arcium-devnet-cluster-creation-2025-12-03",
+  "date": "2025-12-03T10:30:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Arcium",
+  "network": "devnet",
+  "node_type": ["cluster"],
+  "client": "arcium-node",
+  "note": "Creation of Cumulo Cluster #1 on Arcium devnet. A new cluster was initialized using arcium init-cluster with a dedicated cluster offset and max-nodes configuration. The cluster definition was successfully published on-chain, Solana RPC confirmed the registration, and the Cumulo ARX node was added as the first active member. Cluster metadata, activation order, and capacity parameters were validated with arcium status. The cluster is now ready to accept additional ARX nodes for trusted execution workloads.",
+  "url": "https://github.com/arcium/arx"
+},
+ {
   "id": "arcium-devnet-node-deployment-2025-12-03",
   "date": "2025-12-03T10:00:00Z",
   "incident_type": "deployment",
