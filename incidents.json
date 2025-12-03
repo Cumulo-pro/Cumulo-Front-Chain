@@ -75,7 +75,7 @@
   "id": "celestia-mocha-governance-proposal-16-2025-11-26",
   "date": "2025-11-26T16:00:00Z",
   "incident_type": "governance_proposal",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "Celestia",
   "network": "testnet (mocha)",
   "node_type": ["validator"],
