@@ -1,5 +1,17 @@
 [
  {
+  "id": "dymension-mainnet-governance-proposal-34-tee-fast-withdrawal-2025-12-03",
+  "date": "2025-12-03T12:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "in_progress",
+  "chain": "Dymension",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "dymension",
+  "note": "Governance Proposal #34 — Introducing TEE-based fast withdrawal for RollApps. Using the new Beyond binary, this proposal enables TEE-backed fast finality so that the Hub can instantly and safely finalize RollApp state updates, allowing users to withdraw without relying on eIBC. Fully additive: existing RollApps can adopt the capability without breaking current flows.",
+  "url": "https://portal.dymension.xyz/dymension/proposal/34"
+},
+ {
   "id": "avail-mainnet-testnet-upgrade-v2.3.4.1-2025-12-01",
   "date": "2025-12-01T00:00:00Z",
   "incident_type": "upgrade",
