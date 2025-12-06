@@ -9,7 +9,7 @@
   "node_type": ["cluster"],
   "client": "arcium-node",
   "note": "Creation of Cumulo Cluster #1 on Arcium devnet. A new cluster was initialized using arcium init-cluster with a dedicated cluster offset and max-nodes configuration. The cluster definition was successfully published on-chain, Solana RPC confirmed the registration, and the Cumulo ARX node was added as the first active member. Cluster metadata, activation order, and capacity parameters were validated with arcium status. The cluster is now ready to accept additional ARX nodes for trusted execution workloads.",
-  "url": "https://github.com/arcium/arx"
+  "url": "https://github.com/Cumulo-pro/cumulo-arcium-infra/blob/main/docs/02_cluster_setup.md"
 },
  {
   "id": "arcium-devnet-node-deployment-2025-12-03",
@@ -21,7 +21,7 @@
   "node_type": ["validator", "arx-node", "cluster-member"],
   "client": "arcium-node",
   "note": "Initial deployment of the Arcium (ARX) node on devnet. The node was initialized with a freshly generated node-keypair.json and successfully registered on-chain using arcium init. Solana RPC connectivity validated, offsets assigned, and node status confirmed via arcium status. The ARX node was then added to Cumulo’s first cluster, with max-nodes defined and the cluster offset recorded. All services are operating normally and producing valid proofs. Configuration steps included: keypair generation, node registration, RPC sync validation, and cluster membership setup.",
-  "url": "https://github.com/arcium/arx"
+  "url": "https://github.com/Cumulo-pro/cumulo-arcium-infra/blob/main/docs/01_node_setup.md"
 },
  {
   "id": "dymension-mainnet-governance-proposal-34-tee-fast-withdrawal-2025-12-03",
