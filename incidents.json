@@ -39,7 +39,7 @@
   "id": "dymension-mainnet-governance-proposal-34-tee-fast-withdrawal-2025-12-03",
   "date": "2025-12-03T12:00:00Z",
   "incident_type": "governance_proposal",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "Dymension",
   "network": "mainnet",
   "node_type": ["validator"],
