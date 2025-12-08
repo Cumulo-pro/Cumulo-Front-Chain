@@ -1,4 +1,16 @@
 [
+  {
+    "id": "genlayer-asimov-testnet-validator-node-upgrade-v0.4.0-2025-12-08",
+    "date": "2025-12-08T15:15:00Z",
+    "incident_type": "upgrade",
+    "status": "completed",
+    "chain": "GenLayer",
+    "network": "testnet (Asimov)",
+    "node_type": ["validator"],
+    "client": "genlayer-node v0.4.0",
+    "note": "Upgrade and full reconfiguration of the GenLayer Asimov testnet validator node to genlayer-node v0.4.0. The existing operator wallet (legacy GenLayer key) was imported and set as operatorAddress, while the validatorWalletAddress was configured according to the staking wizard output. RPC connectivity was migrated to the official genlayer-testnet Caldera endpoints, GenVM was initialized via setup.py with v0.2.7 executors, and the Selenium WebDriver container was validated. Final checks with genlayernode doctor and systemd-based service startup confirm the node is running in validator mode and ready for production monitoring.",
+    "url": "https://github.com/Cumulo-pro/cumulo-genlayer-infra/blob/main/README.md"
+  },
  {
   "id": "arcium-devnet-cluster-creation-2025-12-03",
   "date": "2025-12-03T10:30:00Z",
