@@ -9,7 +9,7 @@
   "node_type": ["validator", "arx-node", "cluster-member"],
   "client": "arcium-node v0.5.2",
   "note": "Upgrade of Cumulo’s ARX node from v0.4.x to v0.5.2 on Arcium devnet. All tooling was refreshed using arcup, new BLS keys were generated, and the node was fully re-registered on-chain via init-arx-accs. A new cluster was created (offset 80123456) to comply with the updated cluster requirements introduced in v0.5.x, and the Cumulo node (offset 90441123) was successfully added as an active member. Docker runtime was rebuilt using the updated environment variables for BLS, identity and callback authority. Node activation and pub/sub synchronization were validated through arx-info and arx-active, confirming correct operation with Solana Devnet RPC endpoints. The upgrade resolves the previous BLS .bin compatibility issue and ensures full compliance with the latest ARX protocol.",
-  "url": "https://github.com/Cumulo-pro/cumulo-arcium-infra/blob/main/docs/03_node_upgrade_v0.5.2.md"
+  "url": "https://github.com/Cumulo-pro/cumulo-arcium-infra/blob/main/docs/01_2_upgrade_v0_5_2.md"
 },
   {
   "id": "celestia-app-v6.4.2-mocha-upgrade-2025-12-10",
