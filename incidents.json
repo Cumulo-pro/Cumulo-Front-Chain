@@ -1,5 +1,29 @@
 [
   {
+  "id": "celestia-app-v6.4.2-mainnet-beta-upgrade-2025-12-11",
+  "date": "2025-12-11T12:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet (beta)",
+  "node_type": ["validator", "rpc", "consensus"],
+  "client": "celestia-app v6.4.2",
+  "note": "Celestia-App v6.4.2 released for Mainnet Beta. This update is a security patch, and all node operators were advised to upgrade immediately. The release enhances security and operational stability across mainnet-beta validators and RPC nodes. Cumulo upgraded all affected nodes and verified correct operation post-restart.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v6.4.2"
+},
+  {
+  "id": "celestia-app-v6.4.2-mainnet-beta-upgrade-2025-12-11",
+  "date": "2025-12-11T12:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet (beta)",
+  "node_type": ["validator", "rpc", "consensus"],
+  "client": "celestia-app v6.4.2",
+  "note": "Celestia-App v6.4.2 released for Mainnet Beta. This security patch requires immediate upgrade from all operators. The update enhances node security and stability across consensus and RPC components. Cumulo has applied the upgrade and verified validator and RPC health.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v6.4.2"
+},
+  {
   "id": "arcium-devnet-node-upgrade-2025-12-10",
   "date": "2025-12-10T18:20:00Z",
   "incident_type": "upgrade",
