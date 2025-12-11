@@ -1,5 +1,17 @@
 [
   {
+  "id": "dymension-mainnet-governance-proposal-35-adjust-inflation-2025-12-11",
+  "date": "2025-12-11T12:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "in_progress",
+  "chain": "Dymension",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "governance",
+  "note": "New on-chain governance proposal #35: Adjust Inflation Parameter — Decrease GoalBonded from 50% to 30%. With the current bonded ratio at ~42.58%, the protocol is programmatically increasing inflation to chase an outdated target. The proposal updates /cosmos.mint.v1beta1.MsgUpdateParams. Voting ends on December 15, 2025 at 14:44 UTC. Validators should review and consider the economic implications for staking yields and network security.",
+  "url": "https://dym.fyi/proposal/35"
+},
+  {
   "id": "celestia-app-v6.4.2-mainnet-beta-upgrade-2025-12-11",
   "date": "2025-12-11T12:00:00Z",
   "incident_type": "upgrade",
