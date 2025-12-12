@@ -1,5 +1,17 @@
 [
   {
+  "id": "story-mainnet-stlouis-network-degradation-2025-12-11",
+  "date": "2025-12-11T01:00:00Z",
+  "incident_type": "service_disruption",
+  "status": "completed",
+  "chain": "Story",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "story",
+  "note": "Regional network degradation affecting Cumulo’s Story Protocol validator infrastructure in St. Louis (USA). Impact window 01:00–01:08 UTC (02:00–02:08 CET). Symptoms included a temporary consensus stall and repeated proposal/round timeouts due to delayed or missing gossip/proposal data. Local host checks showed the NIC remained UP with no RX/TX errors or carrier drops, no service restarts, and no firewall interference. The validator recovered automatically once upstream routing stabilized; no slashing and no resync required.",
+  "url": "https://github.com/Cumulo-pro/Cumulo-Front-Chain/blob/main/postmortem/2025-12-11-story-network-incident.md"
+},
+  {
   "id": "dymension-mainnet-governance-proposal-35-adjust-inflation-2025-12-11",
   "date": "2025-12-11T12:00:00Z",
   "incident_type": "governance_proposal",
