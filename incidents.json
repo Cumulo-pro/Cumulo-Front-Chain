@@ -1,5 +1,17 @@
 [
   {
+  "id": "story-mainnet-aeneid-v1.4.2-mandatory-security-upgrade-2025-12-11",
+  "date": "2025-12-11T09:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Story",
+  "network": "mainnet / testnet (Aeneid)",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "story v1.4.2",
+  "note": "Mandatory upgrade to Story v1.4.2 for both Mainnet and Aeneid Testnet. This release fixes a critical security issue affecting the Story consensus client. All node operators must immediately download, install, and run the updated binaries if the private v1.4.2 patch has not already been applied. Failure to upgrade may result in consensus participation issues or security exposure.",
+  "url": "https://github.com/piplabs/story/releases/tag/v1.4.2"
+},
+  {
   "id": "story-mainnet-stlouis-network-degradation-2025-12-11",
   "date": "2025-12-11T01:00:00Z",
   "incident_type": "service_disruption",
