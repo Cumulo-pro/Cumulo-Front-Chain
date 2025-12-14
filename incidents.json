@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-mocha-horcrux-sentry-sync-bug-log-contribution-2025-12-11",
+  "date": "2025-12-11T10:00:00Z",
+  "incident_type": "investigation",
+  "status": "in_progress",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator", "sentry", "rpc"],
+  "client": ["celestia-app v6.4.x", "Horcrux"],
+  "note": "Active investigation and log contribution related to a critical Celestia Horcrux issue causing sentry nodes to stop syncing due to repeated consensus and propagation errors (invalid part hash, invalid root hash, invalid proposal signature, and Horcrux refusing to sign votes on nil BlockID). Cumulo observed identical behavior on its own validator and sentry infrastructure (Mocha testnet and Mainnet) and provided detailed log excerpts to upstream developers. The issue has been acknowledged by the Celestia core team, marked as high priority, and is believed to surface under high block fullness conditions. Debug logs are being used to assist root-cause analysis and fix development.",
+  "url": "https://github.com/celestiaorg/celestia-app/issues/6300#issuecomment-3647263981"
+},
+  {
   "id": "story-mainnet-aeneid-v1.4.2-mandatory-security-upgrade-2025-12-11",
   "date": "2025-12-11T09:00:00Z",
   "incident_type": "upgrade",
