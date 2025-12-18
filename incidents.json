@@ -1,5 +1,16 @@
 [
  {
+  "id": "dymension-mainnet-governance-proposal-37-usdc-rate-limit-update",
+  "date": "2025-12-18T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "in_progress",
+  "chain": "Dymension",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "New governance proposal (#37) to update the USDC send rate limit from 15% to 70%. The proposal aims to increase liquidity throughput by relaxing current rate limits applied to USDC transfers. Validators are required to review and vote before the voting period ends on December 19, 2025 at 15:34 UTC.",
+  "url": "https://dym.fyi/proposal/37"
+},
+ {
   "id": "dymension-mainnet-governance-proposal-36-beyond-bridge-authority-2025-12-11",
    "date": "2025-12-17T18:10:00Z",
   "incident_type": "governance_proposal",
