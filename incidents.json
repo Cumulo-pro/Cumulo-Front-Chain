@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-mainnet-governance-proposal-9-recover-ibc-clients-2025-12-21",
+  "date": "2025-12-21T12:11:00Z",
+  "incident_type": "governance_proposal",
+  "status": "in_progress",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "celestia-app",
+  "note": "Governance Proposal #9 on Celestia Mainnet aims to recover existing IBC clients using KYVE-based substitute clients. Voting period runs from Dec 21st 2025, 12:11 UTC to Dec 28th 2025, 12:11 UTC. As of today, turnout is 9.83%, below the required quorum of 33.40%, and the proposal is currently expected to be rejected due to insufficient participation. YES votes account for 100% of cast votes, with no NO, NO WITH VETO, or ABSTAIN votes recorded.",
+  "url": "https://www.mintscan.io/celestia/proposals/9"
+},
+ {
   "id": "celestia-app-v6.4.4-mocha-upgrade-2025-12-19",
   "date": "2025-12-19T00:00:00Z",
   "incident_type": "upgrade",
