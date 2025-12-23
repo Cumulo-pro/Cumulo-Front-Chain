@@ -1,5 +1,17 @@
 [
  {
+  "id": "genlayer-testnet-node-upgrade-v0.4.1-2025-12-21",
+  "date": "2025-12-21T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "GenLayer",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": "genlayer-node v0.4.1",
+  "note": "GenLayer testnet node upgrade to v0.4.1 released. This update introduces new account management commands (show/list), improved health checks with explicit warnings for unprimed validators, indefinite retry logic for validator priming (removing the need for manual restarts), enhanced GenVM health checks and timeout handling, fixes for transaction rotation and sync filtering issues, and improved message handling to prevent dropped events. Validators are encouraged to upgrade at their earliest convenience.",
+  "url": "https://docs.genlayer.com/validators/changelog#v041"
+},
+ {
   "id": "celestia-mainnet-governance-proposal-9-recover-ibc-clients-2025-12-21",
   "date": "2025-12-21T12:11:00Z",
   "incident_type": "governance_proposal",
