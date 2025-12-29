@@ -1,5 +1,17 @@
 [
  {
+  "id": "genlayer-testnet-node-upgrade-v0.4.2-2025-12-21",
+  "date": "2025-12-21T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "GenLayer",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": "genlayer-node v0.4.2",
+  "note": "GenLayer testnet upgrade to v0.4.2 released. This version introduces mandatory telemetry and monitoring configuration to enable centralized observability of the testnet. Validators must configure Prometheus and Loki authentication via environment variables (CENTRAL_MONITORING_USERNAME, CENTRAL_LOKI_USERNAME, CENTRAL_MONITORING_PASSWORD, CENTRAL_LOKI_PASSWORD). Tokens are distributed privately via GenLayer Telegram groups and must be identical for monitoring and Loki. Validators are also required to update their profile in the GenLayer points system to ensure automatic version detection. Upgrade and configuration are required for continued participation and monitoring.",
+  "url": "https://docs.genlayer.com/validators/changelog"
+},
+ {
   "id": "genlayer-testnet-node-upgrade-v0.4.1-2025-12-21",
   "date": "2025-12-21T00:00:00Z",
   "incident_type": "upgrade",
