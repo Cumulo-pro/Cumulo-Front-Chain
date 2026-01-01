@@ -1,5 +1,17 @@
 [
  {
+  "id": "story-geth-v1.2.0-yasunari-upgrade-mainnet-testnet-2026-01-01",
+  "date": "2026-01-01T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "Story",
+  "network": "mainnet/testnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "story-geth v1.2.0 (Yasunari)",
+  "note": "Mandatory upgrade of the Story execution client (Story-Geth) to v1.2.0 (codename: Yasunari). This release includes the Fusaka upgrade to maintain Ethereum compatibility and adds EIP-7702 wallet compatibility enhancements. The Aeneid testnet execution upgrade is scheduled for 2026-01-08 00:00 UTC, and the Story mainnet execution upgrade is scheduled for 2026-01-15 00:00 UTC. All node operators must upgrade before the respective deadlines. Nodes running older versions after these timestamps will become incompatible and may experience execution client halts.",
+  "url": "https://github.com/piplabs/story-geth/releases/tag/v1.2.0"
+},
+ {
   "id": "genlayer-testnet-node-upgrade-v0.4.2-2025-12-21",
   "date": "2025-12-29T00:00:00Z",
   "incident_type": "upgrade",
