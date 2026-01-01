@@ -1,5 +1,16 @@
 [
  {
+  "id": "xrplevm-mainnet-governance-add-cumulo-validator-2026-01-01",
+  "date": "2026-01-01T15:11:00Z",
+  "incident_type": "governance_proposal",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #18 to add Cumulo as an official XRPL EVM mainnet validator has been approved. The proposal recognizes Cumulo as a professional PoS validator and blockchain infrastructure provider operating production-grade infrastructure across multiple ecosystems, including EVM, Cosmos-SDK and modular chains. With this approval, Cumulo is formally accepted as a validator participant in the XRPL EVM mainnet validator set.",
+  "url": "https://governance.xrplevm.org/xrplevm/proposals/18"
+},
+ {
   "id": "story-geth-v1.2.0-yasunari-upgrade-mainnet-testnet-2026-01-01",
   "date": "2026-01-01T00:00:00Z",
   "incident_type": "upgrade",
