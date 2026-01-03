@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Vinnodes",
+    "webservices": "",
+    "x": "vinnodes",
+    "validatorlogo": "vinnodes.jpg",
+    "tools_url": {
+        "Genlayer monitor: notifications directly to your phone via the NTFY app": "https://github.com/stakingcabin/celestia-task"
+    }
+  }
+]
