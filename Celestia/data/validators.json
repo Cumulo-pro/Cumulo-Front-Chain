@@ -631,7 +631,7 @@
     "name": "DTEAM",
     "webservices": "https://dteam.tech/services/mainnet/overview/celestia",
     "x": "dteamtech",
-    "validatorlogo": "dteamtech.png",
+    "validatorlogo": "dteam.png",
     "explorer": "",
     "peers": "076c9cc9de3039819a98522aeea39e8c72b49682@peer.celestia.mainnet.dteam.tech:28656",
     "websocket": "wss://rpc.celestia.mainnet.dteam.tech:443/websocket",
