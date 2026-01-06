@@ -46,9 +46,14 @@ The system consists of:
 - A central **aggregator** (`aggregator-evm.js`) that merges all results without modifying them
 - A public API (`/aggregate-evm`) that returns structured JSON grouped by chain
 
+[ US Agent ]      \
+[ EU Agent ] -----> Aggregator -----> /aggregate-evm -----> Dashboards / APIs
+[ CA Agent ]      /
+
+
 The decentralized nature of the agents makes it easy to expand across more data centers and jurisdictions, increasing transparency and trust.
 
-## ✅ Why Is It Trustworthy?
+## ✅ Design Guarantees
 
 | Feature              | Description                                                                 |
 |----------------------|-----------------------------------------------------------------------------|
@@ -103,13 +108,35 @@ Each agent performs a **real RPC call** from its region:
 - Latency is measured at the application layer
 - Full node metadata is retrieved (block height, sync status, version)
 
+## 🌍 Regional Key Normalization
+
+Different networks and deployments may expose regional probe data using
+different identifiers (e.g. `fr`, `es`, `us-east`, `eu-central`).
+
+For consistency, **check_d normalizes all regional data at the dashboard
+or consumer level** into a standard set of logical regions:
+
+| Logical Region | Possible Backend Keys                  |
+|---------------|----------------------------------------|
+| EU            | latency_eu, latency_fr, latency_de     |
+| US            | latency_us, latency_us, latency_va |
+| CA            | latency_ca                             |
+
+This design allows:
+- Flexible probe naming per infrastructure
+- Backward compatibility
+- A stable frontend and API contract
+
+⚠️ Consumers **must not assume** that raw backend keys are uniform across chains.
+
+
 ## 🧠 Aggregator Logic
 
 A central service (`aggregator-evm.js`) performs:
 
 1. Endpoint matching across agents
 2. Aggregation of latency data per region
-3. Calculation of global averages
+3. Exposure of per-region measurements
 4. Output to `/aggregate-evm` for frontend and API usage
 
 This enables **multi-perspective analysis** of each endpoint.
@@ -133,6 +160,44 @@ Each API provides:
 - Uptime percentage over the past 7 days
 - Endpoint status (OK, Error + reason)
 - Node metadata (version, moniker, etc.)
+
+### Important Design Principle
+
+The aggregator is intentionally **dumb**:
+- It does NOT normalize region names
+- It does NOT infer logical regions
+- It does NOT correct or reinterpret results
+
+It only:
+- Matches endpoints by URL
+- Groups results by chain
+- Exposes raw regional measurements
+
+This guarantees:
+- Full transparency
+- No hidden bias or heuristics
+- Reproducible results
+
+All normalization and presentation logic is handled at the consumer level
+(dashboards, APIs, or data pipelines).
+
+## ⏱️ Runtime Parameters
+
+Each regional agent runs with configurable limits:
+
+| Variable            | Description                               | Default |
+|---------------------|-------------------------------------------|---------|
+| RPC_TIMEOUT_MS      | Max time per endpoint probe               | 5000ms  |
+| CONCURRENCY_LIMIT   | Max simultaneous probes per run           | 10      |
+| REFRESH_MS          | Full scan interval                        | 5 min   |
+
+These parameters directly affect:
+- Observed uptime
+- Error rates
+- Load on public RPCs
+
+Slower endpoints may be marked as Error even if they eventually respond.
+
 
 ## 📊 Example Output (Per RPC Node)
 
@@ -176,6 +241,37 @@ Every time a regional agent runs a check (by default, every **5 minutes**), it:
   1 failed check out of 1,000 = 99.9% (rounded to 100% if using integer rounding).
 - The uptime value is **region-independent** — it reflects whether the endpoint responded at all from that agent’s perspective, not whether it was fast or slow.
 - URL normalization matters: the same RPC endpoint with and without a trailing slash is tracked separately unless normalized.
+
+### Interpreting Uptime Correctly
+
+Uptime reflects **historical availability**, not current health.
+
+Examples:
+- A node that failed once in 1,000 checks → 99.9% uptime
+- A node that just went down may still show 100%
+- A node flapping may look "healthy" at a glance
+
+Always correlate:
+- Status (OK / Error)
+- Recent latency
+- Block height freshness
+
+Uptime alone should never be used as a single decision metric.
+
+## 🛠️ Troubleshooting
+
+### An endpoint works locally but appears as Error
+
+Common causes:
+- Response exceeds `RPC_TIMEOUT_MS`
+- Endpoint is rate-limited or throttled
+- Different behavior across regions
+- Valid TLS / TCP but invalid JSON-RPC payload
+
+Always verify:
+- Regional latency
+- Block height freshness
+- Status across multiple agents
 
 ---
 
