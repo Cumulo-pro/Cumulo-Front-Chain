@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-app-v6.4.4-mainnet-beta-upgrade-2026-01-08",
+  "date": "2026-01-08T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc", "consensus"],
+  "client": "celestia-app v6.4.4",
+  "note": "Celestia-App v6.4.4 released for Mainnet Beta. This update includes bug fixes and improvements, resolving an important issue related to catching up to the tip of the chain. All node operators are strongly recommended to upgrade as soon as possible to ensure proper synchronization and stable operation.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v6.4.4"
+},
+ {
   "id": "xrplevm-mainnet-governance-add-cumulo-validator-2026-01-01",
   "date": "2026-01-01T15:11:00Z",
   "incident_type": "governance_proposal",
