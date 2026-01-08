@@ -1,5 +1,17 @@
 [
  {
+  "id": "xrplevm-mainnet-governance-v9-migration-2026-01-08",
+  "date": "2026-01-08T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "in_progress",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "XRPL EVM v9.0.0",
+  "note": "Cumulo participated in governance voting for XRPL EVM Mainnet proposal #19, approving the v9.0.0 chain upgrade to migrate from the unmaintained Evmos dependency to Cosmos EVM v0.4.2. This upgrade improves long-term sustainability, ensures continued compatibility with Ethereum tooling and EIPs, introduces extended ERC-20 functionality (mint, burn, ownership transfer), and strengthens alignment with the Cosmos SDK ecosystem and future interoperability upgrades.",
+  "url": "https://governance.xrplevm.org/xrplevm/proposals/19"
+},
+ {
   "id": "celestia-app-v6.4.4-mainnet-beta-upgrade-2026-01-08",
   "date": "2026-01-08T00:00:00Z",
   "incident_type": "upgrade",
