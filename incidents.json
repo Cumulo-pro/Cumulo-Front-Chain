@@ -1,5 +1,17 @@
 [
  {
+  "id": "quicksilver-mainnet-governance-upgrade-v1-10-0-proposal-62",
+  "date": "2026-01-08T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "in_progress",
+  "chain": "Quicksilver",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "quicksilver v1.10.0",
+  "note": "Cumulo is participating in governance voting for Quicksilver Mainnet Proposal #62, which proposes upgrading the network to v1.10.0. This upgrade offboards the OmniFlix zone following its chain sunset, introduces new governance messages for zone offboarding and canceling pending unbondings, and fixes issues in the IBC queue. The upgrade is intended to improve network maintenance, governance control, and IBC reliability.",
+  "url": "https://wallet.keplr.app/chains/quicksilver/proposals/62"
+},
+ {
   "id": "xrplevm-mainnet-governance-v9-migration-2026-01-08",
   "date": "2026-01-08T00:00:00Z",
   "incident_type": "governance_proposal",
