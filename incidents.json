@@ -1,5 +1,17 @@
 [
  {
+  "id": "quicksilver-mainnet-v1-10-0-governance-upgrade-2026-01-12",
+  "date": "2026-01-12T17:00:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "Quicksilver",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "quicksilver v1.10.0",
+  "note": "Governance Proposal #62 introduces a scheduled Quicksilver Mainnet upgrade to v1.10.0 at height 16,373,000 (expected around January 12, 2026 ~17:00 UTC). This upgrade enables zone offboarding functionality to safely wind down the OmniFlix liquid staking zone, fixes an issue blocking the IBC queue, and includes multiple bug fixes related to out-of-bounds panics and refund handling. Validators must upgrade before the target height to remain in consensus.",
+  "url": "https://github.com/quicksilver-zone/quicksilver/releases/tag/v1.10.0"
+},
+ {
   "id": "warden-testnet-barra-fast-upgrade-v0-7-4-2026-01-12",
   "date": "2026-01-12T00:00:00Z",
   "incident_type": "upgrade",
