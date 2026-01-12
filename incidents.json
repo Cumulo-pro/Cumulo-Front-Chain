@@ -1,5 +1,17 @@
 [
  {
+  "id": "warden-testnet-barra-fast-upgrade-v0-7-4-2026-01-12",
+  "date": "2026-01-12T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "Warden",
+  "network": "testnet (Barra)",
+  "node_type": ["validator", "rpc"],
+  "client": "wardenprotocol v0.7.4",
+  "note": "Urgent fast-paced upgrade for Warden Testnet (Barra). Version v0.7.4 is scheduled for immediate rollout on January 12th, 2026, targeting block height 3,265,800. Validators and node operators must prepare v0.7.4 binaries in advance, schedule a restart window for today, and closely monitor logs and telemetry after the upgrade. This emergency release is coordinated via governance and requires rapid validator action to maintain network stability.",
+  "url": "https://github.com/warden-protocol/wardenprotocol/blob/main/CHANGELOG.md#v074---2026-01-12"
+},
+ {
   "id": "quicksilver-mainnet-governance-upgrade-v1-10-0-proposal-62",
   "date": "2026-01-08T00:00:00Z",
   "incident_type": "governance_proposal",
