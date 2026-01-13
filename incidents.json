@@ -1,5 +1,17 @@
 [
  {
+  "id": "story-mainnet-scheduled-maintenance-fusaka-aws-2026-01-14",
+  "date": "2026-01-14T23:30:00Z",
+  "incident_type": "maintenance",
+  "status": "in_progress",
+  "chain": "Story",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "story-geth v1.2.0",
+  "note": "Scheduled maintenance on Story mainnet starting January 14, 2026 at 23:30 UTC, with an expected downtime of 24–48 hours. During this window, the network will be unavailable for transactions, while explorers remain accessible. The maintenance covers two major initiatives: (1) migration of core infrastructure, including mainnet RPC nodes and potentially foundation-operated validators, to AWS to improve reliability, performance, and geographic distribution; and (2) execution of the Fusaka upgrade via story-geth v1.2.0, making Story one of the first EVM Layer 1 chains to adopt Ethereum’s Fusaka hard fork, including EIP-7702 wallet compatibility. Validators and node operators are required to halt nodes at the start of the maintenance window and must not restart until official confirmation. All nodes must be running story-geth v1.2.0 before the network resumes. Target resume window is between January 15, 23:30 UTC and January 16, 23:30 UTC.",
+  "url": "https://github.com/Cumulo-pro/Story_protocol/blob/main/updates/STORY_MAINNET_MAINTENANCE_RUNBOOK.md"
+},
+ {
   "id": "avail-mainnet-validator-commission-change-2026-01-13",
   "date": "2026-01-13T00:00:00Z",
   "incident_type": "parameter_change",
