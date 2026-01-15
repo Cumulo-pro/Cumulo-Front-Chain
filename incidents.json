@@ -1,5 +1,17 @@
 [
  {
+  "id": "warden-mainnet-v0.7.4-upgrade-2026-01-15",
+  "date": "2026-01-15T17:50:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "Warden",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "wardend v0.7.4",
+  "note": "Urgent Warden mainnet upgrade to v0.7.4 executed via governance proposal #2. This is a fast-paced, consensus-breaking upgrade scheduled at block height 3,427,000 (~ Jan 15th, 2026 at 17:50 UTC). Validators and node operators were instructed to prepare binaries in advance, schedule an immediate restart window, and closely monitor logs and telemetry post-upgrade. Cumulo prepared and executed the upgrade following the official runbook, ensuring timely participation in consensus and network stability.",
+  "url": "https://mainnet.itrocket.net/warden/gov/2"
+},
+ {
   "id": "celestia-app-v6.4.7-mocha-upgrade-2026-01-15",
   "date": "2026-01-15T00:00:00Z",
   "incident_type": "upgrade",
@@ -34,18 +46,7 @@
   "note": "Cumulo updated its validator commission on Avail mainnet from 15% to 20% to sustainably cover long-term infrastructure and operational costs. This adjustment aligns with ongoing discussions among validators and the Avail community regarding staking economics and delegation policies, as outlined in AIP-8 and related forum discussions.",
   "url": "https://forum.availproject.org/t/aip-8-change-ideal-staking-ratio-to-50-and-update-to-foundation-delegation-commission-policy/1742"
 },
- {
-  "id": "avail-mainnet-validator-commission-change-2026-01-13",
-  "date": "2026-01-13T00:00:00Z",
-  "incident_type": "parameter_change",
-  "status": "completed",
-  "chain": "Avail",
-  "network": "mainnet",
-  "node_type": ["validator"],
-  "note": "Cumulo updated its validator commission on Avail mainnet from 15% to 20% to sustainably cover long-term infrastructure and operational costs. This adjustment aligns with ongoing discussions among validators and the Avail community regarding staking economics and delegation policies, as outlined in AIP-8 and related forum discussions.",
-  "url": "https://forum.availproject.org/t/aip-8-change-ideal-staking-ratio-to-50-and-update-to-foundation-delegation-commission-policy/1742"
-},
- {
+{
   "id": "quicksilver-mainnet-v1-10-0-governance-upgrade-2026-01-12",
   "date": "2026-01-12T17:00:00Z",
   "incident_type": "upgrade",
