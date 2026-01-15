@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-app-v6.4.7-mocha-upgrade-2026-01-15",
+  "date": "2026-01-15T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator", "rpc", "sentry"],
+  "client": "celestia-app v6.4.7-mocha",
+  "note": "New Celestia-App v6.4.7-mocha released for the Mocha testnet. This release fixes critical issues affecting sentry node setups and includes several bug fixes and stability improvements. All Mocha operators were strongly recommended to upgrade as soon as possible. Cumulo, as an active Mocha validator, was closely involved in this upgrade process, working directly with the Celestia team to test multiple Horcrux-related scenarios, performing several pilot installations, and providing detailed feedback and logs from real-world validator and sentry configurations to help identify, reproduce, and validate fixes prior to and during rollout.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v6.4.7-mocha"
+},
+ {
   "id": "story-mainnet-scheduled-maintenance-fusaka-aws-2026-01-14",
   "date": "2026-01-14T23:30:00Z",
   "incident_type": "maintenance",
