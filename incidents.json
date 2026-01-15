@@ -9,7 +9,7 @@
   "node_type": ["validator", "rpc"],
   "client": "wardend v0.7.4",
   "note": "Urgent Warden mainnet upgrade to v0.7.4 executed via governance proposal #2. This is a fast-paced, consensus-breaking upgrade scheduled at block height 3,427,000 (~ Jan 15th, 2026 at 17:50 UTC). Validators and node operators were instructed to prepare binaries in advance, schedule an immediate restart window, and closely monitor logs and telemetry post-upgrade. Cumulo prepared and executed the upgrade following the official runbook, ensuring timely participation in consensus and network stability.",
-  "url": "https://mainnet.itrocket.net/warden/gov/2"
+  "url": " https://github.com/warden-protocol/wardenprotocol/blob/main/CHANGELOG.md#v074---2026-01-12"
 },
  {
   "id": "celestia-app-v6.4.7-mocha-upgrade-2026-01-15",
