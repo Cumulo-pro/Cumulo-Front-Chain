@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-mainnet-security-upgrade-v6.4.5-2026-01-16",
+  "date": "2026-01-16T00:00:00Z",
+  "incident_type": "security_update",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc", "consensus"],
+  "client": "celestia-app v6.4.5",
+  "note": "Celestia-App v6.4.5 released as a critical security patch for Celestia mainnet. Validators and node operators were requested to upgrade as soon as possible. Cumulo applied the standalone security-patched binary provided by the Celestia team to ensure continued consensus safety and network integrity.",
+  "url": "https://fra1.digitaloceanspaces.com/celestia-app-v6.4.5/app-vuln-patch-standalone_Linux_x86_64.tar.gz"
+},
+ {
   "id": "xrplevm-mainnet-cometbft-security-update-v8.0.2-2026-01-16",
   "date": "2026-01-16T00:00:00Z",
   "incident_type": "security_update",
