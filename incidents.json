@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-app-v6.4.8-mocha-security-upgrade-2026-01-19",
+  "date": "2026-01-19T00:00:00Z",
+  "incident_type": "security_update",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator", "rpc", "consensus"],
+  "client": "celestia-app v6.4.8-mocha",
+  "note": "Celestia-App v6.4.8-mocha released as a critical security patch for the Mocha testnet. Validators and node operators were instructed to upgrade immediately using precompiled standalone binaries. Cumulo verified the binary integrity using published checksums, applied the standalone security patch, and confirmed correct operation post-upgrade. Source code will be published after the patch is fully deployed across networks.",
+  "url": "https://fra1.digitaloceanspaces.com/celestia-app-v6.4.8-mocha/app-vuln-patch-v6.4.8-standalone_Linux_x86_64.tar.gz"
+},
+ {
   "id": "celestia-mainnet-security-upgrade-v6.4.5-2026-01-16",
   "date": "2026-01-16T00:00:00Z",
   "incident_type": "security_update",
