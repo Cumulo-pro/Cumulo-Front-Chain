@@ -1,5 +1,17 @@
 [
  {
+  "id": "xrplevm-testnet-archive-rpc-infrastructure-deployment-2026-01-19",
+  "date": "2026-01-19T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["rpc", "archive"],
+  "client": "XRPL EVM Node",
+  "note": "Cumulo deployed a new full archive RPC infrastructure for XRPL EVM testnet in coordination with the Peersyst team. The deployment expands public archive access for developers, indexers, and ecosystem tooling, providing full historical state and multiple access interfaces (RPC, API, JSON-RPC, and gRPC). This infrastructure upgrade strengthens testnet reliability, data availability, and long-term developer support.",
+  "url": "https://cumulo.pro/services/xrplevm/conect"
+},
+ {
   "id": "celestia-app-v6.4.8-mocha-security-upgrade-2026-01-19",
   "date": "2026-01-19T00:00:00Z",
   "incident_type": "security_update",
