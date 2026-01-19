@@ -1,5 +1,17 @@
 [
  {
+  "id": "xrplevm-testnet-rpc-archive-upgrade-v9.0.2-2026-01-19",
+  "date": "2026-01-19T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["rpc", "archive"],
+  "client": "XRPL EVM Node v9.0.2",
+  "note": "XRPL EVM testnet RPC and Archive nodes were upgraded to v9.0.2 at the request of the Peersyst team. The upgrade was applied across Cumulo-operated public endpoints to ensure compatibility with the latest protocol changes and maintain stability for developers, indexers, and testnet infrastructure consumers.",
+  "url": "https://github.com/xrplevm/node/releases/download/v9.0.2/node_9.0.2_Linux_amd64.tar.gz"
+},
+ {
   "id": "xrplevm-testnet-archive-rpc-infrastructure-deployment-2026-01-19",
   "date": "2026-01-19T00:00:00Z",
   "incident_type": "deployment",
