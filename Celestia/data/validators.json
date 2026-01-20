@@ -116,7 +116,7 @@
      },
    "tools_desc": {
     "State-sync": "State sync instructions and parameters for fast node initialization on Celestia mainnet."
-  }
+  },
    "content":{
     "Installation Guide": "https://polkachu.com/installation/celestia"
   }
@@ -254,7 +254,7 @@
   "tools_desc": {
     "Proposal_Bot": "Telegram bot that alerts about governance proposals and voting activity for Celestia.",
     "Node Monitoring": "Open-source monitoring stack for Cosmos-based nodes (Prometheus/Grafana-style monitoring approach)."
-  }
+  },
   "content_url": {
     "Russian Medium": "https://cryptech-nodes.medium.com/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D1%81%D0%B5%D1%82%D0%B8-celestia-3b5a0865c7f1",
     "Guide": "https://services.cryptech.com.ua/mainnet/celestia/installation/README/"
@@ -312,8 +312,7 @@
    "content_url": {
     "Services guide": "https://services.luckyresearch.org/lucky-research-services/mainet/celestia",
     "Vietnamese Blockchain Knowledge": "https://luckyresearch.notion.site/Gi-i-thi-u-v-Celestia-v-Modular-Blockchain-c9bd267748e8471ea7da8ec85e75fa29?pvs=74"
-  },
-   
+  }
 },
 {
   "name": "Suntzu",
@@ -355,7 +354,7 @@
   },
   "tools_desc": {
     "Bridge node snapshot": "Bridge node snapshot download page to speed up Celestia bridge node initialization."
-  }
+  },
   "content_url": {
     "Installation Guide": "https://services.contributiondao.com/mainnet/celestia/installation"
   }
@@ -539,8 +538,9 @@
     "State-Sync": "State sync parameters and endpoints for accelerating Celestia node bootstrap."
   },
    "content_url": {
-     "Installation guide": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/installation"    
-  }
+     "Installation guide": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/installation"   
+     }
+  },
 {
   "name": "Pro-Nodes75",
   "webservices": "",
@@ -666,7 +666,7 @@
     },
      "tools_desc": {
     "Staging Explorer": "Staging explorer environment for testing and previewing Celestia explorer features."
-  }
+  },
   "content_url": {
         "Medium": "https://docs.google.com/document/d/1VIYunKnLWbz65_C98CQ8MbANYnEbmc3StEteVByC57c",
         "Celestia Hub Academy": "https://docs.google.com/document/d/1Q77MnVxqu6-ACvfYFzgJIProniNEB8uju9fLymCoATU",
@@ -707,7 +707,7 @@
     },
      "tools_desc": {
     "state-sync": "State sync service page with parameters and endpoints for fast Celestia node initialization."
-  }
+  },
     "content_url": {
       "Installation Guide": "https://dteam.tech/services/mainnet/installation-guide/celestia?type=consensus"
     }
