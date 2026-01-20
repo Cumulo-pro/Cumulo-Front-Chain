@@ -35,7 +35,12 @@
         "Celestia faucet": "https://celestia-faucet.blacknodes.net/",
         "State-Sync": "https://services.blacknodes.net/Celestia/"
     },
-    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#blacknodes-contribution-httpsblacknodesnet"
+     "tools_desc": {
+      "Node Tutorial Guide": "Step-by-step documentation for setting up Celestia nodes and basic operations.",
+      "Node-Monitoring Guide": "Monitoring setup guidance (metrics, dashboards, alerting) for Celestia infrastructure.",
+      "Celestia faucet": "Testnet faucet to request tokens for running and testing on Mocha.",
+      "State-Sync": "State sync parameters and instructions to fast-sync a node from trusted snapshots/state."
+    }
 },
     {
         "name": "Lavender.Five Nodes",
@@ -50,10 +55,12 @@
        "tools_url": {
         "State-sync": "https://services.lavenderfive.com/testnet/celestia/statesync"
       },
+    "tools_desc": {
+      "State-sync": "State sync reference (trust height/hash) and setup instructions to bootstrap quickly."
+    },
        "content":{
             "Installation Guide": "https://services.lavenderfive.com/testnet/celestia/installation"
-          },
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-lavenderfive-nodes"
+          }
     },
     {
     "name": "DTEAM",
@@ -68,6 +75,12 @@
         "Bridge node checker / Discord": "https://discord.com/invite/BCeXe63Mm8",
         "Community faucet (10TIA / 24h)": "https://discord.com/invite/BCeXe63Mm8", 
         "State-sync": "https://dteam.tech/services/state-sync/celestia/mainnet"
+    },
+    "tools_desc": {
+      "Bridge node checker / website": "Web dashboard to verify bridge node status and basic health signals.",
+      "Bridge node checker / Discord": "Discord entry point for bridge node checker updates and community support.",
+      "Community faucet (10TIA / 24h)": "Community faucet access (via Discord) to request testnet tokens with limits.",
+      "State-sync": "State sync instructions and parameters to accelerate node synchronization."
     },
     "rpc": "https://rpc.archive.celestia.testnet.dteam.tech",
     "api": "https://api.archive.celestia.testnet.dteam.tech",
@@ -85,16 +98,11 @@
         "webservices": "",
         "x": "cryptomolot",
         "validatorlogo": "cryptomolot.jpg",
-            "rpc": "https://celestia-mocha-rpc.cryptomolot.com/",
-          "tools": "Community guidelines, Galxe campaign",
-          "tools_url": {
-            "Galxe campaign": "https://app.galxe.com/quest/kBZDkhZ8FD7AaBqaEX4Uk9/GCT9wtdmFw"
-          },
+            "rpc": "https://celestia-mocha-rpc.cryptomolot.com/", 
           "content":{
             "Content contributions for Celestia by cryptomolot": "https://telegra.ph/Content-contributions-for-Celestia-by-cryptomolot-07-02",
             "Community guidelines": "https://cryptomolot.gitbook.io/cryptomolot-docs/testnets/celestia"
-          },
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cryptomolot"
+          }
     },
     {
         "name": "BlackBlocks",
@@ -106,8 +114,7 @@
         "archive_snapshot": "https://wiki.blackblocks.io/en/public/services/testnet/celestia#full-node-archival-snapshot",
         "snap_url": "http://snapshots.blackblocks.io/testnet/celestia/fullnode/archive/celestia_fullnode_archive_mocha-4_latest.tar.lz4",
         "bridge_snap": "https://wiki.blackblocks.io/en/public/services/testnet/celestia#bridge-node-archival-snapshot",
-        "bridge_snap_url": "http://snapshots.blackblocks.io/testnet/celestia/bridge/archive/celestia_bridge_archive_mocha-4_latest.tar.lz4",
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-blackblocks"
+        "bridge_snap_url": "http://snapshots.blackblocks.io/testnet/celestia/bridge/archive/celestia_bridge_archive_mocha-4_latest.tar.lz4"
     },
     {
         "name": "ITRocket",
@@ -132,6 +139,13 @@
             "RPC Scanner": "https://itrocket.net/services/testnet/celestia/public-rpc/",
             "consensus-signal-tracker": "https://itrocket.net/services/testnet/celestia/analytics/consensus-signal-tracker/"
           },
+     "tools_desc": {
+          "Decentralization Analytics": "Analytics view to explore node/validator distribution and decentralization signals.",
+          "Governance Bot": "Telegram bot to track governance proposals and receive status/timer notifications.",
+          "Peer scanner": "Peer uptime and connectivity checker to validate p2p reachability in real time.",
+          "RPC Scanner": "Public RPC scan results to compare endpoint availability and responsiveness.",
+          "consensus-signal-tracker": "Consensus signal dashboard to observe consensus health trends and anomalies."
+        },
          "content": {
             "Consensus Node installation (with Cheat sheet & upgrade guides)": "https://itrocket.net/guides/consensus-node-installation",
             "Bridge Node installation (with Cheat sheet & upgrade guides)": "https://itrocket.net/guides/bridge-node-installation",
@@ -139,8 +153,7 @@
             "Light Node installation (with Cheat sheet & upgrade guides)": "https://itrocket.net/guides/light-node-installation",
             "Deploy your own Celestia sovereign rollup": "https://itrocket.net/guides/deploy-celestia-sovereign-rollup",
             "DA Nodes Monitoring (Bridge, Full, Light Node monitoring script)": "https://itrocket.net/guides/da-nodes-monitoring"
-        },
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#itrocket"
+        }
     },
     {
         "name": "STAKEME",
@@ -160,7 +173,12 @@
             "RPC scanner & peers": "https://testnet.celestia.exploreme.pro/network",
             "Self-written faucet": "https://celestia-testnet.faucetme.pro/"
         },
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakeme"
+     "tools_desc": {
+      "Consensus": "Operational view of consensus signals and chain status for quick checks.",
+      "Uptime validators": "Validator uptime tracking to compare stability across the active set.",
+      "RPC scanner & peers": "Network tool to inspect RPC availability and peer connectivity information.",
+      "Self-written faucet": "Testnet faucet maintained by the team to request tokens for testing."
+       }
     },
     {
         "name": "AutoStake",
@@ -174,8 +192,7 @@
         "seeds": "5c2a752c9b1952dbed075c56c600c3a79b58c395@celestia-testnet-seed.autostake.com:27206",
         "addrbook": "http://snapshots.autostake.com/lyIs25DaSWMSm8evWKHGQrb/mocha-4/addrbook.json",
           "snap_url": "http://snapshots.autostake.com/lyIs25DaSWMSm8evWKHGQrb/mocha-4/latest.tar.lz4",
-        "peers": "5c2a752c9b1952dbed075c56c600c3a79b58c395@celestia-testnet-peer.autostake.com:27206", 
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#autostake"
+        "peers": "5c2a752c9b1952dbed075c56c600c3a79b58c395@celestia-testnet-peer.autostake.com:27206"
     },
     {
         "name": "Stakeflow",
@@ -188,8 +205,7 @@
           "seeds": "edebca7508b70df9659c1293b0d8cbc05c77c91f@seed-celestia-testnet-01.stakeflow.io:16007",
           "api": "https://api-celestia-testnet-01.stakeflow.io",
           "rpc": "https://rpc-celestia-testnet-01.stakeflow.io",
-          "grpc": "grpc-celestia-testnet-01.stakeflow.io:16002",
-          "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#stakeflow"
+          "grpc": "grpc-celestia-testnet-01.stakeflow.io:16002"
     },
     {
         "name": "Openbitlab",
@@ -203,8 +219,7 @@
           "tools_url": {
             "celestia-srvcheck": "https://github.com/openbitlab/celestia-srvcheck",
             "celestia-telegram-bot": "https://t.me/celestia_validator_monitor_bot"
-        },
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-openbitlab"
+        }
     },
     {
         "name": "LuckyResearch.org",
@@ -219,7 +234,11 @@
         "tools_url": {
             "Celestia Performance Status Bot": "https://t.me/celestia_bridge_check_bot",
             "Celestia Bridge Status Checker": "https://celestia-bridge-checker.luckyresearch.org/ "
-        }
+        },
+    "tools_desc": {
+      "State Sync": "State sync information and setup steps to reduce initial sync time.",
+      "Celestia Bridge Status Checker": "Bridge health checker to verify availability and current status."
+      }
     },
     {
         "name": "Suntzu",
@@ -238,7 +257,10 @@
             "State Sync": "https://services.suntzu.dev/testnet/celestia/state-sync",
             "Celestia Bridge Status Checker": "https://celestia-bridge-checker.luckyresearch.org/ "
         },
-         "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#suntzu"
+    "tools_desc": {
+      "State Sync": "State sync information and setup steps to reduce initial sync time.",
+      "Celestia Bridge Status Checker": "Bridge health checker to verify availability and current status."
+       }
     },
     {
         "name": "ContributionDAO",
@@ -252,8 +274,7 @@
           "snapshot": "https://services.contributiondao.com/testnet/celestia/snapshots",
          "content": {
             "Celestia node Installation Guide": "https://services.contributiondao.com/testnet/celestia/installation"
-          },
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributiondao"
+          }
     },
     {
         "name": "Cosmostation",
@@ -261,10 +282,12 @@
         "explorer": "https://www.mintscan.io/celestia-testnet/",
         "x": "CosmostationVD",
         "validatorlogo": "cosmostation.png",
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cosmostation",
-          "tools_url": {
+        "tools_url": {
             "Consensus Monitoring Data": "https://public-cosmos-vms.cosmostation.io/?orgId=1&refresh=5s&var-chain_id=mocha_4&var-chain=celestia"
-          }
+          },
+      "tools_desc": {
+      "Consensus Monitoring Data": "Public dashboard with consensus-related telemetry for Mocha (time-series monitoring view)."
+       }
     },
     {
         "name": "Conqueror",
@@ -272,8 +295,7 @@
         "validatorlogo": "conqueror.jpg",
         "tools_url": {
              "Mocha-4 nodes setup script": "https://github.com/DasRasyo/Celestia-mocha-4"
-          },
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#conqueror"
+          }
     },
 {
   "name": "F5 Nodes",
@@ -283,8 +305,7 @@
   "archive": "y",
  "api": "https://celestia-testnet-api.f5nodes.com",
   "rpc": "https://celestia-testnet-rpc.f5nodes.com",
-  "grpc": "celestia-testnet-grpc.f5nodes.com",
-   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#f5-nodes"
+  "grpc": "celestia-testnet-grpc.f5nodes.com"
 },
         {
   "name": "NakoTurk",
@@ -295,8 +316,7 @@
     "Celestia Mocha Testnet Turkish Step by Step Guide": "https://github.com/okannako/celestiamocha",
     "Celestia Mocha Testnet Turkish Script Guide": "https://github.com/okannako/celestiamochascript",
     "Celestia Endpoints Ninja" : "https://celestia.endpoints.ninja/"
-  },
-  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#nakoturk"
+  }
 },
 {
   "name": "Brightlystake",
@@ -310,7 +330,10 @@
     "Celestia RPC status checker": "https://celestia-tools.brightlystake.com/rpc-status",
     "Celestia gRPC status checker": "https://celestia-tools.brightlystake.com/grpc-status"
   },
-  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#list-of-contributions-from-brightlystakebrightlystakecom"
+    "tools_url": {
+    "Celestia RPC status checker": "https://celestia-tools.brightlystake.com/rpc-status",
+    "Celestia gRPC status checker": "https://celestia-tools.brightlystake.com/grpc-status"
+  }
 },
 {
   "name": "Nodes Hub",
@@ -329,10 +352,13 @@
     "State-Sync": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/state-sync",
     "Upgrade History": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/upgrade"
   },
+  "tools_desc": {
+      "State-Sync": "State sync reference and instructions to bootstrap quickly on testnet.",
+      "Upgrade History": "Upgrade timeline and binaries/steps history to track past and upcoming changes."
+    },
   "content": {
     "Installation guide": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/installation"
-  },
-  "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#nodes-hub-contribution-httpsnodeshubonline"
+  }
 },
 {
   "name": "Crouton Digital",
@@ -343,7 +369,7 @@
   "api": "https://celestia-testnet-api.crouton.digital",
   "grpc": "celestia-testnet-api.crouton.digital:28690",
   "peer": "854f67cdd27f568f2aa4f46a9d35cc727604958e@65.109.93.124:28656",
-    "snapshot": "https://storage.crouton.digital/testnet/celestia/snapshots/celestia_latest.tar.lz4",
+  "snapshot": "https://storage.crouton.digital/testnet/celestia/snapshots/celestia_latest.tar.lz4",
   "genesis": "https://storage.crouton.digital/testnet/celestia/files/genesis.json",
   "addrbook": "https://storage.crouton.digital/testnet/celestia/files/addrbook.json",
   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-crouton-digital"
@@ -360,10 +386,12 @@
   "tools_url": {
     "State-Sync": "https://services.stake-town.com/home/testnet/celestia/sync"
   },
+  "tools_desc": {
+      "State-Sync": "State sync reference and instructions to sync faster on testnet."
+    },
   "content": {
     "Installation Guide": "https://services.stake-town.com/home/testnet/celestia/installation"
-  },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#staketown"
+  }
 },
     {
    "name": "NODERS",
@@ -383,6 +411,12 @@
       "State Sync": "https://noders.services/testnet/celestia/statesync",
       "Celestia Monitoring Setup": "https://noders.services/testnet/celestia/monitoring",
       "Celestia Public Endpoints": "https://noders.services/testnet/celestia/public-endpoints"
+    },
+    "content": {
+      "Node Installation": "https://services.validexis.com/testnets/celestia/validator-node-installation",
+      "Useful Commands": "https://services.validexis.com/testnets/celestia/validator-node-installation/useful-commands",
+      "Full Node Installation": "https://services.validexis.com/testnets/celestia/full-node-installation",
+      "Bridge Node Installation": "https://services.validexis.com/testnets/celestia/bridge-node-installation"
     },
       "content": {
         "Installation Guide": "https://noders.services/testnet/celestia/install"
@@ -423,12 +457,17 @@
     "snapshot": "https://celestia-tools.stavr.tech/consensus/",
     "bridge_snap": "",
     "addrbook": "",
-    "tools": "RPC Locator, Uptime, Map,Celestia Testnet Upgrade",
     "tools_url": {
         "RPC Locator": "https://celestia-tools.stavr.tech/",
         "Uptime": "https://celestia-tools.stavr.tech/uptime/",
         "Map": "https://celestia-tools.stavr.tech/map/",
         "Celestia Testnet Upgrade": "https://celestia-tools.stavr.tech/upgrade/"
+    },
+    "content": {
+      "Node Installation": "https://services.validexis.com/testnets/celestia/validator-node-installation",
+      "Useful Commands": "https://services.validexis.com/testnets/celestia/validator-node-installation/useful-commands",
+      "Full Node Installation": "https://services.validexis.com/testnets/celestia/full-node-installation",
+      "Bridge Node Installation": "https://services.validexis.com/testnets/celestia/bridge-node-installation"
     }
 },
      {
@@ -463,6 +502,12 @@
         "Dashboard Upgrades": "https://celestiabridge.com/testnet/upgrades"
     },
     "content": {
+      "Node Installation": "https://services.validexis.com/testnets/celestia/validator-node-installation",
+      "Useful Commands": "https://services.validexis.com/testnets/celestia/validator-node-installation/useful-commands",
+      "Full Node Installation": "https://services.validexis.com/testnets/celestia/full-node-installation",
+      "Bridge Node Installation": "https://services.validexis.com/testnets/celestia/bridge-node-installation"
+    },
+    "content": {
         "Node Installation": "https://services.validexis.com/testnets/celestia/validator-node-installation",
         "Useful Commands": "https://services.validexis.com/testnets/celestia/validator-node-installation/useful-commands",
         "Full Node Installation": "https://services.validexis.com/testnets/celestia/full-node-installation",
@@ -488,6 +533,9 @@
     },
     "tools_url": {
         "Celestia Faucet": "https://celestia-services.stakeus.xyz/#"
+    },
+    "tools_desc": {
+      "Celestia Faucet": "Testnet faucet entry point to request tokens for development/testing."
     }
   },
      {
@@ -504,7 +552,11 @@
         "tools_url": {
             "Validator missed proposals": "https://celestia-dashboard.krews.xyz/celestia-mocha/missed-proposals",
             "Bridge Nodes explorer": "https://celestia-dashboard.krews.xyz/celestia-mocha/bridge-nodes"
-        }
+        },
+      "tools_desc": {
+        "DA RPC": "Public Data Availability RPC endpoint for light clients and DA queries.",
+        "Faucet": "Testnet faucet to request tokens for usage and testing."
+       }
     },
     {
         "name": "Pro-Nodes75",
@@ -517,12 +569,14 @@
         "api": "https://api.celestia.testnet.node75.org",
         "rpc": "https://rpc.celestia.testnet.node75.org",
         "grpc": "grpc.celestia.testnet.node75.org:9220",
-        "tools": "DA RPC light node, Faucet",
         "tools_url": {
             "DA RPC": "https://public-da-rpc.celestia.testnet.node75.org:443",
             "Faucet": "https://faucet.celestia.node75.org/"
         },
-        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#pro-nodes75"
+      "tools_desc": {
+        "DA RPC": "Public Data Availability RPC endpoint for light clients and DA queries.",
+        "Faucet": "Testnet faucet to request tokens for usage and testing."
+        }
     },
     {
       "name": "Cumulo",
@@ -540,6 +594,13 @@
         "Celestia Bridge Node Dashboard in Grafana": "https://grafana.com/grafana/dashboards/21116-celestia-consensus-validator-node/",
         "Celestia underneath: All the projects that use Celestia as a DA": "https://celestia.frontchain.cumulo.pro/underneath"
       },
+      "tools_desc": {
+      "Dashboard for Consensus Nodes with all available metrics for Celestia": "Grafana dashboard pack for consensus nodes, covering validator and consensus telemetry.",
+      "Consensus Monitoring System Documentation": "Documentation for the monitoring stack (Prometheus/Grafana) and how to deploy it.",
+      "Dashboard in Grafana": "Grafana dashboard resources focused on bridge monitoring and operational signals.",
+      "Celestia Bridge Node Dashboard in Grafana": "Public Grafana dashboard template for bridge/consensus visibility and troubleshooting.",
+      "Celestia underneath: All the projects that use Celestia as a DA": "Directory/dashboard of projects building on Celestia as a data availability layer."
+    },
       "content": {
         "Website dedicated to our content about Modular Summit events": "https://modular.cumulo.pro/",
         "Compilation of technical guides and resources": "https://cumulo.pro/celestia/content"
