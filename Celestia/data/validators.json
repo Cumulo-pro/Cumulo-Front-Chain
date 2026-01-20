@@ -13,7 +13,9 @@
     "tools_url": {
         "Validator sign block and consensus state check": "https://github.com/stakingcabin/celestia-task"
     },
-    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#node-operator-contributions"
+   "tools_desc": {
+    "Validator sign block and consensus state check": "Command-line helper scripts to verify validator signing activity and inspect consensus state (useful for troubleshooting missed blocks and confirming node health)."
+  }
 },
   {
     "name": "Nodes.Guru",
@@ -30,7 +32,10 @@
         "NodesChecker Bot": "https://t.me/NodesGuru_bot",
         "Celestia Bridge Healthcheck Script": "https://github.com/NodesGuru/celestia-bridge-healthcheck"
     },
-    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#nodesguru"
+    "tools_desc": {
+    "NodesChecker Bot": "Telegram bot that checks node status and basic health signals for Cosmos-based networks, including Celestia.",
+    "Celestia Bridge Healthcheck Script": "Open-source healthcheck script focused on Celestia Bridge nodes (connectivity and operational status checks)."
+  }
 },
   {
     "name": "BlackNodes",
@@ -45,7 +50,9 @@
     "tools_url": {
        "Celestia Faucet By BlackNodes": "https://celestia-faucet.blacknodes.net"
     },
-    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#blacknodes-contribution-httpsblacknodesnet"
+     "tools_desc": {
+    "Celestia Faucet By BlackNodes": "Public faucet to request testnet tokens for Celestia-related testing and onboarding."
+  }
 },
 {
     "name": "Lavender.Five Nodes",
@@ -61,10 +68,12 @@
     "tools_url": {
         "State-sync" :"https://services.lavenderfive.com/mainnet/celestia/statesync"
      },
+   "tools_desc": {
+    "State-sync": "State sync parameters and instructions to bootstrap a Celestia node faster by syncing from trusted snapshots."
+  },
    "content":{
     "Installation Guide": "https://services.lavenderfive.com/mainnet/celestia/installation"
-  },
-    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-lavenderfive-nodes"
+  }
 },
   {
     "name": "kjnodes",
@@ -79,12 +88,16 @@
     "addrbook": "https://snapshots.kjnodes.com/celestia/addrbook.json",
     "snapshot": "https://services.kjnodes.com/mainnet/celestia/snapshot/",
     "archive_snapshot": "https://services.kjnodes.com/mainnet/celestia/snapshot-archive",
-    "tools": "state-sync,Public RPC,Slashboard",
     "tools_url": {
         "State-sync": "https://services.kjnodes.com/mainnet/celestia/state-sync/",
         "Public RPC": "https://services.kjnodes.com/mainnet/celestia/public-rpc/",
         "Slashboard": "https://services.kjnodes.com/mainnet/celestia/slashboard/"
-    }
+    },
+    "tools_desc": {
+    "State-sync": "State sync guide and endpoints to speed up node synchronization without downloading full history.",
+    "Public RPC": "Public RPC endpoints and connection details for Celestia (useful for wallets, relayers, and tooling).",
+    "Slashboard": "Validator slashing and signing monitoring dashboard (helps detect downtime risks and missed signatures)."
+  }
 },
   {
     "name": "Polkachu",
@@ -101,6 +114,9 @@
     "tools_url": {
         "State-sync" :"https://polkachu.com/state_sync/celestia"
      },
+   "tools_desc": {
+    "State-sync": "State sync instructions and parameters for fast node initialization on Celestia mainnet."
+  }
    "content":{
     "Installation Guide": "https://polkachu.com/installation/celestia"
   }
@@ -110,15 +126,10 @@
   "webservices": "",
   "x": "cryptomolot",
   "validatorlogo": "cryptomolot.jpg",
-  "tools": "Community guidelines, Galxe campaign",
-  "tools_url": {
-    "Galxe campaign": "https://app.galxe.com/quest/kBZDkhZ8FD7AaBqaEX4Uk9/GCT9wtdmFw"
-  },
-  "content":{
+   "content":{
     "Content contributions for Celestia by cryptomolot": "https://telegra.ph/Content-contributions-for-Celestia-by-cryptomolot-07-02",
     "Community guidelines": "https://cryptomolot.gitbook.io/cryptomolot-docs/testnets/celestia"
-  },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cryptomolot"
+  }
 },
   {
     "name": "BlackBlocks",
@@ -149,7 +160,9 @@
     "tools_url": {
         "Bridge archive snapshot": "https://docs.validatrium.club/Celestia/bridge-archive-snapshot"
     },
-    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#validatrium"
+    "tools_desc": {
+    "Bridge archive snapshot": "Bridge node archival snapshot reference to speed up initialization of Celestia bridge infrastructure."
+  }
 },
   {
     "name": "STAKEME",
@@ -169,7 +182,12 @@
         "RPC scanner & peers": "https://celestia.exploreme.pro/network",
         "Consensus": "https://celestia.exploreme.pro/utilities?tab=consensus",
         "Uptime validators": "https://celestia.exploreme.pro/utilities?tab=uptime"
-    }
+    },
+    "tools_desc": {
+    "RPC scanner & peers": "Network utilities to discover public RPC endpoints and peers for Celestia operators.",
+    "Consensus": "Consensus monitoring view for checking chain status, validator signing, and related signals.",
+    "Uptime validators": "Uptime/availability tracker to compare validator reliability over time."
+  }
 },
 {
     "name": "AutoStake",
@@ -185,7 +203,9 @@
     "tools_url": {
         "Snapshot, addrbook, State-sync, Seed, Peer": "https://autostake.com/networks/celestia/#services"
     },
-    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#autostake"
+    "tools_desc": {
+    "Snapshot, addrbook, State-sync, Seed, Peer": "Service hub providing snapshots, addrbook, state sync settings, seeds, and peers for faster node setup and maintenance."
+  }
 },
 {
   "name": "Smart Stake",
@@ -206,7 +226,11 @@
     "Decentralization Analytics": "https://smartstake.io/decentralization/celestia",
     "Relayer Analytics": "https://smartstake.io/relayers/celestia"
   },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#smart-stake"
+  "tools_desc": {
+    "Smart Stake Analytics": "Validator and chain analytics for Celestia (performance, voting power, and network signals).",
+    "Decentralization Analytics": "Metrics and dashboards focused on decentralization and stake distribution across the validator set.",
+    "Relayer Analytics": "Relayer dashboards tracking IBC relayer activity and performance for Celestia-connected paths."
+  }
 },
 {
   "name": "CrypTech",
@@ -227,7 +251,10 @@
     "Proposal_Bot": "https://t.me/Cryptech_ProposalBot",
     "Node Monitoring": "https://github.com/dvjromashkin/cosmos-monitoring"
   },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cryptech",
+  "tools_desc": {
+    "Proposal_Bot": "Telegram bot that alerts about governance proposals and voting activity for Celestia.",
+    "Node Monitoring": "Open-source monitoring stack for Cosmos-based nodes (Prometheus/Grafana-style monitoring approach)."
+  }
   "content_url": {
     "Russian Medium": "https://cryptech-nodes.medium.com/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D1%81%D0%B5%D1%82%D0%B8-celestia-3b5a0865c7f1",
     "Guide": "https://services.cryptech.com.ua/mainnet/celestia/installation/README/"
@@ -264,12 +291,14 @@
   "grpc": "celestia-grpc.openbitlab.com:443",
   "snapshot": "https://openbitlab.com/network/58/Celestia/snapshot",
   "addrbook": "",
-  "tools": "Srvcheck monitoring tool, Validator Monitor bot",
   "tools_url": {
     "Srvcheck monitoring tool": "https://github.com/openbitlab/celestia-srvcheck",
     "Validator Monitor bot": "https://t.me/celestia_validator_monitor_bot"
   },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-openbitlab"
+  "tools_desc": {
+    "Srvcheck monitoring tool": "Service monitoring tool for Celestia infrastructure (health checks and basic uptime monitoring).",
+    "Validator Monitor bot": "Telegram bot that monitors validator status and notifies on relevant events."
+  }
 },
 {
   "name": "LuckyResearch.org",
@@ -284,7 +313,7 @@
     "Services guide": "https://services.luckyresearch.org/lucky-research-services/mainet/celestia",
     "Vietnamese Blockchain Knowledge": "https://luckyresearch.notion.site/Gi-i-thi-u-v-Celestia-v-Modular-Blockchain-c9bd267748e8471ea7da8ec85e75fa29?pvs=74"
   },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-luckyresearchorg"
+   
 },
 {
   "name": "Suntzu",
@@ -303,7 +332,9 @@
   "tools_url": {
     "Monitor bridge/validator/system": "https://github.com/suntzu93/system_monitor"
   },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#suntzu"
+   "tools_desc": {
+    "Monitor bridge/validator/system": "System monitoring scripts for Celestia validator and bridge nodes (resource usage + node health)."
+  }
 },
 {
   "name": "ContributionDAO",
@@ -319,14 +350,15 @@
   "grpc": "https://celestia-archive-mainnet-grpc.contributiondao.com",
   "snapshot": "https://services.contributiondao.com/mainnet/celestia/snapshots",
   "addrbook": "",
-  "tools": "Bridge node snapshot",
   "tools_url": {
     "Bridge node snapshot": "https://services.contributiondao.com/mainnet/celestia/bridge-snapshots"
   },
+  "tools_desc": {
+    "Bridge node snapshot": "Bridge node snapshot download page to speed up Celestia bridge node initialization."
+  }
   "content_url": {
     "Installation Guide": "https://services.contributiondao.com/mainnet/celestia/installation"
-  },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributiondao"
+  }
 },
 {
   "name": "Cosmostation",
@@ -343,7 +375,11 @@
     "Mobile Wallet": "https://wallet.cosmostation.io",
     "Web Extension": "https://chrome.google.com/webstore/detail/cosmostation-wallet"
   },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#cosmostation"
+   "tools_desc": {
+    "Mintscan Explorer": "Block explorer for Celestia via Mintscan (transactions, validators, governance).",
+    "Mobile Wallet": "Cosmostation mobile wallet for Cosmos ecosystems, including Celestia staking and governance.",
+    "Web Extension": "Browser extension wallet for interacting with Cosmos chains (staking and dApps)."
+  }
 },
 {
   "name": "Provalidator",
@@ -354,7 +390,9 @@
   "tools_url": {
     "Governance Alert Bots": "https://github.com/Zenon-provalidator/celelstia_proposal_bot"
   },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-provalidator"
+   "tools_desc": {
+    "Governance Alert Bots": "Governance monitoring bots that notify about new proposals, voting periods, and key governance events."
+  }
 },
 {
   "name": "Moonlet",
@@ -370,8 +408,6 @@
   "snapshot": "https://dashboard.moonlet.app/dashboard/snapshots/?blockchain=TIA",
   "addrbook": "https://snapshots.moonlet.cloud/mainnet/dymension/addrbook.json",
   "genesis": "https://snapshots.moonlet.cloud/mainnet/dymension/genesis.json",
-  "tools": "Dashboard",
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-moonlet",
   "tools_url": {
     "Dashboard": "https://dashboard.moonlet.app/dashboard/?blockchain=TIA"
   }
@@ -385,7 +421,9 @@
   "tools_url": {
     "Mainnet Beta DA nodes setup script": "https://github.com/DasRasyo/Celestia-Mainnet-DA-Nodes/tree/main"
    },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#conqueror"
+  "tools_desc": {
+    "Mainnet Beta DA nodes setup script": "Setup scripts to deploy and manage Celestia DA nodes (automation for operators)."
+  }
 },
 {
   "name": "Wavefive",
@@ -417,7 +455,12 @@
     "DA Nodes Management Script": "https://github.com/f5nodes/celestia-da-nodes",
     "Celestia Endpoints Ninja" : "https://celestia.endpoints.ninja/"
   },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#f5-nodes"
+  "tools_desc": {
+    "Monitoring tool": "Monitoring dashboard for Celestia nodes (service health and operational metrics).",
+    "Celestia Wiki": "Documentation hub with guides and references for Celestia node operators.",
+    "DA Nodes Management Script": "Automation scripts to deploy/manage Celestia DA nodes and related infrastructure.",
+    "Celestia Endpoints Ninja": "Public directory of Celestia endpoints to help operators and users find working RPCs."
+  }
 },
 {
   "name": "NakoTurk",
@@ -429,8 +472,7 @@
     "Celestia Mainnet Turkish Script Guide": "https://github.com/okannako/celestiamainnetscript",
     "Celestia Mocha Testnet Turkish Step by Step Guide": "https://github.com/okannako/celestiamocha",
     "Celestia Mocha Testnet Turkish Script Guide": "https://github.com/okannako/celestiamochascript"
-  },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#nakoturk"
+  }
 },
 {
   "name": "Brightlystake",
@@ -444,7 +486,10 @@
     "Celestia RPC status checker": "https://celestia-tools.brightlystake.com/rpc-status",
     "Celestia gRPC status checker": "https://celestia-tools.brightlystake.com/grpc-status"
   },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#list-of-contributions-from-brightlystakebrightlystakecom"
+  "tools_desc": {
+    "Celestia RPC status checker": "Simple checker to verify Celestia RPC endpoint availability and basic responses.",
+    "Celestia gRPC status checker": "Simple checker to verify Celestia gRPC endpoint availability and responsiveness."
+  }
 },
 {
   "name": "Enigma",
@@ -461,14 +506,17 @@
     "GenesisDrop Checker": "https://celestia.genesisdrop.enigma-validator.com/",
     "Celestia Network Node Map": "https://celestia-mapper.enigma-validator.com/"
   },
+  "tools_desc": {
+    "Celestia RPC status checker": "Simple checker to verify Celestia RPC endpoint availability and basic responses.",
+    "Celestia gRPC status checker": "Simple checker to verify Celestia gRPC endpoint availability and responsiveness."
+  },
   "content_url": {
     "How to launch a node": "https://doc.enigma-validator.com/docs/mainnets/Celestia/setup-node",
     "How to Stake TIA - French Guide": "https://enigmavalidator.substack.com/p/tutoriel-staking-tia",
      "French article on modularity": "https://huzmond.substack.com/p/fr-2023-lannee-de-la-modularite",
     "French content collaboration": "https://www.youtube.com/watch?v=6S0Nl-MYnKw",
     "WEB3connect event website": "https://web3connect.fr/2024"
-  },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#enigma"
+  }
 },
 {
   "name": "Nodes Hub",
@@ -484,15 +532,15 @@
   "archive_snapshot": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/snapshot/archive",
   "snapshot": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/snapshot/pruned",
  "addrbook": "",
-  "tools": "Installation guide, State-Sync, Upgrade History",
-  "tools_url": {
+ "tools_url": {
    "State-Sync": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/state-sync"
+  },
+  "tools_desc": {
+    "State-Sync": "State sync parameters and endpoints for accelerating Celestia node bootstrap."
   },
    "content_url": {
      "Installation guide": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/installation"    
-  },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#nodes-hub-contribution-httpsnodeshubonline"
-},
+  }
 {
   "name": "Pro-Nodes75",
   "webservices": "",
@@ -505,24 +553,28 @@
   "rpc": ["https://rpc.celestia.node75.org", "https://rpc-archive.celestia.node75.org"],
   "grpc": ["grpc.celestia.node75.org:9220", "grpc-archive.celestia.node75.org:9740"],
   "archive_snapshot": "https://snap-archive.celestia.node75.org/",
-  "tools": "Celestia Cluster monitoring tool, Celestia IBC information matrix",
   "tools_url": {
     "Celestia Cluster monitoring tool": "https://github.com/the-node75/mon_celestia",
     "Celestia IBC information matrix": "https://services.node75.org/ibc-matrix/celestia"
   },
- "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#pro-nodes75"
+  "tools_desc": {
+    "Celestia Cluster monitoring tool": "Monitoring toolkit for multi-node Celestia clusters (health and operational visibility).",
+    "Celestia IBC information matrix": "IBC matrix view showing connected chains, channels, and path status for Celestia."
+  }
 },
 {
   "name": "Maple Nodes",
   "webservices": "https://docs.maplenodes.com/#celestia",
   "x": "MapleNodes",
   "validatorlogo": "maplenodes.jpg",
-  "tools": "Celestia Network Analytics Dashboard, Custom API Endpoints for Celestia",
   "tools_url": {
     "Celestia Network Analytics Dashboard": "https://celestia.maplenodes.com/analytics/",
     "Custom API Endpoints for Celestia": "https://docs.maplenodes.com/#celestia"
   },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-maple-nodes"
+   "tools_desc": {
+    "Celestia Network Analytics Dashboard": "Analytics dashboard focused on Celestia network-wide metrics and trends.",
+    "Custom API Endpoints for Celestia": "Documentation for custom Celestia endpoints and operator services provided by Maple Nodes."
+  }
 },
   {
   "name": "StakeTown",
@@ -539,10 +591,13 @@
     "Monitoring stack for DA nodes": "https://github.com/staketown/celestia-da-monitoring",
     "Bot for tracking health of important IBC paths": "https://discord.com/channels/638338779505229824/1176595874823028817"
   },
+     "tools_desc": {
+    "Celestia Network Analytics Dashboard": "Analytics dashboard focused on Celestia network-wide metrics and trends.",
+    "Custom API Endpoints for Celestia": "Documentation for custom Celestia endpoints and operator services provided by Maple Nodes."
+  },
   "content_url": {
     "Installation Guide": "https://services.stake-town.com/home/mainnet/celestia/installation"
-  },
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#staketown"
+  }
 },
   {
   "name": "Staking Facilities",
@@ -556,7 +611,9 @@
   "content_url": {
     "Tutorials in our blog for TIA staking": "https://stakingfacilities.com/blog/celestia-x-keplr-wallet-staking-guide"
   },
-   "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-staking-facilities"
+    "tools_desc": {
+    "Tiascan - Blockspace Race Dashboard": "Dashboard tracking Celestia blockspace usage and activity trends over time."
+  }
 },
  {
     "name": "Decentrio",
@@ -567,15 +624,16 @@
     "api": "https://celestia.api.decentrio.ventures:443",
     "rpc": "https://celestia.rpc.decentrio.ventures:443",
     "grpc": "https://celestia-grpc.decentrio.ventures:443", 
-    "tools": "Services (Snapshot, Installation Guide)",
     "tools_url": {
       "Services (Snapshot, Installation Guide)": "https://decentrio.ventures/services/celestia"
     },
+    "tools_desc": {
+    "Services (Snapshot, Installation Guide)": "Service page aggregating Celestia snapshots and installation/operator resources."
+  },
     "content_url": {
       "Code Contributions - Working with Rollkit": "https://x.com/RollkitDev/status/1798007102612656476",
       "Public Good Contributions": "https://decentrio.notion.site/Celestia-public-good-3cc3aa45c8cb4738b77d6c8946a1dcfd?pvs=4"
-    },
-    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-decentrio"
+    }
   },
   {
     "name": "kocality",
@@ -586,7 +644,9 @@
     "tools_url": {
       "Celestia Light Node Script": "https://github.com/kocality/celestia-light-node-script"
     },
-    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-kocality"
+    "tools_desc": {
+    "Celestia Light Node Script": "Automation script to install and run a Celestia light node with minimal setup."
+  }
   },
   {
     "name": "NODERS",
@@ -601,17 +661,18 @@
     "grpc": "celestia-grpc.noders.services:11090",
     "snapshot": "https://noders.services/mainnet-networks/celestia/snapshot",
     "addrbook": "https://config.noders.services/celestia/addrbook.json",
-    "tools": "Celestia CommunityHub",
-    "tools_url": {
+   "tools_url": {
         "Staging Explorer": "https://noders-app-staging.web.app/explorer"
     },
+     "tools_desc": {
+    "Staging Explorer": "Staging explorer environment for testing and previewing Celestia explorer features."
+  }
   "content_url": {
         "Medium": "https://docs.google.com/document/d/1VIYunKnLWbz65_C98CQ8MbANYnEbmc3StEteVByC57c",
         "Celestia Hub Academy": "https://docs.google.com/document/d/1Q77MnVxqu6-ACvfYFzgJIProniNEB8uju9fLymCoATU",
         "10 Tweets about Celestia": "https://docs.google.com/document/d/1PIkfDi6o0JoW46B0K-wO-CmBCO6ZLX3nD77d_rDw00s",
        "31 Posts about Celestia": "https://docs.google.com/document/d/1BYJ9o4NAngU6Ma7BcPycwAQFdzLeIH_QG7WcTgDVuRw"
-    },
-    "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-noders-validator"
+    }
 },
   {
     "name": "NodeStake",
@@ -641,14 +702,15 @@
     "grpc": "grpc.celestia.mainnet.dteam.tech:28090",
     "snapshot": "https://dteam.tech/services/mainnet/snapshot/celestia",
     "addrbook": "https://dteam.tech/services/mainnet/addrbook/celestia",
-    "tools": "state-sync",
     "tools_url": {
       "state-sync": "https://dteam.tech/services/mainnet/state-sync/celestia"
     },
+     "tools_desc": {
+    "state-sync": "State sync service page with parameters and endpoints for fast Celestia node initialization."
+  }
     "content_url": {
       "Installation Guide": "https://dteam.tech/services/mainnet/installation-guide/celestia?type=consensus"
-    },
-    "github": ""
+    }
 },
    {
     "name": "Easy2Stake",
@@ -659,7 +721,11 @@
    "tools_url": {
     "Celestia sync server dashboard": "https://sync.easy2stake.com/d/ce1jmvhesy1hce/state-sync-server?orgId=1&var-chain_id=celestia&var-source=sync-server-1&var-rpc_server=https:%2F%2Fcelestia-rpc.easy2stake.com:443&var-default_homedir=$HOME%2F.celestia-app&var-seeds=edc6bc6ee3c37a698225e17bd4b8c687ee05f977@celestia-seed.easy2stake.com:26756&var-peers=372f0ee5553cf34fc5cf9fc6294f42b09048fb1b@138.201.63.38:26756,edc6bc6ee3c37a698225e17bd4b8c687ee05f977@138.201.63.42:26756&var-binary_name=celestia-appd&var-lcd_server=https:%2F%2Fcelestia-lcd.easy2stake.com",
      "celestia-bridge-metrics": "https://github.com/easy2stake/celestia-bridge-metrics"
-    }
+    },
+      "tools_desc": {
+    "Celestia sync server dashboard": "Grafana dashboard for state-sync server and node bootstrap diagnostics (RPC, seeds, peers, chain variables).",
+    "celestia-bridge-metrics": "Open-source exporter/metrics tooling for Celestia bridge nodes (Prometheus-friendly metrics)."
+  }
 },
   {
     "name": "Bitszn",
@@ -667,10 +733,12 @@
     "x": "bitszn_com",
     "validatorlogo": "bitszn.png",
     "explorer": "https://celestia.valopers.com",
-    "tools": "celestia bridge explorer",
     "tools_url": {
         "celestia bridge explorer": "https://celestia.valopers.com/bridges"
-    }
+    },
+    "tools_desc": {
+    "celestia bridge explorer": "Bridge node explorer to inspect and monitor Celestia bridge infrastructure activity."
+  }
 },
    {
     "name": "STAVR",
@@ -686,13 +754,18 @@
     "snapshot": "https://celestia-tools.stavr.tech/consensus/",
     "bridge_snap": "https://celestia-tools.stavr.tech/bridge/",
     "addrbook": "",
-    "tools": "RPC Locator, Uptime, Map,Celestia Mainnet Upgrade",
-    "tools_url": {
+   "tools_url": {
         "RPC Locator": "https://celestia-tools.stavr.tech/",
         "Uptime": "https://celestia-tools.stavr.tech/uptime/",
         "Map": "https://celestia-tools.stavr.tech/map/",
        "Celestia Mainnet Upgrade": "https://celestia-tools.stavr.tech/upgradem/"
-    }
+    },
+      "tools_desc": {
+    "RPC Locator": "Directory to discover working Celestia endpoints by region/provider.",
+    "Uptime": "Uptime tracker for Celestia validators/endpoints to compare reliability.",
+    "Map": "Network map showing validator/location distribution and infrastructure visibility.",
+    "Celestia Mainnet Upgrade": "Upgrade notes and guidance for mainnet releases and coordinated updates."
+  }
 },
    {
         "name": "Krews",
@@ -704,10 +777,13 @@
         "api": "",
         "snapshot": "https://celestia-dashboard.krews.xyz/celestia/snapshots?pruning=pruned",
         "explorer": "https://celestia-dashboard.krews.xyz/celestia/validators",
-        "tools": "validator performance dashboard",
         "tools_url": {
             "Validator missed proposals": "https://celestia-dashboard.krews.xyz/celestia/missed-proposals",
             "Bridge Nodes explorer": "https://celestia-dashboard.krews.xyz/celestia/bridge-nodes"
+        },
+        "tools_desc": {
+          "Validator missed proposals": "Dashboard showing governance participation / missed proposals and related validator activity.",
+          "Bridge Nodes explorer": "Explorer view focused on Celestia bridge nodes and their operational state."
         }
     },
   {
@@ -722,10 +798,12 @@
     "rpc": "https://celestia-rpc.tienthuattoan.com",
     "grpc": "celestia-grpc.tienthuattoan.com:9090",
      "snapshot": "https://services.tienthuattoan.com/testnet/celestia/snapshot",
-     "tools": "Decentralization Map",
-    "tools_url": {
+     "tools_url": {
         "Decentralization Map": "https://services.tienthuattoan.com/testnet/celestia/map"
-      }
+      },
+     "tools_desc": {
+    "Decentralization Map": "Map/dashboard focused on decentralization and node distribution insights."
+  }
     },
   {
     "name": "21state",
@@ -738,10 +816,12 @@
     "api": "",
     "rpc": "",
     "grpc": "",
-   "tools": "Celestia Snapshot Finder",
     "tools_url": {
         "RPC Locator": "https://github.com/21state/celestia-snapshot-finder"
-    }
+    },
+    "tools_desc": {
+    "RPC Locator": "Open-source snapshot finder / endpoint locator tooling for Celestia node operators."
+  }
   },
   {
     "name": "Validexis",
@@ -756,10 +836,12 @@
     "api": "https://api-celestia-mainnet.validexis.com",
     "rpc": "https://rpc-celestia-mainnet.validexis.com",
     "grpc": "grpc-celestia-mainnet.validexis.com:443",
-   "tools": "CelestiaUltraBot",
-   "addrbook": "https://mainnets.validexis.com/celestia/addrbook.json",
+    "addrbook": "https://mainnets.validexis.com/celestia/addrbook.json",
     "tools_url": {
         "CelestiaUltraBot": "https://validexis.com/celestiaultrabot"
+    },
+    "tools_desc": {
+      "RPC Locator": "Open-source snapshot finder / endpoint locator tooling for Celestia node operators."
     },
     "content_url": {
         "Node Installation": "https://services.validexis.com/mainnets/celestia/validator-node-installation",
@@ -794,12 +876,11 @@
     "rpc": "",
     "grpc": "",
     "addrbook": "",
-    "content_url": {
-        "Node Installation": ""
-    },
-    "tools": "Celestia Bridge Explorer",
     "tools_url": {
         "Celestia Bridge Explorer": "https://celestia-bridges.stakeus.xyz/"
+    },
+   "tools_desc": {
+    "CelestiaUltraBot": "Operator-oriented bot providing validator/node signals and Celestia-specific utilities for monitoring and alerts."
     }
   },
   {
@@ -816,12 +897,16 @@
   "snapshot": "https://itrocket.net/services/mainnet/celestia/",
   "bridge_snap": "https://itrocket.net/services/mainnet/celestia/bridge-node/",
   "archive_snapshot": "https://itrocket.net/services/mainnet/celestia/",
-  "tools": "Validator Analytics, Decentralization Analytics, Peer scanner",
- "tools_url": {
-  "Validator Analytics": "https://itrocket.net/services/mainnet/celestia/analytics/validators-performance/",
-  "Decentralization Analytics": "https://itrocket.net/services/mainnet/celestia/decentralization/",
-  "Peer scanner": "https://itrocket.net/services/mainnet/celestia/public-rpc/"
-    },
+   "tools_url": {
+    "Validator Analytics": "https://itrocket.net/services/mainnet/celestia/analytics/validators-performance/",
+    "Decentralization Analytics": "https://itrocket.net/services/mainnet/celestia/decentralization/",
+    "Peer scanner": "https://itrocket.net/services/mainnet/celestia/public-rpc/"
+      },
+   "tools_desc": {
+    "Validator Analytics": "Validator performance analytics dashboards for Celestia (ranking, uptime and operational signals).",
+    "Decentralization Analytics": "Decentralization metrics (stake distribution, concentration, and validator set composition).",
+    "Peer scanner": "Utility to scan/discover peers and public RPC infrastructure for Celestia."
+  },
     "content": {
         "Installation Guide": "https://itrocket.net/services/mainnet/celestia/installation/"
     }
@@ -837,10 +922,12 @@
   "snapshot": "",
   "bridge_snap": "",
   "archive_snapshot": "",
-  "tools": "",
- "tools_url": {
+  "tools_url": {
   "Celestia Upgrade Monitor": "https://github.com/sryps/celestia-upgrade-monitor"
-    }
+    },
+  "tools_desc": {
+    "Celestia Upgrade Monitor": "Open-source monitor that tracks Celestia upgrades and helps operators follow coordinated releases."
+  }
   },
   {
   "name": "Cumulo",
@@ -859,6 +946,14 @@
     "Celestia Bridge Node Dashboard in Grafana": "https://grafana.com/grafana/dashboards/21116-celestia-consensus-validator-node/",
     "Celestia Front Chain. Everything you need to know about Celestia in one place": "https://roller.frontchain.cumulo.pro/",
     "Celestia underneath: All the projects that use Celestia as a DA": "https://celestia.frontchain.cumulo.pro/underneath"
+  },
+    "tools_desc": {
+    "Dashboard for Consensus Nodes with all available metrics for Celestia": "Grafana dashboard and documentation covering full validator/consensus metrics for Celestia nodes.",
+    "Consensus Monitoring System Documentation": "Documentation for Cumulo’s monitoring stack (exporters, dashboards, and operational signals).",
+    "Dashboard in Grafana": "Grafana dashboard reference for node monitoring (service health and performance signals).",
+    "Celestia Bridge Node Dashboard in Grafana": "Public Grafana dashboard template for Celestia bridge/validator monitoring.",
+    "Celestia Front Chain. Everything you need to know about Celestia in one place": "Cumulo portal aggregating Celestia validation status, resources, operations and ecosystem links.",
+    "Celestia underneath: All the projects that use Celestia as a DA": "Explorer-style dashboard listing projects building on Celestia as their data availability layer."
   },
   "content_url": {
     "Website dedicated to our content about Modular Summit events": "https://modular.cumulo.pro/",
