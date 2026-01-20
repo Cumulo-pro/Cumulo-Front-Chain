@@ -32,7 +32,8 @@
     "tools_url": {
         "Node Tutorial Guide": "https://github.com/blacknodes/Node-Services/tree/main/Projects/celestia",
         "Node-Monitoring Guide": "https://github.com/blacknodes/Node-Services/tree/main/Projects/celestia/Celestia-Node-Monitoring",
-        "Celestia faucet": "https://celestia-faucet.blacknodes.net/"
+        "Celestia faucet": "https://celestia-faucet.blacknodes.net/",
+        "State-Sync": "https://services.blacknodes.net/Celestia/"
     },
     "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#blacknodes-contribution-httpsblacknodesnet"
 },
