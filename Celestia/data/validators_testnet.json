@@ -421,7 +421,7 @@
     "rpc": "",
     "grpc": "",
     "snapshot": "https://celestia-tools.stavr.tech/consensus/",
-    "bridge_snap": "https://celestia-tools.stavr.tech/bridge/",
+    "bridge_snap": "",
     "addrbook": "",
     "tools": "RPC Locator, Uptime, Map,Celestia Testnet Upgrade",
     "tools_url": {
