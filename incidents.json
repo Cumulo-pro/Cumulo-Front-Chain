@@ -1,5 +1,17 @@
 [
  {
+  "id": "dymension-mainnet-security-patch-v4.0.2-2026-01-21",
+  "date": "2026-01-21T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Dymension",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "dymension v4.0.2",
+  "note": "Critical security patch applied on Dymension mainnet to mitigate a CometBFT vulnerability affecting multiple Cosmos-based chains. Version v4.0.2 was released with special handling instructions: source code changes are not yet public and validators must not build from source. Cumulo upgraded using the official pre-built binaries via a rolling upgrade process, with no coordinated halt or specific block height required, ensuring continued network security and validator participation.",
+  "url": "https://github.com/dymensionxyz/dymension/releases/tag/v4.0.2"
+},
+ {
   "id": "xrplevm-testnet-rpc-archive-upgrade-v9.0.2-2026-01-19",
   "date": "2026-01-19T00:00:00Z",
   "incident_type": "upgrade",
