@@ -1,5 +1,16 @@
 [
  {
+  "id": "xrplevm-mainnet-governance-proposal-19-vote-change-no-2026-01-21",
+  "date": "2026-01-21T09:00:00Z",
+  "incident_type": "governance_vote",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Following the report of a critical issue discovered in CosmosEVM, Cumulo changed its governance vote to NO on Proposal #19, which proposed migrating XRPL EVM from Evmos to Cosmos EVM v0.4.2. Due to the identified risk, the validator community coordinated an urgent response requesting validators to update their votes within a 4-hour window. The proposal ultimately reached ~66% NO votes, preventing the upgrade from taking place and avoiding the introduction of a potentially unsafe dependency into the XRPL EVM mainnet.",
+  "url": "https://governance.xrplevm.org/xrplevm/proposals/19"
+},
+ {
   "id": "dymension-mainnet-security-patch-v4.0.2-2026-01-21",
   "date": "2026-01-21T00:00:00Z",
   "incident_type": "upgrade",
