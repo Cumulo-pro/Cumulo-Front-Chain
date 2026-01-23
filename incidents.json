@@ -6,7 +6,7 @@
   "status": "completed",
   "chain": "GenLayer",
   "network": "testnet (Asimov)",
-  "node_type": ["validator", "rpc"],
+  "node_type": ["validator"],
   "client": "genlayer v0.4.4",
   "note": "GenLayer Testnet Asimov upgraded to node version v0.4.4. This release fixes memory leaks in thread handling and consensus processing, refactors the ZkSync client for improved reliability, moves storage writes into GenVM for better performance, and enhances logging through context-aware tracing. Validators were advised to upgrade promptly to improve stability, performance, and observability.",
   "url": "https://docs.genlayer.com/validators/changelog#v044"
@@ -196,7 +196,7 @@
   "status": "completed",
   "chain": "GenLayer",
   "network": "testnet (Asimov)",
-  "node_type": ["validator", "rpc"],
+  "node_type": ["validator"],
   "client": "genlayer v0.4.3",
   "note": "GenLayer Testnet Asimov upgraded to node version v0.4.3. This release fixes node storage handling for non-accepted transactions (e.g. LeaderTimeout), improves validator priming logic, and corrects defaults in the release/.env.example configuration. Validators were advised to upgrade as soon as possible to ensure correct priming behavior and stable transaction handling.",
   "url": "https://docs.genlayer.com/validators/changelog#v043"
