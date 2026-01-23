@@ -178,6 +178,18 @@
   "url": "https://governance.xrplevm.org/xrplevm/proposals/19"
 },
  {
+  "id": "genlayer-testnet-asimov-upgrade-v0.4.3-2026-01-08",
+  "date": "2026-01-08T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (Asimov)",
+  "node_type": ["validator", "rpc"],
+  "client": "genlayer v0.4.3",
+  "note": "GenLayer Testnet Asimov upgraded to node version v0.4.3. This release fixes node storage handling for non-accepted transactions (e.g. LeaderTimeout), improves validator priming logic, and corrects defaults in the release/.env.example configuration. Validators were advised to upgrade as soon as possible to ensure correct priming behavior and stable transaction handling.",
+  "url": "https://docs.genlayer.com/validators/changelog#v043"
+},
+ {
   "id": "celestia-app-v6.4.4-mainnet-beta-upgrade-2026-01-08",
   "date": "2026-01-08T00:00:00Z",
   "incident_type": "upgrade",
