@@ -1,5 +1,17 @@
 [
  {
+  "id": "genlayer-testnet-asimov-upgrade-v0.4.4-2026-01-22",
+  "date": "2026-01-22T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (Asimov)",
+  "node_type": ["validator", "rpc"],
+  "client": "genlayer v0.4.4",
+  "note": "GenLayer Testnet Asimov upgraded to node version v0.4.4. This release fixes memory leaks in thread handling and consensus processing, refactors the ZkSync client for improved reliability, moves storage writes into GenVM for better performance, and enhances logging through context-aware tracing. Validators were advised to upgrade promptly to improve stability, performance, and observability.",
+  "url": "https://docs.genlayer.com/validators/changelog#v044"
+},
+ {
   "id": "xrplevm-mainnet-governance-proposal-19-vote-change-no-2026-01-21",
   "date": "2026-01-21T09:00:00Z",
   "incident_type": "governance_vote",
@@ -216,7 +228,7 @@
   "id": "story-geth-v1.2.0-yasunari-upgrade-mainnet-testnet-2026-01-01",
   "date": "2026-01-01T00:00:00Z",
   "incident_type": "upgrade",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "Story",
   "network": "mainnet/testnet",
   "node_type": ["validator", "rpc", "backup"],
@@ -228,7 +240,7 @@
   "id": "genlayer-testnet-node-upgrade-v0.4.2-2025-12-21",
   "date": "2025-12-29T00:00:00Z",
   "incident_type": "upgrade",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "GenLayer",
   "network": "testnet",
   "node_type": ["validator"],
