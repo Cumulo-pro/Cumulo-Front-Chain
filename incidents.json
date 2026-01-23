@@ -95,6 +95,18 @@
   "url": "https://github.com/xrplevm/node/releases/tag/v8.0.2"
 },
  {
+  "id": "warden-testnet-critical-security-upgrade-v0.7.4-2-2026-01-15",
+  "date": "2026-01-15T00:00:00Z",
+  "incident_type": "security_upgrade",
+  "status": "in_progress",
+  "chain": "Warden",
+  "network": "testnet",
+  "node_type": ["validator", "rpc"],
+  "client": "wardend v0.7.4-2",
+  "note": "Urgent security upgrade for Warden testnet validators. Version v0.7.4-2 includes a critical security fix distributed under a private disclosure process. The update is asynchronous and non-consensus-breaking; operators are required to replace the binary and restart their nodes without any coordinated halt. Cumulo applied the upgrade promptly using the officially distributed binaries and container image, following the instruction to avoid public discussion of vulnerability specifics until the Cosmos team publishes further details.",
+  "url": "https://warden-public-bucket.s3.eu-west-1.amazonaws.com/wardend-v0.7.4-2-linux-amd64"
+},
+ {
   "id": "warden-mainnet-v0.7.4-upgrade-2026-01-15",
   "date": "2026-01-15T17:50:00Z",
   "incident_type": "upgrade",
