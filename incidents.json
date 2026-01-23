@@ -1,5 +1,17 @@
 [
  {
+  "id": "warden-mainnet-emergency-evm-security-upgrade-v0.7.6-2026-01-22",
+  "date": "2026-01-22T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "Warden",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "wardend v0.7.6",
+  "note": "Emergency Warden mainnet upgrade executed without governance proposal to patch a critical EVM vulnerability. A coordinated chain halt was required once sufficient voting power was confirmed. Validators were instructed to immediately restart their nodes with a halt-height at block 3689200 using `wardend start --halt-height 3689200`. After the chain halted, all operators were required to upgrade to wardend v0.7.6 and restart their nodes using the correct binary before resuming the network.",
+  "url": "https://github.com/warden-protocol/wardenprotocol/releases/tag/v0.7.6"
+},
+ {
   "id": "genlayer-testnet-asimov-upgrade-v0.4.4-2026-01-22",
   "date": "2026-01-22T00:00:00Z",
   "incident_type": "upgrade",
