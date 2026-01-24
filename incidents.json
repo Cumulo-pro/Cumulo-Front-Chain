@@ -2,8 +2,8 @@
  {
   "id": "warden-mainnet-emergency-evm-security-upgrade-v0.7.6-2026-01-22",
   "date": "2026-01-22T00:00:00Z",
-  "incident_type": "upgrade",
-  "status": "in_progress",
+  "incident_type": "security_upgrade",
+  "status": "completed",
   "chain": "Warden",
   "network": "mainnet",
   "node_type": ["validator", "rpc"],
@@ -37,7 +37,7 @@
  {
   "id": "dymension-mainnet-security-patch-v4.0.2-2026-01-21",
   "date": "2026-01-21T00:00:00Z",
-  "incident_type": "upgrade",
+  "incident_type": "security_upgrade",
   "status": "completed",
   "chain": "Dymension",
   "network": "mainnet",
@@ -73,7 +73,7 @@
  {
   "id": "celestia-app-v6.4.8-mocha-security-upgrade-2026-01-19",
   "date": "2026-01-19T00:00:00Z",
-  "incident_type": "security_update",
+  "incident_type": "security_upgrade",
   "status": "completed",
   "chain": "Celestia",
   "network": "testnet (mocha)",
@@ -85,7 +85,7 @@
  {
   "id": "celestia-mainnet-security-upgrade-v6.4.5-2026-01-16",
   "date": "2026-01-16T00:00:00Z",
-  "incident_type": "security_update",
+  "incident_type": "security_upgrade",
   "status": "completed",
   "chain": "Celestia",
   "network": "mainnet",
@@ -97,7 +97,7 @@
  {
   "id": "xrplevm-mainnet-cometbft-security-update-v8.0.2-2026-01-16",
   "date": "2026-01-16T00:00:00Z",
-  "incident_type": "security_update",
+  "incident_type": "security_upgrade",
   "status": "completed",
   "chain": "XRPL EVM",
   "network": "mainnet",
