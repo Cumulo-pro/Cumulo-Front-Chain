@@ -1,5 +1,16 @@
 [
  {
+  "id": "xrplevm-mainnet-governance-proposal-20-replace-cryptocrew-validator-2026-01-26",
+  "date": "2026-01-26T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "in_progress",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #20 opened on XRPL EVM Mainnet to replace the CryptoCrew validator. The proposal is currently in voting period and concerns changes to the active validator set as part of XRPL EVM governance operations. Voting period remains open until February 9th, 2026 at 14:40 UTC.",
+  "url": "https://governance.xrplevm.org/xrplevm/proposals/20"
+},
+ {
   "id": "warden-mainnet-emergency-evm-security-upgrade-v0.7.6-2026-01-22",
   "date": "2026-01-22T00:00:00Z",
   "incident_type": "security_upgrade",
