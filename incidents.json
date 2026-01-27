@@ -1,5 +1,17 @@
 [
  {
+  "id": "starknet-mainnet-juno-v0.15.18-upgrade-2026-01-27",
+  "date": "2026-01-27T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "Starknet",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "Juno v0.15.18",
+  "note": "Upgrade to Juno v0.15.18 on Starknet Mainnet. This release updates the underlying Juno database version to unlock performance improvements and future upgrades. It includes one small and one medium-sized migration; validators are advised to upgrade immediately after their attestation window. Estimated total migration time is ~1h30 on minimum-spec machines (4 cores, 8GB RAM, slow SSD). The release polishes RPC v0.10, improves metrics reporting, reduces memory allocation, and updates the blockifier to v0.16.0-rc.3 with important bug fixes.",
+  "url": "https://github.com/NethermindEth/juno/releases"
+},
+ {
   "id": "xrplevm-mainnet-governance-proposal-20-replace-cryptocrew-validator-2026-01-26",
   "date": "2026-01-26T00:00:00Z",
   "incident_type": "governance_proposal",
