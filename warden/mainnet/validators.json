@@ -37,6 +37,7 @@
     "api": "https://warden-mainnet-rpc.itrocket.net",
     "rpc": "https://warden-mainnet-rpc.itrocket.net",
     "grpc": "warden-mainnet-grpc.itrocket.net:443",
+    "evm": "https://warden-mainnet-evm.itrocket.net:443",
     "seeds": "577bc08457d716f09def49b496952f3af4d60ba1@warden-mainnet-seed.itrocket.net:36656",
     "addrbook": "https://server-2.itrocket.net/mainnet/warden/addrbook.json",
     "snapshot": "https://itrocket.net/services/mainnet/warden/#snap",
@@ -90,38 +91,7 @@
         "Basic Guide": "https://github.com/MictoNode/MictoNode-warden-mainnet-guide"
    }
 },
-{
-  "name": "Cumulo",
-  "x": "Cumulo_pro",
-  "webservices": "https://cumulo.pro/warden/",
-  "validatorlogo": "cumulo.jpg",
-  "rpc": "",
-  "api": "",
-  "grpc": ""
-},
-    {
-    "name": "NodeSync.Top",
-    "x": "nodesync_top",
-   "validatorlogo": "nodesync.jpg",
-    "webservices": "",
-    "api": "",
-    "rpc": ""
-},
-{
-    "name": "NODEJUMPER",
-    "x": "nodejumper",
-    "validatorlogo": "nodejumper.jpg",
-    "webservices": "https://app.nodejumper.io/warden-testnet",
-    "guides": {
-        "Guide": "https://app.nodejumper.io/warden-testnet/installation"
-    },
-    "rpc": "",
-    "api": "",
-    "public_endpoints": "",
-    "genesis": "",
-    "seed_node": ""
-},
-    {
+  {
     "name": "TrustedPoint",
     "webservices": "",
     "x": "Trusted_Point",
@@ -162,6 +132,15 @@
     "content":{
           "Node Guide": "https://services.aknodes.com/mainnet-networks/warden-protocol/installation"
      }
+},
+  {
+  "name": "Cumulo",
+  "x": "Cumulo_pro",
+  "webservices": "https://cumulo.pro/warden/",
+  "validatorlogo": "cumulo.jpg",
+  "rpc": "rpc.warden.cumulo.org.es",
+  "api": "api.warden.cumulo.org.es",
+  "grpc": "grpc.warden.cumulo.org.es",
+  "evm": "json-rpc.warden.cumulo.org.es"
 }
-
 ]
