@@ -32,7 +32,7 @@
     "name": "itrocket",
     "webservices": "https://itrocket.net/services/mainnet/warden/",
     "x": "itrocket_team",
-    "validatorlogo": "itrocket.jpg",
+    "validatorlogo": "itrocket.png",
     "explorer": "https://mainnet.itrocket.net",
     "api": "https://warden-mainnet-rpc.itrocket.net",
     "rpc": "https://warden-mainnet-rpc.itrocket.net",
