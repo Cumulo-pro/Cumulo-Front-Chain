@@ -18,7 +18,7 @@
     "api": "",
     "rpc": "https://warden-rpc.polkachu.com/",
     "grpc": "",
-    "snapshot": "",
+    "snapshot": "https://www.polkachu.com/tendermint_snapshots/warden",
     "addrbook": "",
     "tools": "State-sync",
     "tools_url": {
