@@ -1,5 +1,29 @@
 [
  {
+  "id": "story-aeneid-v1.5.2-horace-upgrade-2026-01-27",
+  "date": "2026-01-27T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "Story",
+  "network": "testnet (Aeneid)",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "Story v1.5.2 (Horace)",
+  "note": "Story v1.5.2 (Horace) binaries were released on January 27, 2026 in preparation for the scheduled Aeneid Testnet upgrade. This release recalibrates token emissions and adjusts the locked staking multiplier as outlined in SIP-00009. Node operators must upgrade to v1.5.2 at least 100 blocks before upgrade height 13,780,500 to remain compatible. Nodes running older versions will halt after the upgrade height, estimated around February 6, 2026 at ~01:00 UTC.",
+  "url": "https://github.com/piplabs/story/releases/tag/v1.5.2"
+},
+ {
+  "id": "story-mainnet-v1.5.2-horace-upgrade-2026-01-27",
+  "date": "2026-01-27T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "Story",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "Story v1.5.2 (Horace)",
+  "note": "Story v1.5.2 (Horace) binaries were released on January 27, 2026 in preparation for the scheduled Mainnet upgrade. This is a major release that recalibrates token emissions and adjusts the locked staking multiplier as defined in SIP-00009. All node operators must upgrade to v1.5.2 at least 100 blocks before upgrade height 13,780,500. Nodes running older versions will become incompatible and halt after this height. The upgrade is currently estimated to occur around February 6, 2026 at ~01:00 UTC.",
+  "url": "https://github.com/piplabs/story/releases/tag/v1.5.2"
+},
+ {
   "id": "starknet-mainnet-juno-v0.15.18-upgrade-2026-01-27",
   "date": "2026-01-27T00:00:00Z",
   "incident_type": "upgrade",
