@@ -68,7 +68,7 @@
     "snapshot": "",
     "tools_url": {
       "State sync": "https://utsa.gitbook.io/services/mainnet/warden-protocol/state-sync"
-    }
+    },
     "content": {
         "Node Installation": "https://teletype.in/@lesnik13utsa/Pw2GAVJJ_7y",
         "Oracle guida": "https://utsa.gitbook.io/services/mainnet/warden-protocol/oracle"
