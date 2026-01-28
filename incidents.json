@@ -1,5 +1,17 @@
 [
  {
+  "id": "fuel-mainnet-gov-15-seq-mainnet-1.6-2026-01-28",
+  "date": "2026-01-28T00:00:00Z",
+  "incident_type": "overnance_proposal",
+  "status": "in_progress",
+  "chain": "Fuel",
+  "network": "mainnet",
+  "node_type": ["sequencer", "validator"],
+  "client": "fuel-sequencer seq-mainnet-1.6",
+  "note": "An amended expedited governance proposal (#15) was submitted to upgrade Fuel Mainnet to seq-mainnet-1.6. Due to the expedited nature of the proposal, validators are required to vote as soon as possible. If approved, the network upgrade is scheduled to take place on Thursday, January 29, 2026 at approximately 15:30 CET. Node operators must ensure readiness for the upgrade and follow the official upgrade instructions provided by the Fuel team.",
+  "url": "https://fuel-seq.simplystaking.xyz/fuel-mainnet/gov/15"
+},
+ {
   "id": "story-aeneid-v1.5.2-horace-upgrade-2026-01-27",
   "date": "2026-01-27T00:00:00Z",
   "incident_type": "upgrade",
