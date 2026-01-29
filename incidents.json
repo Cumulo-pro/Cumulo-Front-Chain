@@ -1,4 +1,16 @@
 [
+  {
+  "id": "fuel-seq-mainnet-1.7-upgrade-2026-01-29",
+  "date": "2026-01-29T16:30:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Fuel",
+  "network": "mainnet",
+  "node_type": ["sequencer", "rpc", "sidecar"],
+  "client": "fuel-sequencer seq-mainnet-1.7",
+  "note": "Scheduled upgrade of the Fuel mainnet sequencer to version seq-mainnet-1.7. This maintenance patch was applied at block height 6572500, with an estimated upgrade time of 17:30 CET (16:30 UTC). The upgrade was performed from previous versions seq-mainnet-1.5 or seq-mainnet-1.6. Validators and node operators were required to register the upgrade name 'maintenance-patch-20260129' when using Cosmovisor. Cumulo successfully upgraded its Fuel mainnet infrastructure, including sequencer and sidecar components, and verified correct operation post-upgrade.",
+  "url": "https://github.com/FuelLabs/fuel-sequencer-deployments/releases/tag/seq-mainnet-1.7"
+},
 {
   "id": "celestia-app-v6.4.10-mocha-upgrade-2026-01-29",
   "date": "2026-01-29T15:30:00Z",
