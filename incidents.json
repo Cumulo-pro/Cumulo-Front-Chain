@@ -1,4 +1,16 @@
 [
+{
+  "id": "celestia-app-v6.4.10-mocha-upgrade-2026-01-29",
+  "date": "2026-01-29T15:30:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator", "rpc", "consensus"],
+  "client": "celestia-app v6.4.10-mocha",
+  "note": "Scheduled upgrade to celestia-app v6.4.10-mocha on Mocha testnet. This release fixes an important pruning bug affecting node storage behavior. Validators and node operators were strongly recommended to upgrade as soon as possible to avoid long-term disk usage issues and state inconsistencies. The maintenance window was scheduled between 15:30 and 15:35 UTC on January 29, 2026. Cumulo upgraded all Mocha infrastructure accordingly and verified correct pruning behavior post-upgrade.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v6.4.10-mocha"
+},
  {
   "id": "fuel-mainnet-gov-15-seq-mainnet-1.6-2026-01-28",
   "date": "2026-01-28T00:00:00Z",
