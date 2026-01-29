@@ -3,7 +3,7 @@
   "id": "fuel-mainnet-gov-15-seq-mainnet-1.6-2026-01-28",
   "date": "2026-01-28T00:00:00Z",
   "incident_type": "overnance_proposal",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "Fuel",
   "network": "mainnet",
   "node_type": ["sequencer", "validator"],
