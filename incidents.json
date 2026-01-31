@@ -84,7 +84,7 @@
   "url": "https://github.com/piplabs/story/releases/tag/v1.5.2"
 },
  {
-  "id": "starknet-mainnet-juno-v0.15.18-upgrade-2026-01-27",
+  "id": "starknet-mainnet-juno-v0.15.17-upgrade-2026-01-27",
   "date": "2026-01-27T00:00:00Z",
   "incident_type": "upgrade",
   "status": "in_progress",
