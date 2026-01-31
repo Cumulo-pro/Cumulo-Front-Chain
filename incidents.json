@@ -11,6 +11,18 @@
   "note": "Governance Proposal #21 on XRPL EVM mainnet to add Flowdesk as a validator. The proposal is currently in the voting period, with validators and governance participants required to cast their votes before the deadline. Cumulo is actively participating in the governance process as part of its ongoing commitment to the security, decentralization, and long-term sustainability of the XRPL EVM validator set.",
   "url": "https://governance.xrplevm.org/xrplevm/proposals/21"
 },
+ {
+  "id": "genlayer-testnet-upgrade-v0.4.5-2026-01-30",
+  "date": "2026-01-30T12:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet",
+  "node_type": ["validator", "rpc"],
+  "client": "genlayer v0.4.5",
+  "note": "GenLayer testnet node upgrade to v0.4.5. This release improves consensus reliability by decoupling epoch advancement and finalization, preventing blocking issues and increasing validator stability. It also enhances state consistency through a new sync waiting mechanism ensuring GenVM executes contracts with the latest state, and introduces a canPrime check to avoid validator priming when epochs are out of sync. Additional bug fixes include improved GenVM executor process handling and clearer error messages for sync timeouts. Validators are strongly encouraged to upgrade.",
+  "url": "https://docs.genlayer.com/validators/changelog#v045"
+},
   {
   "id": "fuel-seq-mainnet-1.7-upgrade-2026-01-29",
   "date": "2026-01-29T16:30:00Z",
