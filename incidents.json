@@ -344,6 +344,18 @@
   "note": "Celestia-App v6.4.4 released for Mainnet Beta. This update includes bug fixes and improvements, resolving an important issue related to catching up to the tip of the chain. All node operators are strongly recommended to upgrade as soon as possible to ensure proper synchronization and stable operation.",
   "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v6.4.4"
 },
+  {
+  "id": "cosmoshub-mainnet-validator-rpc-deployment-2026-01-02",
+  "date": "2026-01-02T10:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "cosmos-sdk (gaia)",
+  "note": "Deployment of a new Cosmos Hub mainnet validator and RPC infrastructure operated by Cumulo. This deployment strengthens Cumulo’s presence in the Cosmos ecosystem, providing resilient validator operations and reliable RPC access. The setup follows Cumulo’s standard infrastructure practices, including secure key management, systemd-based services, monitoring, and operational documentation to ensure transparency, reliability, and long-term maintainability.",
+  "url": "https://github.com/Cumulo-pro/cumulo-cosmoshub-infra/"
+},
  {
   "id": "xrplevm-mainnet-governance-add-cumulo-validator-2026-01-01",
   "date": "2026-01-01T15:11:00Z",
