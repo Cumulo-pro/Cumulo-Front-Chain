@@ -213,6 +213,18 @@
   "note": "Critical security vulnerability identified in the current XRPL EVM node version related to CometBFT. Validators were instructed to upgrade their nodes to v8.0.2 within a 48-hour window to mitigate potential consensus-level risks. The upgrade does not require coordinated halting but timely action is required to ensure network safety. Cumulo proceeded with the upgrade to maintain validator security and protocol integrity.",
   "url": "https://github.com/xrplevm/node/releases/tag/v8.0.2"
 },
+  {
+  "id": "cosmoshub-gaia-v25.3.1-security-upgrade-2026-01-15",
+  "date": "2026-01-15T12:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "gaia v25.3.1",
+  "note": "Security upgrade applied following the disclosure of an active vulnerability affecting Gaia. Validators patched the issue prior to public disclosure, and Cosmos released a binary-only version (v25.3.1) for node operators. Cumulo upgraded its Cosmos Hub infrastructure using the official prebuilt binary, as building from source was explicitly discouraged. The source code will be published once cleared by the upstream team. This release is consensus-breaking only with v25.3.0 if the vulnerability is exploited.",
+  "url": "https://github.com/cosmos/gaia/releases/tag/v25.3.1"
+},
  {
   "id": "warden-testnet-critical-security-upgrade-v0.7.4-2-2026-01-15",
   "date": "2026-01-15T00:00:00Z",
