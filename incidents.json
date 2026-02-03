@@ -75,7 +75,7 @@
   "id": "story-aeneid-v1.5.2-horace-upgrade-2026-01-27",
   "date": "2026-01-27T00:00:00Z",
   "incident_type": "upgrade",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "Story",
   "network": "testnet (Aeneid)",
   "node_type": ["validator", "rpc", "backup"],
