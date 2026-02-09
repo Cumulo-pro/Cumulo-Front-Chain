@@ -1,5 +1,17 @@
 [
   {
+  "id": "xrplevm-governance-proposal-22-replace-cryptocrew-validator-2026-02-16",
+  "date": "2026-02-16T16:22:00Z",
+  "incident_type": "governance_vote",
+  "status": "voting",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "xrplevm-node",
+  "note": "Governance Proposal #22 on XRPL EVM Mainnet to replace the CryptoCrew validator. The proposal evaluates the replacement of CryptoCrew Validators, an Austrian-based Web3 infrastructure provider operating across 40+ interchain networks with enterprise-grade security, IBC relaying services, and long-standing protocol contributions. The proposal is in voting period and requires validator and governance participation before the deadline.",
+  "url": "https://governance.xrplevm.org/xrplevm/proposals/22"
+},
+  {
   "id": "celestia-mainnet-horcrux-signer-relocation-eu-2026-02-09",
   "date": "2026-02-09T17:00:00Z",
   "incident_type": "horcrux_maintenance",
