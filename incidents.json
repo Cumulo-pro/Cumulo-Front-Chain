@@ -18,7 +18,7 @@
   "status": "completed",
   "chain": "Celestia",
   "network": "mainnet",
-  "node_type": ["validator", "consensus", "signer"],
+  "node_type": ["signer"],
   "client": "Horcrux v3.3.3-celestia",
   "note": "Horcrux signer cluster maintenance: Cumulo is replacing signer-1 (previously located in Canada) with a new signer hosted in France to reduce network latency and improve signing reliability. The goal is to concentrate at least 2/3 signers and 1 chain node closer geographically to the validator sentry nodes, minimizing timeout risk and reducing chances of desync-related signing instability that can negatively impact uptime metrics. Migration is performed without re-sharding keys by copying the signer shard/ecies material and state files, updating p2pAddr for shardID 1 across all signers, and regenerating Raft state (raft directory removed on all signers) to form a clean cluster with the new endpoint.",
   "url": "https://github.com/strangelove-ventures/horcrux"
