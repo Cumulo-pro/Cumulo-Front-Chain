@@ -1,5 +1,17 @@
 [
   {
+  "id": "dymension-mainnet-governance-proposal-38-enroll-kas-solana-router-2026-02-11",
+  "date": "2026-02-11T17:22:00Z",
+  "incident_type": "governance_vote",
+  "status": "voting",
+  "chain": "Dymension",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "dymension v4.x",
+  "note": "Governance Proposal #38 on Dymension Hub Mainnet to enroll the Solana KAS warp route router for the KAS token. This proposal enables KAS transfers from Dymension Hub to Solana via remote router enrollment (Msg Enroll Remote Router). Voting period active until February 12, 2026 at 17:22 UTC.",
+  "url": "https://dymension.explorers.guru/proposal/38"
+},
+  {
   "id": "xrplevm-governance-proposal-23-add-atlas-staking-validator-2026-02-18",
   "date": "2026-02-18T20:47:00Z",
   "incident_type": "governance_vote",
