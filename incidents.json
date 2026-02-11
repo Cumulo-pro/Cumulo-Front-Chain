@@ -1,5 +1,17 @@
 [
   {
+  "id": "xrplevm-governance-proposal-23-add-atlas-staking-validator-2026-02-18",
+  "date": "2026-02-18T20:47:00Z",
+  "incident_type": "governance_vote",
+  "status": "voting",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "xrplevm-node",
+  "note": "Governance Proposal #23 on XRPL EVM Mainnet to add Atlas Staking as a validator. The proposal is currently in voting period and requires participation from validators and governance stakeholders before the deadline (2026-02-24 19:46:54 UTC). This entry records the governance tracking of validator set changes within XRPL EVM.",
+  "url": "https://governance.xrplevm.org/xrplevm/proposals/23"
+},
+  {
   "id": "xrplevm-governance-proposal-22-replace-cryptocrew-validator-2026-02-16",
   "date": "2026-02-16T16:22:00Z",
   "incident_type": "governance_vote",
