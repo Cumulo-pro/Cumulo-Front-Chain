@@ -1,5 +1,17 @@
 [
   {
+  "id": "warden-mainnet-governance-proposal-4-set-fixed-3-percent-inflation-2026-02-13",
+  "date": "2026-02-13T08:46:00Z",
+  "incident_type": "governance_vote",
+  "status": "voting",
+  "chain": "Warden",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "wardend v0.7.x",
+  "note": "Governance Proposal #4 on Warden Mainnet to set a fixed 3% annual inflation rate. The proposal updates mint parameters by setting inflation_min and inflation_max to 0.03, and inflation_rate_change to 0, effectively disabling dynamic inflation adjustments. The goal_bonded parameter remains at 0.67. Voting period currently active.",
+  "url": "https://mainnet.itrocket.net/warden/gov/4"
+},
+  {
   "id": "dymension-mainnet-governance-proposal-38-enroll-kas-solana-router-2026-02-11",
   "date": "2026-02-11T17:22:00Z",
   "incident_type": "governance_vote",
