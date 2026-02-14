@@ -1,5 +1,17 @@
 [
   {
+  "id": "genlayer-testnet-phase-5-matterlabs-migration-2026-02-14",
+  "date": "2026-02-14T16:00:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "GenLayer",
+  "network": "testnet",
+  "node_type": ["validator", "rpc"],
+  "client": "genlayer v0.5.0",
+  "note": "GenLayer Testnet Phase 5 rollout — final phase before Bradbury. Migration to new RaaS provider (Matter Labs / ZKsync Atlas). Testnet history wiped and new RPC endpoints introduced. Validators must rejoin staking via genlayer-cli, update RPC/WS endpoints, update consensus addresses (Main + Data), update validator wallet, clean storage and restart node before Epoch 1 (Monday 17:00 CET).",
+  "url": "https://docs.genlayer.com/validators/changelog#v050"
+},
+  {
   "id": "warden-mainnet-governance-proposal-4-set-fixed-3-percent-inflation-2026-02-13",
   "date": "2026-02-13T08:46:00Z",
   "incident_type": "governance_vote",
