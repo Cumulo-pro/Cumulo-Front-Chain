@@ -1,5 +1,17 @@
 [
   {
+  "id": "concordium-mainnet-node-10-0-5-protocol-v10-2026-02-16",
+  "date": "2026-02-16T12:00:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "Concordium",
+  "network": "mainnet",
+  "node_type": ["validator", "node"],
+  "client": "Concordium Node 10.0.5",
+  "note": "Concordium Node 10.0.5 released for Mainnet, introducing support for Protocol Version 10. This major upgrade enables Sponsored Transactions functionality. All mainnet node runners must upgrade to v10.0.5 before the protocol activation scheduled for March 10, 2026. Nodes running older versions will automatically shut down at protocol transition.",
+  "url": "https://docs.concordium.com/en/mainnet/docs/release-notes/release-notes-lp.html#mainnet"
+},
+  {
   "id": "genlayer-testnet-phase-5-matterlabs-migration-2026-02-14",
   "date": "2026-02-14T16:00:00Z",
   "incident_type": "upgrade",
