@@ -15,7 +15,7 @@
   "id": "concordium-mainnet-node-10-0-5-protocol-v10-2026-02-16",
   "date": "2026-02-16T12:00:00Z",
   "incident_type": "upgrade",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "Concordium",
   "network": "mainnet",
   "node_type": ["validator", "node"],
