@@ -27,7 +27,7 @@
   "id": "genlayer-testnet-phase-5-matterlabs-migration-2026-02-14",
   "date": "2026-02-14T16:00:00Z",
   "incident_type": "upgrade",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "GenLayer",
   "network": "testnet",
   "node_type": ["validator", "rpc"],
