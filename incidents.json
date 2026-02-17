@@ -1,5 +1,17 @@
 [
   {
+  "id": "warden-mainnet-emergency-upgrade-v1.0.0-rc1-4476100-2026-02-XX",
+  "date": "2026-02-XXT13:15:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Warden",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "wardend v1.0.0-rc1-1-gabb089391",
+  "note": "Emergency halt and upgrade on Warden Mainnet following a failed prior upgrade attempt related to the Path Security patch. Validators were instructed to halt at height 4473500 during the initial rollout, but a subsequent emergency fix required a new coordinated halt at height 4476100 (~13:15 UTC). Nodes were restarted using wardend start --halt-height 4476100 and upgraded to the provided binary-only release. As this was part of a private security handling process, no public source repository was made available at the time of deployment.",
+  "url": "https://explorer.wardenprotocol.org/block/countdown/4476100"
+},
+  {
   "id": "concordium-mainnet-node-10-0-5-protocol-v10-2026-02-16",
   "date": "2026-02-16T12:00:00Z",
   "incident_type": "upgrade",
