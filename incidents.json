@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-app-v7.0.2-mocha-consensus-upgrade-2026-02-19",
+  "date": "2026-02-19T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator", "rpc", "bridge", "consensus"],
+  "client": ["celestia-app v7.0.2-mocha", "celestia-node v0.29.1-mocha"],
+  "note": "Consensus-breaking upgrade on Mocha testnet to celestia-app v7.0.2-mocha and celestia-node v0.29.1-mocha. This release enforces new validator commission bounds (min 20%, max 60%), deprecates Horcrux for v7, reduces min-retain-blocks from 14 days to 3000 blocks, and introduces state machine changes. Validators must signal the upgrade (signal 7) and once 5/6+ voting power has signaled, a 2-day delay is enforced before execution height. Operators upgrading from v6 must carefully review release notes due to breaking changes.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v7.0.2-mocha"
+},
+  {
   "id": "warden-mainnet-emergency-upgrade-v1.0.0-rc1-4476100-2026-02-XX",
   "date": "2026-02-XXT13:15:00Z",
   "incident_type": "upgrade",
