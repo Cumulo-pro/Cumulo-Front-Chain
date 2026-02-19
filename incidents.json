@@ -1,5 +1,16 @@
 [
   {
+  "id": "xrplevm-testnet-proposal-39-upgrade-v10-0-0-2026-02-XX",
+  "date": "2026-02-XXT00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "voting",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #39 LIVE – XRPL EVM Testnet v10.0.0 expedited upgrade. Proposal to migrate Cosmos EVM from v0.4.2 to v0.6.0 (fully supported fork). Validators are required to review and vote. Upgrade instructions will follow if the proposal passes. Voting ends February 20, 2026 at 19:53 (GMT+1).",
+  "url": "https://governance.testnet.xrplevm.org/xrplevm/proposals/39"
+},
+  {
   "id": "celestia-app-v7.0.2-mocha-consensus-upgrade-2026-02-19",
   "date": "2026-02-19T00:00:00Z",
   "incident_type": "upgrade",
