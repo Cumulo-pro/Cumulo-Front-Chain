@@ -1,5 +1,17 @@
 [
   {
+  "id": "xrplevm-testnet-upgrade-v10-0-0-execution-2026-02-23",
+  "date": "2026-02-23T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator", "rpc"],
+  "client": "exrpd v10.0.0",
+  "note": "Execution of XRPL EVM Testnet upgrade to v10.0.0 following approval of Governance Proposal #39. Migration from Cosmos EVM v0.4.2 to v0.6.0 (fully supported fork). Binary upgraded manually (node_10.0.0_Linux_amd64.tar.gz), service restarted via systemd, and node version verified post-restart. Upgrade completed successfully on February 23, 2026.",
+  "url": "https://github.com/xrplevm/node/releases/tag/v10.0.0"
+},
+  {
   "id": "xrplevm-testnet-proposal-39-upgrade-v10-0-0-2026-02-XX",
   "date": "2026-02-XXT00:00:00Z",
   "incident_type": "governance_proposal",
