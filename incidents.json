@@ -3,7 +3,7 @@
   "id": "xrplevm-testnet-proposal-39-upgrade-v10-0-0-2026-02-XX",
   "date": "2026-02-XXT00:00:00Z",
   "incident_type": "governance_proposal",
-  "status": "voting",
+  "status": "completed",
   "chain": "XRPL EVM",
   "network": "testnet",
   "node_type": ["validator"],
