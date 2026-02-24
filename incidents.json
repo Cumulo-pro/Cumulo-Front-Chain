@@ -26,7 +26,7 @@
   "id": "celestia-app-v7.0.2-mocha-consensus-upgrade-2026-02-19",
   "date": "2026-02-19T00:00:00Z",
   "incident_type": "upgrade",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "Celestia",
   "network": "testnet (mocha)",
   "node_type": ["validator", "rpc", "bridge", "consensus"],
