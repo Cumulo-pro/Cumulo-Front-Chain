@@ -12,6 +12,18 @@
   "url": "https://explorer.polypore.xyz/provider/gov/297"
 },
   {
+  "id": "celestia-node-v0.29.1-mocha-consensus-upgrade-2026-02-23",
+  "date": "2026-02-23T12:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["consensus", "bridge"],
+  "client": "celestia-node v0.29.1-mocha",
+  "note": "Upgrade of Celestia Mocha consensus/bridge node to celestia-node v0.29.1-mocha. This release adds support for celestia-app v7 and is required after the app-v7 migration. A configuration update was required (celestia bridge config-update --p2p.network mocha). Key improvements include Shrex server enablement on bridge nodes, improved fresh start from non-archival consensus nodes, removal of deprecated full node option, header inclusion in subscription responses, resource leak fixes in store accessors, Go 1.26 update, and shrex fix for empty EDS sample handling. Upgrade completed successfully across Cumulo Mocha infrastructure.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.29.1-mocha"
+},
+  {
   "id": "xrplevm-testnet-upgrade-v10-0-0-execution-2026-02-23",
   "date": "2026-02-23T00:00:00Z",
   "incident_type": "upgrade",
