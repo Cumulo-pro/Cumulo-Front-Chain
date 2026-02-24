@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmos-provider-testnet-gaia-v27-0-0-rc0-upgrade-2026-02-24",
+  "date": "2026-02-24T14:30:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "Cosmos Provider",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": "gaia v27.0.0-rc0",
+  "note": "Governance-gated upgrade of the Cosmos Provider testnet (ICS testnet) to Gaia v27.0.0-rc0. Scheduled for February 24, 2026 at 14:30 UTC, targeting block height 16150500. Upgrade name includes the full version 'v27.0.0'. Validators must follow governance proposal #297 and execute the upgrade at the specified height. This upgrade is part of the regular Testnet Tuesday cycle.",
+  "url": "https://explorer.polypore.xyz/provider/gov/297"
+},
+  {
   "id": "xrplevm-testnet-upgrade-v10-0-0-execution-2026-02-23",
   "date": "2026-02-23T00:00:00Z",
   "incident_type": "upgrade",
