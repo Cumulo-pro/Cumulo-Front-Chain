@@ -131,6 +131,18 @@
   "url": "https://github.com/strangelove-ventures/horcrux"
 },
   {
+  "id": "cosmoshub-testnet-validator-creation-2026-02-05",
+  "date": "2026-02-05T12:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": "gaia",
+  "note": "Creation of a new Cosmos Hub testnet validator (CreateValidator transaction). The validator was successfully registered on-chain and joined the active validator set as part of Cumulo’s Cosmos infrastructure expansion strategy. Monitoring, key management, and operational security policies were applied according to Cumulo’s standard validator deployment procedures.",
+  "url": "https://github.com/Cumulo-pro/cumulo-cosmoshub-infra/"
+},
+  {
   "id": "story-mainnet-delegation-rebalance-active-set-2026-02-04",
   "date": "2026-02-04T07:00:00Z",
   "incident_type": "staking_rebalance",
