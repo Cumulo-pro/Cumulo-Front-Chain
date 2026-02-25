@@ -1,5 +1,17 @@
 [
   {
+  "id": "xrplevm-mainnet-pruned-snapshot-deployment-2026-02-25",
+  "date": "2026-02-25T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["snapshot"],
+  "client": "exrpd",
+  "note": "Cumulo deployed a new PRUNED snapshot endpoint for XRPL EVM Mainnet. The snapshot is generated from a pruned mainnet node and published as .tar.zst with a stable latest symlink plus index.json metadata (last update, latest ledger, size). This deployment provides a fast recovery path for validators and RPC operators without requiring a full archive sync.",
+  "url": "https://cumulo.pro/services/xrplevm_mainnet/snapshot"
+},
+  {
   "id": "xrplevm-mainnet-proposal-25-cumulo-vote-yes-2026-02-25",
   "date": "2026-02-25T00:00:00Z",
   "incident_type": "governance_vote",
