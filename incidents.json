@@ -1,9 +1,21 @@
 [
   {
+  "id": "xrplevm-mainnet-proposal-25-cumulo-vote-yes-2026-02-XX",
+  "date": "2026-02-XXT00:00:00Z",
+  "incident_type": "governance_vote",
+  "status": "in_progress",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "exrpd",
+  "note": "Cumulo voted YES on XRPL EVM Mainnet Governance Proposal #25 (v9.0.0 Migration from Evmos to Cosmos EVM v0.4.2). This vote supports the transition from an unmaintained Evmos dependency to a fully supported Cosmos EVM fork, improving long-term sustainability, EVM compatibility, and interoperability within the Cosmos ecosystem. Vote cast as part of Cumulo’s validator governance responsibilities.",
+  "url": "https://governance.xrplevm.org/xrplevm/proposals/25"
+},
+  {
   "id": "cosmos-provider-testnet-gaia-v27-0-0-rc0-upgrade-2026-02-24",
   "date": "2026-02-24T14:30:00Z",
   "incident_type": "upgrade",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "Cosmos Provider",
   "network": "testnet",
   "node_type": ["validator"],
