@@ -37,7 +37,7 @@
 },
   {
   "id": "xrplevm-testnet-proposal-39-upgrade-v10-0-0-2026-02-XX",
-  "date": "2026-02-XXT00:00:00Z",
+  "date": "2026-02-19T00:00:00Z",
   "incident_type": "governance_proposal",
   "status": "completed",
   "chain": "XRPL EVM",
@@ -60,7 +60,7 @@
 },
   {
   "id": "warden-mainnet-emergency-upgrade-v1.0.0-rc1-4476100-2026-02-XX",
-  "date": "2026-02-XXT13:15:00Z",
+  "date": "2026-02-16T13:15:00Z",
   "incident_type": "upgrade",
   "status": "completed",
   "chain": "Warden",
