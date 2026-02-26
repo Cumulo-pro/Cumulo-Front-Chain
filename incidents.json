@@ -1,5 +1,17 @@
 [
   {
+  "id": "xrplevm-mainnet-v9-v10-critical-upgrades-cumulo-execution-2026-02-26",
+  "date": "2026-02-26T13:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": ["exrpd v9.0.0", "exrpd v10.0.0"],
+  "note": "Cumulo participated in and executed the expedited mainnet upgrades to v9.0.0 and v10.0.0 following critical Cosmos/EVM fixes. Votes were cast within the required governance windows and binaries were upgraded immediately after proposal execution to avoid any network halt risk. Both upgrades were applied under compressed timelines, requiring coordinated validator action and operational readiness. Cumulo upgraded its validator and RPC infrastructure within the designated upgrade blocks and verified node health post-restart.",
+  "url": "https://github.com/xrplevm/node/releases"
+},
+  {
   "id": "xrplevm-mainnet-pruned-snapshot-deployment-2026-02-25",
   "date": "2026-02-25T00:00:00Z",
   "incident_type": "deployment",
