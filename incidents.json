@@ -1,5 +1,17 @@
 [
   {
+  "id": "xrplevm-mainnet-proposal-26-cumulo-vote-yes-2026-02-26",
+  "date": "2026-02-26T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "in_progress",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "exrpd",
+  "note": "Cumulo voted YES on XRPL EVM Mainnet Governance Proposal #26, which schedules the v10.0.0 upgrade (node release v10.0.2) including a critical cosmos/evm fix at block height 4,749,700. The vote was cast within the expedited governance window to support network stability and ensure timely deployment of the execution-layer fix.",
+  "url": "https://governance.xrplevm.org/xrplevm/proposals/26"
+},
+  {
   "id": "xrplevm-mainnet-v9-v10-critical-upgrades-cumulo-execution-2026-02-26",
   "date": "2026-02-26T13:00:00Z",
   "incident_type": "upgrade",
@@ -26,8 +38,8 @@
   {
   "id": "xrplevm-mainnet-proposal-25-cumulo-vote-yes-2026-02-25",
   "date": "2026-02-25T00:00:00Z",
-  "incident_type": "completed",
-  "status": "in_progress",
+  "incident_type": "governance_proposal",
+  "status": "completed",
   "chain": "XRPL EVM",
   "network": "mainnet",
   "node_type": ["validator"],
