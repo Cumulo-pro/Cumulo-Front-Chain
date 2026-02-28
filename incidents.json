@@ -1,5 +1,53 @@
 [
   {
+  "id": "xrplevm-mainnet-rpc-evm-websocket-cors-deployment-2026-02-27",
+  "date": "2026-02-27T18:30:00Z",
+  "incident_type": "infrastructure_update",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["rpc", "json-rpc", "websocket"],
+  "client": ["exrpd v10.x", "CometBFT", "Cosmos EVM"],
+  "note": "XRPL EVM Mainnet public infrastructure upgrade. Cumulo enabled CORS headers on the RPC endpoint and deployed secure WebSocket support for both CometBFT (Cosmos layer) and EVM JSON-RPC (eth_subscribe). The deployment required reverse proxy adjustments for HTTP upgrade handling, TLS termination, and WebSocket forwarding to the execution-layer RPC service. This enhancement enables real-time block subscriptions, governance tracking, and EVM event streaming for dApps and monitoring systems.",
+  "url": "https://rpc.xrpl.cumulo.org.es"
+},
+  {
+  "id": "xrplevm-testnet-rpc-evm-websocket-cors-deployment-2026-02-27",
+  "date": "2026-02-27T18:15:00Z",
+  "incident_type": "infrastructure_update",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["rpc", "json-rpc", "websocket"],
+  "client": ["exrpd v10.x", "CometBFT", "Cosmos EVM"],
+  "note": "XRPL EVM Testnet infrastructure enhancement. Public RPC endpoints were updated to support cross-origin resource sharing (CORS) and secure WebSocket connectivity for both CometBFT subscriptions and EVM JSON-RPC (wss). NGINX reverse proxy rules were adapted to properly forward Upgrade and Connection headers, enabling persistent bidirectional streams. This deployment improves compatibility with browser-based dashboards, governance monitors, and EVM event subscribers.",
+  "url": "https://rpc.xrpl.cumulo.com.es"
+},
+  {
+  "id": "celestia-mainnet-rpc-websocket-cors-enhancement-2026-02-28",
+  "date": "2026-02-28T13:00:00Z",
+  "incident_type": "infrastructure_update",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["rpc", "websocket"],
+  "client": "celestia-app v0.38.x (CometBFT)",
+  "note": "Infrastructure enhancement on Celestia Mainnet RPC endpoints. Cumulo enabled CORS support on the public RPC endpoint and activated secure WebSocket (wss://) access for CometBFT subscriptions (/websocket). This update allows browser-based clients, indexers, dashboards, and monitoring systems to consume real-time block and event data without cross-origin restrictions. Reverse proxy rules were updated to support HTTP/1.1 upgrade headers and WebSocket forwarding.",
+  "url": "https://celestia.cumulo.org.es"
+},
+  {
+  "id": "celestia-mocha-rpc-websocket-cors-enhancement-2026-02-28",
+  "date": "2026-02-28T13:05:00Z",
+  "incident_type": "infrastructure_update",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["rpc", "websocket"],
+  "client": "celestia-app v0.38.x-mocha",
+  "note": "Celestia Mocha testnet RPC infrastructure updated to support CORS and secure WebSocket (wss://) connectivity. Public RPC endpoints now allow cross-origin requests and real-time CometBFT event subscriptions. NGINX reverse proxy configuration was adjusted to forward Upgrade headers and maintain persistent WebSocket connections. This enhancement improves compatibility with browser dashboards, explorers, and developer tooling.",
+  "url": "https://rpc.xrpl.cumulo.com.es"
+},
+  {
   "id": "xrplevm-mainnet-proposal-26-cumulo-vote-yes-2026-02-26",
   "date": "2026-02-26T00:00:00Z",
   "incident_type": "governance_proposal",
