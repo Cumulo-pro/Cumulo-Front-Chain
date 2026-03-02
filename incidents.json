@@ -1,5 +1,17 @@
 [
   {
+  "id": "xrplevm-mainnet-upgrade-proposal-26-v10-0-0-execution-2026-03-02",
+  "date": "2026-03-02T13:30:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": ["exrpd v10.0.2", "CometBFT", "Cosmos EVM"],
+  "note": "Cumulo executed the XRPL EVM Mainnet v10.0.0 upgrade (node release v10.0.2) as scheduled by Governance Proposal #26 at block height 4,749,700, deploying the critical cosmos/evm fix. As part of the upgrade, Cumulo applied the mandatory configuration change in app.toml by setting [evm] evm-chain-id = \"1440000\" prior to the upgrade height to ensure correct post-upgrade EVM execution and consensus participation. Validator and public RPC services were restarted and verified healthy after the upgrade.",
+  "url": "https://governance.xrplevm.org/xrplevm/proposals/26"
+},
+  {
   "id": "xrplevm-mainnet-rpc-evm-websocket-cors-deployment-2026-02-27",
   "date": "2026-02-27T18:30:00Z",
   "incident_type": "infrastructure_update",
@@ -51,7 +63,7 @@
   "id": "xrplevm-mainnet-proposal-26-cumulo-vote-yes-2026-02-26",
   "date": "2026-02-26T00:00:00Z",
   "incident_type": "governance_proposal",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "XRPL EVM",
   "network": "mainnet",
   "node_type": ["validator"],
