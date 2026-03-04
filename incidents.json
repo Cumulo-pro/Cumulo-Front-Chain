@@ -1,5 +1,17 @@
 [
   {
+  "id": "warden-testnet-proposal-6-cumulo-vote-yes-2026-03-05",
+  "date": "2026-03-05T11:15:00Z",
+  "incident_type": "governance_vote",
+  "status": "completed",
+  "chain": "Warden",
+  "network": "testnet (barra)",
+  "node_type": ["validator"],
+  "client": "wardend",
+  "note": "Cumulo voted YES on Warden Barra Testnet Governance Proposal #6, which schedules the upgrade to v1.0.0 at block height 4,619,000. As an active validator, Cumulo participated in the governance process supporting the upgrade to the v1.0.0 release.",
+  "url": "https://testnet.itrocket.net/warden/gov/6"
+},
+  {
   "id": "xrplevm-mainnet-upgrade-proposal-26-v10-0-0-execution-2026-03-02",
   "date": "2026-03-02T13:30:00Z",
   "incident_type": "upgrade",
