@@ -2,7 +2,7 @@
   {
   "id": "cosmoshub-mainnet-proposal-1025-cumulo-vote-yes-2026-02-XX",
   "date": "2026-02-XXT00:00:00Z",
-  "incident_type": "governance_vote",
+  "incident_type": "governance_proposal",
   "status": "completed",
   "chain": "Cosmos Hub",
   "network": "mainnet",
@@ -14,7 +14,7 @@
   {
   "id": "warden-testnet-proposal-6-cumulo-vote-yes-2026-03-05",
   "date": "2026-03-05T11:15:00Z",
-  "incident_type": "governance_vote",
+  "incident_type": "governance_proposal",
   "status": "completed",
   "chain": "Warden",
   "network": "testnet (barra)",
