@@ -1,5 +1,18 @@
 [
   {
+  "id": "xrplevm-testnet-proposal-40-cumulo-vote-yes-2026-03-05",
+  "date": "2026-03-05T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "vote": "YES",
+  "proposal_id": "40",
+  "note": "Cumulo validator voted YES on XRPL EVM Testnet governance Proposal #40. The proposal updates feemarket parameters by reducing base_fee to 100 GWei to enable the deployment of the Arachnid Deterministic Deployment Proxy, allowing deterministic contract deployments across environments.",
+  "url": "https://governance.testnet.xrplevm.org/xrplevm/proposals/40"
+},
+  {
   "id": "warden-testnet-barra-v1.0.0-upgrade-execution-2026-03-05",
   "date": "2026-03-05T11:15:00Z",
   "incident_type": "upgrade",
