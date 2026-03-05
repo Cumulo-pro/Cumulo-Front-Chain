@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmoshub-mainnet-proposal-1025-cumulo-vote-yes-2026-02-XX",
+  "date": "2026-02-XXT00:00:00Z",
+  "incident_type": "governance_vote",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "gaiad",
+  "note": "Cumulo voted YES on Cosmos Hub Governance Proposal #1025, which schedules the v27.0.0 upgrade. The proposal introduces protocol changes including disabling the creation of new consumer chains as part of the planned removal of Interchain Security from the Hub, along with additional transaction validation and fee mechanism updates. As an active validator, Cumulo participated in governance and supported the upgrade proposal.",
+  "url": "https://cosmos.explorers.guru/proposal/1025"
+},
+  {
   "id": "warden-testnet-proposal-6-cumulo-vote-yes-2026-03-05",
   "date": "2026-03-05T11:15:00Z",
   "incident_type": "governance_vote",
