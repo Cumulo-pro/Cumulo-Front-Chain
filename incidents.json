@@ -1,5 +1,17 @@
 [
   {
+  "id": "genlayer-testnet-node-v0.5.1-upgrade-execution-2026-03-06",
+  "date": "2026-03-06T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (asimov)",
+  "node_type": ["validator"],
+  "client": "genlayer v0.5.1",
+  "note": "Cumulo upgraded its GenLayer validator node to version v0.5.1 following the release announcement. The upgrade introduces improvements to transaction nonce resilience, hanging transaction detection, and finalization logic, along with support for Morpheus as an OpenAI-compatible LLM provider for validators. Cumulo applied the upgrade to maintain compatibility with the network and verified validator operation after restart.",
+  "url": "https://docs.genlayer.com/validators/changelog#v051"
+},
+  {
   "id": "xrplevm-testnet-proposal-40-cumulo-vote-yes-2026-03-05",
   "date": "2026-03-05T00:00:00Z",
   "incident_type": "governance_proposal",
