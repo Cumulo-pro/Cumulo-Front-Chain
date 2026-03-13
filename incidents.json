@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-node-v0.29.3-mocha-upgrade-execution-2026-03-12",
+  "date": "2026-03-12T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["bridge", "consensus"],
+  "client": "celestia-node v0.29.3-mocha",
+  "note": "Cumulo upgraded its Celestia Mocha node infrastructure to celestia-node v0.29.3-mocha. This release includes fixes for light node startup failures caused by syncer tail height overshooting the pruning window, a bridge DASer gossip race fix, core endpoint verification, go-header improvements with parallel header fetching, a new delegation rewards API, and new cel-shed tools. Cumulo applied the upgrade to maintain compatibility and improve bridge and consensus node stability on Mocha.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.29.3-mocha"
+},
+  {
   "id": "genlayer-testnet-node-v0.5.2-upgrade-execution-2026-03-11",
   "date": "2026-03-11T00:00:00Z",
   "incident_type": "upgrade",
