@@ -1,5 +1,17 @@
 [
   {
+  "id": "story-geth-v1.2.1-mainnet-aeneid-security-upgrade-2026-03-14",
+  "date": "2026-03-14T00:00:00Z",
+  "incident_type": "security_update",
+  "status": "completed",
+  "chain": "Story",
+  "network": "mainnet / testnet (Aeneid)",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "story-geth v1.2.1",
+  "note": "Cumulo upgraded its Story execution-layer infrastructure to Story-Geth v1.2.1 on both Mainnet and Aeneid Testnet. This required release merges upstream security fixes addressing CVE-2026-26314, CVE-2026-26315, and two additional p2p vulnerabilities. The upgrade also adds DNS resolution support for bootnodes, allowing configuration with either domain names or IP addresses. Cumulo applied the update as part of its ongoing security and reliability maintenance for Story validator and RPC operations.",
+  "url": "https://github.com/piplabs/story-geth/releases/tag/v1.2.1"
+},
+  {
   "id": "celestia-node-v0.29.3-mocha-upgrade-execution-2026-03-12",
   "date": "2026-03-12T00:00:00Z",
   "incident_type": "upgrade",
