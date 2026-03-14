@@ -1,5 +1,17 @@
 [
   {
+  "id": "genlayer-bradbury-phase1-validator-deployment-2026-03-14",
+  "date": "2026-03-14T18:55:00Z",
+  "incident_type": "infrastructure_deployment",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (bradbury phase1)",
+  "node_type": ["validator"],
+  "client": "genlayer v0.5.5",
+  "note": "Cumulo deployed and initialized a new validator node on GenLayer Bradbury Phase 1 testnet. The deployment included fresh validator creation for Bradbury using the existing owner wallet, a new operator wallet, GenVM setup, WebDriver configuration, Heurist LLM provider integration, and full validator synchronization. After completing setup and health checks, the node reached normal validating status with health endpoint reporting validating=up and zksync-connectivity=up.",
+  "url": "https://docs.genlayer.com/validators/setup-guide#testnet-bradbury"
+},
+  {
   "id": "genlayer-node-v0.5.5-upgrade-execution-2026-03-14",
   "date": "2026-03-14T00:00:00Z",
   "incident_type": "upgrade",
