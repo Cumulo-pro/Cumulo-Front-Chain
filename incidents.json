@@ -1,5 +1,17 @@
 [
   {
+  "id": "genlayer-node-v0.5.5-upgrade-execution-2026-03-14",
+  "date": "2026-03-14T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (asimov)",
+  "node_type": ["validator"],
+  "client": "genlayer v0.5.5",
+  "note": "Cumulo upgraded its GenLayer validator node to version v0.5.5 following the release announcement. This upgrade introduces enhanced telemetry and observability improvements, including network labels in health endpoints and metrics, as well as improved reliability for transaction processing and finalization queues. The release also resolves several issues related to cache miss recovery, stuck nonces, shutdown stability, and GenVM startup on macOS. Cumulo applied the new version and verified normal validator operation after restart.",
+  "url": "https://docs.genlayer.com/validators/changelog#v055"
+},
+  {
   "id": "story-geth-v1.2.1-mainnet-aeneid-security-upgrade-2026-03-14",
   "date": "2026-03-14T00:00:00Z",
   "incident_type": "security_update",
