@@ -85,8 +85,8 @@
   "url": "https://github.com/warden-protocol/wardenprotocol/releases/tag/v1.0.0"
 },
   {
-  "id": "cosmoshub-mainnet-proposal-1025-cumulo-vote-yes-2026-02-XX",
-  "date": "2026-02-XXT00:00:00Z",
+  "id": "cosmoshub-mainnet-proposal-1025-cumulo-vote-yes-2026-03-03",
+  "date": "2026-03-03T00:00:00Z",
   "incident_type": "governance_proposal",
   "status": "completed",
   "chain": "Cosmos Hub",
