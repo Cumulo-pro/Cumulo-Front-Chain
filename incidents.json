@@ -48,6 +48,18 @@
   "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.29.3-mocha"
 },
   {
+  "id": "cosmoshub-gaia-v27-0-0-mainnet-upgrade-2026-03-11",
+  "date": "2026-03-11T15:04:54Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "gaia v27.0.0",
+  "note": "Cumulo upgraded its Cosmos Hub mainnet validator and RPC infrastructure to Gaia v27.0.0 following the network upgrade process. This release introduces protocol-level changes including disabling the creation of new consumer chains as part of the phased removal of Interchain Security, and adds gas surcharges and recipient limits for multi-send transactions. The upgrade was applied successfully and the Cumulo nodes resumed normal operation after restart.",
+  "url": "https://github.com/cosmos/gaia/releases/tag/v27.0.0"
+},
+  {
   "id": "genlayer-testnet-node-v0.5.2-upgrade-execution-2026-03-11",
   "date": "2026-03-11T00:00:00Z",
   "incident_type": "upgrade",
