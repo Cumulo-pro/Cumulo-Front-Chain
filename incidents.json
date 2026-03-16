@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-app-v7.0.3-mocha-security-upgrade-2026-03-16",
+  "date": "2026-03-16T00:00:00Z",
+  "incident_type": "security_update",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator", "rpc", "consensus"],
+  "client": "celestia-app v7.0.3-mocha",
+  "note": "Cumulo upgraded its Celestia Mocha validator infrastructure to celestia-app v7.0.3-mocha following the release announcement. This patch release includes a security fix mitigating a potential OOM denial-of-service vector, along with stability improvements addressing gRPC port conflict panics and nil pointer dereferences in FinalizeBlock. Cumulo applied the upgrade to maintain secure and stable validator, RPC, and consensus operations on Mocha.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v7.0.3-mocha"
+},
+  {
   "id": "genlayer-node-v0.5.6-upgrade-asimov-testnet-2026-03-16",
   "date": "2026-03-16T00:00:00Z",
   "incident_type": "upgrade",
