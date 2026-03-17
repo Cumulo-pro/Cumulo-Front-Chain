@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmoshub-provider-testnet-gaia-v27-1-0-rc0-upgrade-2026-03-17",
+  "date": "2026-03-17T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "testnet (provider)",
+  "node_type": ["validator"],
+  "client": "gaia v27.1.0-rc0",
+  "note": "Cumulo participated in the Cosmos Hub provider testnet upgrade to Gaia v27.1.0-rc0 (upgrade name: v27.1.0) at block height 16,463,900 (~14:33 CET). To qualify for participation tracking, Cumulo signed within the first five blocks after the upgrade. Note: fruit validators remained offline for 10 minutes post-upgrade height to give other validators a chance to come online before the chain resumed.",
+  "url": "https://github.com/cosmos/testnets/tree/master/provider#v2710-rc0-upgrade"
+},
+  {
   "id": "seda-testnet-governance-proposal-9-vote-yes-2026-03-17",
   "date": "2026-03-17T00:00:00Z",
   "incident_type": "governance_vote",
