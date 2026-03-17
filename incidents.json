@@ -1,5 +1,17 @@
 [
   {
+  "id": "genlayer-node-v0.5.6-upgrade-bradbury-testnet-2026-03-16",
+  "date": "2026-03-16T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (bradbury)",
+  "node_type": ["validator"],
+  "client": "genlayer v0.5.6",
+  "note": "Cumulo upgraded its GenLayer validator node on the Bradbury testnet to version v0.5.6 following the release announcement. This update introduces priority-based admission control for transaction processing, improving transaction ordering and throughput under load. Cumulo applied the upgrade as part of its ongoing maintenance of GenLayer validator infrastructure and verified normal node operation after restart.",
+  "url": "https://docs.genlayer.com/validators/changelog#v056"
+},
+  {
   "id": "celestia-app-v7.0.3-mocha-security-upgrade-2026-03-16",
   "date": "2026-03-16T00:00:00Z",
   "incident_type": "security_update",
