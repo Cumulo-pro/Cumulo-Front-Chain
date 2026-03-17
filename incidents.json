@@ -1,5 +1,17 @@
 [
   {
+  "id": "seda-testnet-governance-proposal-9-vote-yes-2026-03-17",
+  "date": "2026-03-17T00:00:00Z",
+  "incident_type": "governance_vote",
+  "status": "pending",
+  "chain": "SEDA",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": "seda-chain v1.0.8-rc.1",
+  "note": "Cumulo voted YES on SEDA Testnet governance proposal #9 to approve the upgrade to v1.0.8-rc.1. The upgrade, scheduled at block height 8,001,175 (~March 24th, 2026 at 15:00 CET), updates the Cosmos SDK from v0.50 to v0.53, IBC from v8 to v10, and Tally VM from v2.6.0 to v2.6.1 (bug fix). As a consensus-breaking upgrade, Cumulo will prepare the new binary ahead of the upgrade height and monitor the transition to mainnet in the coming weeks.",
+  "url": "https://testnet.keplr.app/chains/seda-(testnet)/proposals/9"
+},
+  {
   "id": "genlayer-node-v0.5.6-upgrade-bradbury-testnet-2026-03-16",
   "date": "2026-03-16T00:00:00Z",
   "incident_type": "upgrade",
