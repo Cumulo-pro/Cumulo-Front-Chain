@@ -1,5 +1,17 @@
 [
   {
+  "id": "warden-mainnet-v1.0.0-upgrade-execution-2026-03-19",
+  "date": "2026-03-19T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Warden",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "wardend v1.0.0",
+  "note": "Cumulo upgraded its Warden mainnet validator infrastructure to wardend v1.0.0 at the scheduled network halt on block height 5418000. The chain halted and resumed once validators completed the upgrade. Cumulo prepared the binaries in advance, performed the required restart at the target height, and verified node synchronization and proposal activity after restart.",
+  "url": "https://github.com/warden-protocol/wardenprotocol/releases/tag/v1.0.0"
+},
+  {
   "id": "cosmoshub-provider-testnet-gaia-v27-1-0-rc0-upgrade-2026-03-17",
   "date": "2026-03-17T00:00:00Z",
   "incident_type": "upgrade",
