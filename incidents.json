@@ -615,7 +615,7 @@
   "id": "xrplevm-mainnet-governance-proposal-20-replace-cryptocrew-validator-2026-01-26",
   "date": "2026-01-26T00:00:00Z",
   "incident_type": "governance_vote",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "XRPL EVM",
   "network": "mainnet",
   "node_type": ["validator"],
