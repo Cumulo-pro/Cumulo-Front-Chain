@@ -317,7 +317,7 @@
   "date": "2026-02-24T14:30:00Z",
   "incident_type": "upgrade",
   "status": "completed",
-  "chain": "Cosmos Provider",
+  "chain": "Cosmos Hub",
   "network": "testnet",
   "node_type": ["validator"],
   "client": "gaia v27.0.0-rc0",
