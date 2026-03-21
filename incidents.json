@@ -50,7 +50,7 @@
   {
   "id": "celestia-app-v7.0.3-mocha-security-upgrade-2026-03-16",
   "date": "2026-03-16T00:00:00Z",
-  "incident_type": "security_update",
+  "incident_type": "security_upgrade",
   "status": "completed",
   "chain": "Celestia",
   "network": "testnet (mocha)",
@@ -98,7 +98,7 @@
   {
   "id": "story-geth-v1.2.1-mainnet-aeneid-security-upgrade-2026-03-14",
   "date": "2026-03-14T00:00:00Z",
-  "incident_type": "security_update",
+  "incident_type": "security_upgrade",
   "status": "completed",
   "chain": "Story",
   "network": "mainnet / testnet (Aeneid)",
