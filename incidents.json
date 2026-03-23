@@ -1,5 +1,17 @@
 [
   {
+  "id": "axone-testnet-v14-0-0-smart-contract-readiness-upgrade-2026-03-22",
+  "date": "2026-03-22T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Axone",
+  "network": "testnet",
+  "node_type": ["validator", "rpc"],
+  "client": "axone v14.0.0",
+  "note": "Cumulo applied the Axone testnet upgrade to v14.0.0 (Smart Contract Readiness Upgrade). This mandatory governance-passed upgrade aligns the network with the latest Cosmos SDK, addresses critical bugs, and introduces vesting logic. It serves as a prerequisite for enabling smart contract deployment and transitioning to Axone's application layer.",
+  "url": "https://axone.discourse.group/t/proposal-testnet-cosmos-sdk-upgrade-smart-contract-readiness/59"
+},
+  {
   "id": "warden-mainnet-v1.0.0-upgrade-execution-2026-03-19",
   "date": "2026-03-19T00:00:00Z",
   "incident_type": "upgrade",
