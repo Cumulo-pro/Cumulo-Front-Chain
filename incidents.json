@@ -1,5 +1,17 @@
 [
   {
+  "id": "genlayer-node-v0.5.7-upgrade-asimov-testnet-2026-03-23",
+  "date": "2026-03-23T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (asimov)",
+  "node_type": ["validator"],
+  "client": "genlayer v0.5.7",
+  "note": "Cumulo upgraded its GenLayer validator node on the Asimov testnet to version v0.5.7. This release introduces LLM Greyboxing, enabling deterministic model ordering with configurable fallback chains (e.g., DeepSeek → Qwen → Claude) to improve consensus convergence. Bug fixes include idle activator rotation, view call cleanup, sync pipeline auto-restart after transient RPC failures, cleaner shutdown logs, and a FindAcceptanceBlock range limit to prevent query failures on nodes with large block gaps.",
+  "url": "https://docs.genlayer.com/validators/changelog#v057"
+},
+  {
   "id": "axone-testnet-v14-0-0-smart-contract-readiness-upgrade-2026-03-22",
   "date": "2026-03-22T00:00:00Z",
   "incident_type": "upgrade",
