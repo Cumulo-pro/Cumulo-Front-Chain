@@ -1,5 +1,17 @@
 [
   {
+  "id": "seda-testnet-v1.0.8-rc.1-upgrade-2026-03-25",
+  "date": "2026-03-25T20:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "SEDA",
+  "network": "testnet",
+  "node_type": ["validator", "rpc"],
+  "client": "seda-chain v1.0.8-rc.1",
+  "note": "Cumulo successfully upgraded its SEDA testnet validator and RPC nodes to v1.0.8-rc.1 (upgrade name: v1.0.8) at block height 8,001,175. This consensus-breaking upgrade updates the Cosmos SDK from v0.50 to v0.53, IBC from v8 to v10, and Tally VM from v2.6.0 to v2.6.1. The binary was built from source, installed via Cosmovisor under the correct upgrade name, and both nodes resumed normal operation after the halt.",
+  "url": "https://github.com/sedaprotocol/seda-chain/releases/tag/v1.0.8-rc.1"
+},
+  {
   "id": "starknet-mainnet-juno-v0.15.20-upgrade-2026-03-24",
   "date": "2026-03-24T00:00:00Z",
   "incident_type": "upgrade",
