@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmoshub-mainnet-governance-proposal-1026-vote-yes-2026-03-24",
+  "date": "2026-03-24T00:00:00Z",
+  "incident_type": "governance_vote",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "gaia v27.1.0",
+  "note": "Cumulo voted YES on Cosmos Hub mainnet governance proposal #1026 to approve the upgrade to Gaia v27.1.0. This state-breaking upgrade bumps wasmd from v0.60.2 to v0.60.5, wasmvm from v2.2.4 to v2.3.2, and Golang from v1.24 to v1.25. If the proposal passes (7-day voting period), validators will be required to update the Cosmos Hub binary at the specified upgrade height.",
+  "url": "https://cosmos.explorers.guru/proposal/1026"
+},
+  {
   "id": "genlayer-node-v0.5.7-upgrade-asimov-testnet-2026-03-23",
   "date": "2026-03-23T00:00:00Z",
   "incident_type": "upgrade",
