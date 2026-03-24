@@ -1,5 +1,17 @@
 [
   {
+  "id": "starknet-mainnet-juno-v0.15.20-upgrade-2026-03-24",
+  "date": "2026-03-24T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "juno v0.15.20",
+  "note": "Cumulo upgraded its Starknet mainnet Juno node to v0.15.20. The binary was downloaded from the official NethermindEth release, deployed to /usr/local/bin, and the service restarted via systemd. Normal node operation verified after restart.",
+  "url": "https://github.com/NethermindEth/juno/releases/tag/v0.15.20"
+},
+  {
   "id": "cosmoshub-mainnet-governance-proposal-1027-vote-yes-2026-03-24",
   "date": "2026-03-24T00:00:00Z",
   "incident_type": "governance_vote",
