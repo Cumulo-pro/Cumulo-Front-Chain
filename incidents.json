@@ -1,5 +1,16 @@
 [
   {
+  "id": "cosmoshub-mainnet-governance-proposal-1027-vote-yes-2026-03-24",
+  "date": "2026-03-24T00:00:00Z",
+  "incident_type": "governance_vote",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Cumulo voted YES on Cosmos Hub mainnet governance proposal #1027 to recover IBC Client 07-tendermint-620 connecting Cosmos Hub to the EVMOS network. The recovery replaces the state of the expired client with the state of a newly created substitute client 07-tendermint-1470. The client expired due to a recent Ethermint vulnerability that caused the EVMOS network to be down for several days, locking user ATOM tokens in the IBC channel.",
+  "url": "https://cosmos.explorers.guru/proposal/1027"
+},
+  {
   "id": "cosmoshub-mainnet-governance-proposal-1026-vote-yes-2026-03-24",
   "date": "2026-03-24T00:00:00Z",
   "incident_type": "governance_vote",
