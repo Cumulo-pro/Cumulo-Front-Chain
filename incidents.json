@@ -1,5 +1,27 @@
 [
   {
+  "id": "xrplevm-testnet-governance-proposal-41-2026-03-25",
+  "date": "2026-03-25T18:13:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #41 opened on XRPL EVM testnet to remove the Grove, Cosmostation, MOAI, xToadz, Informal Systems, and Nexus validators from the testnet validator set. Voting period ends on 2026-04-08 17:12:23 UTC.",
+  "url": "https://governance.testnet.xrplevm.org/xrplevm/proposals/41"
+},
+{
+  "id": "xrplevm-testnet-governance-proposal-42-2026-03-25",
+  "date": "2026-03-25T18:38:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #42 opened on XRPL EVM testnet to remove the Grove, Cosmostation, MOAI, xToadz, Informal Systems, and Nexus validators from the testnet validator set. Voting period ends on 2026-04-08 17:38:05 UTC.",
+  "url": "https://governance.testnet.xrplevm.org/xrplevm/proposals/42"
+},
+  {
   "id": "seda-testnet-v1.0.8-rc.1-upgrade-2026-03-25",
   "date": "2026-03-25T20:00:00Z",
   "incident_type": "upgrade",
