@@ -1,5 +1,27 @@
 [
   {
+  "id": "xrplevm-mainnet-governance-proposal-27-2026-03-25",
+  "date": "2026-03-25T18:06:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #27 opened on XRPL EVM mainnet to remove the Informal Systems and Grove validators from the validator set. Voting period ends on 2026-04-08 17:05:46 UTC.",
+  "url": "https://governance.xrplevm.org/xrplevm/proposals/27"
+},
+{
+  "id": "xrplevm-mainnet-governance-proposal-28-2026-03-25",
+  "date": "2026-03-25T18:37:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #28 opened on XRPL EVM mainnet to remove the Informal Systems and Grove validators from the validator set. Voting period ends on 2026-04-08 17:37:15 UTC.",
+  "url": "https://governance.xrplevm.org/xrplevm/proposals/28"
+},
+  {
   "id": "xrplevm-testnet-governance-proposal-41-2026-03-25",
   "date": "2026-03-25T18:13:00Z",
   "incident_type": "governance_proposal",
