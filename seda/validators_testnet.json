@@ -46,6 +46,7 @@
     "api": "https://seda-t-api.noders.services",
     "rpc": "https://seda-t-rpc.noders.services",
     "grpc": "seda-t-grpc.noders.services:443",
+    "snapshot": "https://noders.services/testnet/seda/snapshot",
     "tools_url": {
       "Endpoints": "https://noders.services/testnet/seda/endpoints/"
     },
