@@ -1,0 +1,136 @@
+[
+  {
+    "name": "Polkachu",
+    "webservices": "https://polkachu.com/testnets/seda",
+    "x": "polka_chu",
+    "validatorlogo": "polkachu.jpg",
+    "rpc": "https://seda-testnet-rpc.polkachu.com:443",
+    "grpc": "seda-testnet-grpc.polkachu.com:11990",
+    "snapshot": "https://polkachu.com/testnets/seda/snapshots",
+    "addrbook": "https://polkachu.com/testnets/seda/addrbooks",
+    "seeds": "3f472746f46493309650e5a033076689996c8881@seda-testnet.rpc.polkachu.com:11956",
+    "tools": "State-sync",
+    "tools_url": {
+      "State-sync": "https://polkachu.com/testnets/seda/state_sync"
+    },
+    "tools_desc": {
+      "State-sync": "State sync instructions and RPC parameters for fast SEDA testnet node bootstrap."
+    },
+    "content": {
+      "Installation Guide": "https://polkachu.com/testnets/seda/installation"
+    }
+  },
+  {
+    "name": "BlackNodes",
+    "webservices": "https://services.blacknodes.net/Seda-Testnet/",
+    "x": "BlackNodesHQ",
+    "validatorlogo": "blacknodes.jpg",
+    "explorer": "https://explorer.blacknodes.net/Seda-Testnet",
+    "rpc": "https://seda-testnet-rpc.blacknodes.net",
+    "grpc": "seda-testnet-grpc.blacknodes.net:13090",
+    "snapshot": "https://files.blacknodes.net/seda-testnet/seda-1-testnet.tar.lz4",
+    "addrbook": "https://files.blacknodes.net/seda-testnet/addrbook.json",
+    "tools": "Node Monitoring",
+    "tools_url": {
+      "Node Monitoring": "https://github.com/blacknodes/Node-Services/tree/main/Projects/seda/Seda-Node-Monitoring"
+    },
+    "tools_desc": {
+      "Node Monitoring": "Open-source node monitoring scripts for SEDA testnet (health checks and operational status)."
+    }
+  },
+  {
+    "name": "NODERS",
+    "webservices": "https://noders.services/testnet/seda/",
+    "x": "NODERS_TEAM",
+    "validatorlogo": "noders.jpg",
+    "api": "https://seda-t-api.noders.services",
+    "rpc": "https://seda-t-rpc.noders.services",
+    "grpc": "seda-t-grpc.noders.services:443",
+    "tools_url": {
+      "Endpoints": "https://noders.services/testnet/seda/endpoints/"
+    },
+    "tools_desc": {
+      "Endpoints": "Public RPC, API and gRPC endpoints for SEDA testnet provided by NODERS."
+    }
+  },
+  {
+    "name": "kjnodes",
+    "webservices": "https://services.kjnodes.com/testnet/seda/",
+    "x": "kjnodes",
+    "validatorlogo": "kjnodes.jpg",
+    "rpc": "https://seda-testnet.rpc.kjnodes.com:443",
+    "grpc": "seda-testnet.grpc.kjnodes.com:443",
+    "seeds": "3f472746f46493309650e5a033076689996c8881@seda-testnet.rpc.kjnodes.com:17359",
+    "addrbook": "https://snapshots.kjnodes.com/seda-testnet/addrbook.json",
+    "snapshot": "https://snapshots.kjnodes.com/seda-testnet/snapshot_latest.tar.lz4",
+    "tools_url": {
+      "State-sync": "https://services.kjnodes.com/testnet/seda/state-sync/",
+      "Installation Guide": "https://services.kjnodes.com/testnet/seda/installation/"
+    },
+    "tools_desc": {
+      "State-sync": "State sync guide and endpoints to speed up SEDA testnet node synchronization.",
+      "Installation Guide": "Step-by-step node setup guide for SEDA testnet including cosmovisor configuration."
+    }
+  },
+  {
+    "name": "Lavender.Five Nodes",
+    "webservices": "https://www.lavenderfive.com/tools/seda/overview",
+    "x": "lavender_five",
+    "validatorlogo": "lavenderfive.jpg",
+    "api": "https://seda-api.lavenderfive.com",
+    "rpc": "https://seda-rpc.lavenderfive.com",
+    "grpc": "https://seda-grpc.lavenderfive.com",
+    "snapshot": "https://www.lavenderfive.com/tools/seda/snapshot",
+    "tools": "State-sync",
+    "tools_url": {
+      "State-sync": "https://www.lavenderfive.com/tools/seda/statesync"
+    },
+    "tools_desc": {
+      "State-sync": "State sync parameters and snapshot services for SEDA testnet node operators."
+    },
+    "content": {
+      "Installation Guide": "https://www.lavenderfive.com/tools/seda/installation"
+    }
+  },
+  {
+    "name": "Nodes.Guru",
+    "webservices": "",
+    "x": "NodesGuru",
+    "validatorlogo": "nodesguru.png",
+    "explorer": "https://testnet.seda.explorers.guru/",
+    "tools": "NodesChecker Bot",
+    "tools_url": {
+      "NodesChecker Bot": "https://t.me/NodesGuru_bot"
+    },
+    "tools_desc": {
+      "NodesChecker Bot": "Telegram bot that checks node status and basic health signals for Cosmos-based networks, including SEDA."
+    }
+  },
+  {
+    "name": "NodeStake",
+    "webservices": "https://nodestake.org/seda",
+    "x": "NodeStake_top",
+    "validatorlogo": "nodestake.jpg",
+    "explorer": "https://explorer.nodestake.org/seda",
+    "api": "https://api-t.seda.nodestake.org",
+    "rpc": "https://rpc-t.seda.nodestake.org",
+    "grpc": "https://grpc-t.seda.nodestake.org:443",
+    "snapshot": "https://nodestake.org/seda",
+    "tools_url": {
+      "Services (Snapshot, State Sync, Peers, Seeds)": "https://nodestake.org/seda"
+    },
+    "tools_desc": {
+      "Services (Snapshot, State Sync, Peers, Seeds)": "Full service hub for SEDA testnet operators: snapshots, state sync, peers, seeds and installation guides."
+    }
+  },
+  {
+    "name": "Cumulo",
+    "webservices": "https://cumulo.pro/services/seda_testnet",
+    "x": "Cumulo_pro",
+    "validatorlogo": "cumulo.jpg",
+    "rpc": "https://seda.cumulo.org.es:443",
+    "api": "https://seda.api.cumulo.org.es:443",
+    "grpc": "seda.grpc.cumulo.org.es:443",
+    "websocket": "wss://seda.cumulo.org.es:443/websocket"
+  }
+]
