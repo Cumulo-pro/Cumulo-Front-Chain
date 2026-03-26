@@ -129,9 +129,10 @@
     "webservices": "https://cumulo.pro/services/seda_testnet",
     "x": "Cumulo_pro",
     "validatorlogo": "cumulo.jpg",
-    "rpc": "https://seda.cumulo.org.es:443",
-    "api": "https://seda.api.cumulo.org.es:443",
-    "grpc": "seda.grpc.cumulo.org.es:443",
+    "explorer": "https://cumulo.pro/services/seda_testnet/stats",
+    "rpc": "https://seda-testnet.rpc.cumulo.org.es",
+    "api": "https://seda-testnet.api.cumulo.org.es",
+    "grpc": "seda-testnet.grpc.cumulo.org.es",
     "websocket": "wss://seda.cumulo.org.es:443/websocket"
   }
 ]
