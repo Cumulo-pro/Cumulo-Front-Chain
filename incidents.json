@@ -1,5 +1,17 @@
 [
   {
+  "id": "story-aeneid-testnet-validator-backup-deployment-2026-03-31",
+  "date": "2026-03-31T14:30:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Story Protocol",
+  "network": "Aeneid Testnet",
+  "node_type": ["validator", "rpc"],
+  "client": "geth v1.2.1 / storyd v1.5.2",
+  "note": "Deployment of a new Story Aeneid Testnet backup validator and RPC node operated by Cumulo. This backup node enhances network reliability and validator redundancy. Infrastructure setup follows Cumulo’s standard practices, including secure key management, systemd-based services, monitoring, and operational documentation to ensure resilient, transparent, and maintainable operations.",
+  "url": "https://github.com/Cumulo-pro/cumulo-story-aeneid-infra/"
+},
+  {
   "id": "xrplevm-mainnet-governance-proposal-27-2026-03-25",
   "date": "2026-03-25T18:06:00Z",
   "incident_type": "governance_proposal",
