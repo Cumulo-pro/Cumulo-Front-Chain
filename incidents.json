@@ -1,5 +1,17 @@
 [
   {
+  "id": "story-aeneid-testnet-v1.6.1-upgrade-2026-04-01",
+  "date": "2026-04-01T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Story Protocol",
+  "network": "Aeneid Testnet",
+  "node_type": ["validator", "rpc","backup"],
+  "client": "storyd v1.6.1",
+  "note": "Cumulo successfully upgraded its Story Aeneid Testnet validator and RPC nodes to v1.6.1 at the scheduled upgrade height 16,332,000. This mandatory upgrade introduces Distributed Key Generation (DKG) and Confidential Data Rails (CDR), enabling on-chain confidential data management. The upgrade was executed using Cosmovisor with the correct upgrade name (v1.6.0), ensuring automatic binary swap at halt height. Nodes resumed normal operation after the upgrade without issues.",
+  "url": "https://github.com/piplabs/story/releases/tag/v1.6.1"
+},
+  {
   "id": "cosmoshub-mainnet-gaia-v27-1-0-upgrade-2026-04-01",
   "date": "2026-04-01T00:00:00Z",
   "incident_type": "upgrade",
