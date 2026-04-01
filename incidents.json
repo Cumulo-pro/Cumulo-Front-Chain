@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmoshub-mainnet-gaia-v27-1-0-upgrade-2026-04-01",
+  "date": "2026-04-01T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "gaia v27.1.0",
+  "note": "Cumulo upgraded its Cosmos Hub mainnet validator and RPC nodes to Gaia v27.1.0 following the passing of governance proposal #1026. This state-breaking upgrade bumps wasmd from v0.60.2 to v0.60.5, wasmvm from v2.2.4 to v2.3.2, and Golang from v1.24 to v1.25. The binary was downloaded from the official release, deployed, and the service restarted via systemd. Both nodes resumed normal operation after the upgrade.",
+  "url": "https://github.com/cosmos/gaia/releases/tag/v27.1.0"
+},
+  {
   "id": "story-aeneid-testnet-validator-backup-deployment-2026-03-31",
   "date": "2026-03-31T14:30:00Z",
   "incident_type": "deployment",
