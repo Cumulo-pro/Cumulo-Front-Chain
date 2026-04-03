@@ -1,5 +1,17 @@
 [
   {
+  "id": "genlayer-testnet-bradbury-upgrade-v0.5.8-2026-04-03",
+  "date": "2026-04-03T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (bradbury)",
+  "node_type": ["validator"],
+  "client": "genlayer v0.5.8",
+  "note": "Cumulo upgraded its GenLayer validator node on the Bradbury testnet to version v0.5.8. This release introduces a gen_syncing RPC method for sync progress monitoring, bounded sync wait with configurable timeout (default 20s), and per-IP rate limiting on RPC endpoints. Bug fixes include a Docker AVX-512 fix moving WASM precompilation to container startup, sync resilience improvements with recursive dependency resolution, sync pipeline hiccup retry, prime recovery after chain reorganizations, RPC block range fix, standardized EIP-1474 error codes, and transaction lookup retry for RPC indexing lag.",
+  "url": "https://docs.genlayer.com/validators/changelog#v058"
+},
+  {
   "id": "genlayer-asimov-testnet-v0.5.8-upgrade-2026-04-03",
   "date": "2026-04-03T12:00:00Z",
   "incident_type": "upgrade",
