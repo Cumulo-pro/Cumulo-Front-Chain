@@ -5,7 +5,7 @@
   "incident_type": "upgrade",
   "status": "completed",
   "chain": "GenLayer",
-  "network": "testnet (asimov)",
+  "network": "testnet (Asimov)",
   "node_type": ["validator"],
   "client": "genlayer v0.5.8",
   "note": "Cumulo upgraded its GenLayer validator node on the Asimov testnet to version v0.5.8. This release introduces a new gen_syncing RPC endpoint for improved sync monitoring, bounded sync wait for faster RPC responses, and per-IP rate limiting for enhanced endpoint protection. Additional improvements include enhanced sync resilience, retry mechanisms for transient RPC failures, validator recovery after reorgs, and standardized EIP-1474 error codes. The upgrade was applied successfully and the node resumed normal operation.",
