@@ -1,5 +1,17 @@
 [
   {
+  "id": "starknet-testnet-validator-migration-juno-v0.15.20-2026-04-05",
+  "date": "2026-04-05T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "testnet",
+  "node_type": ["validator", "attestation"],
+  "client": "juno v0.15.20",
+  "note": "Cumulo migrated its Starknet testnet validator node to a new server infrastructure. The validator services were successfully restored, including the attestation system. The Juno node (v0.15.20) is fully synchronized and operational, with the attestor actively running and successfully validating epochs. Post-migration checks confirm stable performance and correct participation in the network.",
+  "url": "https://github.com/NethermindEth/juno/releases/tag/v0.15.20"
+},
+  {
   "id": "genlayer-testnet-bradbury-upgrade-v0.5.8-2026-04-03",
   "date": "2026-04-03T00:00:00Z",
   "incident_type": "upgrade",
