@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmos-gaia-v27.2.0-rc0-upgrade-2026-04-07",
+  "date": "2026-04-07T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos",
+  "network": "provider testnet",
+  "node_type": ["validator", "rpc", "consensus"],
+  "client": "gaia v27.2.0-rc0",
+  "note": "Cosmos provider testnet successfully upgraded to Gaia v27.2.0-rc0 at block height 16776100 following governance Proposal 299. Cumulo infrastructure performed the upgrade, including binary update and validator restart at the designated height. The upgrade name included the full version as required (v27.2.0). Post-upgrade checks confirm validators are operational, synchronized, and actively participating in consensus without issues.",
+  "url": "https://github.com/cosmos/testnets/tree/master/provider#v2720-rc0-upgrade"
+},
+  {
   "id": "celestia-app-v8.0.1-mocha-upgrade-2026-04-07",
   "date": "2026-04-07T00:00:00Z",
   "incident_type": "upgrade",
