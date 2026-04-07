@@ -1,5 +1,16 @@
 [
   {
+  "id": "cosmos-mainnet-governance-proposal-1028-2026-04-07",
+  "date": "2026-04-07T18:50:00Z",
+  "incident_type": "governance_proposal",
+  "status": "ended",
+  "chain": "Cosmos",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1028 (Gaia v27.2.0 Upgrade) on Cosmos mainnet. Cumulo voted YES. Voting period ended on 2026-04-14 18:54 UTC.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1028"
+},
+  {
   "id": "cosmos-gaia-v27.2.0-rc0-upgrade-2026-04-07",
   "date": "2026-04-07T00:00:00Z",
   "incident_type": "upgrade",
