@@ -1,5 +1,17 @@
 [
   {
+  "id": "quicksilver-mainnet-governance-proposal-64-2026-04-10",
+  "date": "2026-04-10T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Quicksilver",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #64 on Quicksilver mainnet to upgrade to v1.10.2. Cumulo voted YES on this proposal. The upgrade targets block height 17775700 (~2026-04-13 16:00 UTC) and includes offboarding Omniflix and Stargaze zones, along with a fix for HandleFailedUndelegate IBC acknowledgement blocking ICA connections.",
+  "url": "https://github.com/quicksilver-zone/quicksilver/releases/tag/v1.10.2",
+  "vote": "https://explorer.quicksilver.zone/transactions/D9F5A41DFCCC1E13B880C7260117A69E0A0D44C380BC99D3CC58782BE2262E28"
+},
+  {
   "id": "starknet-mainnet-governance-proposal-v0142-2026-04-10",
   "date": "2026-04-10T00:00:00Z",
   "incident_type": "governance_proposal",
