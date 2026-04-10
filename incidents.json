@@ -1,5 +1,17 @@
 [
   {
+  "id": "starknet-mainnet-governance-proposal-v0142-2026-04-10",
+  "date": "2026-04-10T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Starknet",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Cumulo voted YES. Onchain vote for the Starknet v0.14.2 protocol upgrade is live and closes on April 16 at 16:00 UTC. The upgrade includes four key changes: In-Protocol Proof Verification (SNIP-36) enabling S-Two proof verification; Revised Storage Costs (SNIP-37) aligning pricing with actual resource usage; StarkGate Token Upgrade (SNIP-13) with indexed ERC-20 events and USDC becoming USDC.e; and Decentralization Prep (SNIP-33) for future decentralized validation. This upgrade includes breaking changes affecting block hash calculations, storage pricing, and ERC-20 event formats. Voting ends 2026-04-16 16:00 UTC.",
+  "url": "https://governance.starknet.io/#/sn:0x009fedaf0d7a480d21a27683b0965c0f8ded35b3f1cac39827a25a06a8a682a4/proposal/11",
+  "vote": "https://voyager.online/tx/0x1ca8c9a48441be4b6526d4962818cf429c167388f03884d6cc77d926caf2ee0"
+},
+  {
   "id": "cosmos-mainnet-governance-proposal-1029-2026-04-09",
   "date": "2026-04-09T10:02:00Z",
   "incident_type": "governance_proposal",
