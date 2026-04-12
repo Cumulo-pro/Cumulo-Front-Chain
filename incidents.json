@@ -1,4 +1,16 @@
 [
+ {
+  "id": "celestia-mocha-db-migration-pebbledb-2026-04-12",
+  "date": "2026-04-12T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator", "rpc", "consensus"],
+  "client": "celestia-app v8",
+  "note": "Cumulo migrated its Celestia Mocha testnet node database from LevelDB (goleveldb) to PebbleDB as part of the celestia-app v8 rollout. PebbleDB offers lower disk I/O, faster block synchronization, and reduced RPC response times compared to goleveldb, making it the recommended backend going forward. The node was resynced from a PebbleDB-format snapshot and config.toml was updated to set db_backend = \"pebbledb\". The node uses Horcrux for remote signing. Post-migration the node is fully operational and synchronized.",
+  "url": "https://github.com/celestiaorg/celestia-app/tree/main/tools/migrate-db"
+},
   {
   "id": "quicksilver-mainnet-governance-proposal-64-2026-04-10",
   "date": "2026-04-10T00:00:00Z",
