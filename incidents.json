@@ -1,5 +1,17 @@
 [
  {
+  "id": "starknet-mainnet-testnet-update-juno-v0.15.22-2026-04-13",
+  "date": "2026-04-13T00:00:00Z",
+  "incident_type": "update",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "mainnet/testnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "Juno v0.15.22",
+  "note": "Upgrade to Juno v0.15.22 applied across all Starknet nodes (mainnet and testnet). The service was stopped via systemd, the new binary was downloaded from the official NethermindEth GitHub release, and all validator, RPC, and backup nodes were restarted and verified. All services confirmed fully synchronized and operational post-upgrade.",
+  "url": "https://github.com/NethermindEth/juno/releases/tag/v0.15.22"
+},
+ {
   "id": "celestia-mocha-db-migration-pebbledb-2026-04-12",
   "date": "2026-04-12T00:00:00Z",
   "incident_type": "infrastructure_migration",
