@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-app-v8.0.2-mocha-node-v0.30.2-mocha-upgrade-2026-04-14",
+  "date": "2026-04-14T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator", "rpc", "consensus", "bridge"],
+  "client": ["celestia-app v8.0.2-mocha", "celestia-node v0.30.2-mocha"],
+  "note": "Cumulo upgraded its Celestia Mocha testnet nodes to celestia-app v8.0.2-mocha and celestia-node v0.30.2-mocha. The celestia-app release fixes a data race condition in the signing context GetSigners method, adds Grafana latency and failure metrics dashboards, updates the v3 multiplexer binary to version 3.12.0, and updates Ubuntu OS version requirements documentation. The celestia-node patch improves P2P stability by removing broken Mocha bootstrapper nodes that were causing peer discovery issues, and adjusts the log level in shrex-client to reduce diagnostic noise. Upgrade applied across validator, RPC, consensus, and bridge nodes. All services verified and fully operational post-upgrade.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v8.0.2-mocha"
+},
+ {
   "id": "starknet-mainnet-testnet-update-juno-v0.15.22-2026-04-13",
   "date": "2026-04-13T00:00:00Z",
   "incident_type": "update",
