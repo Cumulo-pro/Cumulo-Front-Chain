@@ -1,5 +1,17 @@
 [
  {
+  "id": "genlayer-bradbury-telemetry-monitoring-deployment-2026-04-14",
+  "date": "2026-04-14T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (bradbury)",
+  "node_type": ["validator"],
+  "client": "genlayer v0.5.8",
+  "note": "Cumulo deployed and configured centralized telemetry monitoring for its GenLayer Bradbury validator using Alloy with Prometheus remote_write and Loki integration to Grafana Cloud. Initial authentication issues (401 invalid token) were identified and resolved by correcting environment variables and credentials. Metrics and logs ingestion are now fully operational, and the validator is correctly reporting as active in the GenLayer monitoring dashboard.",
+  "url": "https://docs.genlayer.com/validators"
+},
+ {
   "id": "dymension-mainnet-governance-proposal-39-2026-04-15",
   "date": "2026-04-15T00:00:00Z",
   "incident_type": "governance_proposal",
