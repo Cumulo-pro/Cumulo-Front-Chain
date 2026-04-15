@@ -1,5 +1,16 @@
 [
  {
+  "id": "cosmos-mainnet-gaia-v27.2.0-upgrade-2026-04-15",
+  "date": "2026-04-15T14:10:00Z",
+  "incident_type": "upgrade",
+  "chain": "Cosmos",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "gaia v27.2.0",
+  "note": "Cosmos Hub successfully upgraded to Gaia v27.2.0 on mainnet following Proposal #1028. Cumulo infrastructure performed the upgrade across all validator and node systems at the scheduled block height 30675400 without any incidents. Post-upgrade validation confirms full synchronization and normal participation in consensus.",
+  "url": "https://github.com/cosmos/gaia/releases/tag/v27.2.0"
+},
+ {
   "id": "genlayer-bradbury-telemetry-monitoring-deployment-2026-04-14",
   "date": "2026-04-14T00:00:00Z",
   "incident_type": "deployment",
