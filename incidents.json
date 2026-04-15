@@ -1,5 +1,17 @@
 [
  {
+  "id": "dymension-mainnet-governance-proposal-39-2026-04-15",
+  "date": "2026-04-15T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Dymension",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #39 on Dymension mainnet: Update USDT send rate limit from 15% to 100%. The proposal updates the IBC rate limit on channel-3 for USDT (IBC denom B72B5B3F7AD44...) increasing max_percent_recv from 15% to 100% over a 24-hour window. Currently passing with 99.98% YES votes. Cumulo voted YES. Voting ends on 2026-04-19 13:59:24 UTC.",
+  "url": "https://dym.fyi/proposal/39",
+  "vote": "https://dym.fyi/tx/EFFA6DB76DC42E82C04031B786C6972778862C8D0A892316590B35071DC8ED92"
+},
+ {
   "id": "celestia-app-v8.0.2-mocha-node-v0.30.2-mocha-upgrade-2026-04-14",
   "date": "2026-04-14T00:00:00Z",
   "incident_type": "upgrade",
