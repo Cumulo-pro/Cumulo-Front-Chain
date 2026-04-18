@@ -1,5 +1,16 @@
 [
  {
+  "id": "avail-turing-rpc-node-deployment-2026-04-18",
+  "date": "2026-04-18T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Avail",
+  "network": "testnet (Turing)",
+  "node_type": ["rpc"],
+  "note": "Cumulo deployed a new RPC node for the Avail Turing testnet. The public endpoint is available at avail.testnet.rpc.cumulo.me (WSS). The node is accessible via Subscan explorer and the Avail Explorer dashboard using the Cumulo WSS endpoint.",
+  "url": "https://avail-turing.subscan.io/?rpc=wss://avail.testnet.rpc.cumulo.me"
+},
+ {
   "id": "cosmos-mainnet-gaia-v27.2.0-upgrade-2026-04-15",
   "date": "2026-04-15T14:10:00Z",
   "incident_type": "upgrade",
