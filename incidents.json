@@ -1,5 +1,17 @@
 [
  {
+  "id": "monad-testnet-full-node-deployment-2026-04-19",
+  "date": "2026-04-19T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Monad",
+  "network": "testnet",
+  "node_type": ["full_node"],
+  "client": "monad-bft v0.14.1",
+  "note": "Cumulo deployed its first Monad testnet full node (full_Cumulo-1) on dedicated hardware (Ryzen 9 7950X3D, 128GB RAM, 2x NVMe 1.7TB). The setup included SMT/HyperThreading disabled at BIOS level, a dedicated raw NVMe disk for the TrieDB engine, and snapshot import at block 26,462,562. Services monad-bft, monad-execution, and monad-rpc are active and committing blocks in real time. OTEL Collector v0.139.0 configured for metrics. Full installation documented in the Cumulo Monad infra repository.",
+  "url": "https://github.com/Cumulo-pro/cumulo-monad-infra/blob/main/docs/01-validator-setup.md"
+},
+ {
   "id": "avail-turing-rpc-node-deployment-2026-04-18",
   "date": "2026-04-18T00:00:00Z",
   "incident_type": "deployment",
