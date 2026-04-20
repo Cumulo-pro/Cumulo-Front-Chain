@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-app-v8.0.3-mocha-upgrade-2026-04-20",
+  "date": "2026-04-20T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator", "rpc", "consensus", "bridge"],
+  "client": "celestia-app v8.0.3-mocha",
+  "note": "Cumulo upgraded its Celestia Mocha testnet nodes to celestia-app v8.0.3-mocha. This patch release addresses multiple data race conditions in getMinGasPrice and nodeDB.storageVersion (via iavl upgrade to v1.2.8), adds a zip-slip guard to multiplexer tar extraction, and fixes clear-text logging of Grafana passwords. Default slashing parameters were updated to match mainnet governance settings. Dependencies updated include rsmt2d v0.15.2, nmt v0.24.3, and celestia-core v0.39.28.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v8.0.3-mocha"
+},
+ {
   "id": "monad-testnet-full-node-deployment-2026-04-19",
   "date": "2026-04-19T00:00:00Z",
   "incident_type": "deployment",
