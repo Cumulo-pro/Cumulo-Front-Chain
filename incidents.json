@@ -1,5 +1,17 @@
 [
  {
+  "id": "starknet-mainnet-testnet-juno-v0.16.0-update-2026-04-22",
+  "date": "2026-04-22T00:00:00Z",
+  "incident_type": "update",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "mainnet/testnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "Juno v0.16.0",
+  "note": "Cumulo updated its Starknet nodes (mainnet and testnet) to Juno v0.16.0. This release includes a database migration that rewrites and compresses the entire database to approximately half its previous size. The migration took around 40 minutes on nodes meeting minimum SSD requirements. All nodes have been verified and are fully operational post-update.",
+  "url": "https://github.com/NethermindEth/juno/releases/tag/v0.16.0"
+},
+ {
   "id": "celestia-mainnet-upgrade-celestia-app-v8.0.3-2026-04-22",
   "date": "2026-04-22T00:00:00Z",
   "incident_type": "upgrade",
