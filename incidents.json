@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-mainnet-bridge-configuration-pruningwindow-celestia-node-v0.30.2-2026-04-23",
+  "date": "2026-04-23T00:00:00Z",
+  "incident_type": "configuration",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.30.2",
+  "note": "Cumulo applied configuration changes to the Celestia mainnet bridge node running celestia-node v0.30.2. The Header.Syncer section was updated with PruningWindow set to 720h0m0s, SyncFromHash left empty, and SyncFromHeight set to 0. This release adds support for celestia-app v8 and includes key improvements: TLS support for JSON-RPC, Prometheus metrics export via OpenTelemetry, Shrex protocol enabled on bridge nodes, and improved bridge node fresh start from non-archival consensus nodes. Node verified operational post-configuration.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.30.2"
+},
+ {
   "id": "monad-testnet-upgrade-v0.14.2-2026-04-23",
   "date": "2026-04-23T00:00:00Z",
   "incident_type": "upgrade",
