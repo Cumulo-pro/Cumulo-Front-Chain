@@ -1,5 +1,17 @@
 [
  {
+  "id": "monad-testnet-upgrade-v0.14.2-2026-04-23",
+  "date": "2026-04-23T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Monad",
+  "network": "testnet",
+  "node_type": ["full"],
+  "client": "monad-bft v0.14.2",
+  "note": "Cumulo upgraded its Monad testnet full node to v0.14.2. This was an orange-coded release requiring action within 24–48 hours. Upgrade applied successfully following official instructions; node verified and fully operational post-upgrade.",
+  "url": "https://docs.monad.xyz/node-ops/upgrade-instructions/v0.14.2"
+},
+ {
   "id": "starknet-mainnet-testnet-juno-v0.16.0-update-2026-04-22",
   "date": "2026-04-22T00:00:00Z",
   "incident_type": "update",
