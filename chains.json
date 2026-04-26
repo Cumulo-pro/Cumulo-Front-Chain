@@ -30,5 +30,9 @@
   {
   "name": "Monad Testnet",
   "url": "https://raw.githubusercontent.com/Cumulo-pro/cumulo-monad-infra/main/data/validators_testnet_monad.json"
+},
+  {
+  "name": "Monad Mainnet",
+  "url": "https://github.com/Cumulo-pro/cumulo-monad-infra/blob/main/data/validators_mainnet_monad.json"
 }
 ]
