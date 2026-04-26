@@ -26,5 +26,9 @@
   {
     "name": "Dymension mainnet",
     "url": "https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/Dymension/data/validators.json"
-  }
+  },
+  {
+  "name": "Monad Testnet",
+  "url": "https://raw.githubusercontent.com/Cumulo-pro/cumulo-monad-infra/main/data/validators_testnet_monad.json"
+}
 ]
