@@ -1,5 +1,17 @@
 [
  {
+  "id": "xrplevm-mainnet-governance-proposal-29-2026-04-27",
+  "date": "2026-04-27T11:52:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #29 on XRPL EVM mainnet: Update feemarket params (MsgUpdateParams) to reduce transaction fees and align them with XRPL mainnet's low-cost structure, adding only programmability overhead. The proposal aims to improve competitiveness and drive adoption, addressing current market conditions where other EVM networks have become significantly cheaper while XRP's valuation keeps fees relatively high. Voting period runs from Apr 27 to May 11, 2026. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm_mainnet/governance#proposal-29",
+  "vote": "https://cumulo.pro/services/xrplevm_mainnet/search?q=E8B7E8B8EEA94ED8E9D78CDD58E9A7EA761BC49517946862013B7973E9AE814B"
+},
+ {
   "id": "celestia-mainnet-bridge-configuration-pruningwindow-celestia-node-v0.30.2-2026-04-23",
   "date": "2026-04-23T00:00:00Z",
   "incident_type": "configuration",
