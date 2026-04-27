@@ -1,5 +1,17 @@
 [
  {
+  "id": "xrplevm-mainnet-governance-proposal-30-2026-04-27",
+  "date": "2026-04-27T21:22:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #30 on XRPL EVM mainnet: MsgRecoverClient to recover expired IBC light clients. Updates client `07-tendermint-0` (counterparty: injective-1) with substitute `07-tendermint-8`, and client `07-tendermint-1` (counterparty: elys-1) with substitute `07-tendermint-7`. Voting open from Apr 27 to May 11, 2026. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm_mainnet/governance#proposal-30",
+  "vote": "https://cumulo.pro/services/xrplevm_mainnet/search?q=F622D95BF5990C92D457645609DD6D5D75DFA1D6B46DFBABD47502CB53DF2B7A"
+},
+ {
   "id": "xrplevm-testnet-governance-proposal-43-2026-04-27",
   "date": "2026-04-27T12:39:00Z",
   "incident_type": "governance_proposal",
