@@ -1,5 +1,17 @@
 [
  {
+  "id": "xrplevm-testnet-governance-proposal-43-2026-04-27",
+  "date": "2026-04-27T12:39:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #43 on XRPL EVM testnet: Update feemarket params (MsgUpdateParams) to reduce transaction fees and align them with XRPL mainnet's low-cost structure, adding only programmability overhead. The proposal aims to improve competitiveness and drive adoption, addressing current market conditions where other EVM networks have become significantly cheaper while XRP's valuation keeps fees relatively high. Voting period runs from Apr 27 to May 11, 2026. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm/governance#proposal-43",
+  "vote": "https://cumulo.pro/services/xrplevm/search?q=BEB0FCF25B2C5C18E7C75D028A6C0BB67FC48DC61E1933274FD358AF7A916B92"
+},
+ {
   "id": "xrplevm-mainnet-governance-proposal-29-2026-04-27",
   "date": "2026-04-27T11:52:00Z",
   "incident_type": "governance_proposal",
