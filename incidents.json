@@ -1,5 +1,17 @@
 [
  {
+  "id": "cosmos-mainnet-governance-proposal-1031-2026-04-28",
+  "date": "2026-04-28T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1031 on Cosmos Hub mainnet: suspected scam proposal promoting a fraudulent ATOM airdrop via external phishing links (AtomPlay.at). Cumulo voted NO WITH VETO.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1031",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=81B9FDE40BF09AFD246A215940724ED88DF20507B5E628937EF37AE010B2E1D6"
+},
+ {
   "id": "xrplevm-mainnet-governance-proposal-30-2026-04-27",
   "date": "2026-04-27T21:22:00Z",
   "incident_type": "governance_proposal",
