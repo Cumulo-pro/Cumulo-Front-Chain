@@ -2,7 +2,7 @@
  {
   "id": "cosmos-hub-testnet-horcrux-infrastructure-migration-2026-04-28",
   "date": "2026-04-28T00:00:00Z",
-  "incident_type": "infrastructure_migration",
+  "incident_type": "deployment",
   "status": "completed",
   "chain": "Cosmos Hub",
   "network": "testnet",
