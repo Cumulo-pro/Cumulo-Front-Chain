@@ -1,5 +1,17 @@
 [
  {
+  "id": "genlayer-bradbury-update-v0.5.9-2026-04-29",
+  "date": "2026-04-29T00:00:00Z",
+  "incident_type": "update",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (bradbury)",
+  "node_type": ["validator"],
+  "client": "genlayer v0.5.9",
+  "note": "Cumulo updated its GenLayer Bradbury testnet validator node to v0.5.9. This release includes several bug fixes: accurate provider SLA tracking for rollup metrics, hardened nonce management to reduce stuck and dropped transactions, self-cancel mechanism for exhausted mempool replacement attempts, per-block bloom filter checks for correct multi-block event scans, pooled HTTP transport for improved chain RPC throughput, consensus sync panic and self-dependency cycle fixes, and clean sync resumption after WebSocket reconnections.",
+  "url": "https://docs.genlayer.com/validators/changelog#v059"
+},
+ {
   "id": "genlayer-asimov-update-v0.5.9-2026-04-29",
   "date": "2026-04-29T00:00:00Z",
   "incident_type": "update",
