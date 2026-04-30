@@ -1,5 +1,16 @@
 [
  {
+  "id": "espresso-mainnet-deployment-validator-2026-04-30",
+  "date": "2026-04-30T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Cumulo deployed a DA node validator on Espresso Mainnet 1. The setup included node registration and full configuration following the official Espresso Mainnet 1 Validator Setup Guide. The validator node was successfully registered and is now operational on the Espresso mainnet.",
+  "url": "https://github.com/Cumulo-pro/cumulo-espresso-infra/blob/main/docs/espresso-mainnet-validator-guide.md"
+},
+ {
   "id": "espresso-testnet-decaf-validator-deployment-2026-04-30",
   "date": "2026-04-30T00:00:00Z",
   "incident_type": "deployment",
