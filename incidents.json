@@ -1,5 +1,16 @@
 [
  {
+  "id": "espresso-testnet-decaf-validator-deployment-2026-04-30",
+  "date": "2026-04-30T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "testnet (Decaf)",
+  "node_type": ["validator"],
+  "note": "Cumulo deployed a DA node validator on Espresso's Decaf testnet. The process covered node installation, configuration, and validator registration on the network. The validator node is fully operational and active on the Decaf testnet.",
+  "url": "https://github.com/Cumulo-pro/cumulo-espresso-infra/blob/main/docs/validator-setup.md"
+},
+ {
   "id": "genlayer-bradbury-update-v0.5.9-2026-04-29",
   "date": "2026-04-29T00:00:00Z",
   "incident_type": "update",
