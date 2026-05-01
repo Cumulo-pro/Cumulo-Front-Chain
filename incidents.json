@@ -1,5 +1,17 @@
 [
  {
+  "id": "starknet-mainnet-governance-proposal-12-2026-05-01",
+  "date": "2026-05-01T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Starknet",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #12 on Starknet Mainnet: strkBTC — Bitcoin on Starknet (SNIP-38). This proposal ratifies the Phase 1 Federation design for strkBTC, a federated Bitcoin wrapper on Starknet, including the initial six-member Federation set and the governance framework for member eligibility, removal, and the trust model sunset roadmap toward trust-minimized verification via BitVM and OP_CAT. Cumulo voted YES.",
+  "url": "https://governance.starknet.io/#/sn:0x009fedaf0d7a480d21a27683b0965c0f8ded35b3f1cac39827a25a06a8a682a4/proposal/12",
+  "vote": "https://voyager.online/tx/0x3c159adcbfbae031581a7ddb3ed6b73b04aeaff2488696a0752c2af35194522"
+},
+ {
   "id": "monad-testnet-cve-2026-31431-mitigation-2026-05-01",
   "date": "2026-05-01T00:00:00Z",
   "incident_type": "update",
