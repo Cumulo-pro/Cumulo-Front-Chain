@@ -1,5 +1,17 @@
 [
  {
+  "id": "starknet-mainnet-governance-proposal-13-2026-05-01",
+  "date": "2026-05-01T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Starknet",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #13 on Starknet Mainnet: strkBTC as a Stakable Token on Starknet (SNIP-39). This proposal seeks to approve strkBTC as an eligible BTC wrapper for staking on Starknet, under the governance framework already ratified in proposal 10. If approved, strkBTC will be added to the community-approved list of BTC wrappers and become eligible for enablement by the Monetary Committee in the staking protocol. Cumulo voted YES.",
+  "url": "https://governance.starknet.io/#/sn:0x009fedaf0d7a480d21a27683b0965c0f8ded35b3f1cac39827a25a06a8a682a4/proposal/13",
+  "vote": "https://voyager.online/tx/0x663ed1f2b49602fc6efc8d344a2f2a3227bea9400cd55b8bae9cf7dfbbdf747"
+},
+ {
   "id": "starknet-mainnet-governance-proposal-12-2026-05-01",
   "date": "2026-05-01T00:00:00Z",
   "incident_type": "governance_proposal",
