@@ -1,5 +1,17 @@
 [
  {
+  "id": "genlayer-bradbury-upgrade-v0.5.10-2026-05-04",
+  "date": "2026-05-04T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (Bradbury)",
+  "node_type": ["validator"],
+  "client": "genlayer-studio v0.5.10",
+  "note": "Cumulo upgraded its GenLayer Bradbury testnet validator node to v0.5.10. This release introduces a resilient WebSocket RPC fallback that recovers from transient connection drops without losing block or event subscriptions. Key bug fixes include: elimination of an activator-binding race that could stall consensus, clean exit of the finalize loop on post-Submit races, removal of the artificial gas bump cap tied to retry count, safe gasFeeCap bounding for self-cancel transactions, WebSocket fallback for zkSync block-not-found errors, and correct self-cancellation state recovery after node restarts. All services verified and operational post-upgrade.",
+  "url": "https://docs.genlayer.com/validators/changelog#v0510"
+},
+ {
   "id": "genlayer-asimov-upgrade-v0.5.10-2026-05-04",
   "date": "2026-05-04T00:00:00Z",
   "incident_type": "upgrade",
