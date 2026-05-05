@@ -14,7 +14,7 @@
   "id": "cosmos-hub-testnet-gaia-v27.3.0-rc0-upgrade-2026-05-05",
   "date": "2026-05-05T00:00:00Z",
   "incident_type": "upgrade",
-  "status": "pending",
+  "status": "completed",
   "chain": "Cosmos Hub",
   "network": "testnet",
   "node_type": ["validator", "rpc", "backup"],
