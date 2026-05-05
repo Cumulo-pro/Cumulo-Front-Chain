@@ -1,5 +1,17 @@
 [
  {
+  "id": "cosmos-hub-testnet-gaia-v27.3.0-rc0-upgrade-2026-05-05",
+  "date": "2026-05-05T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "pending",
+  "chain": "Cosmos Hub",
+  "network": "testnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "gaia v27.3.0-rc0",
+  "note": "Governance-gated upgrade of the Cosmos Hub provider testnet to Gaia v27.3.0-rc0, scheduled at block height 17185100. The upgrade name is v27.3.0. Proposal 300 was submitted on-chain to gate the upgrade. Cumulo will apply the upgrade on all nodes at the designated block height.",
+  "url": "https://github.com/cosmos/testnets/tree/master/provider#v2730-rc0-upgrade"
+},
+ {
   "id": "genlayer-bradbury-upgrade-v0.5.10-2026-05-04",
   "date": "2026-05-04T00:00:00Z",
   "incident_type": "upgrade",
