@@ -1,5 +1,16 @@
 [
  {
+  "id": "story-mainnet-testnet-decommission-infrastructure-2026-05-05",
+  "date": "2026-05-05T00:00:00Z",
+  "incident_type": "decommission",
+  "status": "in_progress",
+  "chain": "Story",
+  "network": "mainnet/testnet",
+  "node_type": ["rpc", "backup"],
+  "note": "In coordination with the Story team, Cumulo has begun decommissioning part of its Story infrastructure across mainnet and Aeneid testnet, in anticipation of the upcoming reduction of the active validator set (from 80 to 21 validators, per SIP-00011). Services being decommissioned include RPCs, snapshot nodes, explorers, and OTL infrastructure. Validator nodes on both mainnet and Aeneid testnet will remain active until the set reduction is formally executed on-chain.",
+  "url": "https://forum.story.foundation/t/proposal-sip-00011-reducing-the-active-validator-set-from-80-to-21/37481/4"
+},
+ {
   "id": "cosmos-hub-testnet-gaia-v27.3.0-rc0-upgrade-2026-05-05",
   "date": "2026-05-05T00:00:00Z",
   "incident_type": "upgrade",
