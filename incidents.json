@@ -1,5 +1,17 @@
 [
  {
+  "id": "monad-testnet-upgrade-v0.14.3-2026-05-07",
+  "date": "2026-05-07T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Monad",
+  "network": "testnet",
+  "node_type": ["full"],
+  "client": "monad-bft v0.14.3",
+  "note": "Cumulo upgraded its Monad testnet full node to v0.14.3. Orange-coded release requiring action within 24–48 hours. Notable breaking change: authenticated UDP is enforced as of this version. Upgrade applied following official instructions; node verified and fully operational post-upgrade.",
+  "url": "https://github.com/category-labs/monad-bft/releases/tag/v0.14.3"
+},
+ {
   "id": "concordium-mainnet-node-v10.0.8-update-2026-05-07",
   "date": "2026-05-07T00:00:00Z",
   "incident_type": "update",
