@@ -1,5 +1,17 @@
 [
  {
+  "id": "concordium-mainnet-node-v10.0.8-update-2026-05-07",
+  "date": "2026-05-07T00:00:00Z",
+  "incident_type": "update",
+  "status": "completed",
+  "chain": "Concordium",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "concordium-node v10.0.8",
+  "note": "Concordium released node v10.0.8 for mainnet, a patch release containing important security fixes. The update addresses a critical issue where a specially-crafted scheduled transfer transaction could result in corrupted account balances, and improves handling of network messages to protect against denial-of-service attacks. Additional changes include backpressure for inbound queue saturation, prohibition of unsolicited PeerList messages, limiting outbound queue saturation, and a background queue for processing messages that don't require the global block state lock. Cumulo updated our validator as recommended.",
+  "url": "https://github.com/Concordium/concordium-node/releases/tag/10.0.8-2-rc"
+},
+ {
   "id": "story-mainnet-testnet-decommission-infrastructure-2026-05-05",
   "date": "2026-05-05T00:00:00Z",
   "incident_type": "decommission",
