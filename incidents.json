@@ -1,5 +1,17 @@
 [
  {
+  "id": "espresso-decaf-upgrade-sequencer-20260505-2026-05-08",
+  "date": "2026-05-08T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "testnet (decaf)",
+  "node_type": ["validator"],
+  "client": "sequencer 20260505",
+  "note": "Cumulo upgraded the Espresso Decaf testnet sequencer node to version 20260505 following the official team release request. The upgrade also included enabling database pruning with ESPRESSO_SEQUENCER_DATABASE_PRUNE and full pruning parameters (10GB threshold, 1d minimum retention, 7d target retention, 5m interval). All containers restarted successfully and the node is operational with prune: true confirmed in logs.",
+  "url": "https://github.com/EspressoSystems/espresso-network/releases/tag/20260505"
+},
+ {
   "id": "monad-testnet-upgrade-v0.14.3-2026-05-07",
   "date": "2026-05-07T00:00:00Z",
   "incident_type": "upgrade",
