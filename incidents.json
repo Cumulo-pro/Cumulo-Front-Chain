@@ -1,5 +1,17 @@
 [
  {
+  "id": "cosmos-mainnet-governance-proposal-1032-2026-05-09",
+  "date": "2026-05-09T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1032 on Cosmos Hub mainnet: Spam/scam proposal promoting a fraudulent ATOM airdrop via an external website. Voting period runs from May 4 to May 11, 2026. Cumulo voted No with Veto.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1032",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=255E3620A11D4AEAC59B8EBFDDD6F7B31B74F5EF7C36E920C75FC8C811140A6D"
+},
+ {
   "id": "espresso-decaf-upgrade-sequencer-20260505-2026-05-08",
   "date": "2026-05-08T00:00:00Z",
   "incident_type": "upgrade",
