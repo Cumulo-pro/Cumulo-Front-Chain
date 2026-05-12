@@ -1,4 +1,16 @@
 [
+  {
+  "id": "cosmos-hub-mainnet-governance-proposal-1035-2026-05-12",
+  "date": "2026-05-12T15:57:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1035 on Cosmos Hub mainnet: Gaia v27.3.0 Software Upgrade. The upgrade bumps ibc-go from v10.5.0 to v10.6.0, packet-forward-middleware from v10.1.0 to v10.6.0, and 08-wasm from v10.3.0 to v10.5.0. If passed, validators must update the binary at block height 31,201,200. Voting period is seven days, ending May 19, 2026, at 15:59 UTC. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1035",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=0843E08E920621B5E28BF33530322CF84296DECEAD4A5C07F93DD514FE0B4D16"
+},
 {
   "id": "cosmos-mainnet-governance-proposal-1034-2026-05-11",
   "date": "2026-05-11T00:00:00Z",
