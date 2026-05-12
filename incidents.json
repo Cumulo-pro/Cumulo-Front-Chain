@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmos-mainnet-governance-proposal-1036-2026-05-12",
+  "date": "2026-05-12T18:59:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1036 opened on Cosmos Hub mainnet containing spam and phishing-style airdrop content referencing external reward claims. Cumulo voted NO WITH VETO on this proposal. Voting ends on 2026-05-19 18:59 UTC.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1036",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=F14C54737719C745966F9FD313BD488301197889D083325BF928EEE1669CFEFB"
+},
+  {
   "id": "cosmos-hub-mainnet-governance-proposal-1035-2026-05-12",
   "date": "2026-05-12T15:57:00Z",
   "incident_type": "governance_proposal",
