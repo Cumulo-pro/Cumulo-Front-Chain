@@ -1,5 +1,17 @@
 [
   {
+  "id": "espresso-decaf-upgrade-20260512-2026-05-13",
+  "date": "2026-05-13T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "testnet (decaf)",
+  "node_type": ["validator"],
+  "client": "espresso-network 20260512",
+  "note": "Cumulo upgraded its Espresso Decaf testnet node to release tag 20260512. This release includes a libp2p fix to correctly plumb the advertise address to the swarm external address, and improved AutoNAT log messages to be more actionable for operators. Upgrade applied and node confirmed operational post-update.",
+  "url": "https://github.com/EspressoSystems/espresso-network/releases/tag/20260512"
+},
+  {
   "id": "cosmos-mainnet-governance-proposal-1036-2026-05-12",
   "date": "2026-05-12T18:59:00Z",
   "incident_type": "governance_proposal",
