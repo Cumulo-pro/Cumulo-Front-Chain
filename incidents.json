@@ -1,5 +1,17 @@
 [
   {
+  "id": "espresso-mainnet-upgrade-20260424-2026-05-15",
+  "date": "2026-05-15T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "espresso-network 20260424",
+  "note": "Cumulo upgraded its Espresso mainnet node from tag 20260407 to 20260424. This release includes query and pruning optimizations that significantly reduce database load. A consensus data migration ran automatically on startup and completed in under one second. Post-upgrade verification confirmed 46 peers connected and consensus_current_view advancing normally.",
+  "url": "https://github.com/EspressoSystems/espresso-network/releases/tag/20260424"
+},
+  {
   "id": "story-aeneid-upgrade-v1.7.0-seneca-2026-05-15",
   "date": "2026-05-15T00:00:00Z",
   "incident_type": "upgrade",
