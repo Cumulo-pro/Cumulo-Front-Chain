@@ -1,5 +1,17 @@
 [
   {
+  "id": "story-aeneid-upgrade-v1.7.0-seneca-2026-05-15",
+  "date": "2026-05-15T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Story",
+  "network": "testnet (Aeneid)",
+  "node_type": ["validator"],
+  "client": "story v1.7.0",
+  "note": "Story Aeneid Testnet mandatory consensus hardfork to v1.7.0 (Seneca) scheduled at block 18,550,000, implementing SIP-11 and reducing the active validator set from 80 to 21. Cumulo successfully upgraded its Aeneid validator node to story v1.7.0 ahead of the upgrade height. The node was verified to be running the correct binary and fully synced. All services remain operational and the validator is actively participating in consensus post-upgrade.",
+  "url": "https://github.com/piplabs/story/releases/tag/v1.7.0"
+},
+  {
   "id": "espresso-decaf-upgrade-20260512-2026-05-13",
   "date": "2026-05-13T00:00:00Z",
   "incident_type": "upgrade",
