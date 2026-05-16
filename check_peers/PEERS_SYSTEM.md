@@ -476,6 +476,10 @@ https://peers.cumulo.me/peers/<chain>/<network>/peers.txt
 | Celestia | mainnet | celestia | 🔜 Pending |
 | Neutron | mainnet | neutron-1 | 🔜 Pending |
 
+**Live endpoints:**  
+[Cosmos Hub testnet peers.json](https://peers.cumulo.me/peers/cosmos/testnet/peers.json) · [peers.txt](https://peers.cumulo.me/peers/cosmos/testnet/peers.txt)  
+[Cosmos Hub mainnet peers.json](https://peers.cumulo.me/peers/cosmos/mainnet/peers.json) · [peers.txt](https://peers.cumulo.me/peers/cosmos/mainnet/peers.txt)
+
 ### peers.txt
 
 Plain text, comma-separated connection strings. Ready to paste into `config.toml`:
