@@ -1,4 +1,4 @@
-# Cúmulo Live Peers. Technical Documentation
+# Cúmulo Live Peers — Technical Documentation
 
 > A curated, scored, and continuously verified peer list for Cosmos (CometBFT) chains.  
 > Live at: **[peers.cumulo.me](https://peers.cumulo.me)**
@@ -25,9 +25,11 @@ Most peer lists in the Cosmos ecosystem are either static (they go stale within 
 Cúmulo Live Peers goes further by combining four distinct data sources per chain:
 
 - **Our own node's `/net_info`** — the peers our node is actively connected to right now
-- **`/net_info` of trusted validator RPCs** — the peers seen by other independent nodes in the ecosystem simultaneously, aggregated from the [validators JSON](https://github.com/Cumulo-pro/cumulo-cosmoshub-infra/tree/main/data)
+- **`/net_info` of trusted validator RPCs** — the peers seen simultaneously by other independent nodes in the ecosystem, drawn from Cúmulo's own validator resource lists maintained for each chain
 - **`addrbook.json` from those same validators** — a pool of known peer candidates used as a reserve for future discovery
-- **Seed and peer strings from the validators JSON** — additional candidates contributed directly by validators
+- **Peer strings contributed directly by validators** — additional p2p-verified candidates
+
+As part of our infrastructure services, Cúmulo maintains up-to-date resource lists for each supported chain — including RPCs, addrbooks, seeds, and peer addresses — which we publish openly for the community at [cumulo.pro/services](https://cumulo.pro/services/). These same resources feed the peer discovery system, ensuring the data sources are curated, trusted, and kept current.
 
 This multi-source approach means that a peer appearing in the `/net_info` of several independent validators simultaneously carries a much stronger signal than one seen only by our node. The more validators contribute an RPC to the system, the more precise this signal becomes.
 
@@ -44,7 +46,7 @@ Beyond discovery, every IPv4 peer is **TCP-probed directly on the p2p port** to 
 | Collector | Runs every 30 min via systemd timer, aggregates all sources and publishes results |
 | Cosmos node | Primary peer source via `/net_info` |
 | Web server / Nginx | Serves `peers.cumulo.me` |
-| Validators JSON | Community-maintained list of trusted validator sources on GitHub |
+| Validators JSON | Cúmulo-maintained resource list per chain, hosted on GitHub |
 
 ### Tier System
 
@@ -59,18 +61,22 @@ Every peer candidate is classified into one of two tiers before processing:
 - Score multiplier: `×1.2`
 
 **TIER 2 — Reserve candidates**
-- Source: `addrbook.json`, `seed` and `peers` fields from the validators JSON
+- Source: `addrbook.json` and `peers` fields from the validators JSON
 - Known to other nodes historically but not verified as currently active
-- IPv4: TCP-probed to build a reachability history in the store
+- IPv4: TCP-probed every cycle to build a reachability history in the store
 - IPv6: discarded — no outbound IPv6 connectivity from the collector currently
 - Only the 200 most recent entries from each addrbook (by `last_attempt`) are processed
 - Buffer weight: `0.5` per successful observation
 - Score multiplier: `×1.0`
 
-**The role of TIER 2:**  
-With a `buffer_size=10` and `inclusion_threshold=7.0`, the maximum sum a TIER2 peer can ever accumulate is `10 × 0.5 = 5.0` — which never reaches the threshold. TIER2 peers are therefore **never directly published**. Their purpose is to build a pre-vetted reserve: TCP reachability history and store presence are already accumulated by the time a peer transitions to TIER1. This transition happens automatically when the peer appears in any `/net_info` source — at that point it is reclassified as TIER1 and begins accumulating full-weight observations toward the publication threshold.
+**Why seed nodes are excluded:**  
+Seed nodes are specifically designed to connect briefly, share their known peer list, and disconnect. They do not maintain persistent connections and are therefore not useful as `persistent_peers`. The `seed` field in the validators JSON is used for documentation purposes but is intentionally ignored by the collector when building the candidate pool.
 
-This design means the definitive proof of peer quality is appearing in a live `/net_info` — which is precisely why having more validator RPCs in the system improves overall list quality.
+**The role of TIER 2:**  
+With `buffer_size=10` and `inclusion_threshold=7.0`, the maximum sum a TIER2 peer can ever accumulate in the sliding buffer is `10 × 0.5 = 5.0` — which never reaches the threshold of 7.0. TIER2 peers are therefore **never directly published**. Their purpose is to build a pre-vetted reserve: TCP reachability history and store presence are already accumulated by the time a peer transitions to TIER1. This transition happens automatically when the peer appears in any `/net_info` source — at that point it is reclassified as TIER1 and begins accumulating full-weight observations toward the publication threshold.
+
+**What happens when a TIER1 peer disappears from `/net_info`:**  
+The tier classification (`TIER1`/`TIER2`) in the store is never downgraded — it reflects the best known state of the peer. However, every cycle where the peer does not appear in any source adds `0.0` to its sliding buffer. As these zero observations accumulate, `sum(buffer_10)` drops below the threshold and the peer is automatically removed from the published list. If the peer reappears in a `/net_info` later, it recovers its TIER1 status immediately without having to rebuild from TIER2, and resumes accumulating full-weight observations.
 
 ### Data Flow
 
@@ -85,14 +91,15 @@ GitHub (validators_testnet.json / validators_mainnet.json)
 │  Source 1: GET /net_info  (our node)          → TIER1       │
 │  Source 2: GET /net_info  (validator RPCs)    → TIER1       │
 │  Source 3: GET addrbook.json (top 200 recent) → TIER2       │
-│  Source 4: seed/peers fields in JSON          → TIER2       │
+│  Source 4: peers field in validators JSON     → TIER2       │
+│            (seed field is intentionally ignored)            │
 │          │                                                  │
 │          ▼  Deduplication pool                              │
-│    - TIER1 is never downgraded to TIER2                     │
+│    - TIER1 is never downgraded in the store                 │
 │    - source_count incremented per net_info appearance       │
 │    - is_outbound accumulated with OR                        │
 │          │                                                  │
-│          ▼  Hard filters                                     │
+│          ▼  Hard filters                                    │
 │    - Discard private/loopback IPs                           │
 │    - IPv6 TIER1 outbound (own node) → pre-verified          │
 │    - IPv6 all other cases → discarded                       │
@@ -105,6 +112,7 @@ GitHub (validators_testnet.json / validators_mainnet.json)
 │          ▼  Sliding buffer update (float values)            │
 │    - TIER1 success → +1.0 | TIER1 failure → +0.0           │
 │    - TIER2 success → +0.5 | TIER2 failure → +0.0           │
+│    - Peer absent from all sources this cycle → +0.0         │
 │          │                                                  │
 │          ▼  Multi-factor scoring                            │
 │    - tier × stability × outbound × source_diversity         │
@@ -156,9 +164,9 @@ Each chain maintains a persistent store file (`store_<chain_id>.json`) updated e
 
 | Field | Description |
 |---|---|
-| `tier` | `TIER1` or `TIER2`. Never downgraded — can only improve. |
+| `tier` | `TIER1` or `TIER2`. Reflects the best known state — never downgraded. |
 | `ipv6` | `true` if IPv6. These peers skip TCP probe. |
-| `buffer_10` | Sliding window of 10 float values: `1.0` TIER1 success, `0.5` TIER2 success, `0.0` failure. |
+| `buffer_10` | Sliding window of 10 float values: `1.0` TIER1 success, `0.5` TIER2 success, `0.0` failure or absence. |
 | `source_count_max` | Maximum number of distinct `/net_info` sources that reported this peer in the same cycle. Core input for the diversity bonus. |
 | `outbound_count` | Cycles where this peer was outbound in at least one source. |
 | `observations_total` | Total cycles since first detection. |
@@ -182,6 +190,7 @@ sum(buffer_10) >= inclusion_threshold  (default: 7.0)
 | TIER1, 7/10 successful probes | [1.0 × 7, 0.0 × 3] | 7.0 | ✅ Yes |
 | TIER1, 6/10 successful probes | [1.0 × 6, 0.0 × 4] | 6.0 | ❌ No |
 | TIER2, 10/10 successful probes | [0.5 × 10] | 5.0 | ❌ No (max possible is 5.0) |
+| TIER1, previously published, now absent | buffer fills with 0.0 | drops below 7.0 | ❌ Removed |
 
 A peer is **removed** from the published list when its buffer sum drops below the threshold after an update.  
 A peer is **purged** from the store entirely if it has not appeared in any source for 5 days.
@@ -199,8 +208,6 @@ score = tier_bonus × stability × outbound_bonus × diversity_bonus
 TIER1 → 1.2
 TIER2 → 1.0
 ```
-
-Active verified peers have a structural advantage over cold candidates.
 
 #### stability
 ```
@@ -229,24 +236,31 @@ diversity_bonus = 1.0 + log2(source_count_max + 1) / log2(total_validators + 1)
 
 Range: `1.0` (seen in 1 source) → `2.0` (seen in all sources simultaneously)
 
-`source_count_max` is the maximum number of distinct `/net_info` sources — both our own node and validator RPCs — that reported this peer **in the same cycle**. This is the most informative signal in the system:
+`source_count_max` is the maximum number of distinct `/net_info` sources — our own node plus all validator RPCs — that reported this peer **in the same cycle**. The total number of possible sources is therefore `validators_in_JSON + 1` (our node always counts as an independent source).
 
-- A peer seen in 1 out of 4 validator RPCs → diversity_bonus ≈ 1.5
-- A peer seen in 4 out of 4 validator RPCs → diversity_bonus = 2.0
-- A peer seen in 10 out of 15 validator RPCs → diversity_bonus ≈ 1.93
+This is the most informative signal in the system. The `diversity_bonus` formula uses `total_validators + 1` as the denominator to keep it consistent with `source_count_max`, so that a peer seen by every possible source always achieves the maximum bonus of `2.0` and a maximum score of `2.64`:
 
-**This bonus scales automatically with the number of RPCs in the validators JSON.** With 4 validators, the scoring differences are moderate. With 15+ validators, the gap between a peer seen in 3 sources vs 12 sources becomes highly significant and provides meaningful discrimination.
+```
+# Example: mainnet with 6 validators in JSON
+total_sources = 6 + 1 = 7  (6 validator RPCs + our own node)
 
-This is also why contributing an RPC to the validators JSON directly benefits the entire ecosystem: every additional independent `/net_info` source improves the granularity of the signal for all peers.
+peer seen in 7/7 sources → diversity_bonus = 1.0 + log2(8)/log2(8) = 2.0 → score 2.64
+peer seen in 6/7 sources → diversity_bonus = 1.0 + log2(7)/log2(8) = 1.936 → score 2.5552
+peer seen in 5/7 sources → diversity_bonus = 1.0 + log2(6)/log2(8) = 1.861 → score 2.4574
+peer seen in 1/7 sources → diversity_bonus = 1.0 + log2(2)/log2(8) = 1.333 → score 1.76
+```
 
-#### Score examples (with 4 validators in JSON)
+This bonus scales automatically with the number of RPCs in the validators JSON. With 4 validators, the scoring differences are moderate. With 15+ validators, the gap between a peer seen in 3 sources vs 12 sources becomes highly significant and provides meaningful discrimination.
+
+#### Score examples (mainnet with 6 validators in JSON → 7 total sources)
 
 | Peer | Tier | Stability | Outbound | Sources | Score |
 |---|---|---|---|---|---|
-| Best possible | TIER1 | 1.0 | ✅ | 4/4 | `1.2 × 1.0 × 1.1 × 2.0 = 2.64` |
-| TIER1, no outbound, all sources | TIER1 | 1.0 | ❌ | 4/4 | `1.2 × 1.0 × 1.0 × 2.0 = 2.40` |
-| TIER1, outbound, 3 sources | TIER1 | 1.0 | ✅ | 3/4 | `1.2 × 1.0 × 1.1 × 1.83 = 2.42` |
-| TIER1, outbound, 1 source | TIER1 | 1.0 | ✅ | 1/4 | `1.2 × 1.0 × 1.1 × 1.5 = 1.98` |
+| Best possible | TIER1 | 1.0 | ✅ | 7/7 | `1.2 × 1.0 × 1.1 × 2.0 = 2.64` |
+| TIER1, no outbound, all sources | TIER1 | 1.0 | ❌ | 7/7 | `1.2 × 1.0 × 1.0 × 2.0 = 2.40` |
+| TIER1, outbound, 6 sources | TIER1 | 1.0 | ✅ | 6/7 | `1.2 × 1.0 × 1.1 × 1.936 = 2.5552` |
+| TIER1, outbound, 5 sources | TIER1 | 1.0 | ✅ | 5/7 | `1.2 × 1.0 × 1.1 × 1.861 = 2.4574` |
+| TIER1, outbound, 1 source | TIER1 | 1.0 | ✅ | 1/7 | `1.2 × 1.0 × 1.1 × 1.333 = 1.76` |
 
 ### Geographic Diversity
 
@@ -296,19 +310,22 @@ The sliding buffer rewards **consistency**, not just current availability. A nod
 
 If your node is:
 - Publicly reachable on p2p ✅
-- Seen as outbound by our node and 3 validator RPCs ✅
+- Seen as outbound by our node and 3 out of 6 validator RPCs (4 sources total out of 7) ✅
 - Stable over the last 5 hours ✅
 
 Your score will be approximately:
 ```
-1.2 × 1.0 × 1.1 × 1.83 = 2.42
+diversity_bonus = 1.0 + log2(4+1) / log2(7+1) = 1.0 + 0.774 = 1.774
+score = 1.2 × 1.0 × 1.1 × 1.774 ≈ 2.34
 ```
 
 ---
 
 ## 5. Contributing to the Validators JSON
 
-The validators JSON is the foundation of this system. Every validator that contributes an RPC endpoint expands the peer discovery pool and improves the scoring precision for all peers — not just their own.
+Cúmulo maintains its own resource lists for each supported chain — including RPC endpoints, addrbooks, and peer addresses — which are published openly as part of our infrastructure services. These lists are the foundation of the peer discovery system.
+
+Every validator that contributes resources to these lists expands the peer discovery pool and improves the scoring precision for all peers — not just their own.
 
 ### The two functions of the validators JSON
 
@@ -318,16 +335,18 @@ Each validator RPC that responds to `/net_info` provides an independent view of 
 
 The more RPC endpoints in the JSON, the more granular the `diversity_bonus` discrimination becomes:
 
-| Validators with RPC | Active peers covered | Scoring discrimination |
+| Validators with RPC | Total sources (incl. own node) | Scoring discrimination |
 |---|---|---|
-| 2-3 | ~200-300 peers | Low — most peers score similarly |
-| 5-7 | ~400-500 peers | Medium |
-| 10-15 | ~700-900 peers | High — meaningful score gaps between peers |
-| 15+ | Near-complete network view | Maximum precision |
+| 2-3 | 3-4 | Low — most peers score similarly |
+| 5-7 | 6-8 | Medium |
+| 10-15 | 11-16 | High — meaningful score gaps between peers |
+| 15+ | 16+ | Maximum precision |
 
-**addrbook / seeds / peers → TIER2 reserve**
+**addrbook / peers → TIER2 reserve**
 
 These sources populate the reserve candidate pool. Peers in TIER2 are TCP-probed every cycle and accumulate reachability history in the store, so that when they eventually appear in a `/net_info` and transition to TIER1, they already have a history that accelerates their path to publication.
+
+> **Note on seeds:** Seed node addresses are documented in the validators JSON but are intentionally excluded from the candidate pool. Seed nodes do not maintain persistent p2p connections and are therefore not suitable as `persistent_peers`.
 
 ### JSON format
 
@@ -353,8 +372,8 @@ The validators JSON for each chain lives in this repository:
 | `name` | ✅ | Your validator name (used in logs and documentation) |
 | `rpc` | ✅ | Public RPC endpoint. Must respond to `/net_info`. This is the most valuable contribution. |
 | `addrbook` | ⬜ | URL to your `addrbook.json`. Contributes TIER2 reserve candidates. |
-| `peers` | ⬜ | Comma-separated `nodeid@ip:port` strings. TIER2. |
-| `seed` | ⬜ | Your seed node address. TIER2. |
+| `peers` | ⬜ | Comma-separated `nodeid@ip:port` strings. TIER2 p2p candidates. |
+| `seed` | ⬜ | Your seed node address. Documented for reference but not used in peer discovery. |
 
 ### How to add your validator
 
@@ -442,8 +461,8 @@ Full structured response with scoring metadata:
 
 | Field | Type | Description |
 |---|---|---|
-| `tier` | string | `TIER1` (active, verified) or `TIER2` (reserve candidate — not currently published) |
-| `score` | float | Multi-factor score. Higher = better. Max ~2.64 with 4 validator RPCs. |
+| `tier` | string | `TIER1` (active, verified) or `TIER2` (reserve — not currently published) |
+| `score` | float | Multi-factor score. Higher = better. Maximum is always 2.64 regardless of chain or validator count. |
 | `stability` | float | Fraction of the sliding buffer that is successful. `1.0` = perfect over last 5 hours. |
 | `source_count` | int | Number of distinct `/net_info` sources that reported this peer simultaneously in the same cycle. |
 | `outbound` | bool | Whether this peer has been outbound in the majority of observations. |
