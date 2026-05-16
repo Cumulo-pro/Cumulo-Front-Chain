@@ -1,7 +1,7 @@
 # Cumulo Live Peers. Technical Documentation
 
 > A curated, scored, and continuously verified peer list for Cosmos (CometBFT) chains.  
-> Live at: **[peers.cumulo.me](https://peers.cumulo.me)**
+→ [Available endpoints and usage](#6-public-api)
 
 ---
 
