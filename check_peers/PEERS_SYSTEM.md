@@ -22,14 +22,14 @@ Most peer lists in the Cosmos ecosystem are either static (they go stale within 
 
 > *Which peers have been consistently reachable from outside, across multiple independent sources, over the last several hours?*
 
-Cúmulo Live Peers goes further by combining four distinct data sources per chain:
+Cumulo Live Peers goes further by combining four distinct data sources per chain:
 
-- **Our own node's `/net_info`** - the peers our node is actively connected to right now
-- **`/net_info` of trusted validator RPCs** - the peers seen simultaneously by other independent nodes in the ecosystem, drawn from Cúmulo's own validator resource lists maintained for each chain
-- **`addrbook.json` from those same validators** - a pool of known peer candidates used as a reserve for future discovery
-- **Peer strings contributed directly by validators** - additional p2p-verified candidates
+- **Our own node's `/net_info`**: the peers our node is actively connected to right now
+- **`/net_info` of trusted validator RPCs**: the peers seen simultaneously by other independent nodes in the ecosystem, drawn from Cumulo's own validator resource lists maintained for each chain
+- **`addrbook.json` from those same validators**: a pool of known peer candidates used as a reserve for future discovery
+- **Peer strings contributed directly by validators**: additional p2p-verified candidates
 
-As part of our infrastructure services, Cúmulo maintains up-to-date resource lists for each supported chain - including RPCs, addrbooks, seeds, and peer addresses - which we publish openly for the community at [cumulo.pro/services](https://cumulo.pro/services/). These same resources feed the peer discovery system, ensuring the data sources are curated, trusted, and kept current.
+As part of our infrastructure services, Cumulo maintains up-to-date resource lists for each supported chain - including RPCs, addrbooks, seeds, and peer addresses - which we publish openly for the community at [cumulo.pro/services](https://cumulo.pro/services/). These same resources feed the peer discovery system, ensuring the data sources are curated, trusted, and kept current.
 
 This multi-source approach means that a peer appearing in the `/net_info` of several independent validators simultaneously carries a much stronger signal than one seen only by our node. The more validators contribute an RPC to the system, the more precise this signal becomes.
 
@@ -46,7 +46,7 @@ Beyond discovery, every IPv4 peer is **TCP-probed directly on the p2p port** to 
 | Collector | Runs every 30 min via systemd timer, aggregates all sources and publishes results |
 | Cosmos node | Primary peer source via `/net_info` |
 | Web server / Nginx | Serves `peers.cumulo.me` |
-| Validators JSON | Cúmulo-maintained resource list per chain, hosted on GitHub |
+| Validators JSON | Cumulo-maintained resource list per chain, hosted on GitHub |
 
 ### Tier System
 
@@ -272,7 +272,7 @@ Geolocation is performed via **GeoLite2-Country** (MaxMind). Without this databa
 
 ## 4. How to Appear on the List
 
-Your node will appear on the Cúmulo Live Peers list when it meets these conditions:
+Your node will appear on the Cumulo Live Peers list when it meets these conditions:
 
 ### Step 1 - Have your p2p port publicly accessible
 
@@ -323,7 +323,7 @@ score = 1.2 × 1.0 × 1.1 × 1.774 ≈ 2.34
 
 ## 5. Contributing to the Validators JSON
 
-Cúmulo maintains its own resource lists for each supported chain - including RPC endpoints, addrbooks, and peer addresses - which are published openly as part of our infrastructure services. These lists are the foundation of the peer discovery system.
+Cumulo maintains its own resource lists for each supported chain - including RPC endpoints, addrbooks, and peer addresses - which are published openly as part of our infrastructure services. These lists are the foundation of the peer discovery system.
 
 Every validator that contributes resources to these lists expands the peer discovery pool and improves the scoring precision for all peers - not just their own.
 
@@ -497,4 +497,4 @@ All probes originate from the same network location. A peer reachable from there
 
 ---
 
-*Maintained by [Cúmulo](https://cumulo.pro) - Cosmos Infrastructure*
+*Maintained by [Cumulo](https://cumulo.pro) - Cosmos Infrastructure*
