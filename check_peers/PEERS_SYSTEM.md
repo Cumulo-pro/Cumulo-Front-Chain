@@ -1,4 +1,4 @@
-# Cumulo Live Peers — Technical Documentation
+# Cumulo Live Peers - Technical Documentation
 
 > A curated, scored, and continuously verified peer list for Cosmos (CometBFT) chains.  
 > Live at: **[peers.cumulo.me](https://peers.cumulo.me)**
@@ -25,12 +25,12 @@ Most peer lists in the Cosmos ecosystem are either static (they go stale within 
 Cumulo Live Peers answers that question by:
 
 - Aggregating peers from **multiple independent sources** simultaneously (our node + external validator RPCs + addrbooks)
-- **TCP-probing** every IPv4 peer directly on the p2p port — not the RPC — to verify external reachability
+- **TCP-probing** every IPv4 peer directly on the p2p port - not the RPC - to verify external reachability
 - Maintaining a **10-observation sliding buffer** (~5 hours) and only publishing peers that pass a minimum stability threshold
 - Applying a **multi-factor score** that rewards peers seen simultaneously across many independent validator nodes
 - Refreshing every **30 minutes** automatically
 
-The key differentiator: the more validators Cumulo has in its JSON, the more precise the scoring becomes — automatically, without any code changes. A peer seen simultaneously in the `/net_info` of 10 independent validators carries a much stronger quality signal than one seen by a single node.
+The key differentiator: the more validators Cumulo has in its JSON, the more precise the scoring becomes - automatically, without any code changes. A peer seen simultaneously in the `/net_info` of 10 independent validators carries a much stronger quality signal than one seen by a single node.
 
 ---
 
@@ -49,7 +49,7 @@ The key differentiator: the more validators Cumulo has in its JSON, the more pre
 
 Every peer candidate is classified into one of two tiers before processing:
 
-**TIER 1 — Active verified peers**
+**TIER 1 - Active verified peers**
 - Source: `/net_info` of our node or external validator RPCs
 - The peer is actively connected to at least one known node right now
 - IPv4: mandatory TCP probe on the p2p port
@@ -57,16 +57,16 @@ Every peer candidate is classified into one of two tiers before processing:
 - Buffer weight: `1.0` per successful observation
 - Score multiplier: `×1.2`
 
-**TIER 2 — Cold candidates**
+**TIER 2 - Cold candidates**
 - Source: `addrbook.json`, `seed` and `peers` fields from the validators JSON
 - Known to other nodes but not verified as currently active
 - IPv4: mandatory TCP probe
-- IPv6: discarded — no outbound IPv6 from Velia2 currently
+- IPv6: discarded - no outbound IPv6 from Velia2 currently
 - Only the 200 most recent entries from each addrbook (by `last_attempt`) are processed
 - Buffer weight: `0.5` per successful observation
 - Score multiplier: `×1.0`
 
-> With `threshold=7.0` and `buffer_size=10`, a TIER1 peer needs 7 successful probes to appear on the list. A TIER2 peer would need 14 successes in 10 observations — practically impossible — making TIER2 peers extremely difficult to publish unless genuinely exceptional over many cycles.
+> With `threshold=7.0` and `buffer_size=10`, a TIER1 peer needs 7 successful probes to appear on the list. A TIER2 peer would need 14 successes in 10 observations - practically impossible - making TIER2 peers extremely difficult to publish unless genuinely exceptional over many cycles.
 
 ### Data Flow
 
@@ -153,7 +153,7 @@ Each chain maintains a persistent store file (`store_<chain_id>.json`) updated e
 
 | Field | Description |
 |---|---|
-| `tier` | `TIER1` or `TIER2`. Never downgraded — can only improve. |
+| `tier` | `TIER1` or `TIER2`. Never downgraded - can only improve. |
 | `ipv6` | `true` if IPv6. These peers skip TCP probe. |
 | `buffer_10` | Sliding window of 10 float values: `1.0` TIER1 success, `0.5` TIER2 success, `0.0` failure. |
 | `source_count_max` | Maximum number of distinct `/net_info` sources that saw this peer in the same cycle. Core input for the diversity bonus. |
@@ -165,7 +165,7 @@ Each chain maintains a persistent store file (`store_<chain_id>.json`) updated e
 
 ## 3. Selection Algorithm & Scoring
 
-### Layer 1 — Sliding Window Filter (entry criterion)
+### Layer 1 - Sliding Window Filter (entry criterion)
 
 A peer is eligible for publication only when the sum of its `buffer_10` reaches the configured threshold:
 
@@ -178,14 +178,14 @@ sum(buffer_10) >= inclusion_threshold  (default: 7.0)
 | TIER1, 10/10 successful probes | [1.0 × 10] | 10.0 | ✅ Yes |
 | TIER1, 7/10 successful probes | [1.0 × 7, 0.0 × 3] | 7.0 | ✅ Yes |
 | TIER1, 6/10 successful probes | [1.0 × 6, 0.0 × 4] | 6.0 | ❌ No |
-| TIER2, 10/10 successful probes | [0.5 × 10] | 5.0 | ❌ No (max possible is 5.0 — never published) |
+| TIER2, 10/10 successful probes | [0.5 × 10] | 5.0 | ❌ No (max possible is 5.0 - never published) |
 | TIER1, was published, now absent 3+ cycles | buffer fills with 0.0 over time | drops below 7.0 | ❌ Removed (tier unchanged in store) |
 
-A peer is **removed** from the published list when its buffer sum drops below the threshold after an update — this happens naturally as failed or absent observations (0.0) replace older successful ones in the sliding window.
+A peer is **removed** from the published list when its buffer sum drops below the threshold after an update - this happens naturally as failed or absent observations (0.0) replace older successful ones in the sliding window.
 
 A peer is **purged** from the store entirely if it has not appeared in any source for 5 consecutive days. This keeps the store lean and prevents accumulation of permanently offline nodes.
 
-### Layer 2 — Multi-Factor Score (ordering criterion)
+### Layer 2 - Multi-Factor Score (ordering criterion)
 
 All peers that pass the sliding window are scored and ranked:
 
@@ -219,7 +219,7 @@ outbound_bonus = 1.1  if outbound_ratio >= 0.5
                = 1.0  otherwise
 ```
 
-A peer that has been outbound in the majority of observations was actively chosen by multiple nodes — a strong signal of quality.
+A peer that has been outbound in the majority of observations was actively chosen by multiple nodes - a strong signal of quality.
 
 #### diversity_bonus
 ```
@@ -256,7 +256,7 @@ Regions are derived from GeoLite2-Country continent codes (MaxMind):
 |---|---|
 | `EU` | Europe |
 | `NA` | North America |
-| `AS` | Asia and Oceania (OC is merged into AS — few Cosmos nodes are located in Oceania) |
+| `AS` | Asia and Oceania (OC is merged into AS - few Cosmos nodes are located in Oceania) |
 | `SA` | South America |
 | `OTHER` | Africa, Antarctica, and unresolved IPs |
 
@@ -268,7 +268,7 @@ Geolocation requires the **GeoLite2-Country** database (free with MaxMind regist
 
 Your node will appear on the Cumulo Live Peers list when it meets these conditions:
 
-### Step 1 — Have your p2p port publicly accessible
+### Step 1 - Have your p2p port publicly accessible
 
 The collector performs a **direct TCP probe on your p2p port** (default 26656) from Velia2 (IP: `148.72.141.245`, located in St. Louis, AS30083). Your node must accept incoming connections on this port from external IPs.
 
@@ -280,23 +280,23 @@ Verify your p2p port is reachable:
 nc -zv <your_ip> 26656
 ```
 
-### Step 2 — Be seen by multiple sources
+### Step 2 - Be seen by multiple sources
 
-The `source_count_max` field — which drives the `diversity_bonus` — is how many independent validator `/net_info` endpoints reported your node **simultaneously in the same cycle**.
+The `source_count_max` field - which drives the `diversity_bonus` - is how many independent validator `/net_info` endpoints reported your node **simultaneously in the same cycle**.
 
 To maximize this:
 - Ensure your node has `max_num_inbound_peers` set high enough (≥40 recommended)
 - Maintain stable, long-running connections rather than frequently reconnecting
-- Use a static IP — nodes that change IPs frequently lose their accumulated history
+- Use a static IP - nodes that change IPs frequently lose their accumulated history
 
-### Step 3 — Be outbound, not just inbound
+### Step 3 - Be outbound, not just inbound
 
 The `outbound_bonus` rewards peers that are actively chosen by other nodes. To maximize it:
 - Keep your node running continuously with good uptime
 - Avoid overly restrictive firewall rules that prevent outbound p2p connections
 - Use `persistent_peers` to maintain stable connections to well-known nodes
 
-### Step 4 — Maintain uptime over time
+### Step 4 - Maintain uptime over time
 
 The sliding buffer rewards **consistency**, not just current availability. A node that is reachable 7 out of every 10 checks (70% uptime) qualifies. A node that was perfectly reachable for 5 days but went down yesterday will gradually drop out of the list.
 
@@ -327,7 +327,7 @@ Each entry in `validators_testnet.json` / `validators_mainnet.json` provides:
 - An `addrbook.json` URL → adds TIER2 cold candidates to the pool
 - Direct `seed` and `peers` strings → additional TIER2 candidates
 
-The more validators in the JSON, the more granular the `diversity_bonus` discrimination becomes. With 15+ validators, a peer seen in 12/15 sources will score significantly higher than one seen in 3/15 — creating a meaningful quality signal that no other peer provider offers.
+The more validators in the JSON, the more granular the `diversity_bonus` discrimination becomes. With 15+ validators, a peer seen in 12/15 sources will score significantly higher than one seen in 3/15 - creating a meaningful quality signal that no other peer provider offers.
 
 ### JSON format
 
@@ -358,13 +358,13 @@ The more validators in the JSON, the more granular the `diversity_bonus` discrim
 3. Add your entry following the format above
 4. Open a Pull Request
 
-The collector reads the JSON from GitHub on every cycle — no deployment needed on our side. Your validator will start contributing to peer discovery in the next cycle after the PR is merged.
+The collector reads the JSON from GitHub on every cycle - no deployment needed on our side. Your validator will start contributing to peer discovery in the next cycle after the PR is merged.
 
 ### Requirements for your RPC
 
 - Must be publicly accessible (no authentication)
 - Must respond to `GET /net_info` with a valid CometBFT response
-- Does not need to be your validator's main RPC — a separate full node RPC is fine
+- Does not need to be your validator's main RPC - a separate full node RPC is fine
 - Rate limiting is acceptable; the collector makes one request per cycle (every 30 min)
 
 ### What you get
@@ -461,8 +461,8 @@ The list is refreshed every 30 minutes. Clients should not poll more frequently 
 ## Notes
 
 **Why does the list start small after a new chain is added?**  
-The sliding buffer requires a minimum of 7 successful TCP probe observations before a peer is published. With a 30-minute cycle interval, new peers take approximately 3.5 hours to appear on the list. This is intentional — the list reflects verified stability over time, not an instant snapshot of the current network state.
+The sliding buffer requires a minimum of 7 successful TCP probe observations before a peer is published. With a 30-minute cycle interval, new peers take approximately 3.5 hours to appear on the list. This is intentional - the list reflects verified stability over time, not an instant snapshot of the current network state.
 
 ---
 
-*Maintained by [Cumulo](https://cumulo.pro) — Cosmos Infrastructure*
+*Maintained by [Cumulo](https://cumulo.pro) - Cosmos Infrastructure*
