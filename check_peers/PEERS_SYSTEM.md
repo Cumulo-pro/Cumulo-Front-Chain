@@ -175,6 +175,50 @@ Each chain maintains a persistent store file (`store_<chain_id>.json`) updated e
 ---
 
 ## 3. Selection Algorithm & Scoring
+### TCP Reachability Probe
+
+Before any peer enters the sliding buffer, the collector verifies that its p2p port is externally reachable via a direct TCP probe:
+
+```python
+socket.create_connection((ip, port), timeout=3)
+```
+
+This performs a standard three-way TCP handshake:
+
+```
+Collector  →  SYN        →  Peer (ip:26656)
+Collector  ←  SYN-ACK    ←  Peer
+Collector  →  ACK        →  Peer
+              connection established ✓
+Collector  →  FIN        →  Peer  (closed immediately)
+```
+
+If the peer responds with `SYN-ACK` within 3 seconds → probe successful (`tcp_ok=True`).  
+If it does not respond, rejects the connection, or times out → probe failed (`tcp_ok=False`).
+
+**What the probe verifies:**
+- The p2p port is open and listening
+- The firewall accepts incoming connections from external IPs
+- The peer is reachable from outside its local network
+
+**What the probe does not verify:**
+- Whether the node is synchronized with the chain
+- Whether the CometBFT p2p protocol handshake succeeds
+- Latency or bandwidth of the connection
+
+For the purpose of this system, TCP reachability is the right signal. If the port is open and consistently reachable, CometBFT can establish the full p2p connection — the protocol handles the rest. A peer that passes TCP probes reliably is a peer that node operators can actually connect to.
+
+**Why not probe the RPC port instead?**  
+Many validators keep their RPC port closed for security reasons. Probing the RPC would systematically penalize the most professionally configured nodes. The p2p port is the only port that every functioning node must keep open.
+
+**Why latency is not measured**  
+The TCP handshake time could technically be measured, but it would reflect the latency between the collector's location and the peer — not between the operator and the peer. A node in Singapore measured from St. Louis would show ~200ms, while an operator in Bangkok would experience ~5ms to the same peer. Publishing latency as a quality signal would penalize geographically distant peers unfairly. Instead, the dashboard sorts peers by geographic proximity to the visitor, so each operator sees the peers most likely to have low latency for their specific location.
+
+**IPv6 peers**  
+The collector currently lacks outbound IPv6 connectivity. IPv6 peers from our own node that are `is_outbound=true` are included without a TCP probe — the active CometBFT connection is taken as sufficient proof of reachability. These peers appear in the published list with `tcp_verified: false`. Full IPv6 TCP probe support is pending a network upgrade.
+
+**Probe parallelism and timing**  
+Up to 20 probes run in parallel with a 3-second timeout each. With pools of 600-800 candidates (typical for mainnet), the probe phase takes approximately 60-90 seconds per cycle. Results feed directly into the sliding buffer update described below.
 
 ### Layer 1 - Sliding Window Filter (entry criterion)
 
