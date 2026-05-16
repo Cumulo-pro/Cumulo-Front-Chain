@@ -472,13 +472,18 @@ https://peers.cumulo.me/peers/<chain>/<network>/peers.txt
 |---|---|---|---|
 | Cosmos Hub | testnet | provider | ✅ Active |
 | Cosmos Hub | mainnet | cosmoshub-4 | ✅ Active |
-| Osmosis | mainnet | osmosis-1 | 🔜 Pending |
-| Celestia | mainnet | celestia | 🔜 Pending |
-| Neutron | mainnet | neutron-1 | 🔜 Pending |
+| Celestia | mainnet | celestia | ✅ Active |
+| Celestia | testnet | mocha-4 | ✅ Active |
+| XRPL EVM | mainnet | xrplevm_1440000-1 | ✅ Active |
+| XRPL EVM | testnet | xrplevm_1449000-1 | ✅ Active |
 
 **Live endpoints:**  
 [Cosmos Hub testnet peers.json](https://peers.cumulo.me/peers/cosmos/testnet/peers.json) · [peers.txt](https://peers.cumulo.me/peers/cosmos/testnet/peers.txt)  
-[Cosmos Hub mainnet peers.json](https://peers.cumulo.me/peers/cosmos/mainnet/peers.json) · [peers.txt](https://peers.cumulo.me/peers/cosmos/mainnet/peers.txt)
+[Cosmos Hub mainnet peers.json](https://peers.cumulo.me/peers/cosmos/mainnet/peers.json) · [peers.txt](https://peers.cumulo.me/peers/cosmos/mainnet/peers.txt)  
+[Celestia mainnet peers.json](https://peers.cumulo.me/peers/celestia/mainnet/peers.json) · [peers.txt](https://peers.cumulo.me/peers/celestia/mainnet/peers.txt)  
+[Celestia testnet peers.json](https://peers.cumulo.me/peers/celestia/testnet/peers.json) · [peers.txt](https://peers.cumulo.me/peers/celestia/testnet/peers.txt)  
+[XRPL EVM mainnet peers.json](https://peers.cumulo.me/peers/xrplevm/mainnet/peers.json) · [peers.txt](https://peers.cumulo.me/peers/xrplevm/mainnet/peers.txt)  
+[XRPL EVM testnet peers.json](https://peers.cumulo.me/peers/xrplevm/testnet/peers.json) · [peers.txt](https://peers.cumulo.me/peers/xrplevm/testnet/peers.txt)
 
 ### peers.txt
 
