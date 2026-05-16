@@ -208,16 +208,16 @@ If it does not respond, rejects the connection, or times out → probe failed (`
 - Whether the CometBFT p2p protocol handshake succeeds
 - Latency or bandwidth of the connection
 
-For the purpose of this system, TCP reachability is the right signal. If the port is open and consistently reachable, CometBFT can establish the full p2p connection — the protocol handles the rest. A peer that passes TCP probes reliably is a peer that node operators can actually connect to.
+For the purpose of this system, TCP reachability is the right signal. If the port is open and consistently reachable, CometBFT can establish the full p2p connection - the protocol handles the rest. A peer that passes TCP probes reliably is a peer that node operators can actually connect to.
 
 **Why not probe the RPC port instead?**  
 Many validators keep their RPC port closed for security reasons. Probing the RPC would systematically penalize the most professionally configured nodes. The p2p port is the only port that every functioning node must keep open.
 
 **Why latency is not measured**  
-The TCP handshake time could technically be measured, but it would reflect the latency between the collector's location and the peer — not between the operator and the peer. A node in Singapore measured from St. Louis would show ~200ms, while an operator in Bangkok would experience ~5ms to the same peer. Publishing latency as a quality signal would penalize geographically distant peers unfairly. Instead, the dashboard sorts peers by geographic proximity to the visitor, so each operator sees the peers most likely to have low latency for their specific location.
+The TCP handshake time could technically be measured, but it would reflect the latency between the collector's location and the peer - not between the operator and the peer. A node in Singapore measured from St. Louis would show ~200ms, while an operator in Bangkok would experience ~5ms to the same peer. Publishing latency as a quality signal would penalize geographically distant peers unfairly. Instead, the dashboard sorts peers by geographic proximity to the visitor, so each operator sees the peers most likely to have low latency for their specific location.
 
 **IPv6 peers**  
-The collector currently lacks outbound IPv6 connectivity. IPv6 peers from our own node that are `is_outbound=true` are included without a TCP probe — the active CometBFT connection is taken as sufficient proof of reachability. These peers appear in the published list with `tcp_verified: false`. Full IPv6 TCP probe support is pending a network upgrade.
+The collector currently lacks outbound IPv6 connectivity. IPv6 peers from our own node that are `is_outbound=true` are included without a TCP probe - the active CometBFT connection is taken as sufficient proof of reachability. These peers appear in the published list with `tcp_verified: false`. Full IPv6 TCP probe support is pending a network upgrade.
 
 **Probe parallelism and timing**  
 Up to 20 probes run in parallel with a 3-second timeout each. With pools of 600-800 candidates (typical for mainnet), the probe phase takes approximately 60-90 seconds per cycle. Results feed directly into the sliding buffer update described below.
@@ -235,10 +235,10 @@ sum(buffer_10) >= inclusion_threshold  (default: 7.0)
 | TIER1, 10/10 successful probes | [1.0 × 10] | 10.0 | ✅ Yes |
 | TIER1, 7/10 successful probes | [1.0 × 7, 0.0 × 3] | 7.0 | ✅ Yes |
 | TIER1, 6/10 successful probes | [1.0 × 6, 0.0 × 4] | 6.0 | ❌ No |
-| TIER2, 10/10 successful probes | [0.5 × 10] | 5.0 | ❌ No (max possible is 5.0 — never published) |
+| TIER2, 10/10 successful probes | [0.5 × 10] | 5.0 | ❌ No (max possible is 5.0 - never published) |
 | TIER1, was published, now absent 3+ cycles | buffer fills with 0.0 over time | drops below 7.0 | ❌ Removed (tier unchanged in store) |
 
-A peer is **removed** from the published list when its buffer sum drops below the threshold after an update — this happens naturally as failed or absent observations (0.0) replace older successful ones in the sliding window.
+A peer is **removed** from the published list when its buffer sum drops below the threshold after an update - this happens naturally as failed or absent observations (0.0) replace older successful ones in the sliding window.
 
 A peer is **purged** from the store entirely if it has not appeared in any source for 5 consecutive days. This keeps the store lean and prevents accumulation of permanently offline nodes.
 
@@ -283,7 +283,7 @@ diversity_bonus = 1.0 + log2(source_count_max + 1) / log2(total_validators + 1)
 
 Range: `1.0` (seen in 1 source) → `2.0` (seen in all sources simultaneously)
 
-`source_count_max` is the maximum number of distinct `/net_info` sources — our own node plus all validator RPCs — that reported this peer **in the same cycle**. The total number of possible sources is therefore `validators_in_JSON + 1` (our node always counts as an independent source).
+`source_count_max` is the maximum number of distinct `/net_info` sources - our own node plus all validator RPCs - that reported this peer **in the same cycle**. The total number of possible sources is therefore `validators_in_JSON + 1` (our node always counts as an independent source).
 
 The `diversity_bonus` formula uses `total_validators + 1` as the denominator to keep it consistent with `source_count_max`, so that a peer seen by every possible source always achieves the maximum bonus of `2.0` and a maximum score of `2.64`:
 
@@ -319,7 +319,7 @@ Regions are derived from GeoLite2-Country continent codes (MaxMind):
 |---|---|
 | `EU` | Europe |
 | `NA` | North America |
-| `AS` | Asia and Oceania (OC is merged into AS — few Cosmos nodes are located in Oceania) |
+| `AS` | Asia and Oceania (OC is merged into AS - few Cosmos nodes are located in Oceania) |
 | `SA` | South America |
 | `OTHER` | Africa, Antarctica, and unresolved IPs |
 
