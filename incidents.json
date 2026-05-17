@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmos-hub-mainnet-governance-proposal-1037-2026-05-15",
+  "date": "2026-05-15T22:31:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1037 on Cosmos Hub mainnet: 'New Cosmos Credit Card' — a spam/scam proposal promoting an external website (AtomPlay.at) with no legitimate on-chain purpose. Voting period ends May 22, 2026, at 22:31 UTC. Cumulo voted NO WITH VETO.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1037",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=A0D8B18D56AD6C31F84B6ACBD6512ACB239C29AB47F55579B2EDA562AE4B3F83"
+},
+  {
   "id": "espresso-mainnet-upgrade-20260424-2026-05-15",
   "date": "2026-05-15T00:00:00Z",
   "incident_type": "upgrade",
