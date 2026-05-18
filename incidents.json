@@ -1,5 +1,17 @@
 [
   {
+  "id": "massa-mainnet-hard-fork-v5.0-2026-05-17",
+  "date": "2026-05-17T18:30:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Massa",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "MAIN.5.0",
+  "note": "Massa launched Mainnet version 5 (MAIN.5.0) as a mandatory hard fork at 18:30 UTC. The upgrade patches a critical bug that allowed illegal minting of MAS tokens. The network restarts from a snapshot taken at 16:40 UTC, with the ledger updated to remove all illegally minted tokens. Cumulo updated the node by pulling the latest release via git and restarting with the staking wallet. Node rejoined the corrected network successfully.",
+  "url": "https://docs.massa.net/docs/node/update"
+},
+  {
   "id": "genlayer-asimov-upgrade-v0.5.11-2026-05-18",
   "date": "2026-05-18T00:00:00Z",
   "incident_type": "upgrade",
