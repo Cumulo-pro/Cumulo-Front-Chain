@@ -1,5 +1,17 @@
 [
   {
+  "id": "xrplevm-mainnet-governance-proposal-31-2026-05-18",
+  "date": "2026-05-18T10:32:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #31 on XRPL EVM mainnet: Recover IBC light client for Injective & Elys Network. This proposal updates the expired IBC light client `07-tendermint-0` for counterparty chain `injective-1` with the state of substitute client `07-tendermint-8`, and IBC light client `07-tendermint-1` for counterparty chain `elys-1` with the state of substitute client `07-tendermint-11`. Message type: `/ibc.core.client.v1.MsgRecoverClient`. Voting ends May 19, 2026 at 10:32 UTC. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm_mainnet/governance#proposal-31",
+  "vote": "https://cumulo.pro/services/xrplevm_mainnet/search?q=C155EC004BCB87E0FB50377EBAA5353313FE829DA132D0495302035B23AEC266"
+},
+  {
   "id": "cosmos-hub-mainnet-governance-proposal-1037-2026-05-15",
   "date": "2026-05-15T22:31:00Z",
   "incident_type": "governance_proposal",
