@@ -1,5 +1,17 @@
 [
   {
+  "id": "genlayer-bradbury-upgrade-v0.5.11-2026-05-20",
+  "date": "2026-05-20T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (Bradbury)",
+  "node_type": ["validator"],
+  "client": "genlayer-node v0.5.11",
+  "note": "Cumulo upgraded its GenLayer Bradbury testnet validator node to v0.5.11. This release introduces bearer auth on admin endpoints, inbound WebSocket JSON-RPC support, a node health state machine, and a circuit breaker for rollup RPC outages. Several bug fixes were included, such as bloom mismatch recovery, sync ticker continuity, GenVM precompile cache pre-warming, nil GasFeeCap guard, and hardened RPC limits. A security bump of OpenTelemetry to v1.41.0 was also applied. Node upgraded and verified operational.",
+  "url": "https://docs.genlayer.com/validators/changelog#v0511"
+},
+  {
   "id": "cosmos-mainnet-gaia-v27.3.0-upgrade-2026-05-20",
   "date": "2026-05-20T14:55:00Z",
   "incident_type": "upgrade",
