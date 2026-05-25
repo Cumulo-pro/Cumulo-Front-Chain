@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmos-hub-testnet-governance-proposal-301-2026-05-25",
+  "date": "2026-05-25T15:20:00Z",
+  "incident_type": "governance_proposal",
+  "status": "ended",
+  "chain": "Cosmos Hub",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #301 on Cosmos Hub testnet: Gaia v27.4.0-rc0 Software Upgrade. The upgrade bumps cometbft from v0.38.21 to v0.38.23, wasmd from v0.60.6 to v0.60.7, and wasmvm from v2.3.2 to v2.3.3. Scheduled at block height 17,475,900. Proposal passed. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/cosmos_testnet/governance#proposal-301",
+  "vote": "https://cumulo.pro/services/cosmos_testnet/search?q=C68B5BC63EF01BA10103F277F7462E21AEF369764A2B8DD68CD38AB6DC476FD0"
+},
+  {
   "id": "cosmos-mainnet-governance-proposal-1038-2026-05-25",
   "date": "2026-05-25T00:00:00Z",
   "incident_type": "governance_proposal",
