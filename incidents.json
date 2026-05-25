@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmos-mainnet-governance-proposal-1038-2026-05-25",
+  "date": "2026-05-25T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1038 on Cosmos Hub mainnet: Spam/scam proposal promoting a fraudulent ATOM airdrop via an external website. Voting period runs from May 23 to May 30, 2026. Cumulo voted No with Veto.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1038",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=55D8236640B2721B58D27350F516EE0A9DAD958D83C659B344F100ED4FCE37BA"
+},
+  {
   "id": "monad-testnet-upgrade-v0.14.4-2026-05-21",
   "date": "2026-05-21T00:00:00Z",
   "incident_type": "upgrade",
