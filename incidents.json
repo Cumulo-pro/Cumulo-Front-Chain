@@ -1,5 +1,17 @@
 [
   {
+  "id": "genlayer-bradbury-upgrade-v0.5.12-2026-05-25",
+  "date": "2026-05-25T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (Bradbury)",
+  "node_type": ["validator"],
+  "client": "genlayer-node v0.5.12",
+  "note": "Cumulo upgraded its GenLayer Bradbury testnet validator node to v0.5.12. This release includes bug fixes for sync stall self-recovery from consensus wedge states without manual intervention, and improved zkSync error handling to correctly reclassify L2 RPC not-found errors. On the security side, golang.org/x/net was bumped to v0.55.0 and golang.org/x/crypto to v0.52.0 to address known vulnerabilities. Node upgraded and verified operational.",
+  "url": "https://docs.genlayer.com/validators/changelog#v0512"
+},
+  {
   "id": "genlayer-asimov-upgrade-v0.5.12-2026-05-25",
   "date": "2026-05-25T00:00:00Z",
   "incident_type": "upgrade",
