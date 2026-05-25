@@ -3,7 +3,7 @@
   "id": "cosmos-hub-testnet-governance-proposal-301-2026-05-25",
   "date": "2026-05-25T15:20:00Z",
   "incident_type": "governance_proposal",
-  "status": "ended",
+  "status": "completed",
   "chain": "Cosmos Hub",
   "network": "testnet",
   "node_type": ["validator"],
