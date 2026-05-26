@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmos-hub-testnet-gaia-v27.4.0-rc0-upgrade-2026-05-26",
+  "date": "2026-05-26T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "testnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "gaia v27.4.0-rc0",
+  "note": "Cumulo upgraded its Cosmos Hub testnet (provider chain) node to Gaia v27.4.0-rc0 as part of Testnet Tuesday. Upgrade name: v27.4.0, applied at block height 17,475,900. The release bumps cometbft v0.38.21 → v0.38.23, wasmd v0.60.6 → v0.60.7, and wasmvm v2.3.2 → v2.3.3. Cumulo signed within the first five blocks post-upgrade, qualifying for the participation point.",
+  "url": "https://github.com/cosmos/testnets/tree/master/provider#v2740-rc0-upgrade"
+},
+  {
   "id": "genlayer-bradbury-upgrade-v0.5.12-2026-05-25",
   "date": "2026-05-25T00:00:00Z",
   "incident_type": "upgrade",
