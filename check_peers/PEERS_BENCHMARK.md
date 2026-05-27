@@ -24,13 +24,13 @@ All probes used direct TCP handshakes (`nc -zv -w3`) from a single external node
 
 | Network | Cumulo | Snapshot | Scanner |
 |---|:---:|:---:|:---:|
-| Cosmos Hub mainnet | ✅ **20/20** | ✅ 10/10 | — |
-| Cosmos Hub testnet | ✅ **20/20** | ❌ 8/9 | — |
-| Celestia mainnet | ✅ **20/20** | ✅ 11/11 | — |
-| Celestia mainnet (large) | ✅ **20/20** | ❌ 66/94 | — |
+| Cosmos Hub mainnet | ✅ **20/20** | ✅ 10/10 | - |
+| Cosmos Hub testnet | ✅ **20/20** | ❌ 8/9 | - |
+| Celestia mainnet | ✅ **20/20** | ✅ 11/11 | - |
+| Celestia mainnet (large) | ✅ **20/20** | ❌ 66/94 | - |
 | Celestia Mocha testnet | ✅ **20/20** | ❌ 31/32 | ❌ 15/18 |
-| XRPL EVM mainnet | ✅ **20/20** | ✅ 13/13 | — |
-| XRPL EVM mainnet (large) | ✅ **20/20** | ❌ 42/50 | — |
+| XRPL EVM mainnet | ✅ **20/20** | ✅ 13/13 | - |
+| XRPL EVM mainnet (large) | ✅ **20/20** | ❌ 42/50 | - |
 | XRPL EVM testnet | ✅ **20/20** | ❌ 9/10 | ❌ 10/11 |
 
 **Cumulo: 160/160 peers live across all 8 networks. Zero failures.**
@@ -41,7 +41,7 @@ All probes used direct TCP handshakes (`nc -zv -w3`) from a single external node
 
 ### 1. Snapshot lists fail at scale
 
-Small snapshot lists (10–13 peers) performed reasonably well — 3 out of 4 achieved 100% connectivity. But larger snapshots (50–137 peers) consistently included a significant fraction of dead peers:
+Small snapshot lists (10–13 peers) performed reasonably well - 3 out of 4 achieved 100% connectivity. But larger snapshots (50–137 peers) consistently included a significant fraction of dead peers:
 
 | Snapshot size | Dead peers observed | Failure rate |
 |---|---|---|
@@ -59,7 +59,7 @@ Several snapshot and scanner providers rely on their own domain (e.g. `provider-
 
 **6 out of 7 were unreachable at test time.**
 
-The one that responded did so at 238ms — the highest latency of any peer in that list. This is not a one-off: the same domains were tested independently across multiple networks at different times, and failed consistently.
+The one that responded did so at 238ms - the highest latency of any peer in that list. This is not a one-off: the same domains were tested independently across multiple networks at different times, and failed consistently.
 
 Cumulo publishes no centralized entry point. Every peer in the list is an independently verified IP address with a documented stability history.
 
@@ -69,7 +69,7 @@ One provider offered both a "live peers" list and a separate "network scanner" l
 
 - The scanner list had **equal or worse** dead-peer rates than the unverified snapshot
 - The scanner list included the provider's own domain entry point, which failed on both networks
-- On one network, the scanner surfaced 5 peers in the same /24 IP block — appearing fast (16–17ms) but sharing a single datacenter failure domain
+- On one network, the scanner surfaced 5 peers in the same /24 IP block - appearing fast (16–17ms) but sharing a single datacenter failure domain
 
 Speed is not a substitute for stability history. A peer that responds in 16ms today may be unreachable tomorrow if the datacenter goes offline. Cumulo's geographic diversity cap (max 8 peers per region) explicitly prevents co-location concentration.
 
@@ -86,13 +86,13 @@ Across all 8 networks, Cumulo's list included the fastest or near-fastest peers 
 | XRPL EVM mainnet | 7ms | 7ms (same peer) |
 | XRPL EVM testnet | 17ms | 16ms (scanner excl.) |
 
-The sub-10ms entries in snapshot lists that Cumulo didn't have were consistently exclusive to very large lists (94–137 peers) — nodes that appeared recently or from non-standard vantage points. They represent useful additions when verified as individually live, but they cannot be assumed live without independent probing.
+The sub-10ms entries in snapshot lists that Cumulo didn't have were consistently exclusive to very large lists (94–137 peers) - nodes that appeared recently or from non-standard vantage points. They represent useful additions when verified as individually live, but they cannot be assumed live without independent probing.
 
 ### 5. Cross-source validation confirms the best peers
 
 When a peer appears simultaneously in Cumulo's list and in multiple snapshot sources, it has effectively passed independent verification from multiple vantage points. These cross-validated peers showed the highest latency consistency across sources (differences of 1–3ms between measurements), indicating stable, well-connected nodes.
 
-On Cosmos Hub mainnet, **4 peers appeared in both Cumulo and a 10-peer snapshot** — independent convergence on the same high-quality nodes. On Celestia Mocha, **10 peers appeared in all three sources tested simultaneously**.
+On Cosmos Hub mainnet, **4 peers appeared in both Cumulo and a 10-peer snapshot** - independent convergence on the same high-quality nodes. On Celestia Mocha, **10 peers appeared in all three sources tested simultaneously**.
 
 ---
 
@@ -100,7 +100,7 @@ On Cosmos Hub mainnet, **4 peers appeared in both Cumulo and a 10-peer snapshot*
 
 The following commands let you run the same TCP probes used in this study. Replace the `PEERS` variable with any peer list you want to test.
 
-### Basic probe — test any peer list
+### Basic probe - test any peer list
 
 ```bash
 PEERS="<node_id>@<host>:<port>,<node_id>@<host>:<port>,..."
@@ -144,9 +144,9 @@ probe_list() {
   done
 
   total=$((ok+fail))
-  avg=$([ $ok -gt 0 ] && echo "$((total_ms/ok))" || echo "—")
+  avg=$([ $ok -gt 0 ] && echo "$((total_ms/ok))" || echo "-")
   echo ""
-  echo "[$label] $ok/$total live — avg ${avg}ms"
+  echo "[$label] $ok/$total live - avg ${avg}ms"
   echo ""
 }
 
@@ -181,7 +181,7 @@ done | sort | awk -F. '{print $1"."$2"."$3".0/24"}' | sort | uniq -c | sort -rn 
 awk '$1 > 1 {print "⚠️  " $1 " peers in " $2}'
 ```
 
-This prints any /24 blocks with more than one peer — useful for identifying co-location risk before using a list in production.
+This prints any /24 blocks with more than one peer - useful for identifying co-location risk before using a list in production.
 
 ---
 
@@ -230,5 +230,5 @@ curl -s https://peers.cumulo.me/peers/cosmos/mainnet/peers.txt | \
 
 ## Related
 
-- [PEERS_SYSTEM.md](./PEERS_SYSTEM.md) — Full technical specification of the Cumulo peer verification system
-- [peers.cumulo.me](https://peers.cumulo.me) — Live peer lists for all supported networks
+- [PEERS_SYSTEM.md](./PEERS_SYSTEM.md) - Full technical specification of the Cumulo peer verification system
+- [peers.cumulo.me](https://peers.cumulo.me) - Live peer lists for all supported networks
