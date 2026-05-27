@@ -561,11 +561,9 @@ The collector currently lacks outbound IPv6 connectivity. IPv6 peers that are ac
 **Geographic TCP probe perspective**  
 All probes originate from the same network location. A peer reachable from there is very likely reachable globally, but latency characteristics may vary by region. The dashboard sorts peers by geographic proximity to the visitor to partially compensate for this.
 
----
+**Benchmark**  
+Independent validation of the system's reliability across 8 networks (4 mainnets, 4 testnets), comparing TCP connectivity against snapshot and scanner-based peer lists → [PEERS_BENCHMARK.md](./PEERS_BENCHMARK.md)
 
-## Benchmark  
-
-Independent validation of the system's reliability across 8 networks (4 mainnets, 4 testnets), comparing TCP connectivity against snapshot and scanner-based peer lists: [PEERS_BENCHMARK.md](./PEERS_BENCHMARK.md)
 ---
 
 *Maintained by [Cumulo](https://cumulo.pro) - Cosmos Infrastructure*
