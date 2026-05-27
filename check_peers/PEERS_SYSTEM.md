@@ -563,7 +563,7 @@ All probes originate from the same network location. A peer reachable from there
 
 ---
 
-## Benchmark
+## Benchmark  
 
 Independent validation of the system's reliability across 8 networks (4 mainnets, 4 testnets), comparing TCP connectivity against snapshot and scanner-based peer lists: [PEERS_BENCHMARK.md](./PEERS_BENCHMARK.md)
 ---
