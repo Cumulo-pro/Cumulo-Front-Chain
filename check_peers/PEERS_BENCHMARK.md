@@ -168,8 +168,6 @@ curl -s https://your-rpc-endpoint.example.com/net_info | \
   jq '[.result.peers[0:3][].node_info.id]'
 ```
 
-> **Note on trailing slashes:** Some RPC endpoints configured with a trailing slash (`https://rpc.example.com/`) will fail when the path `/net_info` is appended, producing a double-slash URL (`https://rpc.example.com//net_info`). If `/net_info` returns an error, try removing the trailing slash from the base URL.
-
 ### Detect co-located peers (same /24 block)
 
 ```bash
@@ -231,4 +229,4 @@ curl -s https://peers.cumulo.me/peers/cosmos/mainnet/peers.txt | \
 ## Related
 
 - [PEERS_SYSTEM.md](./PEERS_SYSTEM.md) - Full technical specification of the Cumulo peer verification system
-- [peers.cumulo.me](https://peers.cumulo.me) - Live peer lists for all supported networks
+
