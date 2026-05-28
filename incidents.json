@@ -1,5 +1,16 @@
 [
   {
+  "id": "starknet-mainnet-deployment-strkbtc-pool-staking-2026-05-28",
+  "date": "2026-05-28T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Cumulo enabled the staking pool on Starknet Mainnet for its strkBTC node via Smart Contract activation. This configuration allows users to delegate BTC staking directly to Cumulo's node through the strkBTC protocol on Starknet. The pool is live and fully operational, ready to receive stake.",
+  "url": "https://medium.com/cumulo-pro/how-to-stake-btc-on-starknet-b0bcd152b29e"
+},
+  {
   "id": "cosmos-hub-testnet-infrastructure-migration-2026-05-27",
   "date": "2026-05-27T00:00:00Z",
   "incident_type": "infrastructure_migration",
