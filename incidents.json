@@ -1,5 +1,17 @@
 [
   {
+  "id": "story-mainnet-upgrade-v1.8.0-seneca-2026-05-28",
+  "date": "2026-05-28T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Story",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "story v1.8.0",
+  "note": "Story Mainnet mandatory consensus hardfork to v1.8.0 (Seneca) scheduled at block 18,173,000, implementing SIP-00011 and reducing the active validator set from 80 to 21. Cumulo successfully upgraded its mainnet validator node to story v1.8.0 ahead of the upgrade height with no incidents. The binary was verified and the node confirmed fully synced prior to the transition. All services remain operational and the validator is actively participating in consensus post-upgrade.",
+  "url": "https://github.com/piplabs/story/releases/tag/v1.8.0"
+},
+  {
   "id": "starknet-mainnet-deployment-strkbtc-pool-staking-2026-05-28",
   "date": "2026-05-28T00:00:00Z",
   "incident_type": "deployment",
