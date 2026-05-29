@@ -636,19 +636,6 @@
     }
   },
   {
-    "name": "kocality",
-    "webservices": "",
-    "x": "kkocality",
-    "validatorlogo": "kocality.jpg",
-    "tools": "Celestia Light Node Script",
-    "tools_url": {
-      "Celestia Light Node Script": "https://github.com/kocality/celestia-light-node-script"
-    },
-    "tools_desc": {
-    "Celestia Light Node Script": "Automation script to install and run a Celestia light node with minimal setup."
-  }
-  },
-  {
     "name": "NODERS",
     "webservices": "https://noders.services/mainnet-networks/celestia/",
     "x": "NODERS_TEAM",
