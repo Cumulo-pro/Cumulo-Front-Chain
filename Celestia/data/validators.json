@@ -88,18 +88,6 @@
   }
 },
 {
-    "name": "BlackBlocks",
-    "webservices": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia",
-    "x": "BlackBlocks_io",
-    "validatorlogo": "blackblocks.jpg",
-    "explorer": "https://explorer.celestia-mainnet.blackblocks.io/",
-     "rpc": "https://rpc.celestia-mainnet.blackblocks.io",
-    "grpc": "",
-    "snapshot": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#full-node-archival-snapshot",
-    "archive_snapshot": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#full-node-archival-snapshot",
-    "bridge_snap": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia#bridge-node-archival-snapshot"
-},
-{
     "name": "Validatrium",
     "webservices": "",
     "x": "validatrium",
