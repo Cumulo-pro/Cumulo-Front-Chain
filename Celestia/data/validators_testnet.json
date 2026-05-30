@@ -94,17 +94,6 @@
       }
     },
     {
-        "name": "cryptomolot",
-        "webservices": "",
-        "x": "cryptomolot",
-        "validatorlogo": "cryptomolot.jpg",
-            "rpc": "https://celestia-mocha-rpc.cryptomolot.com/", 
-          "content":{
-            "Content contributions for Celestia by cryptomolot": "https://telegra.ph/Content-contributions-for-Celestia-by-cryptomolot-07-02",
-            "Community guidelines": "https://cryptomolot.gitbook.io/cryptomolot-docs/testnets/celestia"
-          }
-    },
-    {
         "name": "BlackBlocks",
         "webservices": "https://wiki.blackblocks.io/en/public/services/testnet/celestia",
         "x": "BlackBlocks_io",
@@ -181,33 +170,6 @@
        }
     },
     {
-        "name": "AutoStake",
-        "webservices": "https://autostake.com/networks/testnets/celestia/",
-        "x": "AutoStake_",
-        "validatorlogo": "autostake.png",
-            "api": "https://celestia-testnet-lcd.autostake.com:443",
-            "rpc": "https://celestia-testnet-rpc.autostake.com:443",
-            "grpc": "celestia-testnet-grpc.autostake.com:443",
-         "snapshot": "https://autostake.com/networks/testnets/celestia/",
-        "seeds": "5c2a752c9b1952dbed075c56c600c3a79b58c395@celestia-testnet-seed.autostake.com:27206",
-        "addrbook": "http://snapshots.autostake.com/lyIs25DaSWMSm8evWKHGQrb/mocha-4/addrbook.json",
-          "snap_url": "http://snapshots.autostake.com/lyIs25DaSWMSm8evWKHGQrb/mocha-4/latest.tar.lz4",
-        "peers": "5c2a752c9b1952dbed075c56c600c3a79b58c395@celestia-testnet-peer.autostake.com:27206"
-    },
-    {
-        "name": "Stakeflow",
-        "webservices": "",
-        "x": "stakeflow",
-        "validatorlogo": "stakeflow.jpg",
-        "explorer": "https://stakeflow.io/celestia-testnet",
-        "bridge_explorer": "https://stakeflow.io/celestia-testnet/bridge-nodes",
-          "peers": "edebca7508b70df9659c1293b0d8cbc05c77c91f@peer-celestia-testnet-01.stakeflow.io:16007",
-          "seeds": "edebca7508b70df9659c1293b0d8cbc05c77c91f@seed-celestia-testnet-01.stakeflow.io:16007",
-          "api": "https://api-celestia-testnet-01.stakeflow.io",
-          "rpc": "https://rpc-celestia-testnet-01.stakeflow.io",
-          "grpc": "grpc-celestia-testnet-01.stakeflow.io:16002"
-    },
-    {
         "name": "Openbitlab",
         "webservices": "https://openbitlab.com/network/58/Celestia/docs",
         "x": "Openbitlab_node",
@@ -240,29 +202,7 @@
       "Celestia Bridge Status Checker": "Bridge health checker to verify availability and current status."
       }
     },
-    {
-        "name": "Suntzu",
-        "webservices": "https://services.suntzu.dev/testnet/celestia",
-        "x": "suntzu_indexer",
-        "validatorlogo": "suntzu.jpg",
-            "explorer": "https://explorer.suntzu.dev/celestia-testnet",
-          "peers": "92372368693bf06cdcec3811695c70fa662d6e40@95.217.204.154:11256",
-          "api": "https://celestia-testnet-api.suntzu.dev",
-          "rpc": "https://celestia-testnet-rpc.suntzu.dev",
-          "grpc": "celestia-testnet-grpc.suntzu.dev:11290",
-          "tools": "Monitor bridge/validator/system",
-          "snapshot": "https://services.suntzu.dev/testnet/celestia/snapshot",
-          "snap_url": "https://testnet-files.suntzu.dev/download/testnet/celestia/celestia-snapshot.tar.lz4",
-        "tools_url": {
-            "State Sync": "https://services.suntzu.dev/testnet/celestia/state-sync",
-            "Celestia Bridge Status Checker": "https://celestia-bridge-checker.luckyresearch.org/ "
-        },
-    "tools_desc": {
-      "State Sync": "State sync information and setup steps to reduce initial sync time.",
-      "Celestia Bridge Status Checker": "Bridge health checker to verify availability and current status."
-       }
-    },
-    {
+{
         "name": "ContributionDAO",
         "webservices": "https://services.contributiondao.com/mainnet/celestia",
         "x": "contributedao",
@@ -333,31 +273,6 @@
     "tools_url": {
     "Celestia RPC status checker": "https://celestia-tools.brightlystake.com/rpc-status",
     "Celestia gRPC status checker": "https://celestia-tools.brightlystake.com/grpc-status"
-  }
-},
-{
-  "name": "Nodes Hub",
-  "webservices": "https://services.nodeshub.online/testnet-networks/celestia/",
-  "x": "NodesHub",
-  "validatorlogo": "nodeshub.jpg",
-  "explorer": "https://testnet.explorer.nodeshub.online/celestia",
-   "peers": "2fae9d7fffbd64f72b2b15645c3c7eb95e9ce961@136.175.9.193:26657",
-  "seeds": "6f6a3a908634b79b6fe7c4988efec2553f188234@celestia.test.seed.nodeshub.online:11656",
-  "api": "https://celestia.test.archive.api.nodeshub.online",
-  "rpc": "https://celestia.test.archive.rpc.nodeshub.online",
-  "grpc": "https://celestia.test.archive.grpc.nodeshub.online",
-  "archive_snapshot": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/snapshot/archive",
-  "snapshot": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/snapshot/pruned",
-  "tools_url": {
-    "State-Sync": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/state-sync",
-    "Upgrade History": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/upgrade"
-  },
-  "tools_desc": {
-      "State-Sync": "State sync reference and instructions to bootstrap quickly on testnet.",
-      "Upgrade History": "Upgrade timeline and binaries/steps history to track past and upcoming changes."
-    },
-  "content": {
-    "Installation guide": "https://services.nodeshub.online/testnet-networks/celestia/celestia-app/installation"
   }
 },
 {
@@ -462,58 +377,8 @@
         "Uptime": "https://celestia-tools.stavr.tech/uptime/",
         "Map": "https://celestia-tools.stavr.tech/map/",
         "Celestia Testnet Upgrade": "https://celestia-tools.stavr.tech/upgrade/"
-    },
-    "content": {
-      "Node Installation": "https://services.validexis.com/testnets/celestia/validator-node-installation",
-      "Useful Commands": "https://services.validexis.com/testnets/celestia/validator-node-installation/useful-commands",
-      "Full Node Installation": "https://services.validexis.com/testnets/celestia/full-node-installation",
-      "Bridge Node Installation": "https://services.validexis.com/testnets/celestia/bridge-node-installation"
     }
 },
-     {
-    "name": "TTT VN",
-    "webservices": "https://services.tienthuattoan.com/testnet/celestia",
-    "x": "TTTcapital",
-    "validatorlogo": "tttcapital.jpg",
-    "explorer": "",
-    "peers": "",
-    "seeds": "",
-    "api": "https://celestia-testnet-api.tienthuattoan.com",
-    "rpc": "https://celestia-testnet-rpc.tienthuattoan.com",
-    "grpc": "celestia-testnet-grpc.tienthuattoan.com:9490"
-    },
-  {
-    "name": "Validexis",
-    "webservices": "https://services.validexis.com/testnets/celestia/",
-    "x": "validexis",
-    "validatorlogo": "validexis.jpg",
-    "explorer": "",
-    "bridge_explorer": "https://celestiabridge.com/testnet",
-    "snapshot": "https://services.validexis.com/testnets/celestia/snapshot",
-    "archive_snapshot": "",
-    "bridge_snap": "",
-    "peers": "31d3c08f6d9dfb05c0cef18604a64d30cc48ac7f@peer-celestia-testnet.validexis.com:26656",
-    "api": "https://api-celestia-testnet.validexis.com/",
-    "rpc": "https://rpc-celestia-testnet.validexis.com",
-    "grpc": "grpc-celestia-testnet.validexis.com:443",
-   "addrbook": "https://testnet.validexis.com/celestia/addrbook.json",
-    "tools_url": {
-        "CelestiaUltraBot": "https://validexis.com/celestiaultrabot",
-        "Dashboard Upgrades": "https://celestiabridge.com/testnet/upgrades"
-    },
-    "content": {
-      "Node Installation": "https://services.validexis.com/testnets/celestia/validator-node-installation",
-      "Useful Commands": "https://services.validexis.com/testnets/celestia/validator-node-installation/useful-commands",
-      "Full Node Installation": "https://services.validexis.com/testnets/celestia/full-node-installation",
-      "Bridge Node Installation": "https://services.validexis.com/testnets/celestia/bridge-node-installation"
-    },
-    "content": {
-        "Node Installation": "https://services.validexis.com/testnets/celestia/validator-node-installation",
-        "Useful Commands": "https://services.validexis.com/testnets/celestia/validator-node-installation/useful-commands",
-        "Full Node Installation": "https://services.validexis.com/testnets/celestia/full-node-installation",
-       "Bridge Node Installation": "https://services.validexis.com/testnets/celestia/bridge-node-installation"
-    }
-  },
   {
     "name": "Stakeus",
     "webservices": "https://celestia-services.stakeus.xyz/",
