@@ -104,17 +104,7 @@
     "Installation Guide": "https://polkachu.com/installation/celestia"
   }
 },
-  {
-  "name": "cryptomolot",
-  "webservices": "",
-  "x": "cryptomolot",
-  "validatorlogo": "cryptomolot.jpg",
-   "content":{
-    "Content contributions for Celestia by cryptomolot": "https://telegra.ph/Content-contributions-for-Celestia-by-cryptomolot-07-02",
-    "Community guidelines": "https://cryptomolot.gitbook.io/cryptomolot-docs/testnets/celestia"
-  }
-},
-  {
+{
     "name": "BlackBlocks",
     "webservices": "https://wiki.blackblocks.io/en/public/services/mainnet/celestia",
     "x": "BlackBlocks_io",
