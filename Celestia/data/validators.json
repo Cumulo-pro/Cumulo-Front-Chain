@@ -56,12 +56,13 @@
 },
 {
     "name": "Lavender.Five Nodes",
-    "webservices": "https://services.lavenderfive.com/mainnet/celestia",
+    "webservices": "https://www.lavenderfive.com/tools/celestia/overview",
     "x": "lavender_five",
     "validatorlogo": "lavenderfive.jpg",
-    "api": "https://celestia-api.lavenderfive.com",
-    "rpc": "https://celestia-rpc.lavenderfive.com",
-    "grpc": "celestia-grpc.lavenderfive.com:443",
+    "api": "https://rest.lavenderfive.com:443/celestia",
+    "rpc": "https://rpc.lavenderfive.com:443/celestia",
+    "grpc": "celestia.lavenderfive.com:443",
+    "websocket": "wss://rpc.lavenderfive.com:443/celestia/websocket",
     "snapshot": "https://services.lavenderfive.com/mainnet/celestia/snapshot",
     "addrbook": "",
     "tools": "State-sync",
@@ -233,34 +234,6 @@
   }
 },
 {
-  "name": "CrypTech",
-  "webservices": "",
-  "x": "CrypTech",
-  "validatorlogo": "cryptech.jpg",
-  "explorer": "https://ping.pub/celestia",
-  "peers": "",
-  "seeds": "",
-  "api": "https://api-celestia.cryptech.com.ua",
-  "rpc": "https://rpc-celestia.cryptech.com.ua",
-  "json-rpc": "",
-  "grpc": "https://grpc-celestia.cryptech.com.ua",
-  "snapshot": "https://services.cryptech.com.ua/mainnet/celestia/snapshot/README/",
-  "addrbook": "",
-  "tools": "Proposal_Bot, Guide, Node Monitoring",
-  "tools_url": {
-    "Proposal_Bot": "https://t.me/Cryptech_ProposalBot",
-    "Node Monitoring": "https://github.com/dvjromashkin/cosmos-monitoring"
-  },
-  "tools_desc": {
-    "Proposal_Bot": "Telegram bot that alerts about governance proposals and voting activity for Celestia.",
-    "Node Monitoring": "Open-source monitoring stack for Cosmos-based nodes (Prometheus/Grafana-style monitoring approach)."
-  },
-  "content_url": {
-    "Russian Medium": "https://cryptech-nodes.medium.com/%D0%BE%D0%B1%D0%B7%D0%BE%D1%80-%D1%81%D0%B5%D1%82%D0%B8-celestia-3b5a0865c7f1",
-    "Guide": "https://services.cryptech.com.ua/mainnet/celestia/installation/README/"
- }
-  },
-{
   "name": "Stakeflow",
   "webservices": "",
   "x": "stakeflow",
@@ -381,37 +354,6 @@
   }
 },
 {
-  "name": "Provalidator",
-  "webservices": "https://nodeservice.provalidator.com/docs/Network/Celestia",
-  "x": "Provalidator",
-  "validatorlogo": "provalidator.jpg",
-  "tools": "Governance Alert Bots",
-  "tools_url": {
-    "Governance Alert Bots": "https://github.com/Zenon-provalidator/celelstia_proposal_bot"
-  },
-   "tools_desc": {
-    "Governance Alert Bots": "Governance monitoring bots that notify about new proposals, voting periods, and key governance events."
-  }
-},
-{
-  "name": "Moonlet",
-  "webservices": "https://dashboard.moonlet.app/dashboard/?blockchain=TIA",
-  "x": "moonlet_hq",
-  "validatorlogo": "moonlet.jpg",
-  "explorer": "",
-  "peers": "cd37f245a236b7f695d06d99064c7d00af1ffb01@65.108.68.213:26657",
-  "seeds": "",
-  "api": "https://celestia-api.pub.moonlet.cloud/celestia-public",
-  "rpc": "https://celestia-rpc.pub.moonlet.cloud/celestia-public",
-  "grpc": "celestia-grpc.pub.moonlet.cloud:9099/celestia-public",
-  "snapshot": "https://dashboard.moonlet.app/dashboard/snapshots/?blockchain=TIA",
-  "addrbook": "https://snapshots.moonlet.cloud/mainnet/dymension/addrbook.json",
-  "genesis": "https://snapshots.moonlet.cloud/mainnet/dymension/genesis.json",
-  "tools_url": {
-    "Dashboard": "https://dashboard.moonlet.app/dashboard/?blockchain=TIA"
-  }
-},
-{
   "name": "Conqueror",
   "webservices": "",
   "x": "Conquerorr_1",
@@ -517,30 +459,6 @@
     "WEB3connect event website": "https://web3connect.fr/2024"
   }
 },
-{
-  "name": "Nodes Hub",
-  "webservices": "https://services.nodeshub.online/mainnet-networks/celestia/",
-  "x": "NodesHub",
-  "validatorlogo": "nodeshub.jpg",
-  "explorer": "https://explorer.nodeshub.online/celestia",
-  "peers": "81ca14a1bc274ece31b17115e938fe99135b5873@103.6.91.38:26657",
-  "seeds": "6f6a3a908634b79b6fe7c4988efec2553f188234@celestia.seed.nodeshub.online:11656",
-  "api": "https://celestia.archive.api.nodeshub.online",
-  "rpc": "https://celestia.archive.rpc.nodeshub.online",
-  "grpc": "https://celestia.archive.grpc.nodeshub.online",
-  "archive_snapshot": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/snapshot/archive",
-  "snapshot": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/snapshot/pruned",
- "addrbook": "",
- "tools_url": {
-   "State-Sync": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/state-sync"
-  },
-  "tools_desc": {
-    "State-Sync": "State sync parameters and endpoints for accelerating Celestia node bootstrap."
-  },
-   "content_url": {
-     "Installation guide": "https://services.nodeshub.online/mainnet-networks/celestia/celestia-app/installation"   
-     }
-  },
 {
   "name": "Pro-Nodes75",
   "webservices": "",
