@@ -59,11 +59,11 @@ To add or remove a validator from monitoring, submit a PR editing the correspond
 
 ## Regional Agents
 
-| Location | IP | Covers |
-|---|---|---|
-| 🇺🇸 United States (St. Louis) | 148.72.141.245 | All chains |
-| 🇪🇺 Europe (France) | 92.204.168.57 | All chains |
-| 🇨🇦 Canada | 51.79.78.121 | All chains |
+| Location | Covers |
+|---|---|
+| 🇺🇸 United States (St. Louis) | All chains |
+| 🇪🇺 Europe (France) | All chains |
+| 🇨🇦 Canada | All chains |
 
 ---
 
