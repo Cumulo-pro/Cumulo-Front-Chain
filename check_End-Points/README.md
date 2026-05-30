@@ -1,4 +1,4 @@
-# 🛰️ check_d : Decentralized Endpoint Monitoring Tool
+# 🛰️ check_d — Decentralized Endpoint Monitoring Tool
 
 **check_d** is a decentralized monitoring system designed to evaluate the health, availability, synchronization, and performance of public blockchain endpoints. Unlike traditional tools, it performs **real protocol-level queries** (JSON-RPC, gRPC, REST) from **multiple geographic locations**, generating reproducible metrics for infrastructure observability.
 
@@ -75,7 +75,7 @@ The decentralized nature of the agents makes it easy to expand across more data 
 
 | Feature | Description |
 |---|---|
-| Real RPC calls | Uses `GET /status` or `eth_blockNumber` - not synthetic ping or TCP handshakes |
+| Real RPC calls | Uses `GET /status` or `eth_blockNumber` — not synthetic ping or TCP handshakes |
 | Multi-region probes | Simulates real-world user experience from US, EU, and CA |
 | Uniform logic | All nodes in a network are tested using the exact same rules |
 | Transparent data | All endpoints, scripts, and configurations are open and auditable |
@@ -115,7 +115,7 @@ The decentralized nature of the agents makes it easy to expand across more data 
 1. A hosted [`chains.json`](https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/chains.json) file defines which chains to test and where to fetch RPC endpoint lists
 2. Each regional agent (`server-rpc.js`) fetches the validator list for each chain from GitHub every 5 minutes
 3. Each endpoint is queried concurrently (up to 5 simultaneous probes) using `GET /status`
-4. Results - including latency, block height, moniker, version, and sync status - are stored in memory
+4. Results — including latency, block height, moniker, version, and sync status — are stored in memory
 5. A reliability history is persisted to `reliability.json` (up to 2,016 entries per endpoint, ~7 days at 5-min intervals)
 6. The central aggregator merges results from all regional agents, computes average latency, and caches the combined output for 5 minutes
 7. The public API and dashboards consume the aggregator endpoint
@@ -126,13 +126,13 @@ The decentralized nature of the agents makes it easy to expand across more data 
 
 The system currently includes agents in:
 
-- 🇺🇸 United States (Velia 2, St. Louis)
-- 🇪🇺 Europe (BigVelia14T-2, France)
-- 🇨🇦 Canada (OVH R2)
+- 🇺🇸 United States (St. Louis)
+- 🇪🇺 Europe (France)
+- 🇨🇦 Canada
 
 Each agent performs a **real `GET /status` call** from its region:
 
-- Not just pings - actual application-layer queries
+- Not just pings — actual application-layer queries
 - Latency is measured from the moment the request is sent to when a valid JSON response is received
 - Full node metadata is retrieved: block height, sync status, version, moniker, tx_index
 
@@ -157,7 +157,7 @@ The central aggregator (`aggregator.js`) performs:
 The aggregator is intentionally **transparent**:
 - It does **not** normalize or reinterpret results
 - It does **not** hide or smooth error states
-- It only matches, merges, and exposes - all logic lives in the agents
+- It only matches, merges, and exposes — all logic lives in the agents
 
 ---
 
@@ -216,7 +216,7 @@ Each regional agent runs with the following configuration:
 | `HISTORY_LIMIT` | Max reliability checks stored per endpoint | **2,016 (~7 days)** |
 | `CACHE_TTL` | Aggregator cache duration | **300,000 ms (5 min)** |
 
-> ⚠️ Endpoints that do not respond within 8 seconds are marked as `Error`. This is intentional - a node that slow is not useful for real-world usage.
+> ⚠️ Endpoints that do not respond within 8 seconds are marked as `Error`. This is intentional — a node that slow is not useful for real-world usage.
 
 ---
 
