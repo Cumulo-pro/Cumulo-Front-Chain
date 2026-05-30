@@ -15,6 +15,14 @@
     "name": "Celestia testnet",
     "url": "https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/Celestia/data/validators_testnet.json"
   },
+   {
+    "name": "Cosmos mainnet",
+    "url": "https://raw.githubusercontent.com/Cumulo-pro/cumulo-cosmoshub-infra/refs/heads/main/data/validators.json"
+  },
+    {
+    "name": "Cosmos testnet",
+    "url": "https://raw.githubusercontent.com/Cumulo-pro/cumulo-cosmoshub-infra/refs/heads/main/data/validators_testnet.json"
+  },
   {
     "name": "Dymension mainnet",
     "url": "https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/Dymension/data/validators.json"
