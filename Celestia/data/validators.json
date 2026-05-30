@@ -293,17 +293,8 @@
   "webservices": "",
   "x": "f5nodes",
   "validatorlogo": "f5nodes.jpg",
-  "peers": "ec39096b831861bcda43896d098771fa9587ebce@seed.f5nodes.com:61456",
-  "seeds": "ec39096b831861bcda43896d098771fa9587ebce@seed.f5nodes.com:61456",
-  "api": "https://celestia-api.f5nodes.com",
-  "rpc": "https://celestia-rpc.f5nodes.com",
-  "grpc": "celestia-grpc.f5nodes.com:9390",
-  "archive_snapshot": "https://celestia-snapshots-archive.f5nodes.com",
-  "snapshot": "https://celestia-snapshots.f5nodes.com",
-  "addrbook": "",
   "tools": "Monitoring tool, Celestia Wiki, DA Nodes Management Script",
   "tools_url": {
-    "Monitoring tool": "https://celestia.f5nodes.com",
     "Celestia Wiki": "https://wiki.f5nodes.com",
     "DA Nodes Management Script": "https://github.com/f5nodes/celestia-da-nodes",
     "Celestia Endpoints Ninja" : "https://celestia.endpoints.ninja/"
