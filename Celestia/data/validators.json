@@ -731,21 +731,7 @@
       "Remote Signing via TMKMS": "Guide to set up Soft-Sign option via TMKMS for secure remote signing on Celestia mainnet."
     }
   },
-  {
-    "name": "Trusted Point",
-    "webservices": "https://github.com/trusted-point",
-    "x": "trusted_point",
-    "validatorlogo": "trustedpoint.jpg",
-    "tools_url": {
-      "Discord Monitoring Bot": "https://github.com/trusted-point/celestia-tools/tree/main/monitoring-bot",
-      "Terraform Infrastructure": "https://github.com/trusted-point/celestia-tools/tree/main/terraform-modules"
-    },
-    "tools_desc": {
-      "Discord Monitoring Bot": "Discord bot for Celestia network monitoring providing validator insights, governance tracking, upgrade alerts and emergency notifications.",
-      "Terraform Infrastructure": "Comprehensive Terraform solution for deploying, monitoring and managing Celestia infrastructure at scale."
-    }
-  },
-  {
+ {
     "name": "Alphab",
     "webservices": "https://alphab.ai/s/m/celestia",
     "x": "alphab_ai",
