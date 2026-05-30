@@ -301,16 +301,6 @@
   }
 },
 {
-  "name": "Wavefive",
-  "webservices": "",
-  "x": "jimwavefive",
-  "validatorlogo": "wavefive.jpg",
-  "api": "https://celestia-api.0xcryptovestor.com",
-  "rpc": "https://celestia-rpc.0xcryptovestor.com",
-  "grpc": "https://celestia-grpc.0xcryptovestor.com",
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#wavefive"
-},
-{
   "name": "F5 Nodes",
   "webservices": "",
   "x": "f5nodes",
