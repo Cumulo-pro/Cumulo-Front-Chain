@@ -746,6 +746,57 @@
     "Celestia Upgrade Monitor": "Open-source monitor that tracks Celestia upgrades and helps operators follow coordinated releases."
   }
   },
+    {
+    "name": "AmSolutions",
+    "webservices": "https://github.com/AlexToTheMoon/AM-Solutions",
+    "x": "AlexToTheMoon",
+    "validatorlogo": "",
+    "seeds": "3abb9ad6d7a3c728984c4b7e9c05e91731779865@seed-celestia.theamsolutions.info:23656",
+    "tools_url": {
+      "Remote Signing via TMKMS": "https://github.com/AlexToTheMoon/AM-Solutions/blob/main/tkms/celestia/README.md"
+    },
+    "tools_desc": {
+      "Remote Signing via TMKMS": "Guide to set up Soft-Sign option via TMKMS for secure remote signing on Celestia mainnet."
+    }
+  },
+  {
+    "name": "Trusted Point",
+    "webservices": "https://github.com/trusted-point",
+    "x": "trusted_point",
+    "validatorlogo": "trustedpoint.jpg",
+    "tools_url": {
+      "Discord Monitoring Bot": "https://github.com/trusted-point/celestia-tools/tree/main/monitoring-bot",
+      "Terraform Infrastructure": "https://github.com/trusted-point/celestia-tools/tree/main/terraform-modules"
+    },
+    "tools_desc": {
+      "Discord Monitoring Bot": "Discord bot for Celestia network monitoring providing validator insights, governance tracking, upgrade alerts and emergency notifications.",
+      "Terraform Infrastructure": "Comprehensive Terraform solution for deploying, monitoring and managing Celestia infrastructure at scale."
+    }
+  },
+  {
+    "name": "Alphab",
+    "webservices": "https://alphab.ai/s/m/celestia",
+    "x": "alphab_ai",
+    "validatorlogo": "",
+    "tools_url": {
+      "Analytics & Staking Dashboard": "https://alphab.ai/s/m/celestia"
+    },
+    "tools_desc": {
+      "Analytics & Staking Dashboard": "Validator monitoring dashboard with graphs for signed/missed blocks, commission, stake amount and performance over time."
+    }
+  },
+  {
+    "name": "P-OPS",
+    "webservices": "https://github.com/P-OPSTeam",
+    "x": "POPSTeam",
+    "validatorlogo": "p-ops.jpg",
+    "tools_url": {
+      "Monitoring Stack for DA Nodes": "https://github.com/P-OPSTeam/celestia-tools/tree/main/grafana"
+    },
+    "tools_desc": {
+      "Monitoring Stack for DA Nodes": "Grafana-based monitoring stack for Celestia DA nodes including local OTEL collector, prometheus metrics forwarding and dashboard visualization."
+    }
+  },
   {
   "name": "Cumulo",
   "x": "Cumulo_pro",
