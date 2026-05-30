@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmos-mainnet-governance-proposal-1039-2026-05-30",
+  "date": "2026-05-30T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1039 on Cosmos Hub mainnet: Spam/scam proposal claiming to burn ATOM to increase its price, while promoting a fraudulent ATOM airdrop via an external website. Voting period runs from May 29 to June 5, 2026. Cumulo voted No with Veto.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1039",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=2D560BCFE9CF746A5B34046573A275C463530710FF5B5914B8B907CE08C52871"
+},
+  {
   "id": "story-mainnet-upgrade-v1.8.0-seneca-2026-05-28",
   "date": "2026-05-28T00:00:00Z",
   "incident_type": "upgrade",
