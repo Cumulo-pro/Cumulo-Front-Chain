@@ -19,24 +19,7 @@
     "Celestia Bridge Healthcheck Script": "Open-source healthcheck script focused on Celestia Bridge nodes (connectivity and operational status checks)."
   }
 },
-  {
-    "name": "BlackNodes",
-    "webservices": "",
-    "x": "BlackNodesHQ",
-    "validatorlogo": "blacknodes.jpg",
-    "explorer": "https://explorer.blacknodes.net/celestia",
-    "rpc": "https://celestia-testnet-rpc.blacknodes.net",
-    "grpc": "celestia-testnet-grpc.blacknodes.net:17090",
-    "snapshot": "https://files.blacknodes.net/celestia/celestia_mocha-4.tar.lz4",
-    "tools": "Celestia Faucet",
-    "tools_url": {
-       "Celestia Faucet By BlackNodes": "https://celestia-faucet.blacknodes.net"
-    },
-     "tools_desc": {
-    "Celestia Faucet By BlackNodes": "Public faucet to request testnet tokens for Celestia-related testing and onboarding."
-  }
-},
-{
+ {
     "name": "Lavender.Five Nodes",
     "webservices": "https://www.lavenderfive.com/tools/celestia/overview",
     "x": "lavender_five",
