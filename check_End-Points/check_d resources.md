@@ -1,4 +1,4 @@
-# 🔌 check_d — Public Resources & Chain Coverage
+# 🔌 check_d - Public Resources & Chain Coverage
 
 ## Live API Endpoints
 
@@ -18,28 +18,28 @@
 |---|---|---|
 | Celestia | Mainnet | [cumulo.pro/services/celestia_v2/rpcscan](https://cumulo.pro/services/celestia_v2/rpcscan) |
 | Celestia | Testnet (Mocha) | [cumulo.pro/services/celestia_mocha/rpcscan](https://cumulo.pro/services/celestia_mocha/rpcscan) |
-| XRPL EVM | Testnet | — |
-| XRPL EVM | Mainnet | — |
-| Story Protocol | Aeneid (testnet) | — |
-| Story Protocol | Mainnet | — |
-| Dymension | Mainnet | — |
-| Monad | Testnet | — |
-| Monad | Mainnet | — |
+| XRPL EVM | Testnet | - |
+| XRPL EVM | Mainnet | - |
+| Story Protocol | Aeneid (testnet) | - |
+| Story Protocol | Mainnet | - |
+| Dymension | Mainnet | - |
+| Monad | Testnet | - |
+| Monad | Mainnet | - |
 
 ### EVM JSON-RPC (`/aggregate-evm`)
 
 | Chain | Network | Dashboard |
 |---|---|---|
-| XRPL EVM | Mainnet | — |
-| XRPL EVM | Testnet | — |
-| Story Protocol | Mainnet | — |
+| XRPL EVM | Mainnet | - |
+| XRPL EVM | Testnet | - |
+| Story Protocol | Mainnet | - |
 
 ### REST API (`/aggregate-apis`)
 
 | Chain | Network | Dashboard |
 |---|---|---|
-| XRPL EVM | Mainnet | — |
-| XRPL EVM | Testnet | — |
+| XRPL EVM | Mainnet | - |
+| XRPL EVM | Testnet | - |
 
 ---
 
