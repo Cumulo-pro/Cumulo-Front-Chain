@@ -1,4 +1,4 @@
-# 🔌 check_d : Public Resources & Chain Coverage
+# 🔌 check_d — Public Resources & Chain Coverage
 
 ## Live API Endpoints
 
@@ -22,11 +22,11 @@
 | Cosmos Hub | Testnet | [cumulo.pro/services/cosmos_testnet/rpcscan](https://cumulo.pro/services/cosmos_testnet/rpcscan) |
 | XRPL EVM | Mainnet | [cumulo.pro/services/xrplevm_mainnet/rpcscan](https://cumulo.pro/services/xrplevm_mainnet/rpcscan) |
 | XRPL EVM | Testnet | [cumulo.pro/services/xrplevm/rpcscan](https://cumulo.pro/services/xrplevm/rpcscan) |
-| Story Protocol | Aeneid (testnet) | - |
-| Story Protocol | Mainnet | - |
-| Dymension | Mainnet | - |
-| Monad | Testnet | - |
-| Monad | Mainnet | - |
+| Story Protocol | Aeneid (testnet) | — |
+| Story Protocol | Mainnet | — |
+| Dymension | Mainnet | — |
+| Monad | Testnet | — |
+| Monad | Mainnet | — |
 
 ### Cosmos REST API (`/aggregate-apis`)
 
@@ -38,16 +38,16 @@
 | Cosmos Hub | Testnet | [cumulo.pro/services/cosmos_testnet/apiscan](https://cumulo.pro/services/cosmos_testnet/apiscan) |
 | XRPL EVM | Mainnet | [cumulo.pro/services/xrplevm_mainnet/apiscan](https://cumulo.pro/services/xrplevm_mainnet/apiscan) |
 | XRPL EVM | Testnet | [cumulo.pro/services/xrplevm/apiscan](https://cumulo.pro/services/xrplevm/apiscan) |
-| Story Protocol | Mainnet | - |
-| Dymension | Mainnet | - |
+| Story Protocol | Mainnet | — |
+| Dymension | Mainnet | — |
 
 ### EVM JSON-RPC (`/aggregate-evm`)
 
 | Chain | Network | Dashboard |
 |---|---|---|
-| XRPL EVM | Mainnet | - |
-| XRPL EVM | Testnet | - |
-| Story Protocol | Mainnet | - |
+| XRPL EVM | Mainnet | — |
+| XRPL EVM | Testnet | — |
+| Story Protocol | Mainnet | — |
 
 ---
 
@@ -66,11 +66,11 @@ To add or remove a validator, edit the corresponding JSON file on GitHub. Change
 
 ## Regional Agents
 
-| Location | RPC port | API port | Covers |
-|---|---|---|---|
-| 🇺🇸 United States (St. Louis) | 3003 | 3005 | All chains |
-| 🇪🇺 Europe (France) | 3003 | 3006* | All chains |
-| 🇨🇦 Canada | 3003 | 3005 | All chains |
+| Location | RPC port | API port | EVM port | Covers |
+|---|---|---|---|---|
+| 🇺🇸 United States (St. Louis) | 3003 | 3005 | 3004 | All chains |
+| 🇪🇺 Europe (France) | 3003 | 3006* | 3004 | All chains |
+| 🇨🇦 Canada | 3003 | 3005 | 3004 | All chains |
 
 *EU API checker uses port 3006 because port 3005 is occupied by another service on that server.
 

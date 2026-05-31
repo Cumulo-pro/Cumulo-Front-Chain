@@ -1,4 +1,4 @@
-# 🛰️ check_d : Decentralized Endpoint Monitoring Tool
+# 🛰️ check_d — Decentralized Endpoint Monitoring Tool
 
 **check_d** is a decentralized monitoring system designed to evaluate the health, availability, synchronization, and performance of public blockchain endpoints. Unlike traditional tools, it performs **real protocol-level queries** (JSON-RPC, gRPC, REST) from **multiple geographic locations**, generating reproducible metrics for infrastructure observability.
 
@@ -35,17 +35,17 @@ Each endpoint is tested using a **real application-level request** depending on 
 | Tendermint / Cosmos SDK RPC | `GET /status` | `server-rpc.js` |
 | Cosmos SDK REST API | `GET /cosmos/auth/v1beta1/bech32` | `server-api.js` |
 | EVM-compatible JSON-RPC | `eth_blockNumber` | `server-evm.js` |
-| gRPC | `grpc.health.v1.Health/Check` | - |
+| gRPC | `grpc.health.v1.Health/Check` | — |
 
 > ⚠️ **RPC checker:** Uses `GET /status` (HTTP REST) rather than `POST /` JSON-RPC. This avoids false negatives on nodes whose reverse proxy only exposes the REST interface.
 
-> ⚠️ **API checker:** Uses `GET /cosmos/auth/v1beta1/bech32` - a lightweight standard Cosmos SDK endpoint that returns the chain's bech32 prefix. No browser or Puppeteer needed - plain `fetch` is sufficient.
+> ⚠️ **API checker:** Uses `GET /cosmos/auth/v1beta1/bech32` — a lightweight standard Cosmos SDK endpoint that returns the chain's bech32 prefix. No browser or Puppeteer needed — plain `fetch` is sufficient.
 
 ---
 
 ## 🌐 Decentralized Architecture
 
-The system runs two independent checker pipelines in parallel:
+The system runs three independent checker pipelines in parallel:
 
 ### RPC Checker Pipeline
 ```
@@ -61,14 +61,21 @@ The system runs two independent checker pipelines in parallel:
 [ CA Agent - server-api.js ]  ─┘
 ```
 
+### EVM JSON-RPC Checker Pipeline
+```
+[ US Agent - server-evm.js ]  ─┐
+[ EU Agent - server-evm.js ]  ─┼──▶  aggregator-evm.js  ──▶  /aggregate-evm  ──▶  Dashboards
+[ CA Agent - server-evm.js ]  ─┘
+```
+
 ### Current Infrastructure
 
 | Role | Region |
 |---|---|
-| RPC Checker + API Checker | 🇺🇸 St. Louis, US |
-| RPC Checker + API Checker | 🇪🇺 France, EU |
-| RPC Checker + API Checker | 🇨🇦 Canada, CA |
-| RPC Aggregator + API Aggregator | 🇺🇸 St. Louis, US |
+| RPC Checker + API Checker + EVM Checker | 🇺🇸 St. Louis, US |
+| RPC Checker + API Checker + EVM Checker | 🇪🇺 France, EU |
+| RPC Checker + API Checker + EVM Checker | 🇨🇦 Canada, CA |
+| RPC Aggregator + API Aggregator + EVM Aggregator | 🇺🇸 St. Louis, US |
 
 ---
 
@@ -76,7 +83,7 @@ The system runs two independent checker pipelines in parallel:
 
 | Feature | Description |
 |---|---|
-| Real protocol calls | Uses `GET /status`, `eth_blockNumber`, or `/cosmos/auth/v1beta1/bech32` - not pings or TCP |
+| Real protocol calls | Uses `GET /status`, `eth_blockNumber`, or `/cosmos/auth/v1beta1/bech32` — not pings or TCP |
 | Multi-region probes | Simulates real-world user experience from US, EU, and CA |
 | Uniform logic | All nodes in a network are tested using the exact same rules |
 | Transparent data | All endpoints, scripts, and configurations are open and auditable |
@@ -84,7 +91,7 @@ The system runs two independent checker pipelines in parallel:
 | Public results | JSON API and web dashboards are open to the public, no paywalls |
 | Anti-overlap protection | Each agent skips a new cycle if the previous one is still running |
 | Aggregator cache | Both aggregators cache results for 5 minutes, responding instantly |
-| No browser dependency | REST API checker uses plain `fetch` - no Puppeteer or Chromium required |
+| No browser dependency | REST API checker uses plain `fetch` — no Puppeteer or Chromium required |
 
 ---
 
@@ -132,7 +139,18 @@ The system runs two independent checker pipelines in parallel:
 5. Saves a reliability history entry to `reliability_apis.json`
 6. Serves results at `:3005/check-apis` (or `:3006` if port is occupied)
 
-Both checkers run every **5 minutes** with anti-overlap protection.
+Both RPC and API checkers run every **5 minutes** with anti-overlap protection.
+
+### EVM JSON-RPC Checker (`server-evm.js`)
+
+1. Reads the same [`chains.json`](https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/chains.json)
+2. For each validator with an `evm` field, sends `POST {evm}` with body `{"method":"eth_blockNumber",...}`
+3. Parses the hex block number from the response (`data.result`)
+4. Records latency (null on error) and reliability history to `evm-reliability.json`
+5. **Persists results to disk** (`data/check-evm.json`) — survives restarts with warm cache
+6. Serves results at `:3004/check-evm`
+
+> ⚠️ The EVM checker refreshes every **1 hour** (not 5 minutes) — EVM block times are much faster and the checker is more resource-intensive due to Keep-Alive connection pooling across many chains.
 
 ---
 
@@ -239,6 +257,17 @@ Both aggregators follow the same design:
 | `HISTORY_LIMIT` | Max reliability checks stored | **2,016 (~7 days)** |
 | `CACHE_TTL` | Aggregator cache duration | **300,000 ms (5 min)** |
 
+### EVM JSON-RPC Checker (`server-evm.js`)
+
+| Parameter | Description | Value |
+|---|---|---|
+| `RPC_TIMEOUT_MS` | Max time per probe | **5,000 ms** (configurable via env) |
+| `CONCURRENCY_LIMIT` | Max simultaneous probes per chain | **8** (configurable via env) |
+| `REFRESH_MS` | Full scan interval | **3,600,000 ms (1 hour)** (configurable via env) |
+| `HISTORY_LIMIT` | Max reliability checks stored | **2,016 (~84 days at 1h intervals)** |
+| Aggregator refresh | How often aggregator polls checkers | **30 seconds** |
+| Snapshot persistence | Results saved to disk on every refresh | `data/check-evm.json` |
+
 ---
 
 ## 📏 How Reliability Is Calculated
@@ -280,19 +309,19 @@ Endpoint lists are managed through GitHub. Each validator entry can have both `r
 
 ### RPC endpoint works in browser but appears as Error
 
-- check_d uses `GET /status` (not POST JSON-RPC) - should work on all standard proxies
+- check_d uses `GET /status` (not POST JSON-RPC) — should work on all standard proxies
 - If still failing: check for datacenter IP blocks (403), rate limiting, or timeout > 8s
 - Verify: `curl -o /dev/null -w "%{http_code}" https://rpc.example.com/status`
 
 ### REST API endpoint works in browser but appears as Error
 
-- The checker queries `/cosmos/auth/v1beta1/bech32` - confirm this path is exposed
+- The checker queries `/cosmos/auth/v1beta1/bech32` — confirm this path is exposed
 - Some API nodes only expose selected endpoints
 - Verify: `curl https://api.example.com/cosmos/auth/v1beta1/bech32`
 
 ### Reliability shows 0% for a new endpoint
 
-Normal - history accumulates from first check. Stabilizes over 24–48 hours.
+Normal — history accumulates from first check. Stabilizes over 24–48 hours.
 
 ### The dashboard shows stale data
 
@@ -302,6 +331,16 @@ Agents scan every 5 min, aggregator caches 5 min → max 10 min stale. Refresh a
 
 Check that the EU API checker is running: `sudo systemctl status api-checker` on the EU server.
 Note: the EU API checker may run on a non-standard port if 3005 is occupied by another service.
+
+### EVM endpoint appears as Error but works in browser
+
+The EVM checker uses `POST eth_blockNumber` — unlike RPC/API checkers, POST is correct here (EVM JSON-RPC is POST-only by spec). If it fails:
+- Check for rate limiting or IP blocks
+- Verify: `curl -X POST -H "Content-Type: application/json" -d '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}' https://evm.example.com`
+
+### EVM dashboard shows old data after restart
+
+The EVM checker loads its last snapshot from `data/check-evm.json` on startup. New data arrives after the first full refresh cycle (up to 1 hour). Check `/health` endpoint for `updatedAt`.
 
 ---
 
