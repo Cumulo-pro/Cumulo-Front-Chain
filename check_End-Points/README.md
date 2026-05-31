@@ -1,4 +1,4 @@
-# 🛰️ check_d : Decentralized Endpoint Monitoring Tool
+# 🛰️ check_d — Decentralized Endpoint Monitoring Tool
 
 **check_d** is a decentralized monitoring system designed to evaluate the health, availability, synchronization, and performance of public blockchain endpoints. Unlike traditional tools, it performs **real protocol-level queries** (JSON-RPC, gRPC, REST) from **multiple geographic locations**, generating reproducible metrics for infrastructure observability.
 
@@ -18,10 +18,10 @@ Yet most existing endpoint checkers are **centralized**, based on pings or TCP c
 
 **check_d** was built to address these limitations by offering a decentralized, extensible, and transparent monitoring system that:
 
-- Executes **real RPC calls** via `GET /status` (Tendermint/Cosmos) or `eth_blockNumber` (EVM)
+- Executes **real protocol-level queries** (`GET /status`, `eth_blockNumber`, `/cosmos/auth/v1beta1/bech32`)
 - Measures **latency from multiple regions** (🇺🇸 US, 🇪🇺 EU, 🇨🇦 CA)
 - Collects metrics such as **average latency, block height, reliability**, and sync status
-- Exposes a structured **JSON API** for programmatic access
+- Exposes structured **JSON APIs** for programmatic access
 - Provides per-network **dashboards** for live comparison and exploration
 
 ---
@@ -30,44 +30,45 @@ Yet most existing endpoint checkers are **centralized**, based on pings or TCP c
 
 Each endpoint is tested using a **real application-level request** depending on its protocol:
 
-| Protocol | Query Used |
-|---|---|
-| Tendermint / Cosmos SDK RPC | `GET /status` |
-| EVM-compatible JSON-RPC | `eth_blockNumber` |
-| gRPC | `grpc.health.v1.Health/Check` |
-| REST API | `GET /node_info` or equivalent |
+| Protocol | Query Used | Checker |
+|---|---|---|
+| Tendermint / Cosmos SDK RPC | `GET /status` | `server-rpc.js` |
+| Cosmos SDK REST API | `GET /cosmos/auth/v1beta1/bech32` | `server-api.js` |
+| EVM-compatible JSON-RPC | `eth_blockNumber` | `server-evm.js` |
+| gRPC | `grpc.health.v1.Health/Check` | — |
 
-> ⚠️ **Important:** check_d uses `GET /status` (HTTP REST) rather than `POST` JSON-RPC for Tendermint endpoints. This avoids false negatives on nodes whose reverse proxy (nginx/Cloudflare) only exposes the REST interface, which is the standard public configuration.
+> ⚠️ **RPC checker:** Uses `GET /status` (HTTP REST) rather than `POST /` JSON-RPC. This avoids false negatives on nodes whose reverse proxy only exposes the REST interface.
 
-These queries:
-
-- Are sent from **distributed regional agents**
-- Measure actual **response time (latency)**
-- Confirm whether the node **responds correctly with valid data**
-- Extract additional metadata: block height, version, moniker, sync flags, etc.
+> ⚠️ **API checker:** Uses `GET /cosmos/auth/v1beta1/bech32` — a lightweight standard Cosmos SDK endpoint that returns the chain's bech32 prefix. No browser or Puppeteer needed — plain `fetch` is sufficient.
 
 ---
 
 ## 🌐 Decentralized Architecture
 
-The system consists of three independent layers:
+The system runs two independent checker pipelines in parallel:
 
+### RPC Checker Pipeline
 ```
 [ US Agent - server-rpc.js ]  ─┐
-[ EU Agent - server-rpc.js ]  ─┼──▶  Aggregator  ──▶  /aggregate-rpcs  ──▶  Dashboards / APIs
+[ EU Agent - server-rpc.js ]  ─┼──▶  aggregator.js  ──▶  /aggregate-rpcs  ──▶  Dashboards
 [ CA Agent - server-rpc.js ]  ─┘
+```
+
+### REST API Checker Pipeline
+```
+[ US Agent - server-api.js ]  ─┐
+[ EU Agent - server-api.js ]  ─┼──▶  aggregator-api.js  ──▶  /aggregate-apis  ──▶  Dashboards
+[ CA Agent - server-api.js ]  ─┘
 ```
 
 ### Current Infrastructure
 
 | Role | Region |
 |---|---|
-| Checker | 🇺🇸 St. Louis, US |
-| Checker | 🇪🇺 France, EU |
-| Checker | 🇨🇦 Canada, CA |
-| Aggregator | 🇺🇸 St. Louis, US |
-
-The decentralized nature of the agents makes it easy to expand across more data centers and jurisdictions, increasing transparency and trust.
+| RPC Checker + API Checker | 🇺🇸 St. Louis, US |
+| RPC Checker + API Checker | 🇪🇺 France, EU |
+| RPC Checker + API Checker | 🇨🇦 Canada, CA |
+| RPC Aggregator + API Aggregator | 🇺🇸 St. Louis, US |
 
 ---
 
@@ -75,14 +76,15 @@ The decentralized nature of the agents makes it easy to expand across more data 
 
 | Feature | Description |
 |---|---|
-| Real RPC calls | Uses `GET /status` or `eth_blockNumber` - not synthetic ping or TCP handshakes |
+| Real protocol calls | Uses `GET /status`, `eth_blockNumber`, or `/cosmos/auth/v1beta1/bech32` — not pings or TCP |
 | Multi-region probes | Simulates real-world user experience from US, EU, and CA |
 | Uniform logic | All nodes in a network are tested using the exact same rules |
 | Transparent data | All endpoints, scripts, and configurations are open and auditable |
 | Extensible design | Easily supports new chains and protocols via `chains.json` config |
 | Public results | JSON API and web dashboards are open to the public, no paywalls |
 | Anti-overlap protection | Each agent skips a new cycle if the previous one is still running |
-| Aggregator cache | The aggregator caches results for 5 minutes, responding instantly to all requests |
+| Aggregator cache | Both aggregators cache results for 5 minutes, responding instantly |
+| No browser dependency | REST API checker uses plain `fetch` — no Puppeteer or Chromium required |
 
 ---
 
@@ -92,33 +94,45 @@ The decentralized nature of the agents makes it easy to expand across more data 
 |---|---|---|
 | Real latency | ❌ No (uses ping/TCP) | ✅ Yes, real protocol calls |
 | Decentralized agents | ❌ No | ✅ Yes, globally distributed |
-| Cross-chain support | ❌ Limited | ✅ Yes (EVM, Cosmos, gRPC, etc.) |
+| Cross-chain support | ❌ Limited | ✅ Yes (EVM, Cosmos RPC, Cosmos REST, gRPC) |
 | Extensible | ❌ Closed | ✅ Open-source and modular |
 | Validator comparison | ❌ Not supported | ✅ Yes, per-provider latency and reliability |
 | Detailed metrics | ❌ Minimal | ✅ Full latency, sync, block height, reliability |
-| False negatives | ❌ Common (POST JSON-RPC issues) | ✅ Avoided via `GET /status` |
+| False negatives | ❌ Common (POST JSON-RPC, browser issues) | ✅ Avoided via `GET /status` and plain fetch |
 
 ---
 
 ## 📈 Who Is It For?
 
-- Validator operators comparing the quality of their RPCs against others
+- Validator operators comparing the quality of their RPCs and APIs against others
 - Protocol teams monitoring public infrastructure
 - Delegators choosing high-quality validators
 - Indexers and explorers selecting fast and reliable endpoints
-- dApp developers seeking the best RPC provider per region
+- dApp developers seeking the best RPC or API provider per region
 
 ---
 
 ## 🔁 How It Works (Step by Step)
 
-1. A hosted [`chains.json`](https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/chains.json) file defines which chains to test and where to fetch RPC endpoint lists
-2. Each regional agent (`server-rpc.js`) fetches the validator list for each chain from GitHub every 5 minutes
-3. Each endpoint is queried concurrently (up to 5 simultaneous probes) using `GET /status`
-4. Results - including latency, block height, moniker, version, and sync status - are stored in memory
-5. A reliability history is persisted to `reliability.json` (up to 2,016 entries per endpoint, ~7 days at 5-min intervals)
-6. The central aggregator merges results from all regional agents, computes average latency, and caches the combined output for 5 minutes
-7. The public API and dashboards consume the aggregator endpoint
+### RPC Checker (`server-rpc.js`)
+
+1. Reads [`chains.json`](https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/chains.json) to get validator lists per chain
+2. For each validator with an `rpc` field, sends `GET {rpc}/status`
+3. Parses `sync_info` and `node_info` from the response
+4. Records latency, block height, moniker, version, tx_index
+5. Saves a reliability history entry to `reliability.json`
+6. Serves results at `:3003/check-rpcs`
+
+### REST API Checker (`server-api.js`)
+
+1. Reads the same [`chains.json`](https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/chains.json)
+2. For each validator with an `api` field, sends `GET {api}/cosmos/auth/v1beta1/bech32`
+3. Checks the response for a valid `bech32_prefix` field
+4. Records latency and working/error status
+5. Saves a reliability history entry to `reliability_apis.json`
+6. Serves results at `:3005/check-apis` (or `:3006` if port is occupied)
+
+Both checkers run every **5 minutes** with anti-overlap protection.
 
 ---
 
@@ -130,11 +144,7 @@ The system currently includes agents in:
 - 🇪🇺 Europe (France)
 - 🇨🇦 Canada
 
-Each agent performs a **real `GET /status` call** from its region:
-
-- Not just pings - actual application-layer queries
-- Latency is measured from the moment the request is sent to when a valid JSON response is received
-- Full node metadata is retrieved: block height, sync status, version, moniker, tx_index
+Each agent performs a **real application-layer query** from its region. Latency is measured from request sent to valid response received.
 
 > ⚠️ If an endpoint returns an error (timeout, invalid JSON, HTTP 4xx/5xx), its latency is set to `null`. Error latencies are never included in averages or regional metrics.
 
@@ -142,46 +152,31 @@ Each agent performs a **real `GET /status` call** from its region:
 
 ## 🧠 Aggregator Logic
 
-The central aggregator (`aggregator.js`) performs:
+Both aggregators follow the same design:
 
-1. Fetches results from all regional agents simultaneously
-2. Matches endpoints across regions by RPC URL
-3. Aggregates latency samples per region into `latencyByRegion`
-4. Computes `averageLatency` from all valid samples (excluding nulls and values > 8s)
-5. Passes through `reliability` as reported by the primary agent
-6. Caches the complete merged result for 5 minutes
-7. Exposes the merged result at `/aggregate-rpcs`
-
-### Aggregator Design Principles
-
-The aggregator is intentionally **transparent**:
-- It does **not** normalize or reinterpret results
-- It does **not** hide or smooth error states
-- It only matches, merges, and exposes - all logic lives in the agents
+1. Fetch results from all 3 regional agents simultaneously
+2. Match endpoints by URL across regions
+3. Aggregate latency samples per region into `latencyByRegion`
+4. Compute `averageLatency` from valid samples only (null and >8s excluded)
+5. Pass through `reliability` as reported by the agents
+6. Cache the merged result for 5 minutes
+7. Expose at `/aggregate-rpcs` or `/aggregate-apis`
 
 ---
 
 ## 🔌 Public API Endpoints
 
-check_d exposes live monitoring data through structured JSON APIs:
-
 | Checker Type | Public Endpoint |
 |---|---|
 | Tendermint / Cosmos RPC | [`https://aggregate-rpcs.cumulo.com.es/aggregate-rpcs`](https://aggregate-rpcs.cumulo.com.es/aggregate-rpcs) |
 | EVM JSON-RPC | [`https://aggregate-evm-rpcs.cumulo.com.es/aggregate-evm`](https://aggregate-evm-rpcs.cumulo.com.es/aggregate-evm) |
-| REST API | [`https://aggregate-apis.cumulo.com.es/aggregate-apis`](https://aggregate-apis.cumulo.com.es/aggregate-apis) |
-
-Each API provides:
-- Per-region latency (🇺🇸 US, 🇪🇺 EU, 🇨🇦 CA)
-- Average latency across all regions
-- Block height
-- Reliability percentage (last ~7 days)
-- Endpoint status (`Synced`, `Not Synced`, `Error`)
-- Node metadata: version, moniker, tx_index, node_id
+| Cosmos REST API | [`https://aggregate-apis.cumulo.com.es/aggregate-apis`](https://aggregate-apis.cumulo.com.es/aggregate-apis) |
 
 ---
 
-## 📊 Example API Output (Per RPC Node)
+## 📊 Example API Output
+
+### RPC Node (`/aggregate-rpcs`)
 
 ```json
 {
@@ -202,95 +197,111 @@ Each API provides:
 }
 ```
 
+### REST API Node (`/aggregate-apis`)
+
+```json
+{
+  "name": "Cumulo",
+  "api": "https://api.cosmos.cumulo.com.es",
+  "status": "Working",
+  "detail": "bech32_prefix: cosmos",
+  "reliability": 100,
+  "averageLatency": 244,
+  "latencyByRegion": [
+    { "location": "CA", "ms": 260 },
+    { "location": "US", "ms": 111 },
+    { "location": "EU", "ms": 362 }
+  ]
+}
+```
+
 ---
 
 ## ⏱️ Runtime Parameters
 
-Each regional agent runs with the following configuration:
+### RPC Checker (`server-rpc.js`)
 
 | Parameter | Description | Value |
 |---|---|---|
-| `RPC_TIMEOUT_MS` | Max time per endpoint probe before marking as Error | **8,000 ms** |
-| `CONCURRENCY_LIMIT` | Max simultaneous probes per scan cycle | **5** |
+| `RPC_TIMEOUT_MS` | Max time per probe | **8,000 ms** |
+| `CONCURRENCY_LIMIT` | Max simultaneous probes | **5** |
 | `REFRESH_MS` | Full scan interval | **300,000 ms (5 min)** |
-| `HISTORY_LIMIT` | Max reliability checks stored per endpoint | **2,016 (~7 days)** |
+| `HISTORY_LIMIT` | Max reliability checks stored | **2,016 (~7 days)** |
 | `CACHE_TTL` | Aggregator cache duration | **300,000 ms (5 min)** |
 
-> ⚠️ Endpoints that do not respond within 8 seconds are marked as `Error`. This is intentional - a node that slow is not useful for real-world usage.
+### REST API Checker (`server-api.js`)
+
+| Parameter | Description | Value |
+|---|---|---|
+| Timeout per probe | Via `node-fetch` timeout | **8,000 ms** |
+| `CONCURRENCY_LIMIT` | Max simultaneous probes | **5** |
+| `REFRESH_MS` | Full scan interval | **300,000 ms (5 min)** |
+| `HISTORY_LIMIT` | Max reliability checks stored | **2,016 (~7 days)** |
+| `CACHE_TTL` | Aggregator cache duration | **300,000 ms (5 min)** |
 
 ---
 
 ## 📏 How Reliability Is Calculated
 
-Every time a regional agent runs a check (every **5 minutes**), it:
+Every 5 minutes each agent:
 
-1. Executes a `GET /status` request to the endpoint
-2. Determines whether the endpoint is **up**:
-   - ✅ *Up* if the response contains a valid JSON with `sync_info` and `node_info`
-   - ❌ *Down* if there is no response, a timeout, an HTTP error, or invalid JSON
-3. Stores a boolean (`true` = up, `false` = down) in `reliability.json` for that endpoint URL
-4. Keeps only the **last 2,016 checks** per endpoint (~7 days at 5-min intervals)
-5. Calculates reliability as:
+1. Executes the protocol-specific query
+2. Determines if the endpoint is **up** (valid response) or **down** (error/timeout)
+3. Stores a boolean in `reliability.json` or `reliability_apis.json`
+4. Keeps only the **last 2,016 checks** (~7 days)
+5. Calculates: `reliability% = (successful_checks / total_checks) × 100`
 
-```
-reliability% = (successful_checks / total_checks) × 100
-```
-
-> **Note:** Both `Synced` and `Not Synced` count as successful. Only `Error` counts as a failure.
-
-### Interpreting Reliability Correctly
-
-Reliability reflects **historical availability**, not current health.
-
-| Scenario | What You See |
-|---|---|
-| Node failed once in 1,000 checks | 99.9% (rounds to 100%) |
-| Node just went down | Still shows previous high % |
-| Node restarted today | History accumulates from first check |
-
-Always correlate reliability with current **status**, **latency**, and **block height freshness**.
+> For RPC: both `Synced` and `Not Synced` count as successful. Only `Error` counts as failure.
+> For REST API: `Working` counts as successful. `Error` counts as failure.
 
 ---
 
 ## 📡 Validator List Management
 
-The list of endpoints to monitor is managed through GitHub:
+Endpoint lists are managed through GitHub. Each validator entry can have both `rpc` and `api` fields:
 
-- **Master chain index:** [`chains.json`](https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/chains.json)
-- **Per-chain validator lists:** e.g., [`Celestia/data/validators_testnet.json`](https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/Celestia/data/validators_testnet.json)
-
-To **add or remove a validator**, edit the corresponding JSON file on GitHub. The change will be reflected in the dashboard within **5 minutes** (the next agent scan cycle).
-
-Each validator entry format:
 ```json
-{ "name": "ValidatorName", "rpc": "https://rpc.example.com" }
+{
+  "name": "ValidatorName",
+  "rpc": "https://rpc.example.com",
+  "api": "https://api.example.com"
+}
 ```
+
+- Validators without an `rpc` field are skipped by the RPC checker
+- Validators without an `api` field are skipped by the API checker
+- Changes to GitHub are reflected in dashboards within **5 minutes**
+
+**Master chain index:** [`chains.json`](https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/chains.json)
 
 ---
 
 ## 🛠️ Troubleshooting
 
-### An endpoint works in the browser but appears as Error
+### RPC endpoint works in browser but appears as Error
 
-**Most common cause:** The node's reverse proxy (nginx/Cloudflare) only exposes `GET /status` via HTTP REST, not `POST /` JSON-RPC. check_d V4+ uses `GET /status` exclusively, which resolves this.
+- check_d uses `GET /status` (not POST JSON-RPC) — should work on all standard proxies
+- If still failing: check for datacenter IP blocks (403), rate limiting, or timeout > 8s
+- Verify: `curl -o /dev/null -w "%{http_code}" https://rpc.example.com/status`
 
-Other possible causes:
-- Response exceeds `RPC_TIMEOUT_MS` (8 seconds)
-- Endpoint blocks requests from datacenter IP ranges (403 Forbidden)
-- Valid TLS/TCP but invalid JSON response body
-- Rate limiting or throttling
+### REST API endpoint works in browser but appears as Error
 
-Always verify:
-- The HTTP response code: `curl -o /dev/null -w "%{http_code}" https://rpc.example.com/status`
-- The response body: `curl https://rpc.example.com/status | head -5`
+- The checker queries `/cosmos/auth/v1beta1/bech32` — confirm this path is exposed
+- Some API nodes only expose selected endpoints
+- Verify: `curl https://api.example.com/cosmos/auth/v1beta1/bech32`
 
 ### Reliability shows 0% for a new endpoint
 
-Normal behaviour. The history starts empty and accumulates over time. After the first successful check, reliability will show 100%. It stabilizes over 24–48 hours.
+Normal — history accumulates from first check. Stabilizes over 24–48 hours.
 
 ### The dashboard shows stale data
 
-The aggregator caches results for 5 minutes. The regional agents scan every 5 minutes. In the worst case, data can be up to **10 minutes old**. Refresh the page after waiting for the next cache cycle.
+Agents scan every 5 min, aggregator caches 5 min → max 10 min stale. Refresh after waiting for next cycle.
+
+### EU shows N/A for all API endpoints
+
+Check that the EU API checker is running: `sudo systemctl status api-checker` on the EU server.
+Note: the EU API checker may run on a non-standard port if 3005 is occupied by another service.
 
 ---
 
