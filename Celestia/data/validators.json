@@ -70,7 +70,7 @@
     "webservices": "https://polkachu.com/networks/celestia",
     "x": "polka_chu",
     "validatorlogo": "polkachu.jpg",
-    "api": "",
+    "api": "https://celestia-api.polkachu.com",
     "rpc": "https://celestia-rpc.polkachu.com",
     "grpc": "celestia-grpc.polkachu.com:11690",
     "snapshot": "https://polkachu.com/tendermint_snapshots/celestia",
