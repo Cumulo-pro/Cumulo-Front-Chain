@@ -1,4 +1,4 @@
-# 🔌 check_d : Public Resources & Chain Coverage
+# 🔌 check_d — Public Resources & Chain Coverage
 
 ## Live API Endpoints
 
@@ -20,13 +20,13 @@
 | Celestia | Testnet (Mocha) | [cumulo.pro/services/celestia_mocha/rpcscan](https://cumulo.pro/services/celestia_mocha/rpcscan) |
 | Cosmos Hub | Mainnet | [cumulo.pro/services/cosmos/rpcscan](https://cumulo.pro/services/cosmos/rpcscan) |
 | Cosmos Hub | Testnet | [cumulo.pro/services/cosmos_testnet/rpcscan](https://cumulo.pro/services/cosmos_testnet/rpcscan) |
-| XRPL EVM | Mainnet | - |
-| XRPL EVM | Testnet | - |
-| Story Protocol | Aeneid (testnet) | - |
-| Story Protocol | Mainnet | - |
-| Dymension | Mainnet | - |
-| Monad | Testnet | - |
-| Monad | Mainnet | - |
+| XRPL EVM | Mainnet | [cumulo.pro/services/xrplevm_mainnet/rpcscan](https://cumulo.pro/services/xrplevm_mainnet/rpcscan) |
+| XRPL EVM | Testnet | [cumulo.pro/services/xrplevm/rpcscan](https://cumulo.pro/services/xrplevm/rpcscan) |
+| Story Protocol | Aeneid (testnet) | — |
+| Story Protocol | Mainnet | — |
+| Dymension | Mainnet | — |
+| Monad | Testnet | — |
+| Monad | Mainnet | — |
 
 ### Cosmos REST API (`/aggregate-apis`)
 
@@ -36,18 +36,18 @@
 | Celestia | Testnet (Mocha) | [cumulo.pro/services/celestia_mocha/apiscan](https://cumulo.pro/services/celestia_mocha/apiscan) |
 | Cosmos Hub | Mainnet | [cumulo.pro/services/cosmos/apiscan](https://cumulo.pro/services/cosmos/apiscan) |
 | Cosmos Hub | Testnet | [cumulo.pro/services/cosmos_testnet/apiscan](https://cumulo.pro/services/cosmos_testnet/apiscan) |
-| XRPL EVM | Mainnet | - |
-| XRPL EVM | Testnet | - |
-| Story Protocol | Mainnet | - |
-| Dymension | Mainnet | - |
+| XRPL EVM | Mainnet | [cumulo.pro/services/xrplevm_mainnet/apiscan](https://cumulo.pro/services/xrplevm_mainnet/apiscan) |
+| XRPL EVM | Testnet | [cumulo.pro/services/xrplevm/apiscan](https://cumulo.pro/services/xrplevm/apiscan) |
+| Story Protocol | Mainnet | — |
+| Dymension | Mainnet | — |
 
 ### EVM JSON-RPC (`/aggregate-evm`)
 
 | Chain | Network | Dashboard |
 |---|---|---|
-| XRPL EVM | Mainnet | - |
-| XRPL EVM | Testnet | - |
-| Story Protocol | Mainnet | - |
+| XRPL EVM | Mainnet | — |
+| XRPL EVM | Testnet | — |
+| Story Protocol | Mainnet | — |
 
 ---
 
