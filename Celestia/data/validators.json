@@ -757,7 +757,7 @@
       "Monitoring Stack for DA Nodes": "Grafana-based monitoring stack for Celestia DA nodes including local OTEL collector, prometheus metrics forwarding and dashboard visualization."
     }
   },
-  {
+ {
   "name": "Cumulo",
   "x": "Cumulo_pro",
   "webservices": "https://cumulo.pro/celestia/",
@@ -766,21 +766,19 @@
   "api": "https://celestia.api.cumulo.org.es",
   "grpc": "celestia.grpc.cumulo.org.es",
   "websocket": "wss://celestia.cumulo.org.es:443/websocket",
-   "tools": "Dashboard for Consensus Nodes, Celestia Bridge Node Dashboard, Celestia Front Chain, Modular Expansion",
+  "tools": "Celestia Block Explorer, Missed Proposals Tracker, Consensus Monitoring Dashboard, Celestia Bridge Node Dashboard, Celestia Front Chain, Modular Expansion",
   "tools_url": {
-    "Dashboard for Consensus Nodes with all available metrics for Celestia": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/grafana_consensus%20/README.md",
+    "Celestia Block Explorer": "https://cumulo.pro/services/celestia/stats",
+    "Missed Proposals Tracker": "https://cumulo.pro/services/celestia/missed-proposals",
     "Consensus Monitoring System Documentation": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/grafana_consensus%20/README.md",
     "Dashboard in Grafana": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/bridge-monitor/README.md",
-    "Celestia Bridge Node Dashboard in Grafana": "https://grafana.com/grafana/dashboards/21116-celestia-consensus-validator-node/",
-    "Celestia Front Chain. Everything you need to know about Celestia in one place": "https://roller.frontchain.cumulo.pro/",
     "Celestia underneath: All the projects that use Celestia as a DA": "https://celestia.frontchain.cumulo.pro/underneath"
   },
-    "tools_desc": {
-    "Dashboard for Consensus Nodes with all available metrics for Celestia": "Grafana dashboard and documentation covering full validator/consensus metrics for Celestia nodes.",
-    "Consensus Monitoring System Documentation": "Documentation for Cumulo’s monitoring stack (exporters, dashboards, and operational signals).",
+  "tools_desc": {
+    "Celestia Block Explorer": "Real-time multi-section block explorer covering validator uptime, governance proposals, live consensus state, recent transactions, and network statistics.",
+    "Missed Proposals Tracker": "Block-level tracking of missed proposal slots using the CometBFT weighted round-robin simulation. Identifies which validator missed their turn at each consensus round, with cumulative per-validator statistics and miss rate.",
+    "Consensus Monitoring System Documentation": "Documentation for Cumulo's monitoring stack (exporters, dashboards, and operational signals).",
     "Dashboard in Grafana": "Grafana dashboard reference for node monitoring (service health and performance signals).",
-    "Celestia Bridge Node Dashboard in Grafana": "Public Grafana dashboard template for Celestia bridge/validator monitoring.",
-    "Celestia Front Chain. Everything you need to know about Celestia in one place": "Cumulo portal aggregating Celestia validation status, resources, operations and ecosystem links.",
     "Celestia underneath: All the projects that use Celestia as a DA": "Explorer-style dashboard listing projects building on Celestia as their data availability layer."
   },
   "content_url": {
