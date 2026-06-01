@@ -542,10 +542,12 @@
     "validatorlogo": "bitszn.png",
     "explorer": "https://celestia.valopers.com",
     "tools_url": {
-        "celestia bridge explorer": "https://celestia.valopers.com/bridges"
+        "celestia bridge explorer": "https://celestia.valopers.com/bridges",
+        "Celestia analytics": "https://celestia.valopers.com/analytics"
     },
     "tools_desc": {
-    "celestia bridge explorer": "Bridge node explorer to inspect and monitor Celestia bridge infrastructure activity."
+    "celestia bridge explorer": "Bridge node explorer to inspect and monitor Celestia bridge infrastructure activity",
+    "Celestia analytics": "P2P decentralization map and peer footprint for Celestia"
   }
 },
    {
