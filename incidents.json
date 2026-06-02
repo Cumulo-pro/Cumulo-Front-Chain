@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-mainnet-upgrade-celestia-app-v8.0.8-2026-06-02",
+  "date": "2026-06-02T14:25:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["validator", "consensus"],
+  "client": "celestia-app v8.0.8",
+  "note": "Cumulo upgraded its Celestia mainnet nodes to celestia-app v8.0.8 during the scheduled maintenance window (June 2, 2026, 14:25–14:40 UTC). This patch release requires no validator signaling. Key changes include a core upgrade to v0.39.30 and the addition of gRPC interceptors to the app. Node verified operational post-upgrade.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v8.0.8"
+},
+  {
   "id": "celestia-mocha-upgrade-celestia-app-v9.0.1-mocha-2026-06-02",
   "date": "2026-06-02T00:00:00Z",
   "incident_type": "upgrade",
