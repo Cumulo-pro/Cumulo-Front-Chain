@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-mocha-upgrade-celestia-app-v9.0.1-mocha-2026-06-02",
+  "date": "2026-06-02T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator", "consensus"],
+  "client": "celestia-app v9.0.1-mocha",
+  "note": "Cumulo upgraded its Celestia Mocha testnet nodes to celestia-app v9.0.1-mocha. This is a major release targeting Mocha with a key reduction in block times to 3s. The min-retain-blocks parameter is now honoured even below the evidence window; validator nodes were configured with the recommended value of 600000. Upgrade signal submitted on-chain via celestia-appd tx signal for v9. Node verified operational post-upgrade.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v9.0.1-mocha"
+},
+  {
   "id": "cosmos-mainnet-governance-proposal-1041-2026-06-02",
   "date": "2026-06-02T00:00:00Z",
   "incident_type": "governance_proposal",
