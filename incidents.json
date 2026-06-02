@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmos-mainnet-governance-proposal-1041-2026-06-02",
+  "date": "2026-06-02T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1041 on Cosmos Hub mainnet: Gaia v27.4.0 upgrade proposal. The upgrade bumps cometbft from v0.38.21 to v0.38.23, wasmd from v0.60.6 to v0.60.7, and wasmvm from v2.3.2 to v2.3.3. If passed, validators will be required to update the Cosmos Hub binary at the specified upgrade height. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1041",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=29970C87AA675048E1CDADE956952B869ED435403581259259646469540A5D4B"
+},
+  {
   "id": "cosmos-mainnet-governance-proposal-1040-2026-05-31",
   "date": "2026-05-31T00:00:00Z",
   "incident_type": "governance_proposal",
