@@ -1,4 +1,17 @@
+
 [
+  {
+  "id": "celestia-mocha-upgrade-celestia-app-v9.0.2-mocha-celestia-node-v0.31.1-mocha-2026-06-04",
+  "date": "2026-06-04T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator", "rpc"],
+  "client": ["celestia-app v9.0.2-mocha", "celestia-node v0.31.1-mocha"],
+  "note": "Cumulo upgraded its Celestia Mocha testnet nodes to celestia-app v9.0.2-mocha and celestia-node v0.31.1-mocha. This release targets Mocha and reduces block times to 3s. Setting min-retain-blocks to a non-zero value enables pruning and may increase syncing time while existing data is pruned. Upgrade applied across validator, RPC, and consensus nodes. All services verified operational post-upgrade.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v9.0.2-mocha"
+},
   {
   "id": "xrplevm-mainnet-governance-proposal-32-2026-06-03",
   "date": "2026-06-03T17:17:00Z",
