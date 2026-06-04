@@ -1,5 +1,17 @@
 [
   {
+  "id": "monad-testnet-upgrade-v0.14.5-2026-06-04",
+  "date": "2026-06-04T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Monad",
+  "network": "testnet",
+  "node_type": ["full"],
+  "client": "monad-bft v0.14.5",
+  "note": "Cumulo upgraded its Monad testnet full node to v0.14.5. Orange-coded release requiring action within 24–48 hours. Notable change: eth_sendRawTransactionSync now subscribes to block updates via execution events, improving response time by up to 100ms — this method is only supported with execution events enabled. Nodes without execution events will return 'method not supported' for this endpoint. Upgrade applied following official instructions; node verified and fully operational post-upgrade.",
+  "url": "https://docs.monad.xyz/node-ops/upgrade-instructions/v0.14.5"
+},
+  {
   "id": "celestia-mocha-upgrade-celestia-node-v0.31.1-mocha-bridge-2026-06-04",
   "date": "2026-06-04T00:00:00Z",
   "incident_type": "upgrade",
