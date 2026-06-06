@@ -812,7 +812,7 @@
   "name": "POSTHUMAN",
   "webservices": "",
   "x": "posthuman_zone",
-  "validatorlogo": "",
+  "validatorlogo": "posthuman.jpg",
   "explorer": "https://explorer.posthuman.digital/celestia",
   "tools_url": {
     "POSTHUMAN Node Tools": "https://nodes.posthuman.digital/chains/celestia"
@@ -832,7 +832,7 @@
   "name": "Unity Nodes",
   "webservices": "https://unitynodes.com",
   "x": "unity_nodes",
-  "validatorlogo": "",
+  "validatorlogo": "unitynodes.jpg",
   "tools_url": {
     "Pulse - Geography": "http://pulse.unitynodes.com/celestia/geography",
     "Pulse - Providers": "http://pulse.unitynodes.com/celestia/providers",
