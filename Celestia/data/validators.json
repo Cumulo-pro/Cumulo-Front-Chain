@@ -868,20 +868,21 @@
   "tools": "Celestia Block Explorer, Missed Proposals Tracker, Consensus Monitoring Dashboard, Celestia Bridge Node Dashboard, Celestia Front Chain, Modular Expansion",
   "tools_url": {
     "Celestia Block Explorer": "https://cumulo.pro/services/celestia/stats",
+    "Cumulo Live Peers": "https://cumulo.pro/services/cosmos/peers",
+    "CIP Tracker": "https://cumulo.pro/services/celestia/cips",
     "Missed Proposals Tracker": "https://cumulo.pro/services/celestia/missed-proposals",
-    "Consensus Monitoring System Documentation": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/grafana_consensus%20/README.md",
     "Dashboard in Grafana": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/bridge-monitor/README.md",
     "Celestia underneath: All the projects that use Celestia as a DA": "https://celestia.frontchain.cumulo.pro/underneath"
   },
   "tools_desc": {
     "Celestia Block Explorer": "Real-time multi-section block explorer covering validator uptime, governance proposals, live consensus state, recent transactions, and network statistics.",
+    "Cumulo Live Peers": "A live peer checker, updated every 30 minutes and available through both a public dashboard and API.",
+    "CIP Tracker": "The CIP Tracker is designed to make it easier for teams, devs, validators and the broader community to follow how Celestia evolves at the protocol level: from proposals already live on mainnet to those currently under review or being discussed for upcoming upgrades.",
     "Missed Proposals Tracker": "Block-level tracking of missed proposal slots using the CometBFT weighted round-robin simulation. Identifies which validator missed their turn at each consensus round, with cumulative per-validator statistics and miss rate.",
-    "Consensus Monitoring System Documentation": "Documentation for Cumulo's monitoring stack (exporters, dashboards, and operational signals).",
     "Dashboard in Grafana": "Grafana dashboard reference for node monitoring (service health and performance signals).",
     "Celestia underneath: All the projects that use Celestia as a DA": "Explorer-style dashboard listing projects building on Celestia as their data availability layer."
   },
   "content_url": {
-    "Website dedicated to our content about Modular Summit events": "https://modular.cumulo.pro/",
     "Compilation of technical guides and resources": "https://cumulo.pro/celestia/posts"
   }
 }
