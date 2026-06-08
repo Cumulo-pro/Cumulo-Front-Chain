@@ -1,5 +1,17 @@
 [
   {
+  "id": "starknet-mainnet-upgrade-juno-v0.16.1-2026-06-08",
+  "date": "2026-06-08T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "mainnet, testnet",
+  "node_type": ["validator"],
+  "client": "Juno v0.16.1",
+  "note": "Cumulo upgraded its Starknet mainnet nodes to Juno v0.16.1 ahead of the upcoming Starknet v0.14.3 network upgrade, planned for mainnet on 22 June. This version fully supports the current Starknet v0.14.2 and is required prior to the protocol upgrade. The testnet upgrade to v0.14.3 is scheduled for 10 June at ~08:10 UTC with an expected 5-minute downtime window. Upgrade applied across validator, RPC, and backup nodes. All services verified and fully operational post-upgrade.",
+  "url": "https://github.com/NethermindEth/juno/releases/tag/v0.16.1"
+},
+  {
   "id": "monad-testnet-upgrade-v0.14.5-2026-06-04",
   "date": "2026-06-04T00:00:00Z",
   "incident_type": "upgrade",
