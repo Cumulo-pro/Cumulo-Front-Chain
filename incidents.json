@@ -12,6 +12,18 @@
   "vote": "https://cumulo.pro/services/xrplevm/search?q=2FE7BFB36C55F2FFC3B57071E8921C1074C9229F2A6629154AB73652929A5EA4"
 },
   {
+  "id": "xrplevm-testnet-governance-proposal-44-2026-06-09",
+  "date": "2026-06-09T16:33:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #44 on XRPL EVM testnet: Add ITRocket as a new validator to the network (MsgAddValidator). Voting period runs from Jun 9 to Jun 23, 2026. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm/governance#proposal-44",
+  "vote": "https://cumulo.pro/services/xrplevm/search?q=2FE7BFB36C55F2FFC3B57071E8921C1074C9229F2A6629154AB73652929A5EA4"
+},
+  {
   "id": "starknet-mainnet-upgrade-juno-v0.16.1-2026-06-08",
   "date": "2026-06-08T00:00:00Z",
   "incident_type": "upgrade",
