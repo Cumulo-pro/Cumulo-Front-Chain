@@ -1,5 +1,17 @@
 [
   {
+  "id": "starknet-mainnet-governance-proposal-v0143-2026-06-09",
+  "date": "2026-06-09T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Starknet",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Starknet v0.14.3 minor upgrade governance vote is live. The proposal includes automatic base-fee adjustment to the STRK price, more frequent blocks, and other protocol improvements. Cumulo voted YES.",
+  "url": "https://governance.starknet.io/#/sn:0x009fedaf0d7a480d21a27683b0965c0f8ded35b3f1cac39827a25a06a8a682a4/proposal/14",
+  "vote": "https://voyager.online/tx/0x7b5139242de52eef48069d687ab677ef4555938fc6038a57891148594678722"
+},
+  {
   "id": "starknet-mainnet-testnet-update-juno-v0.16.2-2026-06-09",
   "date": "2026-06-09T00:00:00Z",
   "incident_type": "update",
