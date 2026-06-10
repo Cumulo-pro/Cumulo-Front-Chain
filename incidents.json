@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmos-mainnet-gaia-v27.4.0-upgrade-2026-06-10",
+  "date": "2026-06-10T14:45:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "gaia v27.4.0",
+  "note": "Cumulo upgraded its Cosmos Hub mainnet nodes to gaia v27.4.0 at block height 31517100, as approved by governance Proposal #1041. This minor upgrade includes dependency bumps for CometBFT, wasmd, and wasmvm, applied at the scheduled time of June 10, 2026 at 14:45 UTC. All nodes updated and verified successfully without incidents.",
+  "url": "https://github.com/cosmos/gaia/blob/v27.4.0/CHANGELOG.md"
+},
+  {
   "id": "starknet-mainnet-governance-proposal-v0143-2026-06-09",
   "date": "2026-06-09T00:00:00Z",
   "incident_type": "governance_proposal",
