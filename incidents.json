@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-mocha-upgrade-celestia-node-v0.31.2-mocha-bridge-2026-06-10",
+  "date": "2026-06-10T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.31.2-mocha",
+  "note": "Cumulo upgraded its Celestia Mocha testnet bridge node to celestia-node v0.31.2-mocha successfully without incidents. Key highlights include multi-source block ingestion allowing the bridge listener to ingest blocks from multiple Celestia-Core endpoints concurrently and tolerate single endpoint failures, plus expanded observability metrics across RPC server, core listener, store, and pruner hot paths. Node verified operational post-upgrade.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.31.2-mocha"
+},
+  {
   "id": "cosmos-mainnet-gaia-v27.4.0-upgrade-2026-06-10",
   "date": "2026-06-10T14:45:00Z",
   "incident_type": "upgrade",
