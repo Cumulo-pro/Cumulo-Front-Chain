@@ -1,5 +1,29 @@
 [
   {
+  "id": "espresso-decaf-upgrade-20260605-2026-06-10",
+  "date": "2026-06-10T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "testnet (decaf)",
+  "node_type": ["validator"],
+  "client": "espresso-network 20260605",
+  "note": "Cumulo upgraded its Espresso Decaf testnet node to release tag 20260605. This release was promoted to full release and includes a sensitive fix not yet publicly available in the espresso-network repo; public source code release is expected within a few days. Node upgraded and confirmed operational without incidents.",
+  "url": "https://github.com/EspressoSystems/espresso-network/releases/tag/20260605"
+},
+  {
+  "id": "espresso-mainnet-upgrade-20260605-2026-06-10",
+  "date": "2026-06-10T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "espresso-network 20260605",
+  "note": "Cumulo upgraded its Espresso mainnet node to release tag 20260605. This release was promoted to full release and includes a sensitive fix not yet publicly available in the espresso-network repo; public source code release is expected within a few days. Node upgraded and confirmed operational without incidents.",
+  "url": "https://github.com/EspressoSystems/espresso-network/releases/tag/20260605"
+},
+  {
   "id": "celestia-mocha-upgrade-celestia-node-v0.31.2-mocha-bridge-2026-06-10",
   "date": "2026-06-10T00:00:00Z",
   "incident_type": "upgrade",
