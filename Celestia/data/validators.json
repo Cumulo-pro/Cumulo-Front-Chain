@@ -789,6 +789,19 @@
     "Metatarz Map": "Interactive geographic map of Celestia nodes and validators."
   }
 },
+  {
+  "name": "Oshvank",
+  "webservices": "",
+  "x": "Oshvank",
+  "validatorlogo": "",
+  "tools": "CelestiaScope",
+  "tools_url": {
+    "CelestiaScope": "https://celestiascope.oshvank.xyz/"
+  },
+  "tools_desc": {
+    "CelestiaScope": "Mobile monitoring app for the Celestia ecosystem. Features real-time news and ecosystem updates, mainnet and testnet validator/network monitoring, live TIA market statistics, and a video archive of official educational content and event recordings."
+  }
+},
  {
   "name": "Cumulo",
   "x": "Cumulo_pro",
