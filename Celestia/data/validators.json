@@ -263,7 +263,7 @@
   "validatorlogo": "cosmostation.png",
   "explorer": "https://www.mintscan.io/celestia",
   "peers": "d364357f55e37a038d9dbd143448ea792bb8edcf@15.235.115.156:16400",
-  "snapshot": "https://services.cosmostation.io/snapshot",
+  "snapshot": "",
   "addrbook": "",
   "tools": "Mintscan Explorer, Mobile Wallet, Web Extension",
   "tools_url": {
@@ -356,8 +356,7 @@
     "How to launch a node": "https://doc.enigma-validator.com/docs/mainnets/Celestia/setup-node",
     "How to Stake TIA - French Guide": "https://enigmavalidator.substack.com/p/tutoriel-staking-tia",
      "French article on modularity": "https://huzmond.substack.com/p/fr-2023-lannee-de-la-modularite",
-    "French content collaboration": "https://www.youtube.com/watch?v=6S0Nl-MYnKw",
-    "WEB3connect event website": "https://web3connect.fr/2024"
+    "French content collaboration": "https://www.youtube.com/watch?v=6S0Nl-MYnKw"
   }
 },
 {
@@ -772,14 +771,6 @@
   "validatorlogo": "citizenweb3.png",
   "rpc": "https://rpc.celestia.citizenweb3.com",
   "api": ""
-},
-{
-  "name": "Stakin",
-  "webservices": "https://stakin-nodes.com",
-  "x": "StakinOfficial",
-  "validatorlogo": "",
-  "rpc": "https://celestia.rpc.stakin-nodes.com",
-  "api": "https://celestia.rest.stakin-nodes.com"
 },
 {
   "name": "POSTHUMAN",
