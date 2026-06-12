@@ -75,8 +75,7 @@
     "grpc": "celestia-grpc.polkachu.com:11690",
     "snapshot": "https://polkachu.com/tendermint_snapshots/celestia",
     "addrbook": "https://polkachu.com/addrbooks/celestia",
-    "archive_snapshot": "https://polkachu.com/archive_snapshots/celestia",
-    "tools": "State-sync",
+     "tools": "State-sync",
     "tools_url": {
         "State-sync" :"https://polkachu.com/state_sync/celestia"
      },
@@ -85,27 +84,6 @@
   },
    "content":{
     "Installation Guide": "https://polkachu.com/installation/celestia"
-  }
-},
-{
-    "name": "Validatrium",
-    "webservices": "",
-    "x": "validatrium",
-    "validatorlogo": "validatrium.jpg",
-    "explorer": "",
-    "peers": "706c8fbaaf38d3a1bf3186ca4c4d55fc07891ea4@49.12.172.53:10256",
-    "seeds": "",
-    "archive_api": "https://api-celestia-archive.mainnet.validatrium.club",
-    "archive_rpc": "https://rpc-celestia-archive.mainnet.validatrium.club",
-    "grpc": "",
-    "archive_snapshot": "https://docs.validatrium.club/Celestia/archive-node-snapshot",
-    "addrbook": "",
-    "tools": "Bridge archive snapshot",
-    "tools_url": {
-        "Bridge archive snapshot": "https://docs.validatrium.club/Celestia/bridge-archive-snapshot"
-    },
-    "tools_desc": {
-    "Bridge archive snapshot": "Bridge node archival snapshot reference to speed up initialization of Celestia bridge infrastructure."
   }
 },
   {
@@ -186,7 +164,6 @@
   "seeds": "24a607a217cf12be29bae5b2e8151391bde2d8c8@seed-celestia-01.stakeflow.io:15007",
   "api": "https://api-celestia-01.stakeflow.io",
   "rpc": "https://rpc-celestia-01.stakeflow.io",
-  "archive_snapshot": "https://rpc-celestia-archive-01.stakeflow.io",
   "grpc": "grpc-celestia-01.stakeflow.io:15002",
   "snapshot": "",
   "addrbook": "",
@@ -242,8 +219,6 @@
   "seeds": "https://services.contributiondao.com/mainnet/celestia/peers",
   "api": "https://celestia-api.contributiondao.com",
   "rpc": "https://celestia-rpc.contributiondao.com",
-  "archive_snapshot": "https://celestia-archive-mainnet-rpc.contributiondao.com",
-  "grpc": "https://celestia-archive-mainnet-grpc.contributiondao.com",
   "snapshot": "https://services.contributiondao.com/mainnet/celestia/snapshots",
   "addrbook": "",
   "tools_url": {
@@ -341,7 +316,6 @@
   "snapshot": "https://doc.enigma-validator.com/docs/mainnets/Celestia/snapshot",
   "addrbook": "https://doc.enigma-validator.com/docs/mainnets/Celestia/addrbooks",
   "rpc": "https://celestia-rpc.enigma-validator.com",
-  "rpc_archive": "https://celestia-rpc-archive.enigma-validator.com/",
   "tools": "IBC Client Monitoring & Update Monitor, GenesisDrop Checker,Celestia Network Node Map",
   "tools_url": {
     "IBC Client Monitoring": "https://discord.com/channels/638338779505229824/1176595874823028817/1262579736891228293",
@@ -369,8 +343,6 @@
   "seeds": "86bd5cb6e762f673f1706e5889e039d5406b4b90@seed.celestia.node75.org:20356",
   "api": "https://api.celestia.node75.org",
   "rpc": "https://rpc.celestia.node75.org",
-  "grpc": "grpc-archive.celestia.node75.org:9740",
-  "archive_snapshot": "https://snap-archive.celestia.node75.org/",
   "tools_url": {
     "Celestia Cluster monitoring tool": "https://github.com/the-node75/mon_celestia",
     "Celestia IBC information matrix": "https://services.node75.org/ibc-matrix/celestia"
@@ -595,7 +567,6 @@
     "validatorlogo": "validexis.jpg",
     "explorer": "",
     "snapshot": "https://services.validexis.com/mainnets/celestia/snapshot",
-    "archive_snapshot": "https://services.validexis.com/mainnets/celestia/snapshot",
     "bridge_snap": "https://services.validexis.com/mainnets/celestia/snapshot",
     "peers": "60d481edb7e49efe01fa0b49a346cf9f8400db19@peer-celestia-mainnet.val",
     "api": "https://api-celestia-mainnet.validexis.com",
@@ -661,7 +632,6 @@
   "explorer": "https://mainnet.itrocket.net/celestia/",
   "snapshot": "https://itrocket.net/services/mainnet/celestia/",
   "bridge_snap": "https://itrocket.net/services/mainnet/celestia/bridge-node/",
-  "archive_snapshot": "https://itrocket.net/services/mainnet/celestia/",
    "tools_url": {
     "Validator Analytics": "https://itrocket.net/services/mainnet/celestia/analytics/validators-performance/",
     "Decentralization Analytics": "https://itrocket.net/services/mainnet/celestia/decentralization/",
@@ -686,7 +656,6 @@
    "websocket": "",
   "snapshot": "",
   "bridge_snap": "",
-  "archive_snapshot": "",
   "tools_url": {
   "Celestia Upgrade Monitor": "https://github.com/sryps/celestia-upgrade-monitor"
     },
