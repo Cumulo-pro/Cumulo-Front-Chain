@@ -297,13 +297,11 @@
   "validatorlogo": "f5nodes.jpg",
   "tools": "Monitoring tool, Celestia Wiki, DA Nodes Management Script",
   "tools_url": {
-    "Celestia Wiki": "https://wiki.f5nodes.com",
-    "Celestia Endpoints Ninja" : "https://celestia.endpoints.ninja/"
+    "Celestia Wiki": "https://wiki.f5nodes.com"
   },
   "tools_desc": {
     "Monitoring tool": "Monitoring dashboard for Celestia nodes (service health and operational metrics).",
-    "Celestia Wiki": "Documentation hub with guides and references for Celestia node operators.",
-    "Celestia Endpoints Ninja": "Public directory of Celestia endpoints to help operators and users find working RPCs."
+    "Celestia Wiki": "Documentation hub with guides and references for Celestia node operators."
   }
 },
 {
@@ -397,30 +395,7 @@
     "Custom API Endpoints for Celestia": "Documentation for custom Celestia endpoints and operator services provided by Maple Nodes."
   }
 },
-  {
-  "name": "StakeTown",
-  "webservices": "https://services.stake-town.com/home/mainnet/celestia",
-  "x": "",
-  "validatorlogo": "staketown.jpg",
-   "api": "https://celestia-api.stake-town.com",
-  "rpc": "https://celestia-rpc.stake-town.com",
-  "grpc": "celestia-grpc.stake-town.com:443",
-  "snapshot": "https://services.stake-town.com/home/mainnet/celestia/sync",
-  "State-Sync": "https://services.stake-town.com/home/mainnet/celestia/sync",
-  "tools": "Monitoring stack for DA nodes, Bot for tracking health of important IBC paths, StakeTown relayer",
-  "tools_url": {
-    "Monitoring stack for DA nodes": "https://github.com/staketown/celestia-da-monitoring",
-    "Bot for tracking health of important IBC paths": "https://discord.com/channels/638338779505229824/1176595874823028817"
-  },
-     "tools_desc": {
-    "Celestia Network Analytics Dashboard": "Analytics dashboard focused on Celestia network-wide metrics and trends.",
-    "Custom API Endpoints for Celestia": "Documentation for custom Celestia endpoints and operator services provided by Maple Nodes."
-  },
-  "content_url": {
-    "Installation Guide": "https://services.stake-town.com/home/mainnet/celestia/installation"
-  }
-},
-  {
+{
   "name": "Staking Facilities",
   "webservices": "https://stakingfacilities.com/networks/celestia-network",
   "x": "stakingfac",
