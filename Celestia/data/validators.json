@@ -298,13 +298,11 @@
   "tools": "Monitoring tool, Celestia Wiki, DA Nodes Management Script",
   "tools_url": {
     "Celestia Wiki": "https://wiki.f5nodes.com",
-    "DA Nodes Management Script": "https://github.com/f5nodes/celestia-da-nodes",
     "Celestia Endpoints Ninja" : "https://celestia.endpoints.ninja/"
   },
   "tools_desc": {
     "Monitoring tool": "Monitoring dashboard for Celestia nodes (service health and operational metrics).",
     "Celestia Wiki": "Documentation hub with guides and references for Celestia node operators.",
-    "DA Nodes Management Script": "Automation scripts to deploy/manage Celestia DA nodes and related infrastructure.",
     "Celestia Endpoints Ninja": "Public directory of Celestia endpoints to help operators and users find working RPCs."
   }
 },
