@@ -815,7 +815,7 @@
   "name": "Oshvank",
   "webservices": "",
   "x": "Oshvank",
-  "validatorlogo": "",
+  "validatorlogo": "oshvank.png",
   "tools": "CelestiaScope",
   "tools_url": {
     "CelestiaScope": "https://celestiascope.oshvank.xyz/"
