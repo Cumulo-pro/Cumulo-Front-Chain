@@ -1,5 +1,16 @@
 [
   {
+  "id": "story-aeneid-decommission-validator-2026-06-13",
+  "date": "2026-06-13T00:00:00Z",
+  "incident_type": "decommission",
+  "status": "completed",
+  "chain": "Story",
+  "network": "testnet (Aeneid)",
+  "node_type": ["validator"],
+  "client": ["storyd v1.5.2", "geth v1.2.1"],
+  "note": "Cumulo decommissioned its Story Aeneid testnet validator following the Seneca hardfork (v1.8.0), which reduced the active validator set from 80 to 21. Coordinated with the Story team, Cumulo unstaked 1024 IP (tx: 0x203929cf5345e6db650ae092de31c993f8849c56065ae29f2dfe774d2a8c7afc) and shut down the validator node."
+},
+  {
   "id": "espresso-decaf-upgrade-20260605-2026-06-10",
   "date": "2026-06-10T00:00:00Z",
   "incident_type": "upgrade",
