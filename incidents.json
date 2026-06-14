@@ -1,5 +1,16 @@
 [
   {
+  "id": "story-mainnet-decommission-validator-2026-06-14",
+  "date": "2026-06-14T00:00:00Z",
+  "incident_type": "decommission",
+  "status": "completed",
+  "chain": "Story",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": ["storyd v1.5.2", "geth v1.2.1"],
+  "note": "Cumulo decommissioned its Story mainnet validator following the Seneca hardfork (v1.8.0), which reduced the active validator set from 80 to 21. The validator node was stopped and disabled via systemd, service unit files removed, and all associated data directories and snapshots deleted from the host."
+},
+  {
   "id": "story-aeneid-decommission-validator-2026-06-13",
   "date": "2026-06-13T00:00:00Z",
   "incident_type": "decommission",
