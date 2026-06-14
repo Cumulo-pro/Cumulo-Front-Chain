@@ -97,7 +97,7 @@
   "id": "cosmos-mainnet-governance-proposal-1042-2026-06-06",
   "date": "2026-06-06T00:00:00Z",
   "incident_type": "governance_proposal",
-  "status": "active",
+  "status": "completed",
   "chain": "Cosmos Hub",
   "network": "mainnet",
   "node_type": ["validator"],
