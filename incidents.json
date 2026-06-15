@@ -1,5 +1,15 @@
 [
   {
+  "id": "quicksilver-mainnet-incident-chain-halt-2026-06-15",
+  "date": "2026-06-15T00:00:00Z",
+  "incident_type": "incident",
+  "status": "active",
+  "chain": "Quicksilver",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Quicksilver mainnet experienced a chain halt triggered intentionally by the Quicksilver team as an emergency response to an active exploit. The team delegated foundation stake to a validator under their control, pushing it above 1/3 of total voting power and halting block production. Cumulo validator is affected by the halt. Further updates and recovery plan are pending from the Quicksilver team."
+},
+  {
   "id": "celestia-mocha-upgrade-celestia-app-v9.0.4-mocha-2026-06-15",
   "date": "2026-06-15T00:00:00Z",
   "incident_type": "upgrade",
