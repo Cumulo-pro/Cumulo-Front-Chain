@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-mocha-upgrade-celestia-app-v9.0.4-mocha-2026-06-15",
+  "date": "2026-06-15T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator", "rpc", "consensus"],
+  "client": "celestia-app v9.0.4-mocha",
+  "note": "Cumulo upgraded its Celestia Mocha testnet nodes to celestia-app v9.0.4-mocha successfully and without incidents. This release includes a critical fix for an app hash mismatch bug that could lead to node halts; upgrade is especially important for validators. All services verified operational post-upgrade.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v9.0.4-mocha"
+},
+  {
   "id": "story-mainnet-decommission-validator-2026-06-14",
   "date": "2026-06-14T00:00:00Z",
   "incident_type": "decommission",
