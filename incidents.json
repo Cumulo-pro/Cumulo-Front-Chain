@@ -1,5 +1,16 @@
 [
   {
+  "id": "avail-mainnet-infrastructure-migration-validator-2026-06-16",
+  "date": "2026-06-16T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "in_progress",
+  "chain": "Avail",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "avail-node v2.3.4.2",
+  "note": "Cumulo migrated its Avail mainnet validator to a new host. The node was installed with avail-node v2.3.4.2 on Ubuntu 24.04, synced to chain tip, and new session keys were generated and submitted on-chain at block #3,075,921. The key rotation took effect at the following epoch. The previous host was decommissioned after confirming the new node was signing blocks correctly."
+},
+  {
   "id": "quicksilver-mainnet-incident-chain-halt-2026-06-15",
   "date": "2026-06-15T00:00:00Z",
   "incident_type": "incident",
