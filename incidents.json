@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-mainnet-upgrade-celestia-app-v9.0.4-2026-06-17",
+  "date": "2026-06-17T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc", "consensus", "bridge"],
+  "client": "celestia-app v9.0.4",
+  "note": "Celestia mainnet v9 upgrade in progress. Cumulo submitted the v9 signal transaction on-chain to contribute to the upgrade quorum (5/6+ voting power required). Once the threshold is reached, the upgrade will be scheduled with a 7-day delay. Key changes in v9 include a reduction in block times to 3 seconds, improved handling of min-retain-blocks (now honoured even below the evidence window), and archival nodes must keep min-retain-blocks = 0 to remain fully archival; recommended setting for validators is 600000.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v9.0.4"
+},
+  {
   "id": "avail-mainnet-infrastructure-migration-validator-2026-06-16",
   "date": "2026-06-16T00:00:00Z",
   "incident_type": "infrastructure_migration",
