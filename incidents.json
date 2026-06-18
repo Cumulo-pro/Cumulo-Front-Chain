@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-mainnet-upgrade-celestia-node-v0.31.3-2026-06-18",
+  "date": "2026-06-18T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.31.3",
+  "note": "Cumulo upgraded its Celestia mainnet bridge node to celestia-node v0.31.3. This release adds support for celestia-app v9 and reduces network block time to 3 seconds; upgrading is required once the v9 activation height takes place. As required by the release, the config-update command was executed prior to starting the node: `celestia bridge config-update --p2p.network celestia`. Upgrade completed without incidents and the bridge node is fully operational.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.31.3"
+},
+  {
   "id": "celestia-mainnet-upgrade-celestia-app-v9.0.4-2026-06-17",
   "date": "2026-06-17T00:00:00Z",
   "incident_type": "upgrade",
