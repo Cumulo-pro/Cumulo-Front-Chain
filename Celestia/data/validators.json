@@ -830,6 +830,18 @@
     "CelestiaScope": "Mobile monitoring app for the Celestia ecosystem. Features real-time news and ecosystem updates, mainnet and testnet validator/network monitoring, live TIA market statistics, and a video archive of official educational content and event recordings."
   }
 },
+  {
+  "name": "DuskProof",
+  "webservices": "https://app.duskproof.com/celestia",
+  "x": "DuskProof",
+  "validatorlogo": "duskproof.png",
+  "tools_url": {
+    "DuskProof Validators Platform": "https://app.duskproof.com/celestia"
+  },
+  "tools_desc": {
+    "DuskProof Validators Platform": "Web dashboard for monitoring and analyzing Celestia validators: uptime, decentralization, governance participation, analytics, and Keplr wallet integration. Mainnet and testnet."
+  }
+},
  {
   "name": "Cumulo",
   "x": "Cumulo_pro",
