@@ -537,7 +537,7 @@
         "github": "",
         "rpc": "",
         "api": "",
-        "snapshot": "https://celestia-dashboard.krews.xyz/celestia/snapshots?pruning=pruned",
+        "snapshot_pebble": "https://celestia-dashboard.krews.xyz/celestia/snapshots?pruning=pruned",
         "explorer": "https://celestia-dashboard.krews.xyz/celestia/validators",
         "tools_url": {
             "Validator missed proposals": "https://celestia-dashboard.krews.xyz/celestia/missed-proposals",
@@ -636,7 +636,7 @@
   "rpc": "https://celestia-mainnet-rpc.itrocket.net",
   "grpc": "celestia-mainnet-grpc.itrocket.net:443",
   "explorer": "https://mainnet.itrocket.net/celestia/",
-  "snapshot": "https://itrocket.net/services/mainnet/celestia/",
+  "snapshot_pebble": "https://itrocket.net/services/mainnet/celestia/",
   "bridge_snap": "https://itrocket.net/services/mainnet/celestia/bridge-node/",
    "tools_url": {
     "Validator Analytics": "https://itrocket.net/services/mainnet/celestia/analytics/validators-performance/",
