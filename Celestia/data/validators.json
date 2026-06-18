@@ -637,7 +637,6 @@
   "grpc": "celestia-mainnet-grpc.itrocket.net:443",
   "explorer": "https://mainnet.itrocket.net/celestia/",
   "snapshot_pebble": "https://itrocket.net/services/mainnet/celestia/",
-  "bridge_snap": "https://itrocket.net/services/mainnet/celestia/bridge-node/",
    "tools_url": {
     "Validator Analytics": "https://itrocket.net/services/mainnet/celestia/analytics/validators-performance/",
     "Decentralization Analytics": "https://itrocket.net/services/mainnet/celestia/decentralization/",
