@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-mocha-upgrade-celestia-node-v0.31.3-mocha-2026-06-18",
+  "date": "2026-06-18T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.31.3-mocha",
+  "note": "Cumulo upgraded its Celestia Mocha testnet bridge node to celestia-node v0.31.3-mocha. This release adds support for celestia-app v9 and reduces network block time to 3 seconds; upgrading is required once the v9 activation height takes place. As required by the release, the config-update command was executed prior to starting the node: `celestia bridge config-update --p2p.network mocha-4`. Upgrade completed without incidents and the bridge node is fully operational.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.31.3-mocha"
+},
+  {
   "id": "celestia-mainnet-upgrade-celestia-node-v0.31.3-2026-06-18",
   "date": "2026-06-18T00:00:00Z",
   "incident_type": "upgrade",
