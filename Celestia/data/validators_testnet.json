@@ -116,7 +116,7 @@
           "api": "https://celestia-testnet-api.itrocket.net",
           "rpc": "https://celestia-testnet-rpc.itrocket.net",
           "grpc": "celestia-testnet-grpc.itrocket.net:443",
-          "snapshot": "https://itrocket.net/services/testnet/celestia/",
+          "snapshot_pebble": "https://itrocket.net/services/testnet/celestia/",
           "snap_url": "",
           "archive_snapshot": "",
           "bridge_snap": "",
@@ -411,7 +411,7 @@
         "github": "",
         "rpc": "",
         "api": "",
-        "snapshot": "https://celestia-dashboard.krews.xyz/celestia-mocha/snapshots?pruning=pruned",
+        "snapshot_pebble": "https://celestia-dashboard.krews.xyz/celestia-mocha/snapshots?pruning=pruned",
         "explorer": "https://celestia-dashboard.krews.xyz/celestia-mocha/validators",
         "tools": "validator performance dashboard",
         "tools_url": {
