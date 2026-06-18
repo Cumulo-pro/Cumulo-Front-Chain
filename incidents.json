@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmos-testnet-governance-proposal-302-2026-06-18",
+  "date": "2026-06-18T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #302 on Cosmos Hub testnet: Humorous signaling proposal to officially recognize validators who keep their nodes running with minimal resources and maximum ingenuity — epitomized by a fictional validator named Greg running a Raspberry Pi in a beverage cooler, kept alive by a single cron job. The proposal asks the community to acknowledge that uptime is a state of mind, that restarting the binary is a valid incident-response strategy, and that 'it works on testnet' deserves a honorable retirement. Text-only proposal with no on-chain parameter changes. Voting period runs from June 18, 2026 at 17:40 to 18:40 UTC. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos_testnet/governance#proposal-302",
+  "vote": "https://cumulo.pro/services/cosmos_testnet/search?q=6F602244B27891889C1A1C481ED738F1937EEACA8CB24EC39F39733D8158432D"
+},
+  {
   "id": "celestia-mocha-upgrade-celestia-node-v0.31.3-mocha-2026-06-18",
   "date": "2026-06-18T00:00:00Z",
   "incident_type": "upgrade",
