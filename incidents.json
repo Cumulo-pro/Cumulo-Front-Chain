@@ -1,5 +1,17 @@
 [
   {
+  "id": "starknet-mainnet-testnet-update-juno-v0.16.3-2026-06-19",
+  "date": "2026-06-19T00:00:00Z",
+  "incident_type": "update",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "mainnet,testnet",
+  "node_type": ["rpc"],
+  "client": "juno v0.16.3",
+  "note": "Cumulo updated its Starknet Mainnet and Testnet RPC nodes to Juno v0.16.3, the new minimum required version ahead of the Starknet 0.14.3 protocol upgrade scheduled for testnet on June 23 and mainnet the week after. This release includes bug and security fixes along with performance and UX improvements. Both nodes were updated without incidents and are fully operational.",
+  "url": "https://github.com/NethermindEth/juno/releases/tag/v0.16.3"
+},
+  {
   "id": "cosmos-testnet-governance-proposal-302-2026-06-18",
   "date": "2026-06-18T00:00:00Z",
   "incident_type": "governance_proposal",
