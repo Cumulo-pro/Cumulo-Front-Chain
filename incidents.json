@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmos-testnet-governance-proposal-305-2026-06-19",
+  "date": "2026-06-19T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #305 on Cosmos Hub testnet: Community pool spend proposal to fund Hypha Worker Co-operative for stewardship and maintenance of the Hub's public testnet program from August 1, 2026 to July 31, 2027, at a monthly flat rate of $16,860 USDC ($202,320 total). Scope includes organizing testnet events, reporting validator participation to the ICF delegations program, running testnet infrastructure such as snapshots and faucets, and coordinating upgrade rehearsals with Cosmos Labs. Gaia development, QA, and mainnet coordination are explicitly out of scope. Voting period runs from June 19, 2026 at 18:40 to 19:40 UTC. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos_testnet/governance#proposal-305",
+  "vote": "https://cumulo.pro/services/cosmos_testnet/search?q=66B26E69138D4407F27E92429CBE3F162FF58D6B89FC92D930317024FD556246"
+},
+  {
   "id": "starknet-mainnet-testnet-update-juno-v0.16.3-2026-06-19",
   "date": "2026-06-19T00:00:00Z",
   "incident_type": "update",
