@@ -722,18 +722,10 @@
   "api": "https://public-celestia-lcd.numia.xyz"
 },
 {
-  "name": "Lunar Oasis",
-  "webservices": "",
-  "x": "",
-  "validatorlogo": "",
-  "rpc": "https://rpc.lunaroasis.net",
-  "api": ""
-},
-{
   "name": "Validatus",
   "webservices": "",
-  "x": "",
-  "validatorlogo": "",
+  "x": "stakeingermany",
+  "validatorlogo": "validatus.jpg",
   "rpc": "https://rpc.celestia.validatus.com",
   "api": "https://api.celestia.validatus.com",
   "archive_rpc": "https://rpc.archive.celestia.validatus.com"
