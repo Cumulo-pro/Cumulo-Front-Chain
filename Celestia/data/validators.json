@@ -752,22 +752,6 @@
   }
 },
 {
-  "name": "Unity Nodes",
-  "webservices": "https://unitynodes.com",
-  "x": "unity_nodes",
-  "validatorlogo": "unitynodes.jpg",
-  "tools_url": {
-    "Pulse - Geography": "http://pulse.unitynodes.com/celestia/geography",
-    "Pulse - Providers": "http://pulse.unitynodes.com/celestia/providers",
-    "Pulse - Service Health": "https://pulse.unitynodes.com/celestia/services"
-  },
-  "tools_desc": {
-    "Pulse - Geography": "Real-time geographic distribution map of Celestia validators and infrastructure.",
-    "Pulse - Providers": "Dashboard tracking infrastructure providers and hosting concentration across the Celestia network.",
-    "Pulse - Service Health": "Live health monitor for public Celestia RPC, API and gRPC endpoints, updated every 90 seconds."
-  }
-},
-{
   "name": "Metatarz",
   "webservices": "metatarzxyz.jpg",
   "x": "metatarzxyz",
