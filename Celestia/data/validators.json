@@ -760,13 +760,6 @@
   }
 },
 {
-  "name": "Staking Explorer",
-  "webservices": "",
-  "x": "",
-  "validatorlogo": "",
-  "explorer": "https://staking-explorer.com/staking/celestia"
-},
-{
   "name": "Unity Nodes",
   "webservices": "https://unitynodes.com",
   "x": "unity_nodes",
