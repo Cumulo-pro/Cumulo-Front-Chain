@@ -841,6 +841,19 @@
     "DuskProof Validators Platform": "Web dashboard for monitoring and analyzing Celestia validators: uptime, decentralization, governance participation, analytics, and Keplr wallet integration. Mainnet and testnet."
   }
 },
+  {
+  "name": "Meganode",
+  "webservices": "https://github.com/mega-node",
+  "x": "MeganodeTop",
+  "validatorlogo": "meganode.jpg",
+  "explorer": "https://celestia-explorer.meganode.top/validators",
+  "tools_url": {
+    "Celestia Node Management Tool": "https://github.com/mega-node/celestia-node-tool"
+  },
+  "tools_desc": {
+    "Celestia Node Management Tool": "Open-source CLI for Celestia node management. Covers sync check, validator info, state-sync reset, snapshot restore, and log viewer. Supports Mainnet and Mocha testnet."
+  }
+},
  {
   "name": "Cumulo",
   "x": "Cumulo_pro",
