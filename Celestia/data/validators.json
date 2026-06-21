@@ -237,6 +237,21 @@
     "Installation Guide": "https://services.contributiondao.com/mainnet/celestia/installation"
   }
 },
+   {
+    "name": "Endorphine Stake",
+    "webservices": "https://services.endorphinestake.com",
+    "x": "endorphinestake",
+    "validatorlogo": "endorphinestake.jpg",
+    "explorer": "",
+    "peers": "",
+    "seeds": "",
+    "tools_url": {
+        "Celestia-Loglume": "https://github.com/endorphinestake/celestia-loglume"
+    },
+    "tools_desc": {
+        "Celestia-Loglume": "EFK monitoring stack for Celestia nodes: collects logs via Fluent Bit, stores them in Elasticsearch, and visualizes them in Kibana. Includes automatic index lifecycle management with 7-day retention."
+    }
+},
 {
   "name": "Cosmostation",
   "webservices": "",
