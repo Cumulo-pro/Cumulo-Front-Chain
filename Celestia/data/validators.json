@@ -112,24 +112,6 @@
   }
 },
 {
-    "name": "AutoStake",
-    "webservices": "https://autostake.com/networks/celestia/#services",
-    "x": "AutoStake_",
-    "validatorlogo": "autostake.png",
-    "api": "https://celestia-mainnet-lcd.autostake.com",
-    "rpc": "https://celestia-mainnet-rpc.autostake.com",
-    "grpc": "https://celestia-mainnet-grpc.autostake.com:443",
-    "snapshot": "",
-    "addrbook": "",
-    "tools": "Services (Snapshot, Addrbook, State-sync)",
-    "tools_url": {
-        "Snapshot, addrbook, State-sync, Seed, Peer": "https://autostake.com/networks/celestia/#services"
-    },
-    "tools_desc": {
-    "Snapshot, addrbook, State-sync, Seed, Peer": "Service hub providing snapshots, addrbook, state sync settings, seeds, and peers for faster node setup and maintenance."
-  }
-},
-{
   "name": "Smart Stake",
   "webservices": "",
   "x": "SmartStake",
