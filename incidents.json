@@ -1,5 +1,15 @@
 [
   {
+  "id": "espresso-decaf-configuration-metadata-uri-2026-06-22",
+  "date": "2026-06-22T00:00:00Z",
+  "incident_type": "configuration",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "note": "Cumulo configured a public HTTPS endpoint for the Espresso Decaf testnet node via nginx reverse proxy at espresso-decaf.cumulo.org.es and updated the validator metadata URI on-chain via the staking-cli update-metadata-uri command. Transaction confirmed on Sepolia: 0x89757d27de0c1ffce590ac2615eecd7cc4f6ecb11f349eecf0b11f454f71a604."
+},
+  {
   "id": "espresso-mainnet-configuration-config-peers-nginx-2026-06-22",
   "date": "2026-06-22T00:00:00Z",
   "incident_type": "configuration",
