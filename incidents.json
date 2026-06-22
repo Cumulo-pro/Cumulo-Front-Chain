@@ -1,5 +1,17 @@
 [
    {
+  "id": "cosmos-testnet-governance-proposal-317-2026-06-22",
+  "date": "2026-06-22T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #317 on Cosmos Hub testnet: Software upgrade proposal for Gaia v27.5.0-rc0, scheduled at block height 17,868,500. The upgrade bumps ibc-go from v10.6.0 to v10.7.0. If passed, validators will be required to update the Cosmos Hub binary at the specified upgrade height. Voting period runs from June 22, 2026 at 17:49 to 17:54 UTC. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos_testnet/governance#proposal-317",
+  "vote": "https://cumulo.pro/services/cosmos_testnet/search?q=93A98648C3C68629B34EF6CEA8FDE2F088FD0FE987B1E426AFB49702F17DF8C2"
+},
+   {
   "id": "cosmos-testnet-governance-proposal-316-submit-2026-06-22",
   "date": "2026-06-22T00:00:00Z",
   "incident_type": "governance_proposal",
