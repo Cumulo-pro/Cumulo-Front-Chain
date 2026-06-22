@@ -1,5 +1,15 @@
 [
    {
+  "id": "cosmos-mainnet-ibc-relayer-expand-19-channels-2026-06-22",
+  "date": "2026-06-22T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Cumulo expanded its Hermes IBC relayer from 15 to 19 active channels following a full audit of relayed paths. New channels added: Celestia↔Osmosis (channel-2↔channel-6994, channel-10↔channel-7282, channel-11↔channel-7283), Cosmos Hub↔Osmosis (channel-213↔channel-61, channel-215↔channel-63, channel-216↔channel-64), Cosmos Hub↔Injective (channel-220↔channel-1), and Injective↔Osmosis (channel-8↔channel-122). All channels verified STATE_OPEN via public REST APIs prior to adding them. A packet_filter was configured for Celestia and the Osmosis packet_filter extended with the new counterpart channels. Configuration applied on the live server and Hermes restarted successfully. The IBC dashboard at cumulo.pro/services/ibc was updated to reflect all 19 active channels."
+},
+   {
   "id": "cosmos-testnet-governance-proposal-317-2026-06-22",
   "date": "2026-06-22T00:00:00Z",
   "incident_type": "governance_proposal",
@@ -397,6 +407,16 @@
   "note": "Governance Proposal #1041 on Cosmos Hub mainnet: Gaia v27.4.0 upgrade proposal. The upgrade bumps cometbft from v0.38.21 to v0.38.23, wasmd from v0.60.6 to v0.60.7, and wasmvm from v2.3.2 to v2.3.3. If passed, validators will be required to update the Cosmos Hub binary at the specified upgrade height. Cumulo voted Yes.",
   "url": "https://cumulo.pro/services/cosmos/governance#proposal-1041",
   "vote": "https://cumulo.pro/services/cosmos/search?q=29970C87AA675048E1CDADE956952B869ED435403581259259646469540A5D4B"
+},
+   {
+  "id": "cosmos-mainnet-ibc-relayer-setup-15-channels-2026-06-01",
+  "date": "2026-06-01T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Cumulo deployed its Hermes IBC relayer (v1.13.2) with an initial set of 15 active channels across 8 chains: Celestia↔Cosmos Hub (channel-278↔channel-1879), Celestia↔XRPL EVM (channel-280↔channel-6), Celestia↔Injective (channel-281↔channel-453), Cosmos Hub↔XRPL EVM (channel-1377↔channel-2), Cosmos Hub↔Injective (channel-211↔channel-0), XRPL EVM↔Injective (channel-0↔channel-436), Cosmos Hub↔SEDA (channel-1337↔channel-1), Cosmos Hub↔Osmosis (channel-141↔channel-0, channel-188↔channel-30, channel-189↔channel-23, channel-193↔channel-29, channel-338↔channel-245), Injective↔Osmosis (channel-5↔channel-109), and SEDA↔Osmosis (channel-0↔channel-75016). A packet_filter was configured for Osmosis to prevent Hermes from scanning its 100,000+ channels. The mocha-4↔provider testnet channel (channel-464↔channel-586) was also included for IBC relay testing. Relayer wallets funded across all chains and Hermes running as a systemd service on Cumulo infrastructure."
 },
   {
   "id": "cosmos-mainnet-governance-proposal-1040-2026-05-31",
