@@ -1,5 +1,17 @@
 [
    {
+  "id": "cosmos-mainnet-governance-proposal-1043-2026-06-22",
+  "date": "2026-06-22T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1043 on Cosmos Hub mainnet: Community pool spend proposal to fund Hypha Worker Co-operative for stewardship and maintenance of the Hub's public testnet program from August 1, 2026 to July 31, 2027, at a monthly flat rate of $16,860 USDC ($202,320 total). Scope includes organizing testnet events, reporting validator participation to the ICF delegations program, running testnet infrastructure such as snapshots and faucets, and coordinating upgrade rehearsals with Cosmos Labs. Voting period runs from June 22 to June 29, 2026. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1043",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=0A95BC3B76CF371AE7A82B6612EDBD26F349ADE943ACC4636623B3FC6FF0EEDF"
+},
+   {
   "id": "cosmos-mainnet-ibc-relayer-expand-19-channels-2026-06-22",
   "date": "2026-06-22T00:00:00Z",
   "incident_type": "deployment",
