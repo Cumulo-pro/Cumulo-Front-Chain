@@ -1,5 +1,27 @@
 [
   {
+  "id": "espresso-mainnet-configuration-config-peers-nginx-2026-06-22",
+  "date": "2026-06-22T00:00:00Z",
+  "incident_type": "configuration",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "sequencer 20260605",
+  "note": "Cumulo investigated a degraded Missed Score on the Espresso mainnet validator. Root cause identified as an incomplete ESPRESSO_SEQUENCER_CONFIG_PEERS configuration — only one peer endpoint was set instead of three. Additionally, a public HTTPS endpoint was configured via nginx reverse proxy (espresso.cumulo.org.es) and the node URL was submitted via the official Espresso operator form to enable Version Score tracking. CONFIG_PEERS updated to include cache, query, and query-0 endpoints. Node restarted and confirmed healthy: 133 peers, consensus current view in real time. Weekly Score recovered to 100/100."
+},
+  {
+  "id": "espresso-decaf-incident-l1-provider-publicnode-2026-06-22",
+  "date": "2026-06-22T00:00:00Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": "sequencer 20260605",
+  "note": "Cumulo identified a complete validator outage on the Espresso Decaf testnet node, with 100% missed slots during week 202625. Root cause was the L1 provider PublicNode (ethereum-sepolia-rpc.publicnode.com) returning HTTP 403 errors on archive requests after a policy change requiring personal tokens. The L1 provider was replaced with an Alchemy Sepolia endpoint. Node restarted and confirmed operational: 135 peers connected, consensus current view in real time, epoch catchup resumed without errors."
+},
+  {
   "id": "cosmos-testnet-governance-proposal-305-2026-06-19",
   "date": "2026-06-19T00:00:00Z",
   "incident_type": "governance_proposal",
