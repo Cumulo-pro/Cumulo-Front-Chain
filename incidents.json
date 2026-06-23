@@ -1,5 +1,17 @@
 [
    {
+  "id": "cosmos-testnet-governance-proposal-319-2026-06-23",
+  "date": "2026-06-23T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #319 on Cosmos Hub testnet: Testnet Tuesday parameter change proposal to set burn_vote_quorum to true, enabling burning of deposits for future proposals that do not reach quorum. Submitted as part of the Testnet Tuesday June 23, 2026 event following the Gaia v27.5.0-rc0 upgrade. Voting period runs from June 23, 2026 at 15:42 to 16:42 UTC. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos_testnet/governance#proposal-319",
+  "vote": "https://cumulo.pro/services/cosmos_testnet/search?q=72EE0398EF28351D86D7F6556B2A1F9CD4847A96AF499D0EADA54F28D4E31F8B"
+},
+   {
   "id": "cosmos-testnet-gaia-v27.5.0-rc0-upgrade-2026-06-23",
   "date": "2026-06-23T15:30:00Z",
   "incident_type": "upgrade",
