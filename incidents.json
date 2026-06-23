@@ -1,5 +1,17 @@
 [
    {
+  "id": "starknet-mainnet-testnet-update-juno-v0.16.4-2026-06-23",
+  "date": "2026-06-23T00:00:00Z",
+  "incident_type": "update",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "mainnet/testnet",
+  "node_type": ["rpc"],
+  "client": "juno v0.16.4",
+  "note": "Cumulo updated its Starknet Mainnet and Testnet RPC nodes to Juno v0.16.4. This release introduces node pruning support, enabling the database size to be brought under 100 GB. Both nodes were updated without incidents and are fully operational.",
+  "url": "https://github.com/NethermindEth/juno/releases/tag/v0.16.4"
+},
+   {
   "id": "cosmos-testnet-governance-proposal-319-2026-06-23",
   "date": "2026-06-23T00:00:00Z",
   "incident_type": "governance_proposal",
