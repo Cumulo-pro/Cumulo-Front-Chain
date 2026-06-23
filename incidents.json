@@ -1,5 +1,17 @@
 [
    {
+  "id": "cosmos-testnet-gaia-v27.5.0-rc0-upgrade-2026-06-23",
+  "date": "2026-06-23T15:30:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "testnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "gaia v27.5.0-rc0",
+  "note": "Cumulo upgraded its Cosmos Hub testnet (provider) nodes to gaia v27.5.0-rc0 at block height 17,868,500, as approved by governance Proposal #317. The upgrade bumps ibc-go from v10.6.0 to v10.7.0. Applied during Testnet Tuesday on June 23, 2026 at 15:30 UTC. All nodes updated and verified successfully without incidents.",
+  "url": "https://github.com/cosmos/testnets/tree/master/provider#v2750-rc0-upgrade"
+},
+   {
   "id": "cosmos-mainnet-governance-proposal-1043-2026-06-22",
   "date": "2026-06-22T00:00:00Z",
   "incident_type": "governance_proposal",
