@@ -771,7 +771,8 @@
     "Pulse - Providers": "http://pulse.unitynodes.com/celestia/providers",
     "Pulse - Service Health": "https://pulse.unitynodes.com/celestia/services",
     "CelestiaHub": "https://unityhub.dev/celestia/validator",
-    "Runcelestia": "https://runcelestia.xyz/"
+    "Runcelestia": "https://runcelestia.xyz/",
+    "BlobPedia MCP": "https://blobpedia.org/for-ai"
   },
   "tools_desc": {
     "Pulse - Validators": "Observability dashboard for the post-Matcha performance model. Tracks live uptime by block proposals (not signatures), missed proposals per validator (24h/7d/30d), provider and country breakdown with voting power toggle, full economics (TIA price, on-chain APR, break-even calculator), and automatic upgrade and signal tracking.",
@@ -779,7 +780,8 @@
     "Pulse - Providers": "Dashboard tracking infrastructure providers and hosting concentration across the Celestia network.",
     "Pulse - Service Health": "Live health monitor for public Celestia RPC, API and gRPC endpoints, updated every 90 seconds.",
     "CelestiaHub": "Curated entry point to the Celestia ecosystem structured for four audiences: Validators (docs, endpoints, snapshots, FDP), Developers (SDKs, blob/namespace APIs, tooling), Educational (guides, analytical articles), and Community (Discord, forum, videos).",
-    "Runcelestia": "Single-page onboarding guide for validators. Covers 3-phase setup map, readiness quiz, 10-step setup guide, hardware specs, hosting decentralization with FDP-rejected flags, and a Live Reference Node with real metrics every 2s. Includes an AI validator assistant and FAQ kept up to date on every protocol change."
+    "Runcelestia": "Single-page onboarding guide for validators. Covers 3-phase setup map, readiness quiz, 10-step setup guide, hardware specs, hosting decentralization with FDP-rejected flags, and a Live Reference Node with real metrics every 2s. Includes an AI validator assistant and FAQ kept up to date on every protocol change.",
+    "BlobPedia MCP": "MCP server that connects the Celestia knowledge base to AI agents (Claude, Cursor, ChatGPT, etc.). Indexes CIPs, docs, forum, GitHub releases, blog posts, and whitepapers, plus live on-chain stats via Celenium and CoinGecko. Setup in 1 minute."
   }
 },
   {
