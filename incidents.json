@@ -1,5 +1,17 @@
 [
    {
+  "id": "starknet-mainnet-governance-proposal-15-2026-06-24",
+  "date": "2026-06-24T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Starknet",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #15 on Starknet Mainnet: Starknet v0.14.3 (Updated). The community previously approved v0.14.3, but the release scope has since been expanded with two additional features — keccak support for client-side proving (SNIP-36) and a quantum-resistant SNOS hash using the Blake function — along with an associated breaking change for SNIP-36 provers. An updated vote is now live to cover the expanded scope. Updated deployment timeline: Testnet (Sepolia) on 22 June 2026, Mainnet on 6 July 2026. Cumulo voted YES.",
+  "url": "https://governance.starknet.io/#/sn:0x009fedaf0d7a480d21a27683b0965c0f8ded35b3f1cac39827a25a06a8a682a4/proposal/15",
+  "vote": "https://voyager.online/tx/0x71c0292425b22b68db6f482f6b34e151ccbcef5704d2cd66b22bfa68d4a2cd0"
+},
+   {
   "id": "starknet-mainnet-testnet-update-juno-v0.16.4-2026-06-23",
   "date": "2026-06-23T00:00:00Z",
   "incident_type": "update",
