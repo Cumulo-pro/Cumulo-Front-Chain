@@ -1,5 +1,17 @@
 [
  {
+  "id": "gnoland-test13-deployment-validator-2026-06-24",
+  "date": "2026-06-24T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Gno.land",
+  "network": "testnet (test13)",
+  "node_type": ["validator"],
+  "client": "gnoland chain/test13",
+  "note": "Cumulo deployed a validator node on the Gno.land Test13 testnet (chain ID: test-13) on server cumveliamon-t (192.155.100.132). The gnoland binary was compiled from the chain/test13 branch of the official monorepo, and the genesis file was downloaded and verified against the official SHA256 checksum. The node was fully configured via the gnoland CLI, the systemd service enabled and started, and the node reached full sync (catching_up: false) without incidents. The operator wallet was created and the Cumulo validator profile was registered on-chain in the r/gnops/valopers realm (operator address: g1mndkvypn3339m6yvkyutal5hk6m2yeqp5d52ly, TX height: 433989). The Discord onboarding process was initiated — /candidate-testnet and /submit-request commands were submitted successfully. Entry into the active validator set is pending GovDAO vote and Gno team review.",
+  "url": "https://test13.testnets.gno.land/r/gnops/valopers:g1mndkvypn3339m6yvkyutal5hk6m2yeqp5d52ly"
+},
+ {
   "id": "starknet-mainnet-governance-proposal-15-2026-06-24",
   "date": "2026-06-24T00:00:00Z",
   "incident_type": "governance_proposal",
