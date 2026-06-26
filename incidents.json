@@ -32,7 +32,7 @@
   "network": "testnet (test13)",
   "node_type": ["validator"],
   "client": "gnoland chain/test13",
-  "note": "Cumulo deployed a validator node on the Gno.land Test13 testnet (chain ID: test-13) on server cumveliamon-t (192.155.100.132). The gnoland binary was compiled from the chain/test13 branch of the official monorepo, and the genesis file was downloaded and verified against the official SHA256 checksum. The node was fully configured via the gnoland CLI, the systemd service enabled and started, and the node reached full sync (catching_up: false) without incidents. The operator wallet was created and the Cumulo validator profile was registered on-chain in the r/gnops/valopers realm (operator address: g1mndkvypn3339m6yvkyutal5hk6m2yeqp5d52ly, TX height: 433989). The Discord onboarding process was initiated — /candidate-testnet and /submit-request commands were submitted successfully. Entry into the active validator set is pending GovDAO vote and Gno team review.",
+  "note": "Cumulo deployed a validator node on the Gno.land Test13 testnet (chain ID: test-13) on server cumveliamon-t (192.155.100.132). The gnoland binary was compiled from the chain/test13 branch of the official monorepo, and the genesis file was downloaded and verified against the official SHA256 checksum. The node was fully configured via the gnoland CLI, the systemd service enabled and started, and the node reached full sync (catching_up: false) without incidents. The operator wallet was created and the Cumulo validator profile was registered on-chain in the r/gnops/valopers realm (operator address: g1mndkvypn3339m6yvkyutal5hk6m2yeqp5d52ly, TX height: 433989). The Discord onboarding process was initiated   /candidate-testnet and /submit-request commands were submitted successfully. Entry into the active validator set is pending GovDAO vote and Gno team review.",
   "url": "https://test13.testnets.gno.land/r/gnops/valopers:g1mndkvypn3339m6yvkyutal5hk6m2yeqp5d52ly"
 },
  {
@@ -43,7 +43,7 @@
   "chain": "Starknet",
   "network": "mainnet",
   "node_type": ["validator"],
-  "note": "Governance Proposal #15 on Starknet Mainnet: Starknet v0.14.3 (Updated). The community previously approved v0.14.3, but the release scope has since been expanded with two additional features — keccak support for client-side proving (SNIP-36) and a quantum-resistant SNOS hash using the Blake function — along with an associated breaking change for SNIP-36 provers. An updated vote is now live to cover the expanded scope. Updated deployment timeline: Testnet (Sepolia) on 22 June 2026, Mainnet on 6 July 2026. Cumulo voted YES.",
+  "note": "Governance Proposal #15 on Starknet Mainnet: Starknet v0.14.3 (Updated). The community previously approved v0.14.3, but the release scope has since been expanded with two additional features   keccak support for client-side proving (SNIP-36) and a quantum-resistant SNOS hash using the Blake function   along with an associated breaking change for SNIP-36 provers. An updated vote is now live to cover the expanded scope. Updated deployment timeline: Testnet (Sepolia) on 22 June 2026, Mainnet on 6 July 2026. Cumulo voted YES.",
   "url": "https://governance.starknet.io/#/sn:0x009fedaf0d7a480d21a27683b0965c0f8ded35b3f1cac39827a25a06a8a682a4/proposal/15",
   "vote": "https://voyager.online/tx/0x71c0292425b22b68db6f482f6b34e151ccbcef5704d2cd66b22bfa68d4a2cd0"
 },
@@ -160,7 +160,7 @@
   "network": "mainnet",
   "node_type": ["validator"],
   "client": "sequencer 20260605",
-  "note": "Cumulo investigated a degraded Missed Score on the Espresso mainnet validator. Root cause identified as an incomplete ESPRESSO_SEQUENCER_CONFIG_PEERS configuration — only one peer endpoint was set instead of three. Additionally, a public HTTPS endpoint was configured via nginx reverse proxy (espresso.cumulo.org.es) and the node URL was submitted via the official Espresso operator form to enable Version Score tracking. CONFIG_PEERS updated to include cache, query, and query-0 endpoints. Node restarted and confirmed healthy: 133 peers, consensus current view in real time. Weekly Score recovered to 100/100."
+  "note": "Cumulo investigated a degraded Missed Score on the Espresso mainnet validator. Root cause identified as an incomplete ESPRESSO_SEQUENCER_CONFIG_PEERS configuration   only one peer endpoint was set instead of three. Additionally, a public HTTPS endpoint was configured via nginx reverse proxy (espresso.cumulo.org.es) and the node URL was submitted via the official Espresso operator form to enable Version Score tracking. CONFIG_PEERS updated to include cache, query, and query-0 endpoints. Node restarted and confirmed healthy: 133 peers, consensus current view in real time. Weekly Score recovered to 100/100."
 },
   {
   "id": "espresso-decaf-incident-l1-provider-publicnode-2026-06-22",
@@ -205,7 +205,7 @@
   "chain": "Cosmos Hub",
   "network": "testnet",
   "node_type": ["validator"],
-  "note": "Governance Proposal #302 on Cosmos Hub testnet: Humorous signaling proposal to officially recognize validators who keep their nodes running with minimal resources and maximum ingenuity — epitomized by a fictional validator named Greg running a Raspberry Pi in a beverage cooler, kept alive by a single cron job. The proposal asks the community to acknowledge that uptime is a state of mind, that restarting the binary is a valid incident-response strategy, and that 'it works on testnet' deserves a honorable retirement. Text-only proposal with no on-chain parameter changes. Voting period runs from June 18, 2026 at 17:40 to 18:40 UTC. Cumulo voted Yes.",
+  "note": "Governance Proposal #302 on Cosmos Hub testnet: Humorous signaling proposal to officially recognize validators who keep their nodes running with minimal resources and maximum ingenuity   epitomized by a fictional validator named Greg running a Raspberry Pi in a beverage cooler, kept alive by a single cron job. The proposal asks the community to acknowledge that uptime is a state of mind, that restarting the binary is a valid incident-response strategy, and that 'it works on testnet' deserves a honorable retirement. Text-only proposal with no on-chain parameter changes. Voting period runs from June 18, 2026 at 17:40 to 18:40 UTC. Cumulo voted Yes.",
   "url": "https://cumulo.pro/services/cosmos_testnet/governance#proposal-302",
   "vote": "https://cumulo.pro/services/cosmos_testnet/search?q=6F602244B27891889C1A1C481ED738F1937EEACA8CB24EC39F39733D8158432D"
 },
@@ -429,7 +429,7 @@
   "network": "testnet",
   "node_type": ["full"],
   "client": "monad-bft v0.14.5",
-  "note": "Cumulo upgraded its Monad testnet full node to v0.14.5. Orange-coded release requiring action within 24–48 hours. Notable change: eth_sendRawTransactionSync now subscribes to block updates via execution events, improving response time by up to 100ms — this method is only supported with execution events enabled. Nodes without execution events will return 'method not supported' for this endpoint. Upgrade applied following official instructions; node verified and fully operational post-upgrade.",
+  "note": "Cumulo upgraded its Monad testnet full node to v0.14.5. Orange-coded release requiring action within 24–48 hours. Notable change: eth_sendRawTransactionSync now subscribes to block updates via execution events, improving response time by up to 100ms   this method is only supported with execution events enabled. Nodes without execution events will return 'method not supported' for this endpoint. Upgrade applied following official instructions; node verified and fully operational post-upgrade.",
   "url": "https://docs.monad.xyz/node-ops/upgrade-instructions/v0.14.5"
 },
   {
@@ -569,7 +569,7 @@
   "chain": "Cosmos Hub",
   "network": "testnet",
   "node_type": ["rpc", "signer"],
-  "note": "Cumulo migrated its Cosmos Hub testnet infrastructure to servers with higher capacity, as part of an ongoing effort to scale and consolidate infrastructure for Cosmos Hub. The migration covered two components: (1) The full RPC stack — endpoints cosmos.rpc.testnet.cumulo.me, cosmos.api.testnet.cumulo.me and cosmos.grpc.testnet.cumulo.me — including Nginx reverse proxy reconfiguration, SSL certificates reissued via certbot, the block explorer data collector service redeployed as a systemd service, and the addrbook exporter configured with a systemd timer serving https://files.cumulo.me/testnet/cosmoshub/addrbook.json. (2) Cosmos Hub Testnet Validator Signer 2 (Horcrux) migrated to a higher capacity server."
+  "note": "Cumulo migrated its Cosmos Hub testnet infrastructure to servers with higher capacity, as part of an ongoing effort to scale and consolidate infrastructure for Cosmos Hub. The migration covered two components: (1) The full RPC stack   endpoints cosmos.rpc.testnet.cumulo.me, cosmos.api.testnet.cumulo.me and cosmos.grpc.testnet.cumulo.me   including Nginx reverse proxy reconfiguration, SSL certificates reissued via certbot, the block explorer data collector service redeployed as a systemd service, and the addrbook exporter configured with a systemd timer serving https://files.cumulo.me/testnet/cosmoshub/addrbook.json. (2) Cosmos Hub Testnet Validator Signer 2 (Horcrux) migrated to a higher capacity server."
 },
   {
   "id": "cosmos-hub-testnet-gaia-v27.4.0-rc0-upgrade-2026-05-26",
@@ -711,7 +711,7 @@
   "chain": "Cosmos Hub",
   "network": "mainnet",
   "node_type": ["validator"],
-  "note": "Governance Proposal #1037 on Cosmos Hub mainnet: 'New Cosmos Credit Card' — a spam/scam proposal promoting an external website (AtomPlay.at) with no legitimate on-chain purpose. Voting period ends May 22, 2026, at 22:31 UTC. Cumulo voted NO WITH VETO.",
+  "note": "Governance Proposal #1037 on Cosmos Hub mainnet: 'New Cosmos Credit Card'   a spam/scam proposal promoting an external website (AtomPlay.at) with no legitimate on-chain purpose. Voting period ends May 22, 2026, at 22:31 UTC. Cumulo voted NO WITH VETO.",
   "url": "https://cumulo.pro/services/cosmos/governance#proposal-1037",
   "vote": "https://cumulo.pro/services/cosmos/search?q=A0D8B18D56AD6C31F84B6ACBD6512ACB239C29AB47F55579B2EDA562AE4B3F83"
 },
@@ -914,7 +914,7 @@
   "chain": "Starknet",
   "network": "mainnet",
   "node_type": ["validator"],
-  "note": "Governance Proposal #12 on Starknet Mainnet: strkBTC — Bitcoin on Starknet (SNIP-38). This proposal ratifies the Phase 1 Federation design for strkBTC, a federated Bitcoin wrapper on Starknet, including the initial six-member Federation set and the governance framework for member eligibility, removal, and the trust model sunset roadmap toward trust-minimized verification via BitVM and OP_CAT. Cumulo voted YES.",
+  "note": "Governance Proposal #12 on Starknet Mainnet: strkBTC   Bitcoin on Starknet (SNIP-38). This proposal ratifies the Phase 1 Federation design for strkBTC, a federated Bitcoin wrapper on Starknet, including the initial six-member Federation set and the governance framework for member eligibility, removal, and the trust model sunset roadmap toward trust-minimized verification via BitVM and OP_CAT. Cumulo voted YES.",
   "url": "https://governance.starknet.io/#/sn:0x009fedaf0d7a480d21a27683b0965c0f8ded35b3f1cac39827a25a06a8a682a4/proposal/12",
   "vote": "https://voyager.online/tx/0x3c159adcbfbae031581a7ddb3ed6b73b04aeaff2488696a0752c2af35194522"
 },
@@ -926,7 +926,7 @@
   "chain": "Monad",
   "network": "testnet",
   "node_type": ["full"],
-  "note": "Cumulo applied the interim mitigation for CVE-2026-31431, a local privilege escalation vulnerability in the Linux kernel affecting the algif_aead module. The mitigation consists of permanently blacklisting the module via /etc/modprobe.d/disable-algif.conf and unloading it immediately if present, with no node restart required. Applied across all Monad testnet nodes. Mitigation verified successfully — module load blocked as expected. Long-term fix will follow with an upstream-patched kernel update.",
+  "note": "Cumulo applied the interim mitigation for CVE-2026-31431, a local privilege escalation vulnerability in the Linux kernel affecting the algif_aead module. The mitigation consists of permanently blacklisting the module via /etc/modprobe.d/disable-algif.conf and unloading it immediately if present, with no node restart required. Applied across all Monad testnet nodes. Mitigation verified successfully   module load blocked as expected. Long-term fix will follow with an upstream-patched kernel update.",
   "url": "https://github.com/Cumulo-pro/cumulo-monad-infra/blob/main/docs/08-upgrade-log.md#2026-05-01---cve-2026-31431-mitigation-algif_aead"
 },
  {
@@ -1889,7 +1889,7 @@
   "network": "testnet",
   "node_type": ["validator", "rpc"],
   "client": "genlayer v0.5.0",
-  "note": "GenLayer Testnet Phase 5 rollout — final phase before Bradbury. Migration to new RaaS provider (Matter Labs / ZKsync Atlas). Testnet history wiped and new RPC endpoints introduced. Validators must rejoin staking via genlayer-cli, update RPC/WS endpoints, update consensus addresses (Main + Data), update validator wallet, clean storage and restart node before Epoch 1 (Monday 17:00 CET).",
+  "note": "GenLayer Testnet Phase 5 rollout   final phase before Bradbury. Migration to new RaaS provider (Matter Labs / ZKsync Atlas). Testnet history wiped and new RPC endpoints introduced. Validators must rejoin staking via genlayer-cli, update RPC/WS endpoints, update consensus addresses (Main + Data), update validator wallet, clean storage and restart node before Epoch 1 (Monday 17:00 CET).",
   "url": "https://docs.genlayer.com/validators/changelog#v050"
 },
   {
@@ -2496,7 +2496,7 @@
   "network": "mainnet",
   "node_type": ["validator"],
   "client": "governance",
-  "note": "New on-chain governance proposal #35: Adjust Inflation Parameter — Decrease GoalBonded from 50% to 30%. With the current bonded ratio at ~42.58%, the protocol is programmatically increasing inflation to chase an outdated target. The proposal updates /cosmos.mint.v1beta1.MsgUpdateParams. Voting ends on December 15, 2025 at 14:44 UTC. Validators should review and consider the economic implications for staking yields and network security.",
+  "note": "New on-chain governance proposal #35: Adjust Inflation Parameter   Decrease GoalBonded from 50% to 30%. With the current bonded ratio at ~42.58%, the protocol is programmatically increasing inflation to chase an outdated target. The proposal updates /cosmos.mint.v1beta1.MsgUpdateParams. Voting ends on December 15, 2025 at 14:44 UTC. Validators should review and consider the economic implications for staking yields and network security.",
   "url": "https://dym.fyi/proposal/35"
 },
  {
@@ -2592,7 +2592,7 @@
   "network": "mainnet",
   "node_type": ["validator"],
   "client": "dymension",
-  "note": "Governance Proposal #34 — Introducing TEE-based fast withdrawal for RollApps. Using the new Beyond binary, this proposal enables TEE-backed fast finality so that the Hub can instantly and safely finalize RollApp state updates, allowing users to withdraw without relying on eIBC. Fully additive: existing RollApps can adopt the capability without breaking current flows.",
+  "note": "Governance Proposal #34   Introducing TEE-based fast withdrawal for RollApps. Using the new Beyond binary, this proposal enables TEE-backed fast finality so that the Hub can instantly and safely finalize RollApp state updates, allowing users to withdraw without relying on eIBC. Fully additive: existing RollApps can adopt the capability without breaking current flows.",
   "url": "https://portal.dymension.xyz/dymension/proposal/34"
 },
  {
@@ -2616,7 +2616,7 @@
   "network": "mainnet",
   "node_type": ["validator", "rpc", "archive", "full", "bridge"],
   "client": ["celestia-app v6.3.0", "celestia-node v0.28.4"],
-  "note": "Mainnet Beta upgrade to celestia-app v6.3.0 and celestia-node v0.28.4. Scheduled between 15:25–15:55 UTC on November 27, 2025. This release contains major changes required for correct node operation and introduces the foundation for 32MB/6s blocks. All node operators — validators, consensus full nodes, RPC providers, and archive nodes — must upgrade promptly. It is critical to update configs, use an updated KMS, and validate node performance after applying the release.",
+  "note": "Mainnet Beta upgrade to celestia-app v6.3.0 and celestia-node v0.28.4. Scheduled between 15:25–15:55 UTC on November 27, 2025. This release contains major changes required for correct node operation and introduces the foundation for 32MB/6s blocks. All node operators   validators, consensus full nodes, RPC providers, and archive nodes   must upgrade promptly. It is critical to update configs, use an updated KMS, and validate node performance after applying the release.",
   "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v6.3.0"
 },
  {
@@ -2628,7 +2628,7 @@
   "network": "mainnet",
   "node_type": ["validator"],
   "client": "celestia-app",
-  "note": "Governance Proposal #8 — Increase max square size to 256 and block size to 32 MiB. This proposal updates core DA and block parameters for Celestia mainnet ahead of the transition toward larger square sizes. Validators should review the implications on block production, bandwidth, and hardware before voting.",
+  "note": "Governance Proposal #8   Increase max square size to 256 and block size to 32 MiB. This proposal updates core DA and block parameters for Celestia mainnet ahead of the transition toward larger square sizes. Validators should review the implications on block production, bandwidth, and hardware before voting.",
   "url": "https://www.mintscan.io/celestia/proposals/8"
 },
  {
@@ -2640,7 +2640,7 @@
   "network": "testnet (mocha)",
   "node_type": ["validator"],
   "client": "celestia-app",
-  "note": "Governance Proposal #16 — Increase Max Square Size to 512 and Block Size to 128 MiB. Updates blob-related parameters for Mocha testnet. This proposal aligns Mocha with the planned 128MB block architecture. Validators should review and vote accordingly, as this change impacts data availability parameters and block production constraints.",
+  "note": "Governance Proposal #16   Increase Max Square Size to 512 and Block Size to 128 MiB. Updates blob-related parameters for Mocha testnet. This proposal aligns Mocha with the planned 128MB block architecture. Validators should review and vote accordingly, as this change impacts data availability parameters and block production constraints.",
   "url": "https://testnet.celestia.explorers.guru/proposal/16"
 },
  {
@@ -2682,7 +2682,7 @@
   "node_type": ["rpc", "backup"],
   "client": "Juno v0.15.11",
   "url": "https://github.com/NethermindEth/juno/releases/tag/v0.15.11",
-  "note": "Following the upgrade to Juno v0.15.11, both Starknet RPC and backup nodes began experiencing severe sync regression: block ingestion slowed dramatically, recurring 'Restarting sync process (catchUpMode)' events were logged, and L1 WebSocket subscriptions collapsed regularly with 'failed to read frame header: EOF'. This behavior did not exist prior to the upgrade. Investigation revealed that the local Ethereum node (geth + beacon) was under heavy load, causing unstable L1 feeds and triggering gateway throttling. Mitigation steps included: (1) temporarily stopping the local Ethereum node to confirm the bottleneck, which immediately improved block download speed; (2) switching Juno's --eth-node to a remote L1 endpoint hosted on another node of our infrastructure; (3) applying safe Juno performance tuning — increasing db-cache-size to 4096, db-max-handles to 4096, and widening gw-timeouts. After these changes, sync speed normalized, L1 feed stabilized, and catchUpMode loops ceased. All nodes now operate normally and no further impact has been detected."
+  "note": "Following the upgrade to Juno v0.15.11, both Starknet RPC and backup nodes began experiencing severe sync regression: block ingestion slowed dramatically, recurring 'Restarting sync process (catchUpMode)' events were logged, and L1 WebSocket subscriptions collapsed regularly with 'failed to read frame header: EOF'. This behavior did not exist prior to the upgrade. Investigation revealed that the local Ethereum node (geth + beacon) was under heavy load, causing unstable L1 feeds and triggering gateway throttling. Mitigation steps included: (1) temporarily stopping the local Ethereum node to confirm the bottleneck, which immediately improved block download speed; (2) switching Juno's --eth-node to a remote L1 endpoint hosted on another node of our infrastructure; (3) applying safe Juno performance tuning   increasing db-cache-size to 4096, db-max-handles to 4096, and widening gw-timeouts. After these changes, sync speed normalized, L1 feed stabilized, and catchUpMode loops ceased. All nodes now operate normally and no further impact has been detected."
 },
  {
   "id": "dymension-mainnet-rpc-hotfix-v4.0.1-2025-11-24",
@@ -2693,7 +2693,7 @@
   "network": "mainnet",
   "node_type": ["rpc"],
   "client": "dymension v4.0.1",
-  "note": "Hotfix update v4.0.1 released for Dymension mainnet. Fixes a critical issue affecting eth_gasPrice queries. Required for all operators running public RPC or client-facing nodes. Optional for validator/full nodes. This release is not consensus-breaking and requires no coordination or halt—just a simple binary replacement.",
+  "note": "Hotfix update v4.0.1 released for Dymension mainnet. Fixes a critical issue affecting eth_gasPrice queries. Required for all operators running public RPC or client-facing nodes. Optional for validator/full nodes. This release is not consensus-breaking and requires no coordination or halt just a simple binary replacement.",
   "url": "https://github.com/dymensionxyz/dymension/releases/tag/v4.0.1"
 },
  {
@@ -2716,7 +2716,7 @@
   "chain": "Dymension",
   "network": "mainnet",
   "node_type": ["validator"],
-  "note": "Governance proposal #32 — Bootstrap KAS Module. This proposal initializes the Kaspa–Dymension bridge (KAS) module with its core components, enabling cross-chain operations. Proposal type: /dymensionxyz.dymension.kas.MsgBootstrap. Voting ends on 2025-11-25 at 20:35 (Europe/Madrid). With ❤ by kjnodes.",
+  "note": "Governance proposal #32   Bootstrap KAS Module. This proposal initializes the Kaspa–Dymension bridge (KAS) module with its core components, enabling cross-chain operations. Proposal type: /dymensionxyz.dymension.kas.MsgBootstrap. Voting ends on 2025-11-25 at 20:35 (Europe/Madrid). With ❤ by kjnodes.",
   "url": "https://dym.fyi/proposal/32"
 },
  {
@@ -2823,7 +2823,7 @@
   "node_type": ["validator", "bridge", "rpc"],
   "client": ["celestia-app v6.2.4", "celestia-node v0.28.2"],
   "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v6.2.4",
-  "note": "Celestia Matcha upgrade announced — introducing celestia-app v6.2.4 and celestia-node v0.28.2. This is a consensus and configuration breaking release focused on throughput, blob size, inflation reduction (2.5%), and fee parameter changes. Validators must ensure at least 1Gbps bandwidth, update Horcrux (Celestia fork) or tmKMS (v0.15.0), and apply the updated config via `celestia-appd update-config`. Signaling for upgrade to v6 is now active on-chain, with the transition scheduled to execute 7 days after 5/6+ voting power has signaled. The upgrade will move mainnet to the Matcha architecture and enable larger blocks and squares."
+  "note": "Celestia Matcha upgrade announced   introducing celestia-app v6.2.4 and celestia-node v0.28.2. This is a consensus and configuration breaking release focused on throughput, blob size, inflation reduction (2.5%), and fee parameter changes. Validators must ensure at least 1Gbps bandwidth, update Horcrux (Celestia fork) or tmKMS (v0.15.0), and apply the updated config via `celestia-appd update-config`. Signaling for upgrade to v6 is now active on-chain, with the transition scheduled to execute 7 days after 5/6+ voting power has signaled. The upgrade will move mainnet to the Matcha architecture and enable larger blocks and squares."
 },
   {
   "id": "dymension-hyperlane-bridge-keys-2025-11-10",
