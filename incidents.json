@@ -121,7 +121,7 @@
   "id": "cosmos-testnet-governance-proposal-316-submit-2026-06-22",
   "date": "2026-06-22T00:00:00Z",
   "incident_type": "governance_proposal",
-  "status": "active",
+  "status": "completed",
   "chain": "Cosmos Hub",
   "network": "testnet",
   "node_type": ["validator"],
