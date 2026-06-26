@@ -1,5 +1,17 @@
 [
  {
+  "id": "espresso-decaf-upgrade-20260624-2026-06-26",
+  "date": "2026-06-26T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "testnet (decaf)",
+  "node_type": ["validator"],
+  "client": "espresso-network 20260624",
+  "note": "Cumulo upgraded its Espresso Decaf testnet node to release tag 20260624. This release stages a protocol upgrade to distribute block rewards per epoch instead of once per block, and introduces the light-client catchup module for query nodes. Environment variables have been renamed from ESPRESSO_SEQUENCER_* to ESPRESSO_NODE_* in a backwards-compatible way. A background DB migration runs for query nodes with 10-20% temporary storage bloat; migration status can be monitored at /database/migration-status. Node upgraded and confirmed operational without incidents.",
+  "url": "https://github.com/EspressoSystems/espresso-network/releases/tag/20260624"
+},
+ {
   "id": "gnoland-test13-deployment-rpc-2026-06-26",
   "date": "2026-06-26T00:00:00Z",
   "incident_type": "deployment",
