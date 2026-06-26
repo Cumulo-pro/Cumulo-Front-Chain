@@ -12,15 +12,7 @@
     "url": "https://raw.githubusercontent.com/Cumulo-pro/xrplevmTools/refs/heads/main/data/validators_mainnet.json"
   },
     {
-    "name": "Story Protocol Aeneid",
-    "url": "https://raw.githubusercontent.com/Cumulo-pro/Story_protocol/refs/heads/main/data/validators_aeneid.json"
-  },
-   {
-    "name": "Story mainnet",
-    "url": "https://raw.githubusercontent.com/Cumulo-pro/Story_protocol/refs/heads/main/data/validators_mainnet.json"
-  },
-  {
-    "name": "Dymension mainnet",
-    "url": "https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/Dymension/data/validators.json"
+    "name": "gnoland mainnet",
+    "url": "https://github.com/Cumulo-pro/cumulo-gnoland-infra/blob/main/data/validators_testnet.json"
   }
 ]
