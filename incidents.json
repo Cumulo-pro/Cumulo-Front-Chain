@@ -1,5 +1,17 @@
 [
  {
+  "id": "gnoland-test13-deployment-rpc-2026-06-26",
+  "date": "2026-06-26T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Gno.land",
+  "network": "testnet (test13)",
+  "node_type": ["rpc"],
+  "client": "gnoland chain/test13",
+  "note": "Cumulo deployed a public RPC node on the Gno.land Test13 testnet. The endpoint is publicly available at gno.rpc.testnet.cumulo.me. Deployment completed without incidents and the node is fully operational.",
+  "url": "https://gno.rpc.testnet.cumulo.me"
+},
+ {
   "id": "gnoland-test13-deployment-validator-2026-06-24",
   "date": "2026-06-24T00:00:00Z",
   "incident_type": "deployment",
