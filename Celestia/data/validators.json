@@ -91,25 +91,13 @@
     "webservices": "",
     "x": "stakeme_pro",
     "validatorlogo": "stakeme.jpg",
-    "explorer": "https://celestia.exploreme.pro/",
-    "peers": "f9f6aa4a23f8ff2bc3137fa603bfa4014b8d05cb@celestia-mainnet-peer.stakeme.pro:40656",
-    "seeds": "f9f6aa4a23f8ff2bc3137fa603bfa4014b8d05cb@celestia-mainnet-seed.stakeme.pro:40656",
+    "explorer": "https://mammoblocks.io/",
+    "peers": "fbd16535d44d1da709a5796484dfc23e2cd33d82@celestia-seed.stakeme.pro:40656",
+    "seeds": "e415416c67869eab28b572c2b0038bf90b470769@celestia-seed.stakeme.pro:45656",
     "api": "https://celestia-rest.stakeme.pro",
     "rpc": "https://celestia-rpc.stakeme.pro",
     "grpc": "da-bridge-celestia.stakeme.pro:9090",
-    "snapshot": "",
-    "addrbook": "",
-    "tools": "RPC scanner & peers, Self-written faucet, Uptime validators",
-    "tools_url": {
-        "RPC scanner & peers": "https://celestia.exploreme.pro/network",
-        "Consensus": "https://celestia.exploreme.pro/utilities?tab=consensus",
-        "Uptime validators": "https://celestia.exploreme.pro/utilities?tab=uptime"
-    },
-    "tools_desc": {
-    "RPC scanner & peers": "Network utilities to discover public RPC endpoints and peers for Celestia operators.",
-    "Consensus": "Consensus monitoring view for checking chain status, validator signing, and related signals.",
-    "Uptime validators": "Uptime/availability tracker to compare validator reliability over time."
-  }
+    "snapshot": "https://mammoblocks.io/labs?page=snapshots"
 },
 {
   "name": "Smart Stake",
