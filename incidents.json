@@ -1,5 +1,17 @@
 [
  {
+  "id": "gnoland-test13-deployment-snapshot-2026-06-27",
+  "date": "2026-06-27T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Gno.land",
+  "network": "testnet (test13)",
+  "node_type": ["rpc", "snapshot"],
+  "client": "gnoland chain/test13",
+  "note": "Cumulo deployed a public snapshot service for the Gno.land Test13 testnet, served from the RPC node on Velia2 (148.72.141.245). Snapshots include only the db/ directory (PebbleDB) and exclude config/, secrets/, wal/, and genesis.json. Compression: lz4. A systemd timer runs the snapshot script every 12 hours as root, retaining the last 3 snapshots. The snapshot directory is exposed via nginx symlink at gno.snapshots.testnet.cumulo.me/snapshots/ with SSL via Certbot. The first snapshot was generated successfully at block height 494572 (3GB). Restoration instructions include backup and restore of secrets/priv_validator_state.json to prevent double-signing on validator nodes.",
+  "url": "https://gno.snapshots.testnet.cumulo.me/snapshots/"
+},
+ {
   "id": "espresso-decaf-upgrade-20260624-2026-06-26",
   "date": "2026-06-26T00:00:00Z",
   "incident_type": "upgrade",
