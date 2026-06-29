@@ -1,5 +1,16 @@
 [
  {
+  "id": "ibc-mocha-provider-channel-recreated-2026-06-29",
+  "date": "2026-06-29T00:00:00Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["rpc"],
+  "client": "hermes v1.13.2",
+  "note": "Cumulo detected that the IBC light client 07-tendermint-436 on the provider chain (counterpart of mocha-4 client 07-tendermint-633) had expired due to Hermes not actively monitoring the path. The client had been inactive for approximately 49 days, exceeding the 7-day trusting period. The old channel (channel-464 on mocha-4, channel-586 on provider) was no longer functional. Cumulo recreated the full IBC path using hermes create channel --new-client-connection, establishing new clients (07-tendermint-636 on mocha-4, 07-tendermint-447 on provider), a new connection (connection-687 / connection-308), and a new channel (channel-467 on mocha-4, channel-593 on provider). Hermes was restarted and confirmed active on both chains."
+},
+ {
   "id": "gnoland-test13-deployment-snapshot-2026-06-27",
   "date": "2026-06-27T00:00:00Z",
   "incident_type": "deployment",
