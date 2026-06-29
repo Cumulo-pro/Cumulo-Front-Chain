@@ -8,7 +8,7 @@
   "network": "mainnet",
   "node_type": ["rpc"],
   "client": "gaia v27.4.0",
-  "note": "Cumulo migrated the Cosmos Hub mainnet public RPC infrastructure from OVH10 (51.255.85.232) to BigVelia14T-2 (92.204.168.57). The previous validator node was repurposed as a public RPC node with priv_validator_key.json removed. Public endpoints rpc.cosmos.cumulo.com.es, api.cosmos.cumulo.com.es, and grpc.cosmos.cumulo.com.es were reconfigured via nginx reverse proxy with SSL certificates renewed. The cosmos-mainnet-collector service and addrbook exporter (files2.cumulo.me) were deployed and verified operational on the new server."
+  "note": "Cumulo migrated the Cosmos Hub mainnet public RPC infrastructure to a new server. The previous validator node was repurposed as a public RPC node with the validator key removed. Public endpoints rpc.cosmos.cumulo.com.es, api.cosmos.cumulo.com.es, and grpc.cosmos.cumulo.com.es were reconfigured via nginx reverse proxy with SSL certificates renewed. The cosmos-mainnet-collector service and addrbook exporter (files2.cumulo.me) were deployed and verified operational on the new server."
 },
  {
   "id": "cosmos-hub-mainnet-horcrux-deployment-2026-06-29",
