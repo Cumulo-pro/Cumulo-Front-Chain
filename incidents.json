@@ -1,5 +1,17 @@
 [
  {
+  "id": "cosmos-hub-mainnet-horcrux-deployment-2026-06-29",
+  "date": "2026-06-29T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "horcrux v3.2.3",
+  "note": "Cumulo implemented Horcrux v3.2.3 on its Cosmos Hub mainnet validator infrastructure as a distributed threshold signing (MPC) solution. The setup follows a 2-of-3 TSS configuration across 3 signer nodes and 2 sentry nodes distributed across different providers and geographic regions. The original priv_validator_key.json was sharded using ed25519 key splitting and ECIES encrypted inter-signer communication channels. After migration, the key material was removed from all sentry nodes. Signing activity was verified via logs confirming successful block signing post-deployment.",
+  "url": "https://github.com/Cumulo-pro/cumulo-cosmoshub-infra/blob/main/cosmoshub-4/horcrux/README.md"
+},
+ {
   "id": "ibc-mocha-provider-channel-recreated-2026-06-29",
   "date": "2026-06-29T00:00:00Z",
   "incident_type": "incident",
