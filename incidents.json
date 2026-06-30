@@ -1,5 +1,17 @@
 [
  {
+  "id": "cosmos-mainnet-governance-proposal-1044-2026-06-30",
+  "date": "2026-06-30T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1044 on Cosmos Hub mainnet: Software upgrade proposal for Gaia v27.5.0, scheduled at block height 31,938,700. The upgrade bumps ibc-go from v10.6.0 to v10.7.0. If passed, validators will be required to update the Cosmos Hub binary at the specified upgrade height. Voting period runs from June 30 to July 7, 2026. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1044",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=31F733C9852B28ABFBC7DA41B1060F4B110DD2615C2FBEB66902152FBA0040D5"
+},
+ {
   "id": "cosmos-mainnet-rpc-migration-2026-06-29",
   "date": "2026-06-29T00:00:00Z",
   "incident_type": "infrastructure_migration",
