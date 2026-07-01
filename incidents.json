@@ -1,5 +1,15 @@
 [
  {
+  "id": "cosmos-testnet-rpc-p2p-connectivity-incident-2026-07-01",
+  "date": "2026-07-01T00:00:00Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "testnet",
+  "node_type": ["rpc"],
+  "note": "Cumulo identified that the Cosmos Hub testnet RPC node was not publishing new block events despite responding correctly to REST queries, causing monitoring to show no signing data. Root cause was traced to a P2P switch that had stopped accepting peers following a prior service restart, combined with a missing external address advertisement that prevented inbound peer connections. The service was restarted, the external address corrected, and connectivity restored using Cumulo's peer quality resource (https://cumulo.pro/services/cosmos_testnet/peers). Node fully resynchronized and confirmed producing blocks in real time."
+},
+ {
   "id": "dymension-mainnet-ibc-relay-deployment-2026-06-30",
   "date": "2026-06-30T00:00:00Z",
   "incident_type": "deployment",
