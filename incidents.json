@@ -1,5 +1,28 @@
 [
  {
+  "id": "dymension-mainnet-ibc-relay-deployment-2026-06-30",
+  "date": "2026-06-30T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Dymension",
+  "network": "mainnet",
+  "node_type": ["rpc"],
+  "client": "hermes v1.13.2",
+  "note": "Cumulo deployed IBC relay infrastructure for Dymension mainnet (dymension_1100-1), activating three paths: Celestia ↔ Dymension (channel-27/channel-4), Osmosis ↔ Dymension (channel-19774/channel-2), and Cosmos Hub ↔ Dymension (channel-794/channel-1). Hermes v1.13.2 configured with ethermint address derivation (hd-path m/44'/60'/0'/0/0, pk_type /ethermint.crypto.v1.ethsecp256k1.PubKey, compat_mode 0.38). tx_index corrected from null to kv on the dymd node. Relay wallet dym1qqev5krh9ge9tctc4gkfs6l54anuunzjngwkcl funded and verified. All IBC clients confirmed healthy with no frozen_height. Channel workers operational."
+},
+ {
+  "id": "limonata-testnet-validator-deployment-2026-07-01",
+  "date": "2026-07-01T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Limonata",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": ["evmd limonata-testnet-v0.1.0"],
+  "note": "Cumulo deployed and activated a new validator node on the Limonata testnet (chain-id limonata_10777-1). The node was synchronized via state-sync using the limonata-testnet-v0.1.0 client, running under systemd. The validator (moniker: Cumulo) was created via self-bond and reached BOND_STATUS_BONDED. Stake was subsequently increased through the network's ValGrant locked-grant program, bringing total delegated stake to approximately 201 LIMO. A binary upgrade to limonata-testnet-v0.2.0 is scheduled to coincide with the network's encrypted-mempool upgrade at block 766558.",
+  "url": "https://explorer.onenov.xyz/limonata-test/staking/cosmosvaloper1yczmwtppmwwc2l0cdceelxhw760fyyd8jtz4rk"
+},
+ {
   "id": "cosmos-mainnet-governance-proposal-1044-2026-06-30",
   "date": "2026-06-30T00:00:00Z",
   "incident_type": "governance_proposal",
