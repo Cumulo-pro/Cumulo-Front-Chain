@@ -1,5 +1,16 @@
 [
  {
+  "id": "celestia-mocha-db-migration-pebbledb-2026-07-02",
+  "date": "2026-07-02T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator", "rpc"],
+  "note": "Cumulo migrated its Celestia Mocha testnet nodes from goleveldb to pebbledb ahead of the v10 requirement. Migration was verified on validator node cumvelia6 and RPC node cumvelia14t-2 by confirming db_backend = \"pebbledb\" in config.toml and inspecting the application.db directory for pebbledb-format (.sst) data files. Both nodes are confirmed fully migrated and operational on pebbledb.",
+  "url": "https://github.com/celestiaorg/celestia-app/tree/main/tools/migrate-db"
+},
+ {
   "id": "cosmos-testnet-rpc-p2p-connectivity-incident-2026-07-01",
   "date": "2026-07-01T00:00:00Z",
   "incident_type": "incident",
