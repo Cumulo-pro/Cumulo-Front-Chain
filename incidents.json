@@ -1,5 +1,17 @@
 [
  {
+  "id": "limonata-testnet-governance-proposal-2-2026-07-03",
+  "date": "2026-07-03T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Limonata",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #2 on Limonata testnet: Enable real gas fees by setting feemarket min_gas_price and base_fee to 1e9 aLIMO/gas (1 gwei). Users continue paying zero fees for approved dApps and Cosmos msgs thanks to x/gassponsor and x/paymaster sponsorship (per-account baseline allowances, wildcard policy, 1 LIMO/tx cap), but the fee economy goes live: every fee is split 50% to validators/delegators, 40% burned, and 10% to the grant pool, so validators finally earn their fee share. Sponsored txs are refilled by mint at a measured net +0.5x fee, with worst-case inflation from the sponsorship refill estimated at 0.032%/yr. All other feemarket parameters remain unchanged (denominator 8, elasticity 2, min_gas_multiplier 0.5, enable_height 0, no_base_fee false). Cumulo voted YES.",
+  "url": "https://testnet.limonata.valopers.com/proposals/2",
+  "vote": "https://testnet.limonata.valopers.com/transactions/EAFA525FE91CCA273B3700E311949F6BA83C75BE26777CE7644D69F6CB5BC7A0"
+},
+ {
   "id": "monad-testnet-upgrade-v0.15.0-2026-07-03",
   "date": "2026-07-03T00:00:00Z",
   "incident_type": "upgrade",
