@@ -1,5 +1,17 @@
 [
  {
+  "id": "monad-testnet-upgrade-v0.15.0-2026-07-03",
+  "date": "2026-07-03T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Monad",
+  "network": "testnet",
+  "node_type": ["full_node"],
+  "client": "monad v0.15.0",
+  "note": "Cumulo upgraded its Monad testnet full node (full_Cumulo-1) to v0.15.0. This release includes a database schema migration from MONAD007 to MONAD008, applied via monad-mpt --upgrade prior to service restart, and MIP-12 (consensus vote pace reduction from 400ms to 300ms) activating at hard fork round 43,821,000 (~July 9th). All three services (monad-bft, monad-execution, monad-rpc) restarted and verified active. Commit hash verified: 8facc4faef28d390b8100e297e1d26022ea561e2.",
+  "url": "https://docs.monad.xyz/node-ops/upgrade-instructions/v0.15.0"
+},
+ {
   "id": "celestia-mocha-db-migration-pebbledb-2026-07-02",
   "date": "2026-07-02T00:00:00Z",
   "incident_type": "infrastructure_migration",
