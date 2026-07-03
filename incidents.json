@@ -1,5 +1,16 @@
 [
  {
+  "id": "genlayer-asimov-incident-node-hang-2026-07-03",
+  "date": "2026-07-03T00:00:00Z",
+  "incident_type": "incident",
+  "status": "in_progress",
+  "chain": "GenLayer",
+  "network": "testnet (asimov)",
+  "node_type": ["validator"],
+  "client": "genlayernode v0.5.12",
+  "note": "Cumulo's GenLayer Asimov validator was found in quarantine on-chain, not reporting metrics or logs. Root cause investigation revealed the main genlayernode process had been internally hung for weeks despite systemd reporting it as active, with no ports open (health, metrics, or RPC). The process was force-killed and restarted, restoring metrics and RPC connectivity. A separate leftover systemd service from a prior v0.4.0 installation was also found crash-looping (restarting every ~5 seconds) and writing errors into the same shared log file used by the Grafana Alloy monitoring agent, which was drowning out valid log output; this service was stopped and disabled. The node was also significantly out of sync (~430k blocks behind) after the hang and is actively catching up (~40 blocks/sec). The validator carries an on-chain temporary ban until epoch 124, expected to clear once the node is fully synced and the epoch advances."
+},
+ {
   "id": "limonata-testnet-governance-proposal-2-2026-07-03",
   "date": "2026-07-03T00:00:00Z",
   "incident_type": "governance_proposal",
