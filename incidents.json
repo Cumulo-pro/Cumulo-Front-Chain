@@ -1,5 +1,15 @@
 [
  {
+  "id": "starknet-mainnet-attestation-missed-insufficient-balance-2026-07-05",
+  "date": "2026-07-05T04:06:00Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Cumulo's Starknet mainnet validator node missed attestation for epoch 11188 due to insufficient STRK balance in the operational address, which held only ~0.80 STRK, below the fee resource bounds required to submit the attest transaction. Balance was topped up and attestation succeeded again from epoch 11189 onward. Corrective action: implement more continuous monitoring of the operational address balance to prevent recurrence."
+},
+ {
   "id": "genlayer-asimov-incident-node-hang-2026-07-03",
   "date": "2026-07-03T00:00:00Z",
   "incident_type": "incident",
