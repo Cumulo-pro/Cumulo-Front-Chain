@@ -1,5 +1,17 @@
 [
  {
+  "id": "xrplevm-testnet-governance-proposal-46-2026-07-06",
+  "date": "2026-07-06T15:50:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #46 on XRPL EVM testnet: Software upgrade v11.0.0 (MsgIBCSoftwareUpgrade) scheduled at block height 7,815,700. This upgrade disables the Interchain Accounts host module, sets the staking unbonding time to one week, and returns XRP locked in the Elys channel escrow to its rightful withdrawal address on each network. Voting period runs from Jul 6 to Jul 20, 2026. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm/governance#proposal-46",
+  "vote": "https://cumulo.pro/services/xrplevm/search?q=4EC862D96B597AECD466382ADD7BE0C967B5940498D6C1B0FB21F4C830BC3488"
+},
+ {
   "id": "warden-mainnet-jailing-incident-2026-07-06",
   "date": "2026-07-06T14:37:00Z",
   "incident_type": "incident",
