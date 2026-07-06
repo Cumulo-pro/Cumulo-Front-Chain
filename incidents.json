@@ -1,5 +1,15 @@
 [
  {
+  "id": "warden-mainnet-jailing-incident-2026-07-06",
+  "date": "2026-07-06T14:37:00Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "Warden",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Cumulo's validator on Warden mainnet (warden_8765-1) was briefly jailed after missing several blocks. The jailing coincided with an unbonding operation that had reduced the validator's self-delegated stake close to its minimum, leaving little margin during a period of node inactivity. Cumulo confirmed node health and slashing parameters, then submitted an unjail transaction (txhash: FE5DA8440DE3EC2AB637E6611A52927B7D7247EDAF2362E0F6F292B53C6BB338). The validator returned to BOND_STATUS_BONDED and resumed active block production within minutes, with no further alerts observed. No double-signing or slashing of delegated funds occurred."
+},
+ {
   "id": "limonata-testnet-limonatad-v0.2.0-upgrade-2026-07-06",
   "date": "2026-07-06T00:00:00Z",
   "incident_type": "upgrade",
