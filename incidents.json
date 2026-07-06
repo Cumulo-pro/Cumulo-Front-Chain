@@ -1,5 +1,17 @@
 [
  {
+  "id": "limonata-testnet-limonatad-v0.2.0-upgrade-2026-07-06",
+  "date": "2026-07-06T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Limonata",
+  "network": "testnet",
+  "node_type": ["validator", "rpc"],
+  "client": "limonatad v0.2.0",
+  "note": "Cumulo upgraded both its Limonata testnet validator node (ns562220) and public RPC node (Velia2) from evmd v0.1.0 to limonatad v0.2.0 at upgrade height 766558, applying Proposal #1 (encrypted mempool, threshold 2-of-3 keypers, and the disabled x/vpcap module). No Cosmovisor in use, so the switch was performed manually on both nodes: each halted automatically at the upgrade height, systemd ExecStart was swapped from the evmd binary path to /usr/local/bin/limonatad, and the service was restarted. Binary integrity confirmed via SHA256 match against the official release checksums prior to the swap. Validator resumed signing and all four public RPC endpoints (rpc-testnet, api-testnet, evm-testnet, grpc-testnet) verified operational post-upgrade.",
+  "url": "https://github.com/Limonata-Blockchain/limonata/releases/tag/limonata-testnet-v0.2.0"
+},
+ {
   "id": "starknet-mainnet-attestation-missed-insufficient-balance-2026-07-05",
   "date": "2026-07-05T04:06:00Z",
   "incident_type": "incident",
