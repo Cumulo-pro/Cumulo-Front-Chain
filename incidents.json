@@ -1,5 +1,17 @@
 [
  {
+  "id": "espresso-decaf-upgrade-20260707-2026-07-08",
+  "date": "2026-07-08T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "testnet (decaf)",
+  "node_type": ["validator"],
+  "client": "espresso-network 20260707",
+  "note": "Cumulo upgraded its Espresso Decaf testnet node to release tag 20260707. The genesis file at data/genesis/decaf.toml remains unchanged from the previous release; no genesis update was required. Node upgraded and confirmed operational without incidents.",
+  "url": "https://github.com/EspressoSystems/espresso-network/blob/20260707/data/genesis/decaf.toml"
+},
+ {
   "id": "xrplevm-testnet-governance-proposal-46-vote-change-2026-07-08",
   "date": "2026-07-08T00:00:00Z",
   "incident_type": "governance_proposal",
