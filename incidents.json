@@ -1,5 +1,17 @@
 [
  {
+  "id": "cosmos-mainnet-governance-proposal-1045-2026-07-11",
+  "date": "2026-07-11T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1045 on Cosmos Hub mainnet: Spam/scam proposal promoting a fraudulent ATOM airdrop via an external website. Cumulo voted No with Veto.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1045",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=CB0B5D87B0E603410B578AAEF7DFE4D6D80EAEC52C8A0B99B70DC719AD59BB72"
+},
+ {
   "id": "cosmos-mainnet-gaia-v27.5.0-upgrade-2026-07-08",
   "date": "2026-07-08T14:42:00Z",
   "incident_type": "upgrade",
