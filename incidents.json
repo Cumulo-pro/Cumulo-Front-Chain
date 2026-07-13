@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-mainnet-incident-pebble-panic-2026-07-13",
+  "date": "2026-07-13T14:55:19Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["rpc"],
+  "client": "celestia-app v9.0.4",
+  "note": "Cumulo's Celestia mainnet RPC node crashed twice in ~6 minutes from a known upstream Cosmos SDK/IAVL shutdown race (celestiaorg/celestia-app#7252): a snapshot exporter goroutine read from the store after application.db closed, causing panic: pebble: closed (snapshot-interval=1500). systemd auto-restarted it, but tenderduty flagged the chain as stalled during the resync window. Node fully recovered after the second restart; first confirmed occurrence on pebbledb/mainnet, reported upstream.",
+  "url": "https://github.com/celestiaorg/celestia-app/issues/7252"
+},
+ {
   "id": "celestia-mocha-upgrade-celestia-node-v0.31.4-mocha-2026-07-13",
   "date": "2026-07-13T00:00:00Z",
   "incident_type": "upgrade",
