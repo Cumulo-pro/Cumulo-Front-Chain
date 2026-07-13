@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-mocha-upgrade-celestia-node-v0.31.4-mocha-2026-07-13",
+  "date": "2026-07-13T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.31.4-mocha",
+  "note": "Cumulo upgraded its Celestia Mocha testnet bridge node to celestia-node v0.31.4-mocha. This release contains bug fixes and improvements. Upgrade completed without incidents and the bridge node is fully operational.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.31.4-mocha"
+},
+ {
   "id": "limonata-testnet-governance-proposal-3-2026-07-13",
   "date": "2026-07-13T00:00:00Z",
   "incident_type": "governance_proposal",
