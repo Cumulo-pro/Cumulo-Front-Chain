@@ -1,5 +1,17 @@
 [
  {
+  "id": "espresso-mainnet-upgrade-20260710-2026-07-13",
+  "date": "2026-07-13T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "espresso-network 20260710",
+  "note": "Cumulo upgraded its Espresso mainnet node to release tag 20260710. This release stages a protocol upgrade to distribute block rewards per epoch instead of once per block, and introduces the light-client catchup module for query nodes. Environment variables have been renamed from ESPRESSO_SEQUENCER_* to ESPRESSO_NODE_* in a backwards-compatible way; deprecated vars remain supported. A background DB migration runs for query nodes with 10-20% temporary storage bloat; migration status can be monitored at /database/migration-status. Node upgraded and confirmed operational without incidents.",
+  "url": "https://github.com/EspressoSystems/espresso-network/blob/20260710/data/genesis/mainnet.toml"
+},
+ {
   "id": "celestia-mainnet-incident-pebble-panic-2026-07-13",
   "date": "2026-07-13T14:55:19Z",
   "incident_type": "incident",
