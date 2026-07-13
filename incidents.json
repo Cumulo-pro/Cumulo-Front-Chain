@@ -1,5 +1,18 @@
 [
  {
+  "id": "limonata-testnet-governance-proposal-3-2026-07-13",
+  "date": "2026-07-13T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Limonata",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": "limonata v0.3.1",
+  "note": "Governance Proposal #3 on Limonata testnet: upgrade to v0.3.1, moving the encrypted mempool's threshold key generation from the keyper set to a trustless validator DKG, where validators generate the key on-chain and no single party can decrypt alone. Upgrade height set at 998735, estimated ~4 days out. Cumulo voted YES. Nodes must remain on the current binary until the chain halts at 998735 with UPGRADE NEEDED, then swap to v0.3.1 (build via `git fetch --tags && git checkout limonata-v0.3.1 && make install`, commit 1f7382ef) and restart. Vote extensions become required immediately after the upgrade height.",
+  "url": "https://testnet.limonata.valopers.com/proposals/3",
+  "vote": "https://testnet.limonata.valopers.com/transactions/84856EDD9F4818F81EC6BA1AD73830630911887CEBEA5F218C367D4302E5F46D"
+},
+ {
   "id": "cosmos-mainnet-governance-proposal-1045-2026-07-11",
   "date": "2026-07-11T00:00:00Z",
   "incident_type": "governance_proposal",
