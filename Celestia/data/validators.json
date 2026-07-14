@@ -822,6 +822,22 @@
     "Namespace Checker": "CIP-19 compliant Celestia namespace validator: checks the 29-byte v0 layout (1 version byte + 28-byte ID), 18 leading-zero bytes, and 10 trailing data bytes; flags the common bug of padding zeros on the right instead of the left; warns on reserved namespaces (PayForBlob, txs, parity shares); and checks whether a namespace already has blobs written to it. Part of a DA builder console (blob publisher, Rollkit/OP Stack/Arbitrum config generator, DA cost calculator). Free, no signup."
   }
 },
+  {
+  "name": "Orion",
+  "webservices": "https://orionlabsone.cc/celestia",
+  "x": "",
+  "validatorlogo": "orion.png",
+  "github": "https://github.com/orioninfra/orion-agent-kit",
+  "tools": "Orion Daily Brief, Orion MCP Server",
+  "tools_url": {
+    "Orion MCP Server": "https://orionlabsone.cc/mcp",
+    "Orion Agent Kit (GitHub)": "https://github.com/orioninfra/orion-agent-kit"
+  },
+  "tools_desc": {
+    "Orion MCP Server": "Read-only MCP server (11 tools) exposing daily automated analysis of Celestia mainnet — DA volume, fees, validator set, staking ratios, Nakamoto coefficient, and baseline-drift flags — down to per-namespace and per-validator lookups. Every figure carries its on-chain source. Add via `claude mcp add --transport http orion https://orionlabsone.cc/mcp`.",
+    "Orion Agent Kit (GitHub)": "Source repo for the Orion agent kit powering the MCP server; registry listing is live, awesome-mcp-servers PR in review."
+  }
+},
  {
   "name": "Cumulo",
   "x": "Cumulo_pro",
