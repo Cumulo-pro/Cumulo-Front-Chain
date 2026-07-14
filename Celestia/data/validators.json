@@ -810,6 +810,18 @@
     "Celestia Node Management Tool": "Open-source CLI for Celestia node management. Covers sync check, validator info, state-sync reset, snapshot restore, and log viewer. Supports Mainnet and Mocha testnet."
   }
 },
+  {
+  "name": "Axionis",
+  "webservices": "https://axionis.space/console/",
+  "x": "",
+  "validatorlogo": "axionis.png",
+  "tools_url": {
+    "Namespace Checker": "https://axionis.space/console/namespace"
+  },
+  "tools_desc": {
+    "Namespace Checker": "CIP-19 compliant Celestia namespace validator: checks the 29-byte v0 layout (1 version byte + 28-byte ID), 18 leading-zero bytes, and 10 trailing data bytes; flags the common bug of padding zeros on the right instead of the left; warns on reserved namespaces (PayForBlob, txs, parity shares); and checks whether a namespace already has blobs written to it. Part of a DA builder console (blob publisher, Rollkit/OP Stack/Arbitrum config generator, DA cost calculator). Free, no signup."
+  }
+},
  {
   "name": "Cumulo",
   "x": "Cumulo_pro",
