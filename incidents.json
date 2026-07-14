@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-mainnet-upgrade-celestia-node-v0.31.4-2026-07-14",
+  "date": "2026-07-14T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.31.4",
+  "note": "Cumulo upgraded its Celestia mainnet bridge node to celestia-node v0.31.4. This release contains bug fixes and improvements. Upgrade completed without incidents and the bridge node is fully operational.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.31.4"
+},
+ {
   "id": "cosmos-mainnet-governance-proposal-1046-2026-07-14",
   "date": "2026-07-14T00:00:00Z",
   "incident_type": "governance_proposal",
