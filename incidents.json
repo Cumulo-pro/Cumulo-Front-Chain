@@ -1,5 +1,17 @@
 [
  {
+  "id": "xrplevm-testnet-upgrade-v10.1.0-2026-07-14",
+  "date": "2026-07-14T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": "xrplevm node v10.1.0",
+  "note": "Cumulo successfully upgraded its XRPL EVM testnet node to v10.1.0 at block height 7,725,000, following the passing of Proposal #47. The upgrade includes a fix for the cosmos/evm module. Upgrade completed with no incidents.",
+  "url": "https://cumulo.pro/services/xrplevm/governance#proposal-47"
+},
+ {
   "id": "celestia-mainnet-upgrade-celestia-node-v0.31.4-2026-07-14",
   "date": "2026-07-14T00:00:00Z",
   "incident_type": "upgrade",
