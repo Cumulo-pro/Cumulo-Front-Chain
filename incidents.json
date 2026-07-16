@@ -1,5 +1,17 @@
 [
  {
+  "id": "xrplevm-mainnet-governance-proposal-33-2026-07-16",
+  "date": "2026-07-16T19:52:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #33 on XRPL EVM mainnet: Expedited software upgrade v10.1.0 (MsgSoftwareUpgrade) scheduled at block height 6,856,000. The upgrade deploys node release v10.1.0 and includes a fix for the cosmos/evm module. Voting period runs from Jul 16 to Jul 17, 2026. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm_mainnet/governance#proposal-33",
+  "vote": "https://cumulo.pro/services/xrplevm_mainnet/search?q=1B3BB95155E8ED158DD196FADBDBFC9AC7FC3BF7AC18234586BEACF5C7E3167F"
+},
+ {
   "id": "cosmos-mainnet-governance-proposal-1047-2026-07-16",
   "date": "2026-07-16T00:00:00Z",
   "incident_type": "governance_proposal",
