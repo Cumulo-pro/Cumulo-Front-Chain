@@ -1,5 +1,17 @@
 [
  {
+  "id": "quicksilver-mainnet-setup-ibc-relayer-2026-07-16",
+  "date": "2026-07-16T00:00:00Z",
+  "incident_type": "setup",
+  "status": "completed",
+  "chain": "Quicksilver",
+  "network": "mainnet",
+  "node_type": ["rpc"],
+  "client": "Hermes v1.13.2",
+  "note": "Cumulo added quicksilver-2 to its Hermes relayer configuration ahead of Quicksilver's planned network sunset, to help users move remaining IBC-bridged tokens out before shutdown. Established and verified two healthy mainnet transfer paths, Cosmos Hub (channel-467/channel-1) and Osmosis (channel-522/channel-2), correcting a max_tx_size misconfiguration and adding channel-522 to Osmosis' packet filter allow-list. Cleared pending packets on both paths. Celestia and Injective paths remain blocked pending IBC light client recovery (expired on both ends) and are not yet relayed.",
+  "url": "https://cumulo.pro/services/ibc/"
+},
+ {
   "id": "xrplevm-mainnet-governance-proposal-33-2026-07-16",
   "date": "2026-07-16T19:52:00Z",
   "incident_type": "governance_proposal",
