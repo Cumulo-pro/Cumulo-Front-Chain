@@ -1,5 +1,17 @@
 [
  {
+  "id": "cosmos-mainnet-governance-proposal-1047-2026-07-16",
+  "date": "2026-07-16T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1047 on Cosmos Hub mainnet: IBC client recovery proposal to recover the expired Quicksilver-2 IBC light client using a freshly created substitute client, preserving existing connections and channels. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1047",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=6A093C6097CB001388F325DB069B68D569C6C82200D40BB3FC822E9A58E5C990"
+},
+ {
   "id": "xrplevm-testnet-upgrade-v10.1.0-2026-07-14",
   "date": "2026-07-14T00:00:00Z",
   "incident_type": "upgrade",
