@@ -1,5 +1,17 @@
 [
  {
+  "id": "espresso-decaf-x25519-p2p-config-2026-07-17",
+  "date": "2026-07-17T00:00:00Z",
+  "incident_type": "configuration",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "testnet (Decaf)",
+  "node_type": ["validator"],
+  "client": "sequencer:20260707",
+  "note": "Cumulo registered the new x25519 public key and P2P address for its Espresso Decaf testnet validator (0x4aeE5CfC464458B8B39D3E478D32dE936472320A), ahead of the network's upcoming sub-second finality upgrade and new P2P networking layer. A new x25519 keypair was generated and added to the node's key file, TCP port 9977 was opened at both the OS firewall and Docker port-mapping level (replacing the prior UDP-only libp2p setup), and external reachability was verified before submitting the on-chain update. The `update-network-config` transaction on the Sepolia stake table contract completed successfully, associating x25519 key `X25519_PK~D2ZjWYTvVYia1mkHxJ0-WcHxYVNMszrOl0eE0kolBXgZ` and P2P address `92.204.168.57:9977` with the validator. Per the network upgrade rules, the new address/key will not take effect until the next epoch change.",
+  "url": "https://sepolia.etherscan.io/tx/0xb4a21caeede338640e3099240e0c02d39acf9e80136233ca924f32ca8de4e29e"
+},
+ {
   "id": "quicksilver-mainnet-setup-ibc-relayer-2026-07-16",
   "date": "2026-07-16T00:00:00Z",
   "incident_type": "setup",
