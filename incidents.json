@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-mocha-snapshot-deployment-2026-07-17",
+  "date": "2026-07-17T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["snapshot"],
+  "client": "celestia-app v9.0.4-mocha",
+  "note": "Cumulo deployed and published a pruned snapshot service for Celestia Mocha (mocha-4), automatically regenerated daily. Database backend is pebbledb. Each snapshot is published with a stable 'latest' symlink and an index.json manifest for automated consumption, served over HTTPS with resumable range-request downloads. The service is now linked from Cumulo's public services page.",
+  "url": "https://cumulo.pro/services/celestia_mocha/snapshot"
+},
+ {
   "id": "espresso-decaf-x25519-p2p-config-2026-07-17",
   "date": "2026-07-17T00:00:00Z",
   "incident_type": "configuration",
