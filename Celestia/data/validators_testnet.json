@@ -373,6 +373,19 @@
         "Faucet": "Testnet faucet to request tokens for usage and testing."
         }
     },
+     {
+  "name": "Meganode",
+  "webservices": "https://github.com/mega-node",
+  "x": "MeganodeTop",
+  "validatorlogo": "meganode.jpg",
+  "explorer": "https://celestia-explorer.meganode.top/validators",
+  "tools_url": {
+    "Celestia Node Management Tool": "https://github.com/mega-node/celestia-validator-tool"
+  },
+  "tools_desc": {
+    "Celestia Node Management Tool": "Open-source CLI for Celestia node management. Covers sync check, validator info, state-sync reset, snapshot restore, and log viewer. Supports Mainnet and Mocha testnet."
+  }
+},
     {
   "name": "Unity Nodes",
   "webservices": "https://unitynodes.com",
