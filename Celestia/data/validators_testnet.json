@@ -375,23 +375,22 @@
       "grpc": "mocha.grpc.cumulo.me",
       "websocket": "",
       "tools_url": {
-        "Dashboard for Consensus Nodes with all available metrics for Celestia": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/grafana_consensus%20/README.md",
-        "Consensus Monitoring System Documentation": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/grafana_consensus%20/README.md",
-        "Dashboard in Grafana": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/bridge-monitor/README.md",
-        "Celestia Bridge Node Dashboard in Grafana": "https://grafana.com/grafana/dashboards/21116-celestia-consensus-validator-node/",
-        "Celestia underneath: All the projects that use Celestia as a DA": "https://celestia.frontchain.cumulo.pro/underneath"
-      },
-      "tools_desc": {
-      "Dashboard for Consensus Nodes with all available metrics for Celestia": "Grafana dashboard pack for consensus nodes, covering validator and consensus telemetry.",
-      "Consensus Monitoring System Documentation": "Documentation for the monitoring stack (Prometheus/Grafana) and how to deploy it.",
-      "Dashboard in Grafana": "Grafana dashboard resources focused on bridge monitoring and operational signals.",
-      "Celestia Bridge Node Dashboard in Grafana": "Public Grafana dashboard template for bridge/consensus visibility and troubleshooting.",
-      "Celestia underneath: All the projects that use Celestia as a DA": "Directory/dashboard of projects building on Celestia as a data availability layer."
-    },
+    "Celestia Block Explorer": "https://cumulo.pro/services/celestia_mocha/stats",
+    "Cumulo Live Peers": "https://cumulo.pro/services/celestia_mocha/peers",
+    "CIP Tracker": "https://cumulo.pro/services/celestia_mocha/cips",
+    "Missed Proposals Tracker": "https://cumulo.pro/services/celescelestia_mochatia/missed-proposals",
+    "Dashboard in Grafana": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/bridge-monitor/README.md"
+  },
+  "tools_desc": {
+    "Celestia Block Explorer": "Real-time multi-section block explorer covering validator uptime, governance proposals, live consensus state, recent transactions, and network statistics.",
+    "Cumulo Live Peers": "A live peer checker, updated every 30 minutes and available through both a public dashboard and API.",
+    "CIP Tracker": "The CIP Tracker is designed to make it easier for teams, devs, validators and the broader community to follow how Celestia evolves at the protocol level: from proposals already live on mainnet to those currently under review or being discussed for upcoming upgrades.",
+    "Missed Proposals Tracker": "Block-level tracking of missed proposal slots using the CometBFT weighted round-robin simulation. Identifies which validator missed their turn at each consensus round, with cumulative per-validator statistics and miss rate.",
+    "Dashboard in Grafana": "Grafana dashboard reference for node monitoring (service health and performance signals)."
+  },
       "content": {
         "Website dedicated to our content about Modular Summit events": "https://modular.cumulo.pro/",
         "Compilation of technical guides and resources": "https://cumulo.pro/celestia/content"
-      },
-      "github": "https://github.com/Cumulo-pro/awesome-celestia?tab=readme-ov-file#contributions-by-cumulo"
+      }
     }
 ]
