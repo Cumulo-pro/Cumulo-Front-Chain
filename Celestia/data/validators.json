@@ -850,7 +850,7 @@
   "tools": "Celestia Block Explorer, Missed Proposals Tracker, Consensus Monitoring Dashboard, Celestia Bridge Node Dashboard, Celestia Front Chain, Modular Expansion",
   "tools_url": {
     "Celestia Block Explorer": "https://cumulo.pro/services/celestia/stats",
-    "Cumulo Live Peers": "https://cumulo.pro/services/cosmos/peers",
+    "Cumulo Live Peers": "https://cumulo.pro/services/celestia/peers",
     "CIP Tracker": "https://cumulo.pro/services/celestia/cips",
     "Missed Proposals Tracker": "https://cumulo.pro/services/celestia/missed-proposals",
     "Dashboard in Grafana": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/bridge-monitor/README.md",
