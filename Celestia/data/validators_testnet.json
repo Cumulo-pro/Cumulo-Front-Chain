@@ -133,6 +133,21 @@
         }
     },
     {
+    "name": "kjnodes",
+    "webservices": "https://services.kjnodes.com/testnet/celestia/",
+    "x": "kjnodes",
+    "validatorlogo": "kjnodes.jpg",
+     "snapshot_pebble": "https://services.kjnodes.com/testnet/celestia/snapshot/",
+    "tools_url": {
+        "State-sync": "https://services.kjnodes.com/testnet/celestia/state-sync/",
+        "Public RPC": "https://services.kjnodes.com/testnet/celestia/public-rpc/"
+    },
+    "tools_desc": {
+    "State-sync": "State sync guide and endpoints to speed up node synchronization without downloading full history.",
+    "Public RPC": "Public RPC endpoints and connection details for Celestia (useful for wallets, relayers, and tooling)."
+  }
+},
+    {
         "name": "STAKEME",
         "webservices": "",
         "x": "stakeme_pro",
