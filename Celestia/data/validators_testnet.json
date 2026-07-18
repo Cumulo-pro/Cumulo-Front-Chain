@@ -165,7 +165,6 @@
         "validatorlogo": "luckyresearch.jpg",
             "explorer": "https://explorer.luckyresearch.org/Celestia-Testnet",
           "api": "https://api-celestia-mocha.luckyresearch.org/",
-         "snapshot": "https://snapshot.luckyresearch.org/Celestia/Mocha/",
           "rpc": "https://rpc-celestia-mocha.luckyresearch.org/",
           "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-luckyresearchorg",
         "tools_url": {
