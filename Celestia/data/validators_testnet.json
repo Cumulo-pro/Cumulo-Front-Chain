@@ -145,19 +145,6 @@
         "grpc": "da-bridge-mocha-4.stakeme.pro:9090"
     },
     {
-        "name": "Openbitlab",
-        "webservices": "https://openbitlab.com/network/58/Celestia/docs",
-        "x": "Openbitlab_node",
-        "validatorlogo": "openbitlab.png",
-           "api": "https://celestia-testnet-api.openbitlab.com",
-          "rpc": "https://celestia-testnet-rpc.openbitlab.com",
-          "grpc": "celestia-testnet-grpc.openbitlab.com:443",
-          "tools_url": {
-            "celestia-srvcheck": "https://github.com/openbitlab/celestia-srvcheck",
-            "celestia-telegram-bot": "https://t.me/celestia_validator_monitor_bot"
-        }
-    },
-    {
         "name": "LuckyResearch.org",
         "webservices": "https://luckyresearch.org",
         "x": "LuckyResearchVN",
