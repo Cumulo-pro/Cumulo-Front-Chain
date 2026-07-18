@@ -378,9 +378,9 @@
   "webservices": "https://unitynodes.com",
   "x": "UnityNodes",
   "validatorlogo": "unitynodes.jpg",
-  "snapshot": "https://docs.unitynodes.com/snapshots/celestia-mocha"
+  "snapshot_pebble": "https://docs.unitynodes.com/snapshots/celestia-mocha"
 },
-    {
+{
       "name": "Cumulo",
       "x": "Cumulo_pro",
       "webservices": "https://cumulo.pro/services/celestia_mocha",
