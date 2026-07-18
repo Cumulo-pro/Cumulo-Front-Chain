@@ -1,5 +1,17 @@
 [
  {
+  "id": "limonata-testnet-governance-proposal-4-2026-07-18",
+  "date": "2026-07-18T14:51:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Limonata",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #4 on Limonata testnet (/cosmos.slashing.v1beta1.MsgUpdateParams): raise the downtime slashing window (signed_blocks_window) from 100 to 10000 blocks, keeping min_signed_per_window at 0.5. A validator is now jailed only after missing more than 5000 of the last 10000 blocks, giving hours of grace instead of minutes and better tolerating coordinated upgrades and transient outages. All other slashing parameters unchanged. Voting opened Jul 18, 2026, 14:51 and closes Jul 20, 2026, 14:51. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/limonata_testnet/governance#proposal-4",
+  "vote": "https://cumulo.pro/services/limonata_testnet/search?q=F1907732CEBF5D0087DBA570F5634258D81110F73E05F28F413B81267BB584D5"
+},
+ {
   "id": "celestia-mocha-snapshot-deployment-2026-07-17",
   "date": "2026-07-17T00:00:00Z",
   "incident_type": "deployment",
