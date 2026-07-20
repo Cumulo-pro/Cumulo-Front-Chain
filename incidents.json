@@ -1,5 +1,17 @@
 [
  {
+  "id": "xrplevm-mainnet-upgrade-v10.1.0-2026-07-17",
+  "date": "2026-07-17T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "xrplevm node v10.1.0",
+  "note": "Cumulo successfully upgraded its XRPL EVM mainnet node to v10.1.0 at block height 6,856,000, following the passing of Proposal #33. The upgrade includes a fix for the cosmos/evm module and was applied on schedule. Upgrade completed successfully and without incidents.",
+  "url": "https://cumulo.pro/services/xrplevm_mainnet/governance#proposal-33"
+},
+ {
   "id": "cosmos-mainnet-governance-proposal-1048-2026-07-19",
   "date": "2026-07-19T00:00:00Z",
   "incident_type": "governance_proposal",
