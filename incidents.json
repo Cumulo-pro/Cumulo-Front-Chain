@@ -1,5 +1,17 @@
 [
  {
+  "id": "espresso-mainnet-sequencer-v20260721-upgrade-2026-07-21",
+  "date": "2026-07-21T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "mainnet",
+  "node_type": ["validator", "da"],
+  "client": "sequencer v20260721",
+  "note": "Cumulo upgraded its Espresso mainnet validator/DA node (0xc5052bd00b9a9e9d1256a5ff96745d5fefedd4dc) from sequencer v20260710 to v20260721, the official post-upgrade binary for the network's sub-second finality upgrade and new P2P networking layer (protocol version 0.5). The node was healthy and fully synced prior to the update, so this was a routine version bump rather than a recovery from a missed protocol activation. Image tag updated via docker-compose and container recreated with docker compose pull/up. Post-upgrade verification confirmed the container healthy with 102 connected libp2p peers and consensus_current_view actively advancing, with no service interruption.",
+  "url": "https://github.com/EspressoSystems/espresso-network/releases/tag/20260721"
+},
+ {
   "id": "xrplevm-mainnet-upgrade-v10.1.0-2026-07-17",
   "date": "2026-07-17T00:00:00Z",
   "incident_type": "upgrade",
