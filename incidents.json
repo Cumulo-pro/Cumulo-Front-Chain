@@ -1,5 +1,17 @@
 [
  {
+  "id": "cosmos-testnet-gaia-v27.6.0-rc0-upgrade-2026-07-21",
+  "date": "2026-07-21T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "testnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "gaia v27.6.0-rc0",
+  "note": "Cumulo upgraded its Cosmos Hub testnet (provider) nodes to gaia v27.6.0-rc0 at block height 18,257,200 as part of the Testnet Tuesday event for the July 2026 participation period. Cumulo performed the upgrade successfully and without incidents.",
+  "url": "https://github.com/cosmos/testnets/tree/master/provider#v2760-rc0-upgrade"
+},
+ {
   "id": "espresso-mainnet-sequencer-v20260721-upgrade-2026-07-21",
   "date": "2026-07-21T00:00:00Z",
   "incident_type": "upgrade",
