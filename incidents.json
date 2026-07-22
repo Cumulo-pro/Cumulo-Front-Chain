@@ -1,5 +1,17 @@
 [
  {
+  "id": "starknet-mainnet-testnet-update-juno-v0.16.5-2026-07-22",
+  "date": "2026-07-22T00:00:00Z",
+  "incident_type": "update",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "mainnet/testnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "Juno v0.16.5",
+  "note": "Cumulo updated its Starknet nodes (mainnet and testnet) to Juno v0.16.5. This release notably reduces pre_confirmed latency by approximately 10x, along with other improvements. Applied across validator, RPC, and backup nodes without incidents.",
+  "url": "https://github.com/NethermindEth/juno/releases/tag/v0.16.5"
+},
+ {
   "id": "espresso-mainnet-sequencer-v20260722-upgrade-2026-07-21",
   "date": "2026-07-21T00:00:00Z",
   "incident_type": "upgrade",
