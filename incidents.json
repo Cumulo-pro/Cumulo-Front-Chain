@@ -1,5 +1,17 @@
 [
  {
+  "id": "espresso-mainnet-sequencer-v20260722-upgrade-2026-07-21",
+  "date": "2026-07-21T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "mainnet",
+  "node_type": ["validator", "da"],
+  "client": "sequencer v20260722",
+  "note": "Cumulo applied the Espresso team's emergency critical patch, upgrading its mainnet validator/DA node (0xc5052bd00b9a9e9d1256a5ff96745d5fefedd4dc) from sequencer v20260721 to v20260722. This patch addressed the elevated view timeout rate observed network-wide following the v20260721 sub-second finality/P2P upgrade. Before the patch, Cumulo's node logged an average of ~37 view timeouts per 10-minute window (666 in 3h) alongside missed block proposal alerts. After the v20260722 upgrade, the rate dropped to 0-5 timeouts per 10-minute window, a significant improvement consistent with normal baseline network variance. Container healthy post-upgrade, consensus_current_view advancing, 94 connected peers.",
+  "url": "https://github.com/EspressoSystems/espresso-network/releases/tag/20260722"
+},
+ {
   "id": "cosmos-testnet-gaia-v27.6.0-rc0-upgrade-2026-07-21",
   "date": "2026-07-21T00:00:00Z",
   "incident_type": "upgrade",
