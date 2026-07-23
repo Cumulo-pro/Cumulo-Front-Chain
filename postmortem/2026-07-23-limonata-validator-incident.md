@@ -1,4 +1,4 @@
-# 🛰️ Cumulo — Technical Incident Report
+# 🛰️ Cumulo . Technical Incident Report
 ## Consensus Failure and Validator Key Migration During a Limonata v0.3.4 Rolling Upgrade
 
 **Incident Date:** 23 July 2026
