@@ -1,5 +1,17 @@
 [
  {
+  "id": "limonata-testnet-incident-v0.3.4-consensus-failure-2026-07-23",
+  "date": "2026-07-23T08:43:00Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "Limonata",
+  "network": "testnet",
+  "node_type": ["validator", "rpc"],
+  "client": "limonatad v0.3.4",
+  "note": "Cumulo's Limonata testnet validator suffered a consensus failure while applying the project's v0.3.4 rolling upgrade. The binary retrieved from the official release URL carried empty version metadata and differed from the artifact received by most other validators that day, consistent with the vendor's own release notes acknowledging multiple builds under the same release. The node produced a genuine AppHash divergence at block height 1036402 and, after the resulting panic, its local data directory could not be reloaded by either the new or the previous binary due to a store-version mismatch. Cumulo migrated the validator's signing key through an overlap-safe sequence to a newly rebuilt validator node to restore signing without any double-signing, and separately rebuilt the public RPC/API/EVM/gRPC endpoint node. Signed-blocks uptime dipped to 98.44% during the recovery window with no liveness jailing. A full postmortem, including root-cause evidence and identified process gaps on Cumulo's side, was published and shared with the Limonata team.",
+  "url": "https://github.com/Cumulo-pro/Cumulo-Front-Chain/blob/main/postmortem/2026-07-23-limonata-validator-incident.md"
+},
+ {
   "id": "dymension-mainnet-governance-proposal-40-2026-07-23",
   "date": "2026-07-23T00:00:00Z",
   "incident_type": "governance_proposal",
