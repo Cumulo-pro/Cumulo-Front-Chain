@@ -1,4 +1,4 @@
-# 🛰️ Cumulo — Technical Incident Report
+# 🛰️ Cumulo . Technical Incident Report
 ## Network Degradation Event Affecting Story Protocol Validator
 
 **Incident Date:** 11 December 2025  
@@ -95,7 +95,7 @@ Logs exhibit behavior consistent with **upstream network degradation**, includin
 
 ## 5. Root Cause
 
-**External Internet Routing Degradation — Regional (St. Louis, USA)**
+**External Internet Routing Degradation . Regional (St. Louis, USA)**
 
 The incident was caused by a short-lived but severe degradation in upstream Internet routing or congestion affecting the region.
 
