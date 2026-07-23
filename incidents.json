@@ -1,5 +1,17 @@
 [
  {
+  "id": "xrplevm-mainnet-governance-proposal-34-2026-07-23",
+  "date": "2026-07-23T16:06:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #34 on XRPL EVM mainnet: Remove Imperator from the validator set (MsgRemoveValidator). This validator has ceased its activities and the proposal aims to keep the validator set aligned with actively participating operators. Voting period runs from Jul 23 to Aug 6, 2026. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm_mainnet/governance#proposal-34",
+  "vote": "https://cumulo.pro/services/xrplevm_mainnet/search?q=222BFD204EFF44A704C022749890A86066D9E6DDBCD1EFC149672016F8FB8C30"
+},
+ {
   "id": "xrplevm-testnet-governance-proposal-48-2026-07-23",
   "date": "2026-07-23T15:49:00Z",
   "incident_type": "governance_proposal",
