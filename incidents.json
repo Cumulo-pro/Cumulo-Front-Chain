@@ -1,5 +1,17 @@
 [
  {
+  "id": "xrplevm-testnet-governance-proposal-48-2026-07-23",
+  "date": "2026-07-23T15:49:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #48 on XRPL EVM testnet: Remove Imperator and Flowdesk validators from the validator set (MsgRemoveValidator). Both validators have ceased their activities and the proposal aims to keep the validator set aligned with actively participating operators. Voting period runs from Jul 23 to Aug 6, 2026. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm/governance#proposal-48",
+  "vote": "https://cumulo.pro/services/xrplevm/search?q=3630516E4F0F150C9F549827D157094C39735F195E5155E0A17C2AF9A94ED6A1"
+},
+ {
   "id": "gnoland-topaz-deployment-velia12-2026-07-23",
   "date": "2026-07-23T00:00:00Z",
   "incident_type": "deployment",
