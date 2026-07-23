@@ -1,5 +1,17 @@
 [
  {
+  "id": "gnoland-topaz-deployment-velia12-2026-07-23",
+  "date": "2026-07-23T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Gnoland",
+  "network": "testnet (topaz)",
+  "node_type": ["validator"],
+  "client": "gnoland (chain/topaz)",
+  "note": "Cumulo deployed a new Gno.land Topaz testnet validator node on Velia12 (85.195.116.219, user cumvelia12), migrating from the Test13 network per the team's migration announcement. Binaries were compiled from the chain/topaz branch; the node was configured with non-standard P2P/RPC ports (26680/26681) to coexist with the existing Celestia mainnet validator on the same server. The node synced successfully to chain tip and was registered on-chain in the r/gnops/valopers realm using the same operator address as Test13 (g1mndkvypn3339m6yvkyutal5hk6m2yeqp5d52ly), with a newly generated consensus key for this node. Registration confirmed on GnoScan and indexed in the valopers listing. Pending GovDAO vote to join the active validator set.",
+  "url": "https://gnoscan.io/transactions/details?txhash=pmg1kuDYsh1GMZp/1BxJwHJCtYgmjZDy+724quTjcPU="
+},
+ {
   "id": "starknet-mainnet-testnet-update-juno-v0.16.5-2026-07-22",
   "date": "2026-07-22T00:00:00Z",
   "incident_type": "update",
