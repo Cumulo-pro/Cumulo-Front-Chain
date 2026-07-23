@@ -1,5 +1,17 @@
 [
  {
+  "id": "dymension-mainnet-governance-proposal-40-2026-07-23",
+  "date": "2026-07-23T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Dymension",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #40 on Dymension mainnet: Remove IBC rate limits for Noble USDC (ibc/B350...C9E4, channel-6) and Kava USDT (ibc/B72B...6A5, channel-3). Both limits were stuck against a stale channel-value snapshot because the rate-limiting module's 24h reset never fires, leaving effectively zero send headroom and blocking normal outbound transfers. Removing them restores unrestricted USDC/USDT transfers. Cumulo voted YES. Voting ends 2026-07-28 14:38:37 UTC.",
+  "url": "https://dym.fyi/proposal/40",
+  "vote": "https://dym.fyi/tx/E245B5C571F352105978A6E2A670A477BEFAA48A61B00A809D4C5DD507EF203B"
+},
+ {
   "id": "xrplevm-mainnet-governance-proposal-34-2026-07-23",
   "date": "2026-07-23T16:06:00Z",
   "incident_type": "governance_proposal",
