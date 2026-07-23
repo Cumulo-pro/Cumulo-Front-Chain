@@ -25,6 +25,8 @@ No pre-upgrade snapshot of the validator's data directory existed. Recovery requ
 
 No double-signing occurred at any point, verified structurally: the signing key was never active on more than one node simultaneously.
 
+Unlike a purely external network event, this incident had both a vendor-side contributing factor and operator-side factors that could have caught it earlier. Both are documented below alongside the supporting evidence.
+
 ---
 
 ## 2. Timeline (UTC)
@@ -67,18 +69,47 @@ Secondary node rebuilt from a clean state as a non-signing public endpoint. Publ
 ## 4. Investigation Findings
 
 ### Binary integrity
+
 The v0.3.4 binary obtained from the official release URL reported entirely empty `commit`, `version`, and `build_tags` fields, and differed in file size from the binary independently confirmed to match the commit other validators reported running successfully.
 
+```
+build_tags: ""
+commit: ""
+version: ""
+name: ""
+server_name: <appd>
+```
+
 ### Vendor acknowledgment
+
 Limonata's own release notes for v0.3.4 state that earlier binaries published under the same release were built without version ldflags, confirming that more than one build existed under the same release asset over time.
 
 ### Consensus layer
-Raw logs show a round 0 to round 1 proposal change at height 1036401, followed by an Optimistic Execution abort, followed by a discrepancy between the value the node's own `FinalizeBlock` computed and the value it persisted to disk. This is consistent with a defect in how the affected build reconciled state after an Optimistic Execution abort triggered by a round change.
+
+Raw log sequence at the height where the divergence occurred:
+
+```
+resetting proposal info height=1036401 round=1
+OE aborted due to hash mismatch oe_height=1036401
+finalized block block_app_hash=AD800FDD... height=1036401
+committed state block_app_hash=E50ADBC0... height=1036401
+CONSENSUS FAILURE!!! err="... Expected AD800FDD..., got 71117B9A..."
+```
+
+This is consistent with a defect in how the affected build reconciled state after an Optimistic Execution abort triggered by a round change (round 0 timed out, forcing round 1).
 
 ### Storage layer
-The subsequent inability to reload the node with either binary produced the error `version of store mismatch root store's version; expected <height> got 0; new stores should be added using StoreUpgrades`. This is a known class of Cosmos SDK defect, previously reported upstream in the Cosmos SDK repository under circumstances where the same binary and the same upgrade succeeded on some runs and failed on others, tied to how new stores are introduced across a binary upgrade rather than something unique to this chain.
+
+The subsequent inability to reload the node with either binary produced:
+
+```
+error on loading last version err="failed to load latest version: version of store mismatch root store's version; expected 1036401 got 0; new stores should be added using StoreUpgrades"
+```
+
+This is a known class of Cosmos SDK defect, previously reported upstream in the Cosmos SDK repository under circumstances where the same binary and the same upgrade succeeded on some runs and failed on others, tied to how new stores are introduced across a binary upgrade rather than something unique to this chain.
 
 ### Ruled out
+
 GLIBC version compatibility was considered as a distinguishing factor between binary builds, since the official v0.3.4 release requires GLIBC 2.38. The affected server already runs GLIBC 2.40, which satisfies that requirement regardless of which build was received; this factor does not distinguish between the two binaries and was ruled out.
 
 ---
@@ -93,7 +124,17 @@ The exact mechanism behind why this validator's download differed from the major
 
 ---
 
-## 6. Corrective Actions
+## 6. Contributing Factors on Our Side
+
+Alongside the vendor-side binary discrepancy above, two operator-side factors are documented here for completeness, since correcting them would have caught this issue earlier regardless of the binary's origin.
+
+**Verification step lacked a pass/fail gate.** The version-check command (`version --long`) was run against the new binary before deployment, and its empty output was visible on screen at that time. However, the upgrade procedure did not specify an expected commit hash to compare against, nor a minimum sanity check (for example, that the commit field must not be empty). The check ran, but nothing in the procedure required acting on what it showed before the binary was copied into the production path. A prior upgrade on the same validator, days earlier, did include an explicit expected-commit check at this step; this one did not.
+
+**No canary deployment.** At the time of the upgrade, a secondary node existed that was not the active validator (it served only public endpoints). That node could have served as a low-risk place to run the new binary first and observe its behavior before applying it to the signing validator. The upgrade was instead applied directly to the active validator.
+
+---
+
+## 7. Corrective Actions
 
 ### Completed
 - Affected validator node taken offline; binary rollback confirmed non-viable
@@ -110,7 +151,7 @@ The exact mechanism behind why this validator's download differed from the major
 
 ---
 
-## 7. Preventive Enhancements
+## 8. Preventive Enhancements
 
 - Pre-upgrade data-directory snapshotting as a standard step in all binary upgrade runbooks, regardless of vendor guidance
 - Canary-node testing of new binaries ahead of any validator-facing rollout
@@ -119,9 +160,9 @@ The exact mechanism behind why this validator's download differed from the major
 
 ---
 
-## 8. Final Statement
+## 9. Final Statement
 
-This incident originated from a discrepancy in the binary artifact distributed at Limonata's official v0.3.4 release URL, which produced a genuine consensus failure on the affected validator and left its local state unrecoverable in place. Cumulo's recovery procedure preserved signing continuity throughout, with no double-signing at any point, through a careful key migration to a rebuilt validator node. Public endpoint service was restored the same day. The open question of why this specific download differed from the majority of the network has been raised with the Limonata team.
+This incident originated from a discrepancy in the binary artifact distributed at Limonata's official v0.3.4 release URL, which produced a genuine consensus failure on the affected validator and left its local state unrecoverable in place. Two operator-side gaps, an unenforced verification check and the absence of canary testing, meant this was not caught before reaching the production validator. Cumulo's recovery procedure preserved signing continuity throughout, with no double-signing at any point, through a careful key migration to a rebuilt validator node. Public endpoint service was restored the same day. The open question of why this specific download differed from the majority of the network has been raised with the Limonata team, and the procedural gaps identified here are being corrected for future upgrades.
 
 ---
 
