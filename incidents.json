@@ -1,5 +1,16 @@
 [
  {
+  "id": "limonata-testnet-consensus-tuning-timeout-2026-07-25",
+  "date": "2026-07-25T00:00:00Z",
+  "incident_type": "configuration",
+  "status": "completed",
+  "chain": "Limonata",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": "limonatad",
+  "note": "Cumulo applied the Foundation's optional consensus tuning changes on its Limonata testnet validator node: timeout_propose 3s to 5s, timeout_commit 5s to 1s (config.toml only, no binary upgrade). Change addresses round-0 proposals missing timeout_propose, which was inflating average block time to ~5.3s; Foundation testing showed improvement to ~3.7s. Config verified and limonatad.service restarted successfully, node running normally."
+},
+ {
   "id": "limonata-testnet-incident-v0.3.4-consensus-failure-2026-07-23",
   "date": "2026-07-23T08:43:00Z",
   "incident_type": "incident",
