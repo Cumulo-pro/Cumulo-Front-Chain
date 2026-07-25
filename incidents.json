@@ -1,5 +1,18 @@
 [
  {
+  "id": "limonata-testnet-v0.3.5-upgrade-proposal-5-2026-07-25",
+  "date": "2026-07-25T16:44:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Limonata",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": "limonata v0.3.5",
+  "note": "Governance Proposal #5 on Limonata testnet (/cosmos.upgrade.v1beta1.MsgSoftwareUpgrade, plan encmempool-dkg-dealing-retention-v1): coordinated, non-rolling in-place upgrade to v0.3.5 at height 1,270,000 (~Jul 29, 2026 14:30 UTC estimate, height authoritative). Fixes the encrypted mempool's transparent DKG path, where both rekey branches deleted the dealings of an epoch still serving as the active decryption key, permanently un-decrypting any encrypted transaction in flight or submitted during the ~30-block rekey window, including the automatic decrypt-health recovery rekey. No transactions have been lost to date since encrypted submissions are currently blocked by the committee-concentration guard. The fix is gated behind a new upgrade-handler parameter so all prior blocks replay unchanged; rehearsed end to end on an isolated 4-node devnet. Nodes must stay on v0.3.4 until height 1,270,000 (halts with UPGRADE NEEDED), then stop, swap to v0.3.5 (built from tag limonata-v0.3.5), and restart — starting v0.3.5 early crash-loops with BINARY UPDATED BEFORE TRIGGER. Voting opened Jul 25, 2026, 16:44 and closes Jul 27, 2026, 16:44 UTC. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/limonata_testnet/governance#proposal-5",
+  "vote": "https://cumulo.pro/services/limonata_testnet/search?q=45EE347C07373695B50EB8FCD697634C350A4675653BF386687DD2C1E2FE3399"
+},
+ {
   "id": "gnoland-topaz-incident-apphash-mismatch-rpc-2026-07-25",
   "date": "2026-07-25T00:00:00Z",
   "incident_type": "incident",
