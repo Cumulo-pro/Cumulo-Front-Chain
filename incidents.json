@@ -1,5 +1,17 @@
 [
  {
+  "id": "gnoland-topaz-incident-apphash-mismatch-rpc-2026-07-25",
+  "date": "2026-07-25T00:00:00Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "Gnoland",
+  "network": "testnet (topaz)",
+  "node_type": ["rpc"],
+  "client": "gnoland (chain/topaz)",
+  "note": "Cumulo's Gno.land Topaz RPC node on Velia2 entered a crash loop with an AppHash mismatch error during the ABCI replay handshake, after several hours of healthy P2P sync. A third-party snapshot (.tar.lz4) was tested first and reproduced the identical error and hash, indicating a stale/invalid snapshot (Topaz snapshots use zstd, not lz4). The node was recovered using a correctly-formatted zstd snapshot from a community provider; the first restore attempt also hit the same class of AppHash error at a different height, but systemd's automatic restart completed the ABCI handshake successfully on retry. The RPC node is now fully synced (catching_up: false) and serving traffic at gno.rpc.testnet.cumulo.me. Root cause appears related to non-deterministic replay of the last committed block after any process interruption on the actively-developed chain/topaz branch, rather than disk corruption; this remains a residual risk on future restarts.",
+  "url": "https://cumulo.pro/services/gnoland_testnet/snapshot"
+},
+ {
   "id": "limonata-testnet-consensus-tuning-timeout-2026-07-25",
   "date": "2026-07-25T00:00:00Z",
   "incident_type": "configuration",
