@@ -164,18 +164,8 @@
         "webservices": "https://luckyresearch.org",
         "x": "LuckyResearchVN",
         "validatorlogo": "luckyresearch.jpg",
-            "explorer": "https://explorer.luckyresearch.org/Celestia-Testnet",
-          "api": "https://api-celestia-mocha.luckyresearch.org/",
-          "rpc": "https://rpc-celestia-mocha.luckyresearch.org/",
-          "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-luckyresearchorg",
-        "tools_url": {
-            "Celestia Performance Status Bot": "https://t.me/celestia_bridge_check_bot",
-            "Celestia Bridge Status Checker": "https://celestia-bridge-checker.luckyresearch.org/ "
-        },
-    "tools_desc": {
-      "State Sync": "State sync information and setup steps to reduce initial sync time.",
-      "Celestia Bridge Status Checker": "Bridge health checker to verify availability and current status."
-      }
+        "api": "https://api-celestia-mocha.luckyresearch.org/",
+        "rpc": "https://rpc-celestia-mocha.luckyresearch.org/"
     },
 {
         "name": "ContributionDAO",
