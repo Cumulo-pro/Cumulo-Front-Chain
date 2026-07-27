@@ -14,6 +14,17 @@
         "NodesChecker Bot": "https://t.me/NodesGuru_bot"
         }
     },
+    {
+      "name": "Polkachu",
+      "webservices": "https://www.polkachu.com/networks/cosmos",
+      "x": "polka_chu",
+      "validatorlogo": "polkachu.jpg",
+      "snapshot": "https://polkachu.com/testnets/celestia/snapshots",
+      "peers": "https://polkachu.com/testnets/celestia/peers",
+      "rpc": "https://celestia-testnet-rpc.polkachu.com/",
+      "api": "https://celestia-testnet-api.polkachu.com/",
+      "grpc" "celestia-testnet-grpc.polkachu.com:11690"
+      },
    {
     "name": "BlackNodes",
     "webservices": "https://services.blacknodes.net/Celestia/",
