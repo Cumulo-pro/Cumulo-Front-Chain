@@ -1,5 +1,17 @@
 [
  {
+  "id": "espresso-decaf-sequencer-v20260724-upgrade-2026-07-24",
+  "date": "2026-07-24T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "testnet (Decaf)",
+  "node_type": ["validator"],
+  "client": "sequencer v20260724",
+  "note": "Cumulo upgraded its Espresso Decaf testnet validator (0x4aeE5CfC464458B8B39D3E478D32dE936472320A) to sequencer v20260724, staging the node for the upcoming fast (sub-second) finality protocol upgrade. As part of the required pre-upgrade configuration, the three new environment variables were verified/added: ESPRESSO_NODE_PRIVATE_X25519_KEY was already correctly set in the node's key file, and ESPRESSO_NODE_CLIQUENET_BIND_ADDRESS (0.0.0.0:9977) and ESPRESSO_NODE_CLIQUENET_ADVERTISE_ADDRESS (92.204.168.57:9977) were added to the docker-compose configuration. The x25519 public key and P2P address were already registered on the Decaf stake table contract in a prior action. Post-upgrade, the container came up healthy on port 9977/tcp, reconnected to 34 libp2p peers within a minute, and consensus_current_view continued advancing normally.",
+  "url": "https://github.com/EspressoSystems/espresso-network/releases/tag/20260724"
+},
+ {
   "id": "concordium-mainnet-node-v10.0.10-upgrade-2026-07-27",
   "date": "2026-07-27T00:00:00Z",
   "incident_type": "upgrade",
