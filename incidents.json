@@ -1,5 +1,17 @@
 [
  {
+  "id": "concordium-mainnet-node-v10.0.10-upgrade-2026-07-27",
+  "date": "2026-07-27T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Concordium",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "concordium-node v10.0.10",
+  "note": "Cumulo upgraded its Concordium mainnet node to concordium-node v10.0.10. This release fixes a bug where pending blocks with unknown parents were relayed to peers. Upgrade installed successfully and node is fully operational.",
+  "url": "https://github.com/Concordium/concordium-node/releases/tag/10.0.10-1-rc"
+},
+ {
   "id": "limonata-testnet-v0.3.5-upgrade-proposal-5-2026-07-25",
   "date": "2026-07-25T16:44:00Z",
   "incident_type": "governance_proposal",
