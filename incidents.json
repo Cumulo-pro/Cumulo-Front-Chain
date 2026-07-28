@@ -1,5 +1,16 @@
 [
  {
+  "id": "imua-testnet-decommission-2026-07-28",
+  "date": "2026-07-28T00:00:00Z",
+  "incident_type": "decommission",
+  "status": "completed",
+  "chain": "Imua",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": "imuad",
+  "note": "Cumulo stopped and disabled its Imua testnet validator following the team's announcement to wind down the testnet program. The imuad, price-feeder, and cosmovisor systemd services were stopped and disabled to prevent automatic restart. Node data was preserved (not pruned or deleted) per the team's plan to store snapshots of validator activity in case the program resumes."
+},
+ {
   "id": "monad-testnet-upgrade-v0.15.2-mip8-phase-a-2026-07-28",
   "date": "2026-07-28T00:00:00Z",
   "incident_type": "upgrade",
