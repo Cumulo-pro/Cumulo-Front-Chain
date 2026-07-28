@@ -1,5 +1,17 @@
 [
  {
+  "id": "monad-testnet-upgrade-v0.15.2-mip8-phase-a-2026-07-28",
+  "date": "2026-07-28T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Monad",
+  "network": "testnet",
+  "node_type": ["full_node"],
+  "client": "monad v0.15.2",
+  "note": "Cumulo upgraded its Monad testnet full node (full_Cumulo-1) to v0.15.2 and completed MIP-8 Phase A (dual-DB activation). The secondary page-encoded timeline was activated alongside the existing slot-encoded primary via monad-mpt --repair, --activate-secondary, and monad-cli snapshot load. During the migration the node accumulated over 800,000 blocks of lag and required a hard reset using the official Monad Foundation restore-from-snapshot script; snapshot imported at block 48,855,077 in dual-timeline mode. Statesync completed in under 1 minute post-restore. Node fully operational and committing live blocks. Commit hash verified: 6373056bfa14318d2a6d7a371cc43c636bf0aab6.",
+  "url": "https://docs.monad.xyz/node-ops/upgrade-instructions/v0.15.2"
+},
+ {
   "id": "cosmos-mainnet-governance-proposal-1049-2026-07-28",
   "date": "2026-07-28T00:00:00Z",
   "incident_type": "governance_proposal",
