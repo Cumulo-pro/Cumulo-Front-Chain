@@ -1,5 +1,17 @@
 [
  {
+  "id": "xrplevm-testnet-governance-proposal-49-2026-07-28",
+  "date": "2026-07-28T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #49 on XRPL EVM testnet: Software upgrade v11.1.0 scheduled to disable the Interchain Accounts host module, set the staking unbonding time to one week, and return XRP locked in the Elys channel escrow to its rightful withdrawal address on each network. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm/governance#proposal-49",
+  "vote": "https://cumulo.pro/services/xrplevm/search?q=D6352E4FF011EFB48995BEEE2F997E9210214AFE4DF58FC5DEEA731FD36D0018"
+},
+ {
   "id": "espresso-decaf-sequencer-v20260724-upgrade-2026-07-24",
   "date": "2026-07-24T00:00:00Z",
   "incident_type": "upgrade",
