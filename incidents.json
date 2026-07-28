@@ -1,5 +1,17 @@
 [
  {
+  "id": "cosmos-mainnet-governance-proposal-1049-2026-07-28",
+  "date": "2026-07-28T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1049 on Cosmos Hub mainnet: Software upgrade proposal for Gaia v27.6.0. The upgrade increases the max CosmWasm contract size from 800KiB to 1.6MiB and allowlists two additional gRPC queries for CosmWasm: /cosmos.gov.v1.Query/Proposal and /cosmos.staking.v1beta1.Query/Validator. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1049",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=CA2DAB5F36F7F904FBA7DDE0630FC6388A0877E9B8E08F85093ECC03A7BB3216"
+},
+ {
   "id": "xrplevm-testnet-governance-proposal-49-2026-07-28",
   "date": "2026-07-28T00:00:00Z",
   "incident_type": "governance_proposal",
