@@ -1,5 +1,16 @@
 [
  {
+  "id": "limonata-testnet-limonatad-v0.3.5-upgrade-2026-07-29",
+  "date": "2026-07-29T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Limonata",
+  "network": "testnet",
+  "node_type": ["validator", "rpc"],
+  "client": "limonatad v0.3.5",
+  "note": "Cumulo successfully upgraded its Limonata testnet validator and RPC nodes to limonatad v0.3.5 at the network's scheduled halt-upgrade at block height 1,270,000. The binary was verified via `version --long` (commit d6df6bb5, clean metadata) before staging, applying the verification gate identified in the July 23 v0.3.4 incident. Binary swap executed on both node paths (`/home/cumveliamon-t/go/bin/limonatad` on the validator, `/usr/local/bin/limonatad` on the RPC node); both services resumed normally post-upgrade."
+},
+ {
   "id": "cosmos-mainnet-governance-proposal-1050-2026-07-28",
   "date": "2026-07-28T00:00:00Z",
   "incident_type": "governance_proposal",
