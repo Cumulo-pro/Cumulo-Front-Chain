@@ -1,5 +1,18 @@
 [
  {
+  "id": "limonata-testnet-governance-proposal-6-2026-08-01",
+  "date": "2026-08-01T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Limonata",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": "limonata v0.3.6",
+  "note": "Governance Proposal #6 on Limonata testnet bundles two atomic actions (both apply or neither). (1) Recover IBC client 07-tendermint-0: the light client tracking osmo-test-5 stopped refreshing on 2026-07-26 and expired past its 3-day trusting period on 2026-07-29, killing outbound transfer channel-0 to Osmosis. Replacement client 07-tendermint-1 is Active with matching parameters (trust level 2/3, unbonding period 432000s, max clock drift 40s, proof specs, upgrade path); recovering it via governance preserves channel-0 and already-bridged tokens, including escrowed LIMO backing existing Osmosis vouchers. Root cause fixed separately: the relayer's Osmosis event stream, previously on a silently-failing public websocket, now polls instead, with an independent watchdog checking consensus-state age on both clients every 20 minutes. (2) Schedule the v0.3.6 upgrade at height 1,650,000 (mandatory, coordinated — validators not on v0.3.6 at that height stop producing blocks): replaces the encrypted mempool's single-clause committee concentration guard with a two-clause version, gated behind a new parameter so replay stays byte-identical. Sets threshold t = floor(2S/3) + n so no coalition holding two-thirds or less of committee stake can reach it, plus a strand clause that fails closed if any single operator holds enough points to block decryption alone. Release built from commit effa377d, SHA256SUMS.txt signed by release key A45380198F390AF69126AE12E4ECEC477C1735FB. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/limonata_testnet/governance#proposal-6",
+  "vote": "https://cumulo.pro/services/limonata_testnet/search?q=81D0A9CAA113862B74E57B98C6A9DDF63251EBAC29EE3C0FA1147C12C2C6BDFF"
+},
+ {
   "id": "limonata-testnet-limonatad-v0.3.5-upgrade-2026-07-29",
   "date": "2026-07-29T00:00:00Z",
   "incident_type": "upgrade",
