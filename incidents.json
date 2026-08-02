@@ -1,5 +1,17 @@
 [
  {
+  "id": "gnoland-topaz-deployment-backup-veliamon-test-2026-08-02",
+  "date": "2026-08-02T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Gnoland",
+  "network": "testnet (topaz)",
+  "node_type": ["backup"],
+  "client": "gnoland (chain/topaz)",
+  "note": "Cumulo decommissioned its Gno.land Test13 node on VeliaMon-test (cumveliamon-t) and replaced it with a Topaz backup full node in the same location, reusing the same ports (26656 P2P public / 26657 RPC local-only). The node was compiled from the chain/topaz branch and initialized with fresh, unregistered validator keys (no signing key copied from the active Velia12 validator) to avoid any double-signing risk. It was synced using Cumulo's own official Topaz snapshot service (gno.snapshots.testnet.cumulo.me), with sha256 integrity verified before extraction. The node came up cleanly on the first handshake attempt with no AppHash errors and is fully synced (catching_up: false) with 26 peers, serving as a standby full node for monitoring and future failover.",
+  "url": "https://gno.snapshots.testnet.cumulo.me/snapshots/index.json"
+},
+ {
   "id": "genlayer-bradbury-upgrade-v0.5.13-2026-08-01",
   "date": "2026-08-01T00:00:00Z",
   "incident_type": "upgrade",
