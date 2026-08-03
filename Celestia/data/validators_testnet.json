@@ -419,8 +419,7 @@
     "Dashboard in Grafana": "Grafana dashboard reference for node monitoring (service health and performance signals)."
   },
       "content": {
-        "Website dedicated to our content about Modular Summit events": "https://modular.cumulo.pro/",
-        "Compilation of technical guides and resources": "https://cumulo.pro/celestia/content"
+         "Compilation of technical guides and resources": "https://cumulo.pro/celestia/content"
       }
     }
 ]
