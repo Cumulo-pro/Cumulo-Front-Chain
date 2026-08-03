@@ -1,5 +1,14 @@
 [
     {
+  "name": "P-OPS",
+  "webservices": "https://github.com/P-OPSTeam",
+  "x": "POPSTeam",
+  "validatorlogo": "p-ops.jpg",
+  "seeds": "3314051954fc072a0678ec0cbac690ad8676ab98@65.108.66.220:26656",
+  "rpc": "https://rpc-mocha.pops.one",
+  "api": "https://api-mocha.pops.one"
+},
+    {
         "name": "NodesGuru",
         "webservices": "",
         "x": "NodesGuru",
