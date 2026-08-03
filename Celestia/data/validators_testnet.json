@@ -23,7 +23,7 @@
       "peers": "https://polkachu.com/testnets/celestia/peers",
       "rpc": "https://celestia-testnet-rpc.polkachu.com/",
       "api": "https://celestia-testnet-api.polkachu.com/",
-      "grpc" "celestia-testnet-grpc.polkachu.com:11690"
+      "grpc": "celestia-testnet-grpc.polkachu.com:11690"
       },
    {
     "name": "BlackNodes",
