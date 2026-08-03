@@ -80,6 +80,7 @@ To add or remove a validator, edit the corresponding JSON file on GitHub. Change
 | RPC Checker | V2 | 2024 | Multi-chain grouping |
 | RPC Checker | V3 | 2025 | Reliability history |
 | **RPC Checker** | **V4** | **2026-05-30** | GET /status fix, reliability rename, 8s timeout, anti-overlap, aggregator cache, EU region |
+| **RPC Checker** | **V4.1** | **2026-08-03** | `res.ok` check for clearer HTTP-status error detail; `reliability.json` auto-purges RPCs no longer present in any validators file; aggregator now emits a synthetic "⚠️ Config Error" row when a chain's validators JSON fails to parse entirely, instead of silently returning an empty list |
 | API Checker | V1 | 2024 | Initial checker with Puppeteer |
 | API Checker | V2 | 2025 | Multi-region, uptime history |
 | **API Checker** | **V4** | **2026-05-31** | Puppeteer removed, fetch simple, reliability rename, latency null on error, anti-overlap, aggregator cache, EU region |
