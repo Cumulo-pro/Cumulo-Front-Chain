@@ -179,6 +179,7 @@ Both aggregators follow the same design:
 5. Pass through `reliability` as reported by the agents
 6. Cache the merged result for 5 minutes
 7. Expose at `/aggregate-rpcs` or `/aggregate-apis`
+8. If a chain's validators file fails to parse on every region, the aggregator injects one synthetic entry (`name: "⚠️ Config Error"`) with the parser error in `detail`, so a broken config is visibly distinct from a chain with zero validators (RPC aggregator, since V4.1)
 
 ---
 
@@ -318,6 +319,17 @@ Endpoint lists are managed through GitHub. Each validator entry can have both `r
 - The checker queries `/cosmos/auth/v1beta1/bech32` - confirm this path is exposed
 - Some API nodes only expose selected endpoints
 - Verify: `curl https://api.example.com/cosmos/auth/v1beta1/bech32`
+
+### A chain shows an empty list (0 endpoints) instead of expected results
+
+This almost always means the chain's validators JSON file (e.g. `validators_testnet.json`)
+has a syntax error - a single malformed entry breaks the parse for **the entire file**,
+not just that one validator. All checkers hit the same GitHub file, so this affects every
+region simultaneously.
+
+- Symptom before V4.1: the chain silently returns `[]` - looks like "no validators configured", not "broken config".
+- Symptom from V4.1 onward: a single `⚠️ Config Error` row appears with the parser's error message in its tooltip/detail.
+- Fix: validate the file before committing - `python -m json.tool file.json` or `jq empty file.json` locally, or paste into any online JSON validator. A missing `:` or trailing comma is enough to take down the whole chain's dashboard.
 
 ### Reliability shows 0% for a new endpoint
 
