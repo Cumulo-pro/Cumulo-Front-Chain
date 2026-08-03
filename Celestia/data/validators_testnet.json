@@ -213,17 +213,7 @@
              "Mocha-4 nodes setup script": "https://github.com/DasRasyo/Celestia-mocha-4"
           }
     },
-{
-  "name": "F5 Nodes",
-  "webservices": "",
-  "x": "f5nodes",
-  "validatorlogo": "f5nodes.jpg",
-  "archive": "y",
- "api": "https://celestia-testnet-api.f5nodes.com",
-  "rpc": "https://celestia-testnet-rpc.f5nodes.com",
-  "grpc": "celestia-testnet-grpc.f5nodes.com"
-},
-        {
+   {
   "name": "NakoTurk",
   "webservices": "",
   "x": "NakoTurk",
