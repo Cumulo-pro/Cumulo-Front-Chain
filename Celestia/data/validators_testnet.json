@@ -58,10 +58,6 @@
         "webservices": "https://www.lavenderfive.com/tools/testnet_celestia/overview",
         "x": "lavender_five",
         "validatorlogo": "lavenderfive.jpg",
-        "rpc": "https://testnet-celestia-rpc.lavenderfive.com:443",
-        "grpc": "testnet-celestia-grpc.lavenderfive.com:443",
-        "api": "https://testnet-celestia-api.lavenderfive.com:443",
-        "websocket": "wss://testnet-rpc.lavenderfive.com:443/celestia/websocket",
        "tools": "State-sync",
        "tools_url": {
         "State-sync": "https://services.lavenderfive.com/testnet/celestia/statesync"
@@ -244,9 +240,6 @@
   "x": "CroutonDigital",
   "validatorlogo": "crouton.jpg",
   "webservices": "https://crouton.digital/services/testnets/celestia",
-  "rpc": "https://celestia-testnet-rpc.crouton.digital",
-  "api": "https://celestia-testnet-api.crouton.digital",
-  "grpc": "celestia-testnet-api.crouton.digital:28690",
   "peer": "854f67cdd27f568f2aa4f46a9d35cc727604958e@65.109.93.124:28656",
   "snapshot": "https://crouton.digital/services/testnets/celestia",
   "snap_url": "https://storage.crouton.digital/testnet/celestia/snapshots/celestia_latest.tar.lz4",
@@ -259,9 +252,6 @@
   "webservices": "https://services.stake-town.com/home/testnet/celestia",
   "x": "",
   "validatorlogo": "staketown.jpg",
-  "api": "https://celestia-testnet-api.stake-town.com:443",
-  "rpc": "https://celestia-testnet-rpc.stake-town.com:443",
-  "grpc": "celestia-testnet-grpc.stake-town.com:443",
   "snapshot": "",
   "tools_url": {
     "State-Sync": "https://services.stake-town.com/home/testnet/celestia/sync"
