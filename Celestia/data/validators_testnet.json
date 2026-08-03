@@ -229,8 +229,6 @@
   "webservices": "",
   "x": "brightlystake",
   "validatorlogo": "brightlystake.jpg",
-  "rpc": "https://celestia-testnet.brightlystake.com",
-  "grpc": "celestia-testnet.brightlystake.com:9090",
   "tools": "Public tools for Celestia status check",
   "tools_url": {
     "Celestia RPC status checker": "https://celestia-tools.brightlystake.com/rpc-status",
