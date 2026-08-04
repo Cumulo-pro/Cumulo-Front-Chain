@@ -41,10 +41,6 @@
     "validatorlogo": "blacknodes.jpg",
     "explorer": "https://explorer.blacknodes.net/Celestia-Testnet",
     "peers": "af73ecc4d2084643fe77657d260a07240872d91f@celestia-testnet.blacknodes.net:26656",
-    "api": "https://celestia-testnet-api.blacknodes.net",
-    "rpc": "https://celestia-testnet-rpc.blacknodes.net",
-    "grpc": "celestia-testnet-grpc.blacknodes.net:17090",
-    "rpc_consensus": "consensus-full-mocha.blacknodes.net",
     "snapshot": "https://services.blacknodes.net/Celestia/",
     "snap_url": "https://files.blacknodes.net/celestia/celestia_mocha-4.tar.lz4",
     "addrbook": "https://files.blacknodes.net/celestia/addrbook.json",
@@ -174,9 +170,6 @@
         "validatorlogo": "contributiondao.jpg",
              "peers": "https://services.contributiondao.com/testnet/celestia/peers",
           "seeds": "https://services.contributiondao.com/testnet/celestia/peers",
-          "api": "https://celestia-testnet-api.contributiondao.com",
-          "rpc": "https://celestia-testnet-rpc.contributiondao.com",
-          "snapshot": "",
          "content": {
             "Celestia node Installation Guide": "https://services.contributiondao.com/testnet/celestia/installation"
           }
@@ -333,9 +326,6 @@
         "explorer": "",
         "peers": "27971306bc55695fa7ca38b14df9181043aab5a1@peer.celestia.testnet.node75.org:32356",
         "seeds": "86bd5cb6e762f673f1706e5889e039d5406b4b90@seed.celestia.testnet.node75.org:37116",
-        "api": "https://api.celestia.testnet.node75.org",
-        "rpc": "https://rpc.celestia.testnet.node75.org",
-        "grpc": "grpc.celestia.testnet.node75.org:9220",
         "tools_url": {
             "DA RPC": "https://public-da-rpc.celestia.testnet.node75.org:443",
             "Faucet": "https://faucet.celestia.node75.org/"
