@@ -138,14 +138,6 @@
           "Peer scanner": "Peer uptime and connectivity checker to validate p2p reachability in real time.",
           "RPC Scanner": "Public RPC scan results to compare endpoint availability and responsiveness.",
           "consensus-signal-tracker": "Consensus signal dashboard to observe consensus health trends and anomalies."
-        },
-         "content": {
-            "Consensus Node installation (with Cheat sheet & upgrade guides)": "https://itrocket.net/guides/consensus-node-installation",
-            "Bridge Node installation (with Cheat sheet & upgrade guides)": "https://itrocket.net/guides/bridge-node-installation",
-            "Full Storage Node installation (with Cheat sheet & upgrade guides)": "https://itrocket.net/guides/full-storage-node-installation",
-            "Light Node installation (with Cheat sheet & upgrade guides)": "https://itrocket.net/guides/light-node-installation",
-            "Deploy your own Celestia sovereign rollup": "https://itrocket.net/guides/deploy-celestia-sovereign-rollup",
-            "DA Nodes Monitoring (Bridge, Full, Light Node monitoring script)": "https://itrocket.net/guides/da-nodes-monitoring"
         }
     },
     {
