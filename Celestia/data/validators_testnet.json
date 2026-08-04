@@ -167,15 +167,7 @@
         "rpc": "https://celestia-testnet-rpc.stakeme.pro",
         "grpc": "da-bridge-mocha-4.stakeme.pro:9090"
     },
-    {
-        "name": "LuckyResearch.org",
-        "webservices": "https://luckyresearch.org",
-        "x": "LuckyResearchVN",
-        "validatorlogo": "luckyresearch.jpg",
-        "api": "https://api-celestia-mocha.luckyresearch.org/",
-        "rpc": "https://rpc-celestia-mocha.luckyresearch.org/"
-    },
-{
+   {
         "name": "ContributionDAO",
         "webservices": "https://services.contributiondao.com/mainnet/celestia",
         "x": "contributedao",
