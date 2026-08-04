@@ -242,11 +242,10 @@
   "validatorlogo": "crouton.jpg",
   "webservices": "https://crouton.digital/services/testnets/celestia",
   "peer": "854f67cdd27f568f2aa4f46a9d35cc727604958e@65.109.93.124:28656",
-  "snapshot": "",
+  "snapshot": "https://dteam.tech/services/snapshot/celestia/testnet",
   "snap_url": "https://storage.crouton.digital/testnet/celestia/snapshots/celestia_latest.tar.lz4",
   "genesis": "https://storage.crouton.digital/testnet/celestia/files/genesis.json",
-  "addrbook": "https://storage.crouton.digital/testnet/celestia/files/addrbook.json",
-  "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#contributions-by-crouton-digital"
+  "addrbook": "https://storage.crouton.digital/testnet/celestia/files/addrbook.json"
 },
 {
   "name": "StakeTown",
