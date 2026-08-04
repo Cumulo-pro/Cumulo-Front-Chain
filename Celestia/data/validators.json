@@ -100,61 +100,11 @@
     "snapshot": "https://mammoblocks.io/labs?page=snapshots"
 },
 {
-  "name": "Smart Stake",
-  "webservices": "",
-  "x": "SmartStake",
-  "validatorlogo": "smartstake.jpg",
-  "explorer": "",
-  "peers": "",
-  "seeds": "",
-  "api": "",
-  "rpc": "",
-  "grpc": "",
-  "snapshot": "",
-  "addrbook": "",
-  "tools": "Smart Stake Analytics, Decentralization Analytics, Relayer Analytics",
-  "tools_url": {
-    "Smart Stake Analytics": "https://smartstake.io/analytics/celestia",
-    "Decentralization Analytics": "https://smartstake.io/decentralization/celestia",
-    "Relayer Analytics": "https://smartstake.io/relayers/celestia"
-  },
-  "tools_desc": {
-    "Smart Stake Analytics": "Validator and chain analytics for Celestia (performance, voting power, and network signals).",
-    "Decentralization Analytics": "Metrics and dashboards focused on decentralization and stake distribution across the validator set.",
-    "Relayer Analytics": "Relayer dashboards tracking IBC relayer activity and performance for Celestia-connected paths."
-  }
-},
-{
-  "name": "Stakeflow",
-  "webservices": "",
-  "x": "stakeflow",
-  "validatorlogo": "stakeflow.jpg",
-  "explorer": "https://stakeflow.io/celestia",
-  "peers": "24a607a217cf12be29bae5b2e8151391bde2d8c8@peer-celestia-01.stakeflow.io:15007",
-  "seeds": "24a607a217cf12be29bae5b2e8151391bde2d8c8@seed-celestia-01.stakeflow.io:15007",
-  "api": "https://api-celestia-01.stakeflow.io",
-  "rpc": "https://rpc-celestia-01.stakeflow.io",
-  "grpc": "grpc-celestia-01.stakeflow.io:15002",
-  "snapshot": "",
-  "addrbook": "",
-  "content_url":{
-    "How Celestia Solves the Data Availability Problem": "https://blog.stakeflow.io/how-celestia-solves-the-data-availability-problem-ad844202751b",
-    "Celestia Staking Guide": "https://blog.stakeflow.io/celestia-tia-staking-guide-b6e8a1e9c5fe",
-    "How to choose your Celestia validator": "https://blog.stakeflow.io/how-to-choose-your-tia-celestia-validator-f03b47b37fb5",
-    "Basics of Celestia with Stakeflow explorer": "https://blog.stakeflow.io/basics-of-celestia-with-stakeflow-explorer-8942dbc688f2"
-  }
-},
-{
   "name": "Openbitlab",
   "webservices": "https://openbitlab.com/network/58/Celestia/docs",
   "x": "Openbitlab_node",
   "validatorlogo": "openbitlab.png",
-   "api": "https://celestia-api.openbitlab.com",
-  "rpc": "https://celestia-rpc.openbitlab.com",
-  "grpc": "celestia-grpc.openbitlab.com:443",
-  "snapshot": "https://openbitlab.com/network/58/Celestia/snapshot",
-  "addrbook": "",
-  "tools_url": {
+   "tools_url": {
     "Srvcheck monitoring tool": "https://github.com/openbitlab/celestia-srvcheck",
     "Validator Monitor bot": "https://t.me/celestia_validator_monitor_bot",
     "Chainode CelestiaTools": "https://github.com/Chainode/CelestiaTools"
@@ -167,13 +117,10 @@
 },
 {
   "name": "LuckyResearch.org",
-  "webservices": "https://luckyresearch.org",
+  "webservices": "",
   "x": "LuckyResearchVN",
   "validatorlogo": "luckyresearch.jpg",
   "explorer": "https://explorer.luckyresearch.org/Celestia-Mainet",
-  "api": "https://api-celestia-mainnet.luckyresearch.org",
-  "rpc": "https://rpc-celestia-mainnet.luckyresearch.org",
-  "grpc": "",
    "content_url": {
     "Services guide": "https://services.luckyresearch.org/lucky-research-services/mainet/celestia",
     "Vietnamese Blockchain Knowledge": "https://luckyresearch.notion.site/Gi-i-thi-u-v-Celestia-v-Modular-Blockchain-c9bd267748e8471ea7da8ec85e75fa29?pvs=74"
@@ -191,18 +138,6 @@
   "x": "contributedao",
   "validatorlogo": "contributiondao.jpg",
   "explorer": "",
-  "peers": "https://services.contributiondao.com/mainnet/celestia/peers",
-  "seeds": "https://services.contributiondao.com/mainnet/celestia/peers",
-  "api": "https://celestia-api.contributiondao.com",
-  "rpc": "https://celestia-rpc.contributiondao.com",
-  "snapshot": "https://services.contributiondao.com/mainnet/celestia/snapshots",
-  "addrbook": "",
-  "tools_url": {
-    "Bridge node snapshot": "https://services.contributiondao.com/mainnet/celestia/bridge-snapshots"
-  },
-  "tools_desc": {
-    "Bridge node snapshot": "Bridge node snapshot download page to speed up Celestia bridge node initialization."
-  },
   "content_url": {
     "Installation Guide": "https://services.contributiondao.com/mainnet/celestia/installation"
   }
@@ -287,8 +222,6 @@
   "webservices": "",
   "x": "brightlystake",
   "validatorlogo": "brightlystake.jpg",
-  "rpc": "https://celestia-rpc.brightlystake.com",
-  "grpc": "celestia-rpc.brightlystake.com:9090",
   "tools": "Public tools for Celestia status check",
   "tools_url": {
     "Celestia RPC status checker": "https://celestia-tools.brightlystake.com/rpc-status",
@@ -304,9 +237,6 @@
   "webservices": "",
   "x": "EnigmaValidator",
   "validatorlogo": "enigma.png",
-  "snapshot": "https://doc.enigma-validator.com/docs/mainnets/Celestia/snapshot",
-  "addrbook": "https://doc.enigma-validator.com/docs/mainnets/Celestia/addrbooks",
-  "rpc": "https://celestia-rpc.enigma-validator.com",
   "tools": "IBC Client Monitoring & Update Monitor, GenesisDrop Checker,Celestia Network Node Map",
   "tools_url": {
     "IBC Client Monitoring": "https://discord.com/channels/638338779505229824/1176595874823028817/1262579736891228293",
@@ -373,26 +303,6 @@
     "Tiascan - Blockspace Race Dashboard": "Dashboard tracking Celestia blockspace usage and activity trends over time."
   }
 },
- {
-    "name": "Decentrio",
-    "webservices": "https://decentrio.ventures/services/celestia",
-    "x": "decentriolabs",
-    "validatorlogo": "decentrio.jpg",
-    "snapshot": "https://decentrio.ventures/services/celestia",
-    "api": "https://celestia.api.decentrio.ventures",
-    "rpc": "https://celestia.rpc.decentrio.ventures",
-    "grpc": "https://celestia-grpc.decentrio.ventures:443", 
-    "tools_url": {
-      "Services (Snapshot, Installation Guide)": "https://decentrio.ventures/services/celestia"
-    },
-    "tools_desc": {
-    "Services (Snapshot, Installation Guide)": "Service page aggregating Celestia snapshots and installation/operator resources."
-  },
-    "content_url": {
-      "Code Contributions - Working with Rollkit": "https://x.com/RollkitDev/status/1798007102612656476",
-      "Public Good Contributions": "https://decentrio.notion.site/Celestia-public-good-3cc3aa45c8cb4738b77d6c8946a1dcfd?pvs=4"
-    }
-  },
   {
     "name": "NODERS",
     "webservices": "https://noders.services/mainnet-networks/celestia/",
@@ -498,8 +408,6 @@
     "api": "",
     "rpc": "",
     "grpc": "",
-    "snapshot": "https://celestia-tools.stavr.tech/consensus/",
-    "bridge_snap": "https://celestia-tools.stavr.tech/bridge/",
     "addrbook": "",
    "tools_url": {
         "RPC Locator": "https://celestia-tools.stavr.tech/",
@@ -590,24 +498,6 @@
     "addrbook": "https://storage.crouton.digital/mainnet/celestia/files/addrbook.json",
     "content_url": {
         "Node Installation": "https://crouton.digital/services/mainnets/celestia"
-    }
-  },
-  {
-    "name": "Stakeus",
-    "webservices": "",
-    "x": "StakeusXyz",
-    "validatorlogo": "stakeusxyz.jpg",
-    "explorer": "",
-    "snapshot": "",
-    "api": "",
-    "rpc": "",
-    "grpc": "",
-    "addrbook": "",
-    "tools_url": {
-        "Celestia Bridge Explorer": "https://celestia-bridges.stakeus.xyz/"
-    },
-   "tools_desc": {
-    "CelestiaUltraBot": "Operator-oriented bot providing validator/node signals and Celestia-specific utilities for monitoring and alerts."
     }
   },
   {
@@ -712,8 +602,7 @@
   "x": "stakeingermany",
   "validatorlogo": "validatus.jpg",
   "rpc": "https://rpc.celestia.validatus.com",
-  "api": "https://api.celestia.validatus.com",
-  "archive_rpc": "https://rpc.archive.celestia.validatus.com"
+  "api": "https://api.celestia.validatus.com"
 },
 {
   "name": "Citizen Web3",
