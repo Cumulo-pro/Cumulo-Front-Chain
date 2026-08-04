@@ -757,7 +757,7 @@
     "name": "FreshSTAKING",
     "webservices": "https://freshstaking.com/#networks",
     "x": "",
-    "validatorlogo": "",
+    "validatorlogo": "freshstaking.jpg",
     "rpc": "https://rpc.freshstaking.com/celestia"
   },
   {
