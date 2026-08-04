@@ -739,7 +739,7 @@
     "name": "Stakin",
     "webservices": "https://stakin.com/stake/celestia",
     "x": "StakinOfficial",
-    "validatorlogo": "",
+    "validatorlogo": "stakinofficial.png",
     "rpc": "https://celestia.rpc.stakin-nodes.com",
     "api": "https://celestia.rest.stakin-nodes.com",
     "grpc": "celestia.grpc.stakin-nodes.com:443"
