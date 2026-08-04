@@ -727,6 +727,52 @@
     "Orion Agent Kit (GitHub)": "Source repo for the Orion agent kit powering the MCP server; registry listing is live, awesome-mcp-servers PR in review."
   }
 },
+  {
+    "name": "Lunar Oasis",
+    "webservices": "",
+    "x": "",
+    "validatorlogo": "",
+    "rpc": "https://rpc.lunaroasis.net",
+    "api": "https://api.lunaroasis.net"
+  },
+  {
+    "name": "Stakin",
+    "webservices": "https://stakin.com/stake/celestia",
+    "x": "StakinOfficial",
+    "validatorlogo": "",
+    "rpc": "https://celestia.rpc.stakin-nodes.com",
+    "api": "https://celestia.rest.stakin-nodes.com",
+    "grpc": "celestia.grpc.stakin-nodes.com:443"
+  },
+  {
+    "name": "AutoStake",
+    "webservices": "https://autostake.com/networks/celestia",
+    "x": "AutoStake_",
+    "validatorlogo": "autostake.png",
+    "rpc": "https://celestia-mainnet-rpc.autostake.com:443",
+    "api": "https://celestia-mainnet-lcd.autostake.com:443",
+    "grpc": "celestia-mainnet-grpc.autostake.com:443"
+  },
+  {
+    "name": "FreshSTAKING",
+    "webservices": "https://freshstaking.com/#networks",
+    "x": "",
+    "validatorlogo": "",
+    "rpc": "https://rpc.freshstaking.com/celestia"
+  },
+  {
+    "name": "Stake&Relax Validator",
+    "webservices": "https://stakeandrelax.net",
+    "x": "StakeandRelax",
+    "validatorlogo": "stakeandselax.jpg",
+    "explorer": "https://explorer.stakeandrelax.net/celestia",
+    "rpc": "https://celestia-rpc.stakeandrelax.net",
+    "api": "https://celestia-api.stakeandrelax.net",
+    "grpc": "http://celestia-grpc.stakeandrelax.net:11690",
+    "tools_url": {
+      "Services/RPCs": "https://services.stakeandrelax.net/"
+    }
+  },
  {
   "name": "Cumulo",
   "x": "Cumulo_pro",
