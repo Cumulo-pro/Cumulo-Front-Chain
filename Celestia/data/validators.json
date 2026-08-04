@@ -543,31 +543,6 @@
     "Celestia Upgrade Monitor": "Open-source monitor that tracks Celestia upgrades and helps operators follow coordinated releases."
   }
   },
-    {
-    "name": "AmSolutions",
-    "webservices": "https://github.com/AlexToTheMoon/AM-Solutions",
-    "x": "AlexToTheMoon",
-    "validatorlogo": "",
-    "seeds": "3abb9ad6d7a3c728984c4b7e9c05e91731779865@seed-celestia.theamsolutions.info:23656",
-    "tools_url": {
-      "Remote Signing via TMKMS": "https://github.com/AlexToTheMoon/AM-Solutions/blob/main/tkms/celestia/README.md"
-    },
-    "tools_desc": {
-      "Remote Signing via TMKMS": "Guide to set up Soft-Sign option via TMKMS for secure remote signing on Celestia mainnet."
-    }
-  },
- {
-    "name": "Alphab",
-    "webservices": "https://alphab.ai/s/m/celestia",
-    "x": "alphab_ai",
-    "validatorlogo": "",
-    "tools_url": {
-      "Analytics & Staking Dashboard": "https://alphab.ai/s/m/celestia"
-    },
-    "tools_desc": {
-      "Analytics & Staking Dashboard": "Validator monitoring dashboard with graphs for signed/missed blocks, commission, stake amount and performance over time."
-    }
-  },
   {
     "name": "P-OPS",
     "webservices": "https://github.com/P-OPSTeam",
