@@ -3,7 +3,12 @@
     "chain": "celestia",
     "network": "mocha",
     "label": "Celestia Mocha Testnet",
-    "source_url": "https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/main/Celestia/data/validators_testnet.json",
-    "strategies_file": "strategies_celestia_mocha.json"
+    "source_url": "https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/main/Celestia/data/validators_testnet.json"
+  },
+  {
+    "chain": "celestia",
+    "network": "mainnet",
+    "label": "Celestia Mainnet",
+    "source_url": "https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/main/Celestia/data/validators.json"
   }
 ]
