@@ -115,11 +115,61 @@
     }
 },
 {
+  "name": "Smart Stake",
+  "webservices": "",
+  "x": "SmartStake",
+  "validatorlogo": "smartstake.jpg",
+  "explorer": "",
+  "peers": "",
+  "seeds": "",
+  "api": "",
+  "rpc": "",
+  "grpc": "",
+  "snapshot": "",
+  "addrbook": "",
+  "tools": "Smart Stake Analytics, Decentralization Analytics, Relayer Analytics",
+  "tools_url": {
+    "Smart Stake Analytics": "https://smartstake.io/analytics/celestia",
+    "Decentralization Analytics": "https://smartstake.io/decentralization/celestia",
+    "Relayer Analytics": "https://smartstake.io/relayers/celestia"
+  },
+  "tools_desc": {
+    "Smart Stake Analytics": "Validator and chain analytics for Celestia (performance, voting power, and network signals).",
+    "Decentralization Analytics": "Metrics and dashboards focused on decentralization and stake distribution across the validator set.",
+    "Relayer Analytics": "Relayer dashboards tracking IBC relayer activity and performance for Celestia-connected paths."
+  }
+},
+{
+  "name": "Stakeflow",
+  "webservices": "",
+  "x": "stakeflow",
+  "validatorlogo": "stakeflow.jpg",
+  "explorer": "https://stakeflow.io/celestia",
+  "peers": "24a607a217cf12be29bae5b2e8151391bde2d8c8@peer-celestia-01.stakeflow.io:15007",
+  "seeds": "24a607a217cf12be29bae5b2e8151391bde2d8c8@seed-celestia-01.stakeflow.io:15007",
+  "api": "https://api-celestia-01.stakeflow.io",
+  "rpc": "https://rpc-celestia-01.stakeflow.io",
+  "grpc": "grpc-celestia-01.stakeflow.io:15002",
+  "snapshot": "",
+  "addrbook": "",
+  "content_url":{
+    "How Celestia Solves the Data Availability Problem": "https://blog.stakeflow.io/how-celestia-solves-the-data-availability-problem-ad844202751b",
+    "Celestia Staking Guide": "https://blog.stakeflow.io/celestia-tia-staking-guide-b6e8a1e9c5fe",
+    "How to choose your Celestia validator": "https://blog.stakeflow.io/how-to-choose-your-tia-celestia-validator-f03b47b37fb5",
+    "Basics of Celestia with Stakeflow explorer": "https://blog.stakeflow.io/basics-of-celestia-with-stakeflow-explorer-8942dbc688f2"
+  }
+},
+{
   "name": "Openbitlab",
   "webservices": "https://openbitlab.com/network/58/Celestia/docs",
   "x": "Openbitlab_node",
   "validatorlogo": "openbitlab.png",
-   "tools_url": {
+   "api": "https://celestia-api.openbitlab.com",
+  "rpc": "https://celestia-rpc.openbitlab.com",
+  "grpc": "celestia-grpc.openbitlab.com:443",
+  "snapshot": "https://openbitlab.com/network/58/Celestia/snapshot",
+  "addrbook": "",
+  "tools_url": {
     "Srvcheck monitoring tool": "https://github.com/openbitlab/celestia-srvcheck",
     "Validator Monitor bot": "https://t.me/celestia_validator_monitor_bot",
     "Chainode CelestiaTools": "https://github.com/Chainode/CelestiaTools"
@@ -128,14 +178,20 @@
     "Srvcheck monitoring tool": "Service monitoring tool for Celestia infrastructure (health checks and basic uptime monitoring).",
     "Validator Monitor bot": "Telegram bot that monitors validator status and notifies on relevant events.",
     "Chainode CelestiaTools": "Collection of scripts and tools for Celestia node operators (setup, maintenance, and monitoring utilities)."
+  },
+  "snapshot_check": {
+    "kind": "unknown"
   }
 },
 {
   "name": "LuckyResearch.org",
-  "webservices": "",
+  "webservices": "https://luckyresearch.org",
   "x": "LuckyResearchVN",
   "validatorlogo": "luckyresearch.jpg",
   "explorer": "https://explorer.luckyresearch.org/Celestia-Mainet",
+  "api": "https://api-celestia-mainnet.luckyresearch.org",
+  "rpc": "https://rpc-celestia-mainnet.luckyresearch.org",
+  "grpc": "",
    "content_url": {
     "Services guide": "https://services.luckyresearch.org/lucky-research-services/mainet/celestia",
     "Vietnamese Blockchain Knowledge": "https://luckyresearch.notion.site/Gi-i-thi-u-v-Celestia-v-Modular-Blockchain-c9bd267748e8471ea7da8ec85e75fa29?pvs=74"
@@ -153,8 +209,23 @@
   "x": "contributedao",
   "validatorlogo": "contributiondao.jpg",
   "explorer": "",
+  "peers": "https://services.contributiondao.com/mainnet/celestia/peers",
+  "seeds": "https://services.contributiondao.com/mainnet/celestia/peers",
+  "api": "https://celestia-api.contributiondao.com",
+  "rpc": "https://celestia-rpc.contributiondao.com",
+  "snapshot": "https://services.contributiondao.com/mainnet/celestia/snapshots",
+  "addrbook": "",
+  "tools_url": {
+    "Bridge node snapshot": "https://services.contributiondao.com/mainnet/celestia/bridge-snapshots"
+  },
+  "tools_desc": {
+    "Bridge node snapshot": "Bridge node snapshot download page to speed up Celestia bridge node initialization."
+  },
   "content_url": {
     "Installation Guide": "https://services.contributiondao.com/mainnet/celestia/installation"
+  },
+  "snapshot_check": {
+    "kind": "unknown"
   }
 },
    {
@@ -237,6 +308,8 @@
   "webservices": "",
   "x": "brightlystake",
   "validatorlogo": "brightlystake.jpg",
+  "rpc": "https://celestia-rpc.brightlystake.com",
+  "grpc": "celestia-rpc.brightlystake.com:9090",
   "tools": "Public tools for Celestia status check",
   "tools_url": {
     "Celestia RPC status checker": "https://celestia-tools.brightlystake.com/rpc-status",
@@ -252,6 +325,9 @@
   "webservices": "",
   "x": "EnigmaValidator",
   "validatorlogo": "enigma.png",
+  "snapshot": "https://doc.enigma-validator.com/docs/mainnets/Celestia/snapshot",
+  "addrbook": "https://doc.enigma-validator.com/docs/mainnets/Celestia/addrbooks",
+  "rpc": "https://celestia-rpc.enigma-validator.com",
   "tools": "IBC Client Monitoring & Update Monitor, GenesisDrop Checker,Celestia Network Node Map",
   "tools_url": {
     "IBC Client Monitoring": "https://discord.com/channels/638338779505229824/1176595874823028817/1262579736891228293",
@@ -267,6 +343,9 @@
     "How to Stake TIA - French Guide": "https://enigmavalidator.substack.com/p/tutoriel-staking-tia",
      "French article on modularity": "https://huzmond.substack.com/p/fr-2023-lannee-de-la-modularite",
     "French content collaboration": "https://www.youtube.com/watch?v=6S0Nl-MYnKw"
+  },
+  "snapshot_check": {
+    "kind": "unknown"
   }
 },
 {
@@ -318,6 +397,29 @@
     "Tiascan - Blockspace Race Dashboard": "Dashboard tracking Celestia blockspace usage and activity trends over time."
   }
 },
+ {
+    "name": "Decentrio",
+    "webservices": "https://decentrio.ventures/services/celestia",
+    "x": "decentriolabs",
+    "validatorlogo": "decentrio.jpg",
+    "snapshot": "https://decentrio.ventures/services/celestia",
+    "api": "https://celestia.api.decentrio.ventures",
+    "rpc": "https://celestia.rpc.decentrio.ventures",
+    "grpc": "https://celestia-grpc.decentrio.ventures:443",
+    "tools_url": {
+      "Services (Snapshot, Installation Guide)": "https://decentrio.ventures/services/celestia"
+    },
+    "tools_desc": {
+    "Services (Snapshot, Installation Guide)": "Service page aggregating Celestia snapshots and installation/operator resources."
+  },
+    "content_url": {
+      "Code Contributions - Working with Rollkit": "https://x.com/RollkitDev/status/1798007102612656476",
+      "Public Good Contributions": "https://decentrio.notion.site/Celestia-public-good-3cc3aa45c8cb4738b77d6c8946a1dcfd?pvs=4"
+    },
+    "snapshot_check": {
+      "kind": "unknown"
+    }
+  },
   {
     "name": "NODERS",
     "webservices": "https://noders.services/mainnet-networks/celestia/",
@@ -439,6 +541,8 @@
     "api": "",
     "rpc": "",
     "grpc": "",
+    "snapshot": "https://celestia-tools.stavr.tech/consensus/",
+    "bridge_snap": "https://celestia-tools.stavr.tech/bridge/",
     "addrbook": "",
    "tools_url": {
         "RPC Locator": "https://celestia-tools.stavr.tech/",
@@ -451,6 +555,9 @@
     "Uptime": "Uptime tracker for Celestia validators/endpoints to compare reliability.",
     "Map": "Network map showing validator/location distribution and infrastructure visibility.",
     "Celestia Mainnet Upgrade": "Upgrade notes and guidance for mainnet releases and coordinated updates."
+  },
+  "snapshot_check": {
+    "kind": "unknown"
   }
 },
    {
@@ -544,6 +651,24 @@
     }
   },
   {
+    "name": "Stakeus",
+    "webservices": "",
+    "x": "StakeusXyz",
+    "validatorlogo": "stakeusxyz.jpg",
+    "explorer": "",
+    "snapshot": "",
+    "api": "",
+    "rpc": "",
+    "grpc": "",
+    "addrbook": "",
+    "tools_url": {
+        "Celestia Bridge Explorer": "https://celestia-bridges.stakeus.xyz/"
+    },
+   "tools_desc": {
+    "CelestiaUltraBot": "Operator-oriented bot providing validator/node signals and Celestia-specific utilities for monitoring and alerts."
+    }
+  },
+  {
   "name": "ITRocket",
   "webservices": "https://itrocket.net/services/mainnet/celestia/",
   "x": "itrocket_team",
@@ -596,6 +721,31 @@
     "Celestia Upgrade Monitor": "Open-source monitor that tracks Celestia upgrades and helps operators follow coordinated releases."
   }
   },
+    {
+    "name": "AmSolutions",
+    "webservices": "https://github.com/AlexToTheMoon/AM-Solutions",
+    "x": "AlexToTheMoon",
+    "validatorlogo": "",
+    "seeds": "3abb9ad6d7a3c728984c4b7e9c05e91731779865@seed-celestia.theamsolutions.info:23656",
+    "tools_url": {
+      "Remote Signing via TMKMS": "https://github.com/AlexToTheMoon/AM-Solutions/blob/main/tkms/celestia/README.md"
+    },
+    "tools_desc": {
+      "Remote Signing via TMKMS": "Guide to set up Soft-Sign option via TMKMS for secure remote signing on Celestia mainnet."
+    }
+  },
+ {
+    "name": "Alphab",
+    "webservices": "https://alphab.ai/s/m/celestia",
+    "x": "alphab_ai",
+    "validatorlogo": "",
+    "tools_url": {
+      "Analytics & Staking Dashboard": "https://alphab.ai/s/m/celestia"
+    },
+    "tools_desc": {
+      "Analytics & Staking Dashboard": "Validator monitoring dashboard with graphs for signed/missed blocks, commission, stake amount and performance over time."
+    }
+  },
   {
     "name": "P-OPS",
     "webservices": "https://github.com/P-OPSTeam",
@@ -630,7 +780,8 @@
   "x": "stakeingermany",
   "validatorlogo": "validatus.jpg",
   "rpc": "https://rpc.celestia.validatus.com",
-  "api": "https://api.celestia.validatus.com"
+  "api": "https://api.celestia.validatus.com",
+  "archive_rpc": "https://rpc.archive.celestia.validatus.com"
 },
 {
   "name": "Citizen Web3",
@@ -671,13 +822,19 @@
   "x": "UnityNodes",
   "validatorlogo": "unitynodes.jpg",
   "tools_url": {
-    "Pulse": "https://pulse.unitynodes.com/celestia/",
+    "Pulse - Validators": "https://pulse.unitynodes.com/celestia/validators",
+    "Pulse - Geography": "http://pulse.unitynodes.com/celestia/geography",
+    "Pulse - Providers": "http://pulse.unitynodes.com/celestia/providers",
+    "Pulse - Service Health": "https://pulse.unitynodes.com/celestia/services",
     "CelestiaHub": "https://unityhub.dev/celestia/validator",
     "Runcelestia": "https://runcelestia.xyz/",
     "BlobPedia MCP": "https://blobpedia.org/for-ai"
   },
   "tools_desc": {
-    "Pulse": "Celestia observability suite: validator uptime by block proposals with missed-proposal tracking, provider/geography distribution, live RPC/API/gRPC health monitoring, and on-chain economics (TIA price, APR, break-even calculator).",
+    "Pulse - Validators": "Observability dashboard for the post-Matcha performance model. Tracks live uptime by block proposals (not signatures), missed proposals per validator (24h/7d/30d), provider and country breakdown with voting power toggle, full economics (TIA price, on-chain APR, break-even calculator), and automatic upgrade and signal tracking.",
+    "Pulse - Geography": "Real-time geographic distribution map of Celestia validators and infrastructure.",
+    "Pulse - Providers": "Dashboard tracking infrastructure providers and hosting concentration across the Celestia network.",
+    "Pulse - Service Health": "Live health monitor for public Celestia RPC, API and gRPC endpoints, updated every 90 seconds.",
     "CelestiaHub": "Curated entry point to the Celestia ecosystem structured for four audiences: Validators (docs, endpoints, snapshots, FDP), Developers (SDKs, blob/namespace APIs, tooling), Educational (guides, analytical articles), and Community (Discord, forum, videos).",
     "Runcelestia": "Single-page onboarding guide for validators. Covers 3-phase setup map, readiness quiz, 10-step setup guide, hardware specs, hosting decentralization with FDP-rejected flags, and a Live Reference Node with real metrics every 2s. Includes an AI validator assistant and FAQ kept up to date on every protocol change.",
     "BlobPedia MCP": "MCP server that connects the Celestia knowledge base to AI agents (Claude, Cursor, ChatGPT, etc.). Indexes CIPs, docs, forum, GitHub releases, blog posts, and whitepapers, plus live on-chain stats via Celenium and CoinGecko. Setup in 1 minute."
@@ -749,74 +906,31 @@
     "Orion Agent Kit (GitHub)": "Source repo for the Orion agent kit powering the MCP server; registry listing is live, awesome-mcp-servers PR in review."
   }
 },
-  {
-    "name": "Lunar Oasis",
-    "webservices": "",
-    "x": "",
-    "validatorlogo": "",
-    "rpc": "https://rpc.lunaroasis.net",
-    "api": "https://api.lunaroasis.net"
-  },
-  {
-    "name": "Stakin",
-    "webservices": "https://stakin.com/stake/celestia",
-    "x": "StakinOfficial",
-    "validatorlogo": "stakinofficial.png",
-    "rpc": "https://celestia.rpc.stakin-nodes.com",
-    "api": "https://celestia.rest.stakin-nodes.com",
-    "grpc": "celestia.grpc.stakin-nodes.com:443"
-  },
-  {
-    "name": "AutoStake",
-    "webservices": "https://autostake.com/networks/celestia",
-    "x": "AutoStake_",
-    "validatorlogo": "autostake.png",
-    "rpc": "https://celestia-mainnet-rpc.autostake.com:443",
-    "api": "https://celestia-mainnet-lcd.autostake.com:443",
-    "grpc": "celestia-mainnet-grpc.autostake.com:443"
-  },
-  {
-    "name": "FreshSTAKING",
-    "webservices": "https://freshstaking.com/#networks",
-    "x": "",
-    "validatorlogo": "freshstaking.jpg",
-    "rpc": "https://rpc.freshstaking.com/celestia"
-  },
-  {
-    "name": "Stake&Relax Validator",
-    "webservices": "https://stakeandrelax.net",
-    "x": "StakeandRelax",
-    "validatorlogo": "stakeandselax.jpg",
-    "explorer": "https://explorer.stakeandrelax.net/celestia",
-    "rpc": "https://celestia-rpc.stakeandrelax.net",
-    "api": "https://celestia-api.stakeandrelax.net",
-    "grpc": "http://celestia-grpc.stakeandrelax.net:11690",
-    "tools_url": {
-      "Services/RPCs": "https://services.stakeandrelax.net/"
-    }
-  },
  {
   "name": "Cumulo",
   "x": "Cumulo_pro",
   "webservices": "https://cumulo.pro/celestia/",
   "validatorlogo": "cumulo.jpg",
-   "explorer": "https://cumulo.pro/services/celestia/stats",
   "rpc": "https://celestia.cumulo.org.es",
   "api": "https://celestia.api.cumulo.org.es",
   "grpc": "celestia.grpc.cumulo.org.es",
   "websocket": "wss://celestia.cumulo.org.es:443/websocket",
   "tools": "Celestia Block Explorer, Missed Proposals Tracker, Consensus Monitoring Dashboard, Celestia Bridge Node Dashboard, Celestia Front Chain, Modular Expansion",
   "tools_url": {
+    "Celestia Block Explorer": "https://cumulo.pro/services/celestia/stats",
     "Cumulo Live Peers": "https://cumulo.pro/services/celestia/peers",
     "CIP Tracker": "https://cumulo.pro/services/celestia/cips",
     "Missed Proposals Tracker": "https://cumulo.pro/services/celestia/missed-proposals",
-    "Dashboard in Grafana": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/bridge-monitor/README.md"
+    "Dashboard in Grafana": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/bridge-monitor/README.md",
+    "Celestia underneath: All the projects that use Celestia as a DA": "https://celestia.frontchain.cumulo.pro/underneath"
   },
   "tools_desc": {
+    "Celestia Block Explorer": "Real-time multi-section block explorer covering validator uptime, governance proposals, live consensus state, recent transactions, and network statistics.",
     "Cumulo Live Peers": "A live peer checker, updated every 30 minutes and available through both a public dashboard and API.",
     "CIP Tracker": "The CIP Tracker is designed to make it easier for teams, devs, validators and the broader community to follow how Celestia evolves at the protocol level: from proposals already live on mainnet to those currently under review or being discussed for upcoming upgrades.",
     "Missed Proposals Tracker": "Block-level tracking of missed proposal slots using the CometBFT weighted round-robin simulation. Identifies which validator missed their turn at each consensus round, with cumulative per-validator statistics and miss rate.",
-    "Dashboard in Grafana": "Grafana dashboard reference for node monitoring (service health and performance signals)."
+    "Dashboard in Grafana": "Grafana dashboard reference for node monitoring (service health and performance signals).",
+    "Celestia underneath: All the projects that use Celestia as a DA": "Explorer-style dashboard listing projects building on Celestia as their data availability layer."
   },
   "content_url": {
     "Compilation of technical guides and resources": "https://cumulo.pro/celestia/posts"
