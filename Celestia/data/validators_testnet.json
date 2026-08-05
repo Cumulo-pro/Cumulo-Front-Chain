@@ -32,7 +32,11 @@
       "peers": "https://polkachu.com/testnets/celestia/peers",
       "rpc": "https://celestia-testnet-rpc.polkachu.com/",
       "api": "https://celestia-testnet-api.polkachu.com/",
-      "grpc": "celestia-testnet-grpc.polkachu.com:11690"
+      "grpc": "celestia-testnet-grpc.polkachu.com:11690",
+      "snapshot_check": {
+        "kind": "page_scrape",
+        "file_regex": "https://snapshots\\.polkachu\\.com/testnet-snapshots/celestia/celestia_\\d+\\.tar\\.lz4"
+      }
       },
    {
     "name": "BlackNodes",
@@ -56,6 +60,9 @@
       "Node-Monitoring Guide": "Monitoring setup guidance (metrics, dashboards, alerting) for Celestia infrastructure.",
       "Celestia faucet": "Testnet faucet to request tokens for running and testing on Mocha.",
       "State-Sync": "State sync parameters and instructions to fast-sync a node from trusted snapshots/state."
+    },
+    "snapshot_check": {
+      "kind": "stable_url"
     }
 },
     {
@@ -85,8 +92,8 @@
     "tools_url": {
         "Bridge node checker / website": "https://celestia-bridge-checker.dteam.tech/",
         "Bridge node checker / Discord": "https://discord.com/invite/BCeXe63Mm8",
-        "Community faucet (10TIA / 24h)": "https://discord.com/invite/BCeXe63Mm8", 
-        "State-sync": "https://dteam.tech/services/state-sync/celestia/mainnet"
+        "Community faucet (10TIA / 24h)": "https://discord.com/invite/BCeXe63Mm8",
+        "State-sync": "https://dteam.tech/services/state-sync/celestia/testnet"
     },
     "tools_desc": {
       "Bridge node checker / website": "Web dashboard to verify bridge node status and basic health signals.",
@@ -97,13 +104,17 @@
     "rpc": "https://rpc.archive.celestia.testnet.dteam.tech",
     "api": "https://api.archive.celestia.testnet.dteam.tech",
     "grpc": "grpc.archive.celestia.testnet.dteam.tech:27090",
-    "snapshot": "https://dteam.tech/services/snapshot/celestia/mainnet",
-    "snap_url": "https://dteam.tech/services/snapshot/celestia/mainnet",
+    "snapshot": "https://dteam.tech/services/snapshot/celestia/testnet",
+    "snap_url": "https://dteam.tech/services/snapshot/celestia/testnet",
     "seeds": "70e8a8941f32dc5f696e46ee836c27620e773065@seed.celestia.testnet.dteam.tech:26656",
-    "peers": "76ed983017167d96c62b166725250940deb783563@peer.celestia.testnet.dteam.tech:27656", 
+    "peers": "76ed983017167d96c62b166725250940deb783563@peer.celestia.testnet.dteam.tech:27656",
      "content":{
-            "Installation Guide": "https://dteam.tech/services/installation-guide/celestia/mainnet"
-      }
+            "Installation Guide": "https://dteam.tech/services/installation-guide/celestia/testnet"
+      },
+    "snapshot_check": {
+      "kind": "stable_url",
+      "resolve_url": "https://download.dteam.tech/celestia/testnet/pruned/latest-snapshot"
+    }
     },
     {
         "name": "ITRocket",
@@ -117,9 +128,6 @@
           "rpc": "https://celestia-testnet-rpc.itrocket.net",
           "grpc": "celestia-testnet-grpc.itrocket.net:443",
           "snapshot_pebble": "https://itrocket.net/services/testnet/celestia/",
-          "snap_url": "",
-          "archive_snapshot": "",
-          "bridge_snap": "",
            "tools": "Decentralization Analytics #validators, RPC, and all nodes; Governance Bot #with status & UPD timer notifications; Peer scanner #with real time peer uptime verification; RPC Scanner #with Raw scan results",
           "tools_url": {
             "Decentralization Analytics": "https://itrocket.net/services/testnet/celestia/decentralization/",
@@ -134,7 +142,12 @@
           "Peer scanner": "Peer uptime and connectivity checker to validate p2p reachability in real time.",
           "RPC Scanner": "Public RPC scan results to compare endpoint availability and responsiveness.",
           "consensus-signal-tracker": "Consensus signal dashboard to observe consensus health trends and anomalies."
-        }
+        },
+    "snapshot_check": {
+      "kind": "page_scrape",
+      "file_regex": "https://server-\\d+\\.itrocket\\.net/testnet/celestia/[\\w.\\-]+\\.tar\\.lz4",
+      "unavailable_markers": ["Snapshot is not available yet"]
+    }
     },
     {
     "name": "kjnodes",
@@ -149,6 +162,11 @@
     "tools_desc": {
     "State-sync": "State sync guide and endpoints to speed up node synchronization without downloading full history.",
     "Public RPC": "Public RPC endpoints and connection details for Celestia (useful for wallets, relayers, and tooling)."
+  },
+  "snapshot_check": {
+    "kind": "stable_url",
+    "resolve_url": "https://snapshots.kjnodes.com/celestia-testnet/snapshot_latest.tar.lz4",
+    "checksum_url": "https://snapshots.kjnodes.com/celestia-testnet/snapshot_latest.tar.lz4.sha256sum"
   }
 },
     {
@@ -248,20 +266,32 @@
     },
       "content": {
         "Installation Guide": "https://noders.services/testnet/celestia/install"
+    },
+    "snapshot_check": {
+      "kind": "page_scrape",
+      "file_regex": "https://snapshots\\.noders\\.services/testnet/celestia/celestia-\\d+\\.tar\\.lz4"
     }
    },
      {
     "name": "NodeStake",
-    "webservices": "https://noders.services/testnet/overview",
+    "webservices": "https://nodestake.org/networks/celestia",
     "x": "NodeStake_top",
     "validatorlogo": "nodestake.jpg",
     "explorer": "https://explorer.nodestake.org/celestia-testnet",
-    "seeds": "afdc83e658c00274c7fc8fe103de766977a65cb2@rpc.celestia.nodestake.org:666",
+    "seeds": "327fb4151de9f78f29ff10714085e347a4e3c836@rpc-t.celestia.nodestake.org:666",
     "api": "https://api-t.celestia.nodestake.org",
     "rpc": "https://rpc-t.celestia.nodestake.org",
-    "grpc": "https://grpc-t.celestia.nodestake.org:443",
-    "snapshot": "https://nodestake.org/celestia",
-    "addrbook": "https://ss.celestia.nodestake.org/addrbook.json"
+    "grpc": "grpc-t.celestia.nodestake.org:443",
+    "snapshot_pebble": "https://nodestake.org/networks/celestia",
+    "addrbook": "https://ss-t.celestia.nodestake.org/addrbook.json",
+    "snapshot_check": {
+      "kind": "json_index",
+      "resolve_url": "https://nodestake.org/api/snapshot?log=https%3A%2F%2Fss-t.celestia.nodestake.org%2Flog.txt&rpc=https%3A%2F%2Frpc-t.celestia.nodestake.org&base=https%3A%2F%2Fss-t.celestia.nodestake.org",
+      "file_key": "snapshotUrl",
+      "height_key": "snapshotHeight",
+      "date_key": "snapshotTime",
+      "size_key": "snapshotSize"
+    }
 },
   {
     "name": "Bitszn",
@@ -289,7 +319,11 @@
       "tools_desc": {
         "DA RPC": "Public Data Availability RPC endpoint for light clients and DA queries.",
         "Faucet": "Testnet faucet to request tokens for usage and testing."
-       }
+       },
+    "snapshot_check": {
+      "kind": "always_ok",
+      "note": "Requiere JS (Next.js server action ofuscada) para revelar el fichero actual; no compensa anadir Playwright solo para este proveedor. Patron de fichero conocido: https://cdn.krews.xyz/celestia_mocha_testnet_pruned-YYYY-MM-DD-{height}.tar.zst - se asume disponible por fiabilidad historica."
+    }
     },
     {
         "name": "Pro-Nodes75",
@@ -326,7 +360,12 @@
   "webservices": "https://unitynodes.com",
   "x": "UnityNodes",
   "validatorlogo": "unitynodes.jpg",
-  "snapshot_pebble": "https://docs.unitynodes.com/snapshots/celestia-mocha"
+  "snapshot_pebble": "https://docs.unitynodes.com/snapshots/celestia-mocha",
+  "snapshot_check": {
+    "kind": "stable_url",
+    "resolve_url": "https://snapshots.unitynodes.com/celestia-mocha/latest.tar.lz4",
+    "checksum_url": "https://snapshots.unitynodes.com/celestia-mocha/latest.tar.lz4.sha256"
+  }
 },
 {
       "name": "Cumulo",
@@ -353,6 +392,11 @@
   },
       "content": {
          "Compilation of technical guides and resources": "https://cumulo.pro/celestia/content"
+      },
+      "snapshot_check": {
+        "kind": "json_index",
+        "resolve_url": "https://mocha.cumulo.com.es/snapshots/index.json",
+        "file_key": "latest_file"
       }
     }
 ]
