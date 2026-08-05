@@ -62,7 +62,8 @@
       "State-Sync": "State sync parameters and instructions to fast-sync a node from trusted snapshots/state."
     },
     "snapshot_check": {
-      "kind": "stable_url"
+      "kind": "stable_url",
+      "min_size_bytes": 100000000
     }
 },
     {
@@ -113,7 +114,8 @@
       },
     "snapshot_check": {
       "kind": "stable_url",
-      "resolve_url": "https://download.dteam.tech/celestia/testnet/pruned/latest-snapshot"
+      "resolve_url": "https://download.dteam.tech/celestia/testnet/pruned/latest-snapshot",
+      "min_size_bytes": 100000000
     }
     },
     {
@@ -166,7 +168,8 @@
   "snapshot_check": {
     "kind": "stable_url",
     "resolve_url": "https://snapshots.kjnodes.com/celestia-testnet/snapshot_latest.tar.lz4",
-    "checksum_url": "https://snapshots.kjnodes.com/celestia-testnet/snapshot_latest.tar.lz4.sha256sum"
+    "checksum_url": "https://snapshots.kjnodes.com/celestia-testnet/snapshot_latest.tar.lz4.sha256sum",
+    "min_size_bytes": 100000000
   }
 },
     {
@@ -268,8 +271,8 @@
         "Installation Guide": "https://noders.services/testnet/celestia/install"
     },
     "snapshot_check": {
-      "kind": "page_scrape",
-      "file_regex": "https://snapshots\\.noders\\.services/testnet/celestia/celestia-\\d+\\.tar\\.lz4"
+      "kind": "unknown",
+      "note": "La pagina de snapshot es una SPA (Docusaurus) que carga el enlace del fichero desde JS ya compilado, no desde HTML ni desde ninguna llamada XHR/API. Confirmado con fetch() directo a la URL: HTTP 200, pero el cuerpo no contiene ni el enlace ni el dominio snapshots.noders.services. No se puede resolver con una peticion HTTP simple; requeriria un navegador headless (mismo caso que Krews)."
     }
    },
      {
@@ -364,7 +367,8 @@
   "snapshot_check": {
     "kind": "stable_url",
     "resolve_url": "https://snapshots.unitynodes.com/celestia-mocha/latest.tar.lz4",
-    "checksum_url": "https://snapshots.unitynodes.com/celestia-mocha/latest.tar.lz4.sha256"
+    "checksum_url": "https://snapshots.unitynodes.com/celestia-mocha/latest.tar.lz4.sha256",
+    "min_size_bytes": 100000000
   }
 },
 {
