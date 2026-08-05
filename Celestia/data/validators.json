@@ -325,7 +325,6 @@
   "webservices": "",
   "x": "EnigmaValidator",
   "validatorlogo": "enigma.png",
-  "snapshot": "https://doc.enigma-validator.com/docs/mainnets/Celestia/snapshot",
   "addrbook": "https://doc.enigma-validator.com/docs/mainnets/Celestia/addrbooks",
   "rpc": "https://celestia-rpc.enigma-validator.com",
   "tools": "IBC Client Monitoring & Update Monitor, GenesisDrop Checker,Celestia Network Node Map",
