@@ -39,6 +39,9 @@
   },
    "content":{
     "Installation Guide": "https://services.lavenderfive.com/mainnet/celestia/installation"
+  },
+  "snapshot_check": {
+    "kind": "unknown"
   }
 },
   {
@@ -63,6 +66,11 @@
     "State-sync": "State sync guide and endpoints to speed up node synchronization without downloading full history.",
     "Public RPC": "Public RPC endpoints and connection details for Celestia (useful for wallets, relayers, and tooling).",
     "Slashboard": "Validator slashing and signing monitoring dashboard (helps detect downtime risks and missed signatures)."
+  },
+  "snapshot_check": {
+    "kind": "stable_url",
+    "resolve_url": "https://snapshots.kjnodes.com/celestia/snapshot_latest.tar.lz4",
+    "min_size_bytes": 100000000
   }
 },
   {
@@ -84,6 +92,10 @@
   },
    "content":{
     "Installation Guide": "https://polkachu.com/installation/celestia"
+  },
+  "snapshot_check": {
+    "kind": "page_scrape",
+    "file_regex": "https://snapshots\\.polkachu\\.com/snapshots/celestia/celestia_\\d+\\.tar\\.lz4"
   }
 },
   {
@@ -97,7 +109,10 @@
     "api": "https://celestia-rest.stakeme.pro",
     "rpc": "https://celestia-rpc.stakeme.pro",
     "grpc": "da-bridge-celestia.stakeme.pro:9090",
-    "snapshot": "https://mammoblocks.io/labs?page=snapshots"
+    "snapshot": "https://mammoblocks.io/labs?page=snapshots",
+    "snapshot_check": {
+      "kind": "unknown"
+    }
 },
 {
   "name": "Openbitlab",
@@ -327,7 +342,10 @@
         "Celestia Hub Academy": "https://docs.google.com/document/d/1Q77MnVxqu6-ACvfYFzgJIProniNEB8uju9fLymCoATU",
         "10 Tweets about Celestia": "https://docs.google.com/document/d/1PIkfDi6o0JoW46B0K-wO-CmBCO6ZLX3nD77d_rDw00s",
        "31 Posts about Celestia": "https://docs.google.com/document/d/1BYJ9o4NAngU6Ma7BcPycwAQFdzLeIH_QG7WcTgDVuRw"
-    }
+    },
+  "snapshot_check": {
+    "kind": "unknown"
+  }
 },
   {
     "name": "NodeStake",
@@ -336,16 +354,24 @@
     "validatorlogo": "nodestake.jpg",
     "explorer": "https://explorer.nodestake.org/celestia",
     "peers": "ac54fab5e96c630fcbbed033c68092e6fb9ad0e5@104.154.23.38:26656,4670dc3021e779d814b8a3cd7e5dba166dd5c1c3@65.109.112.144:5020,23b88ebcfb2177dbd2d8b2920c363a25e038e69a@89.58.61.213:2000,a86cfe5a22e73ff0c9ceec388e9b52bf8355efdd@85.239.233.57:2000,b8c78f8edb68486ed07d7c34fc694be4fc37cd34@144.217.71.152:26656",
-    "seeds": "afdc83e658c00274c7fc8fe103de766977a65cb2@rpc.celestia.nodestake.org:666",
+    "seeds": "327fb4151de9f78f29ff10714085e347a4e3c836@rpc.celestia.nodestake.org:666",
     "api": "https://api.celestia.nodestake.org",
     "rpc": "https://rpc.celestia.nodestake.org",
-    "grpc": "https://grpc.celestia.nodestake.org:443",
-    "snapshot": "https://nodestake.org/celestia",
-    "addrbook": "https://ss.celestia.nodestake.org/addrbook.json"
+    "grpc": "grpc.celestia.nodestake.org:443",
+    "snapshot_pebble": "https://nodestake.org/celestia",
+    "addrbook": "https://ss.celestia.nodestake.org/addrbook.json",
+    "snapshot_check": {
+      "kind": "json_index",
+      "resolve_url": "https://nodestake.org/api/snapshot?log=https%3A%2F%2Fss.celestia.nodestake.org%2Flog.txt&rpc=https%3A%2F%2Frpc.celestia.nodestake.org&base=https%3A%2F%2Fss.celestia.nodestake.org",
+      "file_key": "snapshotUrl",
+      "height_key": "snapshotHeight",
+      "date_key": "snapshotTime",
+      "size_key": "snapshotSize"
+    }
     },
   {
     "name": "DTEAM",
-    "webservices": "https://dteam.tech/services/mainnet/overview/celestia",
+    "webservices": "https://dteam.tech/services/overview/celestia/mainnet",
     "x": "dteamtech",
     "validatorlogo": "dteam.png",
     "explorer": "",
@@ -365,6 +391,11 @@
   },
     "content_url": {
       "Installation Guide": "https://dteam.tech/services/mainnet/installation-guide/celestia?type=consensus"
+    },
+    "snapshot_check": {
+      "kind": "stable_url",
+      "resolve_url": "https://download.dteam.tech/celestia/mainnet/pruned/latest-snapshot",
+      "min_size_bytes": 100000000
     }
 },
    {
@@ -439,6 +470,9 @@
         "tools_desc": {
           "Validator missed proposals": "Dashboard showing governance participation / missed proposals and related validator activity.",
           "Bridge Nodes explorer": "Explorer view focused on Celestia bridge nodes and their operational state."
+        },
+        "snapshot_check": {
+          "kind": "always_ok"
         }
     },
   {
@@ -483,6 +517,11 @@
         "Useful Commands": "https://services.validexis.com/mainnets/celestia/validator-node-installation/useful-commands",
         "Full Node Installation": "https://services.validexis.com/mainnets/celestia/full-node-installation",
        "Bridge Node Installation": "https://services.validexis.com/mainnets/celestia/bridge-node-installation"
+    },
+    "snapshot_check": {
+      "kind": "stable_url",
+      "resolve_url": "https://snapshots1.validexis.com/celestia-mainnet/snap_celestia-prun.tar.lz4",
+      "min_size_bytes": 100000000
     }
   },
   {
@@ -498,6 +537,10 @@
     "addrbook": "https://storage.crouton.digital/mainnet/celestia/files/addrbook.json",
     "content_url": {
         "Node Installation": "https://crouton.digital/services/mainnets/celestia"
+    },
+    "snapshot_check": {
+      "kind": "stable_url",
+      "min_size_bytes": 100000000
     }
   },
   {
@@ -524,6 +567,16 @@
   },
     "content": {
         "Installation Guide": "https://itrocket.net/services/mainnet/celestia/installation/"
+    },
+    "snapshot_check": {
+      "kind": "json_index",
+      "resolve_url": "https://server-1.itrocket.net/mainnet/celestia/.current_state.json",
+      "base_url": "https://server-1.itrocket.net/mainnet/celestia/",
+      "file_key": "snapshot_name",
+      "height_key": "snapshot_height",
+      "date_key": "snapshot_block_time",
+      "size_key": "snapshot_size",
+      "db_backend_key": "db_backend"
     }
   },
    {
