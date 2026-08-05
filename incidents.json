@@ -1,5 +1,17 @@
 [
  {
+  "id": "cosmos-mainnet-gaia-v27.6.0-upgrade-2026-08-05",
+  "date": "2026-08-05T14:26:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "gaia v27.6.0",
+  "note": "Cumulo upgraded its Cosmos Hub mainnet nodes to gaia v27.6.0 at block height 32,361,600, as approved by governance Proposal #1049. This minor upgrade increases the max CosmWasm contract size to 1.6MiB and allowlists additional gRPC queries for CosmWasm, applied at the scheduled time of August 5, 2026 at 14:26 UTC. Cumulo performed the upgrade successfully and without incidents.",
+  "url": "https://github.com/cosmos/gaia/blob/v27.6.0/CHANGELOG.md"
+},
+ {
   "id": "gnoland-topaz-deployment-backup-veliamon-test-2026-08-02",
   "date": "2026-08-02T00:00:00Z",
   "incident_type": "deployment",
