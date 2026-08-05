@@ -146,9 +146,14 @@
           "consensus-signal-tracker": "Consensus signal dashboard to observe consensus health trends and anomalies."
         },
     "snapshot_check": {
-      "kind": "page_scrape",
-      "file_regex": "https://server-\\d+\\.itrocket\\.net/testnet/celestia/[\\w.\\-]+\\.tar\\.lz4",
-      "unavailable_markers": ["Snapshot is not available yet"]
+      "kind": "json_index",
+      "resolve_url": "https://server-6.itrocket.net/testnet/celestia/.current_state.json",
+      "base_url": "https://server-6.itrocket.net/testnet/celestia/",
+      "file_key": "snapshot_name",
+      "height_key": "snapshot_height",
+      "date_key": "snapshot_block_time",
+      "size_key": "snapshot_size",
+      "db_backend_key": "db_backend"
     }
     },
     {
@@ -394,11 +399,4 @@
   },
       "content": {
          "Compilation of technical guides and resources": "https://cumulo.pro/celestia/content"
-      },
-      "snapshot_check": {
-        "kind": "json_index",
-        "resolve_url": "https://mocha.cumulo.com.es/snapshots/index.json",
-        "file_key": "latest_file"
       }
-    }
-]
