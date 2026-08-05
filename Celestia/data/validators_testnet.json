@@ -271,8 +271,7 @@
         "Installation Guide": "https://noders.services/testnet/celestia/install"
     },
     "snapshot_check": {
-      "kind": "unknown",
-      "note": "La pagina de snapshot es una SPA (Docusaurus) que carga el enlace del fichero desde JS ya compilado, no desde HTML ni desde ninguna llamada XHR/API. Confirmado con fetch() directo a la URL: HTTP 200, pero el cuerpo no contiene ni el enlace ni el dominio snapshots.noders.services. No se puede resolver con una peticion HTTP simple; requeriria un navegador headless (mismo caso que Krews)."
+      "kind": "unknown"
     }
    },
      {
@@ -324,8 +323,7 @@
         "Faucet": "Testnet faucet to request tokens for usage and testing."
        },
     "snapshot_check": {
-      "kind": "always_ok",
-      "note": "Requiere JS (Next.js server action ofuscada) para revelar el fichero actual; no compensa anadir Playwright solo para este proveedor. Patron de fichero conocido: https://cdn.krews.xyz/celestia_mocha_testnet_pruned-YYYY-MM-DD-{height}.tar.zst - se asume disponible por fiabilidad historica."
+      "kind": "always_ok"
     }
     },
     {
