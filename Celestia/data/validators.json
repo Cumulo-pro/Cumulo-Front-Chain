@@ -211,11 +211,7 @@
   "explorer": "",
   "peers": "https://services.contributiondao.com/mainnet/celestia/peers",
   "seeds": "https://services.contributiondao.com/mainnet/celestia/peers",
-  "api": "https://celestia-api.contributiondao.com",
-  "rpc": "https://celestia-rpc.contributiondao.com",
-  "snapshot": "https://services.contributiondao.com/mainnet/celestia/snapshots",
-  "addrbook": "",
-  "tools_url": {
+   "tools_url": {
     "Bridge node snapshot": "https://services.contributiondao.com/mainnet/celestia/bridge-snapshots"
   },
   "tools_desc": {
@@ -397,29 +393,6 @@
   }
 },
  {
-    "name": "Decentrio",
-    "webservices": "https://decentrio.ventures/services/celestia",
-    "x": "decentriolabs",
-    "validatorlogo": "decentrio.jpg",
-    "snapshot": "https://decentrio.ventures/services/celestia",
-    "api": "https://celestia.api.decentrio.ventures",
-    "rpc": "https://celestia.rpc.decentrio.ventures",
-    "grpc": "https://celestia-grpc.decentrio.ventures:443",
-    "tools_url": {
-      "Services (Snapshot, Installation Guide)": "https://decentrio.ventures/services/celestia"
-    },
-    "tools_desc": {
-    "Services (Snapshot, Installation Guide)": "Service page aggregating Celestia snapshots and installation/operator resources."
-  },
-    "content_url": {
-      "Code Contributions - Working with Rollkit": "https://x.com/RollkitDev/status/1798007102612656476",
-      "Public Good Contributions": "https://decentrio.notion.site/Celestia-public-good-3cc3aa45c8cb4738b77d6c8946a1dcfd?pvs=4"
-    },
-    "snapshot_check": {
-      "kind": "unknown"
-    }
-  },
-  {
     "name": "NODERS",
     "webservices": "https://noders.services/mainnet-networks/celestia/",
     "x": "NODERS_TEAM",
