@@ -1,10 +1,9 @@
 [
   {
-    "network": "story_mainnet",
-    "url": "https://raw.githubusercontent.com/Cumulo-pro/Story_protocol/main/data/validators_mainnet.json"
-  },
-  {
-    "network": "story_aeneid",
-    "url": "https://raw.githubusercontent.com/Cumulo-pro/Story_protocol/main/data/validators_aeneid.json"
+    "chain": "celestia",
+    "network": "mocha",
+    "label": "Celestia Mocha Testnet",
+    "source_url": "https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/main/Celestia/data/validators_testnet.json",
+    "strategies_file": "strategies_celestia_mocha.json"
   }
 ]
