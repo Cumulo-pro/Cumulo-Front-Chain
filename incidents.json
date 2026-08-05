@@ -1,5 +1,17 @@
 [
  {
+  "id": "limonata-testnet-v0.3.6-upgrade-2026-08-05",
+  "date": "2026-08-05T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Limonata",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": "limonata v0.3.6",
+  "note": "Cumulo successfully executed the mandatory Limonata testnet upgrade to v0.3.6 at height 1,650,000, per governance Proposal #6. The atomic upgrade opens the encrypted mempool by replacing the committee concentration guard's threshold (previously t = floor(2S/3) + 1, structurally unsatisfiable across ~1,600 realistic committee configurations) with t = floor(2S/3) + n, ensuring no coalition holding ≤2/3 of stake can reach it, plus a strand clause that fails closed if a single operator could freeze decryption. It also recovers IBC client 07-tendermint-0 for channel-0 to Osmosis, whose light client silently stopped refreshing after a public WebSocket endpoint failure on July 26 and expired three days later; the relayer now polls instead of relying on the WebSocket, backed by a 20-minute consensus-state-age watchdog. Built from commit effa377d, binary and checksums signed with key A45380198F390AF69126AE12E4ECEC477C1735FB. Node halted at height 1,650,000 and resumed cleanly on v0.3.6.",
+  "url": "https://github.com/Limonata-Blockchain/limonata/releases/tag/limonata-v0.3.6"
+},
+ {
   "id": "cosmos-mainnet-gaia-v27.6.0-upgrade-2026-08-05",
   "date": "2026-08-05T14:26:00Z",
   "incident_type": "upgrade",
