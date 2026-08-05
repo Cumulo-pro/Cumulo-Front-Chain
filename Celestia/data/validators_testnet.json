@@ -221,34 +221,7 @@
     "Celestia gRPC status checker": "https://celestia-tools.brightlystake.com/grpc-status"
   }
 },
-{
-  "name": "Crouton Digital",
-  "x": "CroutonDigital",
-  "validatorlogo": "crouton.jpg",
-  "webservices": "https://crouton.digital/services/testnets/celestia",
-  "peer": "854f67cdd27f568f2aa4f46a9d35cc727604958e@65.109.93.124:28656",
-  "snapshot": "https://dteam.tech/services/snapshot/celestia/testnet",
-  "snap_url": "https://storage.crouton.digital/testnet/celestia/snapshots/celestia_latest.tar.lz4",
-  "genesis": "https://storage.crouton.digital/testnet/celestia/files/genesis.json",
-  "addrbook": "https://storage.crouton.digital/testnet/celestia/files/addrbook.json"
-},
-{
-  "name": "StakeTown",
-  "webservices": "https://services.stake-town.com/home/testnet/celestia",
-  "x": "",
-  "validatorlogo": "staketown.jpg",
-  "snapshot": "",
-  "tools_url": {
-    "State-Sync": "https://services.stake-town.com/home/testnet/celestia/sync"
-  },
-  "tools_desc": {
-      "State-Sync": "State sync reference and instructions to sync faster on testnet."
-    },
-  "content": {
-    "Installation Guide": "https://services.stake-town.com/home/testnet/celestia/installation"
-  }
-},
-    {
+ {
    "name": "NODERS",
     "webservices": "https://noders.services/testnet/celestia/",
     "x": "NODERS_TEAM",
