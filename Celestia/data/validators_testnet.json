@@ -399,4 +399,11 @@
   },
       "content": {
          "Compilation of technical guides and resources": "https://cumulo.pro/celestia/content"
+      },
+      "snapshot_check": {
+        "kind": "json_index",
+        "resolve_url": "https://mocha.cumulo.com.es/snapshots/index.json",
+        "file_key": "latest_file"
       }
+    }
+]
