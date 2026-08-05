@@ -160,30 +160,6 @@
   }
 },
 {
-  "name": "Openbitlab",
-  "webservices": "https://openbitlab.com/network/58/Celestia/docs",
-  "x": "Openbitlab_node",
-  "validatorlogo": "openbitlab.png",
-   "api": "https://celestia-api.openbitlab.com",
-  "rpc": "https://celestia-rpc.openbitlab.com",
-  "grpc": "celestia-grpc.openbitlab.com:443",
-  "snapshot": "https://openbitlab.com/network/58/Celestia/snapshot",
-  "addrbook": "",
-  "tools_url": {
-    "Srvcheck monitoring tool": "https://github.com/openbitlab/celestia-srvcheck",
-    "Validator Monitor bot": "https://t.me/celestia_validator_monitor_bot",
-    "Chainode CelestiaTools": "https://github.com/Chainode/CelestiaTools"
-  },
-  "tools_desc": {
-    "Srvcheck monitoring tool": "Service monitoring tool for Celestia infrastructure (health checks and basic uptime monitoring).",
-    "Validator Monitor bot": "Telegram bot that monitors validator status and notifies on relevant events.",
-    "Chainode CelestiaTools": "Collection of scripts and tools for Celestia node operators (setup, maintenance, and monitoring utilities)."
-  },
-  "snapshot_check": {
-    "kind": "unknown"
-  }
-},
-{
   "name": "LuckyResearch.org",
   "webservices": "https://luckyresearch.org",
   "x": "LuckyResearchVN",
