@@ -524,12 +524,7 @@
     "x": "validexis",
     "validatorlogo": "validexis.jpg",
     "explorer": "",
-    "snapshot": "https://services.validexis.com/mainnets/celestia/snapshot",
-    "bridge_snap": "https://services.validexis.com/mainnets/celestia/snapshot",
     "peers": "60d481edb7e49efe01fa0b49a346cf9f8400db19@peer-celestia-mainnet.val",
-    "api": "https://api-celestia-mainnet.validexis.com",
-    "rpc": "https://rpc-celestia-mainnet.validexis.com",
-    "grpc": "grpc-celestia-mainnet.validexis.com:443",
     "addrbook": "https://mainnets.validexis.com/celestia/addrbook.json",
     "tools_url": {
         "CelestiaUltraBot": "https://validexis.com/celestiaultrabot"
@@ -542,11 +537,6 @@
         "Useful Commands": "https://services.validexis.com/mainnets/celestia/validator-node-installation/useful-commands",
         "Full Node Installation": "https://services.validexis.com/mainnets/celestia/full-node-installation",
        "Bridge Node Installation": "https://services.validexis.com/mainnets/celestia/bridge-node-installation"
-    },
-    "snapshot_check": {
-      "kind": "stable_url",
-      "resolve_url": "https://snapshots1.validexis.com/celestia-mainnet/snap_celestia-prun.tar.lz4",
-      "min_size_bytes": 100000000
     }
   },
   {
