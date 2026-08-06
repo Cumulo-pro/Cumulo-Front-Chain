@@ -1,5 +1,17 @@
 [
  {
+  "id": "genlayer-bradbury-upgrade-v0.5.14-2026-08-06",
+  "date": "2026-08-06T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (bradbury)",
+  "node_type": ["validator"],
+  "client": "genlayer v0.5.14",
+  "note": "Cumulo upgraded its GenLayer Bradbury testnet validator to v0.5.14. This release fixes a consensus sync freeze where a transaction rewound within its acceptance block could stall validators on one block (the Bradbury halt). Node upgraded successfully and verified operational without incidents.",
+  "url": "https://docs.genlayer.com/validators/changelog#v0514"
+},
+ {
   "id": "genlayer-asimov-upgrade-v0.5.14-2026-08-06",
   "date": "2026-08-06T00:00:00Z",
   "incident_type": "upgrade",
