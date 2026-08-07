@@ -1,5 +1,17 @@
 [
  {
+  "id": "monad-testnet-upgrade-v0.16.0-monad-ten-2026-08-07",
+  "date": "2026-08-07T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Monad",
+  "network": "testnet",
+  "node_type": ["full_node"],
+  "client": "monad v0.16.0",
+  "note": "Cumulo upgraded its Monad testnet full node (full_Cumulo-1) to v0.16.0. This release activates MONAD_TEN (MIP-8: page-encoded storage) at timestamp 1786545000 (2026-08-12 14:30 UTC). Dual-db mode (Phase A) verified active prior to upgrade (Primary: ethereum, Secondary: monad, both at block 51,728,626). Prometheus metrics endpoint now enabled by default on port 9143/TCP — port blocked via ufw immediately post-upgrade per MF recommendation. All three services restarted and verified active. Commit hash verified: c616743d1358186605e1c1b74a3d6c4fdd9dd48c.",
+  "url": "https://docs.monad.xyz/node-ops/upgrade-instructions/v0.16.0"
+},
+ {
   "id": "celestia-mainnet-snapshot-deployment-2026-08-07",
   "date": "2026-08-07T00:00:00Z",
   "incident_type": "deployment",
