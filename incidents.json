@@ -1,5 +1,17 @@
 [
  {
+  "id": "starknet-mainnet-incident-operator-balance-2026-08-07",
+  "date": "2026-08-07T09:10:01Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "starknet-staking-v2",
+  "note": "Cumulo's Starknet mainnet validator (staker address 0x327a835fda4673a83f63d90bc3a16dd5b1645972acd539b3fc2446e73b11170) missed 5 epochs of attestations after its operator address (0x756dc55f00998477d9937504b4536a375d2b277967e51b6a08391fbfa57af03) dropped below the recommended 5 STRK threshold, down to 0.8593 STRK. Attestation transactions failed with 'Account validation failed: Resources bounds exceed balance'. Cumulo topped up the operator address to ~200 STRK. Attestation resumed successfully at 09:08 UTC (tx 0x662f406cb734e2aac38deefb6c5e9292c1720464fd302e715fa37991f41485b, ACCEPTED_ON_L2), confirmed by a subsequent successful attestation at 09:10 UTC.",
+  "url": "https://voyager.online/tx/0x662f406cb734e2aac38deefb6c5e9292c1720464fd302e715fa37991f41485b"
+},
+ {
   "id": "genlayer-bradbury-upgrade-v0.5.14-2026-08-06",
   "date": "2026-08-06T00:00:00Z",
   "incident_type": "upgrade",
