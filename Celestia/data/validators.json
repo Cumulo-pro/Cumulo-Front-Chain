@@ -814,7 +814,7 @@
     "Orion Agent Kit (GitHub)": "Source repo for the Orion agent kit powering the MCP server; registry listing is live, awesome-mcp-servers PR in review."
   }
 },
- {
+{
   "name": "Cumulo",
   "x": "Cumulo_pro",
   "webservices": "https://cumulo.pro/celestia/",
@@ -823,6 +823,7 @@
   "api": "https://celestia.api.cumulo.org.es",
   "grpc": "celestia.grpc.cumulo.org.es",
   "websocket": "wss://celestia.cumulo.org.es:443/websocket",
+  "snapshot": "https://cumulo.pro/services/celestia/snapshot",
   "tools": "Celestia Block Explorer, Missed Proposals Tracker, Consensus Monitoring Dashboard, Celestia Bridge Node Dashboard, Celestia Front Chain, Modular Expansion",
   "tools_url": {
     "Celestia Block Explorer": "https://cumulo.pro/services/celestia/stats",
@@ -842,6 +843,14 @@
   },
   "content_url": {
     "Compilation of technical guides and resources": "https://cumulo.pro/celestia/posts"
+  },
+  "snapshot_check": {
+    "kind": "json_index",
+    "resolve_url": "https://snapshot.celestia.cumulo.me/snapshots/index.json",
+    "file_key": "file",
+    "height_key": "latest_height",
+    "date_key": "date",
+    "size_key": "size"
   }
 }
 ]
