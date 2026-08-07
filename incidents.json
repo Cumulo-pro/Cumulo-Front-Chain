@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-mainnet-snapshot-deployment-2026-08-07",
+  "date": "2026-08-07T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["snapshot"],
+  "client": "celestia-app v9.0.4",
+  "note": "Cumulo deployed and published a pruned snapshot service for Celestia mainnet, automatically regenerated daily. Database backend is pebbledb. Each snapshot is published with a stable 'latest' symlink and an index.json manifest for automated consumption, served over HTTPS with resumable range-request downloads. The service is now linked from Cumulo's public services page.",
+  "url": "https://cumulo.pro/services/celestia_mainnet/snapshot"
+},
+ {
   "id": "starknet-mainnet-incident-operator-balance-2026-08-07",
   "date": "2026-08-07T09:10:01Z",
   "incident_type": "incident",
