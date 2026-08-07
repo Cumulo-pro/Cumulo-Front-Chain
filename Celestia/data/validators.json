@@ -823,7 +823,7 @@
   "api": "https://celestia.api.cumulo.org.es",
   "grpc": "celestia.grpc.cumulo.org.es",
   "websocket": "wss://celestia.cumulo.org.es:443/websocket",
-  "snapshot": "https://cumulo.pro/services/celestia/snapshot",
+  "snapshot_pebble": "https://cumulo.pro/services/celestia/snapshot",
   "tools": "Celestia Block Explorer, Missed Proposals Tracker, Consensus Monitoring Dashboard, Celestia Bridge Node Dashboard, Celestia Front Chain, Modular Expansion",
   "tools_url": {
     "Celestia Block Explorer": "https://cumulo.pro/services/celestia/stats",
@@ -847,10 +847,7 @@
   "snapshot_check": {
     "kind": "json_index",
     "resolve_url": "https://snapshot.celestia.cumulo.me/snapshots/index.json",
-    "file_key": "file",
-    "height_key": "latest_height",
-    "date_key": "date",
-    "size_key": "size"
+    "file_key": "latest_file"
   }
 }
 ]
