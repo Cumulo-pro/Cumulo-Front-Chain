@@ -1,5 +1,17 @@
 [
  {
+  "id": "gnoland-sapphire-infrastructure-migration-topaz-2026-08-11",
+  "date": "2026-08-11T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Gnoland",
+  "network": "testnet (sapphire)",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "gnoland (chain/sapphire)",
+  "note": "Cumulo migrated its full Gno.land testnet infrastructure from Topaz to Sapphire (sapphire-1), following the network's announcement that Topaz would sunset within 24h. All three nodes were rebuilt in place from the chain/sapphire branch (commit 9ab5198ac) with genesis SHA256 verified. The validator on Velia12 was recovered with the same operator address used on Test13/Topaz (g1mndkvypn3339m6yvkyutal5hk6m2yeqp5d52ly) and registered on the valoper realm (gas-wanted 80,000,000 required; 60M was insufficient this time due to higher gas usage on Sapphire's Register call). The RPC node on Velia2 was redeployed on the same ports (26670/26671), keeping the public endpoint gno.rpc.testnet.cumulo.me unchanged. The backup full node on VeliaMon-test was redeployed with fresh, unregistered keys on the same ports (26656/26657) to avoid double-signing risk. All three nodes synced successfully with no AppHash or replay issues this time; old Topaz data directories were preserved as .old backups on each server pending cleanup.",
+  "url": "https://sapphire.testnets.gno.land/r/gnops/valopers:g1mndkvypn3339m6yvkyutal5hk6m2yeqp5d52ly"
+},
+ {
   "id": "cosmos-mainnet-governance-proposal-1051-2026-08-11",
   "date": "2026-08-11T00:00:00Z",
   "incident_type": "governance_proposal",
