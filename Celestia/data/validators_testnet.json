@@ -74,12 +74,6 @@
         "x": "lavender_five",
         "validatorlogo": "lavenderfive.jpg",
        "tools": "State-sync",
-       "tools_url": {
-        "State-sync": "https://services.lavenderfive.com/testnet/celestia/statesync"
-      },
-    "tools_desc": {
-      "State-sync": "State sync reference (trust height/hash) and setup instructions to bootstrap quickly."
-    },
        "content":{
             "Installation Guide": "https://services.lavenderfive.com/testnet/celestia/installation"
           }
