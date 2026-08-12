@@ -40,6 +40,7 @@
    "content":{
     "Installation Guide": "https://services.lavenderfive.com/mainnet/celestia/installation"
   },
+  "statesync_rpc": "https://celestia-rpc.lavenderfive.com:443",
   "snapshot_check": {
     "kind": "unknown"
   }
@@ -67,6 +68,8 @@
     "Public RPC": "Public RPC endpoints and connection details for Celestia (useful for wallets, relayers, and tooling).",
     "Slashboard": "Validator slashing and signing monitoring dashboard (helps detect downtime risks and missed signatures)."
   },
+  "statesync_rpc": "https://celestia.rpc.kjnodes.com:443",
+  "statesync_peer": "d9bfa29e0cf9c4ce0cc9c26d98e5d97228f93b0b@celestia.rpc.kjnodes.com:12056",
   "snapshot_check": {
     "kind": "stable_url",
     "resolve_url": "https://snapshots.kjnodes.com/celestia/snapshot_latest.tar.lz4",
@@ -93,6 +96,7 @@
    "content":{
     "Installation Guide": "https://polkachu.com/installation/celestia"
   },
+  "statesync_rpc": "https://celestia-rpc.polkachu.com:443",
   "snapshot_check": {
     "kind": "page_scrape",
     "file_regex": "https://snapshots\\.polkachu\\.com/snapshots/celestia/celestia_\\d+\\.tar\\.lz4"
@@ -442,6 +446,8 @@
     "content_url": {
       "Installation Guide": "https://dteam.tech/services/mainnet/installation-guide/celestia?type=consensus"
     },
+    "statesync_rpc": "https://rpc.celestia.mainnet.dteam.tech:443",
+    "statesync_peer": "076c9cc9de3039819a98522aeea39e8c72b49682@peer.celestia.mainnet.dteam.tech:26656",
     "snapshot_check": {
       "kind": "stable_url",
       "resolve_url": "https://download.dteam.tech/celestia/mainnet/pruned/latest-snapshot",
@@ -844,6 +850,8 @@
   "content_url": {
     "Compilation of technical guides and resources": "https://cumulo.pro/celestia/posts"
   },
+  "statesync_rpc": "https://celestia.cumulo.org.es",
+  "statesync_peer": "9d907b8aed06cbbb96bfdd3fffeb823a7544aa9a@148.72.141.245:26656",
   "snapshot_check": {
     "kind": "json_index",
     "resolve_url": "https://snapshot.celestia.cumulo.me/snapshots/index.json",
