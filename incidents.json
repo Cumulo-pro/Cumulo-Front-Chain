@@ -1,5 +1,29 @@
 [
  {
+  "id": "celestia-mocha-state-sync-setup-2026-08-12",
+  "date": "2026-08-12T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "pending",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["rpc"],
+  "client": "celestia-app v9.0.4 (pebbledb)",
+  "note": "Cumulo scoped state-sync serving on its Celestia Mocha testnet RPC node (cumvelia14t-2, host-92-204-168-57). RPC endpoint (https://mocha.celestia.rpc.cumulo.me) and P2P node ID (bbdb266294c6e7b3f661dbcabdb4efaf0466c504) verified live and published to Cumulo-Front-Chain validators_testnet.json. Recommended app.toml settings prepared (snapshot-interval = 1000, snapshot-keep-recent = 2). Pending: confirmation that snapshot-interval was actually applied and restarted on the node, and external verification of P2P port 26656 reachability from outside Cumulo's network.",
+  "url": "https://cumulo.pro/services/celestia_mocha/state-sync"
+},
+{
+  "id": "celestia-mainnet-state-sync-setup-2026-08-12",
+  "date": "2026-08-12T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "pending",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["rpc"],
+  "client": "celestia-app v9.0.4",
+  "note": "Cumulo scoped state-sync serving on its Celestia mainnet RPC node (Velia2/cumvelia2, host-148-72-141-245), shared infrastructure hosting RPC services for multiple chains plus three validators (Concordium, Fuel Sequencer, Starknet). Resource check via top/Grafana showed adequate headroom (56 cores, 39.3% CPU busy, 717GB free disk) to add continuous snapshot generation without expected contention with the co-located validators. RPC endpoint (https://celestia.cumulo.org.es) and P2P node ID (9d907b8aed06cbbb96bfdd3fffeb823a7544aa9a) verified live and published to Cumulo-Front-Chain validators.json. Recommended app.toml settings prepared (snapshot-interval = 1000, snapshot-keep-recent = 2). Pending: confirmation that snapshot-interval was actually applied and restarted on the node, and independent external verification of P2P port 26656 (the nc check done was a self-connect from the same host, not conclusive for inbound firewall rules).",
+  "url": "https://cumulo.pro/services/celestia/state-sync"
+},
+ {
   "id": "gnoland-sapphire-infrastructure-migration-topaz-2026-08-11",
   "date": "2026-08-11T00:00:00Z",
   "incident_type": "infrastructure_migration",
