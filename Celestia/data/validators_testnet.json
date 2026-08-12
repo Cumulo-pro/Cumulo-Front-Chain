@@ -69,16 +69,6 @@
     }
 },
     {
-        "name": "Lavender.Five Nodes",
-        "webservices": "https://www.lavenderfive.com/tools/testnet_celestia/overview",
-        "x": "lavender_five",
-        "validatorlogo": "lavenderfive.jpg",
-       "tools": "State-sync",
-       "content":{
-            "Installation Guide": "https://services.lavenderfive.com/testnet/celestia/installation"
-          }
-    },
-    {
     "name": "DTEAM",
     "webservices": "https://dteam.tech/services/overview/celestia/testnet",
     "x": "dteamtech",
@@ -275,6 +265,8 @@
       "content": {
         "Installation Guide": "https://noders.services/testnet/celestia/install"
     },
+    "statesync_rpc": "https://celestia-t-rpc.noders.services:443",
+    "statesync_peer": "2d40e73c3b0fcccc5c7806621ff9943a7fb3199e@celestia-t-rpc.noders.services:11656",
     "snapshot_check": {
       "kind": "unknown"
     }
