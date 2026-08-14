@@ -1,5 +1,17 @@
 [
  {
+  "id": "xrplevm-testnet-upgrade-v11.1.0-2026-08-14",
+  "date": "2026-08-14T01:39:10Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": "xrplevm node v11.1.0",
+  "note": "Cumulo successfully upgraded its XRPL EVM testnet node to v11.1.0 at block height 8,158,200, following the passing of Proposal #49 on Aug 11, 2026. The upgrade disables the Interchain Accounts host module, sets the staking unbonding time to one week, and returns XRP locked in the Elys channel escrow to its rightful withdrawal address on each network. Upgrade completed without incidents.",
+  "url": "https://github.com/xrplevm/node/releases/download/v11.1.0/"
+},
+ {
   "id": "celestia-mocha-state-sync-setup-2026-08-12",
   "date": "2026-08-12T00:00:00Z",
   "incident_type": "deployment",
