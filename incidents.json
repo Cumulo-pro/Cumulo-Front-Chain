@@ -1,5 +1,17 @@
 [
  {
+  "id": "xrplevm-mainnet-governance-proposal-35-2026-08-14",
+  "date": "2026-08-14T19:09:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #35 on XRPL EVM mainnet: Update ERC20 module parameters (MsgUpdateParams) to disable permissionless token pair registration. Following execution, ERC20 registrations will require the appropriate authorized process. Voting period runs from Aug 14 to Aug 15, 2026. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm_mainnet/governance#proposal-35",
+  "vote": "https://cumulo.pro/services/xrplevm_mainnet/search?q=1D49655EF06198B5B5DC5CBB0338D93C143C4C73AE925A9B3EA826D81C4F6620"
+},
+ {
   "id": "xrplevm-testnet-upgrade-v11.1.0-2026-08-14",
   "date": "2026-08-14T01:39:10Z",
   "incident_type": "upgrade",
