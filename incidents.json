@@ -1,5 +1,17 @@
 [
  {
+  "id": "multichain-mainnet-configuration-hermes-relayer-fixes-2026-08-18",
+  "date": "2026-08-18T00:00:00Z",
+  "incident_type": "configuration",
+  "status": "completed",
+  "chain": "Multi-chain (Osmosis, Injective, Cosmos Hub, Celestia, Dymension)",
+  "network": "mainnet",
+  "node_type": ["relayer"],
+  "client": "hermes v1.13.2",
+  "note": "Cumulo performed a round of configuration fixes and improvements on its Hermes IBC relayer covering five mainnet chains. On Osmosis, resolved a gRPC decoding error (`max_grpc_decoding_size` raised to 64 MiB) that was blocking channel enumeration due to Osmosis's large channel count. On Injective and Cosmos Hub, added explicit `packet_filter` allow-lists, eliminating an unbounded full-chain channel scan on every restart that could take hours and delayed relay worker startup. Additionally, activated a new relay path between Celestia and Dymension (channel-27 on Celestia, channel-4 on Dymension) after confirming a live client and open connection, expanding Cumulo's active IBC relay coverage. All changes validated with `hermes config validate` and confirmed stable post-restart, with the relayer service showing normal packet worker activity and no scan-related delays.",
+  "url": "https://cumulo.pro/services/ibc/"
+},
+ {
   "id": "xrplevm-mainnet-governance-proposal-35-2026-08-14",
   "date": "2026-08-14T19:09:00Z",
   "incident_type": "governance_proposal",
