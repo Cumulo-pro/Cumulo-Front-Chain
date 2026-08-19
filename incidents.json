@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-mainnet-upgrade-celestia-app-v9.0.6-2026-08-19",
+  "date": "2026-08-19T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc", "consensus"],
+  "client": "celestia-app v9.0.6",
+  "note": "Cumulo upgraded its Celestia mainnet nodes to celestia-app v9.0.6. This release contains bug fixes and improvements. Upgrade completed without incidents and all nodes are fully operational.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v9.0.6"
+},
+ {
   "id": "celestia-mocha-upgrade-celestia-app-v9.0.6-mocha-2026-08-19",
   "date": "2026-08-19T00:00:00Z",
   "incident_type": "upgrade",
