@@ -1,5 +1,29 @@
 [
  {
+  "id": "starknet-mainnet-deployment-second-validator-2026-08-19",
+  "date": "2026-08-19T17:20:00Z",
+  "incident_type": "deployment",
+  "status": "in_progress",
+  "chain": "Starknet",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "juno, starknet-staking-v2",
+  "note": "As a follow-up to the incident, Cumulo began deploying a second Starknet mainnet validator on a separate host, to attest active-active alongside the main node using the same operational account (confirmed safe by the Juno/Nethermind team). Juno was installed with an independent L1 provider and synced from an official snapshot. The validator service is prepared but not yet started, pending Juno finishing sync.",
+  "url": ""
+},
+ {
+  "id": "starknet-mainnet-incident-disk-contention-2026-08-19",
+  "date": "2026-08-19T16:28:34Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "juno",
+  "note": "Cumulo's Starknet mainnet validator on Velia2 missed attestations in epochs 12292 and 12293 due to disk contention at the host level, caused by other processes sharing the same infrastructure. This delayed nonce resolution for attestation transactions, causing failures with 'Invalid transaction nonce' and 'Attestation is out of window'. CPU/IO priorities were reassigned in favor of Juno and non-critical processes were paused. Confirmed resolved: epoch 12294 attested successfully (tx 0x4ddf55409198593a384fae7ec1f616e529062d5efcb840fb143c2c68eb22cb, ACCEPTED_ON_L2).",
+  "url": ""
+},
+ {
   "id": "celestia-mainnet-upgrade-celestia-app-v9.0.6-2026-08-19",
   "date": "2026-08-19T00:00:00Z",
   "incident_type": "upgrade",
