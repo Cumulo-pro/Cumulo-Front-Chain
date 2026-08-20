@@ -3,7 +3,7 @@
   "id": "starknet-mainnet-deployment-second-validator-2026-08-19",
   "date": "2026-08-19T17:20:00Z",
   "incident_type": "deployment",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "Starknet",
   "network": "mainnet",
   "node_type": ["validator"],
