@@ -67,6 +67,29 @@
         "file_regex": "https://snapshots\\.polkachu\\.com/testnet-snapshots/celestia/celestia_\\d+\\.tar\\.lz4"
       }
     },
+        {
+      "name": "kjnodes",
+      "webservices": "https://services.kjnodes.com/testnet/celestia/",
+      "x": "kjnodes",
+      "validatorlogo": "kjnodes.jpg",
+      "snapshot_pebble": "https://services.kjnodes.com/testnet/celestia/snapshot/",
+      "tools_url": {
+        "State-sync": "https://services.kjnodes.com/testnet/celestia/state-sync/",
+        "Public RPC": "https://services.kjnodes.com/testnet/celestia/public-rpc/"
+      },
+      "tools_desc": {
+        "State-sync": "State sync guide and endpoints to speed up node synchronization without downloading full history.",
+        "Public RPC": "Public RPC endpoints and connection details for Celestia (useful for wallets, relayers, and tooling)."
+      },
+      "statesync_rpc": "https://celestia-testnet.rpc.kjnodes.com:443",
+      "statesync_peer": "d5519e378247dfb61dfe90652d1fe3e2b3005a5b@celestia-testnet.rpc.kjnodes.com:12056",
+      "snapshot_check": {
+        "kind": "stable_url",
+        "resolve_url": "https://snapshots.kjnodes.com/celestia-testnet/snapshot_latest.tar.lz4",
+        "checksum_url": "https://snapshots.kjnodes.com/celestia-testnet/snapshot_latest.tar.lz4.sha256sum",
+        "min_size_bytes": 100000000
+      }
+    },
     {
       "name": "Cumulo",
       "x": "Cumulo_pro",
