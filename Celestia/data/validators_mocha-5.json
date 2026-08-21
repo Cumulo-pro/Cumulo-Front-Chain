@@ -52,6 +52,21 @@
       "db_backend_key": "db_backend"
     }
     },
+        {
+      "name": "Polkachu",
+      "webservices": "https://polkachu.com/testnets/celestia",
+      "x": "polka_chu",
+      "validatorlogo": "polkachu.jpg",
+      "snapshot": "https://polkachu.com/testnets/celestia/snapshots",
+      "peers": "https://polkachu.com/testnets/celestia/peers",
+      "rpc": "https://celestia-testnet-rpc.polkachu.com/",
+      "api": "https://celestia-testnet-api.polkachu.com/",
+      "grpc": "celestia-testnet-grpc.polkachu.com:11690",
+      "snapshot_check": {
+        "kind": "page_scrape",
+        "file_regex": "https://snapshots\\.polkachu\\.com/testnet-snapshots/celestia/celestia_\\d+\\.tar\\.lz4"
+      }
+    },
     {
       "name": "Cumulo",
       "x": "Cumulo_pro",
