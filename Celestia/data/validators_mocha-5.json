@@ -1,0 +1,89 @@
+[
+    {
+        "name": "NodesGuru",
+        "webservices": "",
+        "x": "NodesGuru",
+        "validatorlogo": "nodesguru.png",
+        "github": "https://github.com/celestiaorg/awesome-celestia?tab=readme-ov-file#nodesguru",
+        "rpc": "https://rpc-1.testnet.celestia.nodes.guru",
+        "api": "https://api-1.testnet.celestia.nodes.guru",
+        "grpc": "grpc-1.testnet.celestia.nodes.guru:10790",
+        "explorer": "https://testnet.celestia.explorers.guru/",
+        "tools": "NodesChecker Bot",
+        "tools_url": {
+        "NodesChecker Bot": "https://t.me/NodesGuru_bot"
+        }
+    },
+    {
+        "name": "ITRocket",
+        "webservices": "https://itrocket.net/services/testnet/celestia/",
+        "x": "itrocket_team",
+        "validatorlogo": "itrocket.png",
+        "explorer": "https://testnet.itrocket.net/celestia/staking",
+          "peers": "daf2cecee2bd7f1b3bf94839f993f807c6b15fbf@celestia-testnet-peer.itrocket.net:11656",
+          "seeds": "5d0bf034d6e6a8b5ee31a2f42f753f1107b3a00e@celestia-testnet-seed.itrocket.net:11656",
+          "api": "https://celestia-testnet-api.itrocket.net",
+          "rpc": "https://celestia-testnet-rpc.itrocket.net",
+          "grpc": "celestia-testnet-grpc.itrocket.net:443",
+          "snapshot_pebble": "https://itrocket.net/services/testnet/celestia/",
+           "tools": "Decentralization Analytics #validators, RPC, and all nodes; Governance Bot #with status & UPD timer notifications; Peer scanner #with real time peer uptime verification; RPC Scanner #with Raw scan results",
+          "tools_url": {
+            "Decentralization Analytics": "https://itrocket.net/services/testnet/celestia/decentralization/",
+            "Governance Bot": "https://t.me/itrocket_testnet_proposal_bot",
+            "Peer scanner": "https://itrocket.net/services/testnet/celestia/#peer",
+            "RPC Scanner": "https://itrocket.net/services/testnet/celestia/public-rpc/",
+            "consensus-signal-tracker": "https://itrocket.net/services/testnet/celestia/analytics/consensus-signal-tracker/"
+          },
+     "tools_desc": {
+          "Decentralization Analytics": "Analytics view to explore node/validator distribution and decentralization signals.",
+          "Governance Bot": "Telegram bot to track governance proposals and receive status/timer notifications.",
+          "Peer scanner": "Peer uptime and connectivity checker to validate p2p reachability in real time.",
+          "RPC Scanner": "Public RPC scan results to compare endpoint availability and responsiveness.",
+          "consensus-signal-tracker": "Consensus signal dashboard to observe consensus health trends and anomalies."
+        },
+    "snapshot_check": {
+      "kind": "json_index",
+      "resolve_url": "https://server-6.itrocket.net/testnet/celestia/.current_state.json",
+      "base_url": "https://server-6.itrocket.net/testnet/celestia/",
+      "file_key": "snapshot_name",
+      "height_key": "snapshot_height",
+      "date_key": "snapshot_block_time",
+      "size_key": "snapshot_size",
+      "db_backend_key": "db_backend"
+    }
+    },
+    {
+      "name": "Cumulo",
+      "x": "Cumulo_pro",
+      "webservices": "https://cumulo.pro/services/celestia_mocha",
+      "validatorlogo": "cumulo.jpg",
+      "rpc": "https://mocha5.celestia.rpc.cumulo.me",
+      "api": "https://mocha5.celestia.api.cumulo.me",
+      "grpc": "mocha5.celestia.grpc.cumulo.me",
+      "snapshot_pebble": "https://cumulo.pro/services/celestia_mocha/snapshot",
+      "tools_url": {
+    "Celestia Block Explorer": "https://cumulo.pro/services/celestia_mocha/stats",
+    "Cumulo Live Peers": "https://cumulo.pro/services/celestia_mocha/peers",
+    "CIP Tracker": "https://cumulo.pro/services/celestia_mocha/cips",
+    "Missed Proposals Tracker": "https://cumulo.pro/services/celestia_mocha/missed-proposals",
+    "Dashboard in Grafana": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/bridge-monitor/README.md"
+  },
+  "tools_desc": {
+    "Celestia Block Explorer": "Real-time multi-section block explorer covering validator uptime, governance proposals, live consensus state, recent transactions, and network statistics.",
+    "Cumulo Live Peers": "A live peer checker, updated every 30 minutes and available through both a public dashboard and API.",
+    "CIP Tracker": "The CIP Tracker is designed to make it easier for teams, devs, validators and the broader community to follow how Celestia evolves at the protocol level: from proposals already live on mainnet to those currently under review or being discussed for upcoming upgrades.",
+    "Missed Proposals Tracker": "Block-level tracking of missed proposal slots using the CometBFT weighted round-robin simulation. Identifies which validator missed their turn at each consensus round, with cumulative per-validator statistics and miss rate.",
+    "Dashboard in Grafana": "Grafana dashboard reference for node monitoring (service health and performance signals)."
+  },
+      "content": {
+         "Compilation of technical guides and resources": "https://cumulo.pro/celestia/content"
+      },
+      "statesync_rpc": "https://mocha5.celestia.rpc.cumulo.me",
+      "statesync_peer": "REEMPLAZAR_NODE_ID@92.204.168.57:26670",
+      "snapshot_check": {
+        "kind": "json_index",
+        "resolve_url": "https://mocha.cumulo.com.es/snapshots/index.json",
+        "file_key": "latest_file"
+      }
+    }
+]
