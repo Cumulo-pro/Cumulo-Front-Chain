@@ -5,7 +5,7 @@
   },
   {
     "name": "Celestia testnet",
-    "url": "https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/Celestia/data/validators_testnet.json"
+    "url": "https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/Celestia/data/validators_mocha-5.json"
   }, 
   {
     "name": "XRPL EVM Mainnet",
