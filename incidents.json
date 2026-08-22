@@ -1,5 +1,16 @@
 [
  {
+  "id": "espresso-mainnet-x25519-p2p-registration-2026-08-22",
+  "date": "2026-08-22T00:00:00Z",
+  "incident_type": "configuration",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Cumulo registered its x25519 public key and P2P address on the Espresso Mainnet stake table contract in preparation for the upcoming fast finality protocol upgrade. The x25519 keypair was generated using the espresso-node keygen tool and the private key was added to the node key file. The update-network-config transaction was submitted successfully via the staking-cli, registering x25519 key X25519_PK~_X2hkQIo4aUGm9K91rAaIL9dcs1C8kmboKzwFt-xf1-m and P2P address 92.42.106.179:9977. TCP port 9977 was opened in the firewall and exposed in the docker-compose configuration. The protocol upgrade is expected to go live in approximately 2 weeks.",
+  "url": "https://etherscan.io/tx/0xdf0d705a823fb47d254db5cc8ba47637857d749720534d81b551f6dcfb8624e4"
+},
+ {
   "id": "celestia-mocha-infrastructure-migration-mocha-5-2026-08-20",
   "date": "2026-08-20T00:00:00Z",
   "incident_type": "infrastructure_migration",
