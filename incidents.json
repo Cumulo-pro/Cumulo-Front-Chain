@@ -1,5 +1,16 @@
 [
  {
+  "id": "celestia-mocha-5-infrastructure-migration-services-2026-08-22",
+  "date": "2026-08-22T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha-5)",
+  "node_type": ["rpc"],
+  "note": "Cumulo migrated its Celestia Mocha web services (explorer, connectivity pages, validator resources, live peers, snapshot checker) from mocha-4 to mocha-5 ahead of mocha-4's shutdown on 2026-09-01, repointing all RPC/API/gRPC references and redeploying both collector services on BigVelia14T-2. Along the way, fixed a Prometheus metrics namespace mismatch, a hosting firewall blocking the metrics port, and a data-integrity bug where leftover mocha-4 history was inflating missed-proposal stats. Cumulo's own mocha-5 snapshot remains pending node configuration.",
+  "url": "https://cumulo.pro/services/celestia_mocha/"
+},
+ {
   "id": "espresso-mainnet-x25519-p2p-registration-2026-08-22",
   "date": "2026-08-22T00:00:00Z",
   "incident_type": "configuration",
