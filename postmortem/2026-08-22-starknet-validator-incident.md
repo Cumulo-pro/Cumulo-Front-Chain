@@ -61,7 +61,6 @@ Design principles applied to all redundant nodes:
 
 ## Open follow-ups
 
-- Obtain a Starknet feeder gateway API key from StarkWare to speed up future node syncs. An informal request is pending; nodes currently sync successfully without one, just more slowly during the final catch-up phase.
 - Continue monitoring the three-node race outcome distribution over a longer window to build a clearer picture of which node(s) most consistently win attestations.
 
 ## Lessons learned
