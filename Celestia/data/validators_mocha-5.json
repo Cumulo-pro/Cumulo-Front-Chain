@@ -110,7 +110,7 @@
         "date_key": "snapshotTime",
         "size_key": "snapshotSize"
       }
-    },,
+    },
     {
       "name": "Cumulo",
       "x": "Cumulo_pro",
