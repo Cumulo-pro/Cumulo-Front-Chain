@@ -90,6 +90,27 @@
         "min_size_bytes": 100000000
       }
     },
+        {
+      "name": "NodeStake",
+      "webservices": "https://nodestake.org/networks/celestia",
+      "x": "NodeStake_top",
+      "validatorlogo": "nodestake.jpg",
+      "explorer": "https://explorer.nodestake.org/celestia-testnet",
+      "seeds": "327fb4151de9f78f29ff10714085e347a4e3c836@rpc-t.celestia.nodestake.org:666",
+      "api": "https://api-t.celestia.nodestake.org",
+      "rpc": "https://rpc-t.celestia.nodestake.org",
+      "grpc": "grpc-t.celestia.nodestake.org:443",
+      "snapshot_pebble": "https://nodestake.org/networks/celestia",
+      "addrbook": "https://ss-t.celestia.nodestake.org/addrbook.json",
+      "snapshot_check": {
+        "kind": "json_index",
+        "resolve_url": "https://nodestake.org/api/snapshot?log=https%3A%2F%2Fss-t.celestia.nodestake.org%2Flog.txt&rpc=https%3A%2F%2Frpc-t.celestia.nodestake.org&base=https%3A%2F%2Fss-t.celestia.nodestake.org",
+        "file_key": "snapshotUrl",
+        "height_key": "snapshotHeight",
+        "date_key": "snapshotTime",
+        "size_key": "snapshotSize"
+      }
+    },,
     {
       "name": "Cumulo",
       "x": "Cumulo_pro",
