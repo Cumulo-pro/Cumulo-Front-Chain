@@ -1,5 +1,16 @@
 [
  {
+  "id": "warden-mainnet-incident-chain-halt-2026-08-23",
+  "date": "2026-08-23T11:21:00Z",
+  "incident_type": "incident",
+  "status": "in_progress",
+  "chain": "Warden Protocol",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "wardend (cosmos/evm v0.6.0)",
+  "note": "Warden Protocol mainnet halted at block height 10136091 (2026-08-23, 11:21 UTC) after an attacker exploited a cosmos/evm precompile vulnerability in the staking/vesting module, draining the entire bonded pool (~129.6M WARD). With bonded tokens at zero, the oracle vote-aggregation module (voteweighted.Median) panicked on a division by zero, halting consensus network-wide. Per official guidance from the Warden team, Cumulo stopped and disabled the wardend service on its validator node as a precaution, preserving state and signer files pending a coordinated rollback and a patched binary release. Node remains offline awaiting further instructions before resuming."
+},
+ {
   "id": "xrplevm-mainnet-incident-precautionary-halt-2026-08-23",
   "date": "2026-08-23T04:42:21Z",
   "incident_type": "incident",
