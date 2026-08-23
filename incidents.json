@@ -1,5 +1,17 @@
 [
  {
+  "id": "xrplevm-mainnet-upgrade-exrpd-v10.2.0-2026-08-23",
+  "date": "2026-08-23T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "in_progress",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "exrpd v10.2.0",
+  "note": "Cumulo upgraded its XRPL EVM mainnet validator (exrpd) on host host-148-72-167-173 to v10.2.0, which bundles xrplevm/evm v0.6.2-august-2026-hotfix-xrplevm.1 and resolves the security issue behind the earlier precautionary halt. The binary was manually replaced at ~/.exrpd/cosmovisor/current/bin/exrpd using the official release from github.com/xrplevm/node, published 2026-08-23. The service was re-enabled (systemctl enable) and started (systemctl start). 'No quorum' messages are expected until 12 of 17 validators are back online, at which point the chain resumes automatically.",
+  "url": "https://github.com/xrplevm/node/releases/tag/v10.2.0"
+},
+ {
   "id": "warden-mainnet-incident-chain-halt-2026-08-23",
   "date": "2026-08-23T11:21:00Z",
   "incident_type": "incident",
@@ -14,7 +26,7 @@
   "id": "xrplevm-mainnet-incident-precautionary-halt-2026-08-23",
   "date": "2026-08-23T04:42:21Z",
   "incident_type": "incident",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "XRPL EVM",
   "network": "mainnet",
   "node_type": ["validator"],
