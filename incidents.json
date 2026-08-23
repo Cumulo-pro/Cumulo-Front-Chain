@@ -1,5 +1,15 @@
 [
  {
+  "id": "xrplevm-mainnet-incident-precautionary-halt-2026-08-23",
+  "date": "2026-08-23T04:42:21Z",
+  "incident_type": "incident",
+  "status": "in_progress",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Cumulo performed a precautionary halt of its XRPL EVM mainnet validator (exrpd) on host host-148-72-167-173, in response to an upstream cosmos/evm security advisory being actively exploited on other networks. No evidence of exploitation on XRPL EVM has been observed. The service was stopped cleanly (systemctl stop exrpd) with all stores closed gracefully (blockstore, statestore, evidencestore, application.db, snapshots/metadata.db) and disabled (systemctl disable exrpd) to prevent auto-restart on reboot. Node will remain offline pending an official patched binary, version, and checksums from the maintainers before resuming; no self-directed restart or upgrade will be performed in the meantime."
+},
+ {
   "id": "celestia-mocha-5-infrastructure-migration-services-2026-08-22",
   "date": "2026-08-22T00:00:00Z",
   "incident_type": "infrastructure_migration",
