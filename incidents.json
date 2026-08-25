@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmos-mainnet-governance-proposal-1053-2026-08-25",
+  "date": "2026-08-25T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1053 on Cosmos Hub mainnet: Third attempt to recover expired IBC client 07-tendermint-582 connecting Cosmos Hub to Gravity Bridge, replacing it with substitute client 07-tendermint-1508 (previously 07-tendermint-1496 in proposals #1048 and #1050, both of which failed to reach quorum). The Gravity Bridge IBC clients expired after the network was down for several weeks following an exploit on the Gravity Bridge chain. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1053",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=21A59388552C2609D062406C30AE0030F26ED38A65E02C9F2D7FC47AFE7F0450"
+},
+  {
   "id": "cosmos-mainnet-governance-proposal-1052-2026-08-25",
   "date": "2026-08-25T00:00:00Z",
   "incident_type": "governance_proposal",
