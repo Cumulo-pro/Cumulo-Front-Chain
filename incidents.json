@@ -1,4 +1,16 @@
 [
+  {
+  "id": "cosmos-mainnet-governance-proposal-1052-2026-08-25",
+  "date": "2026-08-25T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1052 on Cosmos Hub mainnet: Software upgrade proposal for Gaia v28.0.0, a major upgrade that removes Interchain Security (ICS) from the Cosmos Hub. As part of the upgrade, the max_validators staking parameter will be updated to match the max_provider_consensus_validators provider parameter, and all bonded validators ranked below the new threshold will be set to unbonding without being jailed or slashed. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1052",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=A0D5C5622DE2BF389E93FF1BB9C1FA23957341FCE2E524C197342A587AB50900"
+},
 {
   "id": "warden-mainnet-incident-chain-halt-resolution-2026-08-25",
   "date": "2026-08-25T00:00:00Z",
