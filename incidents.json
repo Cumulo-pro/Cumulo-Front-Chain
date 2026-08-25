@@ -1,4 +1,16 @@
 [
+{
+  "id": "warden-mainnet-incident-chain-halt-resolution-2026-08-25",
+  "date": "2026-08-25T00:00:00Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "Warden Protocol",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "wardend v1.0.2",
+  "note": "Resolution of the Warden Protocol mainnet halt (see warden-mainnet-incident-chain-halt-2026-08-23): after the cosmos/evm precompile exploit drained the bonded pool (~129.6M WARD) and triggered a division-by-zero panic in the oracle vote-aggregation module, the validator set coordinated a recovery around wardend v1.0.2, which patches the exploited path via 'reject vesting account creation'. Cumulo kept its validator node offline throughout the recovery window, declining to execute an unverified 'restart procedure' circulating in the coordination channel that asked all validators to manually reset priv_validator_state.json/Horcrux signer state and delete signature/signbytes, given the unconfirmed provenance and equivocation/tombstoning risk. Cumulo instead rejoined via a community snapshot from nodes.guru (warden_10136199.tar.lz4, height 10136199), validating it first on a non-signing RPC node against the official RPC before promoting it to the validator. The node resumed operation successfully with no signing incidents and no stake at risk.",
+  "url": "https://github.com/warden-protocol/wardenprotocol/releases/tag/v1.0.2"
+},
  {
   "id": "espresso-mainnet-incident-downtime-2026-08-18",
   "date": "2026-08-18T00:00:00Z",
@@ -13,7 +25,7 @@
   "id": "xrplevm-mainnet-upgrade-exrpd-v10.2.0-2026-08-23",
   "date": "2026-08-23T00:00:00Z",
   "incident_type": "upgrade",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "XRPL EVM",
   "network": "mainnet",
   "node_type": ["validator"],
@@ -25,7 +37,7 @@
   "id": "warden-mainnet-incident-chain-halt-2026-08-23",
   "date": "2026-08-23T11:21:00Z",
   "incident_type": "incident",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "Warden Protocol",
   "network": "mainnet",
   "node_type": ["validator"],
