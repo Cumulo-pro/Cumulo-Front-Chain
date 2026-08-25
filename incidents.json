@@ -1,5 +1,15 @@
 [
  {
+  "id": "espresso-mainnet-incident-downtime-2026-08-18",
+  "date": "2026-08-18T00:00:00Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Cumulo's Espresso mainnet validator experienced an unplanned downtime between August 18 and August 22, 2026. The container was stopped unintentionally and went undetected by existing monitoring systems, resulting in missed slots during that period. The node was restored on August 22 as part of the fast finality protocol upgrade. As a corrective measure, automated monitoring was deployed on both mainnet and Decaf testnet nodes via systemd timer (5-min intervals) with Telegram alerting covering node availability, consensus participation, and L1 provider health."
+},
+ {
   "id": "xrplevm-mainnet-upgrade-exrpd-v10.2.0-2026-08-23",
   "date": "2026-08-23T00:00:00Z",
   "incident_type": "upgrade",
