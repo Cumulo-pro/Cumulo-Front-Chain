@@ -1,5 +1,16 @@
 [
   {
+  "id": "warden-mainnet-upgrade-v1.0.3-2026-08-27",
+  "date": "2026-08-27T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "pending",
+  "chain": "Warden",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "wardend v1.0.3",
+  "note": "Scheduled coordinated halt-and-upgrade on Warden mainnet to wardend v1.0.3 at block height 10218900. Cumulo set halt-height = 10218900 in the base section of app.toml and restarted nodes to apply it. Nodes will commit block 10218900, log the halt, and exit cleanly (a restart-and-immediate-exit under systemd/Kubernetes is expected). Cumulo will then swap the binary to v1.0.3, verify with 'wardend version', clear halt-height back to 0, and restart. Chain is expected to resume at block 10218901 once 2/3 of voting power is back online."
+},
+  {
   "id": "cosmos-mainnet-governance-proposal-1053-2026-08-25",
   "date": "2026-08-25T00:00:00Z",
   "incident_type": "governance_proposal",
