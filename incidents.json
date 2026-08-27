@@ -1,5 +1,17 @@
 [
   {
+  "id": "gnoland-pearl-deployment-validator-veliamon-test-2026-08-27",
+  "date": "2026-08-27T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Gnoland",
+  "network": "testnet (pearl)",
+  "node_type": ["validator"],
+  "client": "gnoland (chain/pearl)",
+  "note": "Cumulo deployed a new Gno.land Pearl testnet validator on VeliaMon-test (cumveliamon-t, 192.155.100.132), the successor network to Sapphire. The node replaced VeliaMon-test's former Sapphire backup role in-place, reusing the same ports (26656 P2P / 26657 RPC local). Binaries were compiled from the chain/pearl branch; the node synced immediately given Pearl's small genesis. The validator was registered on the r/gnops/valopers realm using the same operator address used since Test13 (g1mndkvypn3339m6yvkyutal5hk6m2yeqp5d52ly), with a newly generated consensus key for this node. Registration confirmed on-chain. The active Sapphire validator on Velia12 was left untouched and continues running independently, as Sapphire's sunset has not yet been announced.",
+  "url": "https://pearl.testnets.gno.land/r/gnops/valopers:g1mndkvypn3339m6yvkyutal5hk6m2yeqp5d52ly"
+},
+  {
   "id": "warden-mainnet-upgrade-v1.0.3-2026-08-27",
   "date": "2026-08-27T00:00:00Z",
   "incident_type": "upgrade",
