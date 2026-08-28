@@ -15,7 +15,7 @@
   "id": "warden-mainnet-upgrade-v1.0.3-2026-08-27",
   "date": "2026-08-27T00:00:00Z",
   "incident_type": "upgrade",
-  "status": "pending",
+  "status": "completed",
   "chain": "Warden Protocol",
   "network": "mainnet",
   "node_type": ["validator", "rpc", "backup"],
