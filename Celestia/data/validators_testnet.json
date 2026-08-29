@@ -305,19 +305,18 @@
         "webservices": "",
         "x": "Krewstake",
         "validatorlogo": "krews.jpg",
-        "github": "",
         "rpc": "",
         "api": "",
         "snapshot_pebble": "https://celestia-dashboard.krews.xyz/celestia-mocha/snapshots?pruning=pruned",
-        "explorer": "https://celestia-dashboard.krews.xyz/celestia-mocha/validators",
+        "explorer": "https://celestia-dashboard.krews.xyz/celestia-mocha/validators?archived=mocha-4",
         "tools": "validator performance dashboard",
         "tools_url": {
-            "Validator missed proposals": "https://celestia-dashboard.krews.xyz/celestia-mocha/missed-proposals",
+            "Validator missed proposals": "https://celestia-dashboard.krews.xyz/celestia-mocha/missed-proposals?archived=mocha-4",
             "Bridge Nodes explorer": "https://celestia-dashboard.krews.xyz/celestia-mocha/bridge-nodes"
         },
       "tools_desc": {
-        "DA RPC": "Public Data Availability RPC endpoint for light clients and DA queries.",
-        "Faucet": "Testnet faucet to request tokens for usage and testing."
+        "Validator missed proposals": "Archived mocha-4 missed-proposals data (read-only, stopped at block 14028080 when mocha-5 went live).",
+        "Bridge Nodes explorer": "Explorer view focused on Celestia bridge nodes and their operational state. Note: Krews does not offer an archived mocha-4 view for this page - it always shows current (mocha-5) data."
        },
     "snapshot_check": {
       "kind": "always_ok"
