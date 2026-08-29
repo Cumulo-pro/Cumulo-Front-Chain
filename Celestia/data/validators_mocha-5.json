@@ -112,6 +112,30 @@
       }
     },
     {
+    "name": "Krews",
+    "webservices": "",
+    "x": "Krewstake",
+    "validatorlogo": "krews.jpg",
+    "github": "",
+    "rpc": "",
+    "api": "",
+    "snapshot_pebble": "https://celestia-dashboard.krews.xyz/celestia-mocha/snapshots?pruning=pruned",
+    "explorer": "https://celestia-dashboard.krews.xyz/celestia-mocha/validators",
+    "tools": "validator performance dashboard",
+    "tools_url": {
+        "Validator missed proposals": "https://celestia-dashboard.krews.xyz/celestia-mocha/missed-proposals",
+        "Bridge Nodes explorer": "https://celestia-dashboard.krews.xyz/celestia-mocha/bridge-nodes"
+    },
+    "tools_desc": {
+        "Validator missed proposals": "Missed-proposals dashboard: live proposer chart, miss-rate rankings, daily heatmap and CSV export, plus a Proposer success-rate column (last 10,000 blocks) on the validator list.",
+        "Bridge Nodes explorer": "Explorer view focused on Celestia bridge nodes and their operational state."
+    },
+    "snapshot_check": {
+      "kind": "always_ok",
+      "note": "Automated verification disabled; assumed available. Snapshot page is JS-rendered (Next.js) and blocks plain HTTP scraping/HEAD checks, same as Krews on mainnet."
+    }
+},
+    {
       "name": "Cumulo",
       "x": "Cumulo_pro",
       "webservices": "https://cumulo.pro/services/celestia_mocha",
