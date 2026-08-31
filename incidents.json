@@ -1,5 +1,17 @@
 [
   {
+  "id": "avail-mainnet-incident-stuck-sync-fork-2026-08-31",
+  "date": "2026-08-31T00:00:00Z",
+  "incident_type": "incident",
+  "status": "in_progress",
+  "chain": "Avail",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "avail-node v2.3.6.0 (build 82a9b31ea81) + wasm v54 override",
+  "note": "Following the 2.3.6.0-hotfix deployment, Cumulo's nodes got stuck syncing with recurring 'Error importing block: block has an unknown parent' and repeated peer bans for duplicate block requests — nodes that briefly ran the old binary past the mainnet fork point (PR #844) ended up on a diverging local chain. Avail team confirmed the fix: keep the --wasm-runtime-overrides flag (v54.wasm) but swap the hotfix binary back for the previous v2.3.6.0 release binary. Applied and confirmed resolved on cum15velia (validator) and cumvelia2 (RPC), both importing new blocks normally again, including a clean reorg back onto the correct fork on cumvelia2. cumvelia6 (RPC) fix in progress.",
+  "url": "https://github.com/availproject/avail/releases/tag/2.3.6.0-hotfix"
+},
+  {
   "id": "avail-mainnet-upgrade-v2.3.6.0-hotfix-2026-08-31",
   "date": "2026-08-31T00:00:00Z",
   "incident_type": "upgrade",
