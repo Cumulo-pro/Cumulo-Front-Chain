@@ -1,5 +1,15 @@
 [
   {
+  "id": "espresso-mainnet-upgrade-20260828-2026-08-31",
+  "date": "2026-08-31T00:00:00Z",
+  "incident_type": "upgrade",
+  "chain": "Espresso",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "espresso-sequencer 20260828",
+  "note": "Cumulo upgraded its Espresso Mainnet validator to sequencer version 20260828. This release stages the node for the fast (sub-second) finality protocol upgrade. As part of the upgrade, ESPRESSO_NODE_CLIQUENET_BIND_ADDRESS was added to the Docker Compose configuration (0.0.0.0:9977), complementing the x25519 key already present in the key file and the P2P address previously registered on the StakeTable contract (92.42.106.179:9977, TX 0xdf0d705a823fb47d254db5cc8ba47637857d749720534d81b551f6dcfb8624e4). Node verified operational post-upgrade: consensus_current_view tracking correctly and cliquenet peer tasks active."
+},
+  {
   "id": "starknet-mainnet-deployment-third-validator-2026-08-25",
   "date": "2026-08-25T00:00:00Z",
   "incident_type": "deployment",
