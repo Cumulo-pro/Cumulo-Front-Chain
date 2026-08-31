@@ -1,5 +1,17 @@
 [
   {
+  "id": "avail-mainnet-upgrade-v2.3.6.0-hotfix-2026-08-31",
+  "date": "2026-08-31T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Avail",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "avail-node v2.3.6.0-hotfix (wasm v54, build dcdd65cb69e)",
+  "note": "Emergency hotfix applied across Cumulo's Avail mainnet nodes (validator and RPC) to set a block fork (PR #844). Deployed the new avail-node binary and loaded v54.wasm via --wasm-runtime-overrides on all nodes, verified by the 'Found wasm override' log line on startup and normal block sync/finalization afterwards. Applied within minutes of the emergency notice on the validators chat, ahead of the official confirmation email from the Avail team.",
+  "url": "https://github.com/availproject/avail/releases/tag/2.3.6.0-hotfix"
+},
+  {
   "id": "espresso-mainnet-upgrade-20260828-2026-08-31",
   "date": "2026-08-31T00:00:00Z",
   "incident_type": "upgrade",
