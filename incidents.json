@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-mocha-5-bridge-migration-v0.32.1-2026-09-01",
+  "date": "2026-09-01T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha-5)",
+  "node_type": ["bridge"],
+  "client": ["celestia-node v0.32.1-mocha"],
+  "note": "Cumulo decommissioned its Celestia Mocha-4 bridge node (celestia-node v0.31.3-mocha, peer ID 12D3KooWS1TN3cewUZ26z1r2Lt7iT6QjYr2qtFeJUXXa71nkwjCZ) on BigVelia14T-2 (92.204.168.57) ahead of the official mocha-4 network shutdown announced by the Celestia Foundation alongside the v0.32.1-mocha release, and replaced it with a freshly initialized bridge node on celestia-node v0.32.1-mocha against mocha-5 (new peer ID 12D3KooWRztCkLfqYLZRbDBcjgf6vm1yGcfDzWmfkbvUreEfS9j6). The old bridge's config, keyring, and binary were backed up locally before decommissioning. The new node uses a separate store, connects to Cumulo's own mocha-5 RPC/consensus node on the same host via gRPC (127.0.0.1:26673) instead of an external core endpoint, keeps the same P2P port (2121) and pruned storage mode as before, and reuses the existing systemd unit for monitoring continuity. Post-deployment verification confirmed header sync tracking the network head (~height 386198) with the service stable and no restart loop; DAS historical catch-up sampling was in progress and non-blocking.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.32.1-mocha"
+},
+  {
   "id": "cosmos-hub-mainnet-snapshot-deployment-2026-09-01",
   "date": "2026-09-01T00:00:00Z",
   "incident_type": "deployment",
