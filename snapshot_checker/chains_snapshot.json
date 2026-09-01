@@ -10,5 +10,11 @@
     "network": "mainnet",
     "label": "Celestia Mainnet",
     "source_url": "https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/main/Celestia/data/validators.json"
-  }
+  },
+  {
+  "chain": "cosmoshub",
+  "network": "mainnet",
+  "label": "Cosmos Hub Mainnet",
+  "source_url": "https://raw.githubusercontent.com/Cumulo-pro/cumulo-cosmoshub-infra/main/data/validators.json"
+}
 ]
