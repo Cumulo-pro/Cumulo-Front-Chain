@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmos-hub-mainnet-snapshot-deployment-2026-09-01",
+  "date": "2026-09-01T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["snapshot"],
+  "client": "gaia v27.6.0",
+  "note": "Cumulo deployed a pruned snapshot service for Cosmos Hub mainnet. A dedicated snapshot node was set up on BigVelia14T-2 using a separate gaiad instance (home: ~/.gaia-snapshot) with custom pruning (keep-recent=100, interval=10) and snapshot-interval=0. The node was bootstrapped from an ITRocket snapshot and runs on isolated ports (P2P 26796, RPC 26797). A daily systemd timer generates a tar.lz4 snapshot at 05:00 UTC, served publicly via nginx with SSL at cosmos.snapshot.cumulo.me. The snapshot page was published at cumulo.pro/services/cosmos/snapshot.php. First snapshot generated successfully at height 32771132 (16G compressed).",
+  "url": "https://cosmos.snapshot.cumulo.me/snapshots/index.json"
+},
+  {
   "id": "avail-mainnet-incident-stuck-sync-fork-2026-08-31",
   "date": "2026-08-31T00:00:00Z",
   "incident_type": "incident",
