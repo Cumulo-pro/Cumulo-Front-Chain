@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-mainnet-upgrade-celestia-node-v0.32.1-2026-09-03",
+  "date": "2026-09-03T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.32.1",
+  "note": "Cumulo upgraded its Celestia mainnet bridge node to celestia-node v0.32.1. This release includes two notable changes: removal of the deprecated DA API (da Go package and da JSON-RPC namespace have been removed in favor of the blob API), and more reliable bridge ingestion via support for multiple core endpoints. The release also includes several performance improvements and security fixes. Upgrade completed without incidents and the bridge node is fully operational.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.32.1"
+},
+  {
   "id": "avail-mainnet-incident-finality-stall-validator-kicked-2026-08-31",
   "date": "2026-08-31T00:00:00Z",
   "incident_type": "incident",
