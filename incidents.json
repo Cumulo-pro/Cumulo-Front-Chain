@@ -1,5 +1,16 @@
 [
   {
+  "id": "avail-mainnet-incident-finality-stall-validator-kicked-2026-08-31",
+  "date": "2026-08-31T00:00:00Z",
+  "incident_type": "incident",
+  "status": "active",
+  "chain": "Avail",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Following the 2.3.6.0-hotfix rollout, mainnet suffered a finality stall network-wide. Avail reduced the active validator set size to recover, which automatically kicked multiple validators out of the active set, including Cumulo's cum15velia. Avail team confirmed affected validators will be re-added once they manually re-register to validate. Action required: re-issue the 'Validate' extrinsic from the stash account on the Staking explorer, confirm commission meets the AIP-4 Delegator Program threshold to remain eligible for Foundation nominations, and verify the stash address reappears in the Waiting list. Node must be fully synced before re-validating to avoid being selected while behind. Optional: upgrade to the stable v2.4.0.0 release once done.",
+  "url": "https://docs.availproject.org/docs/da/operate/become-a-validator/stake-your-validator#step-3-register-as-a-validator"
+},
+  {
   "id": "celestia-mocha-5-bridge-migration-v0.32.1-2026-09-01",
   "date": "2026-09-01T00:00:00Z",
   "incident_type": "infrastructure_migration",
