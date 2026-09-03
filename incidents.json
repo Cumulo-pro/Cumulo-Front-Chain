@@ -12,6 +12,18 @@
   "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.32.1"
 },
   {
+  "id": "cosmos-mainnet-gaia-v28.0.0-upgrade-2026-09-02",
+  "date": "2026-09-02T13:53:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "gaia v28.0.0",
+  "note": "Cumulo upgraded its Cosmos Hub mainnet nodes to gaia v28.0.0 at block height 32,785,900, as approved by governance Proposal #1052. This major upgrade removes Interchain Security (ICS) from the Cosmos Hub, applied at the scheduled time of September 2, 2026 at 13:53 UTC. Cumulo performed the upgrade successfully and without incidents.",
+  "url": "https://github.com/cosmos/gaia/blob/v28.0.0/CHANGELOG.md"
+},
+  {
   "id": "avail-mainnet-incident-finality-stall-validator-kicked-2026-08-31",
   "date": "2026-08-31T00:00:00Z",
   "incident_type": "incident",
