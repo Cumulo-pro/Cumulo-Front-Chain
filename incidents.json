@@ -1,5 +1,17 @@
 [
   {
+  "id": "starknet-testnet-incident-halt-2026-09-04",
+  "date": "2026-09-04T13:32:00Z",
+  "incident_type": "incident",
+  "status": "resolved",
+  "chain": "Starknet",
+  "network": "testnet (sepolia)",
+  "node_type": ["validator"],
+  "client": "Juno v0.16.5",
+  "note": "Starknet Sepolia testnet halted from 13:32 UTC to 15:22 UTC on 2026-09-04 (~1h50m), with block 14543393 being the last block before the halt. Independently confirmed by multiple community operators (Daniel Magro, yakup altay, Tarvi | Nansen, Odin Free) via Telegram. Cumulo's own juno-testnet node logs corroborate both boundaries: last block stored at 13:32:09 UTC, resuming at 15:22:27 UTC with block 14544707 and catching up rapidly to block 14544727. The Cumulo node process remained healthy throughout, confirming the halt originated upstream at the network/sequencer level rather than from a local node failure. Per the team's official update, mainnet was never affected or at risk. No remediation required on Cumulo's side.",
+  "url": "https://sepolia.voyager.online/blocks"
+},
+  {
   "id": "celestia-mainnet-upgrade-celestia-node-v0.32.1-2026-09-03",
   "date": "2026-09-03T00:00:00Z",
   "incident_type": "upgrade",
