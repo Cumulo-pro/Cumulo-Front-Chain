@@ -92,6 +92,12 @@ The system runs three independent checker pipelines in parallel:
 | Anti-overlap protection | Each agent skips a new cycle if the previous one is still running |
 | Aggregator cache | Both aggregators cache results for 5 minutes, responding instantly |
 | No browser dependency | REST API checker uses plain `fetch` - no Puppeteer or Chromium required |
+| Per-endpoint freshness | `checkedAt` and `lastSuccessAt` timestamps on every entry, so staleness is visible per row, not just assumed from the refresh interval |
+| Anti-flapping latency | A smoothed EMA latency (`smoothedAverageLatency`) sits alongside the raw per-cycle value, safe to use for automatic endpoint selection without one-off spikes causing switches |
+| Curated pruning data | Archival vs pruned is read from validator-declared data (`archive_rpc`), not guessed from block heights - see [Pruning / Archival Classification](#-pruning--archival-classification) below |
+| Independent TLS monitoring | Certificate validity and expiry are checked on their own hourly cycle, so they're still visible for endpoints that are otherwise down |
+| Passive rate-limit signal | `X-RateLimit-*` / `Retry-After` headers are surfaced when a server sends them, with zero extra requests |
+| Public ranking API | `/best-rpc`, `/rank-rpcs`, `/best-api`, `/rank-apis` return the current best endpoint(s) as JSON, filterable by region - see [Smart Endpoint Selector](#-smart-endpoint-selector) below |
 
 ---
 
@@ -124,22 +130,29 @@ The system runs three independent checker pipelines in parallel:
 ### RPC Checker (`server-rpc.js`)
 
 1. Reads [`chains.json`](https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/chains.json) to get validator lists per chain
-2. For each validator with an `rpc` field, sends `GET {rpc}/status`
+2. For each validator with an `rpc` field, sends `GET {rpc}/status` with an `Origin: https://cumulo.pro` header (needed for an accurate CORS check, see below)
 3. Parses `sync_info` and `node_info` from the response
 4. Records latency, block height, moniker, version, tx_index
-5. Saves a reliability history entry to `reliability.json`
-6. Serves results at `:3003/check-rpcs`
+5. Reads `Access-Control-Allow-Origin` from the response to set `corsEnabled`
+6. Reads `X-RateLimit-*` / `Retry-After` if present to set `rateLimitHint` (passive only, no extra requests)
+7. Classifies `pruning` from the validator's curated `archive_rpc` field (see [Pruning / Archival Classification](#-pruning--archival-classification)), independent of the `/status` response
+8. Reads `tls` from an hourly-refreshed cache keyed by hostname (see [TLS Certificate Monitoring](#-tls-certificate-monitoring))
+9. Stamps `checkedAt` (this cycle) and updates persisted `lastSuccessAt` / smoothed latency in `rpc-meta.json`
+10. Saves a reliability history entry to `reliability.json`
+11. Serves results at `:3003/check-rpcs`
 
 ### REST API Checker (`server-api.js`)
 
 1. Reads the same [`chains.json`](https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/refs/heads/main/chains.json)
-2. For each validator with an `api` field, sends `GET {api}/cosmos/auth/v1beta1/bech32`
+2. For each validator with an `api` field, sends `GET {api}/cosmos/auth/v1beta1/bech32` with an `Origin: https://cumulo.pro` header
 3. Checks the response for a valid `bech32_prefix` field
 4. Records latency and working/error status
-5. Saves a reliability history entry to `reliability_apis.json`
-6. Serves results at `:3005/check-apis` (or `:3006` if port is occupied)
+5. Reads `Access-Control-Allow-Origin`, `X-RateLimit-*` / `Retry-After`, and the hourly TLS cache, exactly as the RPC checker does (no `pruning` field, not applicable to REST)
+6. Stamps `checkedAt` and updates persisted `lastSuccessAt` / smoothed latency in `api-meta.json`
+7. Saves a reliability history entry to `reliability_apis.json`
+8. Serves results at `:3005/check-apis` (or `:3006` if port is occupied)
 
-Both RPC and API checkers run every **5 minutes** with anti-overlap protection.
+Both RPC and API checkers run every **5 minutes** with anti-overlap protection. TLS checks run on their own **1 hour** cycle, chained to run right after the first full RPC/API cycle completes on startup (not a fixed delay, so it never fires against an empty endpoint list after a restart).
 
 ### EVM JSON-RPC Checker (`server-evm.js`)
 
@@ -151,6 +164,74 @@ Both RPC and API checkers run every **5 minutes** with anti-overlap protection.
 6. Serves results at `:3004/check-evm`
 
 > ⚠️ The EVM checker refreshes every **1 hour** (not 5 minutes) - EVM block times are much faster and the checker is more resource-intensive due to Keep-Alive connection pooling across many chains.
+
+---
+
+## 📦 Pruning / Archival Classification
+
+Early versions inferred `pruning` from the RPC's own `sync_info.earliest_block_height`: `<= 1` meant archival, anything else meant pruned. Live testing against real Cosmos Hub endpoints showed this heuristic is unreliable on any long-running chain:
+
+- Most RPCs simply return `earliest_block_height: "0"`, which isn't even a valid block height (blocks are 1-indexed) - it's a placeholder some nodes never update, most often after a state-sync bootstrap.
+- Even the endpoint a validator operator explicitly labels as their **archive** node doesn't necessarily serve from genesis on a chain running since 2019 - it returned an `earliest_block_height` in the millions, not `1`.
+
+Since no block-height threshold reliably separates pruned from archival, `pruning` is now classified purely from **curated, operator-declared data**: if a validator's entry in the chain's `validators.json` includes a populated `archive_rpc` field, its main `rpc` entry is marked `pruned` (the operator explicitly runs a separate archive endpoint, so the main one isn't it). Without that field, `pruning` is `pruned` by default rather than guessed - this matches reality for the vast majority of public RPCs, which don't retain full history.
+
+```json
+{
+  "name": "ValidatorName",
+  "rpc": "https://rpc.example.com",
+  "archive_rpc": "https://rpc-archive.example.com"
+}
+```
+
+`archive_rpc` isn't checked or listed as its own endpoint yet - it's read purely as a signal for classifying the main `rpc` entry. Not applicable to the REST API checker.
+
+---
+
+## 🔐 TLS Certificate Monitoring
+
+Each checker independently verifies the TLS certificate of every known host, using Node's `tls` module directly (`rejectUnauthorized: false`, so it can still read and report on invalid certificates rather than failing outright) instead of relying on the pass/fail behavior of the regular `fetch` request:
+
+- `valid`: whether `socket.authorized` came back true (real certificate-chain validation, not just "did it connect")
+- `daysUntilExpiry`: computed from the certificate's `valid_to` field
+- `error`: the underlying reason when invalid (expired, hostname mismatch, self-signed, connection timeout, etc.)
+
+This runs on its own **1 hour** cycle, separate from the 5-minute RPC/API cycle - certificates don't change often enough to justify checking them every cycle, and a dedicated TLS handshake per endpoint per cycle would add unnecessary load. Because it's independent of the main protocol check, TLS data is still available for endpoints that are currently `Error` for unrelated reasons (e.g. the server is down at the application level but still terminates TLS correctly) - this is deliberate: knowing "is this actually a cert problem" is often most useful exactly when something else is already broken.
+
+> ⚠️ TLS lookups must live outside the RPC/API request's own `try/catch`. An earlier version nested it inside, so any endpoint whose `/status` or `/cosmos/auth/...` request threw (i.e. any endpoint that was down) skipped the TLS lookup entirely and always reported `tls: null` - exactly the case where a TLS status is most useful. Fixed by moving the lookup before the network `try` block, so it always resolves regardless of whether the rest of the check succeeds.
+
+---
+
+## 🏆 Smart Endpoint Selector
+
+A ranking API on top of the same aggregated data, for anyone who wants to consume "the best endpoint right now" programmatically instead of building their own selection logic client-side - wallets, dApps, indexers, or our own tooling as an automatic fallback if a primary endpoint goes down.
+
+| Endpoint | Returns |
+|---|---|
+| `GET /rank-rpcs?chain={chain}` | Full list of RPC endpoints for `chain`, ranked |
+| `GET /best-rpc?chain={chain}` | Just the current top RPC pick, as a single object |
+| `GET /rank-apis?chain={chain}` | Full list of REST API endpoints for `chain`, ranked |
+| `GET /best-api?chain={chain}` | Just the current top REST API pick |
+
+Add `&region=US`, `&region=EU`, or `&region=CA` to rank by that region's smoothed latency instead of the global average - useful when you know where your users actually connect from.
+
+**Ranking logic:**
+
+1. Filter to endpoints that are currently healthy (`Synced` for RPC, `Working` for API) - an unhealthy endpoint is never returned regardless of its historical reliability
+2. Sort by 7-day rolling `reliability` descending (the stable signal)
+3. Break ties by smoothed latency (`smoothedAverageLatency`, or the region-specific smoothed sample when `region` is set) ascending - never the raw per-cycle latency, to avoid one noisy cycle reordering the list
+
+```json
+{
+  "chain": "Celestia mainnet",
+  "region": null,
+  "generatedAt": "2026-09-01T09:05:16.664Z",
+  "rpc": "https://celestia-rpc.example.com",
+  "name": "ValidatorName"
+}
+```
+
+`/rank-rpcs` and `/rank-apis` return the same shape but with an `endpoints` array (each entry including `rank`, `reliability`, `smoothedLatency`, `corsEnabled`, `tls`, `pruning`, `checkedAt`) instead of a single result. Served straight from the aggregator's existing 5-minute cache - no extra fetching, no extra load on the checkers.
 
 ---
 
@@ -174,12 +255,15 @@ Both aggregators follow the same design:
 
 1. Fetch results from all 3 regional agents simultaneously
 2. Match endpoints by URL across regions
-3. Aggregate latency samples per region into `latencyByRegion`
-4. Compute `averageLatency` from valid samples only (null and >8s excluded)
+3. Aggregate latency samples per region into `latencyByRegion`, and smoothed samples into `smoothedLatencyByRegion`
+4. Compute `averageLatency` and `smoothedAverageLatency` from valid samples only (null and >8s excluded)
 5. Pass through `reliability` as reported by the agents
-6. Cache the merged result for 5 minutes
-7. Expose at `/aggregate-rpcs` or `/aggregate-apis`
-8. If a chain's validators file fails to parse on every region, the aggregator injects one synthetic entry (`name: "⚠️ Config Error"`) with the parser error in `detail`, so a broken config is visibly distinct from a chain with zero validators (RPC aggregator, since V4.1)
+6. For `checkedAt` and `lastSuccessAt`, take the most recent timestamp across the 3 regional samples
+7. For `pruning`, `corsEnabled`, `rateLimitHint`, and `tls`, take whichever regional sample is non-null closest to the most recent `checkedAt`, falling back to any region that has a non-null value - a single region temporarily missing one of these doesn't blank it out for the whole merged entry
+8. Cache the merged result for 5 minutes
+9. Expose at `/aggregate-rpcs` or `/aggregate-apis`
+10. If a chain's validators file fails to parse on every region, the aggregator injects one synthetic entry (`name: "⚠️ Config Error"`) with the parser error in `detail`, so a broken config is visibly distinct from a chain with zero validators (RPC aggregator, since V4.1)
+11. Also serves the [Smart Endpoint Selector](#-smart-endpoint-selector) routes (`/rank-rpcs`, `/best-rpc`, `/rank-apis`, `/best-api`), reading from the same cached, merged data - no separate fetch cycle
 
 ---
 
@@ -190,6 +274,12 @@ Both aggregators follow the same design:
 | Tendermint / Cosmos RPC | [`https://aggregate-rpcs.cumulo.com.es/aggregate-rpcs`](https://aggregate-rpcs.cumulo.com.es/aggregate-rpcs) |
 | EVM JSON-RPC | [`https://aggregate-evm-rpcs.cumulo.com.es/aggregate-evm`](https://aggregate-evm-rpcs.cumulo.com.es/aggregate-evm) |
 | Cosmos REST API | [`https://aggregate-apis.cumulo.com.es/aggregate-apis`](https://aggregate-apis.cumulo.com.es/aggregate-apis) |
+| RPC ranking (all endpoints) | `https://aggregate-rpcs.cumulo.com.es/rank-rpcs?chain={chain}` |
+| RPC ranking (best only) | `https://aggregate-rpcs.cumulo.com.es/best-rpc?chain={chain}` |
+| REST API ranking (all endpoints) | `https://aggregate-apis.cumulo.com.es/rank-apis?chain={chain}` |
+| REST API ranking (best only) | `https://aggregate-apis.cumulo.com.es/best-api?chain={chain}` |
+
+> `chain` must match a chain name exactly as it appears in `chains.json` (e.g. `Celestia mainnet`, `Cosmos mainnet`), URL-encoded. See [Smart Endpoint Selector](#-smart-endpoint-selector) for the ranking criteria and the optional `region` parameter.
 
 ---
 
@@ -208,11 +298,28 @@ Both aggregators follow the same design:
   "version": "0.38.17",
   "reliability": 100,
   "averageLatency": 406,
+  "smoothedAverageLatency": 349,
   "latencyByRegion": [
     { "location": "CA", "ms": 506 },
     { "location": "US", "ms": 468 },
     { "location": "EU", "ms": 333 }
-  ]
+  ],
+  "smoothedLatencyByRegion": [
+    { "location": "CA", "ms": 427 },
+    { "location": "US", "ms": 538 },
+    { "location": "EU", "ms": 81 }
+  ],
+  "checkedAt": "2026-09-03T18:21:20.313Z",
+  "lastSuccessAt": "2026-09-03T18:21:20.313Z",
+  "pruning": "pruned",
+  "corsEnabled": true,
+  "rateLimitHint": null,
+  "tls": {
+    "valid": true,
+    "daysUntilExpiry": 83,
+    "error": null,
+    "checkedAt": "2026-09-03T17:30:49.844Z"
+  }
 }
 ```
 
@@ -226,11 +333,45 @@ Both aggregators follow the same design:
   "detail": "bech32_prefix: cosmos",
   "reliability": 100,
   "averageLatency": 244,
+  "smoothedAverageLatency": 258,
   "latencyByRegion": [
     { "location": "CA", "ms": 260 },
     { "location": "US", "ms": 111 },
     { "location": "EU", "ms": 362 }
-  ]
+  ],
+  "smoothedLatencyByRegion": [
+    { "location": "CA", "ms": 271 },
+    { "location": "US", "ms": 130 },
+    { "location": "EU", "ms": 340 }
+  ],
+  "checkedAt": "2026-09-03T18:21:20.317Z",
+  "lastSuccessAt": "2026-09-03T18:21:20.317Z",
+  "corsEnabled": true,
+  "rateLimitHint": null,
+  "tls": {
+    "valid": true,
+    "daysUntilExpiry": 71,
+    "error": null,
+    "checkedAt": "2026-09-03T17:30:49.957Z"
+  }
+}
+```
+
+### Rate limit hint, when a server exposes it (real example)
+
+```json
+"rateLimitHint": { "limit": null, "remaining": null, "retryAfter": 60 }
+```
+
+### Smart Endpoint Selector (`/best-rpc?chain=Celestia+mainnet`)
+
+```json
+{
+  "chain": "Celestia mainnet",
+  "region": null,
+  "generatedAt": "2026-09-01T09:05:16.664Z",
+  "rpc": "https://celestia-rpc.example.com",
+  "name": "ValidatorName"
 }
 ```
 
@@ -247,6 +388,9 @@ Both aggregators follow the same design:
 | `REFRESH_MS` | Full scan interval | **300,000 ms (5 min)** |
 | `HISTORY_LIMIT` | Max reliability checks stored | **2,016 (~7 days)** |
 | `CACHE_TTL` | Aggregator cache duration | **300,000 ms (5 min)** |
+| `LATENCY_EMA_ALPHA` | Weight of the newest sample in the smoothed latency | **0.3** |
+| `TLS_CHECK_INTERVAL` | TLS certificate re-check interval | **3,600,000 ms (1 hour)** |
+| TLS handshake timeout | Per host, independent of the RPC timeout | **8,000 ms** |
 
 ### REST API Checker (`server-api.js`)
 
@@ -257,6 +401,8 @@ Both aggregators follow the same design:
 | `REFRESH_MS` | Full scan interval | **300,000 ms (5 min)** |
 | `HISTORY_LIMIT` | Max reliability checks stored | **2,016 (~7 days)** |
 | `CACHE_TTL` | Aggregator cache duration | **300,000 ms (5 min)** |
+| `LATENCY_EMA_ALPHA` | Weight of the newest sample in the smoothed latency | **0.3** |
+| `TLS_CHECK_INTERVAL` | TLS certificate re-check interval | **3,600,000 ms (1 hour)** |
 
 ### EVM JSON-RPC Checker (`server-evm.js`)
 
@@ -353,6 +499,18 @@ The EVM checker uses `POST eth_blockNumber` - unlike RPC/API checkers, POST is c
 ### EVM dashboard shows old data after restart
 
 The EVM checker loads its last snapshot from `data/check-evm.json` on startup. New data arrives after the first full refresh cycle (up to 1 hour). Check `/health` endpoint for `updatedAt`.
+
+### `tls: null` right after a checker restart
+
+Normal for up to an hour. The first TLS pass is chained to run right after the first full RPC/API cycle completes, so it won't fire against an empty host list - but it still needs its own ~1-3 minute pass (concurrency-limited across every known host) before `tls` populates for anything. Subsequent restarts within the same hour keep serving whatever was last cached.
+
+### An endpoint I know is archival shows `pruning: pruned`
+
+`pruning` only reads the curated `archive_rpc` field from the chain's `validators.json` - it no longer infers anything from `earliest_block_height` (see [Pruning / Archival Classification](#-pruning--archival-classification)). If your archive endpoint isn't declared via `archive_rpc` in the validator list, it defaults to `pruned`. Add the field to your entry on GitHub to fix it; reflected within 5 minutes.
+
+### `corsEnabled: false` but the endpoint works fine from a browser
+
+The checker sends `Origin: https://cumulo.pro` and only marks `corsEnabled: true` if the response's `Access-Control-Allow-Origin` is `*` or that exact origin. A server that only reflects specific allowlisted origins (not `cumulo.pro`) will correctly show `false` here even though it works for whatever origins it does allow - this field answers "would cumulo.pro specifically be allowed," not "does this server support CORS in general."
 
 ---
 
