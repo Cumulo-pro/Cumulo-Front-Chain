@@ -1,5 +1,16 @@
 [
   {
+  "id": "quicksilver-mainnet-decommission-quicksilverd-2026-09-05",
+  "date": "2026-09-05T00:00:00Z",
+  "incident_type": "decommission",
+  "status": "completed",
+  "chain": "Quicksilver",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "quicksilverd",
+  "note": "Cumulo decommissioned its Quicksilver mainnet validator after the chain remained halted for several days with no response, fix, or official communication from the Quicksilver project team. Despite reports and questions raised in the validator community chat, no acknowledgment or resolution was provided by the team. Given the lack of team engagement and other operators (Polkachu, 01Node) also winding down their Quicksilver validators amid signs the project may be shutting down, Cumulo stopped and disabled the quicksilverd service to fully shut down the node."
+},
+  {
   "id": "starknet-testnet-incident-halt-2026-09-04",
   "date": "2026-09-04T13:32:00Z",
   "incident_type": "incident",
