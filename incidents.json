@@ -34,6 +34,18 @@
   "url": "https://sepolia.voyager.online/blocks"
 },
   {
+  "id": "monad-testnet-upgrade-v0.16.2-phase-c-2026-09-03",
+  "date": "2026-09-03T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Monad",
+  "network": "testnet",
+  "node_type": ["full_node"],
+  "client": "monad v0.16.2",
+  "note": "Cumulo upgraded its Monad testnet full node (full_Cumulo-1) to v0.16.2 and completed MIP-8 Phase C (slot decommission). Prior to Phase C, node was in dual-db mode (Primary: ethereum, Secondary: monad). Phase C promoted the page secondary to primary via monad-mpt --promote-secondary, then deactivated the slot timeline via monad-mpt --deactivate-secondary. Node now runs page-only (Primary: monad). Statesync completed in under 2 seconds post-restart. Commit hash verified: 4374d389edca834764cf42c43ae822813e183a65.",
+  "url": "https://docs.monad.xyz/node-ops/upgrade-instructions/v0.16.2"
+},
+  {
   "id": "celestia-mainnet-upgrade-celestia-node-v0.32.1-2026-09-03",
   "date": "2026-09-03T00:00:00Z",
   "incident_type": "upgrade",
