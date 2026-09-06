@@ -1,5 +1,16 @@
 [
   {
+  "id": "gnoland-pearl-infrastructure-migration-velia12-2026-09-06",
+  "date": "2026-09-06T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Gnoland",
+  "network": "testnet (pearl)",
+  "node_type": ["backup"],
+  "client": "gnoland chain/pearl",
+  "note": "Cumulo decommissioned the Gno.land Sapphire testnet validator running on Velia12 (host-85-195-116-219) and replaced it with a Gno.land Pearl testnet backup node, reusing the same host and network ports (26680/26681). The node was rebuilt from the chain/pearl tag, initialized with genesis verified via SHA256 checksum, configured with the official Pearl seeds/peers, and deployed under systemd with moniker 'Cumulo-Backup'. Node came up successfully and is syncing on pearl-1. Journald log retention was also proactively extended (50GB cap, 2-month minimum) to prevent the premature log rotation observed during the recent validator fire drill."
+},
+  {
   "id": "quicksilver-mainnet-decommission-quicksilverd-2026-09-05",
   "date": "2026-09-05T00:00:00Z",
   "incident_type": "decommission",
