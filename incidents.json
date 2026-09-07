@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-mocha-5-upgrade-celestia-node-v0.33.0-mocha-2026-09-07",
+  "date": "2026-09-07T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha-5)",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.33.0-mocha",
+  "note": "Cumulo upgraded its Celestia Mocha-5 testnet bridge node to celestia-node v0.33.0-mocha. This release contains shrex-eds sync performance improvements. Upgrade completed without incidents and the bridge node is fully operational.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.33.0-mocha"
+},
+  {
   "id": "gnoland-pearl-infrastructure-migration-velia12-2026-09-06",
   "date": "2026-09-06T00:00:00Z",
   "incident_type": "infrastructure_migration",
