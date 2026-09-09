@@ -3,7 +3,7 @@
   "id": "starknet-mainnet-testnet-upgrade-juno-v0.16.6-2026-09-09",
   "date": "2026-09-09T00:00:00Z",
   "incident_type": "upgrade",
-  "status": "pending",
+  "status": "completed",
   "chain": "Starknet",
   "network": "mainnet/testnet",
   "node_type": ["rpc"],
