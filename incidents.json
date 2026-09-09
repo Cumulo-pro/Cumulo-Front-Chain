@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-mainnet-upgrade-celestia-node-v0.33.0-2026-09-09",
+  "date": "2026-09-09T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.33.0",
+  "note": "Cumulo upgraded its Celestia mainnet bridge node to celestia-node v0.33.0. This release contains shrex-eds sync performance improvements. Upgrade completed without incidents and the bridge node is fully operational.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.33.0"
+},
+  {
   "id": "espresso-mainnet-audit-p2p-cliquenet-20260909",
   "date": "2026-09-09",
   "incident_type": "audit",
