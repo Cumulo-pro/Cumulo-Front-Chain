@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmos-hub-mainnet-incident-v28.1.0-2026-09-05",
+  "date": "2026-09-05T14:08:00Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "gaiad v28.1.0",
+  "note": "Cosmos Hub mainnet halted on 2026-09-05 following an app-hash divergence event, addressed by an emergency security patch (v28.1.0) distributed outside the normal public-release/governance process. Cumulo withheld action on signing infrastructure until independently corroborating the patch through a second, separate contact on the Cosmos Hub team, then upgraded both validator nodes to v28.1.0 one at a time, with checksum verification and a rollback binary kept in place. Both nodes resynced and resumed normal block production with no incidents, no slashing/missed-block penalties, and no loss of validator uptime at any point. On 2026-09-09 the official Cosmos Hub validator announcements channel publicly confirmed the app-hash event and v28.1.0 as the legitimate fix, and stated it now only provides upgrade instructions to organizational email addresses it can verify — the same identity-verification principle Cumulo applied independently on 2026-09-05. Full incident report published. Upgraded and verified operational with no incidents.",
+  "url": "https://github.com/Cumulo-pro/cumulo-cosmoshub-infra/blob/main/docs/2026-09-05-cosmos-hub-v28.1.0-incident-report.md"
+},
+  {
   "id": "starknet-mainnet-testnet-upgrade-juno-v0.16.6-2026-09-09",
   "date": "2026-09-09T00:00:00Z",
   "incident_type": "upgrade",
