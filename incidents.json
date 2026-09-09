@@ -1,5 +1,17 @@
 [
   {
+  "id": "starknet-mainnet-testnet-upgrade-juno-v0.16.6-2026-09-09",
+  "date": "2026-09-09T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "pending",
+  "chain": "Starknet",
+  "network": "mainnet/testnet",
+  "node_type": ["rpc"],
+  "client": "juno v0.16.6",
+  "note": "Starknet v0.14.4 is scheduled to activate on testnet on September 15, 2026 and on mainnet on October 5, 2026. Juno v0.16.6 was released to add support for this version, focused mainly on security and performance improvements, and includes a migration step expected to take around 50 minutes on full nodes (a few seconds if pruned). The upgrade carries breaking changes, requiring nodes to run the new full node client version and, for validators running a prover, a coordinated prover upgrade. Cumulo will need to upgrade its Juno node ahead of the testnet and mainnet activation dates.",
+  "url": "https://github.com/NethermindEth/juno/releases/tag/v0.16.6"
+},
+  {
   "id": "celestia-mainnet-upgrade-celestia-node-v0.33.0-2026-09-09",
   "date": "2026-09-09T00:00:00Z",
   "incident_type": "upgrade",
