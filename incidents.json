@@ -1,5 +1,17 @@
 [
   {
+  "id": "espresso-mainnet-audit-p2p-cliquenet-20260909",
+  "date": "2026-09-09",
+  "incident_type": "audit",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "mainnet",
+  "node_type": "validator",
+  "client": "espresso-sequencer",
+  "note": "Proactive P2P/cliquenet connectivity audit following Espresso's official troubleshooting guide, after a network-wide sweep flagged connectivity issues on several mainnet validators. All checks (port probing, on-chain registration, node logs, cliquenet metrics, proxy/service mesh) passed with no issues found. As a preventive measure, migrated deprecated ESPRESSO_SEQUENCER_* environment variables to the current ESPRESSO_NODE_*/ESPRESSO_L1_PROVIDER naming, including ESPRESSO_SEQUENCER_KEY_FILE, which Espresso flags as having caused node failures on Mainnet for other operators. Applied via docker compose and verified operational with no downtime and no incidents. Full report: https://github.com/Cumulo-pro/cumulo-espresso-infra/blob/main/docs/espresso-p2p-cliquenet-healthcheck.md",
+  "url": "https://docs.espressosys.com/network/developer/operators/run-a-node/p2p-troubleshooting"
+},
+  {
   "id": "celestia-mocha-5-upgrade-celestia-node-v0.33.0-mocha-2026-09-07",
   "date": "2026-09-07T00:00:00Z",
   "incident_type": "upgrade",
