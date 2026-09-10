@@ -1,5 +1,16 @@
 [
   {
+  "id": "celestia-mocha-sentinel-decommission-2026-09-10",
+  "date": "2026-09-10T00:00:00Z",
+  "incident_type": "decommission",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator"],
+  "client": "celestia-app v9.0.6-mocha",
+  "note": "Following the Celestia Foundation's official announcement of the mocha-4 network shutdown, Cumulo decommissioned its mocha-4 Horcrux sentinel node (celestia-appd.service, moniker \"Cumulo\") on host BigVelia14T-2. The systemd service was stopped and disabled, and the ufw firewall rules for the privval listener port 1234 (IPv4 rule [10] and IPv6 rule [48], both ALLOW IN Anywhere) were explicitly deleted, since a stale ALLOW rule would have left the port open regardless of the service state. This mirrors the mocha-4 to mocha-5 migration already completed for the validator sentinel (velia6) and the RPC/snapshot nodes on the same server. Pending follow-up: confirming removal of this sentinel's privValAddr entry from horcrux.yaml on the 3 remote cosigners, an optional priv_validator_key.json backup, and a decision on whether to formally unbond the Cumulo validator on mocha-4 on-chain."
+},
+  {
   "id": "concordium-mainnet-upgrade-10.0.11-5-2026-09-10",
   "date": "2026-09-10T00:00:00Z",
   "incident_type": "upgrade",
