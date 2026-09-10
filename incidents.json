@@ -1,5 +1,16 @@
 [
   {
+  "id": "concordium-mainnet-upgrade-10.0.11-5-2026-09-10",
+  "date": "2026-09-10T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Concordium",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "concordium-node 10.0.11-5",
+  "note": "Cumulo upgraded its Concordium mainnet node to concordium-node 10.0.11-5. Initial `docker compose down`/`up -d` failed to apply the update because docker-compose.yml had the image tag hardcoded to 10.0.10-1, causing Compose to ignore the manually pulled 10.0.11-5 image. Fixed by updating the tag in docker-compose.yml to 10.0.11-5 and redeploying. Node verified running on the new version."
+},
+  {
   "id": "cosmos-hub-mainnet-incident-v28.1.0-2026-09-05",
   "date": "2026-09-05T14:08:00Z",
   "incident_type": "incident",
