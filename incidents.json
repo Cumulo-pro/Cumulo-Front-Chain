@@ -1,5 +1,17 @@
 [
   {
+  "id": "multichain-mainnet-testnet-configuration-hermes-relayer-fixes-2026-09-11",
+  "date": "2026-09-11T00:00:00Z",
+  "incident_type": "configuration",
+  "status": "completed",
+  "chain": "Multi-chain (Osmosis, Cosmos Hub, Celestia)",
+  "network": "mainnet/testnet",
+  "node_type": ["relayer"],
+  "client": "hermes v1.13.2",
+  "note": "Cumulo applied configuration fixes to its Hermes IBC relayer to resolve stalled relay activity since 18 Aug 2026. On Osmosis, migrated RPC/gRPC from a slow public kjnodes endpoint to rpc.osmosis.zone, and raised max_gas from 3M to 10M to accommodate large SEDA→Osmosis packet batches that were failing gas estimation. On Cosmos Hub, raised max_gas from 600K to 3M. Removed the decommissioned Quicksilver channel-522 from the Osmosis packet_filter. Migrated the Celestia testnet chain from mocha-4 to mocha-5, updating RPC, gRPC, websocket, and chain id. Dashboard and activity collector updated to reflect all changes.",
+  "url": "https://cumulo.pro/services/ibc/"
+},
+  {
   "id": "cosmos-mainnet-governance-proposal-1054-2026-09-11",
   "date": "2026-09-11T00:00:00Z",
   "incident_type": "governance_proposal",
