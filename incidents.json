@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmos-mainnet-governance-proposal-1054-2026-09-11",
+  "date": "2026-09-11T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1054 on Cosmos Hub mainnet: Community pool spend proposal requesting 300,740 USDC from Paxos Trust Company, N.A. to fund ATOM integration and listing on Paxos' regulated brokerage infrastructure, with a target launch date of September 18, 2026. Payment would be settled upon vote passage. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1054",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=1081B51D21D92A18D9E321684D35EF829D28C8C9219B3AE56E53A72A1DB66FE8"
+},
+  {
   "id": "celestia-mocha-sentinel-decommission-2026-09-10",
   "date": "2026-09-10T00:00:00Z",
   "incident_type": "decommission",
