@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-mocha-5-validator-backup-node-2026-09-14",
+  "date": "2026-09-14T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha-5)",
+  "node_type": ["backup", "validator"],
+  "client": "celestia-app v9.0.6-mocha",
+  "note": "Cumulo deployed a new standby full node on BigVelia14T-2 (home /home/cumvelia14t-2/.celestia-appd, systemd unit celestia-appd.service, moniker nd-00c795) as a manual-failover backup for the mocha-5 validator running on velia6. The node intentionally holds no priv_validator_key.json and never signs, avoiding any double-signing risk; promotion to active signer would require a manual runbook executed only after confirming velia6 is fully stopped. Bootstrapped from the team's own daily pruned snapshot (2026-09-14) rather than network sync, on dedicated ports (P2P 46656, RPC 46657, gRPC 46658, Prometheus 46660, all local except P2P, no public exposure). Initial peering to the existing public RPC node's loopback address failed due to that node already being at its configured inbound peer limit (51 connected vs. a 50 max); peering to the snapshot node's loopback address instead succeeded, and the node completed catch-up to the network tip (catching_up: false) shortly after.",
+  "url": ""
+},
+  {
   "id": "concordium-mainnet-backup-node-deployment-2026-09-14",
   "date": "2026-09-14T00:00:00Z",
   "incident_type": "deployment",
