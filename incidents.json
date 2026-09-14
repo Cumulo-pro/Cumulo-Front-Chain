@@ -1,5 +1,16 @@
 [
   {
+  "id": "concordium-mainnet-backup-node-deployment-2026-09-14",
+  "date": "2026-09-14T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "pending",
+  "chain": "Concordium",
+  "network": "mainnet",
+  "node_type": ["backup", "validator"],
+  "client": "concordium-node 10.0.11-5",
+  "note": "Cumulo deployed a second Concordium mainnet node on BigVelia14T-2, configured as a non-baking backup/standby for the existing validator on Velia2. Deployed via docker-compose using concordium/mainnet-node:10.0.11-5, without baker credentials mounted, syncing via the official out-of-band catchup service. The node is intended to run permanently as a passive full node and only be promoted to baker through a documented manual failover if the primary validator goes down, ensuring baker credentials are never active on both nodes simultaneously. Sync in progress; not yet confirmed fully caught up with network tip."
+},
+  {
   "id": "multichain-mainnet-testnet-configuration-hermes-relayer-fixes-2026-09-11",
   "date": "2026-09-11T00:00:00Z",
   "incident_type": "configuration",
