@@ -1,5 +1,29 @@
 [
   {
+  "id": "celestia-mocha-5-upgrade-celestia-node-v0.33.1-mocha-2026-09-14",
+  "date": "2026-09-14T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha-5)",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.33.1-mocha",
+  "note": "Cumulo upgraded its Celestia Mocha-5 testnet bridge node to celestia-node v0.33.1-mocha. This release is a security fix. Upgrade completed without incidents and the bridge node is fully operational.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.33.1-mocha"
+},
+  {
+  "id": "celestia-mocha-5-upgrade-celestia-app-v9.0.8-mocha-2026-09-14",
+  "date": "2026-09-14T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha-5)",
+  "node_type": ["validator", "rpc", "consensus"],
+  "client": "celestia-app v9.0.8-mocha",
+  "note": "Cumulo upgraded its Celestia Mocha-5 testnet nodes to celestia-app v9.0.8-mocha. This release is intended for mocha-5 only and requires Go 1.26.6 or newer for source builds. Upgrade completed without incidents and all nodes are fully operational.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v9.0.8-mocha"
+},
+  {
   "id": "celestia-mocha-5-validator-backup-node-2026-09-14",
   "date": "2026-09-14T00:00:00Z",
   "incident_type": "deployment",
