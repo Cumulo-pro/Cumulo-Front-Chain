@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-mainnet-upgrade-celestia-app-v9.0.8-2026-09-16",
+  "date": "2026-09-16T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "celestia-app v9.0.8",
+  "note": "Cumulo upgraded its Celestia mainnet nodes to celestia-app v9.0.8. This release upgrades to celestia-core v0.40.9, bounds the blob-transaction validation cache, and fixes signer-data handling after failed transaction checks. Heavy RPC requests are now limited to 20 concurrent requests shared across HTTP, WebSocket, and gRPC; the limit is configurable via max_concurrent_heavy_requests under [rpc] in config.toml (default value of 20 is tuned for 32GB RAM). Source builds require Go 1.26.6 or newer. Upgrade completed without incidents and all nodes are fully operational.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v9.0.8"
+},
+  {
   "id": "xrplevm-mainnet-governance-proposal-37-2026-09-16",
   "date": "2026-09-16T13:16:00Z",
   "incident_type": "governance_proposal",
