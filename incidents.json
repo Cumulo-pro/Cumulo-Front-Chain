@@ -1,5 +1,18 @@
 [
   {
+  "id": "xrplevm-mainnet-governance-proposal-37-2026-09-16",
+  "date": "2026-09-16T13:16:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "proposal_number": 37,
+  "note": "Governance Proposal #37 on XRPL EVM mainnet: Recover IBC light client for Injective (MsgRecoverClient). This proposal updates the expired IBC light client 07-tendermint-0 for counterparty chain injective-1 with the state of the substitute client 07-tendermint-8, reviving transfer/channel-0 to Injective transfer/channel-436, which holds approximately 35,417 XRP in escrow. Voting period runs from Sep 16 to Sep 17, 2026. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm_mainnet/governance#proposal-37",
+  "vote": "https://cumulo.pro/services/xrplevm_mainnet/search?q=9BA3C63AAEBE384744F27891729DDE47FB0298BE5A900E58D2E0703C77179EDC"
+},
+  {
   "id": "xrplevm-mainnet-governance-proposal-36-2026-09-16",
   "date": "2026-09-16T12:56:00Z",
   "incident_type": "governance_proposal",
