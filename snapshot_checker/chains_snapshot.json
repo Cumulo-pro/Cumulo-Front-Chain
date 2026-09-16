@@ -22,5 +22,11 @@
     "network": "mainnet", 
     "label": "XRPL EVM Mainnet", 
     "source_url": "https://raw.githubusercontent.com/Cumulo-pro/xrplevmTools/main/data/validators_mainnet.json"
+  },
+  {
+    "chain": "gnoland", 
+    "network": "testnet", "label": 
+    "Gnoland Testnet (pearl-1)", 
+    "source_url": "https://raw.githubusercontent.com/Cumulo-pro/cumulo-gnoland-infra/main/data/validators_testnet.json"
   }
 ]
