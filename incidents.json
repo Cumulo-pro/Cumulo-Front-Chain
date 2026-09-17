@@ -1,5 +1,30 @@
 [
   {
+  "id": "cosmos-hub-testnet-provider-upgrade-v28.2.0-2026-09-17",
+  "date": "2026-09-17T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "testnet (provider)",
+  "node_type": ["validator"],
+  "client": "gaiad v28.2.0",
+  "note": "Upgraded the Cosmos Hub provider testnet validator to Gaia v28.2.0 at upgrade height 19,056,100, following the governance-coordinated upgrade announced by the Cosmos Hub team. Unlike the September 5 mainnet incident, this release came with a full verifiable chain of trust despite the source code remaining unpublished: instructions signed and verified via GPG against the official cosmos/security release key (fingerprint E625 9F16 9C7B 913D BB75 DE02 5395 305D 29B8 8B32), the binary archive verified via its own detached GPG signature before extraction, sha256 checksum verified against the signed instructions, and binary commit/version confirmed via 'gaiad version --long' before installing. Applied with a pre-upgrade binary backup kept for rollback. Upgraded and verified operational with no incidents.",
+  "url": "https://gist.github.com/jeonghwan-clk/6ec349f20f4240c0e7d0f7afe2a508da"
+},
+  {
+  "id": "cosmos-hub-testnet-provider-governance-proposal-327-2026-09-17",
+  "date": "2026-09-17T15:28:00Z",
+  "incident_type": "governance_proposal",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "testnet (provider)",
+  "node_type": ["validator"],
+  "proposal_number": 327,
+  "note": "Proposal #327 (MsgSoftwareUpgrade) on the Cosmos Hub provider testnet: Gaia v28.2.0 upgrade, a security-related patch, with upgrade height set to 19,056,100. Voting ran Sep 17, 2026 15:30 to 15:35 UTC+2 and passed. Cumulo voted YES. This is the governance proposal underlying the v28.2.0 upgrade Cumulo applied and verified the same day.",
+  "url": "https://cumulo.pro/services/cosmos_testnet/governance#proposal-327",
+  "vote": "https://cumulo.pro/services/cosmos_testnet/search?q=C8D3941D1128572CB70651FA4C819D97E504648EE3D7E5273C1396B4577AC815"
+},
+  {
   "id": "celestia-mainnet-upgrade-celestia-app-v9.0.8-2026-09-16",
   "date": "2026-09-16T00:00:00Z",
   "incident_type": "upgrade",
