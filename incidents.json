@@ -1,5 +1,18 @@
 [
   {
+  "id": "cosmos-hub-mainnet-governance-proposal-1055-2026-09-17",
+  "date": "2026-09-17T16:56:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "proposal_number": 1055,
+  "note": "Proposal #1055 (MsgSoftwareUpgrade) on Cosmos Hub mainnet: coordinated Gaia v28.2.0 upgrade, with upgrade height set to 33,073,000. This is the mainnet counterpart to the provider testnet upgrade Cumulo already completed under Proposal #327, and unlike the September 5 v28.1.0 incident, is governance-gated with upgrade instructions to be announced through official channels; the proposal description notes that starting with this release, official Gaia binaries will be distributed with verifiable signatures, consistent with the GPG-signed release process Cumulo already validated on testnet. Voting runs Sep 17, 2026 16:59 to Sep 20, 2026 16:59 UTC+2. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1055",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=9413BC154584F96963F6A6CCB26ABA781C1A8CED1E1E2BFF8B2814908F0068AC"
+},
+  {
   "id": "cosmos-hub-testnet-provider-upgrade-v28.2.0-2026-09-17",
   "date": "2026-09-17T00:00:00Z",
   "incident_type": "upgrade",
