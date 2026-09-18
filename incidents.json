@@ -1,5 +1,17 @@
 [
   {
+  "id": "gnoland-mainnet-gnoland-1-full-node-deployment-2026-09-18",
+  "date": "2026-09-18T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Gnoland",
+  "network": "mainnet",
+  "node_type": ["full node"],
+  "client": "gnoland v1.2.0 (chain/mainnet)",
+  "note": "Cumulo deployed a Gno.land mainnet (gnoland-1) full node on VeliaMon-test (host-192-155-100-132), replacing the decommissioned Pearl testnet validator on the same host. Built from the chain/mainnet branch, with genesis.json verified against the official CHECKSUMS.txt (SHA256 match). Configured per the official VALIDATOR.md guidance: required persistent_peers/seeds, prune_strategy, timeout_commit, and peer_gossip_sleep_duration, plus per-node moniker (Cumulo) and external_address. Deployed under systemd (gnoland.service) and confirmed syncing on gnoland-1. Journald log retention was proactively configured (50GB cap, 2-month minimum) to prevent the premature rotation observed during the Pearl fire drill. No operator wallet was created and no valoper registration was performed at this stage — deployment intentionally limited to full-node sync only, ahead of a later decision on registering as a validator candidate.",
+  "url": "https://github.com/gnolang/gno/releases/tag/chain/mainnet"
+},
+  {
   "id": "gnoland-pearl-infrastructure-decommission-2026-09-18",
   "date": "2026-09-18T00:00:00Z",
   "incident_type": "decommission",
