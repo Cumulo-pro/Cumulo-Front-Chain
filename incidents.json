@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-mocha-upgrade-celestia-node-v0.33.2-mocha-2026-09-18",
+  "date": "2026-09-18T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.33.2-mocha",
+  "note": "Cumulo upgraded its Celestia Mocha testnet bridge node to celestia-node v0.33.2-mocha. This release includes a security fix. Node verified and operational post-upgrade.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.33.2-mocha"
+},
+  {
   "id": "gnoland-mainnet-gnoland-1-full-node-deployment-velia12-2026-09-18",
   "date": "2026-09-18T00:00:00Z",
   "incident_type": "deployment",
