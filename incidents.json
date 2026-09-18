@@ -1,5 +1,17 @@
 [
   {
+  "id": "monad-testnet-upgrade-v0.16.3-2026-09-18",
+  "date": "2026-09-18T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Monad",
+  "network": "testnet",
+  "node_type": ["full_node"],
+  "client": "monad v0.16.3",
+  "note": "Cumulo upgraded its Monad testnet full node (full_Cumulo-1) to v0.16.3. Standard full node upgrade, no breaking changes to node.toml. Phase C already completed in previous session (node running page-only), so promote-secondary step was skipped. All three services restarted and verified active. Commit hash verified: d12edcbc0152f903f19fbed23c4136f8851ce5b5.",
+  "url": "https://docs.monad.xyz/node-ops/upgrade-instructions/v0.16.3"
+},
+  {
   "id": "cosmos-hub-mainnet-governance-proposal-1055-2026-09-17",
   "date": "2026-09-17T16:56:00Z",
   "incident_type": "governance_proposal",
