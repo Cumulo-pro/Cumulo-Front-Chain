@@ -1,5 +1,17 @@
 [
   {
+  "id": "gnoland-mainnet-gnoland-1-full-node-rpc-deployment-velia2-2026-09-18",
+  "date": "2026-09-18T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Gnoland",
+  "network": "mainnet",
+  "node_type": ["full node", "rpc"],
+  "client": "gnoland heads/chain/mainnet.3436+00417a1be",
+  "note": "Cumulo decommissioned the Gno.land Pearl testnet RPC node and its dependent gno-testnet-collector service on Velia2 (host-148-72-141-245), along with stale testnet systemd units and a daily Pearl snapshot timer. Deployed a Gno.land mainnet (gnoland-1) full node in the same RPC role, built from the chain/mainnet branch (tracking the branch tip rather than a fixed tag, to stay current through mainnet upgrades), with genesis.json verified against the official CHECKSUMS.txt and configured per VALIDATOR.md guidance. Kept the existing ports (p2p 26670, rpc 26671, moniker Cumulo-RPC). The public RPC endpoint was migrated from gno.rpc.testnet.cumulo.me to gno.rpc.cumulo.me, including a new Let's Encrypt certificate and an nginx reverse-proxy update, and verified serving live mainnet data over HTTPS. Journald log retention was proactively configured (50GB cap, 2-month minimum). The node synced past the height-36432 consensus upgrade checkpoint without the AppHash mismatch seen on the other two mainnet nodes, having been built directly from the post-upgrade commit.",
+  "url": "https://github.com/gnolang/gno/tree/chain/mainnet"
+},
+  {
   "id": "celestia-mocha-upgrade-celestia-node-v0.33.2-mocha-2026-09-18",
   "date": "2026-09-18T00:00:00Z",
   "incident_type": "upgrade",
@@ -39,7 +51,7 @@
   "id": "gnoland-pearl-infrastructure-decommission-2026-09-18",
   "date": "2026-09-18T00:00:00Z",
   "incident_type": "decommission",
-  "status": "pending",
+  "status": "completed",
   "chain": "Gnoland",
   "network": "testnet (pearl)",
   "node_type": ["backup", "rpc"],
