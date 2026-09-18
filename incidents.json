@@ -1,5 +1,26 @@
 [
   {
+  "id": "gnoland-pearl-infrastructure-decommission-2026-09-18",
+  "date": "2026-09-18T00:00:00Z",
+  "incident_type": "decommission",
+  "status": "pending",
+  "chain": "Gnoland",
+  "network": "testnet (pearl)",
+  "node_type": ["backup", "rpc"],
+  "note": "Cumulo plans to decommission the remaining Gno.land Pearl testnet infrastructure \u2014 the backup validator on Velia12 and the RPC node on Velia2 \u2014 as part of the ongoing migration to Gno.land mainnet (gnoland-1). This work is scheduled to follow the deployment of the new mainnet full node on VeliaMon-test."
+},
+  {
+  "id": "gnoland-pearl-decommission-veliamon-test-2026-09-18",
+  "date": "2026-09-18T00:00:00Z",
+  "incident_type": "decommission",
+  "status": "completed",
+  "chain": "Gnoland",
+  "network": "testnet (pearl)",
+  "node_type": ["validator"],
+  "client": "gnoland chain/pearl",
+  "note": "Cumulo decommissioned its Gno.land Pearl testnet validator running on VeliaMon-test (host-192-155-100-132), following the network-wide shutdown of Gno.land testnets ahead of mainnet launch. The gnoland-pearl systemd service was stopped and disabled, and all historical Gno.land testnet data (Pearl, Sapphire, and Topaz remnants) was removed from the server to free up resources for the upcoming Gno.land mainnet (gnoland-1) full node deployment."
+},
+  {
   "id": "monad-testnet-upgrade-v0.16.3-2026-09-18",
   "date": "2026-09-18T00:00:00Z",
   "incident_type": "upgrade",
