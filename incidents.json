@@ -1,5 +1,17 @@
 [
   {
+  "id": "gnoland-mainnet-gnoland-1-full-node-deployment-velia12-2026-09-18",
+  "date": "2026-09-18T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Gnoland",
+  "network": "mainnet",
+  "node_type": ["full node", "backup"],
+  "client": "gnoland heads/chain/mainnet.3436+00417a1be",
+  "note": "Cumulo deployed a Gno.land mainnet (gnoland-1) full node on Velia12 (host-85-195-116-219) as the backup counterpart to the VeliaMon-test full node, replacing the decommissioned Pearl testnet backup validator on the same host. Built from the chain/mainnet branch, genesis.json verified against the official CHECKSUMS.txt, and configured per VALIDATOR.md guidance (persistent_peers/seeds, prune_strategy, timeout_commit), with moniker 'Cumulo-Backup' on ports 26680/26681 (26656/26657 remain reserved for celestia-appd on this shared host). Deployed under systemd (gnoland.service). Shortly after the initial deployment, both this node and the VeliaMon-test full node hit a consensus AppHash mismatch at height 36432 due to a coordinated network-wide mainnet upgrade; resolved by pulling the latest chain/mainnet branch commit (previously pinned to a stale tag) and resyncing from a clean database. Journald log retention was proactively configured (50GB cap, 2-month minimum). Node confirmed syncing past height 90000+ without further errors. No operator wallet or valoper registration performed at this stage.",
+  "url": "https://github.com/gnolang/gno/tree/chain/mainnet"
+},
+  {
   "id": "gnoland-mainnet-gnoland-1-full-node-deployment-2026-09-18",
   "date": "2026-09-18T00:00:00Z",
   "incident_type": "deployment",
