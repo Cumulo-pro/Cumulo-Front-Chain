@@ -1,5 +1,17 @@
 [
   {
+  "id": "gnoland-mainnet-gnoland-1-client-upgrade-e75fef82c-2026-09-19",
+  "date": "2026-09-19T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Gnoland",
+  "network": "mainnet",
+  "node_type": ["full node", "backup", "rpc"],
+  "client": "gnoland HEAD.3444+e75fef82c",
+  "note": "Cumulo applied a coordinated 'quick upgrade' to its three Gno.land mainnet (gnoland-1) nodes (VeliaMon-test principal, Velia12 backup, Velia2 RPC) following an announcement from the gno.land team. There was community confusion over which commit to build: f01063d9b was reported to stall at height 162200, while e75fef82c02876a4df92ad6e325c5479b953216 (confirmed working by multiple validators) was the correct target \u2014 an official message citing a 41-character variant of the same hash was treated as a likely typo and disregarded in favor of the validated 40-character commit. Applied via git checkout of the pinned commit, rebuild, and systemctl restart on all three servers, proactively ahead of any consensus-breaking height, so no database wipe was needed this time. All three gnoland.service instances confirmed active and processing consensus/p2p traffic normally post-restart.",
+  "url": "https://github.com/gnolang/gno/commit/e75fef82c02876a4df92ad6e325c5479b953216"
+},
+  {
   "id": "espresso-decaf-upgrade-20260918-2026-09-19",
   "date": "2026-09-19T00:00:00Z",
   "incident_type": "upgrade",
