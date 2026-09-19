@@ -1,5 +1,16 @@
 [
   {
+  "id": "espresso-decaf-upgrade-20260918-2026-09-19",
+  "date": "2026-09-19T00:00:00Z",
+  "incident_type": "upgrade",
+  "chain": "Espresso",
+  "network": "testnet (Decaf)",
+  "node_type": ["validator"],
+  "client": "espresso-sequencer 20260918",
+  "note": "Cumulo upgraded its Espresso Decaf testnet validator to sequencer version 20260918. Binary-only upgrade, no configuration changes required. Node verified operational post-upgrade: consensus_current_view and consensus_last_voted_view tracking correctly, cliquenet peer tasks active at 29.",
+  "url": "https://github.com/EspressoSystems/espresso-network/releases/tag/20260918"
+},
+  {
   "id": "gnoland-mainnet-gnoland-1-full-node-rpc-deployment-velia2-2026-09-18",
   "date": "2026-09-18T00:00:00Z",
   "incident_type": "deployment",
