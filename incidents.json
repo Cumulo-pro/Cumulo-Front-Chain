@@ -1,5 +1,17 @@
 [
   {
+  "id": "ibc-relayer-hermes-osmosis-grpc-fix-2026-09-18",
+  "date": "2026-09-18T00:00:00Z",
+  "incident_type": "configuration",
+  "status": "completed",
+  "chain": "IBC Relayer",
+  "network": "mainnet",
+  "node_type": ["relayer"],
+  "client": "hermes v1.13.2",
+  "note": "Cumulo fixed stalled relay activity on Osmosis caused by the gRPC endpoint grpc.osmosis.zone dropping support on port 9090 (connection refused). Migrated osmosis-1 grpc_addr from port 9090 to port 443. Hermes restarted successfully, all channel workers spawned with state OPEN, and relay activity confirmed resuming on 18 Sept 2026.",
+  "url": "https://cumulo.pro/services/ibc/"
+},
+  {
   "id": "gnoland-mainnet-gnoland-1-client-upgrade-e75fef82c-2026-09-19",
   "date": "2026-09-19T00:00:00Z",
   "incident_type": "upgrade",
