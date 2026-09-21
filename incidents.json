@@ -1,5 +1,18 @@
 [
   {
+  "id": "cosmos-hub-mainnet-upgrade-v28.2.0-2026-09-21",
+  "date": "2026-09-21T13:14:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "gaiad v28.2.0",
+  "proposal_number": 1055,
+  "note": "Cumulo upgraded its Cosmos Hub mainnet validator to Gaia v28.2.0 at the governance-approved upgrade height 33,073,000 (Proposal #1055), a security-related patch and the mainnet counterpart to the provider testnet upgrade completed under Proposal #327. Verified the same GPG-signed release chain used on testnet before installing: instructions signature and binary archive signature both verified as Good signature from the official Cosmos-Release key (fingerprint E625 9F16 9C7B 913D BB75 DE02 5395 305D 29B8 8B32), sha256 checksum matched, and binary commit/version confirmed via 'gaiad version --long' prior to install, with a pre-upgrade binary backup kept for rollback. Upgraded and verified operational with no incidents.",
+  "url": "https://gist.github.com/jeonghwan-clk/6ec349f20f4240c0e7d0f7afe2a508da"
+},
+  {
   "id": "ibc-relayer-hermes-osmosis-grpc-fix-2026-09-18",
   "date": "2026-09-18T00:00:00Z",
   "incident_type": "configuration",
@@ -119,7 +132,7 @@
   "id": "cosmos-hub-mainnet-governance-proposal-1055-2026-09-17",
   "date": "2026-09-17T16:56:00Z",
   "incident_type": "governance_proposal",
-  "status": "active",
+  "status": "completed",
   "chain": "Cosmos Hub",
   "network": "mainnet",
   "node_type": ["validator"],
