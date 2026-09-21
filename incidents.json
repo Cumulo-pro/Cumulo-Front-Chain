@@ -1,5 +1,18 @@
 [
   {
+  "id": "xrplevm-mainnet-governance-proposal-38-2026-09-21",
+  "date": "2026-09-21T18:23:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "proposal_number": 38,
+  "note": "Governance Proposal #38 on XRPL EVM mainnet: Software upgrade v11.2.0 (MsgIBCSoftwareUpgrade) scheduled at block height 7,823,200. The upgrade disables the Interchain Accounts host module, sets the staking unbonding time to one week, and returns XRP locked in the Elys channel escrow to its rightful withdrawal address on each network. Voting period runs from Sep 21 to Sep 22, 2026. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm_mainnet/governance#proposal-38",
+  "vote": "https://cumulo.pro/services/xrplevm_mainnet/search?q=19C56454F12CB2DD01576837F332DD77235E8BB861C9AA2B0B68C33E47AD2820"
+},
+  {
   "id": "cosmos-hub-mainnet-upgrade-v28.2.0-2026-09-21",
   "date": "2026-09-21T13:14:00Z",
   "incident_type": "upgrade",
