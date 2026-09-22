@@ -1,5 +1,16 @@
 [
  {
+  "id": "celestia-node-v0.34.2-mocha-upgrade-bridge-2026-09-22",
+  "date": "2026-09-22T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.34.2-mocha",
+  "note": "Cumulo upgraded its Celestia Mocha (mocha-5) bridge node to celestia-node v0.34.2-mocha, adding built-in Fibre client support. Service restarted and verified operational. The network-wide v10 app activation is scheduled at height 1082619, still pending."
+},
+ {
   "id": "cosmos-hub-mainnet-incident-validator-halt-2026-09-22",
   "date": "2026-09-22T00:00:00Z",
   "incident_type": "incident",
@@ -33,7 +44,7 @@
   "network": "testnet (mocha)",
   "node_type": ["validator", "rpc", "snapshot", "backup"],
   "client": "celestia-app v10.2.0-mocha",
-  "note": "Cumulo upgraded all its Celestia Mocha (mocha-5) nodes to celestia-app v10.2.0-mocha: the validator (velia6, upgraded 2026-09-21 and signaled via `tx signal signal 10`), the public RPC node, the snapshot node, and the standby validator node (BigVelia14T-2, upgraded 2026-09-22). The snapshot node hit a crash-loop after restart caused by a growing app/core height mismatch, resolved by restoring a verified Polkachu snapshot and fixing two port collisions inherited from shared config (proxy_app/--address and priv_validator_grpc_laddr) with the co-located RPC node; the same collisions were pre-empted on the standby node before its restart. All four nodes are fully synchronized and operational on v10.2.0-mocha."
+  "note": "Cumulo upgraded all its Celestia Mocha (mocha-5) nodes to celestia-app v10.2.0-mocha: validator and signaled via `tx signal signal 10`), the public RPC node, the snapshot node, and the standby validator node. The snapshot node hit a crash-loop after restart caused by a growing app/core height mismatch, resolved by restoring a verified Polkachu snapshot and fixing two port collisions inherited from shared config (proxy_app/--address and priv_validator_grpc_laddr) with the co-located RPC node; the same collisions were pre-empted on the standby node before its restart. All four nodes are fully synchronized and operational on v10.2.0-mocha."
 },
   {
   "id": "cosmos-hub-mainnet-upgrade-v28.2.0-2026-09-21",
