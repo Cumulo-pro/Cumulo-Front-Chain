@@ -1,5 +1,17 @@
 [
   {
+  "id": "cosmos-hub-mainnet-incident-gaiad-halt-2026-09-22",
+  "date": "2026-09-22T00:00:00Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "gaia",
+  "note": "Cumulo stopped and disabled the gaiad service on its Cosmos Hub mainnet validator node (host-85-195-116-219) via `sudo systemctl stop gaiad` and `sudo systemctl disable gaiad`, removing it from multi-user.target.wants. The action was taken in response to an alert circulating in a validators chat claiming a governance attack on Neutron had compromised a liquid-staking protocol and requesting Cosmos Hub validators halt while coordination took place. Operator reports independent verification through multiple sources prior to acting. As of this entry, no official advisory corroborating the claim had been located on the Cosmos Hub forum, ICF, or Cosmos Labs channels — follow-up recommended to confirm via an official source and to re-enable/restart gaiad once resolved or the alert is confirmed false.",
+  "url": ""
+},
+  {
   "id": "xrplevm-mainnet-governance-proposal-38-2026-09-21",
   "date": "2026-09-21T18:23:00Z",
   "incident_type": "governance_proposal",
