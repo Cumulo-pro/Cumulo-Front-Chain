@@ -1,5 +1,17 @@
 [
  {
+  "id": "xrplevm-mainnet-upgrade-v11.2.0-2026-09-23",
+  "date": "2026-09-23T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "xrplevm node v11.2.0",
+  "note": "Cumulo successfully upgraded its XRPL EVM mainnet node to v11.2.0 at block height 7,823,200, following the passing of Proposal #38. The upgrade disables the Interchain Accounts host module, sets the staking unbonding time to one week, and returns XRP locked in the Elys channel escrow to its rightful withdrawal address on each network. Upgrade completed without incidents.",
+  "url": "https://github.com/xrplevm/node/releases/download/v11.2.0/"
+},
+ {
   "id": "cosmos-hub-mainnet-upgrade-v28.3.0-2026-09-23",
   "date": "2026-09-23T12:00:00Z",
   "incident_type": "upgrade",
