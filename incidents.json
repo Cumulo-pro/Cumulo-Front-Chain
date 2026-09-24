@@ -1,5 +1,17 @@
 [
  {
+  "id": "cosmos-mainnet-governance-proposal-1056-2026-09-24",
+  "date": "2026-09-24T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1056 on Cosmos Hub mainnet: Community pool spend proposal requesting 1.2M ATOM as refund and 500K ATOM as a justice bounty, claiming that Cosmos Hub representatives coordinated validators to confiscate funds from a specific address. Voting period runs from September 24 to October 1, 2026. Cumulo voted No with Veto.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1056",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=1302BE0F47ABF389FD172AC561823C53BB8D4AFE6FF7B84943E6A50200CE2777"
+},
+ {
   "id": "celestia-mainnet-upgrade-celestia-node-v0.33.2-2026-09-23",
   "date": "2026-09-23T00:00:00Z",
   "incident_type": "upgrade",
