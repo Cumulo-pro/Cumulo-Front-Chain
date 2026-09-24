@@ -151,7 +151,7 @@
   "network": "mainnet",
   "node_type": ["full node", "rpc"],
   "client": "gnoland heads/chain/mainnet.3436+00417a1be",
-  "note": "Cumulo decommissioned the Gno.land Pearl testnet RPC node and its dependent gno-testnet-collector service on Velia2 (host-148-72-141-245), along with stale testnet systemd units and a daily Pearl snapshot timer. Deployed a Gno.land mainnet (gnoland-1) full node in the same RPC role, built from the chain/mainnet branch (tracking the branch tip rather than a fixed tag, to stay current through mainnet upgrades), with genesis.json verified against the official CHECKSUMS.txt and configured per VALIDATOR.md guidance. Kept the existing ports (p2p 26670, rpc 26671, moniker Cumulo-RPC). The public RPC endpoint was migrated from gno.rpc.testnet.cumulo.me to gno.rpc.cumulo.me, including a new Let's Encrypt certificate and an nginx reverse-proxy update, and verified serving live mainnet data over HTTPS. Journald log retention was proactively configured (50GB cap, 2-month minimum). The node synced past the height-36432 consensus upgrade checkpoint without the AppHash mismatch seen on the other two mainnet nodes, having been built directly from the post-upgrade commit.",
+  "note": "Cumulo decommissioned the Gno.land Pearl testnet RPC node and its dependent gno-testnet-collector service, along with stale testnet systemd units and a daily Pearl snapshot timer. Deployed a Gno.land mainnet (gnoland-1) full node in the same RPC role, built from the chain/mainnet branch (tracking the branch tip rather than a fixed tag, to stay current through mainnet upgrades), with genesis.json verified against the official CHECKSUMS.txt and configured per VALIDATOR.md guidance. Kept the existing ports (p2p 26670, rpc 26671, moniker Cumulo-RPC). The public RPC endpoint was migrated from gno.rpc.testnet.cumulo.me to gno.rpc.cumulo.me, including a new Let's Encrypt certificate and an nginx reverse-proxy update, and verified serving live mainnet data over HTTPS. Journald log retention was proactively configured (50GB cap, 2-month minimum). The node synced past the height-36432 consensus upgrade checkpoint without the AppHash mismatch seen on the other two mainnet nodes, having been built directly from the post-upgrade commit.",
   "url": "https://github.com/gnolang/gno/tree/chain/mainnet"
 },
   {
@@ -187,7 +187,7 @@
   "network": "mainnet",
   "node_type": ["full node"],
   "client": "gnoland v1.2.0 (chain/mainnet)",
-  "note": "Cumulo deployed a Gno.land mainnet (gnoland-1) full node on VeliaMon-test (host-192-155-100-132), replacing the decommissioned Pearl testnet validator on the same host. Built from the chain/mainnet branch, with genesis.json verified against the official CHECKSUMS.txt (SHA256 match). Configured per the official VALIDATOR.md guidance: required persistent_peers/seeds, prune_strategy, timeout_commit, and peer_gossip_sleep_duration, plus per-node moniker (Cumulo) and external_address. Deployed under systemd (gnoland.service) and confirmed syncing on gnoland-1. Journald log retention was proactively configured (50GB cap, 2-month minimum) to prevent the premature rotation observed during the Pearl fire drill. No operator wallet was created and no valoper registration was performed at this stage — deployment intentionally limited to full-node sync only, ahead of a later decision on registering as a validator candidate.",
+  "note": "Cumulo deployed a Gno.land mainnet (gnoland-1) full node, replacing the decommissioned Pearl testnet validator on the same host. Built from the chain/mainnet branch, with genesis.json verified against the official CHECKSUMS.txt (SHA256 match). Configured per the official VALIDATOR.md guidance: required persistent_peers/seeds, prune_strategy, timeout_commit, and peer_gossip_sleep_duration, plus per-node moniker (Cumulo) and external_address. Deployed under systemd (gnoland.service) and confirmed syncing on gnoland-1. Journald log retention was proactively configured (50GB cap, 2-month minimum) to prevent the premature rotation observed during the Pearl fire drill. No operator wallet was created and no valoper registration was performed at this stage — deployment intentionally limited to full-node sync only, ahead of a later decision on registering as a validator candidate.",
   "url": "https://github.com/gnolang/gno/releases/tag/chain/mainnet"
 },
   {
@@ -209,7 +209,7 @@
   "network": "testnet (pearl)",
   "node_type": ["validator"],
   "client": "gnoland chain/pearl",
-  "note": "Cumulo decommissioned its Gno.land Pearl testnet validator running on VeliaMon-test (host-192-155-100-132), following the network-wide shutdown of Gno.land testnets ahead of mainnet launch. The gnoland-pearl systemd service was stopped and disabled, and all historical Gno.land testnet data (Pearl, Sapphire, and Topaz remnants) was removed from the server to free up resources for the upcoming Gno.land mainnet (gnoland-1) full node deployment."
+  "note": "Cumulo decommissioned its Gno.land Pearl testnet validator running, following the network-wide shutdown of Gno.land testnets ahead of mainnet launch. The gnoland-pearl systemd service was stopped and disabled, and all historical Gno.land testnet data (Pearl, Sapphire, and Topaz remnants) was removed from the server to free up resources for the upcoming Gno.land mainnet (gnoland-1) full node deployment."
 },
   {
   "id": "monad-testnet-upgrade-v0.16.3-2026-09-18",
@@ -881,7 +881,7 @@
   "network": "mainnet",
   "node_type": ["rpc"],
   "client": "celestia-app v9.0.4",
-  "note": "Cumulo scoped state-sync serving on its Celestia mainnet RPC node (Velia2/cumvelia2, host-148-72-141-245), shared infrastructure hosting RPC services for multiple chains plus three validators (Concordium, Fuel Sequencer, Starknet). Resource check via top/Grafana showed adequate headroom (56 cores, 39.3% CPU busy, 717GB free disk) to add continuous snapshot generation without expected contention with the co-located validators. RPC endpoint (https://celestia.cumulo.org.es) and P2P node ID (9d907b8aed06cbbb96bfdd3fffeb823a7544aa9a) verified live and published to Cumulo-Front-Chain validators.json. Recommended app.toml settings prepared (snapshot-interval = 1000, snapshot-keep-recent = 2). Pending: confirmation that snapshot-interval was actually applied and restarted on the node, and independent external verification of P2P port 26656 (the nc check done was a self-connect from the same host, not conclusive for inbound firewall rules).",
+  "note": "Cumulo scoped state-sync serving on its Celestia mainnet RPC node, shared infrastructure hosting RPC services for multiple chains plus three validators (Concordium, Fuel Sequencer, Starknet). Resource check via top/Grafana showed adequate headroom (56 cores, 39.3% CPU busy, 717GB free disk) to add continuous snapshot generation without expected contention with the co-located validators. RPC endpoint (https://celestia.cumulo.org.es) and P2P node ID (9d907b8aed06cbbb96bfdd3fffeb823a7544aa9a) verified live and published to Cumulo-Front-Chain validators.json. Recommended app.toml settings prepared (snapshot-interval = 1000, snapshot-keep-recent = 2). Pending: confirmation that snapshot-interval was actually applied and restarted on the node, and independent external verification of P2P port 26656 (the nc check done was a self-connect from the same host, not conclusive for inbound firewall rules).",
   "url": "https://cumulo.pro/services/celestia/state-sync"
 },
  {
@@ -1228,7 +1228,7 @@
   "network": "testnet (topaz)",
   "node_type": ["validator"],
   "client": "gnoland (chain/topaz)",
-  "note": "Cumulo deployed a new Gno.land Topaz testnet validator node on Velia12 (85.195.116.219, user cumvelia12), migrating from the Test13 network per the team's migration announcement. Binaries were compiled from the chain/topaz branch; the node was configured with non-standard P2P/RPC ports (26680/26681) to coexist with the existing Celestia mainnet validator on the same server. The node synced successfully to chain tip and was registered on-chain in the r/gnops/valopers realm using the same operator address as Test13 (g1mndkvypn3339m6yvkyutal5hk6m2yeqp5d52ly), with a newly generated consensus key for this node. Registration confirmed on GnoScan and indexed in the valopers listing. Pending GovDAO vote to join the active validator set.",
+  "note": "Cumulo deployed a new Gno.land Topaz testnet validator node, migrating from the Test13 network per the team's migration announcement. Binaries were compiled from the chain/topaz branch; the node was configured with non-standard P2P/RPC ports (26680/26681) to coexist with the existing Celestia mainnet validator on the same server. The node synced successfully to chain tip and was registered on-chain in the r/gnops/valopers realm using the same operator address as Test13 (g1mndkvypn3339m6yvkyutal5hk6m2yeqp5d52ly), with a newly generated consensus key for this node. Registration confirmed on GnoScan and indexed in the valopers listing. Pending GovDAO vote to join the active validator set.",
   "url": "https://gnoscan.io/transactions/details?txhash=pmg1kuDYsh1GMZp/1BxJwHJCtYgmjZDy+724quTjcPU="
 },
  {
@@ -1698,7 +1698,7 @@
   "network": "testnet (test13)",
   "node_type": ["rpc", "snapshot"],
   "client": "gnoland chain/test13",
-  "note": "Cumulo deployed a public snapshot service for the Gno.land Test13 testnet, served from the RPC node on Velia2 (148.72.141.245). Snapshots include only the db/ directory (PebbleDB) and exclude config/, secrets/, wal/, and genesis.json. Compression: lz4. A systemd timer runs the snapshot script every 12 hours as root, retaining the last 3 snapshots. The snapshot directory is exposed via nginx symlink at gno.snapshots.testnet.cumulo.me/snapshots/ with SSL via Certbot. The first snapshot was generated successfully at block height 494572 (3GB). Restoration instructions include backup and restore of secrets/priv_validator_state.json to prevent double-signing on validator nodes.",
+  "note": "Cumulo deployed a public snapshot service for the Gno.land Test13 testnet, served from the RPC node. Snapshots include only the db/ directory (PebbleDB) and exclude config/, secrets/, wal/, and genesis.json. Compression: lz4. A systemd timer runs the snapshot script every 12 hours as root, retaining the last 3 snapshots. The snapshot directory is exposed via nginx symlink at gno.snapshots.testnet.cumulo.me/snapshots/ with SSL via Certbot. The first snapshot was generated successfully at block height 494572 (3GB). Restoration instructions include backup and restore of secrets/priv_validator_state.json to prevent double-signing on validator nodes.",
   "url": "https://gno.snapshots.testnet.cumulo.me/snapshots/"
 },
  {
