@@ -1,5 +1,15 @@
 [
  {
+  "id": "dymension-mainnet-infrastructure-migration-horcrux-cosigner-2026-09-24",
+  "date": "2026-09-24T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Dymension",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Cumulo migrated its Dymension mainnet Horcrux cosigner 1 and its associated sentry node to a new host as part of an infrastructure consolidation. The new sentry was bootstrapped from a pruned snapshot with custom pruning, a reduced IAVL cache and systemd memory limits, and resource limits were applied to co-hosted services to ensure capacity. The cosigner shard and signing state were transferred only after the original instance was stopped and disabled, preventing any risk of double signing, while the 2-of-3 threshold kept the validator signing throughout the migration. The previous host was decommissioned and its key material securely erased."
+},
+ {
   "id": "cosmos-mainnet-governance-proposal-1057-2026-09-24",
   "date": "2026-09-24T00:00:00Z",
   "incident_type": "governance_proposal",
