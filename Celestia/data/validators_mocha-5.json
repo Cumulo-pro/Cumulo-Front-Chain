@@ -158,10 +158,11 @@
     },
     "statesync_rpc": "https://celestia-t-rpc.noders.services:443",
     "statesync_peer": "3329e50c8e59bf9f13deee9019b18bf2ad77141f@celestia-t-rpc.noders.services:32256",
-   "snapshot_check": {
-  "kind": "always_ok",
-  "note": "Daily snapshot, filename embeds the block height (celestia-<height>.tar.lz4) and the page is static with no API or directory listing, so automated verification is disabled; last manually verified 2026-09-25 (file served 200, 38.7 GB, mocha-5)."
-},
+       "snapshot_check": {
+      "kind": "always_ok",
+      "note": "Daily snapshot, filename embeds the block height (celestia-<height>.tar.lz4) and the page is static with no API or directory listing, so automated verification is disabled; last manually verified 2026-09-25 (file served 200, 38.7 GB, mocha-5)."
+    }
+  },
     {
       "name": "Cumulo",
       "x": "Cumulo_pro",
