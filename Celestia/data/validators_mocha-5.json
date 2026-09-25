@@ -134,8 +134,8 @@
       "note": "Automated verification disabled; assumed available. Snapshot page is JS-rendered (Next.js) and blocks plain HTTP scraping/HEAD checks, same as Krews on mainnet."
     }
 },
-     {
-   "name": "NODERS",
+   {
+    "name": "NODERS",
     "webservices": "https://noders.services/testnet/celestia/",
     "x": "NODERS_TEAM",
     "validatorlogo": "noders.jpg",
@@ -153,48 +153,48 @@
       "Celestia Monitoring Setup": "https://noders.services/testnet/celestia/monitoring",
       "Celestia Public Endpoints": "https://noders.services/testnet/celestia/public-endpoints"
     },
-        "content": {
-        "Installation Guide": "https://noders.services/testnet/celestia/install"
+    "content": {
+      "Installation Guide": "https://noders.services/testnet/celestia/install"
     },
     "statesync_rpc": "https://celestia-t-rpc.noders.services:443",
     "statesync_peer": "3329e50c8e59bf9f13deee9019b18bf2ad77141f@celestia-t-rpc.noders.services:32256",
-       "snapshot_check": {
+    "snapshot_check": {
       "kind": "always_ok",
       "note": "Daily snapshot, filename embeds the block height (celestia-<height>.tar.lz4) and the page is static with no API or directory listing, so automated verification is disabled; last manually verified 2026-09-25 (file served 200, 38.7 GB, mocha-5)."
     }
   },
-    {
-      "name": "Cumulo",
-      "x": "Cumulo_pro",
-      "webservices": "https://cumulo.pro/services/celestia_mocha",
-      "validatorlogo": "cumulo.jpg",
-      "rpc": "https://mocha5.celestia.rpc.cumulo.me",
-      "api": "https://mocha5.celestia.api.cumulo.me",
-      "grpc": "mocha5.celestia.grpc.cumulo.me",
-      "snapshot_pebble": "https://cumulo.pro/services/celestia_mocha/snapshot",
-      "tools_url": {
-    "Celestia Block Explorer": "https://cumulo.pro/services/celestia_mocha/stats",
-    "Cumulo Live Peers": "https://cumulo.pro/services/celestia_mocha/peers",
-    "CIP Tracker": "https://cumulo.pro/services/celestia_mocha/cips",
-    "Missed Proposals Tracker": "https://cumulo.pro/services/celestia_mocha/missed-proposals",
-    "Dashboard in Grafana": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/bridge-monitor/README.md"
-  },
-  "tools_desc": {
-    "Celestia Block Explorer": "Real-time multi-section block explorer covering validator uptime, governance proposals, live consensus state, recent transactions, and network statistics.",
-    "Cumulo Live Peers": "A live peer checker, updated every 30 minutes and available through both a public dashboard and API.",
-    "CIP Tracker": "The CIP Tracker is designed to make it easier for teams, devs, validators and the broader community to follow how Celestia evolves at the protocol level: from proposals already live on mainnet to those currently under review or being discussed for upcoming upgrades.",
-    "Missed Proposals Tracker": "Block-level tracking of missed proposal slots using the CometBFT weighted round-robin simulation. Identifies which validator missed their turn at each consensus round, with cumulative per-validator statistics and miss rate.",
-    "Dashboard in Grafana": "Grafana dashboard reference for node monitoring (service health and performance signals)."
-  },
-      "content": {
-         "Compilation of technical guides and resources": "https://cumulo.pro/celestia/content"
-      },
-      "statesync_rpc": "https://mocha5.celestia.rpc.cumulo.me",
-      "statesync_peer": "REEMPLAZAR_NODE_ID@92.204.168.57:26670",
-      "snapshot_check": {
-        "kind": "json_index",
-        "resolve_url": "https://mocha.cumulo.com.es/snapshots/index.json",
-        "file_key": "latest_file"
-      }
+  {
+    "name": "Cumulo",
+    "x": "Cumulo_pro",
+    "webservices": "https://cumulo.pro/services/celestia_mocha",
+    "validatorlogo": "cumulo.jpg",
+    "rpc": "https://mocha5.celestia.rpc.cumulo.me",
+    "api": "https://mocha5.celestia.api.cumulo.me",
+    "grpc": "mocha5.celestia.grpc.cumulo.me",
+    "snapshot_pebble": "https://cumulo.pro/services/celestia_mocha/snapshot",
+    "tools_url": {
+      "Celestia Block Explorer": "https://cumulo.pro/services/celestia_mocha/stats",
+      "Cumulo Live Peers": "https://cumulo.pro/services/celestia_mocha/peers",
+      "CIP Tracker": "https://cumulo.pro/services/celestia_mocha/cips",
+      "Missed Proposals Tracker": "https://cumulo.pro/services/celestia_mocha/missed-proposals",
+      "Dashboard in Grafana": "https://github.com/Cumulo-pro/Celestia-monitoring/blob/main/bridge-monitor/README.md"
+    },
+    "tools_desc": {
+      "Celestia Block Explorer": "Real-time multi-section block explorer covering validator uptime, governance proposals, live consensus state, recent transactions, and network statistics.",
+      "Cumulo Live Peers": "A live peer checker, updated every 30 minutes and available through both a public dashboard and API.",
+      "CIP Tracker": "The CIP Tracker is designed to make it easier for teams, devs, validators and the broader community to follow how Celestia evolves at the protocol level: from proposals already live on mainnet to those currently under review or being discussed for upcoming upgrades.",
+      "Missed Proposals Tracker": "Block-level tracking of missed proposal slots using the CometBFT weighted round-robin simulation. Identifies which validator missed their turn at each consensus round, with cumulative per-validator statistics and miss rate.",
+      "Dashboard in Grafana": "Grafana dashboard reference for node monitoring (service health and performance signals)."
+    },
+    "content": {
+      "Compilation of technical guides and resources": "https://cumulo.pro/celestia/content"
+    },
+    "statesync_rpc": "https://mocha5.celestia.rpc.cumulo.me",
+    "statesync_peer": "0df16b033524cd5389ec5b01b13969118654f810@92.204.168.57:26670",
+    "snapshot_check": {
+      "kind": "json_index",
+      "resolve_url": "https://mocha.cumulo.com.es/snapshots/index.json",
+      "file_key": "latest_file"
     }
+  }
 ]
