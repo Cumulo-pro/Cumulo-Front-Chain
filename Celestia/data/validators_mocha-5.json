@@ -140,7 +140,7 @@
     "x": "NODERS_TEAM",
     "validatorlogo": "noders.jpg",
     "explorer": "https://noders.services/testnet-networks/celestia",
-    "peers": "2d40e73c3b0fcccc5c7806621ff9943a7fb3199e@celestia-t-rpc.noders.services:11656",
+    "peers": "3329e50c8e59bf9f13deee9019b18bf2ad77141f@celestia-t-rpc.noders.services:32256",
     "seeds": "b9d69dd4f030a52970943839b7ff41b8ab56e3ab@celestia-t-seed.noders.services:11633",
     "api": "https://celestia-t-api.noders.services",
     "rpc": "https://celestia-t-rpc.noders.services",
