@@ -1,5 +1,16 @@
 [
  {
+  "id": "espresso-mainnet-upgrade-20260918-2026-09-25",
+  "date": "2026-09-25T00:00:00Z",
+  "incident_type": "upgrade",
+  "chain": "Espresso",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "espresso-sequencer 20260918",
+  "note": "Cumulo upgraded its Espresso Mainnet validator to sequencer version 20260918. Binary-only upgrade, no configuration changes required. Node verified operational post-upgrade: consensus_current_view and consensus_last_voted_view tracking correctly, cliquenet peer tasks active at 91.",
+  "url": "https://github.com/EspressoSystems/espresso-network/releases/tag/20260918"
+},
+ {
   "id": "celestia-mocha-fibre-deployment-2026-09-25",
   "date": "2026-09-25T00:00:00Z",
   "incident_type": "deployment",
