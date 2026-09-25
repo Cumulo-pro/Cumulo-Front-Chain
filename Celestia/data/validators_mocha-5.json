@@ -134,6 +134,33 @@
       "note": "Automated verification disabled; assumed available. Snapshot page is JS-rendered (Next.js) and blocks plain HTTP scraping/HEAD checks, same as Krews on mainnet."
     }
 },
+     {
+   "name": "NODERS",
+    "webservices": "https://noders.services/testnet/celestia/",
+    "x": "NODERS_TEAM",
+    "validatorlogo": "noders.jpg",
+    "explorer": "https://noders.services/testnet-networks/celestia",
+    "peers": "2d40e73c3b0fcccc5c7806621ff9943a7fb3199e@celestia-t-rpc.noders.services:11656",
+    "seeds": "b9d69dd4f030a52970943839b7ff41b8ab56e3ab@celestia-t-seed.noders.services:11633",
+    "api": "https://celestia-t-api.noders.services",
+    "rpc": "https://celestia-t-rpc.noders.services",
+    "grpc": "celestia-t-grpc.noders.services:21090",
+    "snapshot": "https://noders.services/testnet/celestia/snapshot",
+    "addrbook": "https://snapshots.noders.services/celestia/addrbook.json",
+    "tools_url": {
+      "Celestia's complete Dashboard": "https://celestiahub.org/explorer/dashboard",
+      "State Sync": "https://noders.services/testnet/celestia/statesync",
+      "Celestia Monitoring Setup": "https://noders.services/testnet/celestia/monitoring",
+      "Celestia Public Endpoints": "https://noders.services/testnet/celestia/public-endpoints"
+    },
+        "content": {
+        "Installation Guide": "https://noders.services/testnet/celestia/install"
+    },
+    "statesync_rpc": "https://celestia-t-rpc.noders.services:443",
+    "statesync_peer": "3329e50c8e59bf9f13deee9019b18bf2ad77141f@celestia-t-rpc.noders.services:32256",
+    "snapshot_check": {
+      "kind": "unknown"
+    },
     {
       "name": "Cumulo",
       "x": "Cumulo_pro",
