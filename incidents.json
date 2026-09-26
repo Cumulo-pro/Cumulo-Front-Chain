@@ -20,7 +20,7 @@
   "node_type": ["validator"],
   "client": ["celestia-app v10.2.0-mocha", "fibre v10.2.0-mocha"],
   "note": "Cumulo deployed and registered a Fibre server for its Celestia Mocha (mocha-5) validator following the network's v10 activation (block 1,082,619), which enabled the x/valaddr module. celestia-app and fibre were both installed at v10.2.0-mocha and co-located on the validator host, with a dedicated disk for Fibre's shard store separate from the validator's own data. The Fibre host was registered on-chain via `tx valaddr set-host` (tx hash 71080EFF43C23513294F6110BF9C18744A45B9429953FA854415E17E3C36D126, code 0) and confirmed reachable on the public Valopers Fibre providers panel — Cumulo was among the first 2 of 78 active validators to have Fibre registered and reachable. An OpenTelemetry Collector and Prometheus/Grafana monitoring pipeline was subsequently deployed and verified end-to-end for Fibre server metrics. The absence of real blob traffic in endorsement panels as of this entry reflects network-wide conditions on mocha-5 rather than any issue with Cumulo's deployment.",
-  "url": "https://testnet.celestia.valopers.com/fibre/providers"
+  "url": "https://github.com/Cumulo-pro/cumulo-celestia-infra/blob/main/docs/fibre-setup/Fibre_Server_Setup.md"
 },
  {
   "id": "dymension-mainnet-infrastructure-migration-horcrux-cosigner-2026-09-24",
