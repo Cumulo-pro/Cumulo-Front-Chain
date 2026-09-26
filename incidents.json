@@ -115,7 +115,7 @@
   "node_type": ["validator"],
   "client": "gaia",
   "note": "Cumulo disabled its Cosmos Hub mainnet validator node in response to an alert circulating in a validators chat claiming a governance attack on Neutron had compromised a liquid-staking protocol and requesting Cosmos Hub validators halt while coordination took place. Operator reports independent verification through multiple sources prior to acting. As of this entry, no official advisory corroborating the claim had been located on the Cosmos Hub forum, ICF, or Cosmos Labs channels — follow-up recommended to confirm via an official source and to re-enable the validator once resolved or the alert is confirmed false.",
-  "url": ""
+  "url": "https://forum.cosmos.network/t/neutron-governance-attack-cosmos-hub-response-and-recovery-update/17369"
 },
   {
   "id": "xrplevm-mainnet-governance-proposal-38-2026-09-21",
