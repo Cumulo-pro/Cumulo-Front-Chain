@@ -1,5 +1,17 @@
 [
  {
+  "id": "starknet-mainnet-testnet-upgrade-juno-v0.16.7-2026-09-28",
+  "date": "2026-09-28T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "pending",
+  "chain": "Starknet",
+  "network": "mainnet/testnet",
+  "node_type": ["validator"],
+  "client": "juno v0.16.7",
+  "note": "Juno v0.16.7 is now the required client version for Starknet, including a blockifier bug fix, and Cumulo needs to upgrade its 3 mainnet validator nodes and its testnet node accordingly. Remaining on v0.16.6 would still support Starknet v0.14.4, but tracing and simulating transactions would fail whenever they interact with, or belong to a block that interacts with, Starknet privacy features.",
+  "url": "https://github.com/NethermindEth/juno/releases/tag/v0.16.7"
+},
+ {
   "id": "espresso-mainnet-upgrade-20260918-2026-09-25",
   "date": "2026-09-25T00:00:00Z",
   "incident_type": "upgrade",
