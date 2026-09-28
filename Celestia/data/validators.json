@@ -720,9 +720,9 @@
 },
 {
   "name": "Metatarz",
-  "webservices": "metatarzxyz.jpg",
+  "webservices": ""https://metatarz.xyz",
   "x": "metatarzxyz",
-  "validatorlogo": "",
+  "validatorlogo": "metatarzxyz.jpg",
   "tools_url": {
     "Metatarz Map": "https://metatarz.xyz/maps/celestia"
   },
