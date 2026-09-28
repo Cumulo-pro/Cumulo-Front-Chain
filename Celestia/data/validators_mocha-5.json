@@ -26,6 +26,12 @@
           "rpc": "https://celestia-testnet-rpc.itrocket.net",
           "grpc": "celestia-testnet-grpc.itrocket.net:443",
           "snapshot_pebble": "https://itrocket.net/services/testnet/celestia/",
+          "fibre_url": {
+              "Fibre server guide": "https://itrocket.net/services/testnet/celestia/fibre/"
+            },
+           "fibre_desc": {
+              "Fibre server guide": "Step-by-step guide covering installation, node connection configuration, public address registration, cheat sheet, update and delete."
+            },
            "tools": "Decentralization Analytics #validators, RPC, and all nodes; Governance Bot #with status & UPD timer notifications; Peer scanner #with real time peer uptime verification; RPC Scanner #with Raw scan results",
           "tools_url": {
             "Decentralization Analytics": "https://itrocket.net/services/testnet/celestia/decentralization/",
@@ -163,6 +169,58 @@
       "note": "Daily snapshot, filename embeds the block height (celestia-<height>.tar.lz4) and the page is static with no API or directory listing, so automated verification is disabled; last manually verified 2026-09-25 (file served 200, 38.7 GB, mocha-5)."
     }
   },
+    {
+    "name": "Bitszn",
+    "webservices": "https://testnet.celestia.valopers.com",
+    "x": "bitszn_com",
+    "validatorlogo": "bitszn.png",
+    "explorer": "https://celestia.valopers.com",
+    "bridge_explorer": "https://testnet.celestia.valopers.com/bridges",
+    "fibre_url": {
+      "Fibre validator explorer": "https://testnet.celestia.valopers.com/fibre"
+    },
+    "fibre_desc": {
+      "Fibre validator explorer": "Tracks the full Mocha-5 validator set and Fibre rollout in real time: host registration and stake readiness, provider reachability/latency/24h uptime, validator endorsements and missed blobs, blobs/namespaces/data throughput, escrow balances/deposits/withdrawals/payers, and server locations/hosting providers."
+    }
+},
+    {
+    "name": "Huginn Tech",
+    "webservices": "",
+    "x": "HuginnStake",
+    "validatorlogo": "huginn,jpg",
+    "fibre_url": {
+      "Tensile - Fibre retention verification": "https://tensile.huginn.tech/"
+    },
+    "fibre_desc": {
+      "Tensile - Fibre retention verification": "Independent, outside verification that validators keep serving the Fibre shards they signed for across the full retention window: per-endpoint DNS/TCP/TLS/consensus-key checks every 5 min with exact error and fix, ⅔-stake readiness tracking, service rate and per-obligation results once blobs flow, ed25519-signed daily exports, dispute route, and public methodology/API."
+    }
+},
+    {
+    "name": "LuckyResearch.org",
+    "webservices": "https://luckyresearch.org",
+    "x": "LuckyResearchVN",
+    "validatorlogo": "luckyresearch.jpg",
+    "api": "https://api-celestia-mocha.luckyresearch.org/",
+    "rpc": "https://rpc-celestia-mocha.luckyresearch.org/",
+    "fibre_url": {
+      "CelestiaResource Fibre": "https://celestiaresource.xyz/fibre"
+    },
+    "fibre_desc": {
+      "CelestiaResource Fibre": "Search registered Fibre providers on Mocha by validator name or address (operator/consensus addresses, registered hosts), with links to official Fibre docs, monitoring guide and intro post. Includes an Advanced section to import and inspect a Prometheus metrics snapshot locally. Shows on-chain registrations only - does not yet check live server availability or blob endorsements."
+    }
+},
+    {
+    "name": "Metatarz",
+    "webservices": "https://metatarz.xyz",
+    "x": "metatarzxyz",
+    "validatorlogo": "metatarzxyz.jpg",
+    "fibre_url": {
+      "Fibre Map": "https://metatarz.xyz/maps/celestia-fibre-testnet"
+    },
+    "fibre_desc": {
+      "Fibre Map": "Interactive map of Celestia Fibre nodes and providers on Mocha testnet (locations, hosting providers, decentralization view)."
+    }
+},
   {
     "name": "Cumulo",
     "x": "Cumulo_pro",
