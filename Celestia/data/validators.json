@@ -720,7 +720,7 @@
 },
 {
   "name": "Metatarz",
-  "webservices": ""https://metatarz.xyz",
+  "webservices": "https://metatarz.xyz",
   "x": "metatarzxyz",
   "validatorlogo": "metatarzxyz.jpg",
   "tools_url": {
