@@ -1,5 +1,17 @@
 [
  {
+  "id": "gnoland-onyx-deployment-validator-2026-09-29",
+  "date": "2026-09-29T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Gno.land",
+  "network": "testnet (onyx)",
+  "node_type": ["validator"],
+  "client": "gnoland v1.5.0",
+  "note": "Cumulo deployed a validator node on the Gno.land Onyx testnet (chain ID: onyx-1). The gnoland binary v1.5.0 was downloaded from the official chain/onyx release tag and its checksum verified against CHECKSUMS.txt; genesis.json was downloaded and its SHA256 verified against the published hash. The node was configured per the official onyx.gno.land VALIDATOR.md (persistent peers, prune strategy, consensus timings), started under a dedicated systemd service, and reached full sync (catching_up: false) without incidents. The Cumulo valoper profile was registered on-chain in the r/gnops/valopers realm using the existing operator address (g1mndkvypn3339m6yvkyutal5hk6m2yeqp5d52ly) at block height 39803, TX hash RUvTELfjH/NGayvctnNT1wnaW9LjwJTMWovXGUEs5Gc=. Entry into the active validator set (r/sys/validators/v0) is pending.",
+  "url": "https://onyx.testnets.gno.land/r/gnops/valopers:g1mndkvypn3339m6yvkyutal5hk6m2yeqp5d52ly"
+},
+ {
   "id": "starknet-mainnet-testnet-upgrade-juno-v0.16.7-2026-09-28",
   "date": "2026-09-28T00:00:00Z",
   "incident_type": "upgrade",
