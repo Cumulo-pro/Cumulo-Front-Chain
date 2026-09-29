@@ -1,5 +1,17 @@
 [
  {
+  "id": "dymension-mainnet-governance-proposal-43-2026-09-29",
+  "date": "2026-09-29T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "chain": "Dymension",
+  "network": "mainnet",
+  "proposal_number": 43,
+  "node_type": ["validator"],
+  "note": "Governance Proposal #43 on Dymension mainnet: revives Dymension's IBC connection to Injective so native USDC issued by Circle on Injective can be transferred to the Dymension Hub, ahead of Circle discontinuing USDC on Noble (minting stops October 13, 2026; Noble USDC fully paused January 12, 2027). Dymension's light client of Injective (07-tendermint-41) had expired since no relayer kept it updated, while Injective's client of Dymension remained active. The proposal executes MsgRecoverClient, replacing the expired client with a freshly created substitute (07-tendermint-83) tracking injective-1 with identical parameters (trust level 1/3, unbonding period 21 days, max clock drift 75s). Existing connection-250 and channel-47 retain their identifiers, so no new channel or USDC denom is created; Injective USDC will arrive as ibc/3713D1D8F4BA779A6B4705B8695634DBA68D84E404D39986E983914353EF5CA2. Cumulo voted YES.",
+  "url": "https://dymension.explorers.guru/proposal/43",
+  "vote": "https://dymension.explorers.guru/transaction/DA49C567C931F2DBBB7F1C74114C5A15C02C9D045081AEAF22DB2E4C3CD14171?height=23623754"
+},
+ {
   "id": "gnoland-onyx-deployment-validator-2026-09-29",
   "date": "2026-09-29T00:00:00Z",
   "incident_type": "deployment",
