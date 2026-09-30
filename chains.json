@@ -39,6 +39,10 @@
   "name": "Gnoland Mainnet",
   "url": "https://raw.githubusercontent.com/Cumulo-pro/cumulo-gnoland-infra/refs/heads/main/data/validators_mainnet.json"
 },
+    {
+"name": "Gnoland Testnet",
+  "url": "https://raw.githubusercontent.com/Cumulo-pro/cumulo-gnoland-infra/refs/heads/main/data/validators_testnet.json"
+},
  {
   "name": "Limonata Testnet",
   "url": "https://raw.githubusercontent.com/Cumulo-pro/cumulo-limonata-infra/refs/heads/main/data/validators_testnet.json"
