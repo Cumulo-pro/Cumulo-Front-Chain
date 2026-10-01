@@ -653,6 +653,9 @@
     "webservices": "https://alphab.ai/s/m/celestia",
     "x": "alphab_ai",
     "validatorlogo": "",
+   "rpc": "https://rpc-celestia.alphab.ai",
+   "api": "https://api-celestia.alphab.ai",
+   "grpc": "rpc-celestia.alphab.ai:9090",
     "tools_url": {
       "Analytics & Staking Dashboard": "https://alphab.ai/s/m/celestia"
     },
@@ -665,6 +668,9 @@
     "webservices": "https://github.com/P-OPSTeam",
     "x": "POPSTeam",
     "validatorlogo": "p-ops.jpg",
+    "rpc": "https://rpc.celestia.pops.one",
+    "api": "https://api.celestia.pops.one",
+    "grpc": "grpc.celestia.pops.one",
     "tools_url": {
       "Monitoring Stack for DA Nodes": "https://github.com/P-OPSTeam/celestia-tools/tree/main/grafana"
     },
@@ -686,7 +692,9 @@
   "x": "numiaHQ",
   "validatorlogo": "",
   "rpc": "https://public-celestia-rpc.numia.xyz",
-  "api": "https://public-celestia-lcd.numia.xyz"
+  "api": "https://public-celestia-lcd.numia.xyz",
+  "grpc": "public-celestia-grpc.numia.xyz",
+  "websocket": "wss://public-celestia-rpc.numia.xyz/websocket",
 },
 {
   "name": "Validatus",
@@ -703,7 +711,8 @@
   "x": "citizen_web3",
   "validatorlogo": "citizenweb3.png",
   "rpc": "https://rpc.celestia.citizenweb3.com",
-  "api": ""
+  "api": "https://api.celestia.citizenweb3.com",   
+  "grpc": "grpc.celestia.citizenweb3.com:443"
 },
 {
   "name": "POSTHUMAN",
