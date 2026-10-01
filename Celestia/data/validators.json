@@ -694,7 +694,7 @@
   "rpc": "https://public-celestia-rpc.numia.xyz",
   "api": "https://public-celestia-lcd.numia.xyz",
   "grpc": "public-celestia-grpc.numia.xyz",
-  "websocket": "wss://public-celestia-rpc.numia.xyz/websocket",
+  "websocket": "wss://public-celestia-rpc.numia.xyz/websocket"
 },
 {
   "name": "Validatus",
