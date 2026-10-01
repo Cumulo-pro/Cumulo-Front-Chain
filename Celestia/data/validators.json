@@ -820,6 +820,14 @@
     "Orion Agent Kit (GitHub)": "Source repo for the Orion agent kit powering the MCP server; registry listing is live, awesome-mcp-servers PR in review."
   }
 },
+  {
+  "name": "deNodes",
+  "webservices": "https://www.denodes.io/",
+  "x": "denodes_io",
+  "validatorlogo": "denodes.jpg",
+  "rpc": "https://celestia-mainnet-rpc.denodes.xyz",
+  "api": "https://celestia-mainnet-api.denodes.xyz"
+},
 {
   "name": "Cumulo",
   "x": "Cumulo_pro",
