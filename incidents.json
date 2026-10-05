@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-mocha-upgrade-celestia-app-v10.4.0-mocha-fibre-2026-10-05",
+  "date": "2026-10-05T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator", "rpc", "consensus", "fibre"],
+  "client": ["celestia-app v10.4.0-mocha", "fibre"],
+  "note": "Cumulo upgraded its Celestia Mocha testnet nodes to celestia-app v10.4.0-mocha alongside a Fibre upgrade. Notable breaking changes: remote signer connection between Fibre and the node now requires mutual TLS (mTLS), and same-host plaintext setups must use an IP literal (e.g. 127.0.0.1:26669) instead of localhost. Object storage (e.g. S3 buckets) is now optionally supported. Fibre connections now rotate every ~5 minutes with a 2-minute grace period. Upgrade procedure followed: both binaries replaced, then `celestia-appd config sync` executed to pick up new config fields before restarting. Upgrade completed without incidents and all nodes are fully operational.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v10.4.0-mocha"
+}, 
+ {
   "id": "dymension-mainnet-governance-proposal-43-2026-09-29",
   "date": "2026-09-29T00:00:00Z",
   "incident_type": "governance_proposal",
@@ -54,7 +66,7 @@
   "status": "completed",
   "chain": "Celestia",
   "network": "testnet (mocha)",
-  "node_type": ["validator"],
+  "node_type": ["validator", "fibre"],
   "client": ["celestia-app v10.2.0-mocha", "fibre v10.2.0-mocha"],
   "note": "Cumulo deployed and registered a Fibre server for its Celestia Mocha (mocha-5) validator following the network's v10 activation (block 1,082,619), which enabled the x/valaddr module. celestia-app and fibre were both installed at v10.2.0-mocha and co-located on the validator host, with a dedicated disk for Fibre's shard store separate from the validator's own data. The Fibre host was registered on-chain via `tx valaddr set-host` (tx hash 71080EFF43C23513294F6110BF9C18744A45B9429953FA854415E17E3C36D126, code 0) and confirmed reachable on the public Valopers Fibre providers panel — Cumulo was among the first 2 of 78 active validators to have Fibre registered and reachable. An OpenTelemetry Collector and Prometheus/Grafana monitoring pipeline was subsequently deployed and verified end-to-end for Fibre server metrics. The absence of real blob traffic in endorsement panels as of this entry reflects network-wide conditions on mocha-5 rather than any issue with Cumulo's deployment.",
   "url": "https://github.com/Cumulo-pro/cumulo-celestia-infra/blob/main/docs/fibre-setup/Fibre_Server_Setup.md"
