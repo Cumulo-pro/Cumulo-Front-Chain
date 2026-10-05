@@ -1,5 +1,17 @@
 [
  {
+  "id": "dymension-mainnet-governance-proposal-44-2026-10-05",
+  "date": "2026-10-05T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "chain": "Dymension",
+  "network": "mainnet",
+  "proposal_number": 44,
+  "node_type": ["validator"],
+  "note": "Governance Proposal #44 on Dymension mainnet: Register Injective USDC and allow it in pool creation. With Circle ending USDC on Noble (minting stops October 13, 2026; fully paused January 12, 2027) and the Cosmos ecosystem moving to native USDC on Injective, the proposal prepares the Hub to use it (ibc/3713D1D8F4BA779A6B4705B8695634DBA68D84E404D39986E983914353EF5CA2, trace transfer/channel-47/erc20:0xa00C59fF5a080D2b954d0c75e46E22a0c371235a, restored by Proposal #43). It makes two changes: (1) registers bank metadata for Injective USDC (symbol USDC, display unit USDC, 6 decimals), required by wallets, explorers and IRO plans; and (2) adds Injective USDC to the gamm AllowedPoolCreationDenoms allowlist, keeping all existing entries including Noble USDC, with existing pools and IRO plans unaffected. Side effect: IRO parameters cannot be updated until a DYM/Injective USDC pool exists, since the IRO parameter check prices every allowlisted token in DYM. A follow-up proposal will then switch the IRO standard launch parameters and the OTC buyback module from Noble USDC to Injective USDC. Cumulo voted YES.",
+  "url": "https://dymension.explorers.guru/proposal/44",
+  "vote": "https://dymension.explorers.guru/transaction/E530F0E151A3E9A602699AE27B6555440405F494EAB3A3A38B94122CE631893D?height=23736360"
+},
+ {
   "id": "cosmos-mainnet-governance-proposal-1058-2026-10-05",
   "date": "2026-10-05T00:00:00Z",
   "incident_type": "governance_proposal",
