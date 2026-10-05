@@ -1,5 +1,18 @@
 [
  {
+  "id": "cosmos-mainnet-governance-proposal-1058-2026-10-05",
+  "date": "2026-10-05T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "proposal_id": 1058,
+  "note": "Governance Proposal #1058 on Cosmos Hub mainnet: Text proposal authorizing the signers of the Hub recovery multisig (cosmos1z8pq5cn7tdrwwzlwm0e44fgq07e43ner6vph64) to transfer the 1,227,121 ATOM recovered after the Neutron exploit to the Neutron recovery multisig (neutron1yr29fd7uzdjp2jsq8hrta8mvyd6ex7vumn0shy) via IBC channel-569. The ATOM was originally stolen from Drop and Astroport contracts on Neutron via a governance exploit on September 22, 2026. Hub validators halted the chain at block 33,086,740 and restarted on Gaia v28.3.0 with a one-time state change moving the remaining funds to the 4-of-6 recovery multisig. This proposal is their mandate to act. No community pool funds are spent and no Hub parameters are changed. A subsequent Neutron governance proposal will return all recovered funds to affected users. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1058",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=18FCDFDF2401AB2798374C75CCBE482A328614B81A3BB59BE47812B3156952BC"
+},
+ {
   "id": "celestia-mocha-upgrade-celestia-app-v10.4.0-mocha-fibre-2026-10-05",
   "date": "2026-10-05T00:00:00Z",
   "incident_type": "upgrade",
