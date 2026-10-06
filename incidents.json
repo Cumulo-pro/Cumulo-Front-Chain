@@ -1,5 +1,16 @@
 [
  {
+  "id": "espresso-decaf-upgrade-0.6.3.7-2026-10-06",
+  "date": "2026-10-06T00:00:00Z",
+  "incident_type": "upgrade",
+  "chain": "Espresso",
+  "network": "testnet (Decaf)",
+  "node_type": ["validator"],
+  "client": "espresso-sequencer 0.6.3.7",
+  "note": "Cumulo upgraded its Espresso Decaf testnet validator to sequencer version 0.6.3.7. Binary-only upgrade, no configuration changes required. Node verified operational post-upgrade: consensus_current_view and consensus_last_voted_view tracking correctly, cliquenet peer tasks active at 31.",
+  "url": "https://github.com/EspressoSystems/espresso-network/releases/tag/0.6.3.7"
+},
+ {
   "id": "celestia-mocha-upgrade-celestia-node-v0.34.3-mocha-2026-10-06",
   "date": "2026-10-06T00:00:00Z",
   "incident_type": "upgrade",
