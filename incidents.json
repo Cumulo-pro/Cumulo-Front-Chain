@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-mocha-upgrade-celestia-node-v0.34.3-mocha-2026-10-06",
+  "date": "2026-10-06T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.34.3-mocha",
+  "note": "Cumulo upgraded its Celestia Mocha testnet bridge node to celestia-node v0.34.3-mocha. This release includes small reliability fixes and dependency updates. Upgrade completed without incidents and the bridge node is fully operational.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.34.3-mocha"
+},
+ {
   "id": "starknet-mainnet-incident-v0.14.4-upgrade-stall-2026-10-06",
   "date": "2026-10-06T08:08:00Z",
   "incident_type": "incident",
