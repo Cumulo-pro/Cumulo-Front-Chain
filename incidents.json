@@ -1,5 +1,17 @@
 [
  {
+  "id": "starknet-mainnet-incident-v0.14.4-upgrade-stall-2026-10-06",
+  "date": "2026-10-06T08:08:00Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "juno v0.16.7",
+  "note": "Starknet mainnet underwent its scheduled upgrade to v0.14.4, with maintenance starting at 08:08 UTC and marked complete at 08:13 UTC. Shortly after, block production stalled around block 15976879-15976888, with pre-confirmed polling errors reported network-wide ('bootstrap block invalid: oldest pre-confirmed slot is 15976889'), confirmed by multiple node operators in the community channel. The Starknet team identified an issue with configuration parameters applied during the upgrade, investigated from roughly 10:23 UTC, and resolved it by 10:58 UTC, restoring block production; a postmortem from the Starknet team is expected. Cumulo monitored the full incident without needing to take any corrective action on its own infrastructure, and its validators are operating normally with no impact.",
+  "url": "https://github.com/NethermindEth/juno/releases/tag/v0.16.7"
+},
+ {
   "id": "dymension-mainnet-governance-proposal-44-2026-10-05",
   "date": "2026-10-05T00:00:00Z",
   "incident_type": "governance_proposal",
