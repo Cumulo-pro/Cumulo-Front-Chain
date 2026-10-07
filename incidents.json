@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-mainnet-upgrade-celestia-app-v10.4.0-2026-10-07",
+  "date": "2026-10-07T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc", "consensus"],
+  "client": ["celestia-app v10.4.0"],
+  "note": "Cumulo upgraded its Celestia mainnet nodes to celestia-app v10.4.0, a major release introducing Fibre as a breaking change. Key highlights: privval gRPC default address moved to 127.0.0.1:26669; new config fields for heavy RPC request limiting and blockstore compaction added via `celestia-appd config sync`; two new modules x/fibre and x/valaddr; MaxAgeNumBlocks reduced from 559,940 to 404,400. Requires Go 1.26.6 and glibc 2.38 or newer (Ubuntu 22.04 and older unsupported). Upgrade signal submitted on-chain with `celestia-appd tx signal signal 10`. Upgrade completed without incidents and all nodes are fully operational.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v10.4.0"
+},
+ {
   "id": "cosmos-mainnet-gaia-v28.3.1-upgrade-2026-10-07",
   "date": "2026-10-07T00:00:00Z",
   "incident_type": "upgrade",
