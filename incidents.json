@@ -1,5 +1,17 @@
 [
  {
+  "id": "cosmos-mainnet-gaia-v28.3.1-upgrade-2026-10-07",
+  "date": "2026-10-07T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "gaia v28.3.1",
+  "note": "Cumulo upgraded its Cosmos Hub mainnet nodes to gaia v28.3.1, the public release corresponding to the previous emergency private release v28.3.0 deployed during the Neutron exploit recovery. This is an optional upgrade with no governance gate or specific block height requirement. Binary replaced and nodes restarted successfully.",
+  "url": "https://github.com/cosmos/gaia/releases/tag/v28.3.1"
+},
+ {
   "id": "espresso-decaf-upgrade-0.6.3.7-2026-10-06",
   "date": "2026-10-06T00:00:00Z",
   "incident_type": "upgrade",
