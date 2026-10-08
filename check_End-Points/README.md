@@ -19,7 +19,7 @@ Yet most existing endpoint checkers are **centralized**, based on pings or TCP c
 **check_d** was built to address these limitations by offering a decentralized, extensible, and transparent monitoring system that:
 
 - Executes **real protocol-level queries** (`GET /status`, `eth_blockNumber`, `/cosmos/auth/v1beta1/bech32`)
-- Measures **latency from multiple regions** (🇺🇸 US, 🇪🇺 EU, 🇨🇦 CA)
+- Measures **latency from multiple regions** (🇺🇸 US, 🇪🇺 EU, 🇨🇦 CA, 🇸🇬 AS)
 - Collects metrics such as **average latency, block height, reliability**, and sync status
 - Exposes structured **JSON APIs** for programmatic access
 - Provides per-network **dashboards** for live comparison and exploration
@@ -45,20 +45,22 @@ Each endpoint is tested using a **real application-level request** depending on 
 
 ## 🌐 Decentralized Architecture
 
-The system runs three independent checker pipelines in parallel:
+The system runs three independent checker pipelines in parallel (the EVM pipeline still has three regions; the RPC and REST API pipelines have four):
 
 ### RPC Checker Pipeline
 ```
 [ US Agent - server-rpc.js ]  ─┐
 [ EU Agent - server-rpc.js ]  ─┼──▶  aggregator.js  ──▶  /aggregate-rpcs  ──▶  Dashboards
-[ CA Agent - server-rpc.js ]  ─┘
+[ CA Agent - server-rpc.js ]  ─┤
+[ AS Agent - server-rpc.js ]  ─┘
 ```
 
 ### REST API Checker Pipeline
 ```
 [ US Agent - server-api.js ]  ─┐
 [ EU Agent - server-api.js ]  ─┼──▶  aggregator-api.js  ──▶  /aggregate-apis  ──▶  Dashboards
-[ CA Agent - server-api.js ]  ─┘
+[ CA Agent - server-api.js ]  ─┤
+[ AS Agent - server-api.js ]  ─┘
 ```
 
 ### EVM JSON-RPC Checker Pipeline
@@ -75,6 +77,7 @@ The system runs three independent checker pipelines in parallel:
 | RPC Checker + API Checker + EVM Checker | 🇺🇸 St. Louis, US |
 | RPC Checker + API Checker + EVM Checker | 🇪🇺 France, EU |
 | RPC Checker + API Checker + EVM Checker | 🇨🇦 Canada, CA |
+| RPC Checker + API Checker | 🇸🇬 Singapore, AS |
 | RPC Aggregator + API Aggregator + EVM Aggregator | 🇺🇸 St. Louis, US |
 
 ---
@@ -97,6 +100,7 @@ The system runs three independent checker pipelines in parallel:
 | Curated pruning data | Archival vs pruned is read from validator-declared data (`archive_rpc`), not guessed from block heights - see [Pruning / Archival Classification](#-pruning--archival-classification) below |
 | Independent TLS monitoring | Certificate validity and expiry are checked on their own hourly cycle, so they're still visible for endpoints that are otherwise down |
 | Passive rate-limit signal | `X-RateLimit-*` / `Retry-After` headers are surfaced when a server sends them, with zero extra requests |
+| Zone-weighted latency | Averages are computed per geographic zone first (CA and US count as one "North America" zone), so having two nodes in North America does not make it count double - see [Regional Latency](#-how-regional-latency-is-measured) |
 | Public ranking API | `/best-rpc`, `/rank-rpcs`, `/best-api`, `/rank-apis` return the current best endpoint(s) as JSON, filterable by region - see [Smart Endpoint Selector](#-smart-endpoint-selector) below |
 
 ---
@@ -213,13 +217,15 @@ A ranking API on top of the same aggregated data, for anyone who wants to consum
 | `GET /rank-apis?chain={chain}` | Full list of REST API endpoints for `chain`, ranked |
 | `GET /best-api?chain={chain}` | Just the current top REST API pick |
 
-Add `&region=US`, `&region=EU`, or `&region=CA` to rank by that region's smoothed latency instead of the global average - useful when you know where your users actually connect from.
+Add `&region=US`, `&region=EU`, `&region=CA`, or `&region=AS` to rank by that region's smoothed latency instead of the global average - useful when you know where your users actually connect from.
 
 **Ranking logic:**
 
 1. Filter to endpoints that are currently healthy (`Synced` for RPC, `Working` for API) - an unhealthy endpoint is never returned regardless of its historical reliability
 2. Sort by 7-day rolling `reliability` descending (the stable signal)
-3. Break ties by smoothed latency (`smoothedAverageLatency`, or the region-specific smoothed sample when `region` is set) ascending - never the raw per-cycle latency, to avoid one noisy cycle reordering the list
+3. Break ties by smoothed latency ascending - never the raw per-cycle latency, to avoid one noisy cycle reordering the list. Without `region` the comparison value is `rankLatency` (the zone-weighted smoothed latency, with the coverage adjustment below); with `region` it is that region's own smoothed sample
+
+**Coverage adjustment:** an endpoint with no data from one zone (for example because its CDN blocks one of our monitoring IPs) must not win by hiding its worst region. For ordering only, a missing zone counts as the slowest smoothed latency seen in that zone among the healthy endpoints of the same chain. `averageLatency` and `smoothedAverageLatency` always stay as measured; the ranking responses expose `rankLatency` (the value used to order) and `zonesMissing` (e.g. `["AS"]`).
 
 ```json
 {
@@ -231,7 +237,7 @@ Add `&region=US`, `&region=EU`, or `&region=CA` to rank by that region's smoothe
 }
 ```
 
-`/rank-rpcs` and `/rank-apis` return the same shape but with an `endpoints` array (each entry including `rank`, `reliability`, `smoothedLatency`, `corsEnabled`, `tls`, `pruning`, `checkedAt`) instead of a single result. Served straight from the aggregator's existing 5-minute cache - no extra fetching, no extra load on the checkers.
+`/rank-rpcs` and `/rank-apis` return the same shape but with an `endpoints` array (each entry including `rank`, `reliability`, `smoothedLatency`, `rankLatency`, `zonesMissing`, `corsEnabled`, `tls`, `pruning`, `checkedAt`) instead of a single result. Served straight from the aggregator's existing 5-minute cache - no extra fetching, no extra load on the checkers.
 
 ---
 
@@ -242,6 +248,7 @@ The system currently includes agents in:
 - 🇺🇸 United States (St. Louis)
 - 🇪🇺 Europe (France)
 - 🇨🇦 Canada
+- 🇸🇬 Singapore (Asia-Pacific, RPC and REST API checkers only)
 
 Each agent performs a **real application-layer query** from its region. Latency is measured from request sent to valid response received.
 
@@ -253,12 +260,12 @@ Each agent performs a **real application-layer query** from its region. Latency 
 
 Both aggregators follow the same design:
 
-1. Fetch results from all 3 regional agents simultaneously
+1. Fetch results from all regional agents (CA, US, EU, AS) simultaneously
 2. Match endpoints by URL across regions
 3. Aggregate latency samples per region into `latencyByRegion`, and smoothed samples into `smoothedLatencyByRegion`
-4. Compute `averageLatency` and `smoothedAverageLatency` from valid samples only (null and >8s excluded)
+4. Compute `averageLatency` and `smoothedAverageLatency` from valid samples only (null and >20s excluded), **weighted by zone**: samples are first averaged within each zone (`CA` and `US` form "North America", `EU` and `AS` are their own zones), then the zone averages are averaged. A flat average over nodes would count North America twice, since it has two of the four monitoring nodes
 5. Pass through `reliability` as reported by the agents
-6. For `checkedAt` and `lastSuccessAt`, take the most recent timestamp across the 3 regional samples
+6. For `checkedAt` and `lastSuccessAt`, take the most recent timestamp across the regional samples
 7. For `pruning`, `corsEnabled`, `rateLimitHint`, and `tls`, take whichever regional sample is non-null closest to the most recent `checkedAt`, falling back to any region that has a non-null value - a single region temporarily missing one of these doesn't blank it out for the whole merged entry
 8. Cache the merged result for 5 minutes
 9. Expose at `/aggregate-rpcs` or `/aggregate-apis`
