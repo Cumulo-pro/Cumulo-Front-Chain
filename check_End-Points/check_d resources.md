@@ -21,7 +21,7 @@ Same data as above, pre-ranked by health, reliability, and smoothed latency. See
 | Best REST API | `https://aggregate-apis.cumulo.com.es/best-api?chain=Celestia+mainnet` |
 | Ranked REST API list | `https://aggregate-apis.cumulo.com.es/rank-apis?chain=Celestia+mainnet` |
 
-Add `&region=US`, `&region=EU`, or `&region=CA` to any of the above to rank by that region's latency instead of the global average. `chain` must match a name from `chains.json` exactly, URL-encoded.
+Add `&region=US`, `&region=EU`, `&region=CA`, or `&region=AS` to any of the above to rank by that region's latency instead of the global average. Without `region`, ordering uses `rankLatency`, a zone-weighted smoothed latency where a zone with no data counts as the slowest seen there (the ranking responses also include `zonesMissing`). `chain` must match a name from `chains.json` exactly, URL-encoded.
 
 ---
 
@@ -89,6 +89,7 @@ To add or remove a validator, edit the corresponding JSON file on GitHub. Change
 | 🇺🇸 United States (St. Louis) | 3003 | 3005 | 3004 | All chains |
 | 🇪🇺 Europe (France) | 3003 | 3006* | 3004 | All chains |
 | 🇨🇦 Canada | 3003 | 3005 | 3004 | All chains |
+| 🇸🇬 Singapore | 3003 | 3005 | - | All chains (RPC and REST API only, no EVM checker) |
 
 *EU API checker uses port 3006 because port 3005 is occupied by another service on that server.
 
@@ -109,3 +110,4 @@ To add or remove a validator, edit the corresponding JSON file on GitHub. Change
 | **API Checker** | **V4** | **2026-05-31** | Puppeteer removed, fetch simple, reliability rename, latency null on error, anti-overlap, aggregator cache, EU region |
 | **API Checker** | **V5** | **2026-09-04** | Same set of additions as RPC Checker V5 above, minus `pruning` (not applicable to REST) |
 | **Aggregator** | **V2** | **2026-09-04** | Merges all V5 fields across regions (most-recent-with-fallback for point-in-time fields, averaged for latency); new `/rank-rpcs`, `/best-rpc`, `/rank-apis`, `/best-api` routes (Smart Endpoint Selector) |
+| **Aggregator** | **V3** | **2026-10-08** | Fourth monitoring region (`AS`, Singapore); latency averages weighted by zone so North America (CA+US) counts once; `rankLatency` and `zonesMissing` in the ranking responses, so an endpoint with no data from a zone no longer wins the global ranking by hiding its worst region |
