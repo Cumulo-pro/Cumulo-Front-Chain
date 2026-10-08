@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-mainnet-upgrade-celestia-node-v0.34.3-2026-10-08",
+  "date": "2026-10-08T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["bridge", "fibre"],
+  "client": ["celestia-node v0.34.3", "fibre"],
+  "note": "Cumulo upgraded its Celestia mainnet bridge node to celestia-node v0.34.3. This release adds support for v10 and Fibre, shipping a built-in Fibre client exposed under the new `fibre` JSON-RPC namespace on Light and Bridge nodes. Blobs are uploaded to Fibre Storage Providers and settled on-chain via an escrow-funded payment model driven locally by the node. The new fibre namespace exposes Submit, Upload, Download, Deposit/Withdraw, and escrow inspection methods. DA nodes also gain a verified-header state client that resolves validator sets and Fibre host addresses from the locally verified header chain via Merkle-proof verification. Upgrade completed without incidents and the bridge node is fully operational.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.34.3"
+},
+ {
   "id": "celestia-mainnet-upgrade-celestia-app-v10.4.0-2026-10-07",
   "date": "2026-10-07T00:00:00Z",
   "incident_type": "upgrade",
