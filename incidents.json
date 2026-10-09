@@ -1,5 +1,17 @@
 [
  {
+  "id": "starknet-mainnet-testnet-upgrade-juno-v0.16.8-2026-10-09",
+  "date": "2026-10-09T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "mainnet/testnet",
+  "node_type": ["validator"],
+  "client": "juno v0.16.8",
+  "note": "Cumulo upgraded its Starknet Juno nodes (3 mainnet validators and 1 testnet validator) to v0.16.8. This version changes starknet_estimateMessageFee to return at least the new minimum L1-to-L2 message fee of 5x10^13 wei (0.00005 ETH), introduced in response to a recent L1-to-L2 message spam attack, ahead of the Starknet core contract on L1 enforcing this minimum. All nodes upgraded successfully and are operating normally.",
+  "url": "https://github.com/NethermindEth/juno/releases/tag/v0.16.8"
+},
+ {
   "id": "celestia-mainnet-upgrade-celestia-node-v0.34.3-2026-10-08",
   "date": "2026-10-08T00:00:00Z",
   "incident_type": "upgrade",
