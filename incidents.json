@@ -1,5 +1,16 @@
 [
  {
+  "id": "celestia-mainnet-bridge-migration-v0.34.3-2026-10-11",
+  "date": "2026-10-11T13:34:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.34.3",
+  "note": "Cumulo migrated its Celestia mainnet bridge node to new dedicated infrastructure ahead of a planned, service-affecting datacenter maintenance scheduled for 2026-10-15 21:00–23:00 UTC, which requires the previous host to be shut down for physical relocation. The new node was built from source (celestia-node v0.34.3) and fully synchronized with a temporary identity before cutover; the original node identity was then transferred so the bridge keeps the same peer ID, with only a brief interruption during the switch. The bridge status publisher and its public TLS status endpoint were migrated alongside the node. Post-migration verification confirmed the bridge fully synchronized with the network head, the original peer ID active, and public status reporting operational."
+},
+ {
   "id": "starknet-mainnet-testnet-upgrade-juno-v0.16.8-2026-10-09",
   "date": "2026-10-09T00:00:00Z",
   "incident_type": "upgrade",
