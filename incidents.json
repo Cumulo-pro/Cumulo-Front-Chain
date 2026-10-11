@@ -1,5 +1,17 @@
 [
  {
+  "id": "warden-mainnet-governance-proposal-6-2026-10-11",
+  "date": "2026-10-11T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "in_progress",
+  "chain": "Warden",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #6 on Warden Chain mainnet: migrate WARD 1:1 from Warden Chain to an omnichain ERC-20 on Base (with BNB Chain and Robinhood Chain supported from day one), capping max supply at 2B WARD (currently unlimited), and linking WARD to Warden product revenue. Inflation drops from 10% to 5% and accrues to stakers only, while product fees fund buy-back-and-burn of WARD. No action is required from holders — wallet, staked, unbonding, and exchange-held balances convert automatically at 1:1. Warden Chain will halt at a snapshot height to be announced after the vote to execute the migration. Proposal is currently in its voting period. Cumulo voted ABSTAIN.",
+  "url": "https://mainnet.itrocket.net/warden/gov/6",
+  "vote": "https://mainnet.itrocket.net/warden/tx/B967B6D38E0A70357E95B39675CE1CEEB738A873479EA4F6F5D87F38B26D6B2A"
+},
+ {
   "id": "celestia-mainnet-bridge-migration-v0.34.3-2026-10-11",
   "date": "2026-10-11T13:34:00Z",
   "incident_type": "infrastructure_migration",
