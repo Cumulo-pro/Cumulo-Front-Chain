@@ -1,5 +1,16 @@
 [
  {
+  "id": "espresso-decaf-migration-2026-10-12",
+  "date": "2026-10-12T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "testnet (Decaf)",
+  "node_type": ["validator"],
+  "client": "espresso-sequencer 0.6.3.7",
+  "note": "Cumulo migrated its Espresso Decaf testnet validator to new dedicated infrastructure ahead of a planned, service-affecting datacenter maintenance scheduled for 2026-10-15 21:00–23:00 UTC, which requires the previous host to be shut down for physical relocation. Docker and node configuration were set up from scratch on the new machine. The P2P address was updated on the Decaf StakeTable contract via staking-cli update-p2p-addr (TX: 0xe29160b3565a5be8dd1d1206698f0e87c0f9411b23087e53d0a9187922389179). A public RPC endpoint was initially used for Sepolia L1 but replaced with an Alchemy endpoint after encountering pruned history errors on the stake table fetch. Node synced from peers without requiring a database snapshot. Post-migration the node recovered to active voting and proposal participation within the same epoch as the migration. The previous node remains online in parallel until the scheduled datacenter maintenance on 2026-10-15."
+},
+ {
   "id": "espresso-mainnet-migration-2026-10-12",
   "date": "2026-10-12T00:00:00Z",
   "incident_type": "infrastructure_migration",
