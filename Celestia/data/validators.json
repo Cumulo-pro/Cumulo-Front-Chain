@@ -113,9 +113,17 @@
     "api": "https://celestia-rest.stakeme.pro",
     "rpc": "https://celestia-rpc.stakeme.pro",
     "grpc": "da-bridge-celestia.stakeme.pro:9090",
-    "snapshot": "https://mammoblocks.io/labs?page=snapshots",
+    "snapshot": "https://labs.mammoblocks.io/",
+    "tools_url": {
+      "Labs state.sh (one-command snapshot)": "https://labs.mammoblocks.io/"
+    },
+    "tools_desc": {
+      "Labs state.sh (one-command snapshot)": "Verified Celestia state republished every ~4.5 min (app_hash checked against a quorum of independent public RPCs, no signing state included). One command: curl -sSL https://labs.mammoblocks.io/state.sh | bash. Supports mainnet and mocha-5."
+    },
     "snapshot_check": {
-      "kind": "unknown"
+      "kind": "manifest_parts",
+      "resolve_url": "https://labs.mammoblocks.io/manifests/mainnet/latest.json",
+      "base_url": "https://labs.mammoblocks.io"
     }
 },
 {
