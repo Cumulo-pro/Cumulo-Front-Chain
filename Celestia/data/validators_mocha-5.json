@@ -14,50 +14,52 @@
         "NodesChecker Bot": "https://t.me/NodesGuru_bot"
         }
     },
-    {
-        "name": "ITRocket",
-        "webservices": "https://itrocket.net/services/testnet/celestia/",
-        "x": "itrocket_team",
-        "validatorlogo": "itrocket.png",
-        "explorer": "https://testnet.itrocket.net/celestia/staking",
-          "peers": "daf2cecee2bd7f1b3bf94839f993f807c6b15fbf@celestia-testnet-peer.itrocket.net:11656",
-          "seeds": "5d0bf034d6e6a8b5ee31a2f42f753f1107b3a00e@celestia-testnet-seed.itrocket.net:11656",
-          "api": "https://celestia-testnet-api.itrocket.net",
-          "rpc": "https://celestia-testnet-rpc.itrocket.net",
-          "grpc": "celestia-testnet-grpc.itrocket.net:443",
-          "snapshot_pebble": "https://itrocket.net/services/testnet/celestia/",
-          "fibre_url": {
-              "Fibre server guide": "https://itrocket.net/services/testnet/celestia/fibre/"
-            },
-           "fibre_desc": {
-              "Fibre server guide": "Step-by-step guide covering installation, node connection configuration, public address registration, cheat sheet, update and delete."
-            },
-           "tools": "Decentralization Analytics #validators, RPC, and all nodes; Governance Bot #with status & UPD timer notifications; Peer scanner #with real time peer uptime verification; RPC Scanner #with Raw scan results",
-          "tools_url": {
-            "Decentralization Analytics": "https://itrocket.net/services/testnet/celestia/decentralization/",
-            "Governance Bot": "https://t.me/itrocket_testnet_proposal_bot",
-            "Peer scanner": "https://itrocket.net/services/testnet/celestia/#peer",
-            "RPC Scanner": "https://itrocket.net/services/testnet/celestia/public-rpc/",
-            "consensus-signal-tracker": "https://itrocket.net/services/testnet/celestia/analytics/consensus-signal-tracker/"
-          },
-     "tools_desc": {
-          "Decentralization Analytics": "Analytics view to explore node/validator distribution and decentralization signals.",
-          "Governance Bot": "Telegram bot to track governance proposals and receive status/timer notifications.",
-          "Peer scanner": "Peer uptime and connectivity checker to validate p2p reachability in real time.",
-          "RPC Scanner": "Public RPC scan results to compare endpoint availability and responsiveness.",
-          "consensus-signal-tracker": "Consensus signal dashboard to observe consensus health trends and anomalies."
-        },
-    "snapshot_check": {
-      "kind": "json_index",
-      "resolve_url": "https://server-6.itrocket.net/testnet/celestia/.current_state.json",
-      "base_url": "https://server-6.itrocket.net/testnet/celestia/",
-      "file_key": "snapshot_name",
-      "height_key": "snapshot_height",
-      "date_key": "snapshot_block_time",
-      "size_key": "snapshot_size",
-      "db_backend_key": "db_backend"
-    }
-    },
+  {
+  "name": "ITRocket",
+  "webservices": "https://itrocket.net/services/testnet/celestia/",
+  "x": "itrocket_team",
+  "validatorlogo": "itrocket.png",
+  "explorer": "https://testnet.itrocket.net/celestia/staking",
+  "peers": "daf2cecee2bd7f1b3bf94839f993f807c6b15fbf@celestia-testnet-peer.itrocket.net:11656",
+  "seeds": "b402fe40f3474e9e208840702e1b7aa37f2edc4b@celestia-testnet-seed.itrocket.net:14656",
+  "api": "https://celestia-testnet-api.itrocket.net",
+  "rpc": "https://celestia-testnet-rpc.itrocket.net",
+  "grpc": "celestia-testnet-grpc.itrocket.net:443",
+  "snapshot_pebble": "https://itrocket.net/services/testnet/celestia/",
+  "statesync_rpc": "https://celestia-testnet-rpc.itrocket.net:443",
+  "statesync_peer": "daf2cecee2bd7f1b3bf94839f993f807c6b15fbf@celestia-testnet-peer.itrocket.net:11656",
+  "fibre_url": {
+    "Fibre server guide": "https://itrocket.net/services/testnet/celestia/fibre/"
+  },
+  "fibre_desc": {
+    "Fibre server guide": "Step-by-step guide covering installation, node connection configuration, public address registration, cheat sheet, update and delete."
+  },
+  "tools": "Decentralization Analytics #validators, RPC, and all nodes; Governance Bot #with status & UPD timer notifications; Peer scanner #with real time peer uptime verification; RPC Scanner #with Raw scan results",
+  "tools_url": {
+    "Decentralization Analytics": "https://itrocket.net/services/testnet/celestia/decentralization/",
+    "Governance Bot": "https://t.me/itrocket_testnet_proposal_bot",
+    "Peer scanner": "https://itrocket.net/services/testnet/celestia/#peer",
+    "RPC Scanner": "https://itrocket.net/services/testnet/celestia/public-rpc/",
+    "consensus-signal-tracker": "https://itrocket.net/services/testnet/celestia/analytics/consensus-signal-tracker/"
+  },
+  "tools_desc": {
+    "Decentralization Analytics": "Analytics view to explore node/validator distribution and decentralization signals.",
+    "Governance Bot": "Telegram bot to track governance proposals and receive status/timer notifications.",
+    "Peer scanner": "Peer uptime and connectivity checker to validate p2p reachability in real time.",
+    "RPC Scanner": "Public RPC scan results to compare endpoint availability and responsiveness.",
+    "consensus-signal-tracker": "Consensus signal dashboard to observe consensus health trends and anomalies."
+  },
+  "snapshot_check": {
+    "kind": "json_index",
+    "resolve_url": "https://server-6.itrocket.net/testnet/celestia/.current_state.json",
+    "base_url": "https://server-6.itrocket.net/testnet/celestia/",
+    "file_key": "snapshot_name",
+    "height_key": "snapshot_height",
+    "date_key": "snapshot_block_time",
+    "size_key": "snapshot_size",
+    "db_backend_key": "db_backend"
+  }
+},
         {
       "name": "Polkachu",
       "webservices": "https://polkachu.com/testnets/celestia",
