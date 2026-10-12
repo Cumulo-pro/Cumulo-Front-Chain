@@ -837,6 +837,23 @@
   "rpc": "https://celestia-mainnet-rpc.denodes.xyz",
   "api": "https://celestia-mainnet-api.denodes.xyz"
 },
+  {
+  "name": "R1M",
+  "webservices": "https://r1m.team",
+  "x": "R1M_TEAM",
+  "validatorlogo": "r1m.jpg",
+  "tools_url": {
+    "R1M Sentinel": "https://sentinel.r1m.team/",
+    "R1M Community App": "https://app.r1m.team/celestia/"
+  },
+  "tools_desc": {
+    "R1M Sentinel": "Multi-network validator alert platform. Sends instant Telegram notifications about validator node status to help maintain high uptime. Supports Celestia mainnet and testnet validators, plus Fibre on testnet (mainnet to follow once Fibre launches).",
+    "R1M Community App": "Community hub for Celestia: ecosystem, market data, token unlocks and vesting, articles and team info, plus a Network section with staking, Signal Tracker, Consensus Monitor, Decentralization Map and Fibre/Providers pages."
+  },
+  "content_url": {
+    "R1M Community App for Celestia (blog)": "https://r1m.team/blog/r1m-comunity-app-celestia"
+  }
+},
 {
   "name": "Cumulo",
   "x": "Cumulo_pro",
