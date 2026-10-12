@@ -1,5 +1,16 @@
 [
  {
+  "id": "espresso-mainnet-migration-2026-10-12",
+  "date": "2026-10-12T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "espresso-sequencer 20260918",
+  "note": "Cumulo migrated its Espresso Mainnet validator to new dedicated infrastructure ahead of a planned, service-affecting datacenter maintenance scheduled for 2026-10-15 21:00–23:00 UTC, which requires the previous host to be shut down for physical relocation. The node configuration was set up from scratch on the new machine and synced from peers without requiring a database snapshot. The P2P address was updated on the StakeTable contract via staking-cli update-p2p-addr (TX: 0x75f894a7e2f1ab0d2dbccf607221d2b2cdc9aa4fdfdffe3ec40b0347de6cb04c). The Telegram monitoring service was also migrated and reconfigured. Post-migration verification confirmed the node voting correctly with 96.8% vote participation and 90 cliquenet peers connected."
+},
+ {
   "id": "warden-mainnet-governance-proposal-6-2026-10-11",
   "date": "2026-10-11T00:00:00Z",
   "incident_type": "governance_proposal",
