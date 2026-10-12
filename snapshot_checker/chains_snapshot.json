@@ -1,10 +1,10 @@
 [
-  {
-    "chain": "celestia",
-    "network": "mocha",
-    "label": "Celestia Mocha Testnet",
-    "source_url": "https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/main/Celestia/data/validators_mocha-5.json"
-  },
+ {
+  "chain": "celestia",
+  "network": "mocha-5",
+  "label": "Celestia Mocha-5 Testnet",
+  "source_url": "https://raw.githubusercontent.com/Cumulo-pro/Cumulo-Front-Chain/main/Celestia/data/validators_mocha-5.json"
+},
   {
     "chain": "celestia",
     "network": "mainnet",
