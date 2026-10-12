@@ -222,6 +222,26 @@
     }
 },
     {
+  "name": "STAKEME",
+  "webservices": "",
+  "x": "stakeme_pro",
+  "validatorlogo": "stakeme.jpg",
+  "explorer": "https://testnet.mammoblocks.io/",
+  "rpc": "https://celestia-testnet-rpc.stakeme.pro",
+  "snapshot": "https://labs.mammoblocks.io/?net=mocha-5",
+  "tools_url": {
+    "Labs state.sh (one-command snapshot)": "https://labs.mammoblocks.io/?net=mocha-5"
+  },
+  "tools_desc": {
+    "Labs state.sh (one-command snapshot)": "Verified Celestia state republished every ~4.5 min (app_hash checked against a quorum of independent public RPCs, no signing state included). One command: curl -sSL https://labs.mammoblocks.io/state.sh | bash -s -- --network mocha-5"
+  },
+  "snapshot_check": {
+    "kind": "manifest_parts",
+    "resolve_url": "https://labs.mammoblocks.io/manifests/mocha-5/latest.json",
+    "base_url": "https://labs.mammoblocks.io"
+  }
+},
+    {
   "name": "R1M",
   "webservices": "https://r1m.team",
   "x": "R1M_TEAM",
