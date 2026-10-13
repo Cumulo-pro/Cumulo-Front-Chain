@@ -1,5 +1,17 @@
 [
  {
+  "id": "starknet-testnet-deployment-second-attestation-validator-2026-10-13",
+  "date": "2026-10-13T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": ["juno v0.16.8", "starknet-staking-v2 v0.3.0"],
+  "note": "Cumulo deployed a second attestation validator on Starknet Sepolia testnet to provide redundancy, mirroring the active-active setup already running on mainnet. Both testnet nodes run on separate servers and attest with the same operational account, so the first confirmed transaction of each epoch wins and the other fails harmlessly. The new node runs Juno v0.16.8 in prune mode, restored from an official snapshot, with starknet-staking-v2 v0.3.0 and an L1 provider independent from the existing node to avoid correlated failures. Both nodes have been verified attesting successfully and are monitored in Prometheus and Grafana.",
+  "url": "https://github.com/NethermindEth/starknet-staking-v2/releases/tag/v0.3.0"
+},
+ {
   "id": "espresso-decaf-migration-2026-10-12",
   "date": "2026-10-12T00:00:00Z",
   "incident_type": "infrastructure_migration",
