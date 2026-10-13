@@ -306,6 +306,16 @@
       "kind": "json_index",
       "resolve_url": "https://mocha.cumulo.com.es/snapshots/index.json",
       "file_key": "latest_file"
-    }
+    },
+      "fibre_url": {
+  "Fibre Dashboard": "https://cumulo.pro/services/celestia_mocha/",
+  "Fibre Network API": "https://cumulo.pro/services/celestia_mocha/fibre-api",
+  "Fibre Telegram Bot": "https://t.me/CumuloFibreBot"
+},
+"fibre_desc": {
+  "Fibre Dashboard": "Interactive dashboard with network readiness vs the 2/3 stake threshold, per-validator performance pages, regional latency, signatures, verified blob retention, infrastructure concentration and Fibre economics. Includes weekly, monthly and yearly reports and the measurement methodology.",
+  "Fibre Network API": "Public read-only API (no key, CORS, OpenAPI 3.1, updated every minute) with Fibre network status, validator performance, signatures, blob retention checks, blobs and fees, plus Prometheus metrics and live SVG badges. Docs, examples and integration guides.",
+  "Fibre Telegram Bot": "Telegram bot with Fibre network, validator and weekly report cards (/fibre, /status <validator>, /card)."
+}
   }
 ]
