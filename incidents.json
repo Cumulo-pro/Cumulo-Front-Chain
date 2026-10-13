@@ -1,5 +1,17 @@
 [
  {
+  "id": "cosmos-testnet-gaia-v29.0.0-rc0-upgrade-2026-10-13",
+  "date": "2026-10-13T16:30:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "testnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "gaia v29.0.0-rc0",
+  "note": "Cumulo upgraded its Cosmos Hub testnet (provider) nodes to gaia v29.0.0-rc0 at block height 19,412,200, as approved by governance Proposal #329. Applied during Testnet Tuesday on October 13, 2026 at 16:30 UTC. Cumulo performed the upgrade successfully and without incidents.",
+  "url": "https://github.com/cosmos/testnets/tree/master/provider#v2900-rc0-upgrade"
+},
+ {
   "id": "starknet-testnet-deployment-second-attestation-validator-2026-10-13",
   "date": "2026-10-13T00:00:00Z",
   "incident_type": "deployment",
