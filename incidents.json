@@ -1,5 +1,17 @@
 [
  {
+  "id": "concordium-mainnet-node-v10.0.12-6-upgrade-2026-10-13",
+  "date": "2026-10-13T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Concordium",
+  "network": "mainnet",
+  "node_type": ["validator", "backup"],
+  "client": "concordium-node v10.0.12-6",
+  "note": "Cumulo upgraded its Concordium mainnet nodes to concordium-node v10.0.12-6 (image concordium/mainnet-node:10.0.12-6), a security patch adding energy metering for WebAssembly copy operations previously executable at no energy cost. The backup/standby node on BigVelia14T-2 was upgraded first as a canary, followed by the primary validator (baker) node on Velia2. Upgrade confirmed via docker inspect, reporting image concordium/mainnet-node:10.0.12-6 on the running container.",
+  "url": "https://github.com/Concordium/concordium-node/releases/tag/10.0.12-6-rc"
+},
+ {
   "id": "cosmos-testnet-gaia-v29.0.0-rc0-upgrade-2026-10-13",
   "date": "2026-10-13T16:30:00Z",
   "incident_type": "upgrade",
