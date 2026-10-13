@@ -66,7 +66,7 @@
     "db_backend_key": "db_backend"
   }
 },
-        {
+     {
       "name": "Polkachu",
       "webservices": "https://polkachu.com/testnets/celestia",
       "x": "polka_chu",
@@ -272,6 +272,24 @@
   },
   "content_url": {
     "R1M Community App for Celestia (blog)": "https://r1m.team/blog/r1m-comunity-app-celestia"
+  }
+},
+    {
+  "name": "Unity Nodes",
+  "webservices": "https://unitynodes.com",
+  "x": "UnityNodes",
+  "validatorlogo": "unitynodes.jpg",
+  "snapshot_pebble": "https://docs.unitynodes.com/snapshots/celestia-mocha",
+  "fibre_url": {
+    "Moving Fibre off the validator host (private VLAN + mTLS)": "https://forum.celestia.org/t/moving-fibre-off-the-validator-host-private-vlan-mtls-mocha-5/2314"
+  },
+  "fibre_desc": {
+    "Moving Fibre off the validator host (private VLAN + mTLS)": "Operator write-up on running Fibre on a separate server from the validator: sizing the machine (CPU flags, memory, storage and traffic), private VLAN vs WireGuard, mTLS on the signing channel, the cutover order and valaddr host registration. Also covers moving the validator from Warsaw to Singapore and the latency trade-offs."
+  },
+  "snapshot_check": {
+    "kind": "stable_url",
+    "resolve_url": "https://snapshots.unitynodes.com/celestia-mocha/latest.tar.lz4",
+    "min_size_bytes": 100000000
   }
 },
   {
