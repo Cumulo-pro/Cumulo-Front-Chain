@@ -9,10 +9,16 @@
         "api": "https://api-1.testnet.celestia.nodes.guru",
         "grpc": "grpc-1.testnet.celestia.nodes.guru:10790",
         "explorer": "https://testnet.celestia.explorers.guru/",
-        "tools": "NodesChecker Bot",
-        "tools_url": {
-        "NodesChecker Bot": "https://t.me/NodesGuru_bot"
-        }
+        "fibre_url": {
+            "Fibre Providers (explorer)": "https://testnet.celestia.explorers.guru/fibre/providers"
+          },
+          "fibre_desc": {
+            "Fibre Providers (explorer)": "Nodes.Guru explorer view of the validators serving Fibre shards on Mocha: status, location, voting power, endorsement rate (24h) and last endorsement."
+          },
+          "tools": "NodesChecker Bot",
+          "tools_url": {
+            "NodesChecker Bot": "https://t.me/NodesGuru_bot"
+          }
     },
   {
   "name": "ITRocket",
