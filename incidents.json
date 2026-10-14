@@ -1,5 +1,16 @@
 [
  {
+  "id": "celestia-mocha-5-bridge-temporary-migration-v0.34.3-mocha-2026-10-14",
+  "date": "2026-10-14T13:49:28Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mocha-5",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.34.3-mocha",
+  "note": "Cumulo temporarily relocated its Celestia Mocha (mocha-5) bridge node to separate infrastructure ahead of a planned, service-affecting hosting maintenance scheduled for 2026-10-15 21:00–23:00 UTC, which requires the original host to be shut down for physical relocation. The temporary node was built from source (celestia-node v0.34.3-mocha), isolated from other services on dedicated ports and storage, connected to a community mocha-5 consensus endpoint during the window, and fully synchronized with a temporary identity before cutover. The original node identity was then transferred, so the bridge keeps the same peer ID with only a brief interruption during the switch, and the original instance was disabled to prevent duplicate identities when its host returns. Post-migration verification confirmed the bridge synchronized with the network head, DAS catch-up complete, and the original peer ID active. The node is expected to return to its original host once the maintenance concludes."
+},
+ {
   "id": "concordium-mainnet-node-v10.0.12-6-upgrade-2026-10-13",
   "date": "2026-10-13T00:00:00Z",
   "incident_type": "upgrade",
