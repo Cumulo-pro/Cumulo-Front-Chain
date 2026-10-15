@@ -1,5 +1,17 @@
 [
  {
+  "id": "monad-testnet-upgrade-v0.16.5-2026-10-15",
+  "date": "2026-10-15T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Monad",
+  "network": "testnet",
+  "node_type": ["full_node"],
+  "client": "monad v0.16.5",
+  "note": "Cumulo upgraded its Monad testnet full node (full_Cumulo-1) to v0.16.5. Standard rolling upgrade on top of v0.16.3. triedb-path verified as /dev/triedb on both monad-bft and monad-rpc prior to upgrade. New db-stats-file flag active automatically via updated packaged unit (/home/monad/monad-bft/triedb-stats). daemon-reload required before service start. All three services restarted and verified active. Commit hash verified: 33d9d5c0314eff8c6409a810b9dbf1b6381c6b5c.",
+  "url": "https://docs.monad.xyz/node-ops/upgrade-instructions/v0.16.5"
+},
+ {
   "id": "infrastructure-mainnet-testnet-maintenance-hardware-relocation-2026-10-15",
   "date": "2026-10-15T21:00:00Z",
   "incident_type": "maintenance",
