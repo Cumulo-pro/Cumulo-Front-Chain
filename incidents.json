@@ -1,5 +1,27 @@
 [
  {
+  "id": "axone-mainnet-infrastructure-migration-validator-2026-10-14",
+  "date": "2026-10-14T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Axone",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "axoned v12.0.0",
+  "note": "Cumulo migrated its Axone mainnet validator to new dedicated infrastructure ahead of scheduled hardware maintenance. The new node was synchronized from a recent snapshot together with the chain's CosmWasm contract data, and the validator key was transferred following a strict stop-before-start procedure to rule out any double-signing risk. Signing was verified on the new node and the previous instance was permanently disabled with its key removed."
+},
+ {
+  "id": "warden-mainnet-infrastructure-migration-validator-2026-10-15",
+  "date": "2026-10-15T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Warden",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "wardend v1.0.3",
+  "note": "Cumulo migrated its Warden mainnet validator to new dedicated infrastructure ahead of scheduled hardware maintenance. The new node was synchronized from a recent snapshot running the same binary as the previous instance, and the validator key was transferred following a strict stop-before-start procedure to rule out any double-signing risk. Signing was verified on the new node and the previous instance was permanently disabled with its key removed."
+},
+ {
   "id": "starknet-testnet-public-endpoints-deployment-2026-10-15",
   "date": "2026-10-15T00:00:00Z",
   "incident_type": "deployment",
