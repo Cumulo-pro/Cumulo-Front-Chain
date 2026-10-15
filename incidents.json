@@ -1,5 +1,17 @@
 [
  {
+  "id": "starknet-testnet-public-endpoints-deployment-2026-10-15",
+  "date": "2026-10-15T00:00:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "testnet",
+  "node_type": ["rpc"],
+  "client": "juno v0.16.8",
+  "note": "Cumulo deployed public JSON-RPC and WebSocket endpoints for Starknet Sepolia testnet, served by a full (non-pruned) Juno node: https://rpc.starknet-testnet.cumulo.com.es and wss://ws.starknet-testnet.cumulo.com.es, both also available under /v0_9. The endpoints run behind TLS with per-IP rate limiting. Chain ID, block height and real-time new-heads subscriptions were verified externally.",
+  "url": "https://rpc.starknet-testnet.cumulo.com.es"
+},
+ {
   "id": "espresso-decaf-sequencer-0.6.3.12-upgrade-2026-10-14",
   "date": "2026-10-14T00:00:00Z",
   "incident_type": "upgrade",
