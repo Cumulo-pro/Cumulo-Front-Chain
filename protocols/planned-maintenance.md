@@ -8,7 +8,7 @@
 
 ## 1. Principles
 
-1. **No mainnet validator rides through the window.** Every mainnet signing key on an affected host is either moved beforehand or confirmed covered by active redundancy.
+1. **No standalone signing validator rides through the window.** Every validator that signs from an affected host and is not part of a threshold-signing setup (e.g. Horcrux) or an active redundancy scheme is migrated beforehand. This is mandatory and does not depend on the chain's downtime or jail tolerance.
 2. **Proof over assumption.** "This node doesn't sign" is verified by voting power and by checking key addresses against the live validator set, never inferred from a spreadsheet or a service name.
 3. **We shut down, the provider doesn't.** A provider hard power-off risks RAID resyncs and database corruption. Services are stopped in order and the host is powered off by us before the window starts.
 4. **The operator does not need to be awake.** Shutdown is scheduled, power-on after the work is automatic, and recovery checks are scripted in advance.
@@ -46,9 +46,9 @@
 
 ### Phase 2. Protect validators
 
-- [ ] Estimate the jail margin for each mainnet validator: `(1 − min_signed_per_window) × signed_blocks_window × block_time`. Compare with total downtime (shutdown + window + boot + catch-up).
-- [ ] Mainnet validators without comfortable margin, or where we do not want to depend on margin, are migrated using the [validator migration protocol](validator-migration.md) before the window.
-- [ ] Redundant validators (several active-active instances sharing the same key by design, e.g. Starknet attestation) are confirmed healthy on the hosts that stay up.
+- [ ] Every validator signing from an affected host that is **not** covered by threshold signing or active redundancy is migrated using the [validator migration protocol](validator-migration.md) before the window. **No exceptions based on jail margin**: downtime tolerance is not a reason to leave a standalone validator exposed.
+- [ ] Validators in a threshold-signing setup (e.g. Horcrux): confirm the remaining signers and sentries on unaffected hosts still meet the threshold without the affected host.
+- [ ] Redundant validators (several active-active instances sharing the same key by design, e.g. Starknet attestation): confirm the instances on unaffected hosts are healthy.
 - [ ] Any stray instance that should not be running (old copy of a moved node) is stopped and removed now, since two instances with the same identity is an equivocation risk regardless of the maintenance.
 
 ### Phase 3. Prepare shutdown and recovery
@@ -114,7 +114,6 @@ Two hosts (*Host A*, *Host B*) scheduled for physical relocation, 2-hour service
 **Host B** ran one instance of the Starknet mainnet validator, a backup consensus node with signing disabled, and RPC / archive / snapshot services.
 
 ### Validator protection
-- [x] Jail margin evaluated: decision taken not to depend on it for mainnet
 - [x] **Axone mainnet** migrated to destination 1; signing verified; origin disabled and key removed
 - [x] **Warden mainnet** migrated to destination 2 (separate host, to avoid concentrating mainnet validators); signing verified; origin disabled and key removed; price oracle sidecar intentionally not redeployed and disabled in config
 - [x] Origin hosts re-checked for any copy of either key, across all mount points: none found
