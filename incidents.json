@@ -1,5 +1,15 @@
 [
  {
+  "id": "infrastructure-mainnet-testnet-maintenance-hardware-relocation-2026-10-15",
+  "date": "2026-10-15T21:00:00Z",
+  "incident_type": "maintenance",
+  "status": "in_progress",
+  "chain": "Infrastructure",
+  "network": "mainnet/testnet",
+  "node_type": ["rpc", "archive", "snapshot", "backup"],
+  "note": "Scheduled physical hardware relocation by the hosting provider affecting part of Cumulo's infrastructure, with a maintenance window from 21:00 to 23:00 UTC on 2026-10-15. Ahead of the window, Cumulo migrated the Axone and Warden mainnet validators to separate dedicated infrastructure, audited every affected host to confirm that no active validator signing key remains on it, and relies on redundant signing instances for the Starknet mainnet validator, so no validator signing is affected by this maintenance. A controlled graceful shutdown of all services was scheduled before the start of the window, and the hosts are configured to power on automatically once the relocation is complete. During the window, some public RPC endpoints, archive and snapshot services, and testnet nodes will be temporarily unavailable."
+},
+ {
   "id": "axone-mainnet-infrastructure-migration-validator-2026-10-14",
   "date": "2026-10-14T00:00:00Z",
   "incident_type": "infrastructure_migration",
