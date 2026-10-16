@@ -1,5 +1,16 @@
 [
  {
+  "id": "starknet-mainnet-governance-proposal-post-quantum-l1-2026-10-16",
+  "date": "2026-10-16T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Starknet",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance poll on Starknet mainnet: Should Starknet become an independent post-quantum L1? Cumulo voted YES. This non-binding Snapshot poll gauges STRK holders' interest in researching an evolution of Starknet into an independent post-quantum L1, reducing its dependency on Ethereum for components such as the bridge and data availability. A YES vote supports further research and does not constitute approval of a transition. The poll runs for 7 days, and any future transition would be subject to a dedicated governance process.",
+  "url": "https://governance.starknet.io/#/s:starknet.eth/proposal/0x31dffc8b6f24c580540cc967fdede3d8e9d513c105d3f699a14ae65bd0dc5d74"
+},
+ {
   "id": "gnoland-onyx-v1.6.0-rc.1-upgrade-2026-10-16",
   "date": "2026-10-16T12:54:00Z",
   "incident_type": "upgrade",
