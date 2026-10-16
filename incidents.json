@@ -15,7 +15,7 @@
   "id": "infrastructure-mainnet-testnet-maintenance-hardware-relocation-2026-10-15",
   "date": "2026-10-15T21:00:00Z",
   "incident_type": "maintenance",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "Infrastructure",
   "network": "mainnet/testnet",
   "node_type": ["rpc", "archive", "snapshot", "backup"],
