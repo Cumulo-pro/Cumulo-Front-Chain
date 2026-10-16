@@ -1,5 +1,16 @@
 [
  {
+  "id": "celestia-mocha-5-bridge-return-migration-v0.34.3-mocha-2026-10-16",
+  "date": "2026-10-16T08:54:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mocha-5",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.34.3-mocha",
+  "note": "Following completion of the planned hosting maintenance, Cumulo returned its Celestia Mocha (mocha-5) bridge node from its temporary host to its original infrastructure. The temporary instance was stopped and disabled before the original one was re-enabled, ensuring the node identity was never active in two places, and the bridge resumed with the same peer ID. On restart, the bridge caught up on the blocks produced during its downtime: heights older than the retention window of its local consensus node were retrieved from the P2P network, after which block retrieval returned to the local consensus node. Post-migration verification confirmed the original peer ID active, the bridge synchronized with the network head, and DAS catch-up complete."
+},
+ {
   "id": "monad-testnet-upgrade-v0.16.5-2026-10-15",
   "date": "2026-10-15T00:00:00Z",
   "incident_type": "upgrade",
