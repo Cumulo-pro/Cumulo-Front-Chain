@@ -1,5 +1,17 @@
 [
  {
+  "id": "gnoland-onyx-v1.6.0-rc.1-upgrade-2026-10-16",
+  "date": "2026-10-16T12:54:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Gno.land",
+  "network": "testnet (Onyx)",
+  "node_type": ["validator", "rpc"],
+  "client": "gnoland v1.6.0-rc.1",
+  "note": "Cumulo completed the coordinated upgrade of its Gno.land Onyx testnet (onyx-1) nodes from v1.5.0 to v1.6.0-rc.1, scheduled by GovDAO proposal #33 at the halt after block 445000. The prebuilt gnoland binary was downloaded and verified against the release CHECKSUMS.txt before the halt, then swapped in and restarted on both the validator and the RPC node once the chain reached the halt height. After the network resumed, the validator was confirmed signing (present in /commit, priv_validator_state advancing), with full peer connectivity and no missed blocks. The mainnet full node on the same RPC host was left untouched.",
+  "url": "https://github.com/gnolang/gno/releases/tag/v1.6.0-rc.1"
+},
+ {
   "id": "celestia-mocha-5-bridge-return-migration-v0.34.3-mocha-2026-10-16",
   "date": "2026-10-16T08:54:00Z",
   "incident_type": "infrastructure_migration",
