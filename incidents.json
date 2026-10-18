@@ -1,13 +1,13 @@
 [
- {
-“id”: “celestia-mainnet-infrastructure-migration-validator-signing-2026-10-18”,
-“date”: “2026-10-18T08:18:00Z”,
-“incident_type”: “infrastructure_migration”,
-“status”: “completed”,
-“chain”: “Celestia”,
-“network”: “mainnet”,
-“node_type”: [“validator”],
-“note”: “Cumulo migrated its Celestia mainnet validator signing infrastructure to a new dedicated, hardened setup. The cutover followed an internal migration procedure, which also includes the failover process. Before the cutover, Cumulo verified the consensus key against the on-chain validator and confirmed on-chain that the validator had fully stopped signing from the previous setup. Only after that was the new signer brought online, ruling out any risk of double signing. As planned, this safety gap between the old and new signers meant the validator missed 145 blocks and one block proposal, well within the network’s downtime tolerance and with no jailing or slashing. The validator resumed signing within minutes and is fully operational, and the legacy signing infrastructure has been permanently disabled.”
+{
+  "id": "celestia-mainnet-infrastructure-migration-validator-signing-2026-10-18",
+  "date": "2026-10-18T08:18:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Cumulo migrated its Celestia mainnet validator signing infrastructure to a new dedicated, hardened setup. The cutover followed an internal migration procedure, which also includes the failover process. Before the cutover, Cumulo verified the consensus key against the on-chain validator and confirmed on-chain that the validator had fully stopped signing from the previous setup. Only after that was the new signer brought online, ruling out any risk of double signing. As planned, this safety gap between the old and new signers meant the validator missed 145 blocks and one block proposal, well within the network's downtime tolerance and with no jailing or slashing. The validator resumed signing within minutes and is fully operational, and the legacy signing infrastructure has been permanently disabled."
 },
  {
   "id": "starknet-mainnet-governance-proposal-post-quantum-l1-2026-10-16",
