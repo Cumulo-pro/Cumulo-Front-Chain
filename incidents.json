@@ -1,4 +1,16 @@
 [
+  {
+“id”: “celestia-mainnet-fibre-setup-mtls-2026-10-18”,
+“date”: “2026-10-18T00:00:00Z”,
+“incident_type”: “setup”,
+“status”: “pending”,
+“chain”: “Celestia”,
+“network”: “mainnet”,
+“node_type”: [“validator”, “consensus”],
+“client”: [“celestia-app v10.4.0”, “fibre v10.4.0”],
+“note”: “Cumulo prepared its Fibre server for Celestia Mainnet Beta ahead of the v10 activation at block 15116658, running Fibre on a host separate from the validator and connecting them through a signing link protected with mutual TLS (mTLS). The validator’s privval gRPC listener was enabled with a dedicated CA and firewalled to the Fibre host only, and Fibre reads chain state from a keyless standby full node over loopback. The mTLS link was verified before activation (connections with a valid client certificate accepted, connections without one rejected), along with external reachability of the Fibre client port and the metrics pipeline. Fibre will be started and registered on-chain via x/valaddr once mainnet reaches app version 10. The full setup, tests and lessons learned are documented publicly.”,
+“url”: “https://github.com/Cumulo-pro/cumulo-celestia-infra/blob/main/docs/fibre-setup/Fibre_Mainnet_Setup.md”
+},
 {
   "id": "celestia-mainnet-infrastructure-migration-validator-signing-2026-10-18",
   "date": "2026-10-18T08:18:00Z",
