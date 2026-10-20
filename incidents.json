@@ -27,7 +27,7 @@
     "id": "celestia-mainnet-fibre-setup-mtls-2026-10-18",
     "date": "2026-10-18T00:00:00Z",
     "incident_type": "setup",
-    "status": "pending",
+    "status": "completed",
     "chain": "Celestia",
     "network": "mainnet",
     "node_type": ["validator", "consensus"],
