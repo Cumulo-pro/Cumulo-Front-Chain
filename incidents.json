@@ -1,5 +1,17 @@
 [
    {
+  "id": "cosmos-mainnet-governance-proposal-1059-2026-10-20",
+  "date": "2026-10-20T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #1059 on Cosmos Hub mainnet: State-breaking software upgrade proposal for Gaia v29.0.0, scheduled at block height 33,618,500. If passed, validators will be required to update the Cosmos Hub binary at the specified upgrade height. Voting period runs from October 20 to October 27, 2026. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1059",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=32E0928FB62B0FE18B75846AF4FD954476C8C65233DA2C84991958AFCEF2BE33"
+},
+   {
   "id": "espresso-mainnet-sequencer-0.6.3.12-upgrade-2026-10-19",
   "date": "2026-10-19T00:00:00Z",
   "incident_type": "upgrade",
