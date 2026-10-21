@@ -1,5 +1,16 @@
 [
    {
+  "id": "genlayer-bradbury-phase2-validator-v0.6.0-rc.2-deployment-2026-10-21",
+  "date": "2026-10-21T07:08:00Z",
+  "incident_type": "deployment",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (bradbury)",
+  "node_type": ["validator"],
+  "client": "genlayer-node v0.6.0-rc.2",
+  "note": "Cumulo deployed a new validator node for GenLayer Testnet Bradbury Phase 2 running genlayer-node v0.6.0-rc.2 (Docker), replacing the Phase 1 node (v0.5.13), which was stopped and decommissioned. A new validator was registered on-chain with 50,000 GEN self-stake from vesting (validator wallet 0xe2c63756722362D78eA9AFd8232A89cb7d85fbbF, operator 0xccfce5bbb87e9a71f903a7e86acfafb6677646d6) and the operator was linked in the GenLayer portal. The node passed all doctor checks, is fully synced, primed for epoch 0 and reporting telemetry, with greybox LLM configuration enabled. Activation is expected at the start of epoch 1 on 2026-10-22 14:00 UTC."
+},
+   {
   "id": "genlayer-asimov-phase5-decommission-2026-10-21",
   "date": "2026-10-21T00:00:00Z",
   "incident_type": "decommission",
