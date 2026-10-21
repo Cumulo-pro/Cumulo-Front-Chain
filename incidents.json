@@ -1,5 +1,17 @@
 [
    {
+  "id": "genlayer-asimov-phase5-decommission-2026-10-21",
+  "date": "2026-10-21T00:00:00Z",
+  "incident_type": "decommission",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (asimov)",
+  "node_type": ["validator"],
+  "client": "genlayernode v0.5.14",
+  "note": "Cumulo decommissioned its GenLayer Asimov (asimov-phase5) validator node following the official sunset of Testnet Asimov. The genlayernode systemd service was stopped and disabled, and all associated files, binaries, backups and configuration were removed from the server. Bradbury Phase 2 (bradbury-phase2) is now the active GenLayer testnet.",
+  "url": "https://docs.genlayer.com/validators/changelog"
+},
+   {
   "id": "espresso-decaf-sequencer-0.6.3.15-upgrade-2026-10-20",
   "date": "2026-10-20T00:00:00Z",
   "incident_type": "upgrade",
