@@ -1,5 +1,17 @@
 [
    {
+  "id": "massa-mainnet-main.5.1-upgrade-2026-10-21",
+  "date": "2026-10-21T17:06:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Massa",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "massa-node MAIN.5.1",
+  "note": "Cumulo upgraded its Massa mainnet validator node to MAIN.5.1, a breaking network upgrade that locks in once 50% of the stake has updated and activates one week later. The node was built from source; the build toolchain was updated to meet the new C++20 requirement introduced by the bundled RocksDB 11.8 dependency, and service resource limits were adjusted to accommodate the post-upgrade bootstrap. The node bootstrapped successfully and resumed normal operation, with version and active roll staking verified post-upgrade.",
+  "url": "https://github.com/massalabs/massa/releases/tag/MAIN.5.1"
+},
+   {
   "id": "espresso-decaf-sequencer-0.6.3.16-security-patch-2026-10-21",
   "date": "2026-10-21T00:00:00Z",
   "incident_type": "upgrade",
