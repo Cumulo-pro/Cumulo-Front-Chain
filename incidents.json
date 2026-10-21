@@ -1,5 +1,17 @@
 [
    {
+  "id": "espresso-decaf-sequencer-0.6.3.16-security-patch-2026-10-21",
+  "date": "2026-10-21T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "testnet (Decaf)",
+  "node_type": ["validator"],
+  "client": "sequencer 0.6.3.16",
+  "note": "Cumulo upgraded its Espresso Decaf testnet validator from sequencer 0.6.3.15 to 0.6.3.16, a security patch released by the Espresso team for Decaf. The image tag was updated in docker-compose and the container recreated. Post-upgrade verification confirmed the container healthy, consensus_current_view advancing, and consensus_cliquenet_peer_tasks stable at 32, above the required minimum of 16.",
+  "url": "https://github.com/EspressoSystems/espresso-network/releases/tag/0.6.3.16"
+},
+   {
   "id": "genlayer-bradbury-phase2-validator-v0.6.0-rc.2-deployment-2026-10-21",
   "date": "2026-10-21T07:08:00Z",
   "incident_type": "deployment",
