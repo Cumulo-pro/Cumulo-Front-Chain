@@ -1,5 +1,18 @@
 [
  {
+  "id": "xrplevm-testnet-governance-proposal-50-2026-10-22",
+  "date": "2026-10-22T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "proposal_number": 50,
+  "note": "Governance Proposal #50 on XRPL EVM testnet: Remove Linkpool and Range validators from the validator set (MsgRemoveValidator). Both validators have ceased their activities and the proposal aims to keep the validator set aligned with actively participating operators. Voting ends Nov 5, 2026. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm/governance#proposal-50",
+  "vote": "https://cumulo.pro/services/xrplevm/search?q=E29F460E647190C284EE3972F977BC6D066233E4D6430B5EE209464BBF92D80C"
+},
+ {
   "id": "warden-testnet-barra-decommission-2026-10-22",
   "date": "2026-10-22T00:00:00Z",
   "incident_type": "decommission",
