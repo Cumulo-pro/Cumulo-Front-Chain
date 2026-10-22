@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-mocha-upgrade-celestia-app-v10.5.0-mocha-2026-10-22",
+  "date": "2026-10-22T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "testnet (mocha)",
+  "node_type": ["validator", "rpc", "consensus"],
+  "client": "celestia-app v10.5.0-mocha",
+  "note": "Cumulo upgraded its Celestia Mocha testnet validator, RPC, and consensus nodes to celestia-app v10.5.0-mocha. This release delivers bug fixes and improvements, adds a [health] table to the Fibre server_config.toml, and makes HTTPS mandatory for object storage. All nodes were upgraded with no incidents and verified fully operational after the upgrade.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v10.5.0-mocha"
+},
+ {
   "id": "genlayer-bradbury-phase2-rpc-key-configuration-2026-10-22",
   "date": "2026-10-22T14:48:00Z",
   "incident_type": "configuration",
