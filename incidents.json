@@ -1,5 +1,17 @@
 [
  {
+  "id": "celestia-mainnet-upgrade-celestia-app-v10.5.0-2026-10-22",
+  "date": "2026-10-22T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc", "consensus"],
+  "client": "celestia-app v10.5.0",
+  "note": "Cumulo upgraded its Celestia Mainnet Beta validator, RPC, and consensus nodes to celestia-app v10.5.0. This release delivers bug fixes and improvements, adds a [health] table to the Fibre server_config.toml, and makes HTTPS mandatory for object storage. The announcement also asks active validators to set up and register Fibre as soon as possible. All nodes were upgraded with no incidents and verified fully operational after the upgrade.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v10.5.0"
+},
+ {
   "id": "celestia-mocha-upgrade-celestia-app-v10.5.0-mocha-2026-10-22",
   "date": "2026-10-22T00:00:00Z",
   "incident_type": "upgrade",
