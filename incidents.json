@@ -1,5 +1,16 @@
 [
  {
+  "id": "genlayer-bradbury-phase2-rpc-key-configuration-2026-10-22",
+  "date": "2026-10-22T14:48:00Z",
+  "incident_type": "configuration",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (bradbury)",
+  "node_type": ["validator"],
+  "client": "genlayer-node v0.6.0-rc.2",
+  "note": "Cumulo switched its GenLayer Bradbury Phase 2 validator node to the GenLayer-provided chain RPC API key, delivered encrypted by the validator support bot and applied via the GENLAYERNODE_ROLLUP_GENLAYERCHAINRPCKEY environment variable. The node was restarted and verified healthy, with both chain RPC and WebSocket connections operational. Following the epoch advance, the validator (0xe2c63756722362D78eA9AFd8232A89cb7d85fbbF) is primed for epoch 2 and confirmed in the active validator set with 50,000 GEN self-stake."
+},
+ {
   "id": "xrplevm-testnet-governance-proposal-51-2026-10-22",
   "date": "2026-10-22T00:00:00Z",
   "incident_type": "governance_proposal",
