@@ -1,4 +1,14 @@
 [
+ {
+  "id": "warden-testnet-barra-decommission-2026-10-22",
+  "date": "2026-10-22T00:00:00Z",
+  "incident_type": "decommission",
+  "status": "completed",
+  "chain": "Warden",
+  "network": "testnet",
+  "node_type": ["validator", "rpc"],
+  "note": "Following the conclusion of the Warden barra testnet (barra_9191-1), Cumulo withdrew its validator rewards and commission and fully unbonded the validator's self-delegation (unbond tx 6FB6D3769997E05A74038EAB11E2F1C1D1B422FEDF23BFC0D16A78ACFF8F1517, height 10574807). The testnet validator node and the barra RPC node were then decommissioned: services stopped and removed, node data, binaries and source repositories deleted, and the associated P2P/RPC firewall rules closed. Testnet infrastructure fully retired; Warden mainnet operations are unaffected."
+},
    {
   "id": "espresso-mainnet-sequencer-0.6.3.16-security-update-2026-10-22",
   "date": "2026-10-22T00:00:00Z",
