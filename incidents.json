@@ -1,5 +1,15 @@
 [
  {
+  "id": "gnoland-mainnet-infrastructure-migration-validator-identity-2026-10-24",
+  "date": "2026-10-24T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Gno.land",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "As part of a restructuring of Cumulo's infrastructure, Cumulo migrated its Gno.land mainnet (gnoland-1) validator identity to a different server. The consensus key (priv_validator_key) and the P2P node key (node_key) were moved to the existing backup full node, which was stopped, reconfigured with the new identity and restarted; the original node was stopped and disabled beforehand to prevent two nodes from running with the same identity. The operator wallet was recreated on the new server from its seed phrase, without copying any keystore files. After the migration the node reports the expected consensus address and P2P node ID, is fully synchronized (catching_up: false) and its height keeps advancing. The validator has not signed any blocks to date, so there was no double-signing exposure. Registration as a valoper candidate on r/gnops/valopers is pending."
+},
+ {
   "id": "monad-testnet-decommission-full-node-2026-10-24",
   "date": "2026-10-24T00:00:00Z",
   "incident_type": "decommission",
