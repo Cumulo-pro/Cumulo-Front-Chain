@@ -1,5 +1,16 @@
 [
  {
+  "id": "monad-testnet-decommission-full-node-2026-10-24",
+  "date": "2026-10-24T00:00:00Z",
+  "incident_type": "decommission",
+  "status": "completed",
+  "chain": "Monad",
+  "network": "testnet",
+  "node_type": ["full_node"],
+  "client": "monad-testnet v0.14.1",
+  "note": "Cumulo temporarily shut down its Monad testnet full node (full_Cumulo-1, 192.155.100.132) due to infrastructure restructuring. Services monad-bft, monad-execution and monad-rpc stopped and disabled via systemd. Node identity keystores (SECP + BLS), node.toml, .env and udev rules backed up and secured externally prior to shutdown. Node will be restored once infrastructure restructuring is complete."
+},
+ {
   "id": "celestia-mainnet-upgrade-celestia-app-v10.5.0-2026-10-22",
   "date": "2026-10-22T00:00:00Z",
   "incident_type": "upgrade",
