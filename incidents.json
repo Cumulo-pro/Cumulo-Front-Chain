@@ -1,5 +1,16 @@
 [
  {
+  "id": "xrplevm-testnet-infrastructure-migration-horcrux-signer1-2026-10-26",
+  "date": "2026-10-26T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": "exrpd v11.1.0",
+  "note": "Cumulo migrated one of the chain nodes serving its Horcrux threshold signing cluster on XRPL EVM testnet to new infrastructure as part of an ongoing infrastructure restructuring. The new node was bootstrapped from Cumulo's own testnet snapshot, fully synchronized, and connected to the remote signer cluster, with firewall access restricted to the cosigners. Validator signing continued uninterrupted throughout the operation, with Horcrux double-sign protection verified, and the previous node was decommissioned."
+},
+ {
   "id": "avail-turing-infrastructure-migration-validator-2026-10-26",
   "date": "2026-10-26T00:00:00Z",
   "incident_type": "infrastructure_migration",
