@@ -1,5 +1,16 @@
 [
  {
+  "id": "avail-turing-infrastructure-migration-validator-2026-10-26",
+  "date": "2026-10-26T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Avail",
+  "network": "testnet (turing)",
+  "node_type": ["validator"],
+  "client": "avail-node v2.3.4.1",
+  "note": "Cumulo migrated its Avail Turing testnet validator to a new host as part of an ongoing restructuring of its infrastructure. The new node was deployed with the same client version, fully synchronized, and received the existing validator session keys after the previous instance was stopped, disabled and stripped of its keys, ruling out any possibility of equivocation. Block production and GRANDPA finality voting were verified on the new host, and the validator remained in the active set throughout the migration."
+},
+ {
   "id": "gnoland-mainnet-infrastructure-migration-validator-identity-2026-10-24",
   "date": "2026-10-24T00:00:00Z",
   "incident_type": "infrastructure_migration",
