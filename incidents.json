@@ -1,5 +1,18 @@
 [
  {
+  "id": "cosmos-mainnet-governance-proposal-1060-2026-10-27",
+  "date": "2026-10-27T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "proposal_id": 1060,
+  "note": "Governance Proposal #1060 on Cosmos Hub mainnet: Community pool spend proposal to migrate the Hub's 566,067.055810 USDC.n (Noble-issued) to USDC.inj (Injective-issued) via a 4-of-6 DAODAO multisig, ahead of Circle's January 12, 2027 deadline to pause the Noble USDC contract and all CCTP routes. The multisig will execute the migration through Skip:Go or the Osmosis USDC transmuter pool and return the full USDC.inj balance to the community pool. The multisig holds the funds solely for the duration of the migration. Voting period runs from October 27 to November 3, 2026. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1060",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=17D9167B6C5ED733C413D7AA51D88C4BC160D4ABB2E928853D4FADBB047F2C04"
+},
+ {
   "id": "celestia-mocha-upgrade-celestia-node-v0.34.4-mocha-2026-10-27",
   "date": "2026-10-27T00:00:00Z",
   "incident_type": "upgrade",
