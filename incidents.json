@@ -1,5 +1,18 @@
 [
  {
+  "id": "cosmos-testnet-governance-proposal-330-2026-10-27",
+  "date": "2026-10-27T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "proposal_id": 330,
+  "note": "Governance Proposal #330 on Cosmos Hub testnet: Testnet Tuesday upgrade confirmation proposal signaling that validators have upgraded to Gaia v29.0.1. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos_testnet/governance#proposal-330",
+  "vote": "https://cumulo.pro/services/cosmos_testnet/search?q=901C4EF8FAB3191C00326C11D21BB984AE5C1AD1A7A7B35422FD6F6735BCE302"
+},
+ {
   "id": "xrplevm-testnet-infrastructure-migration-horcrux-signer1-2026-10-26",
   "date": "2026-10-26T00:00:00Z",
   "incident_type": "infrastructure_migration",
