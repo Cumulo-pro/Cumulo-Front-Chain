@@ -1,5 +1,18 @@
 [
  {
+  "id": "xrplevm-testnet-governance-proposal-52-2026-10-27",
+  "date": "2026-10-27T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "proposal_number": 52,
+  "note": "Governance Proposal #52 on XRPL EVM testnet: Expedited software upgrade v11.3.0 scheduled at block height 9,280,100. The upgrade includes an update to Cosmos EVM and removes the unused SIGN_MODE_DIRECT_AUX sign mode. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm/governance#proposal-52",
+  "vote": "https://cumulo.pro/services/xrplevm/search?q=CD5B60D16AAD01D6C930E1EE7340D78A5C71D4F356D9097F4B6F759512612E72"
+},
+ {
   "id": "cosmos-testnet-governance-proposal-330-2026-10-27",
   "date": "2026-10-27T00:00:00Z",
   "incident_type": "governance_proposal",
