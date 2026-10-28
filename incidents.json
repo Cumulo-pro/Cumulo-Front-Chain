@@ -1,4 +1,16 @@
 [
+  {
+  "id": "cosmos-mainnet-gaia-v29.0.1-upgrade-2026-10-28",
+  "date": "2026-10-28T14:16:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "gaia v29.0.1",
+  "note": "Cumulo upgraded its Cosmos Hub mainnet nodes to Gaia v29.0.1 following the passage of governance Proposal #1059 (on-chain upgrade name v29.0.0). The chain halted as scheduled at block 33,618,500, the binary was replaced and the node restarted, completing the one-time cleanup of the deprecated ICS provider kv-store during the upgrade migration. The node reported 'Upgrade complete' and resumed block production and signing normally post-upgrade.",
+  "url": "https://github.com/cosmos/gaia/releases/tag/v29.0.1"
+},
 {
   "id": "warden-mainnet-decommission-halt-height-12140100-2026-10-28",
   "date": "2026-10-28T00:00:00Z",
