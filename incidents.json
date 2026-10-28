@@ -1,4 +1,16 @@
 [
+   {
+    "id": "celestia-mainnet-infrastructure-migration-validator-fibre-2026-10-28",
+    "date": "2026-10-28T07:57:00Z",
+    "incident_type": "infrastructure_migration",
+    "status": "completed",
+    "chain": "Celestia",
+    "network": "mainnet",
+    "node_type": ["validator", "consensus"],
+    "client": ["celestia-app v10.5.0", "fibre v10.5.0"],
+    "note": "Cumulo migrated its Celestia mainnet validator and its Fibre server to new infrastructure in a different geographic region, to improve the geographic decentralization of the network. The validator was moved with a deliberate pause between stopping the old host and starting the new one to rule out any double signing; the switchover cost 96 missed blocks and 1 missed proposal, far from any slashing threshold. The Fibre server was then started on a separate dedicated host, signing through a mutual TLS (mTLS) link to the validator and reading chain state from a local keyless full node, the same design used since the Fibre launch. Its new address was registered on-chain via x/valaddr within minutes, and the previous Fibre server was decommissioned only after the new one was verified and registered. A standby Fibre server is prepared on the validator host for fast failover. Both components were upgraded to v10.5.0 as part of the migration.",
+    "url": "https://github.com/Cumulo-pro/cumulo-celestia-infra/blob/main/docs/fibre-setup/Fibre_Mainnet_Setup.md"
+  },
  {
   "id": "cosmos-mainnet-governance-proposal-1060-2026-10-27",
   "date": "2026-10-27T00:00:00Z",
