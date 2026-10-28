@@ -1,5 +1,18 @@
 [
    {
+  "id": "xrplevm-mainnet-governance-proposal-39-2026-10-28",
+  "date": "2026-10-28T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "proposal_number": 39,
+  "note": "Governance Proposal #39 on XRPL EVM mainnet: Expedited software upgrade v11.3.0 scheduled at block height 8,367,050. The upgrade deploys node release v11.3.0, includes an update to Cosmos EVM, and removes the unused SIGN_MODE_DIRECT_AUX sign mode. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm_mainnet/governance#proposal-39",
+  "vote": "https://cumulo.pro/services/xrplevm_mainnet/search?q=29E50016D059DE083A46D3A0265C6A8E72074956C688888BB4D2907D4B457FA4"
+},
+   {
     "id": "celestia-mainnet-infrastructure-migration-validator-fibre-2026-10-28",
     "date": "2026-10-28T07:57:00Z",
     "incident_type": "infrastructure_migration",
