@@ -1,14 +1,14 @@
 [
-  {
+ {
   "id": "xrplevm-testnet-upgrade-v11.3.0-2026-10-28",
   "date": "2026-10-28T00:00:00Z",
   "incident_type": "upgrade",
   "status": "completed",
   "chain": "XRPL EVM",
   "network": "testnet",
-  "node_type": ["validator"],
+  "node_type": ["validator", "rpc", "snapshot"],
   "client": "xrplevm node v11.3.0",
-  "note": "Cumulo successfully upgraded its XRPL EVM testnet node to v11.3.0 at block height 9,280,100, following the passing of Proposal #52. The upgrade includes an update to Cosmos EVM and removes the unused SIGN_MODE_DIRECT_AUX sign mode. Upgrade completed without incidents.",
+  "note": "Cumulo successfully upgraded its XRPL EVM testnet nodes to v11.3.0 at block height 9,280,100, following the passing of Proposal #52. The upgrade includes an update to Cosmos EVM and removes the unused SIGN_MODE_DIRECT_AUX sign mode. Upgrade applied across validator, RPC, and snapshot nodes, all completed without incidents.",
   "url": "https://github.com/xrplevm/node/releases/tag/v11.3.0"
 },
   {
