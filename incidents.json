@@ -1,4 +1,15 @@
 [
+{
+  "id": "warden-mainnet-decommission-halt-height-12140100-2026-10-28",
+  "date": "2026-10-28T00:00:00Z",
+  "incident_type": "decommission",
+  "status": "pending",
+  "chain": "Warden Protocol",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "wardend v1.0.3",
+  "note": "Warden Protocol sunsets its chain and moves the WARD token to Base, with a coordinated final halt at block 12140100 (around 08:00 UTC on 2026-10-29) and no restart afterwards. Cumulo set halt-height = 12140100 in app.toml on its mainnet validator and RPC nodes and restarted the services, keeping both nodes fully synced and operational up to the halt. Warden Protocol infrastructure decommissioned by Cumulo."
+},
    {
   "id": "xrplevm-mainnet-governance-proposal-39-2026-10-28",
   "date": "2026-10-28T00:00:00Z",
