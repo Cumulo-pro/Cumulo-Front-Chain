@@ -51,7 +51,7 @@
   "id": "warden-mainnet-decommission-halt-height-12140100-2026-10-28",
   "date": "2026-10-28T00:00:00Z",
   "incident_type": "decommission",
-  "status": "pending",
+  "status": "completed",
   "chain": "Warden Protocol",
   "network": "mainnet",
   "node_type": ["validator", "rpc"],
