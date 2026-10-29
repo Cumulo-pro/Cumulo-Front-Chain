@@ -1,5 +1,17 @@
 [
  {
+  "id": "gnoland-onyx-gnoland-v1.7.0-rc.1-upgrade-2026-10-29",
+  "date": "2026-10-29T13:20:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Gno.land",
+  "network": "testnet (Onyx)",
+  "node_type": ["validator", "rpc"],
+  "client": "gnoland v1.7.0-rc.1",
+  "note": "Cumulo upgraded its Gno.land Onyx testnet nodes to gnoland v1.7.0-rc.1 following the coordinated chain halt after block 754000, set by executed GovDAO proposal #35. The release binary was verified against the published CHECKSUMS.txt before replacing v1.6.0-rc.1; no configuration changes were required (halt_height kept at 0). The validator was restarted at 13:20 UTC, caught up with the blocks produced by the gno-core validator in the meantime and resumed signing; the RPC node was upgraded at 15:13 UTC and is fully synchronized.",
+  "url": "https://github.com/gnolang/gno/releases/tag/v1.7.0-rc.1"
+},
+ {
   "id": "xrplevm-mainnet-upgrade-v11.3.0-2026-10-29",
   "date": "2026-10-29T13:59:34Z",
   "incident_type": "upgrade",
