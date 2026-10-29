@@ -1,5 +1,17 @@
 [
  {
+  "id": "espresso-decaf-sequencer-0.6.3.17-upgrade-2026-10-29",
+  "date": "2026-10-29T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "testnet (Decaf)",
+  "node_type": ["validator"],
+  "client": "sequencer 0.6.3.17",
+  "note": "Cumulo upgraded its Espresso Decaf testnet validator from sequencer 0.6.3.12 to 0.6.3.17, a bugfix and stability release published by the Espresso team for Decaf, skipping the intermediate 0.6.3.15 and 0.6.3.16 releases. The image tag was updated in docker-compose (backup kept) and the container recreated. Post-upgrade verification confirmed the container healthy, consensus_current_view advancing, and consensus_cliquenet_peer_tasks stable at 31, above the required minimum of 16.",
+  "url": "https://github.com/EspressoSystems/espresso-network/releases/tag/0.6.3.17"
+},
+ {
   "id": "xrplevm-testnet-upgrade-v11.3.0-2026-10-28",
   "date": "2026-10-28T00:00:00Z",
   "incident_type": "upgrade",
