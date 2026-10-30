@@ -945,6 +945,16 @@
     "kind": "json_index",
     "resolve_url": "https://snapshot.celestia.cumulo.me/snapshots/index.json",
     "file_key": "latest_file"
-  }
+  },
+  "fibre_url": {
+  "Fibre Network Monitor": "https://cumulo.pro/services/celestia_mocha/fibre",
+  "Fibre Network API": "https://cumulo.pro/services/celestia_mocha/fibre-api",
+  "Fibre Telegram Bot": "https://t.me/CumuloFibreBot"
+},
+"fibre_desc": {
+  "Fibre Network Monitor": "Open monitoring dashboard for Celestia Fibre: network readiness against the 2/3 stake threshold, per-validator Fibre hosts, signatures, verified blob retention, infrastructure concentration and Fibre activity.",
+  "Fibre Network API": "Public read-only API with OpenAPI docs, Prometheus metrics and status badges for Celestia Fibre network and validator data.",
+  "Fibre Telegram Bot": "@CumuloFibreBot: Fibre network and validator reports delivered in Telegram."
+}
 }
 ]
