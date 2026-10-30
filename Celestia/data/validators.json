@@ -586,7 +586,7 @@
     "snapshot": "https://storage.crouton.digital/mainnet/celestia/snapshots/celestia_latest.tar.lz4",
     "api": "https://celestia-mainnet-api.crouton.digital",
     "rpc": "https://celestia-mainnet-rpc.crouton.digital",
-    "grpc": "gRPC: celestia-mainnet-grpc.crouton.digital:11690",
+    "grpc": "celestia-mainnet-grpc.crouton.digital:11690",
     "addrbook": "https://storage.crouton.digital/mainnet/celestia/files/addrbook.json",
     "content_url": {
         "Node Installation": "https://crouton.digital/services/mainnets/celestia"
