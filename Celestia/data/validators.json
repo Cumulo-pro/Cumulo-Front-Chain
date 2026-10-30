@@ -189,7 +189,9 @@
 },
 "tools_desc": {
   "CelestiaResource": "Free community hub with dashboard, explorer, validators, governance, peers, and educational content for Celestia mainnet and Mocha testnet."
-}
+},
+  "fibre_url": { "CelestiaResource Fibre": "https://celestiaresource.xyz/fibre" },
+  "fibre_desc": { "CelestiaResource Fibre": "Search registered Fibre providers by validator name or address (operator and consensus addresses, registered hosts), with links to official Fibre docs and monitoring guide. Shows on-chain registrations only." }
 },
 {
   "name": "ContributionDAO",
@@ -429,6 +431,14 @@
       "height_key": "snapshotHeight",
       "date_key": "snapshotTime",
       "size_key": "snapshotSize"
+    },
+    "fibre_url": {
+      "Fibre Dashboard (mainnet)": "https://explorer.nodestake.org/celestia/tools/fibre/providers",
+      "Celestia Tracker Bot (Telegram)": "https://t.me/Celestia_TrackerBot"
+    },
+    "fibre_desc": {
+      "Fibre Dashboard (mainnet)": "NodeStake explorer view of the Fibre providers on Celestia mainnet.",
+      "Celestia Tracker Bot (Telegram)": "Telegram bot for Celestia: wallet transfers, IBC, staking and rewards, validator missed signatures and profile changes, bridge node telemetry, and Fibre registrations, endpoint changes, outages and recovery."
     }
     },
   {
@@ -460,6 +470,14 @@
       "kind": "stable_url",
       "resolve_url": "https://download.dteam.tech/celestia/mainnet/pruned/latest-snapshot",
       "min_size_bytes": 100000000
+    },
+      "fibre_url": {
+      "FibreStats": "https://fibrestats.com/",
+      "Fibre Monitoring (Grafana)": "https://github.com/DTEAMTECH/fibre-monitoring"
+    },
+    "fibre_desc": {
+      "FibreStats": "Fibre dashboard for mainnet and Mocha: provider map by country and hosting, availability and reachable voting power, blobs, data volume and settlement costs, and a history log of registrations and hosting moves.",
+      "Fibre Monitoring (Grafana)": "Self-hosted Grafana dashboard for Fibre operators: upload/download traffic, throughput and latency, storage budget, rejected uploads and pruning, payment-promise signing and Go runtime health, with optional Telegram, Discord or webhook alerts."
     }
 },
    {
@@ -475,7 +493,9 @@
       "tools_desc": {
     "Celestia sync server dashboard": "Grafana dashboard for state-sync server and node bootstrap diagnostics (RPC, seeds, peers, chain variables).",
     "celestia-bridge-metrics": "Open-source exporter/metrics tooling for Celestia bridge nodes (Prometheus-friendly metrics)."
-  }
+  },
+   "fibre_url": { "Fibre Explorer (mainnet)": "https://fibrescan.easy2stake.com/celestia" },
+   "fibre_desc": { "Fibre Explorer (mainnet)": "Independent explorer of every MsgPayForFibre blob with publisher, cost and validator endorsements, plus endpoints with history, network parameters, and didactic explanations of how Fibre works." }
 },
   {
     "name": "Bitszn",
@@ -490,7 +510,9 @@
     "tools_desc": {
     "celestia bridge explorer": "Bridge node explorer to inspect and monitor Celestia bridge infrastructure activity",
     "Celestia analytics": "P2P decentralization map and peer footprint for Celestia"
-  }
+  },
+    "fibre_url": { "Valopers Fibre (mainnet)": "https://celestia.valopers.com/fibre" },
+    "fibre_desc": { "Valopers Fibre (mainnet)": "Which validators run a Fibre server, live reachability and endorsement rate per validator, settled blobs, namespaces, analytics and escrow." }
 },
  {
         "name": "Krews",
@@ -512,7 +534,9 @@
         },
         "snapshot_check": {
           "kind": "always_ok"
-        }
+        },
+     "fibre_url": { "Fibre Dashboard (mainnet)": "https://celestia-dashboard.krews.xyz/celestia/fibre" },
+     "fibre_desc": { "Fibre Dashboard (mainnet)": "Real-time Fibre data: settled blobs, signatures, held data, providers, publishers and namespaces, plus a provider map (geo, latency/throughput and retention views). Each validator profile has a Fibre tab with signed settlements, serving checks and reach from 6 regions." }
     },
   {
     "name": "21state",
@@ -624,7 +648,9 @@
       "date_key": "snapshot_block_time",
       "size_key": "snapshot_size",
       "db_backend_key": "db_backend"
-    }
+    },
+    "fibre_url": { "Fibre Explorer (mainnet)": "https://itrocket.net/services/mainnet/celestia/analytics/fibre-monitor/" },
+    "fibre_desc": { "Fibre Explorer (mainnet)": "Fibre providers, blobs, market and prices with a blob cost calculator, signatures per blob, escrow and host-registration events, decentralization map (stake by region, country and hosting provider), and a JSON API. Beta." }
   },
    {
   "name": "Informal Systems",
@@ -861,6 +887,30 @@
   "content_url": {
     "R1M Community App for Celestia (blog)": "https://r1m.team/blog/r1m-comunity-app-celestia"
   }
+},
+  {
+  "name": "Huginn",
+  "webservices": "https://huginn.tech",
+  "x": "HuginnStake",
+  "validatorlogo": "huginntech.jpg",
+  "fibre_url": { "Tensile (mainnet)": "https://tensile.huginn.tech/" },
+  "fibre_desc": { "Tensile (mainnet)": "Real-time Celestia Fibre explorer: blobs, publishers, escrow, providers, validators and endorsements, with blob availability checks, an Atom event feed and an open API. Lets validators verify their Fibre registration and external reachability." }
+},
+  {
+  "name": "Kynraze",
+  "webservices": "https://t.co/QViJ41U8hp",
+  "x": "Kynraze",
+  "validatorlogo": "kynraze.jpg",
+  "fibre_url": { "Tenderduty fork v2.3.0": "https://github.com/kynraze/tenderduty/releases/tag/v2.3.0" },
+  "fibre_desc": { "Tenderduty fork v2.3.0": "Refactored Tenderduty fork to monitor validators, Fibre and bridge nodes in one place: Fibre registration, reachability, signing, storage and endorsements; upgrade signals; Telegram, Discord, Slack, PagerDuty and Gotify alerts; Prometheus metrics." }
+},
+  {
+  "name": "Ruby Nodes",
+  "webservices": "https://rubynodes.io/",
+  "x": "RubyNodes",
+  "validatorlogo": "rubynodes.jpg",
+  "fibre_url": { "fibre-canary": "https://github.com/ruby-nodes/fibre-canary" },
+  "fibre_desc": { "fibre-canary": "CLI that tests Fibre end to end: uploads a real blob, settles the payment, downloads it and checks the bytes match. Supports Mocha and Mainnet (mainnet runs use real TIA)." }
 },
 {
   "name": "Cumulo",
