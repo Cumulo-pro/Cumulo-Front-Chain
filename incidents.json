@@ -1,5 +1,17 @@
 [
  {
+  "id": "gnoland-mainnet-gnoland-v1.7.0-upgrade-2026-10-30",
+  "date": "2026-10-30T09:51:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Gno.land",
+  "network": "mainnet",
+  "node_type": ["rpc", "backup"],
+  "client": "gnoland v1.7.0",
+  "note": "Cumulo upgraded its Gno.land mainnet (gnoland-1) nodes to gnoland v1.7.0 following the coordinated chain halt at block 1183000 (09:04 UTC), set by GovDAO proposal #15; mainnet skipped v1.6.0, so this release also carries v1.6.0's changes. The release binary was verified against the published CHECKSUMS.txt and replaced the previous source-built binary, with no configuration changes required (halt_height kept at 0). The RPC and backup full nodes were restarted on v1.7.0 at 09:51 and 09:55 UTC respectively, caught up with the blocks produced since the halt and are fully synchronized.",
+  "url": "https://github.com/gnolang/gno/releases/tag/v1.7.0"
+},
+ {
   "id": "gnoland-onyx-gnoland-v1.7.0-rc.1-upgrade-2026-10-29",
   "date": "2026-10-29T13:20:00Z",
   "incident_type": "upgrade",
