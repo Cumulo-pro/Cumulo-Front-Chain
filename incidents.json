@@ -1,5 +1,17 @@
 [
  {
+  "id": "espresso-mainnet-sequencer-0.6.3.17-upgrade-2026-10-30",
+  "date": "2026-10-30T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "sequencer 0.6.3.17",
+  "note": "Cumulo upgraded its Espresso mainnet validator from sequencer 20260918 to 0.6.3.17, a bugfix and stability release published by the Espresso team for mainnet. The jump also includes the intermediate 0.6.3.12 release and the 0.6.3.16 security update. The image tag was updated in docker-compose (backup kept) and the container recreated. Post-upgrade verification confirmed the container healthy, consensus_current_view advancing, and consensus_cliquenet_peer_tasks stable at 89, well above the required minimum of 16.",
+  "url": "https://github.com/EspressoSystems/espresso-network/releases/tag/0.6.3.17"
+},
+ {
   "id": "gnoland-mainnet-gnoland-v1.7.0-upgrade-2026-10-30",
   "date": "2026-10-30T09:51:00Z",
   "incident_type": "upgrade",
