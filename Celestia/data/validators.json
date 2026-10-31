@@ -287,6 +287,12 @@
     "Celestia Mainnet Turkish Script Guide": "https://github.com/okannako/celestiamainnetscript",
     "Celestia Mocha Testnet Turkish Step by Step Guide": "https://github.com/okannako/celestiamocha",
     "Celestia Mocha Testnet Turkish Script Guide": "https://github.com/okannako/celestiamochascript"
+  },
+  "fibre_url": {
+    "CelestiaWatch": "https://github.com/okannako/celestiawatch-en"
+  },
+  "fibre_desc": {
+    "CelestiaWatch": "Open-source bash tool for validator + Fibre operators (Mainnet and Mocha-5): one-command health check (sync, active set, versions, Fibre service and port 7980, on-chain set-host, exposed ports, NTP, disk) and Telegram alerts every minute. Read-only, runs as a sandboxed user, removable with one command."
   }
 },
 {
