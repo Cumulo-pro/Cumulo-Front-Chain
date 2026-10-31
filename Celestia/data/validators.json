@@ -896,9 +896,15 @@
   "webservices": "https://huginn.tech",
   "x": "HuginnStake",
   "validatorlogo": "huginntech.jpg",
-  "fibre_url": { "Tensile (mainnet)": "https://tensile.huginn.tech/" },
-  "fibre_desc": { "Tensile (mainnet)": "Real-time Celestia Fibre explorer: blobs, publishers, escrow, providers, validators and endorsements, with blob availability checks, an Atom event feed and an open API. Lets validators verify their Fibre registration and external reachability." }
-},
+  "tools_url": {
+  "Celestia Validator Monitoring": "https://github.com/Huginn-Tech/celestia-validator-monitoring"
+  },
+  "tools_desc": {
+    "Celestia Validator Monitoring": "Open-source monitoring and alerting stack behind Huginn's Celestia validator. Covers consensus, Fibre, remote signing and network upgrades; other operators can run it too."
+  }
+    "fibre_url": { "Tensile (mainnet)": "https://tensile.huginn.tech/" },
+    "fibre_desc": { "Tensile (mainnet)": "Real-time Celestia Fibre explorer: blobs, publishers, escrow, providers, validators and endorsements, with blob availability checks, an Atom event feed and an open API. Lets validators verify their Fibre registration and external reachability." }
+  },
   {
   "name": "Kynraze",
   "webservices": "https://t.co/QViJ41U8hp",
