@@ -1,5 +1,16 @@
 [
  {
+  "id": "genlayer-bradbury-phase2-validator-v0.6.0-rc.3-upgrade-2026-11-01",
+  "date": "2026-11-01T06:34:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (bradbury)",
+  "node_type": ["validator"],
+  "client": "genlayer-node v0.6.0-rc.3",
+  "note": "Cumulo upgraded its GenLayer Bradbury Phase 2 validator node from v0.6.0-rc.2 to v0.6.0-rc.3 (Docker image yeagerai/genlayer-node:v0.6.0-rc.3, GenVM v0.6.0-rc10 unchanged). The release includes security updates (Go 1.26.10, echo v4.16.3), fewer chain RPC calls, a fix for leader strikes on missed reveals, and improved /health and doctor reporting. Pre-upgrade doctor checks passed, including operator key unlock. After a brief restart for GenVM precompilation, the node returned healthy and the validator (0xe2c63756722362D78eA9AFd8232A89cb7d85fbbF) remains in the active set."
+},
+ {
   "id": "espresso-mainnet-sequencer-0.6.3.17-upgrade-2026-10-30",
   "date": "2026-10-30T00:00:00Z",
   "incident_type": "upgrade",
