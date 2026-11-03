@@ -1,5 +1,17 @@
 [
  {
+  "id": "cosmos-hub-provider-gaia-v29.1.0-rc0-upgrade-2026-11-03",
+  "date": "2026-11-03T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "testnet (provider)",
+  "node_type": ["validator"],
+  "client": "gaia v29.1.0-rc0",
+  "note": "Cumulo upgraded its Cosmos Hub provider testnet validator to Gaia v29.1.0-rc0 as part of Testnet Tuesday, following the governance-gated upgrade approved in Proposal #332 (on-chain upgrade name v29.1.0). The node halted as scheduled at block 19,696,000, the binary checksum was verified against the on-chain upgrade plan, and the gaiad-testnet service was restarted with the new release. The node resumed block production and signing normally post-upgrade.",
+  "url": "https://explorer.polypore.xyz/provider/gov/332"
+},
+ {
   "id": "genlayer-bradbury-phase2-validator-v0.6.0-rc.3-upgrade-2026-11-01",
   "date": "2026-11-01T06:34:00Z",
   "incident_type": "upgrade",
