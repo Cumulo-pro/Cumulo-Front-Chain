@@ -1,5 +1,16 @@
 [
  {
+  "id": "infrastructure-mainnet-testnet-cve-2026-98432-mitigation-2026-11-03",
+  "date": "2026-11-03T00:00:00Z",
+  "incident_type": "configuration",
+  "status": "completed",
+  "chain": "Infrastructure",
+  "network": "mainnet/testnet",
+  "node_type": ["validator", "rpc", "consensus", "bridge", "snapshot"],
+  "note": "Cumulo applied mitigations for CVE-2026-98432, a critical use-after-free in the Linux kernel IPv4 TCP handshake (CVSS 9.8), across its entire server fleet, following the security advisories issued by Celestia and the Cosmos Hub. MPTCP and TCP request migration were disabled persistently via sysctl, and the node services exposing MPTCP listeners (validator, consensus, RPC, bridge and snapshot nodes on Celestia, Cosmos Hub, Starknet, Dymension, Gno.land, Axone and Limonata) were restarted in a controlled sequence to avoid double signing and missed attestations. In addition, a persistent firewall rule dropping inbound IPv4 TCP packets carrying IP options was deployed on all servers, covering the underlying flaw independently of MPTCP. All nodes were verified as synchronized and signing after the restarts. As of this date Ubuntu had not released a patched kernel, so the mitigations remain in place.",
+  "url": "https://www.cve.org/CVERecord?id=CVE-2026-98432"
+},
+ {
   "id": "cosmos-hub-provider-gaia-v29.1.0-rc0-upgrade-2026-11-03",
   "date": "2026-11-03T00:00:00Z",
   "incident_type": "upgrade",
