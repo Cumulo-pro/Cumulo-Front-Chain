@@ -1,5 +1,18 @@
 [
  {
+  "id": "cosmos-testnet-governance-proposal-333-2026-11-04",
+  "date": "2026-11-04T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "proposal_id": 333,
+  "note": "Governance Proposal #333 on Cosmos Hub testnet: Migrates the Stellar (SCP) light client 08-wasm-464 to v0.2.0 by storing the new wasm code (checksum 0ca42b59f9da6e3609cf9f0dd6fdf523837936efa8bd865be581cc8b9bf4429f, previously 26d42704e9a6dfcf38d678419dc419aca29121b9391e72be158e8649bb55002d for v0.1.0) via MsgStoreCode and MsgMigrateContract. Stellar testnet moved to Protocol 30 on 2026-11-03, whose millisecond close times (CAP-88) v0.1.0 cannot read, so the client stopped updating at ledger 5533483 and would expire on 2026-11-17 without the migration. The migration changes only the code; client state, quorum configuration, consensus states, client id and counterparty are preserved. Testnet request; the code has not yet had a third-party audit. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos_testnet/governance#proposal-333",
+  "vote": "https://cumulo.pro/services/cosmos_testnet/search?q=28593B9449B90CB7BF5227E13605A3B7669BF8C56BD5743F56F4161AA57D9D61"
+},
+ {
   "id": "espresso-decaf-sequencer-0.7.0.5-upgrade-2026-11-04",
   "date": "2026-11-04T00:00:00Z",
   "incident_type": "upgrade",
