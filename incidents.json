@@ -1,5 +1,16 @@
 [
  {
+  "id": "espresso-decaf-migration-0.7.0.5-2026-11-04",
+  "date": "2026-11-04T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "testnet (Decaf)",
+  "node_type": ["validator"],
+  "client": "espresso-sequencer 0.7.0.5",
+  "note": "Cumulo migrated its Espresso Decaf testnet validator to new infrastructure right after upgrading it to 0.7.0.5. The new node runs in Docker with user namespace remapping and no-new-privileges, with the key file readable only by the container and the API bound to localhost only. The P2P address was updated on the Decaf StakeTable contract via staking-cli update-p2p-addr (TX: 0xba5d436a101a43adc5d4fef4c17cab59989ffe777dcfefbb396b7112e6d2c056). The node was synced from scratch from peers with no database copy. It stayed at view 1 for about 80 minutes after the address change, during which two fresh-database restarts and a temporary downgrade to 0.6.3.12 were tried, so the cause of the delay could not be isolated. Once it started voting it was upgraded back to 0.7.0.5 keeping the database, and the previous node was shut down. Validator proposals and votes were missed during the transition (about 79 of 84 proposal slots in the affected epoch) and then recovered. Post-migration the node votes on every view with about 27 cliquenet peers connected. A higher-than-expected rate of Postgres serialization-conflict warnings is being monitored."
+},
+ {
   "id": "starknet-mainnet-testnet-juno-v0.17.0-upgrade-2026-11-04",
   "date": "2026-11-04T00:00:00Z",
   "incident_type": "upgrade",
