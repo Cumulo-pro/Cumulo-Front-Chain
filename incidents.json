@@ -1,5 +1,17 @@
 [
  {
+  "id": "avail-infinity-turing-infrastructure-migration-rpc-2026-11-04",
+  "date": "2026-11-04T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Avail",
+  "network": "testnet (infinity turing)",
+  "node_type": ["rpc"],
+  "client": "avail-node v2.5.0.0-infinity-turing",
+  "note": "Cumulo migrated its Avail Infinity Turing archive RPC node to a new host as part of an ongoing restructuring of its infrastructure. The node was built from source at the v2.5.0.0-infinity-turing release, fully synchronized in archive mode, and placed behind a TLS-terminated reverse proxy with WebSocket support. The public endpoint was switched over and verified against the official Infinity Turing genesis hash, after which the previous instance was stopped and disabled.",
+  "url": "https://github.com/availproject/avail/releases/tag/v2.5.0.0-infinity-turing"
+},
+ {
   "id": "espresso-decaf-migration-0.7.0.5-2026-11-04",
   "date": "2026-11-04T00:00:00Z",
   "incident_type": "infrastructure_migration",
