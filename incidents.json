@@ -1,5 +1,16 @@
 [
  {
+  "id": "cosmos-hub-testnet-infrastructure-migration-rpc-2026-11-04",
+  "date": "2026-11-04T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "testnet",
+  "node_type": ["rpc"],
+  "client": "gaia v29.1.0-rc0",
+  "note": "Cumulo migrated its Cosmos Hub testnet public RPC infrastructure to a new server. The node was restored from a recent snapshot and fully synchronized before traffic was switched. Public endpoints cosmos.rpc.testnet.cumulo.me, cosmos.api.testnet.cumulo.me and cosmos.grpc.testnet.cumulo.me were moved with a new nginx reverse proxy configuration and SSL certificates. The block explorer data collector (explorer.cosmos-testnet.cumulo.me) and the addrbook exporter (files.cumulo.me) were also redeployed on the new server. All services and monitoring were verified as operational after the migration."
+},
+ {
   "id": "avail-infinity-turing-infrastructure-migration-rpc-2026-11-04",
   "date": "2026-11-04T00:00:00Z",
   "incident_type": "infrastructure_migration",
