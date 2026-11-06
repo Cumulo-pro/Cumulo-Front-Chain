@@ -1,5 +1,5 @@
 [
- {
+{
   "id": "celestia-mocha5-v10.6.0-mocha-upgrade-2026-11-06",
   "date": "2026-11-06T00:00:00Z",
   "incident_type": "upgrade",
@@ -8,7 +8,7 @@
   "network": "testnet (mocha)",
   "node_type": ["validator", "rpc", "backup", "snapshot"],
   "client": ["celestia-app v10.6.0-mocha", "fibre v10.6.0-mocha"],
-  "note": "Cumulo upgraded its Celestia Mocha-5 testnet infrastructure to celestia-app and Fibre v10.6.0-mocha, following the official Mocha upgrade announcement (celestia-core v0.42.5 to v0.42.8 consensus/mempool/p2p/JSON-RPC fixes, a Hyperlane ECDSA/ISM bump, ShareProof/RowProof position verification, Fibre fixes for non-canonical escrow deposits and payment-promise cache budget re-checks, and an IBC capability module fork bump). The source build on Velia 6 hit intermittent network failures downloading the multiplexer's embedded historical binaries (v3-v9) from GitHub release assets; confirmed as transient (a manual curl to the same asset succeeded) rather than a firewall block, and resolved by re-running `make install`, which resumes and skips binaries already downloaded and checksum-verified. On BigVelia14T-2, the Mocha-5 RPC, backup validator, and snapshot services were all rebuilt against the same binary and restarted successfully, confirmed healthy and producing matching block hashes at the same height post-restart. During the rollout, two near-misses with Cumulo's co-located mainnet infrastructure were caught before being applied: an attempt to install the mocha-tagged binary onto the mainnet standby consensus node on VeliaMon-Test was stopped after the systemd unit's own description identified it as a mainnet node; separately, Fibre on VeliaMon-Test's mainnet-facing service did end up running the v10.6.0-mocha binary, which Mon confirmed was intended. Pending: explicit confirmation that the Mocha-5 validator service on Velia 6 was restarted and is running v10.6.0-mocha.",
+  "note": "Cumulo upgraded its Celestia Mocha-5 testnet infrastructure to celestia-app and Fibre v10.6.0-mocha. This release includes celestia-core v0.42.8 (consensus block propagation, CAT mempool, p2p peer identity validation, and JSON-RPC fixes), a Hyperlane bump tightening ECDSA signature and ISM routing checks, ShareProof/RowProof position verification, Fibre fixes rejecting non-canonical escrow deposits and re-checking payment-promise cache budgets, and an IBC capability module fork bump. Applied across the Mocha-5 validator, RPC, backup validator, and snapshot nodes; all verified healthy and fully synchronized post-upgrade.",
   "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v10.6.0-mocha"
 },
  {
