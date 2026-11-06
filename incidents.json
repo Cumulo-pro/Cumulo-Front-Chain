@@ -1,4 +1,15 @@
 [
+  {
+  "id": "genlayer-bradbury-phase2-validator-restart-2026-11-06",
+  "date": "2026-11-06T14:08:00Z",
+  "incident_type": "maintenance",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (bradbury)",
+  "node_type": ["validator"],
+  "client": "genlayer-node v0.6.0-rc.3",
+  "note": "Cumulo restarted its GenLayer Bradbury Phase 2 validator node at the request of the GenLayer team, as a mitigation for an identified node bug pending a fixed release. The node returned healthy on v0.6.0-rc.3 within seconds, with chain sync and all health conditions confirmed operational. The upgrade to the fixed version will follow once it is announced."
+},
 {
   "id": "celestia-mocha5-v10.6.0-mocha-upgrade-2026-11-06",
   "date": "2026-11-06T00:00:00Z",
