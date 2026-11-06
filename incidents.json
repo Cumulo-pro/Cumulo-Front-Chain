@@ -3,7 +3,7 @@
   "id": "celestia-mocha5-v10.6.0-mocha-upgrade-2026-11-06",
   "date": "2026-11-06T00:00:00Z",
   "incident_type": "upgrade",
-  "status": "in_progress",
+  "status": "completed",
   "chain": "Celestia",
   "network": "testnet (mocha)",
   "node_type": ["validator", "rpc", "backup", "snapshot"],
