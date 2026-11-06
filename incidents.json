@@ -1,5 +1,17 @@
 [
  {
+  "id": "starknet-mainnet-infrastructure-migration-validator-rotation-2026-11-06",
+  "date": "2026-11-06T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Starknet",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": ["juno v0.16.8", "starknet-staking-v2 v0.3.0"],
+  "note": "Cumulo rotated one of its Starknet mainnet attestation nodes to allow a scheduled server rebuild. A previously retired server was redeployed with Juno v0.16.8 in prune mode, restored from an official snapshot, and starknet-staking-v2 v0.3.0, and was verified winning attestation races before the server under maintenance was taken offline. The three-node active-active setup with the shared operational account was maintained throughout, with no missed epochs.",
+  "url": "https://github.com/NethermindEth/starknet-staking-v2/releases/tag/v0.3.0"
+},
+ {
   "id": "espresso-decaf-upgrade-0.7.0.6-2026-11-05",
   "date": "2026-11-05T00:00:00Z",
   "incident_type": "upgrade",
