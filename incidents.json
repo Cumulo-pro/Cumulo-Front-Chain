@@ -1,4 +1,14 @@
 [
+  {
+  "id": "xrplevm-testnet-incident-evm-json-rpc-websocket-2026-11-07",
+  "date": "2026-11-07T06:50:00Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["rpc"],
+  "note": "Cumulo restored the public EVM JSON-RPC and WebSocket endpoints of its XRPL EVM testnet RPC node. The EVM JSON-RPC server had been disabled in the node configuration, causing the JSON-RPC endpoint to return HTTP 502. The EVM WebSocket server failed to start due to a local port conflict, and the WebSocket endpoint was being proxied to an unrelated service. The JSON-RPC server was enabled, the WebSocket server was moved to a dedicated port, and the reverse proxy was updated accordingly. Both endpoints were verified as fully operational and serving data in sync with the chain tip."
+},
 {
   "id": "genlayer-bradbury-phase2-validator-v0.6.0-rc.4-upgrade-2026-11-07",
   "date": "2026-11-07T05:00:00Z",
