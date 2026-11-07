@@ -1,5 +1,16 @@
 [
   {
+  "id": "genlayer-bradbury-phase2-validator-v0.6.0-rc.5-upgrade-2026-11-07",
+  "date": "2026-11-07T14:20:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (bradbury)",
+  "node_type": ["validator"],
+  "client": "genlayer-node v0.6.0-rc.5",
+  "note": "Cumulo upgraded its GenLayer Bradbury Phase 2 validator node from v0.6.0-rc.4 to v0.6.0-rc.5 (Docker image yeagerai/genlayer-node:v0.6.0-rc.5, GenVM v0.6.0-rc10 unchanged). This urgent bug-fix release corrects idle leader handling, so that committee members wait one commit slot after the commit window before calling processIdleness and nodes outside the committee call leaderIdleness first, avoiding slashing risk on older versions. Pre-upgrade doctor checks passed, and the node returned healthy after GenVM precompilation."
+},
+  {
   "id": "xrplevm-testnet-incident-evm-json-rpc-websocket-2026-11-07",
   "date": "2026-11-07T06:50:00Z",
   "incident_type": "incident",
