@@ -1,4 +1,15 @@
 [
+{
+  "id": "genlayer-bradbury-phase2-validator-v0.6.0-rc.4-upgrade-2026-11-07",
+  "date": "2026-11-07T05:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (bradbury)",
+  "node_type": ["validator"],
+  "client": "genlayer-node v0.6.0-rc.4",
+  "note": "Cumulo upgraded its GenLayer Bradbury Phase 2 validator node from v0.6.0-rc.3 to v0.6.0-rc.4 (Docker image yeagerai/genlayer-node:v0.6.0-rc.4, GenVM v0.6.0-rc10 unchanged). This release carries the permanent fix for the validator duty stall of 2026-11-05 (INC-2026-11-05), along with fixes for stuck commit phases, replacement leader duties and sync after quiet chain periods. Pre-upgrade doctor checks passed, and the node returned healthy after GenVM precompilation."
+},
   {
   "id": "genlayer-bradbury-phase2-validator-restart-2026-11-06",
   "date": "2026-11-06T14:08:00Z",
