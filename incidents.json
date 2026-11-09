@@ -1,5 +1,15 @@
 [
   {
+  "id": "celestia-mainnet-incident-network-connectivity-2026-11-09",
+  "date": "2026-11-09T07:30:45Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "The Celestia mainnet validator lost external network connectivity for approximately 9 minutes (07:30:45–07:40:00 UTC) due to a temporary upstream routing issue in the hosting provider's network. The server and node services remained fully operational throughout the event, with no restarts or system errors. Connectivity was restored by the provider, and the validator automatically reconnected to peers, caught up with the chain and resumed normal signing without manual intervention. The root cause was confirmed by the provider as a temporary routing issue on their side."
+},
+  {
   "id": "celestia-mainnet-v10.6.0-upgrade-2026-11-09",
   "date": "2026-11-09T00:00:00Z",
   "incident_type": "upgrade",
