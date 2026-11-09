@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-mainnet-v10.6.0-upgrade-2026-11-09",
+  "date": "2026-11-09T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": ["celestia-app v10.6.0", "fibre v10.6.0"],
+  "note": "Cumulo upgraded its Celestia mainnet validator and Fibre service to celestia-app and Fibre v10.6.0. This release includes celestia-core v0.42.8 (consensus block propagation, CAT mempool, p2p peer identity validation, and JSON-RPC fixes), a Hyperlane bump tightening ECDSA signature and ISM routing checks, ShareProof/RowProof position verification, Fibre fixes rejecting non-canonical escrow deposits and re-checking payment-promise cache budgets, and an IBC capability module fork bump. Validator and Fibre both verified healthy and fully operational post-upgrade, with Fibre's privval gRPC signer connection to the validator confirmed over mTLS.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v10.6.0"
+},
+  {
   "id": "genlayer-bradbury-phase2-validator-v0.6.0-rc.5-upgrade-2026-11-07",
   "date": "2026-11-07T14:20:00Z",
   "incident_type": "upgrade",
