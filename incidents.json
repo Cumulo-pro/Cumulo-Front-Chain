@@ -1,5 +1,15 @@
 [
   {
+  "id": "xrplevm-mainnet-infrastructure-migration-rpc-2026-11-10",
+  "date": "2026-11-10T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["rpc"],
+  "note": "Cumulo migrated its XRPL EVM mainnet public RPC node to a new server. The node was restored from Cumulo's own snapshot and fully synchronized before traffic was switched. Public endpoints and domain names did not change. Cumulo's availability probe kept targeting the previous server until it was repointed, so the 7-day RPC availability shown on the OTL dips for this period, while the external check_d probe continued to report the public endpoint as reachable. This affects the measurement, not the service. A short gap of about 50 minutes (2026-11-10, 15:07 to 15:58 UTC) in the monitoring history also results from moving Cumulo's monitoring server."
+},
+  {
   "id": "cosmos-mainnet-governance-proposal-1061-2026-11-10",
   "date": "2026-11-10T00:00:00Z",
   "incident_type": "governance_proposal",
