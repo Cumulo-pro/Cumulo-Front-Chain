@@ -222,11 +222,11 @@
   "date": "2026-10-30T09:51:00Z",
   "incident_type": "upgrade",
   "status": "completed",
-  "chain": "Gno.land",
+  "chain": "Gnoland",
   "network": "mainnet",
   "node_type": ["rpc", "backup"],
   "client": "gnoland v1.7.0",
-  "note": "Cumulo upgraded its Gno.land mainnet (gnoland-1) nodes to gnoland v1.7.0 following the coordinated chain halt at block 1183000 (09:04 UTC), set by GovDAO proposal #15; mainnet skipped v1.6.0, so this release also carries v1.6.0's changes. The release binary was verified against the published CHECKSUMS.txt and replaced the previous source-built binary, with no configuration changes required (halt_height kept at 0). The RPC and backup full nodes were restarted on v1.7.0 at 09:51 and 09:55 UTC respectively, caught up with the blocks produced since the halt and are fully synchronized.",
+  "note": "Cumulo upgraded its Gnoland mainnet (gnoland-1) nodes to gnoland v1.7.0 following the coordinated chain halt at block 1183000 (09:04 UTC), set by GovDAO proposal #15; mainnet skipped v1.6.0, so this release also carries v1.6.0's changes. The release binary was verified against the published CHECKSUMS.txt and replaced the previous source-built binary, with no configuration changes required (halt_height kept at 0). The RPC and backup full nodes were restarted on v1.7.0 at 09:51 and 09:55 UTC respectively, caught up with the blocks produced since the halt and are fully synchronized.",
   "url": "https://github.com/gnolang/gno/releases/tag/v1.7.0"
 },
  {
@@ -234,11 +234,11 @@
   "date": "2026-10-29T13:20:00Z",
   "incident_type": "upgrade",
   "status": "completed",
-  "chain": "Gno.land",
+  "chain": "Gnoland",
   "network": "testnet (Onyx)",
   "node_type": ["validator", "rpc"],
   "client": "gnoland v1.7.0-rc.1",
-  "note": "Cumulo upgraded its Gno.land Onyx testnet nodes to gnoland v1.7.0-rc.1 following the coordinated chain halt after block 754000, set by executed GovDAO proposal #35. The release binary was verified against the published CHECKSUMS.txt before replacing v1.6.0-rc.1; no configuration changes were required (halt_height kept at 0). The validator was restarted at 13:20 UTC, caught up with the blocks produced by the gno-core validator in the meantime and resumed signing; the RPC node was upgraded at 15:13 UTC and is fully synchronized.",
+  "note": "Cumulo upgraded its Gnoland Onyx testnet nodes to gnoland v1.7.0-rc.1 following the coordinated chain halt after block 754000, set by executed GovDAO proposal #35. The release binary was verified against the published CHECKSUMS.txt before replacing v1.6.0-rc.1; no configuration changes were required (halt_height kept at 0). The validator was restarted at 13:20 UTC, caught up with the blocks produced by the gno-core validator in the meantime and resumed signing; the RPC node was upgraded at 15:13 UTC and is fully synchronized.",
   "url": "https://github.com/gnolang/gno/releases/tag/v1.7.0-rc.1"
 },
  {
@@ -415,10 +415,10 @@
   "date": "2026-10-24T00:00:00Z",
   "incident_type": "infrastructure_migration",
   "status": "completed",
-  "chain": "Gno.land",
+  "chain": "Gnoland",
   "network": "mainnet",
   "node_type": ["validator"],
-  "note": "As part of a restructuring of Cumulo's infrastructure, Cumulo migrated its Gno.land mainnet (gnoland-1) validator identity to a different server. The consensus key (priv_validator_key) and the P2P node key (node_key) were moved to the existing backup full node, which was stopped, reconfigured with the new identity and restarted; the original node was stopped and disabled beforehand to prevent two nodes from running with the same identity. The operator wallet was recreated on the new server from its seed phrase, without copying any keystore files. After the migration the node reports the expected consensus address and P2P node ID, is fully synchronized (catching_up: false) and its height keeps advancing. The validator has not signed any blocks to date, so there was no double-signing exposure. Registration as a valoper candidate on r/gnops/valopers is pending."
+  "note": "As part of a restructuring of Cumulo's infrastructure, Cumulo migrated its Gnoland mainnet (gnoland-1) validator identity to a different server. The consensus key (priv_validator_key) and the P2P node key (node_key) were moved to the existing backup full node, which was stopped, reconfigured with the new identity and restarted; the original node was stopped and disabled beforehand to prevent two nodes from running with the same identity. The operator wallet was recreated on the new server from its seed phrase, without copying any keystore files. After the migration the node reports the expected consensus address and P2P node ID, is fully synchronized (catching_up: false) and its height keeps advancing. The validator has not signed any blocks to date, so there was no double-signing exposure. Registration as a valoper candidate on r/gnops/valopers is pending."
 },
  {
   "id": "monad-testnet-decommission-full-node-2026-10-24",
@@ -635,11 +635,11 @@
   "date": "2026-10-16T12:54:00Z",
   "incident_type": "upgrade",
   "status": "completed",
-  "chain": "Gno.land",
+  "chain": "Gnoland",
   "network": "testnet (Onyx)",
   "node_type": ["validator", "rpc"],
   "client": "gnoland v1.6.0-rc.1",
-  "note": "Cumulo completed the coordinated upgrade of its Gno.land Onyx testnet (onyx-1) nodes from v1.5.0 to v1.6.0-rc.1, scheduled by GovDAO proposal #33 at the halt after block 445000. The prebuilt gnoland binary was downloaded and verified against the release CHECKSUMS.txt before the halt, then swapped in and restarted on both the validator and the RPC node once the chain reached the halt height. After the network resumed, the validator was confirmed signing (present in /commit, priv_validator_state advancing), with full peer connectivity and no missed blocks. The mainnet full node on the same RPC host was left untouched.",
+  "note": "Cumulo completed the coordinated upgrade of its Gnoland Onyx testnet (onyx-1) nodes from v1.5.0 to v1.6.0-rc.1, scheduled by GovDAO proposal #33 at the halt after block 445000. The prebuilt gnoland binary was downloaded and verified against the release CHECKSUMS.txt before the halt, then swapped in and restarted on both the validator and the RPC node once the chain reached the halt height. After the network resumed, the validator was confirmed signing (present in /commit, priv_validator_state advancing), with full peer connectivity and no missed blocks. The mainnet full node on the same RPC host was left untouched.",
   "url": "https://github.com/gnolang/gno/releases/tag/v1.6.0-rc.1"
 },
  {
@@ -956,7 +956,7 @@
   "network": "testnet (onyx)",
   "node_type": ["validator"],
   "client": "gnoland v1.5.0",
-  "note": "Cumulo deployed a validator node on the Gno.land Onyx testnet (chain ID: onyx-1). The gnoland binary v1.5.0 was downloaded from the official chain/onyx release tag and its checksum verified against CHECKSUMS.txt; genesis.json was downloaded and its SHA256 verified against the published hash. The node was configured per the official onyx.gno.land VALIDATOR.md (persistent peers, prune strategy, consensus timings), started under a dedicated systemd service, and reached full sync (catching_up: false) without incidents. The Cumulo valoper profile was registered on-chain in the r/gnops/valopers realm using the existing operator address (g1mndkvypn3339m6yvkyutal5hk6m2yeqp5d52ly) at block height 39803, TX hash RUvTELfjH/NGayvctnNT1wnaW9LjwJTMWovXGUEs5Gc=. Entry into the active validator set (r/sys/validators/v0) is pending.",
+  "note": "Cumulo deployed a validator node on the Gnoland Onyx testnet (chain ID: onyx-1). The gnoland binary v1.5.0 was downloaded from the official chain/onyx release tag and its checksum verified against CHECKSUMS.txt; genesis.json was downloaded and its SHA256 verified against the published hash. The node was configured per the official onyx.gno.land VALIDATOR.md (persistent peers, prune strategy, consensus timings), started under a dedicated systemd service, and reached full sync (catching_up: false) without incidents. The Cumulo valoper profile was registered on-chain in the r/gnops/valopers realm using the existing operator address (g1mndkvypn3339m6yvkyutal5hk6m2yeqp5d52ly) at block height 39803, TX hash RUvTELfjH/NGayvctnNT1wnaW9LjwJTMWovXGUEs5Gc=. Entry into the active validator set (r/sys/validators/v0) is pending.",
   "url": "https://onyx.testnets.gno.land/r/gnops/valopers:g1mndkvypn3339m6yvkyutal5hk6m2yeqp5d52ly"
 },
  {
@@ -1148,7 +1148,7 @@
   "network": "mainnet",
   "node_type": ["full node", "backup", "rpc"],
   "client": "gnoland HEAD.3444+e75fef82c",
-  "note": "Cumulo applied a coordinated 'quick upgrade' to its three Gno.land mainnet (gnoland-1) nodes (VeliaMon-test principal, Velia12 backup, Velia2 RPC) following an announcement from the gno.land team. There was community confusion over which commit to build: f01063d9b was reported to stall at height 162200, while e75fef82c02876a4df92ad6e325c5479b953216 (confirmed working by multiple validators) was the correct target \u2014 an official message citing a 41-character variant of the same hash was treated as a likely typo and disregarded in favor of the validated 40-character commit. Applied via git checkout of the pinned commit, rebuild, and systemctl restart on all three servers, proactively ahead of any consensus-breaking height, so no database wipe was needed this time. All three gnoland.service instances confirmed active and processing consensus/p2p traffic normally post-restart.",
+  "note": "Cumulo applied a coordinated 'quick upgrade' to its three Gnoland mainnet (gnoland-1) nodes (VeliaMon-test principal, Velia12 backup, Velia2 RPC) following an announcement from the gno.land team. There was community confusion over which commit to build: f01063d9b was reported to stall at height 162200, while e75fef82c02876a4df92ad6e325c5479b953216 (confirmed working by multiple validators) was the correct target \u2014 an official message citing a 41-character variant of the same hash was treated as a likely typo and disregarded in favor of the validated 40-character commit. Applied via git checkout of the pinned commit, rebuild, and systemctl restart on all three servers, proactively ahead of any consensus-breaking height, so no database wipe was needed this time. All three gnoland.service instances confirmed active and processing consensus/p2p traffic normally post-restart.",
   "url": "https://github.com/gnolang/gno/commit/e75fef82c02876a4df92ad6e325c5479b953216"
 },
   {
@@ -1172,7 +1172,7 @@
   "network": "mainnet",
   "node_type": ["full node", "rpc"],
   "client": "gnoland heads/chain/mainnet.3436+00417a1be",
-  "note": "Cumulo decommissioned the Gno.land Pearl testnet RPC node and its dependent gno-testnet-collector service, along with stale testnet systemd units and a daily Pearl snapshot timer. Deployed a Gno.land mainnet (gnoland-1) full node in the same RPC role, built from the chain/mainnet branch (tracking the branch tip rather than a fixed tag, to stay current through mainnet upgrades), with genesis.json verified against the official CHECKSUMS.txt and configured per VALIDATOR.md guidance. Kept the existing ports (p2p 26670, rpc 26671, moniker Cumulo-RPC). The public RPC endpoint was migrated from gno.rpc.testnet.cumulo.me to gno.rpc.cumulo.me, including a new Let's Encrypt certificate and an nginx reverse-proxy update, and verified serving live mainnet data over HTTPS. Journald log retention was proactively configured (50GB cap, 2-month minimum). The node synced past the height-36432 consensus upgrade checkpoint without the AppHash mismatch seen on the other two mainnet nodes, having been built directly from the post-upgrade commit.",
+  "note": "Cumulo decommissioned the Gnoland Pearl testnet RPC node and its dependent gno-testnet-collector service, along with stale testnet systemd units and a daily Pearl snapshot timer. Deployed a Gno.land mainnet (gnoland-1) full node in the same RPC role, built from the chain/mainnet branch (tracking the branch tip rather than a fixed tag, to stay current through mainnet upgrades), with genesis.json verified against the official CHECKSUMS.txt and configured per VALIDATOR.md guidance. Kept the existing ports (p2p 26670, rpc 26671, moniker Cumulo-RPC). The public RPC endpoint was migrated from gno.rpc.testnet.cumulo.me to gno.rpc.cumulo.me, including a new Let's Encrypt certificate and an nginx reverse-proxy update, and verified serving live mainnet data over HTTPS. Journald log retention was proactively configured (50GB cap, 2-month minimum). The node synced past the height-36432 consensus upgrade checkpoint without the AppHash mismatch seen on the other two mainnet nodes, having been built directly from the post-upgrade commit.",
   "url": "https://github.com/gnolang/gno/tree/chain/mainnet"
 },
   {
@@ -1196,7 +1196,7 @@
   "network": "mainnet",
   "node_type": ["full node", "backup"],
   "client": "gnoland heads/chain/mainnet.3436+00417a1be",
-  "note": "Cumulo deployed a Gno.land mainnet (gnoland-1) full node as the backup counterpart to the VeliaMon-test full node, replacing the decommissioned Pearl testnet backup validator on the same host. Built from the chain/mainnet branch, genesis.json verified against the official CHECKSUMS.txt, and configured per VALIDATOR.md guidance (persistent_peers/seeds, prune_strategy, timeout_commit), with moniker 'Cumulo-Backup' on ports 26680/26681 (26656/26657 remain reserved for celestia-appd on this shared host). Deployed under systemd (gnoland.service). Shortly after the initial deployment, both this node and the VeliaMon-test full node hit a consensus AppHash mismatch at height 36432 due to a coordinated network-wide mainnet upgrade; resolved by pulling the latest chain/mainnet branch commit (previously pinned to a stale tag) and resyncing from a clean database. Journald log retention was proactively configured (50GB cap, 2-month minimum). Node confirmed syncing past height 90000+ without further errors. No operator wallet or valoper registration performed at this stage.",
+  "note": "Cumulo deployed a Gnoland mainnet (gnoland-1) full node as the backup counterpart to the VeliaMon-test full node, replacing the decommissioned Pearl testnet backup validator on the same host. Built from the chain/mainnet branch, genesis.json verified against the official CHECKSUMS.txt, and configured per VALIDATOR.md guidance (persistent_peers/seeds, prune_strategy, timeout_commit), with moniker 'Cumulo-Backup' on ports 26680/26681 (26656/26657 remain reserved for celestia-appd on this shared host). Deployed under systemd (gnoland.service). Shortly after the initial deployment, both this node and the VeliaMon-test full node hit a consensus AppHash mismatch at height 36432 due to a coordinated network-wide mainnet upgrade; resolved by pulling the latest chain/mainnet branch commit (previously pinned to a stale tag) and resyncing from a clean database. Journald log retention was proactively configured (50GB cap, 2-month minimum). Node confirmed syncing past height 90000+ without further errors. No operator wallet or valoper registration performed at this stage.",
   "url": "https://github.com/gnolang/gno/tree/chain/mainnet"
 },
   {
@@ -1208,7 +1208,7 @@
   "network": "mainnet",
   "node_type": ["full node"],
   "client": "gnoland v1.2.0 (chain/mainnet)",
-  "note": "Cumulo deployed a Gno.land mainnet (gnoland-1) full node, replacing the decommissioned Pearl testnet validator on the same host. Built from the chain/mainnet branch, with genesis.json verified against the official CHECKSUMS.txt (SHA256 match). Configured per the official VALIDATOR.md guidance: required persistent_peers/seeds, prune_strategy, timeout_commit, and peer_gossip_sleep_duration, plus per-node moniker (Cumulo) and external_address. Deployed under systemd (gnoland.service) and confirmed syncing on gnoland-1. Journald log retention was proactively configured (50GB cap, 2-month minimum) to prevent the premature rotation observed during the Pearl fire drill. No operator wallet was created and no valoper registration was performed at this stage — deployment intentionally limited to full-node sync only, ahead of a later decision on registering as a validator candidate.",
+  "note": "Cumulo deployed a Gnoland mainnet (gnoland-1) full node, replacing the decommissioned Pearl testnet validator on the same host. Built from the chain/mainnet branch, with genesis.json verified against the official CHECKSUMS.txt (SHA256 match). Configured per the official VALIDATOR.md guidance: required persistent_peers/seeds, prune_strategy, timeout_commit, and peer_gossip_sleep_duration, plus per-node moniker (Cumulo) and external_address. Deployed under systemd (gnoland.service) and confirmed syncing on gnoland-1. Journald log retention was proactively configured (50GB cap, 2-month minimum) to prevent the premature rotation observed during the Pearl fire drill. No operator wallet was created and no valoper registration was performed at this stage — deployment intentionally limited to full-node sync only, ahead of a later decision on registering as a validator candidate.",
   "url": "https://github.com/gnolang/gno/releases/tag/chain/mainnet"
 },
   {
@@ -1219,7 +1219,7 @@
   "chain": "Gnoland",
   "network": "testnet (pearl)",
   "node_type": ["backup", "rpc"],
-  "note": "Cumulo plans to decommission the remaining Gno.land Pearl testnet infrastructure \u2014 the backup validator on Velia12 and the RPC node on Velia2 \u2014 as part of the ongoing migration to Gno.land mainnet (gnoland-1). This work is scheduled to follow the deployment of the new mainnet full node on VeliaMon-test."
+  "note": "Cumulo plans to decommission the remaining Gnoland Pearl testnet infrastructure \u2014 the backup validator on Velia12 and the RPC node on Velia2 \u2014 as part of the ongoing migration to Gnoland mainnet (gnoland-1). This work is scheduled to follow the deployment of the new mainnet full node on VeliaMon-test."
 },
   {
   "id": "gnoland-pearl-decommission-veliamon-test-2026-09-18",
@@ -1230,7 +1230,7 @@
   "network": "testnet (pearl)",
   "node_type": ["validator"],
   "client": "gnoland chain/pearl",
-  "note": "Cumulo decommissioned its Gno.land Pearl testnet validator running, following the network-wide shutdown of Gno.land testnets ahead of mainnet launch. The gnoland-pearl systemd service was stopped and disabled, and all historical Gno.land testnet data (Pearl, Sapphire, and Topaz remnants) was removed from the server to free up resources for the upcoming Gno.land mainnet (gnoland-1) full node deployment."
+  "note": "Cumulo decommissioned its Gnoland Pearl testnet validator running, following the network-wide shutdown of Gnoland testnets ahead of mainnet launch. The gnoland-pearl systemd service was stopped and disabled, and all historical Gnoland testnet data (Pearl, Sapphire, and Topaz remnants) was removed from the server to free up resources for the upcoming Gno.land mainnet (gnoland-1) full node deployment."
 },
   {
   "id": "monad-testnet-upgrade-v0.16.3-2026-09-18",
