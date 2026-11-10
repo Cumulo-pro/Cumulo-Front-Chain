@@ -1,5 +1,18 @@
 [
   {
+  "id": "cosmos-mainnet-governance-proposal-1061-2026-11-10",
+  "date": "2026-11-10T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "proposal_id": 1061,
+  "note": "Governance Proposal #1061 on Cosmos Hub mainnet: State-breaking software upgrade proposal for Gaia v29.1.0. The release restores decoding of historical ParameterChangeProposal content (fixing governance proposal list, status-filtered, single-proposal and tally queries, as well as state export) and updates CosmWasm wasmd from v0.60.9 to v0.60.10 and wasmvm from v2.3.5 to v2.3.6. Legacy ParameterChangeProposal submissions now decode and reach ante processing before governance rejects their execution, so fees and account sequences change for such submissions. If passed, validators will be required to update the Cosmos Hub binary at the specified upgrade height. The voting period is seven days. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos/governance#proposal-1061",
+  "vote": "https://cumulo.pro/services/cosmos/search?q=D5F052F883CE1D860A8B84014348634176C5E36F88930746046B7F9C431B4E6E"
+},
+  {
   "id": "celestia-mainnet-incident-network-connectivity-2026-11-09",
   "date": "2026-11-09T07:30:45Z",
   "incident_type": "incident",
