@@ -3121,6 +3121,18 @@
   "vote": "https://cumulo.pro/services/cosmos/search?q=3035B6FCF65A2D4E78E2D01C4B50F9E49D2E3CF63FF65C5B1BBF7A8A217F51A6"
 },
   {
+  "id": "xrplevm-testnet-governance-proposal-45-2026-06-09",
+  "date": "2026-06-09T16:15:00Z",
+  "incident_type": "governance_proposal",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "note": "Governance Proposal #45 on XRPL EVM testnet: Add Atlas Staking as a new validator to the network (MsgAddValidator). Voting period runs from Jun 9 to Jun 23, 2026. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm/governance#proposal-45",
+  "vote": "https://cumulo.pro/services/xrplevm/search?q=1A059F067E9C76E52D00D2C09AB0E4912A31AD574A52E44EE919912A5200B5D8"
+},
+  {
   "id": "xrplevm-testnet-governance-proposal-44-2026-06-09",
   "date": "2026-06-09T16:33:00Z",
   "incident_type": "governance_proposal",
