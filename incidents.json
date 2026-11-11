@@ -1,5 +1,16 @@
 [
   {
+  "id": "dymension-mainnet-infrastructure-migration-signer-node-2026-11-11",
+  "date": "2026-11-11T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Dymension",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "dymd v4.0.1",
+  "note": "Cumulo migrated its Dymension mainnet Horcrux chain node (Signer1) to a new server as part of an infrastructure restructuring. The node was built from source at v4.0.1, bootstrapped from a snapshot and fully synchronized before the cutover. The privval endpoint was restricted at the firewall to the Horcrux cosigners only, and the cosigner cluster was reconfigured to the new node one cosigner at a time, keeping the 2-of-3 threshold available throughout. Signing through the new node was verified on-chain, and the previous chain node was stopped and disabled."
+},
+  {
   "id": "axone-testnet-rpc-infrastructure-migration-2026-11-11",
   "date": "2026-11-11T00:00:00Z",
   "incident_type": "infrastructure_migration",
