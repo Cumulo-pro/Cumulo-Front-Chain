@@ -1,5 +1,16 @@
 [
   {
+  "id": "axone-testnet-rpc-infrastructure-migration-2026-11-11",
+  "date": "2026-11-11T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Axone",
+  "network": "testnet",
+  "node_type": ["rpc"],
+  "client": "axoned v14.0.0",
+  "note": "Cumulo migrated its Axone testnet (axone-dendrite-2) RPC node to new infrastructure as part of an ongoing restructuring of its server fleet. The node was rebuilt from source at the same release and commit, and the chain data was transferred directly, preserving the full block history retained by the previous node. The public RPC, REST API and gRPC endpoints were moved with newly issued TLS certificates, and the gRPC endpoint was reconfigured to serve HTTP/2 traffic directly to the Axone gRPC service. The block explorer data collector and its public endpoint were relocated alongside the node. All services were verified as fully synchronized and operational, and the previous deployment was fully decommissioned."
+},
+  {
   "id": "seda-testnet-signer1-infrastructure-migration-2026-11-11",
   "date": "2026-11-11T00:00:00Z",
   "incident_type": "infrastructure_migration",
