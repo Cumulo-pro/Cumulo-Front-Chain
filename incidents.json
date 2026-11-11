@@ -1,5 +1,16 @@
 [
   {
+  "id": "seda-testnet-signer1-infrastructure-migration-2026-11-11",
+  "date": "2026-11-11T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "SEDA",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "client": "sedad v1.0.8-rc.1",
+  "note": "Cumulo migrated its SEDA testnet Signer 1 node, one of the chain nodes behind its Horcrux threshold signing setup, to new infrastructure as part of an infrastructure restructuring. The new node was synchronized via state sync, with light client verification performed against Cumulo's own infrastructure. The Horcrux cosigners were reconfigured one at a time, preserving the signing threshold throughout, and validator signing continued without interruption. The previous node and all associated data and keys were decommissioned and removed."
+},
+  {
   "id": "xrplevm-mainnet-infrastructure-migration-rpc-2026-11-10",
   "date": "2026-11-10T00:00:00Z",
   "incident_type": "infrastructure_migration",
