@@ -1,5 +1,17 @@
 [
   {
+  "id": "xrplevm-testnet-governance-proposal-54-2026-11-12",
+  "date": "2026-11-12T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "proposal_number": 54,
+  "note": "Governance Proposal #54 on XRPL EVM testnet: Add Nodes Hub as a new validator to the network (MsgAddValidator). Cumulo voted YES.",
+  "vote": "https://cumulo.pro/services/xrplevm/search?q=8414152AE7FA72A544E4FEC54EEA12B927EF8709173330DAFEF041A19B46026E"
+},
+  {
   "id": "xrplevm-testnet-governance-proposal-53-2026-11-12",
   "date": "2026-11-12T00:00:00Z",
   "incident_type": "governance_proposal",
