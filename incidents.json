@@ -1,5 +1,18 @@
 [
   {
+  "id": "xrplevm-testnet-governance-proposal-53-2026-11-12",
+  "date": "2026-11-12T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "proposal_number": 53,
+  "note": "Governance Proposal #53 on XRPL EVM testnet: Remove Linkpool and Range validators from the validator set (MsgRemoveValidator). Both validators have ceased their activities and the proposal aims to keep the validator set aligned with actively participating operators. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm/governance#proposal-53",
+  "vote": "https://cumulo.pro/services/xrplevm/search?q=FA799B6FC7A0BD261616C8BE4B847704B9B87D01280906C7EC49082B4570BE89"
+},
+  {
   "id": "celestia-mocha-upgrade-celestia-node-v0.35.0-mocha-2026-11-11",
   "date": "2026-11-11T00:00:00Z",
   "incident_type": "upgrade",
