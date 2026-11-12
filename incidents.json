@@ -1,5 +1,17 @@
 [
   {
+  "id": "celestia-mainnet-upgrade-celestia-node-v0.35.0-2026-11-12",
+  "date": "2026-11-12T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.35.0",
+  "note": "Cumulo upgraded its Celestia mainnet bridge node to celestia-node v0.35.0. This release removes Bitswap in favor of shrex, adds JWT token revocation, and includes security and stability fixes. No coordinated upgrade is required. Source builds require Go 1.26.10 or later, and the recommended config-update step was reviewed per the release notes. Upgrade completed without incidents and the bridge node is fully operational.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.35.0"
+},
+  {
   "id": "xrplevm-testnet-governance-proposal-54-2026-11-12",
   "date": "2026-11-12T00:00:00Z",
   "incident_type": "governance_proposal",
