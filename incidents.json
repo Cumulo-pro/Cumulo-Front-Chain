@@ -1,5 +1,16 @@
 [
   {
+  "id": "limonata-testnet-decommission-network-finalized-2026-11-12",
+  "date": "2026-11-12T00:00:00Z",
+  "incident_type": "decommission",
+  "status": "completed",
+  "chain": "Limonata",
+  "network": "testnet",
+  "node_type": ["validator", "rpc"],
+  "client": "limonatad",
+  "note": "The Limonata testnet (limonata_10777-1) has been finalized. Cumulo's Limonata testnet validator and public RPC node are going offline as part of server maintenance and preparation for the upcoming network update. The planned validator migration to a new server was cancelled as a result."
+},
+  {
   "id": "espresso-mainnet-sequencer-0.7.0.6-upgrade-2026-11-12",
   "date": "2026-11-12T00:00:00Z",
   "incident_type": "upgrade",
