@@ -568,11 +568,15 @@
     "peers": "60d481edb7e49efe01fa0b49a346cf9f8400db19@peer-celestia-mainnet.val",
     "addrbook": "https://mainnets.validexis.com/celestia/addrbook.json",
     "tools_url": {
-        "CelestiaUltraBot": "https://validexis.com/celestiaultrabot"
-    },
-    "tools_desc": {
-      "RPC Locator": "Open-source snapshot finder / endpoint locator tooling for Celestia node operators."
-    },
+  "CelestiaUltraBot": "https://validexis.com/celestiaultrabot",
+  "Validator Platform": "https://celestia.validexis.com/"
+},
+"tools_desc": {
+  "CelestiaUltraBot": "Operator-oriented bot providing validator/node signals and Celestia-specific utilities for monitoring and alerts.",
+  "Validator Platform": "Celestia (Mainnet and Mocha) validator tracking: daily block participation vs. network median, missed proposals marked on the chart, and shareable network and validator reports."
+},
+"fibre_url": { "Fibre Reachability Checks": "https://celestia.validexis.com/" },
+"fibre_desc": { "Fibre Reachability Checks": "Shows whether a validator's Fibre host answers checks from outside the network." },
     "content_url": {
         "Node Installation": "https://services.validexis.com/mainnets/celestia/validator-node-installation",
         "Useful Commands": "https://services.validexis.com/mainnets/celestia/validator-node-installation/useful-commands",
@@ -774,7 +778,9 @@
   },
   "tools_desc": {
     "Metatarz Map": "Interactive geographic map of Celestia nodes and validators."
-  }
+  },
+  "fibre_url": { "Fibre Map (mainnet)": "https://metatarz.xyz/maps/celestia-fibre-mainnet" },
+  "fibre_desc": { "Fibre Map (mainnet)": "Celestia Fibre mainnet on Metatarz decentralized maps and node analytics." }
 },
   {
   "name": "Unity Nodes",
@@ -786,6 +792,7 @@
     "Pulse - Geography": "http://pulse.unitynodes.com/celestia/geography",
     "Pulse - Providers": "http://pulse.unitynodes.com/celestia/providers",
     "Pulse - Service Health": "https://pulse.unitynodes.com/celestia/services",
+    "Pulse - Hardware Usage": "https://pulse.unitynodes.com/celestia/hardware",
     "CelestiaHub": "https://unityhub.dev/celestia/validator",
     "Runcelestia": "https://runcelestia.xyz/",
     "BlobPedia MCP": "https://blobpedia.org/for-ai"
@@ -795,6 +802,7 @@
     "Pulse - Geography": "Real-time geographic distribution map of Celestia validators and infrastructure.",
     "Pulse - Providers": "Dashboard tracking infrastructure providers and hosting concentration across the Celestia network.",
     "Pulse - Service Health": "Live health monitor for public Celestia RPC, API and gRPC endpoints, updated every 90 seconds.",
+    "Pulse - Hardware Usage": "https://pulse.unitynodes.com/celestia/hardware",
     "CelestiaHub": "Curated entry point to the Celestia ecosystem structured for four audiences: Validators (docs, endpoints, snapshots, FDP), Developers (SDKs, blob/namespace APIs, tooling), Educational (guides, analytical articles), and Community (Discord, forum, videos).",
     "Runcelestia": "Single-page onboarding guide for validators. Covers 3-phase setup map, readiness quiz, 10-step setup guide, hardware specs, hosting decentralization with FDP-rejected flags, and a Live Reference Node with real metrics every 2s. Includes an AI validator assistant and FAQ kept up to date on every protocol change.",
     "BlobPedia MCP": "MCP server that connects the Celestia knowledge base to AI agents (Claude, Cursor, ChatGPT, etc.). Indexes CIPs, docs, forum, GitHub releases, blog posts, and whitepapers, plus live on-chain stats via Celenium and CoinGecko. Setup in 1 minute."
@@ -921,6 +929,23 @@
   "fibre_url": { "fibre-canary": "https://github.com/ruby-nodes/fibre-canary" },
   "fibre_desc": { "fibre-canary": "CLI that tests Fibre end to end: uploads a real blob, settles the payment, downloads it and checks the bytes match. Supports Mocha and Mainnet (mainnet runs use real TIA)." }
 },
+  {
+  "name": "Cogwheel",
+  "webservices": "https://cogwheel.zone/",
+  "x": "cogwheel_val",
+  "validatorlogo": "cogwheel.jpg",
+  "explorer": "https://thespectra.io/celestia",
+  "tools_url": {
+    "Spectra Portal": "https://portal.thespectra.io/",
+    "Spectra Portal (GitHub)": "https://github.com/Cogwheel-Validator/spectra-portal"
+  },
+  "tools_desc": {
+    "Spectra Portal": "Open-source IBC portal to bridge and swap TIA to and from Injective and Osmosis.",
+    "Spectra Portal (GitHub)": "Source code of the Spectra Portal."
+  },
+  "fibre_url": { "Spectra Fibre Analytics": "https://thespectra.io/celestia" },
+  "fibre_desc": { "Spectra Fibre Analytics": "Fibre analytics in the Spectra explorer, including an Outage Simulator that groups Fibre instances by network/datacenter, country and continent and ties them to validator power, plus per-blob endorsements and per-namespace stats." }
+}
 {
   "name": "Cumulo",
   "x": "Cumulo_pro",
