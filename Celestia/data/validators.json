@@ -437,11 +437,13 @@
     },
     "fibre_url": {
       "Fibre Dashboard (mainnet)": "https://explorer.nodestake.org/celestia/tools/fibre/providers",
-      "Celestia Tracker Bot (Telegram)": "https://t.me/Celestia_TrackerBot"
+      "Celestia Tracker Bot (Telegram)": "https://t.me/Celestia_TrackerBot",
+      "Celestia Fibre explained": "https://nodestake.org/blog/celestia-fibre-explained"
     },
     "fibre_desc": {
       "Fibre Dashboard (mainnet)": "NodeStake explorer view of the Fibre providers on Celestia mainnet.",
-      "Celestia Tracker Bot (Telegram)": "Telegram bot for Celestia: wallet transfers, IBC, staking and rewards, validator missed signatures and profile changes, bridge node telemetry, and Fibre registrations, endpoint changes, outages and recovery."
+      "Celestia Tracker Bot (Telegram)": "Telegram bot for Celestia: wallet transfers, IBC, staking and rewards, validator missed signatures and profile changes, bridge node telemetry, and Fibre registrations, endpoint changes, outages and recovery.",
+      "Celestia Fibre explained": "NodeStake article explaining what Celestia Fibre is and how it works."
     }
     },
   {
@@ -569,8 +571,16 @@
   "CelestiaUltraBot": "Operator-oriented bot providing validator/node signals and Celestia-specific utilities for monitoring and alerts.",
   "Validator Platform": "Celestia (Mainnet and Mocha) validator tracking: daily block participation vs. network median, missed proposals marked on the chart, and shareable network and validator reports."
 },
-"fibre_url": { "Fibre Reachability Checks": "https://celestia.validexis.com/" },
-"fibre_desc": { "Fibre Reachability Checks": "Shows whether a validator's Fibre host answers checks from outside the network." },
+"fibre_url": {
+  "Fibre Reachability Checks": "https://celestia.validexis.com/",
+  "Fibre Server Templates": "https://github.com/validexisinfra/Celestia/tree/main/fibre",
+  "Validator and Fibre Monitoring": "https://github.com/validexisinfra/Celestia/tree/main/monitoring"
+},
+"fibre_desc": {
+  "Fibre Reachability Checks": "Shows whether a validator's Fibre host answers checks from outside the network.",
+  "Fibre Server Templates": "Open-source configuration templates to deploy a Celestia Fibre server.",
+  "Validator and Fibre Monitoring": "Open-source monitoring setup for Celestia validators and Fibre servers."
+},
     "content_url": {
         "Node Installation": "https://services.validexis.com/mainnets/celestia/validator-node-installation",
         "Useful Commands": "https://services.validexis.com/mainnets/celestia/validator-node-installation/useful-commands",
@@ -638,7 +648,9 @@
     "Peer scanner": "Utility to scan/discover peers and public RPC infrastructure for Celestia."
   },
     "content": {
-        "Installation Guide": "https://itrocket.net/services/mainnet/celestia/installation/"
+        "Installation Guide": "https://itrocket.net/services/mainnet/celestia/installation/",
+        "TMKMS Remote Signing Guide": "https://itrocket.net/services/mainnet/celestia/tmkms/",
+        "Sentry Nodes Guide": "https://itrocket.net/services/mainnet/celestia/sentry/"
     },
     "snapshot_check": {
       "kind": "json_index",
@@ -650,8 +662,14 @@
       "size_key": "snapshot_size",
       "db_backend_key": "db_backend"
     },
-    "fibre_url": { "Fibre Explorer (mainnet)": "https://itrocket.net/services/mainnet/celestia/analytics/fibre-monitor/" },
-    "fibre_desc": { "Fibre Explorer (mainnet)": "Fibre providers, blobs, market and prices with a blob cost calculator, signatures per blob, escrow and host-registration events, decentralization map (stake by region, country and hosting provider), and a JSON API. Beta." }
+    "fibre_url": { 
+      "Fibre Explorer (mainnet)": "https://itrocket.net/services/mainnet/celestia/analytics/fibre-monitor/",
+      "Fibre server guide (mainnet)": "https://itrocket.net/services/mainnet/celestia/fibre/"
+    },
+    "fibre_desc": {
+      "Fibre Explorer (mainnet)": "Fibre providers, blobs, market and prices with a blob cost calculator, signatures per blob, escrow and host-registration events, decentralization map (stake by region, country and hosting provider), and a JSON API. Beta.",
+      "Fibre server guide (mainnet)": "Step-by-step guide covering installation, configuration, start and registration of a Fibre server, plus useful commands and update instructions. Runs on the validator server or on a separate one (private WireGuard tunnel + mTLS)."
+    }
   },
    {
   "name": "Informal Systems",
@@ -922,6 +940,20 @@
   "validatorlogo": "rubynodes.jpg",
   "fibre_url": { "fibre-canary": "https://github.com/ruby-nodes/fibre-canary" },
   "fibre_desc": { "fibre-canary": "CLI that tests Fibre end to end: uploads a real blob, settles the payment, downloads it and checks the bytes match. Supports Mocha and Mainnet (mainnet runs use real TIA)." }
+},
+  {
+  "name": "BlackNodes",
+  "webservices": "https://blacknodes.net/",
+  "x": "BlackNodesHQ",
+  "validatorlogo": "blacknodes.jpg",
+  "fibre_url": {
+    "Fibre Operations Lab": "https://fibre.blacknodes.net/lab/",
+    "Fibre Signal": "https://fibre.blacknodes.net/"
+  },
+  "fibre_desc": {
+    "Fibre Operations Lab": "Operator tooling for Celestia Fibre from BlackNodes.",
+    "Fibre Signal": "Fibre network dashboard with status and analytics API (/api/v1/status, /api/v1/analytics)."
+  }
 },
   {
   "name": "Cogwheel",
