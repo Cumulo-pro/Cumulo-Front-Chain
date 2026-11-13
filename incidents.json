@@ -1,5 +1,17 @@
 [
   {
+  "id": "gnoland-mainnet-gnoland-v1.7.1-upgrade-2026-11-13",
+  "date": "2026-11-13T10:05:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Gno.land",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc"],
+  "client": "gnoland v1.7.1",
+  "note": "Cumulo upgraded its Gno.land mainnet (gnoland-1) nodes from v1.7.0 to gnoland v1.7.1 as a rolling patch, with no chain halt or GovDAO proposal required. The release binary was verified against the published CHECKSUMS.txt and nodes were switched one at a time, RPC first and then the validator candidacy node; config.toml was checked to confirm p2p.max_recv_buffer_bytes met the new minimum. Both nodes are fully synchronized on v1.7.1.",
+  "url": "https://github.com/gnolang/gno/releases/tag/v1.7.1"
+},
+  {
   "id": "gnoland-onyx-gnoland-v1.7.1-rc.1-upgrade-2026-11-13",
   "date": "2026-11-13T10:00:00Z",
   "incident_type": "upgrade",
