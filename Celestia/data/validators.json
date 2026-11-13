@@ -939,7 +939,7 @@
   },
   "fibre_url": { "Spectra Fibre Analytics": "https://thespectra.io/celestia" },
   "fibre_desc": { "Spectra Fibre Analytics": "Fibre analytics in the Spectra explorer, including an Outage Simulator that groups Fibre instances by network/datacenter, country and continent and ties them to validator power, plus per-blob endorsements and per-namespace stats." }
-}
+},
 {
   "name": "Cumulo",
   "x": "Cumulo_pro",
