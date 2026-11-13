@@ -1,5 +1,17 @@
 [
   {
+  "id": "gnoland-onyx-gnoland-v1.7.1-rc.1-upgrade-2026-11-13",
+  "date": "2026-11-13T10:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Gno.land",
+  "network": "testnet (Onyx)",
+  "node_type": ["validator", "rpc"],
+  "client": "gnoland v1.7.1-rc.1",
+  "note": "Cumulo upgraded its Gno.land Onyx testnet nodes from v1.7.0-rc.1 to gnoland v1.7.1-rc.1 as a rolling patch, with no chain halt or GovDAO proposal required. The release binary was verified against the published CHECKSUMS.txt and nodes were switched one at a time; config.toml was checked to confirm p2p.max_recv_buffer_bytes met the new minimum (default 20 MB kept). Both the validator and the RPC node are fully synchronized on v1.7.1-rc.1, and the validator resumed signing immediately after the restart.",
+  "url": "https://github.com/gnolang/gno/releases/tag/v1.7.1-rc.1"
+},
+  {
   "id": "limonata-testnet-decommission-network-finalized-2026-11-12",
   "date": "2026-11-12T00:00:00Z",
   "incident_type": "decommission",
