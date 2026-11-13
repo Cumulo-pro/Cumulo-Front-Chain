@@ -980,11 +980,15 @@
   "fibre_url": {
   "Fibre Network Monitor": "https://cumulo.pro/services/celestia_mocha/fibre",
   "Fibre Network API": "https://cumulo.pro/services/celestia_mocha/fibre-api",
+  "Fibre Grafana Dashboards": "https://fibre-grafana.cumulo.com.es/public-dashboards/e93d8dad529140739cff1616d89ffc3e",
+  "My Validator Fibre Dashboard": "https://github.com/Cumulo-pro/cumulo-celestia-infra/tree/main/tools/fibre-grafana-dashboard",
   "Fibre Telegram Bot": "https://t.me/CumuloFibreBot"
 },
 "fibre_desc": {
   "Fibre Network Monitor": "Open monitoring dashboard for Celestia Fibre: network readiness against the 2/3 stake threshold, per-validator Fibre hosts, signatures, verified blob retention, infrastructure concentration and Fibre activity.",
   "Fibre Network API": "Public read-only API with OpenAPI docs, Prometheus metrics and status badges for Celestia Fibre network and validator data.",
+  "Fibre Grafana Dashboards": "Public read-only Grafana dashboards (no login) for Celestia Fibre, mainnet and Mocha side by side, refreshed every minute from the public Fibre API: Home, Readiness & Quorum, Decentralization, Latency, Validators, Signatures & DA, Market, Protocol & Monitor and Cumulo validator.",
+  "My Validator Fibre Dashboard": "Importable Grafana dashboard with the per-validator Fibre view (readiness, probe regions, round trip, uptime, signing, data kept, certificate and warnings) for your own validator. Prometheus version (one scrape job, native alerts) or Infinity plugin version (reads the API directly, 7 and 30 days of history). Open source (MIT) with setup steps.",
   "Fibre Telegram Bot": "@CumuloFibreBot: Fibre network and validator reports delivered in Telegram."
 }
 }
