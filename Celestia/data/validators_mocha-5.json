@@ -35,11 +35,17 @@
   "statesync_rpc": "https://celestia-testnet-rpc.itrocket.net:443",
   "statesync_peer": "daf2cecee2bd7f1b3bf94839f993f807c6b15fbf@celestia-testnet-peer.itrocket.net:11656",
   "fibre_url": {
-    "Fibre server guide": "https://itrocket.net/services/testnet/celestia/fibre/"
-  },
-  "fibre_desc": {
-    "Fibre server guide": "Step-by-step guide covering installation, node connection configuration, public address registration, cheat sheet, update and delete."
-  },
+  "Fibre server guide": "https://itrocket.net/services/testnet/celestia/fibre/",
+  "Fibre Explorer (testnet)": "https://itrocket.net/services/testnet/celestia/analytics/fibre-monitor/"
+},
+"fibre_desc": {
+  "Fibre server guide": "Step-by-step guide covering installation, node connection configuration, public address registration, cheat sheet, update and delete. Covers running Fibre on the validator server or on a separate one (private WireGuard tunnel + mTLS).",
+  "Fibre Explorer (testnet)": "Registered Fibre providers and server readiness, multi-region host reachability checks, blob activity and a public API. Beta."
+},
+"content_url": {
+  "TMKMS Remote Signing Guide": "https://itrocket.net/services/testnet/celestia/tmkms/",
+  "Sentry Nodes Guide": "https://itrocket.net/services/testnet/celestia/sentry/"
+},
   "tools": "Decentralization Analytics #validators, RPC, and all nodes; Governance Bot #with status & UPD timer notifications; Peer scanner #with real time peer uptime verification; RPC Scanner #with Raw scan results",
   "tools_url": {
     "Decentralization Analytics": "https://itrocket.net/services/testnet/celestia/decentralization/",
@@ -123,7 +129,9 @@
         "height_key": "snapshotHeight",
         "date_key": "snapshotTime",
         "size_key": "snapshotSize"
-      }
+      },
+       "fibre_url": { "Celestia Testnet Tracker Bot (Telegram)": "https://t.me/Celestia_Testnet_TrackerBot" },
+       "fibre_desc": { "Celestia Testnet Tracker Bot (Telegram)": "Telegram bot for Celestia testnet: wallet transfers, IBC, staking and rewards, validator missed signatures and profile changes, bridge node telemetry, and Fibre registrations, endpoint changes, outages and recovery." }
     },
     {
     "name": "Krews",
@@ -146,7 +154,9 @@
     "snapshot_check": {
       "kind": "always_ok",
       "note": "Automated verification disabled; assumed available. Snapshot page is JS-rendered (Next.js) and blocks plain HTTP scraping/HEAD checks, same as Krews on mainnet."
-    }
+    },
+    "fibre_url": { "Fibre Dashboard": "https://celestia-dashboard.krews.xyz/celestia-mocha/fibre" },
+"fibre_desc": { "Fibre Dashboard": "Real-time Fibre data: settled blobs, signatures, held data, providers, publishers and namespaces, plus a provider map (geo, latency/throughput and retention views). Each validator profile has a Fibre tab with signed settlements, serving checks and reach from 6 regions." }
 },
    {
     "name": "NODERS",
@@ -195,13 +205,27 @@
     "name": "Huginn Tech",
     "webservices": "",
     "x": "HuginnStake",
-    "validatorlogo": "huginn,jpg",
-    "fibre_url": {
-      "Tensile - Fibre retention verification": "https://tensile.huginn.tech/"
-    },
+    "validatorlogo": "huginntech.jpg",
+    "fibre_url": { "Tensile - Fibre retention verification": "https://tensile-mocha.huginn.tech/" },
     "fibre_desc": {
       "Tensile - Fibre retention verification": "Independent, outside verification that validators keep serving the Fibre shards they signed for across the full retention window: per-endpoint DNS/TCP/TLS/consensus-key checks every 5 min with exact error and fix, ⅔-stake readiness tracking, service rate and per-obligation results once blobs flow, ed25519-signed daily exports, dispute route, and public methodology/API."
     }
+},
+    {
+  "name": "Kynraze",
+  "webservices": "",
+  "x": "Kynraze",
+  "validatorlogo": "kynraze.jpg",
+  "fibre_url": { "Tenderduty fork v2.3.0": "https://github.com/kynraze/tenderduty/releases/tag/v2.3.0" },
+  "fibre_desc": { "Tenderduty fork v2.3.0": "Refactored Tenderduty fork to monitor validators, Fibre and bridge nodes in one place: Fibre registration, reachability, signing, storage and endorsements; bridge node downtime and sync lag; upgrade signals; Telegram, Discord, Slack, PagerDuty and Gotify alerts; Prometheus metrics." }
+},
+    {
+  "name": "Endorphine Stake",
+  "webservices": "https://services.endorphinestake.com",
+  "x": "endorphinestake",
+  "validatorlogo": "endorphinestake.jpg",
+  "fibre_url": { "Macro Data on Fibre": "https://macro.endorphinestake.com/" },
+  "fibre_desc": { "Macro Data on Fibre": "Live beta publishing TradingEconomics macro indicators (gold, silver, copper and more) as blobs on Celestia Fibre (mocha-5): Band Protocol fetches the data, an XRPL EVM transaction relays it, and the payload is posted as a blob. Each step can be opened and verified independently." }
 },
     {
     "name": "LuckyResearch.org",
