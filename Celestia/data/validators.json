@@ -972,6 +972,44 @@
   "fibre_url": { "Spectra Fibre Analytics": "https://thespectra.io/celestia" },
   "fibre_desc": { "Spectra Fibre Analytics": "Fibre analytics in the Spectra explorer, including an Outage Simulator that groups Fibre instances by network/datacenter, country and continent and ties them to validator power, plus per-blob endorsements and per-namespace stats." }
 },
+  {
+  "name": "Apollo",
+  "webservices": "https://apollo-validator.eu/",
+  "x": "",
+  "validatorlogo": "",
+  "rpc": "https://rpc.apollo-validator.eu/celestia/",
+  "snapshot": "https://snapshots.apollo-validator.eu/celestia/",
+  "tools_url": {
+    "State-sync": "https://snapshots.apollo-validator.eu/celestia/statesync.html",
+    "Peers": "https://snapshots.apollo-validator.eu/celestia/peers.html"
+  },
+  "tools_desc": {
+    "State-sync": "State sync parameters and instructions for Celestia mainnet.",
+    "Peers": "Live peers list for Celestia mainnet."
+  },
+  "content_url": {
+    "Celestia services guide": "https://github.com/Zelivsky/celestia-services/blob/main/guide.md"
+  }
+},
+  {
+  "name": "Cosmic Validator",
+  "webservices": "https://cosmicvalidator.com",
+  "x": "",
+  "validatorlogo": "",
+  "rpc": "https://celestia-rpc.cosmicvalidator.com",
+  "grpc": "celestia-grpc.cosmicvalidator.com",
+  "websocket": "wss://celestia-rpc.cosmicvalidator.com/websocket",
+  "seeds": "fd207296b4ece8bcaf2d2b8599963b520658c8bb@195.3.222.237:26656",
+  "addrbook": "https://celestia-snapshots.cosmicvalidator.com/snapshots/celestia/addrbook.json",
+  "snapshot": "https://celestia-snapshots.cosmicvalidator.com/snapshot-api/mainnet/latest.json",
+  "statesync_rpc": "https://celestia-rpc.cosmicvalidator.com:443",
+  "tools_url": {
+    "Celestia Services": "https://celestia-services.cosmicvalidator.com/"
+  },
+  "tools_desc": {
+    "Celestia Services": "Node services for Celestia operators: RPC, gRPC, state sync, seed node, address book, WebSocket and snapshots, for Mainnet and Mocha-5."
+  }
+},
 {
   "name": "Cumulo",
   "x": "Cumulo_pro",
