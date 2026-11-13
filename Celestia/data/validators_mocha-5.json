@@ -130,8 +130,16 @@
         "date_key": "snapshotTime",
         "size_key": "snapshotSize"
       },
-       "fibre_url": { "Celestia Testnet Tracker Bot (Telegram)": "https://t.me/Celestia_Testnet_TrackerBot" },
-       "fibre_desc": { "Celestia Testnet Tracker Bot (Telegram)": "Telegram bot for Celestia testnet: wallet transfers, IBC, staking and rewards, validator missed signatures and profile changes, bridge node telemetry, and Fibre registrations, endpoint changes, outages and recovery." }
+      "fibre_url": {
+  "Fibre Dashboard (testnet)": "https://explorer.nodestake.org/celestia-testnet/tools/fibre",
+  "Celestia Testnet Tracker Bot (Telegram)": "https://t.me/Celestia_Testnet_TrackerBot",
+  "Celestia Fibre explained": "https://nodestake.org/blog/celestia-fibre-explained"
+},
+"fibre_desc": {
+  "Fibre Dashboard (testnet)": "NodeStake explorer view of the Fibre providers on Mocha.",
+  "Celestia Testnet Tracker Bot (Telegram)": "Telegram bot for Celestia testnet: wallet, IBC and staking activity, validator missed signatures and profile changes, bridge node telemetry, and Fibre registrations, endpoint changes, outages and recovery.",
+  "Celestia Fibre explained": "NodeStake article explaining what Celestia Fibre is and how it works."
+}
     },
     {
     "name": "Krews",
@@ -185,8 +193,89 @@
     "snapshot_check": {
       "kind": "always_ok",
       "note": "Daily snapshot, filename embeds the block height (celestia-<height>.tar.lz4) and the page is static with no API or directory listing, so automated verification is disabled; last manually verified 2026-09-25 (file served 200, 38.7 GB, mocha-5)."
-    }
+    },
+       "fibre_url": {
+          "Celestia Hub - Fibre": "https://celestiahub.org/explorer/fibre",
+          "Celestia Hub - Fibre Blobs": "https://celestiahub.org/explorer/fibre-blobs",
+          "Fibre Stats API (testnet)": "https://fibre-idx.testnet.noders.services/api/fibre/stats"
+        },
+        "fibre_desc": {
+          "Celestia Hub - Fibre": "Fibre section of NODERS' Celestia Hub explorer.",
+          "Celestia Hub - Fibre Blobs": "Browse Fibre blobs in the Celestia Hub explorer.",
+          "Fibre Stats API (testnet)": "Public JSON endpoint with Fibre network statistics from NODERS' testnet Fibre indexer."
+        }
   },
+    {
+  "name": "Stakeus",
+  "webservices": "https://stakeus.xyz/",
+  "x": "StakeusXyz",
+  "validatorlogo": "stakeusxyz.jpg",
+  "rpc": "https://mocha.stakeus.xyz/rpc/",
+  "api": "https://mocha.stakeus.xyz/rest/",
+  "fibre_url": {
+    "Mocha Workbench": "https://mocha.stakeus.xyz/",
+    "Stakeus Atlas": "https://mocha.stakeus.xyz/atlas/",
+    "Fibre Status API": "https://mocha.stakeus.xyz/api/v1/status"
+  },
+  "fibre_desc": {
+    "Mocha Workbench": "Stakeus workbench for Celestia Mocha: network tools and live data.",
+    "Stakeus Atlas": "Atlas view of Celestia Mocha nodes and infrastructure.",
+    "Fibre Status API": "Public status endpoint (with /api/v1/analytics) exposing Mocha network data."
+  }
+},
+    {
+  "name": "Validexis",
+  "webservices": "https://services.validexis.com/testnets/celestia",
+  "x": "validexis",
+  "validatorlogo": "validexis.jpg",
+  "tools_url": {
+    "Validator Platform": "https://celestia.validexis.com/"
+  },
+  "tools_desc": {
+    "Validator Platform": "Celestia (Mainnet and Mocha) validator tracking: daily block participation vs. network median, missed proposals marked on the chart, and shareable network and validator reports."
+  },
+  "fibre_url": {
+    "Fibre Reachability Checks": "https://celestia.validexis.com/",
+    "Fibre Server Templates": "https://github.com/validexisinfra/Celestia/tree/main/fibre",
+    "Validator and Fibre Monitoring": "https://github.com/validexisinfra/Celestia/tree/main/monitoring"
+  },
+  "fibre_desc": {
+    "Fibre Reachability Checks": "Shows whether a validator's Fibre host answers checks from outside the network, on Mainnet and Mocha.",
+    "Fibre Server Templates": "Open-source configuration templates to deploy a Celestia Fibre server.",
+    "Validator and Fibre Monitoring": "Open-source monitoring setup for Celestia validators and Fibre servers."
+  }
+},
+    {
+  "name": "BlackNodes",
+  "webservices": "https://blacknodes.net/",
+  "x": "",
+  "validatorlogo": "",
+  "fibre_url": {
+    "Fibre Operations Lab": "https://fibre.blacknodes.net/lab/",
+    "Fibre Signal": "https://fibre.blacknodes.net/",
+    "Fibre Status API": "https://fibre.blacknodes.net/api/v1/status",
+    "Fibre Analytics API": "https://fibre.blacknodes.net/api/v1/analytics"
+  },
+  "fibre_desc": {
+    "Fibre Operations Lab": "Operator tooling for Celestia Fibre from BlackNodes.",
+    "Fibre Signal": "Fibre network dashboard from BlackNodes.",
+    "Fibre Status API": "Public JSON endpoint with Fibre network status.",
+    "Fibre Analytics API": "Public JSON endpoint with Fibre network analytics."
+  },
+  "tools_url": {
+    "Mocha-5 genesis.json": "https://files.blacknodes.net/celestia/mocha-5/genesis.json",
+    "Mocha-5 SHA256 checksums": "https://files.blacknodes.net/celestia/mocha-5/SHA256SUMS",
+    "OneClickNodeCelestia": "https://github.com/blacknodes/OneClickNodeCelestia"
+  },
+  "tools_desc": {
+    "Mocha-5 genesis.json": "Genesis file for the Mocha-5 testnet.",
+    "Mocha-5 SHA256 checksums": "SHA256 checksums to verify the Mocha-5 files.",
+    "OneClickNodeCelestia": "Open-source script to deploy a Celestia node in one step."
+  },
+  "content_url": {
+    "Celestia articles": "https://blog.blacknodes.net/celestia"
+  }
+},
     {
     "name": "Bitszn",
     "webservices": "https://testnet.celestia.valopers.com",
