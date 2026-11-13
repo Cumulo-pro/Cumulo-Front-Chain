@@ -994,8 +994,8 @@
   {
   "name": "Cosmic Validator",
   "webservices": "https://cosmicvalidator.com",
-  "x": "",
-  "validatorlogo": "",
+  "x": "CosmicValidator",
+  "validatorlogo": "cosmivalidator.jpg",
   "rpc": "https://celestia-rpc.cosmicvalidator.com",
   "grpc": "celestia-grpc.cosmicvalidator.com",
   "websocket": "wss://celestia-rpc.cosmicvalidator.com/websocket",
