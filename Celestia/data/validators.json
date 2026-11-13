@@ -542,23 +542,17 @@
      "fibre_desc": { "Fibre Dashboard (mainnet)": "Real-time Fibre data: settled blobs, signatures, held data, providers, publishers and namespaces, plus a provider map (geo, latency/throughput and retention views). Each validator profile has a Fibre tab with signed settlements, serving checks and reach from 6 regions." }
     },
   {
-    "name": "21state",
-    "webservices": "https://21state.com/",
-    "x": "TTTcapital",
-    "validatorlogo": "21state.png",
-    "explorer": "",
-    "peers": "",
-    "seeds": "",
-    "api": "",
-    "rpc": "",
-    "grpc": "",
-    "tools_url": {
-        "RPC Locator": "https://github.com/21state/celestia-snapshot-finder"
-    },
-    "tools_desc": {
-    "RPC Locator": "Open-source snapshot finder / endpoint locator tooling for Celestia node operators."
-  }
+  "name": "TTT Labs",
+  "webservices": "",
+  "x": "ttt_lab",
+  "validatorlogo": "tttcapital.jpg",
+  "fibre_url": {
+    "Fibre Doctor Kit": "https://github.com/ttt-labs/fibre-doctor-kit"
   },
+  "fibre_desc": {
+    "Fibre Doctor Kit": "Lightweight read-only diagnostic tool for Celestia node and Fibre operators: interactive terminal UI to inspect node health and estimate buffer capacity, snapshots, temporal or A/B diffs, and offline HTML reports with JSON sidecars."
+  }
+},
   {
     "name": "Validexis",
     "webservices": "https://services.validexis.com/mainnets/celestia",
