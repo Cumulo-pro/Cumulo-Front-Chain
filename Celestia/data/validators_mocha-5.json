@@ -388,25 +388,6 @@
   }
 },
     {
-  "name": "Cosmic Validator",
-  "webservices": "https://cosmicvalidator.com",
-  "x": "CosmicValidator",
-  "validatorlogo": "cosmivalidator.jpg",
-  "rpc": "https://celestia-rpc.cosmicvalidator.com",
-  "grpc": "celestia-grpc.cosmicvalidator.com",
-  "websocket": "wss://celestia-rpc.cosmicvalidator.com/websocket",
-  "seeds": "fd207296b4ece8bcaf2d2b8599963b520658c8bb@195.3.222.237:26656",
-  "addrbook": "https://celestia-snapshots.cosmicvalidator.com/snapshots/celestia/addrbook.json",
-  "snapshot": "https://celestia-snapshots.cosmicvalidator.com/snapshot-api/mainnet/latest.json",
-  "statesync_rpc": "https://celestia-rpc.cosmicvalidator.com:443",
-  "tools_url": {
-    "Celestia Services": "https://celestia-services.cosmicvalidator.com/"
-  },
-  "tools_desc": {
-    "Celestia Services": "Node services for Celestia operators: RPC, gRPC, state sync, seed node, address book, WebSocket and snapshots, for Mainnet and Mocha-5."
-  }
-},
-    {
   "name": "Unity Nodes",
   "webservices": "https://unitynodes.com",
   "x": "UnityNodes",
