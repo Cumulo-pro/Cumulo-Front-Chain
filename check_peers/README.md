@@ -1,3 +1,29 @@
+# Cumulo peer tools
+
+This folder documents two peer systems. They are independent.
+
+## Live Peers (current)
+
+A curated, scored list of reachable peers for Cosmos (CometBFT) chains, refreshed every 30 minutes and served at
+`peers.cumulo.me`. It is what the Peers pages of the Cumulo services read.
+
+- Technical documentation: [PEERS_SYSTEM.md](PEERS_SYSTEM.md)
+- Reliability study (TCP reachability): [PEERS_BENCHMARK.md](PEERS_BENCHMARK.md)
+- Public API: `https://peers.cumulo.me/peers/<chain>/<network>/peers.json` and `peers.txt`
+- Five chains (Celestia mainnet and mocha-5, Cosmos Hub mainnet, XRPL EVM mainnet and testnet) publish only peers that completed a real P2P handshake; Cosmos Hub testnet and Gno.land mainnet are in observation, and the TCP probe remains their published list for now. Status per chain in
+  [section 7 of PEERS_SYSTEM.md](PEERS_SYSTEM.md#7-p2p-handshake-probe)
+
+## DEcentralized Peer Monitor (legacy, being retired)
+
+The rest of this file documents the previous toolkit (`server-peers.js`, `analyze_peers.js`, `agent_server.js`,
+`peer_analyze.php`). It is **not** the source of the Live Peers lists above. It only measured ICMP latency and
+how often a peer appeared in `/net_info` snapshots, and it never checked the P2P handshake. Its services are
+being shut down, so the PeerScan and Connectivity views that depend on it may stop updating. The text below is
+kept for reference only. The `Story Protocol Aeneid` data example is historical: that network is no longer
+operated by Cumulo.
+
+---
+
 # 🛰️ DEcentralized Peer Monitor
 A distributed, professional-grade toolkit for evaluating P2P peers in blockchain networks.  
 
