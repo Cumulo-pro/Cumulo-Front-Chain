@@ -18,6 +18,8 @@ All probes used direct TCP handshakes (`nc -zv -w3`) from a single external node
 
 **Test date:** May 2026
 
+> **Limitation (added 2026-11-11):** this study measures TCP reachability only. A later check on Celestia mainnet with a probe that performs the real CometBFT handshake showed that TCP reachability does not imply a completed handshake: of the 20 peers published by the TCP-based list, 4 completed it, 2 closed right after it (no free inbound slots) and 14 never answered it. The comparison below should be read as a comparison of TCP reachability. That probe now publishes the list of five chains, the first of them since 2026-11-12 (see [PEERS_SYSTEM.md, section 7](PEERS_SYSTEM.md#7-p2p-handshake-probe)), and the benchmark will be repeated with it.
+
 ---
 
 ## Results
@@ -33,7 +35,7 @@ All probes used direct TCP handshakes (`nc -zv -w3`) from a single external node
 | XRPL EVM mainnet (large) | ✅ **20/20** | ❌ 42/50 | - |
 | XRPL EVM testnet | ✅ **20/20** | ❌ 9/10 | ❌ 10/11 |
 
-**Cumulo: 160/160 peers live across all 8 networks. Zero failures.**
+**Cumulo: 160/160 peers reachable over TCP across all 8 networks. Zero TCP failures.**
 
 ---
 

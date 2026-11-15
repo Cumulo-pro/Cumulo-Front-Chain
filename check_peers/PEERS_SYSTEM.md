@@ -3,6 +3,8 @@
 > A curated, scored, and continuously verified peer list for Cosmos (CometBFT) chains.  
 → [Available endpoints and usage](#6-public-api)
 
+_Last reviewed: 2026-11-14. Five chains publish only peers that completed a real P2P handshake and two more are being observed; the current status per chain is in [section 7](#7-p2p-handshake-probe)._
+
 ---
 
 ## Table of Contents
@@ -13,6 +15,8 @@
 4. [How to Appear on the List](#4-how-to-appear-on-the-list)
 5. [Contributing to the Validators JSON](#5-contributing-to-the-validators-json)
 6. [Public API](#6-public-api)
+7. [P2P Handshake Probe](#7-p2p-handshake-probe)
+8. [Configuration](#8-configuration)
 
 ---
 
@@ -35,6 +39,8 @@ This multi-source approach means that a peer appearing in the `/net_info` of sev
 
 Beyond discovery, every IPv4 peer is **TCP-probed directly on the p2p port** to verify external reachability, a **10-observation sliding buffer** (~5 hours) filters out unstable peers, and a **multi-factor score** determines the final ranking.
 
+An open TCP port does not prove that a peer completes the CometBFT P2P handshake or has free inbound slots. To close that gap, a second probe that performs the real handshake runs on every chain where it has been enabled, and those lists publish only peers that completed it. Which chains, and since when, is in the status table of [section 7](#7-p2p-handshake-probe).
+
 ---
 
 ## 2. Architecture & Data Flow
@@ -43,10 +49,11 @@ Beyond discovery, every IPv4 peer is **TCP-probed directly on the p2p port** to 
 
 | Component | Role |
 |---|---|
-| Collector | Runs every 30 min via systemd timer, aggregates all sources and publishes results |
+| Collector | Systemd timer wakes it every 6 min; each chain runs at its own minute offset, so every chain is refreshed every 30 min. Aggregates all sources and publishes results |
 | Cosmos node | Primary peer source via `/net_info` |
 | Web server / Nginx | Serves `peers.cumulo.me` |
 | Validators JSON | Cumulo-maintained resource list per chain, hosted on GitHub |
+| P2P probe (`p2pprobe`) | Go binary run by the collector: one real P2P handshake per peer (a CometBFT build and a Tendermint2 build for Gno.land). Enabled per chain: see the status table in [section 7](#7-p2p-handshake-probe) |
 
 ### Tier System
 
@@ -56,7 +63,7 @@ Every peer candidate is classified into one of two tiers before processing:
 - Source: `/net_info` of our node or external validator RPCs
 - The peer is actively connected to at least one known node right now
 - IPv4: mandatory TCP probe on the p2p port
-- IPv6: included if `is_outbound=true` on our own node (active connection = sufficient proof)
+- IPv6: treated as verified if `is_outbound=true` on our own node (active connection = sufficient proof). Kept in the store for scoring, but never published (see the IPv6 note in section 3)
 - Buffer weight: `1.0` per successful observation
 - Score multiplier: `×1.2`
 
@@ -208,16 +215,16 @@ If it does not respond, rejects the connection, or times out → probe failed (`
 - Whether the CometBFT p2p protocol handshake succeeds
 - Latency or bandwidth of the connection
 
-For the purpose of this system, TCP reachability is the right signal. If the port is open and consistently reachable, CometBFT can establish the full p2p connection - the protocol handles the rest. A peer that passes TCP probes reliably is a peer that node operators can actually connect to.
+TCP reachability is the minimum signal, and the right first filter: a closed port can never work. It is not a sufficient one. A peer can accept the TCP connection and still never answer the CometBFT handshake (wrong or overloaded process, a proxy in front of the port, connection filters), or complete it and then close the connection because it has no free inbound slots. Measurements on Celestia mainnet showed that this affects a large share of the peers that pass the TCP probe (details in [section 7](#7-p2p-handshake-probe)). The TCP probe therefore stays as the first filter, and on Celestia mainnet the handshake probe is the second.
 
 **Why not probe the RPC port instead?**  
 Many validators keep their RPC port closed for security reasons. Probing the RPC would systematically penalize the most professionally configured nodes. The p2p port is the only port that every functioning node must keep open.
 
 **Why latency is not measured**  
-The TCP handshake time could technically be measured, but it would reflect the latency between the collector's location and the peer - not between the operator and the peer. A node in Singapore measured from St. Louis would show ~200ms, while an operator in Bangkok would experience ~5ms to the same peer. Publishing latency as a quality signal would penalize geographically distant peers unfairly. Instead, the dashboard sorts peers by geographic proximity to the visitor, so each operator sees the peers most likely to have low latency for their specific location.
+The TCP handshake time could technically be measured, but it would reflect the latency between the collector's location and the peer - not between the operator and the peer. A node in Singapore measured from St. Louis would show ~200ms, while an operator in Bangkok would experience ~5ms to the same peer. Publishing latency as a quality signal would penalize geographically distant peers unfairly. Instead, the dashboard sorts peers by geographic proximity to the visitor, so each operator sees the peers most likely to have low latency for their specific location. The handshake probe described in section 7 also records the handshake duration per peer; it has the same limitation (measured from the collector) and is not published as a quality signal.
 
 **IPv6 peers**  
-The collector currently lacks outbound IPv6 connectivity. IPv6 peers from our own node that are `is_outbound=true` are included without a TCP probe - the active CometBFT connection is taken as sufficient proof of reachability. These peers appear in the published list with `tcp_verified: false`. Full IPv6 TCP probe support is pending a network upgrade.
+The collector currently lacks outbound IPv6 connectivity. IPv6 peers from our own node that are `is_outbound=true` are treated as verified without a TCP probe (the active CometBFT connection is taken as proof of reachability) and are kept in the internal store for scoring and statistics. **They are not published**: `peers.txt` and `peers.json` contain IPv4 peers only, because CometBFT rejects unbracketed IPv6 addresses in `persistent_peers` (`too many colons in address`). Full IPv6 TCP probe support is pending a network upgrade.
 
 **Probe parallelism and timing**  
 Up to 20 probes run in parallel with a 3-second timeout each. With pools of 600-800 candidates (typical for mainnet), the probe phase takes approximately 60-90 seconds per cycle. Results feed directly into the sliding buffer update described below.
@@ -336,6 +343,8 @@ Your node will appear on the Cumulo Live Peers list when it meets these conditio
 The collector performs a **direct TCP probe on your p2p port** (default 26656). Your node must accept incoming connections on this port from external IPs.
 
 > ⚠️ Your RPC port does not need to be open. The collector never touches the RPC of candidate peers.
+
+A reachable port is necessary but, on chains where the handshake probe is active (see the status table in [section 7](#7-p2p-handshake-probe)), no longer enough: your node must also complete the CometBFT handshake and keep free inbound slots (`max_num_inbound_peers`). A real moniker helps too (see [section 7](#7-p2p-handshake-probe)).
 
 Verify your p2p port is reachable:
 ```bash
@@ -468,14 +477,19 @@ https://peers.cumulo.me/peers/<chain>/<network>/peers.txt
 
 **Available chains:**
 
-| Chain | Network | chain_id | Status |
-|---|---|---|---|
-| Cosmos Hub | testnet | provider | ✅ Active |
-| Cosmos Hub | mainnet | cosmoshub-4 | ✅ Active |
-| Celestia | mainnet | celestia | ✅ Active |
-| Celestia | testnet | mocha-4 | ✅ Active |
-| XRPL EVM | mainnet | xrplevm_1440000-1 | ✅ Active |
-| XRPL EVM | testnet | xrplevm_1449000-1 | ✅ Active |
+| Chain | Network | chain_id | Status | Peer list |
+|---|---|---|---|---|
+| Cosmos Hub | testnet | provider | ✅ Active | TCP probe (handshake probe in observation) |
+| Cosmos Hub | mainnet | cosmoshub-4 | ✅ Active | P2P handshake |
+| Celestia | mainnet | celestia | ✅ Active | P2P handshake |
+| Celestia | testnet | mocha-5 | ✅ Active | P2P handshake |
+| XRPL EVM | mainnet | xrplevm_1440000-1 | ✅ Active | P2P handshake |
+| XRPL EVM | testnet | xrplevm_1449000-1 | ✅ Active | P2P handshake |
+| Gno.land | mainnet | gnoland-1 | ✅ Active | TCP probe (handshake probe in observation) |
+| Gno.land | testnet | pearl-1 | ⏸ Not currently updated (last update 2026-09-19) | - |
+
+"P2P handshake" means every published peer completed a real handshake with the collector (see [section 7](#7-p2p-handshake-probe)).
+Limonata testnet is no longer published (the network was decommissioned).
 
 **Live endpoints:**  
 [Cosmos Hub testnet peers.json](https://peers.cumulo.me/peers/cosmos/testnet/peers.json) · [peers.txt](https://peers.cumulo.me/peers/cosmos/testnet/peers.txt)  
@@ -483,7 +497,8 @@ https://peers.cumulo.me/peers/<chain>/<network>/peers.txt
 [Celestia mainnet peers.json](https://peers.cumulo.me/peers/celestia/mainnet/peers.json) · [peers.txt](https://peers.cumulo.me/peers/celestia/mainnet/peers.txt)  
 [Celestia testnet peers.json](https://peers.cumulo.me/peers/celestia/testnet/peers.json) · [peers.txt](https://peers.cumulo.me/peers/celestia/testnet/peers.txt)  
 [XRPL EVM mainnet peers.json](https://peers.cumulo.me/peers/xrplevm/mainnet/peers.json) · [peers.txt](https://peers.cumulo.me/peers/xrplevm/mainnet/peers.txt)  
-[XRPL EVM testnet peers.json](https://peers.cumulo.me/peers/xrplevm/testnet/peers.json) · [peers.txt](https://peers.cumulo.me/peers/xrplevm/testnet/peers.txt)
+[XRPL EVM testnet peers.json](https://peers.cumulo.me/peers/xrplevm/testnet/peers.json) · [peers.txt](https://peers.cumulo.me/peers/xrplevm/testnet/peers.txt)  
+[Gno.land mainnet peers.json](https://peers.cumulo.me/peers/gnoland/mainnet/peers.json) · [peers.txt](https://peers.cumulo.me/peers/gnoland/mainnet/peers.txt)
 
 ### peers.txt
 
@@ -513,7 +528,6 @@ Full structured response with scoring metadata:
       "connection_string": "a3825c8fb9b8fc6e95b10279ccd898321fa37c20@54.37.31.127:14956",
       "region": "EU",
       "tier": "TIER1",
-      "ipv6": false,
       "score": 2.64,
       "stability": 1.0,
       "source_count": 7,
@@ -532,9 +546,20 @@ Full structured response with scoring metadata:
 | `stability` | float | Fraction of the sliding buffer that is successful. `1.0` = perfect over last 5 hours. |
 | `source_count` | int | Number of distinct `/net_info` sources (our node + validator RPCs) that reported this peer simultaneously in the same cycle. |
 | `outbound` | bool | Whether this peer has been outbound in the majority of observations. |
-| `tcp_verified` | bool | `false` for IPv6 peers (no direct TCP probe available currently). |
-| `ipv6` | bool | Whether the peer address is IPv6. |
+| `tcp_verified` | bool | `true` for every published peer: only peers that passed the TCP probe are published (IPv6 peers are not published). |
 | `first_seen` | ISO8601 | When this peer was first detected by the collector. |
+
+On chains where the handshake probe is active (see [section 7](#7-p2p-handshake-probe)) each peer also carries:
+
+| Field | Type | Description |
+|---|---|---|
+| `p2p_status` | string | Result of the last handshake check. `ok` for every published peer on those chains. |
+| `handshake_ms` | int or null | Duration of the last handshake, measured from the collector (not from the reader). |
+| `moniker` | string or null | Moniker the node announced. Remote text, sanitized (printable characters, 64 max); escape it when rendering HTML. |
+| `cometbft_version` | string or null | Software version the node announced (CometBFT, or Tendermint2 on Gno.land). |
+| `p2p_checked_at` | ISO8601 or null | When the peer last gave a conclusive handshake result. |
+
+Chains without the probe do not have these fields.
 
 ### Response headers
 
@@ -547,16 +572,257 @@ The list is refreshed every 30 minutes. Clients should not poll more frequently 
 
 ---
 
+## 7. P2P Handshake Probe
+
+### Status per chain (2026-11-14)
+
+| Chain | Network | Published list | Handshake probe |
+|---|---|---|---|
+| Celestia | mainnet | P2P handshake | Active since 2026-11-12 |
+| Celestia | mocha-5 | P2P handshake | Active since 2026-11-14 |
+| Cosmos Hub | mainnet | P2P handshake | Active since 2026-11-14 |
+| XRPL EVM | mainnet | P2P handshake | Active since 2026-11-14 |
+| XRPL EVM | testnet | P2P handshake | Active since 2026-11-14 |
+| Cosmos Hub | testnet | TCP probe | In observation (nothing published from it yet) |
+| Gno.land | mainnet | TCP probe | In observation, Tendermint2 build (nothing published from it yet) |
+
+If the probe cannot run in a cycle, the TCP-based list is published instead (see "Safety net").
+
+### Why
+
+The TCP probe shows that a port is open. It does not show that the node on the other side completes the CometBFT
+P2P handshake. In the first measurement on Celestia mainnet (2026-11-11), of the 20 peers published by the
+TCP-based list: 4 completed the handshake, 2 completed it and then closed the connection immediately (no free
+inbound slots) and 14 accepted the TCP connection but never answered the handshake.
+
+The same comparison on the other chains, over the first 21 hours of observation (2026-11-13 and 14, 44 cycles per
+chain, 20 peers in each TCP-based list):
+
+| Chain | Peers of the TCP list that complete the handshake (median of 20) | Handshake-verified list (median size) |
+|---|---|---|
+| Cosmos Hub mainnet | 4 | 20 |
+| Celestia mocha-5 | 13 | 20 |
+| XRPL EVM mainnet | 14 | 20 |
+| XRPL EVM testnet | 4 | 14 |
+
+XRPL EVM testnet is a small network and most of its peers are connected to our own node (see the shared IP
+caveat below), so its verified list is shorter.
+
+### What it does
+
+For each TIER1 IPv4 peer that passed the TCP probe, once per cycle, the probe opens **one** connection and
+behaves like a real node up to the point where peers are exchanged:
+
+1. TCP connect (3 s).
+2. SecretConnection handshake (X25519 + Ed25519, 5 s). The node ID proven in this step is compared with the
+   published one.
+3. NodeInfo exchange. The probe presents the chain parameters read from our own node (network, protocol and
+   block versions, channels) so that the remote node's compatibility check passes.
+4. Holds the connection a few seconds. A peer that closes right after NodeInfo has no free inbound slots.
+5. Closes. No retries, no gossip, no messages beyond the handshake.
+
+The probe uses its own dedicated Ed25519 node key (never a validator or node key) and identifies itself with the
+moniker `cumulo-peers-probe (peers.cumulo.me)`, so operators can recognize it in their logs.
+
+### Result states
+
+| State | Meaning |
+|---|---|
+| `ok` | Handshake and NodeInfo completed, connection kept |
+| `full` | Handshake and NodeInfo completed, then the peer closed the connection (no free inbound slots) |
+| `no_handshake` | TCP open but the handshake was not completed (`secret_conn_timeout`, `reset_early`, `nodeinfo_timeout`, ...) |
+| `id_mismatch` | The node ID proven in the handshake differs from the published one |
+| `wrong_network` | NodeInfo reports a different chain-id |
+| `tcp_closed` | The port does not answer |
+| `inconclusive` | No verdict (see below) |
+| `skipped` | Not probed within the cycle time budget |
+
+Per peer the collector also keeps the handshake duration, the CometBFT version, the moniker and the last 10
+results.
+
+### A measurement caveat: shared IP
+
+When the collector runs on the same public IP as our own node, peers that are connected to that node close the
+probe before the handshake (CometBFT rejects a second connection from an IP it is already connected to, and the
+default is `allow_duplicate_ip = false`). That looks like `reset_early` but says nothing about the peer. Checked
+on 2026-11-11: 11 of 14 such peers completed the handshake when probed from another IP. For this case the
+collector records `inconclusive`, which counts neither for nor against the peer. Other failures, notably
+`secret_conn_timeout`, were identical from both IPs and are kept as real `no_handshake`. A peer that is always
+connected to our node therefore cannot accumulate conclusive results and is not listed.
+
+Tendermint2 (Gno.land) applies the same guard after the NodeInfo exchange, so there it shows up as `full` instead
+of `reset_early`; the collector treats it per chain in the same way. Today the collector shares its IP with our own
+node on Celestia mainnet, XRPL EVM testnet and Gno.land mainnet.
+
+### What is published (chains where the probe is active)
+
+- A peer is listed only if its latest handshake is `ok`, it has at least 7 successful handshakes in its last 10
+  conclusive checks (about 70% over 5 hours), and it does not have 2 failures among its last 3.
+- `full` and `no_handshake` peers are not listed. `id_mismatch` and `wrong_network` peers are quarantined (48 h
+  and 24 h) before they are probed again.
+- Peers on the collector's own IP are never listed.
+- Scoring, regional cap and ordering are the same as before; `stability` is computed from the handshake results.
+- Each peer carries the extra fields described in section 6.
+
+### Safety net
+
+The collector publishes the TCP-based list instead, and logs why, when the probe did not run or failed in that
+cycle, when half or more of the probes were `skipped`, or when the handshake list has fewer than 10 peers. The
+service is never left empty because of the probe.
+
+### Not done yet
+
+- Using the handshake duration as an ordering signal (it is recorded and published, not used for ranking).
+- Penalizing default monikers (`YOUR_MONIKER`, `node-name`, `Tendermint`, ...).
+- A cap per operator or per /24 block: several peers of the same operator can appear in the same list.
+- Activating the probe on Cosmos Hub testnet and Gno.land mainnet (both in observation).
+
+### Scope
+
+CometBFT chains use the CometBFT build of the probe. Gno.land (Tendermint2) has its own build with the same states
+and output; in a test against 47 real peers of gnoland-1 it gave 6 `ok`, 27 `full` and 14 `tcp_closed`, identical in
+two consecutive passes: most of its peers do not accept inbound connections. Each chain opts in separately.
+
+### What operators can do now
+
+Keep free inbound slots, keep the node ID stable, and set a real moniker instead of the default.
+
+---
+
+## 8. Configuration
+
+Everything is configured in one file, `config/config.yaml`. Adding a chain or changing how a chain is probed never
+requires a code change. The file has a `global` block with the defaults and a `chains` list with one block per
+published network.
+
+### Chain block
+
+| Key | Meaning |
+|---|---|
+| `name`, `network` | Path of the published files: `/peers/<name>/<network>/`. |
+| `chain_id` | Chain-id of the network. The handshake probe rejects peers that report a different one. |
+| `rpc_url` | RPC of one of our own nodes. Used for `/net_info` and, with the probe, as the source of the NodeInfo template. |
+| `validators_json_url` | Validators JSON with the RPC endpoints of other operators (see section 5). |
+| `p2p_default_port` | Port assumed when a source gives none. |
+| `daemon_home` | Name of the node home folder, used when reading addrbooks. |
+| `enabled` | `false` skips the chain. Its store and published files are kept as they were. |
+| `cycle_offset_minutes` | Minute of the half hour at which the chain runs (see "Timing"). |
+| `p2p_probe` | Handshake probe settings for this chain (below). Merged over the global block. |
+
+### Handshake probe settings
+
+Set in `global.p2p_probe` (defaults for every chain) and overridden per chain in `chains[].p2p_probe`.
+
+| Key | Default | Meaning |
+|---|---|---|
+| `enabled` | `false` | Run the probe on this chain. |
+| `mode` | `shadow` | `shadow`: record and compare only, the published list does not change. `active`: publish only peers that completed the handshake. |
+| `min_peers` | `10` | If the handshake list would have fewer peers than this, the TCP-based list is published for that cycle (see "Safety net"). |
+| `exclude_ips` | none | Peers on these IPs are never listed. Set it to the collector's own IP: a handshake against our own machine says nothing about the network. |
+| `shared_ip_with_node` | `false` | `true` when one of our own nodes of this chain runs on the collector's public IP (see "A measurement caveat: shared IP"). |
+| `shared_ip_signal` | `reset_early` | How the duplicate IP guard of that node software shows up: `reset_early` (CometBFT) or `full` (Tendermint2). Only used when `shared_ip_with_node` is `true`. |
+| `own_outbound_ok` | `false` | Only used with `shared_ip_with_node: true`. A peer that our own node dialed and is connected to counts as a successful handshake (`ok`, detail `own_outbound`) when the shared IP guard is the only thing that stopped the probe. Real failures such as `secret_conn_timeout`, `wrong_network` or `tcp_closed` are never overridden. |
+| `binary` | global block (`bin/p2pprobe`) | Probe executable. If the file does not exist the probe is skipped with a warning. Gno.land uses the Tendermint2 build, `bin/p2pprobe-tm2`. |
+| `template_rpc` | the chain `rpc_url` | RPC whose `/status` provides the NodeInfo template presented by the probe. |
+| `key_file` | global block (`data/probe_node_key.json`) | Dedicated Ed25519 node key of the probe. Never the key of a validator or node. Each build has its own file. |
+| `concurrency` | `20` | Simultaneous handshakes. |
+| `dial_timeout_seconds` | `3` | TCP connect timeout. |
+| `handshake_timeout_seconds` | `5` | SecretConnection and NodeInfo timeout. |
+| `hold_seconds` | `4` | How long the connection is kept open after NodeInfo to detect peers without free inbound slots. |
+| `budget_seconds` | `240` | Total time budget per chain and cycle. Peers not reached in time are recorded as `skipped`. |
+
+### Example: a chain with the probe active
+
+```yaml
+  - name: celestia
+    network: mainnet
+    enabled: true
+    chain_id: celestia
+    rpc_url: https://celestia.cumulo.org.es
+    validators_json_url: https://github.com/Cumulo-pro/Cumulo-Front-Chain/blob/main/Celestia/data/validators.json
+    p2p_default_port: 26656
+    daemon_home: .celestia-app
+    cycle_offset_minutes: 12
+    p2p_probe:
+      enabled: true
+      mode: active
+      min_peers: 10
+      exclude_ips: ["148.72.141.245"]
+      shared_ip_with_node: true
+```
+
+### Example: Tendermint2 (Gno.land)
+
+```yaml
+    p2p_probe:
+      enabled: true
+      mode: shadow
+      shared_ip_with_node: true
+      shared_ip_signal: full
+      own_outbound_ok: true
+      binary: /home/cumvelia2/cumulo-peers/bin/p2pprobe-tm2
+      key_file: /home/cumvelia2/cumulo-peers/data/probe_node_key_tm2.json
+```
+
+The Tendermint2 build is compiled against `github.com/gnolang/gno` and speaks the same SecretConnection, but its
+NodeInfo is amino encoded and node IDs are bech32 (`g1...`). It takes the same command line flags as the CometBFT
+build and produces the same states.
+
+### Enabling the probe on a new chain
+
+1. **Observe.** Set `p2p_probe.enabled: true` and leave `mode` as `shadow`. Nothing published changes. Each cycle the
+   collector records the handshake result of every peer in the store and in `data/shadow_<chain_id>.jsonl`.
+2. **Wait.** About 24 hours (about 5 hours is the minimum for a peer to fill its 10 results buffer).
+3. **Compare.** For the same cycles, count how many peers of the TCP-based list complete the handshake and how many
+   peers the handshake list would publish. If the handshake list is regularly shorter than `min_peers`, either the
+   chain has few reachable peers or `shared_ip_with_node` is missing.
+4. **Activate.** Set `mode: active`. From the next cycle the published list is the handshake list, with the safety net
+   behind it.
+5. **Check.** The cycle log has one line `Lista publicada` per chain saying which list was published and why.
+
+To go back, set `mode: shadow`. The very next cycle publishes the TCP-based list again; no data is lost because the
+handshake results keep being recorded.
+
+A validators JSON that lists endpoints of another network (for example a testnet RPC in a mainnet file) is
+detected by the probe: those peers are reported as `wrong_network` and quarantined, and they never reach the list.
+
+### Timing
+
+A systemd timer fires every 6 minutes. A chain runs in the slots where `minute % 30 == cycle_offset_minutes % 30`,
+so six chains can share the half hour without overlapping. Two chains may share an offset when both finish well
+inside the slot. A run that lasts longer than 6 minutes makes the next slot skip, which is why the probe has its own
+`budget_seconds` (240 s) and why chains with many peers should not share an offset.
+
+| Offset | Chains |
+|---|---|
+| 0 | Cosmos Hub testnet (`provider`) |
+| 6 | Cosmos Hub mainnet |
+| 12 | Celestia mainnet |
+| 18 | Celestia mocha-5 |
+| 24 | XRPL EVM mainnet and testnet |
+| 30 (acts as 0) | Gno.land mainnet |
+
+### What changes on the dashboard
+
+Pages read `peers.json`. When every listed peer carries `p2p_status: "ok"`, the service page labels the list and its
+column as P2P handshake; otherwise it shows the TCP wording. The text of the connection guide of a chain changes only
+when that chain publishes the handshake list.
+
+---
+
 ## Notes
 
 **Why TCP probe and not RPC probe?**  
-Many validators keep their RPC closed for security reasons. Probing the RPC would systematically penalize well-configured nodes. The p2p port is the only port that a functioning node must keep open, making it the right target for reachability verification.
+Many validators keep their RPC closed for security reasons. Probing the RPC would systematically penalize well-configured nodes. The p2p port is the only port that a functioning node must keep open, making it the right target for reachability verification. The handshake probe of section 7 also connects to the p2p port only.
 
 **Why does the list start small?**  
 The sliding buffer requires a minimum of 7 successful observations before a peer is published. With a 30-minute interval, new peers take approximately 3.5 hours to appear. This is intentional - the list reflects verified stability over time, not an instant snapshot.
 
+**Why can a handshake-verified list have fewer than 20 peers?**  
+Only peers with enough recent successful handshakes are published, and the list is not padded with peers that fail. On Celestia mainnet it varied between 13 and 20 peers in the first days, and XRPL EVM testnet, a small network, publishes around 13 to 15. If it ever drops below a minimum (10), the TCP-based list is published instead.
+
 **IPv6 support**  
-The collector currently lacks outbound IPv6 connectivity. IPv6 peers that are actively connected as outbound on our own node are included without TCP probe - the active connection is taken as sufficient proof of reachability. Full IPv6 TCP probe support is pending a network upgrade.
+The collector currently lacks outbound IPv6 connectivity. IPv6 peers that are actively connected as outbound on our own node are treated as verified without TCP probe and kept in the store, but they are not published (IPv4 only in `peers.txt` and `peers.json`). Full IPv6 TCP probe support is pending a network upgrade.
 
 **Geographic TCP probe perspective**  
 All probes originate from the same network location. A peer reachable from there is very likely reachable globally, but latency characteristics may vary by region. The dashboard sorts peers by geographic proximity to the visitor to partially compensate for this.
