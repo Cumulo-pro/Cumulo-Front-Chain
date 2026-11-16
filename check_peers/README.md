@@ -10,7 +10,7 @@ A curated, scored list of reachable peers for Cosmos (CometBFT) chains, refreshe
 - Technical documentation: [PEERS_SYSTEM.md](PEERS_SYSTEM.md)
 - Reliability study (TCP reachability): [PEERS_BENCHMARK.md](PEERS_BENCHMARK.md)
 - Public API: `https://peers.cumulo.me/peers/<chain>/<network>/peers.json` and `peers.txt`
-- Five chains (Celestia mainnet and mocha-5, Cosmos Hub mainnet, XRPL EVM mainnet and testnet) publish only peers that completed a real P2P handshake; Cosmos Hub testnet and Gno.land mainnet are in observation, and the TCP probe remains their published list for now. Status per chain in
+- Every chain currently updated (Celestia mainnet and mocha-5, Cosmos Hub mainnet and testnet, XRPL EVM mainnet and testnet, Gno.land mainnet) lists only peers that completed a real P2P handshake. Status per chain in
   [section 7 of PEERS_SYSTEM.md](PEERS_SYSTEM.md#7-p2p-handshake-probe)
 
 ## DEcentralized Peer Monitor (legacy, being retired)

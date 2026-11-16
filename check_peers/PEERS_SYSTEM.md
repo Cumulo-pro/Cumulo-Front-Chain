@@ -3,7 +3,7 @@
 > A curated, scored, and continuously verified peer list for Cosmos (CometBFT) chains.  
 → [Available endpoints and usage](#6-public-api)
 
-_Last reviewed: 2026-11-14. Five chains publish only peers that completed a real P2P handshake and two more are being observed; the current status per chain is in [section 7](#7-p2p-handshake-probe)._
+_Last reviewed: 2026-11-15. Every chain that is currently updated publishes only peers that completed a real P2P handshake; the status per chain is in [section 7](#7-p2p-handshake-probe)._
 
 ---
 
@@ -479,13 +479,13 @@ https://peers.cumulo.me/peers/<chain>/<network>/peers.txt
 
 | Chain | Network | chain_id | Status | Peer list |
 |---|---|---|---|---|
-| Cosmos Hub | testnet | provider | ✅ Active | TCP probe (handshake probe in observation) |
+| Cosmos Hub | testnet | provider | ✅ Active | P2P handshake |
 | Cosmos Hub | mainnet | cosmoshub-4 | ✅ Active | P2P handshake |
 | Celestia | mainnet | celestia | ✅ Active | P2P handshake |
 | Celestia | testnet | mocha-5 | ✅ Active | P2P handshake |
 | XRPL EVM | mainnet | xrplevm_1440000-1 | ✅ Active | P2P handshake |
 | XRPL EVM | testnet | xrplevm_1449000-1 | ✅ Active | P2P handshake |
-| Gno.land | mainnet | gnoland-1 | ✅ Active | TCP probe (handshake probe in observation) |
+| Gno.land | mainnet | gnoland-1 | ✅ Active | P2P handshake |
 | Gno.land | testnet | pearl-1 | ⏸ Not currently updated (last update 2026-09-19) | - |
 
 "P2P handshake" means every published peer completed a real handshake with the collector (see [section 7](#7-p2p-handshake-probe)).
@@ -574,7 +574,7 @@ The list is refreshed every 30 minutes. Clients should not poll more frequently 
 
 ## 7. P2P Handshake Probe
 
-### Status per chain (2026-11-14)
+### Status per chain (2026-11-15)
 
 | Chain | Network | Published list | Handshake probe |
 |---|---|---|---|
@@ -583,8 +583,8 @@ The list is refreshed every 30 minutes. Clients should not poll more frequently 
 | Cosmos Hub | mainnet | P2P handshake | Active since 2026-11-14 |
 | XRPL EVM | mainnet | P2P handshake | Active since 2026-11-14 |
 | XRPL EVM | testnet | P2P handshake | Active since 2026-11-14 |
-| Cosmos Hub | testnet | TCP probe | In observation (nothing published from it yet) |
-| Gno.land | mainnet | TCP probe | In observation, Tendermint2 build (nothing published from it yet) |
+| Cosmos Hub | testnet | P2P handshake | Active since 2026-11-15 |
+| Gno.land | mainnet | P2P handshake | Active since 2026-11-15 (Tendermint2 build, minimum list size 5) |
 
 If the probe cannot run in a cycle, the TCP-based list is published instead (see "Safety net").
 
@@ -604,9 +604,12 @@ chain, 20 peers in each TCP-based list):
 | Celestia mocha-5 | 13 | 20 |
 | XRPL EVM mainnet | 14 | 20 |
 | XRPL EVM testnet | 4 | 14 |
+| Cosmos Hub testnet | 8 | 20 |
+| Gno.land mainnet | 5 | 12 |
 
-XRPL EVM testnet is a small network and most of its peers are connected to our own node (see the shared IP
-caveat below), so its verified list is shorter.
+The last two rows cover 22 hours of observation (2026-11-14 and 15, about 45 cycles). XRPL EVM testnet is a small
+network and most of its peers are connected to our own node (see the shared IP caveat below), so its verified list is
+shorter. Gno.land has few peers that accept inbound connections, so its verified list is the shortest.
 
 ### What it does
 
@@ -675,7 +678,6 @@ service is never left empty because of the probe.
 - Using the handshake duration as an ordering signal (it is recorded and published, not used for ranking).
 - Penalizing default monikers (`YOUR_MONIKER`, `node-name`, `Tendermint`, ...).
 - A cap per operator or per /24 block: several peers of the same operator can appear in the same list.
-- Activating the probe on Cosmos Hub testnet and Gno.land mainnet (both in observation).
 
 ### Scope
 
@@ -753,10 +755,13 @@ Set in `global.p2p_probe` (defaults for every chain) and overridden per chain in
 
 ### Example: Tendermint2 (Gno.land)
 
+A small network with few reachable peers uses a lower `min_peers`.
+
 ```yaml
     p2p_probe:
       enabled: true
-      mode: shadow
+      mode: active
+      min_peers: 5
       shared_ip_with_node: true
       shared_ip_signal: full
       own_outbound_ok: true
@@ -819,7 +824,7 @@ Many validators keep their RPC closed for security reasons. Probing the RPC woul
 The sliding buffer requires a minimum of 7 successful observations before a peer is published. With a 30-minute interval, new peers take approximately 3.5 hours to appear. This is intentional - the list reflects verified stability over time, not an instant snapshot.
 
 **Why can a handshake-verified list have fewer than 20 peers?**  
-Only peers with enough recent successful handshakes are published, and the list is not padded with peers that fail. On Celestia mainnet it varied between 13 and 20 peers in the first days, and XRPL EVM testnet, a small network, publishes around 13 to 15. If it ever drops below a minimum (10), the TCP-based list is published instead.
+Only peers with enough recent successful handshakes are published, and the list is not padded with peers that fail. On Celestia mainnet it varied between 13 and 20 peers in the first days, and XRPL EVM testnet, a small network, publishes around 13 to 15, and Gno.land, where most peers do not accept inbound connections, around 12. Gno.land uses a lower fallback threshold (`min_peers: 5`). If it ever drops below a minimum (10), the TCP-based list is published instead.
 
 **IPv6 support**  
 The collector currently lacks outbound IPv6 connectivity. IPv6 peers that are actively connected as outbound on our own node are treated as verified without TCP probe and kept in the store, but they are not published (IPv4 only in `peers.txt` and `peers.json`). Full IPv6 TCP probe support is pending a network upgrade.
