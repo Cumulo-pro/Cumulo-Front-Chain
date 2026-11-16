@@ -1,5 +1,18 @@
 [
   {
+  "id": "cosmos-testnet-governance-proposal-335-2026-11-16",
+  "date": "2026-11-16T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "Cosmos Hub",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "proposal_id": 335,
+  "note": "Governance Proposal #335 on Cosmos Hub testnet: Migrates the Stellar (SCP) light client 08-wasm-464 from v0.2.0 to v0.3.0 by storing the new wasm code (checksum 8d22a4b50c7303008b5f0fdfad5f3b51eb98c04fabfa82fa0ac7569a70781a79, previously 0ca42b59f9da6e3609cf9f0dd6fdf523837936efa8bd865be581cc8b9bf4429f) via MsgStoreCode and MsgMigrateContract. v0.3.0 uses stellar-consensus-verifier 2.3.0: it accepts fee-bumped router transactions, binds the last root event when a router invocation emits several, lets a ledger's bound root move forward within the ledger, refuses headers below the trust root in force, stops trusting the root carried in the initial consensus state, and rejects proof verification against an expired client. The migration changes only the code; client state, quorum configuration, consensus states, client id and counterparty are preserved. Testnet request; the code has not yet had a third-party audit. Cumulo voted Yes.",
+  "url": "https://cumulo.pro/services/cosmos_testnet/governance#proposal-335",
+  "vote": "https://cumulo.pro/services/cosmos_testnet/search?q=CAA9956909D370FD817414B7A4891A422FB2546DBE02A1506398563E59492133"
+},
+  {
   "id": "gnoland-mainnet-gnoland-v1.7.1-upgrade-2026-11-13",
   "date": "2026-11-13T10:05:00Z",
   "incident_type": "upgrade",
