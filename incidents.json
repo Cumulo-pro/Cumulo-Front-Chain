@@ -1,5 +1,16 @@
 [
   {
+  "id": "celestia-mainnet-testnet-cve-2026-98432-mitigation-2026-11-16",
+  "date": "2026-11-16T00:00:00Z",
+  "incident_type": "update",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet/testnet",
+  "node_type": ["validator", "rpc", "backup", "snapshot", "bridge"],
+  "note": "Cumulo applied kernel-level mitigations across its Celestia mainnet and Mocha-5 testnet infrastructure for two Linux TCP CVEs disclosed by the Celestia Foundation: CVE-2026-99288 (a lockless TCP socket lookup race risking a NULL pointer dereference, mitigated with net.ipv4.tcp_syncookies=0) and CVE-2026-98432 (a critical, CVSS 9.8 use-after-free enabling potential unauthenticated remote root via MPTCP listeners, partially mitigated with net.mptcp.enabled=0 and net.ipv4.tcp_migrate_req=0 pending a patched kernel). Applied and verified healthy across the mainnet validator (Velia 5), mainnet RPC/snapshot (velia2), mainnet standby/Fibre (VeliaMon-Test), mainnet bridge (BigVelia14T-3), the Mocha-5 validator (Velia 6), and Mocha-5 RPC/backup/snapshot/bridge (BigVelia14T-2), with the same mitigation extended to co-located SEDA and Cosmos Hub nodes sharing those hosts. One dedicated host running Dymension and a separate Cosmos Hub node remains on an unpatched Ubuntu 20.04 generic kernel (5.4.0-169) that lacks the mptcp/migrate_req sysctls entirely and has no fix yet for CVE-2026-98432 outside Ubuntu Pro's HWE 5.15 kernel; this is tracked as pending.",
+  "url": "https://ubuntu.com/security/CVE-2026-98432"
+},
+  {
   "id": "celestia-mocha-upgrade-celestia-node-v0.36.0-mocha-2026-11-16",
   "date": "2026-11-16T00:00:00Z",
   "incident_type": "upgrade",
