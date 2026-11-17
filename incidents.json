@@ -1,5 +1,16 @@
 [
   {
+  "id": "genlayer-bradbury-configuration-pearl-llm-provider-2026-11-17",
+  "date": "2026-11-17T00:00:00Z",
+  "incident_type": "configuration",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (bradbury)",
+  "node_type": ["validator"],
+  "client": "genlayer-node v0.6.0-rc.5",
+  "note": "Following GenLayer's partnership with Pearl to provide LLM inference to validators during the Bradbury and Clarke testnets, Cumulo requested and received an age-encrypted Pearl API key via the Deckard agent. The key was decrypted on the validator host and Pearl (OpenAI-compatible endpoint, model deepseek-ai/DeepSeek-V4.1-Flash-1017) was added as a new backend to the GenVM greybox LLM fallback chain at text priority 2, adding provider diversity alongside the existing OpenRouter models. The node container was recreated to load the new key, and the health endpoint confirmed all conditions healthy, including genvm.llm, with the validator processing and finalizing transactions normally."
+},
+  {
   "id": "gnoland-onyx-gnoland-v1.8.0-rc.1-upgrade-2026-11-17",
   "date": "2026-11-17T12:55:00Z",
   "incident_type": "upgrade",
