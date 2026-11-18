@@ -1,5 +1,17 @@
 [
    {
+  "id": "cosmos-mainnet-gaia-v29.1.0-upgrade-2026-11-18",
+  "date": "2026-11-18T12:40:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["validator", "rpc", "backup"],
+  "client": "gaia v29.1.0",
+  "note": "Cumulo upgraded its Cosmos Hub mainnet nodes to gaia v29.1.0 at block height 33,935,300, as approved by governance Proposal #1061. This state-breaking upgrade restores decoding of historical ParameterChangeProposal content and bumps CosmWasm wasmd to v0.60.10 and wasmvm to v2.3.6, applied at the scheduled time of November 18, 2026 at ~12:40 UTC. Cumulo performed the upgrade successfully and without incidents.",
+  "url": "https://github.com/cosmos/gaia/blob/v29.1.0/UPGRADING.md"
+},
+   {
   "id": "gnoland-mainnet-gnoland-v1.8.0-upgrade-2026-11-18",
   "date": "2026-11-18T13:16:00Z",
   "incident_type": "upgrade",
