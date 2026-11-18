@@ -28,7 +28,7 @@
   "date": "2026-11-18T13:16:00Z",
   "incident_type": "upgrade",
   "status": "completed",
-  "chain": "Gno.land",
+  "chain": "Gnoland",
   "network": "mainnet",
   "node_type": ["validator", "backup", "rpc"],
   "client": "gnoland v1.8.0",
