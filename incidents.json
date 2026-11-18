@@ -1,5 +1,17 @@
 [
    {
+  "id": "xrplevm-testnet-upgrade-v11.4.0-2026-11-18",
+  "date": "2026-11-18T12:04:50Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator", "rpc", "snapshot"],
+  "client": "xrplevm node v11.4.0",
+  "note": "Cumulo successfully upgraded its XRPL EVM testnet nodes to v11.4.0 at block height 9,588,600, following the passing of Proposal #55 on Nov 18, 2026. The upgrade includes an update to Cosmos EVM. Upgrade applied across validator, RPC, and snapshot nodes, all completed without incidents.",
+  "url": "https://github.com/xrplevm/node/releases/tag/v11.4.0"
+},
+   {
   "id": "cosmos-mainnet-gaia-v29.1.0-upgrade-2026-11-18",
   "date": "2026-11-18T12:40:00Z",
   "incident_type": "upgrade",
