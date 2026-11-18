@@ -1,5 +1,17 @@
 [
   {
+  "id": "gnoland-mainnet-gnoland-v1.8.0-upgrade-2026-11-18",
+  "date": "2026-11-18T13:16:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Gno.land",
+  "network": "mainnet",
+  "node_type": ["validator", "backup", "rpc"],
+  "client": "gnoland v1.8.0",
+  "note": "Cumulo upgraded its Gno.land mainnet (gnoland-1) nodes to gnoland v1.8.0, a security release, as part of the coordinated halt at block 1651500 set by GovDAO proposal #19. The nodes halted on v1.7.1 at the target height, and the v1.8.0 binary, built from source at the release tag, was then rolled out to the backup node first, then the validator node and the mainnet RPC node. Before the binary switch, the data directory was backed up on each node. The chain resumed and all nodes were verified in sync and producing blocks past height 1651595.",
+  "url": "https://github.com/gnolang/gno/releases/tag/v1.8.0"
+},
+  {
   "id": "genlayer-bradbury-configuration-pearl-llm-provider-2026-11-17",
   "date": "2026-11-17T00:00:00Z",
   "incident_type": "configuration",
