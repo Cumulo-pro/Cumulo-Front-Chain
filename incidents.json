@@ -1,5 +1,16 @@
 [
    {
+  "id": "cosmos-mainnet-snapshot-gaia-v29.1.0-incident-2026-11-18",
+  "date": "2026-11-18T00:00:00Z",
+  "incident_type": "incident",
+  "status": "completed",
+  "chain": "Cosmos Hub",
+  "network": "mainnet",
+  "node_type": ["snapshot"],
+  "client": ["gaia v29.0.1", "gaia v29.1.0"],
+  "note": "Cumulo's Cosmos Hub mainnet snapshot node failed to start after the gaia v29.1.0 coordinated upgrade (height 33935300). The node was lagging at height 33855160, about 80k blocks behind, and the v29.1.0 binary could not replay pre-upgrade blocks because it no longer includes the v29.0.0 upgrade handler. Cumulo synced the node with gaia v29.0.1 up to the upgrade height and then switched it to v29.1.0, which applied the upgrade successfully. A peering misconfiguration was also fixed: a testnet peer was removed from persistent_peers, the Polkachu seed and a fresh address book were added, the p2p port was opened in the firewall, and external_address was set. The node is fully synchronized again and operating normally."
+},
+   {
   "id": "xrplevm-testnet-upgrade-v11.4.0-2026-11-18",
   "date": "2026-11-18T12:04:50Z",
   "incident_type": "upgrade",
