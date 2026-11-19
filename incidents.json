@@ -3,12 +3,13 @@
   "id": "celestia-mainnet-app-fibre-v11.0.0-upgrade-2026-11-19",
   "date": "2026-11-19T12:57:00Z",
   "incident_type": "upgrade",
-  "status": "completed",
+  "status": "in_progress",
   "chain": "Celestia",
   "network": "mainnet",
   "node_type": ["validator", "backup", "fibre"],
   "client": ["celestia-app v11.0.0", "fibre v11.0.0"],
-  "note": "Cumulo upgraded its Celestia mainnet infrastructure to celestia-app v11.0.0 and Fibre v11.0.0, the emergency release that introduces app version 11. The validator, standby full node and Fibre server were updated with the new binaries in the paths used by their system services and restarted. Cumulo verified that the v11 binary is running with the embedded v10.6.0 app, as expected while the network remains on app version 10, that all nodes are fully synchronized and signing normally, and that Fibre resumed remote signing against the validator."
+  "note": "Emergency release of celestia-app and Fibre v11.0.0, cut from the v10.x line, introducing app version 11 on Celestia mainnet. The coordinated upgrade requires every validator to install the release and signal for version 11. App version 11 restricts a fixed list of accounts whose keys were exposed in the Keplr/Web3Auth social-login incident, allowing them to move funds only to a single whitehat recovery address. Cumulo installed v11.0.0 on its validator, standby full node and Fibre server, verified that the v11 binary is running with the embedded v10.6.0 app while the network remains on app version 10, and that all nodes are synchronized and signing normally, with Fibre resuming remote signing against the validator. Cumulo signaled for version 11 (signal tx: https://cumulo.pro/services/celestia/search?q=FA7C331AC0565AC3BA9059A86C0F8C0916671939A27A573EE8438F074E1E1165). The upgrade activates 2 days after validators holding 5/6+ of the voting power have signaled and the upgrade tx is submitted; this entry stays in progress until then.",
+  "url": "https://github.com/celestiaorg/celestia-app/releases/tag/v11.0.0"
 },
    {
   "id": "espresso-decaf-sequencer-0.7.0.7-upgrade-2026-11-19",
