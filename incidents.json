@@ -1,4 +1,16 @@
 [
+  {
+  "id": "celestia-mainnet-upgrade-celestia-node-v0.36.0-2026-11-19",
+  "date": "2026-11-19T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["bridge"],
+  "client": "celestia-node v0.36.0",
+  "note": "Cumulo upgraded its Celestia mainnet bridge node to celestia-node v0.36.0. The release adds support for celestia-app v11, and the upgrade is mandatory because older node versions will stop working once v11 activates. The bridge node was upgraded with no incidents and verified fully operational after the upgrade.",
+  "url": "https://github.com/celestiaorg/celestia-node/releases/tag/v0.36.0"
+},
 {
   "id": "celestia-mainnet-app-fibre-v11.0.0-upgrade-2026-11-19",
   "date": "2026-11-19T12:57:00Z",
