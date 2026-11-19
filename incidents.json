@@ -1,5 +1,17 @@
 [
    {
+  "id": "espresso-decaf-sequencer-0.7.0.7-upgrade-2026-11-19",
+  "date": "2026-11-19T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "testnet (Decaf)",
+  "node_type": ["validator"],
+  "client": "sequencer 0.7.0.7",
+  "note": "Cumulo upgraded its Espresso Decaf testnet validator from sequencer 0.7.0.6 to 0.7.0.7, the release recommended by the Espresso team for all Decaf node operators. The image tag was updated in docker-compose (backup kept) and the container recreated. Post-upgrade verification confirmed the container healthy, consensus_current_view advancing, and consensus_cliquenet_peer_tasks stable at 32, above the required minimum of 16.",
+  "url": "https://github.com/EspressoSystems/espresso-network/releases/tag/0.7.0.7"
+},
+   {
   "id": "cosmos-mainnet-snapshot-gaia-v29.1.0-incident-2026-11-18",
   "date": "2026-11-18T00:00:00Z",
   "incident_type": "incident",
