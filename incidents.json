@@ -1,4 +1,15 @@
 [
+{
+  "id": "celestia-mainnet-app-fibre-v11.0.0-upgrade-2026-11-19",
+  "date": "2026-11-19T12:57:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Celestia",
+  "network": "mainnet",
+  "node_type": ["validator", "backup", "fibre"],
+  "client": ["celestia-app v11.0.0", "fibre v11.0.0"],
+  "note": "Cumulo upgraded its Celestia mainnet infrastructure to celestia-app v11.0.0 and Fibre v11.0.0, the emergency release that introduces app version 11. The validator, standby full node and Fibre server were updated with the new binaries in the paths used by their system services and restarted. Cumulo verified that the v11 binary is running with the embedded v10.6.0 app, as expected while the network remains on app version 10, that all nodes are fully synchronized and signing normally, and that Fibre resumed remote signing against the validator."
+},
    {
   "id": "espresso-decaf-sequencer-0.7.0.7-upgrade-2026-11-19",
   "date": "2026-11-19T00:00:00Z",
