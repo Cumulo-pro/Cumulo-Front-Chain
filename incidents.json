@@ -319,6 +319,16 @@
   "vote": "https://cumulo.pro/services/cosmos/search?q=D5F052F883CE1D860A8B84014348634176C5E36F88930746046B7F9C431B4E6E"
 },
   {
+  "id": "gnoland-mainnet-infrastructure-migration-validator-identity-2026-11-09",
+  "date": "2026-11-09T00:00:00Z",
+  "incident_type": "infrastructure_migration",
+  "status": "completed",
+  "chain": "Gnoland",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "note": "Cumulo migrated its Gnoland mainnet (gnoland-1) validator identity back to the VeliaMon-test server, which runs the validator node today, reversing the move to the backup full node recorded on 2026-10-24. The Velia12 node continues as the backup full node and the Velia2 node as the public RPC node. This entry was recorded retroactively on 2026-11-23 for an event that took place on 2026-11-09."
+},
+  {
   "id": "celestia-mainnet-incident-network-connectivity-2026-11-09",
   "date": "2026-11-09T07:30:45Z",
   "incident_type": "incident",
