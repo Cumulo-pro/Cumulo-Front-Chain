@@ -1,5 +1,18 @@
 [
   {
+  "id": "xrplevm-testnet-governance-proposal-56-2026-11-24",
+  "date": "2026-11-24T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator"],
+  "proposal_number": 56,
+  "note": "Governance Proposal #56 on XRPL EVM testnet: Expedited software upgrade v11.5.0 scheduled at block height 9,693,400. The upgrade deploys node release v11.5.0 and includes an update to Cosmos EVM. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm/governance#proposal-56",
+  "vote": "https://cumulo.pro/services/xrplevm/search?q=53D28BE02663F8236C277569561B2C9DE6F4406AE88536D411DBA547FE59DE96"
+},
+  {
   "id": "celestia-mainnet-upgrade-celestia-node-v0.36.0-2026-11-19",
   "date": "2026-11-19T00:00:00Z",
   "incident_type": "upgrade",
