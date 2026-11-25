@@ -1,5 +1,17 @@
 [
   {
+  "id": "xrplevm-testnet-upgrade-v11.5.0-2026-11-25",
+  "date": "2026-11-25T12:16:11Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "XRPL EVM",
+  "network": "testnet",
+  "node_type": ["validator", "rpc", "snapshot", "archive"],
+  "client": "xrplevm node v11.5.0",
+  "note": "Cumulo successfully upgraded its XRPL EVM testnet nodes to v11.5.0 at block height 9,693,400, following the passing of Proposal #56. The upgrade includes an update to Cosmos EVM. Upgrade applied across validator, RPC, snapshot, and archive nodes, all completed without incidents.",
+  "url": "https://github.com/xrplevm/node/releases/tag/v11.5.0"
+},
+  {
   "id": "espresso-mainnet-sequencer-0.7.0.7-mandatory-upgrade-2026-11-25",
   "date": "2026-11-25T00:00:00Z",
   "incident_type": "upgrade",
