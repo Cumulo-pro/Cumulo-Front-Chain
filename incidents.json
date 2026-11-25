@@ -1,5 +1,17 @@
 [
   {
+  "id": "espresso-mainnet-sequencer-0.7.0.7-mandatory-upgrade-2026-11-25",
+  "date": "2026-11-25T00:00:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "Espresso",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "client": "sequencer 0.7.0.7",
+  "note": "Cumulo upgraded its Espresso mainnet validator from sequencer 0.7.0.6 to 0.7.0.7, a mandatory release published by the Espresso team (catchup is likely to fail on nodes running older releases). The image tag was updated in docker-compose (backup kept) and the containers recreated. Post-upgrade verification confirmed the container healthy, consensus_current_view advancing, consensus_cliquenet_peer_tasks stable at 89, well above the required minimum of 16, and no catchup activity or failures in the logs after startup.",
+  "url": "https://github.com/EspressoSystems/espresso-network/releases/tag/0.7.0.7"
+},
+  {
   "id": "xrplevm-testnet-governance-proposal-56-2026-11-24",
   "date": "2026-11-24T00:00:00Z",
   "incident_type": "governance_proposal",
