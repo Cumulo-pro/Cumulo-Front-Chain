@@ -1,5 +1,17 @@
 [
   {
+  "id": "genlayer-bradbury-phase3-node-v0.6.1-upgrade-2026-11-25",
+  "date": "2026-11-25T18:20:00Z",
+  "incident_type": "upgrade",
+  "status": "completed",
+  "chain": "GenLayer",
+  "network": "testnet (bradbury)",
+  "node_type": ["validator"],
+  "client": ["genlayer-node v0.6.1", "GenVM v0.6.0-rc17"],
+  "note": "Cumulo migrated its GenLayer validator to Bradbury Phase 3, the new v0.6 consensus deployment on the same chain (chain ID 4221), running genlayer-node v0.6.1 via Docker from a fresh database and the official protocol manifest, and keeping only the existing operator keystore. A new validator 0x3AC937965764Dd5cD1d638a63CfDAb3eB4e8C264 was registered with 43,000 GEN self-stake, which is pending activation at epoch 4 (27 Nov 2026, ~11:08 UTC), and its on-chain identity (moniker, logo, website, description and socials) was configured. The Phase 2 node was stopped. The new node is fully synced, with RPC, WebSocket, GenVM LLM/web and telemetry all healthy.",
+  "url": "https://docs.genlayer.com/validators/changelog"
+},
+  {
   "id": "multichain-mainnet-configuration-hermes-ibc-channel-recreation-2026-11-25",
   "date": "2026-11-25T00:00:00Z",
   "incident_type": "configuration",
