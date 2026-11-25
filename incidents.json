@@ -1,5 +1,17 @@
 [
   {
+  "id": "multichain-mainnet-configuration-hermes-ibc-channel-recreation-2026-11-25",
+  "date": "2026-11-25T00:00:00Z",
+  "incident_type": "configuration",
+  "status": "completed",
+  "chain": "IBC Relayer",
+  "network": "mainnet",
+  "node_type": ["relayer"],
+  "client": "hermes v1.13.2",
+  "note": "Cumulo recreated expired IBC channels on XRPL EVM (xrplevm_1440000-1) across three counterparty chains whose clients had lapsed: Celestia channel-372 replaced by channel-710/channel-10, Cosmos Hub channel-1909 replaced by channel-1943/channel-11, and Injective channel-466 replaced by channel-507/channel-12. A new Osmosis relay path was activated (channel-3 on XRPL EVM, counterpart channel-104325). Hermes packet_filter updated on all six chain configs (XRPL EVM, Celestia, Cosmos Hub, Injective, Osmosis). Dead channel workers confirmed gone after restart; all four active paths show state OPEN.",
+  "url": "https://cumulo.pro/services/ibc/"
+},
+  {
   "id": "xrplevm-testnet-upgrade-v11.5.0-2026-11-25",
   "date": "2026-11-25T12:16:11Z",
   "incident_type": "upgrade",
