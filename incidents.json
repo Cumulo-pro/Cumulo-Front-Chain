@@ -1,5 +1,18 @@
 [
   {
+  "id": "xrplevm-mainnet-governance-proposal-40-2026-11-26",
+  "date": "2026-11-26T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "XRPL EVM",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "proposal_number": 40,
+  "note": "Governance Proposal #40 on XRPL EVM mainnet: Expedited software upgrade v11.5.0 scheduled at block height 8,844,600. The upgrade deploys node release v11.5.0 and includes an update to Cosmos EVM. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/xrplevm_mainnet/governance#proposal-40",
+  "vote": "https://cumulo.pro/services/xrplevm_mainnet/search?q=929FD9EDD4EBD35FEFAC001CACDDD8DE1C1A6E212AB5E0563C5FE403976A288D"
+},
+  {
   "id": "genlayer-bradbury-phase3-node-v0.6.1-upgrade-2026-11-25",
   "date": "2026-11-25T18:20:00Z",
   "incident_type": "upgrade",
