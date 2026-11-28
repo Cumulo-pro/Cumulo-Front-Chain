@@ -133,6 +133,6 @@
     "rpc": "https://seda-testnet.rpc.cumulo.org.es",
     "api": "https://seda-testnet.api.cumulo.org.es",
     "grpc": "seda-testnet.grpc.cumulo.org.es",
-    "websocket": "wss://seda.cumulo.org.es:443/websocket"
+    "websocket": "wss://seda-testnet.rpc.cumulo.org.es/websocket"
   }
 ]
