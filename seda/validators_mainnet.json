@@ -1,0 +1,60 @@
+[
+  {
+    "name": "Polkachu",
+    "webservices": "https://polkachu.com/networks/seda",
+    "x": "polka_chu",
+    "validatorlogo": "polkachu.jpg",
+    "api": "https://seda-api.polkachu.com",
+    "rpc": "https://seda-rpc.polkachu.com:443",
+    "grpc": "seda-grpc.polkachu.com:25890",
+    "snapshot": "https://polkachu.com/tendermint_snapshots/seda",
+    "addrbook": "https://polkachu.com/addrbooks/seda",
+    "tools": "State-sync, Live Peers",
+    "tools_url": {
+      "State-sync": "https://polkachu.com/state_sync/seda",
+      "Live Peers": "https://polkachu.com/live_peers/seda"
+    },
+    "tools_desc": {
+      "State-sync": "State sync instructions and RPC parameters for fast SEDA mainnet node bootstrap.",
+      "Live Peers": "List of currently connected peers for SEDA mainnet."
+    }
+  },
+  {
+    "name": "BlackNodes",
+    "webservices": "https://services.blacknodes.net/Seda/",
+    "x": "BlackNodesHQ",
+    "validatorlogo": "blacknodes.jpg"
+  },
+  {
+    "name": "Lavender.Five Nodes",
+    "webservices": "https://www.lavenderfive.com/tools/seda/overview",
+    "x": "lavender_five",
+    "validatorlogo": "lavenderfive.jpg",
+    "api": "https://rest.lavenderfive.com:443/seda",
+    "rpc": "https://rpc.lavenderfive.com:443/seda",
+    "grpc": "seda.lavenderfive.com:443",
+    "websocket": "wss://rpc.lavenderfive.com:443/seda/websocket",
+    "addrbook": "https://snapshots.lavenderfive.com/addrbooks/seda/addrbook.json",
+    "tools": "State-sync",
+    "tools_url": {
+      "State-sync": "https://www.lavenderfive.com/tools/seda/statesync"
+    },
+    "tools_desc": {
+      "State-sync": "State sync parameters for SEDA mainnet node operators."
+    },
+    "content": {
+      "Installation Guide": "https://www.lavenderfive.com/tools/seda/installation"
+    }
+  },
+  {
+    "name": "Cumulo",
+    "webservices": "https://cumulo.pro/services/seda",
+    "x": "Cumulo_pro",
+    "validatorlogo": "cumulo.jpg",
+    "explorer": "https://cumulo.pro/services/seda/stats",
+    "rpc": "https://seda.rpc.cumulo.org.es",
+    "api": "https://seda.api.cumulo.org.es",
+    "grpc": "seda.grpc.cumulo.org.es",
+    "websocket": "wss://seda.rpc.cumulo.org.es/websocket"
+  }
+]
