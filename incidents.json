@@ -1,5 +1,18 @@
 [
   {
+  "id": "seda-mainnet-governance-proposal-5-v1.0.9-2026-11-28",
+  "date": "2026-11-28T00:00:00Z",
+  "incident_type": "governance_proposal",
+  "status": "active",
+  "chain": "SEDA",
+  "network": "mainnet",
+  "node_type": ["validator"],
+  "proposal_number": 5,
+  "note": "Governance Proposal #5 on SEDA mainnet: Mainnet Security Upgrade to v1.0.9, introducing security fixes in the Cosmos SDK, CometBFT, and CosmWasm dependencies. Because the upgrade is security-related, it follows the expedited governance process, and details of the fixes stay under coordinated disclosure until the window closes. The on-chain upgrade plan and handler are named v1.0.9, while the binary release tag and reported version are v1.0.9-private.1, so Cosmovisor operators must preload the binary under the v1.0.9 upgrade directory. Cumulo voted YES.",
+  "url": "https://cumulo.pro/services/seda/governance#proposal-5",
+  "vote": "https://cumulo.pro/services/seda/search?q=F5246CC685D51C18EBF5DBDCA3AC0437F33F77DEDB8466CC78974EE8293F87E7"
+},
+  {
   "id": "xrplevm-mainnet-governance-proposal-40-2026-11-26",
   "date": "2026-11-26T00:00:00Z",
   "incident_type": "governance_proposal",
